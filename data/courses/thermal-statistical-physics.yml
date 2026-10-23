@@ -1,0 +1,963 @@
+slug: thermal-statistical-physics
+order: 110
+codes: [PHYS 321]
+short: { en: TSP, ar: ف.ح.إ }
+title: { en: Thermal & Statistical Physics, ar: الفيزياء الحرارية والإحصائية }
+tagline:
+  en: From the Boltzmann factor and the laws of thermodynamics to photons, phonons and quantum gases.
+  ar: من عامل بولتزمان وقوانين الديناميكا الحرارية إلى الفوتونات والفونونات والغازات الكمومية.
+area: thermal
+level: 3
+credits: 3
+hours: { lecture: 3, tutorial: 1, lab: 0 }
+weeks: 14
+instruction: [en, ar]
+prerequisites: [general-physics-1]
+prerequisite_note:
+  en: Introductory mechanics and heat, modern physics (energy levels, photons), multivariable calculus and partial derivatives.
+  ar: الميكانيكا والحرارة التمهيدية، والفيزياء الحديثة (مستويات الطاقة، الفوتونات)، وحساب التفاضل والتكامل متعدد المتغيرات والمشتقات الجزئية.
+sims: [boltzmann]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/phys321-thermal-and-statistical-physics/
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/%d9%81%d9%8a%d8%b2-321-%d8%a7%d9%84%d9%81%d9%8a%d8%b2%d9%8a%d8%a7%d8%a1-%d8%a7%d9%84%d8%ad%d8%b1%d8%a7%d8%b1%d9%8a%d8%a9-%d9%88-%d8%a7%d9%84%d8%a5%d8%ad%d8%b5%d8%a7%d8%a6%d9%8a%d8%a9/
+notes: >
+  Syllabus, 15-week calendar (merged into 14 weeks: the review week is folded into week 14), Blundell & Blundell
+  chapter readings, evaluation (20/20/20/40) and all links come from the PHYS 321 page; the Arabic page only links back
+  to the English one. Reconstructed: description expansion, CLOs 7-8, Bloom levels, the split of the 20% problem-set
+  share into homework + quizzes + a small computational mini-project, weeks 11-14 content detail (the source lists
+  topics only), exam guide, all quizzes, worked problems and glossary. Textbook list corrected (Blundell authors
+  de-duplicated, "I. Terrell" is T. L. Hill). Past exams "1439 (S1)/(S2)" mapped to session 2017-2018; current exams
+  to 2019-2020. Course questionnaires (Google Forms) were not kept as materials. Lecture notes are assumed to be in
+  English. The Arabic thermodynamics notes use the direct .doc URL extracted from the original Google redirect link
+  (http only, may be dead).
+
+description:
+  en: |
+    <p>This course brings together the two complementary views of heat and temperature. <strong>Classical thermodynamics</strong> describes macroscopic systems through a handful of state variables and three general laws, independent of any microscopic model. <strong>Statistical mechanics</strong> explains those laws from the behaviour of very large numbers of atoms, using probability and the Boltzmann factor.</p>
+    <p>We start from temperature, probability and the Boltzmann distribution. Then we develop the first, second and third laws, entropy (including its information-theoretic meaning), heat engines, thermodynamic potentials and Maxwell relations. The second half introduces the partition function and the canonical and grand canonical ensembles. These are applied to the ideal gas, to real gases, to black-body radiation (photons), to the heat capacity of solids (phonons) and to quantum gases obeying Bose–Einstein and Fermi–Dirac statistics.</p>
+    <p>Weekly problem sets are central to the course. Solving problems yourself, step by step and with honest effort, is the only way to master the material. Short experiments (Rüchardt's method for \(\gamma\), a toy heat engine) and a Carnot-cycle simulation connect the formalism to real systems.</p>
+  ar: |
+    <p>يجمع هذا المقرر بين نظرتين متكاملتين إلى الحرارة ودرجة الحرارة. فـ<strong>الديناميكا الحرارية الكلاسيكية</strong> تصف الأنظمة العيانية بعدد قليل من متغيرات الحالة وثلاثة قوانين عامة لا تعتمد على أي نموذج مجهري. أما <strong>الميكانيكا الإحصائية</strong> فتفسّر هذه القوانين انطلاقًا من سلوك أعداد هائلة من الذرات، مستعينةً بالاحتمالات وعامل بولتزمان.</p>
+    <p>نبدأ بدرجة الحرارة والاحتمالات وتوزيع بولتزمان. ثم نطوّر القوانين الأول والثاني والثالث، والإنتروبيا (بما في ذلك معناها في نظرية المعلومات)، والآلات الحرارية، والكمونات الترموديناميكية وعلاقات ماكسويل. ويقدّم النصف الثاني دالة التجزئة والمجموعتين القانونية والقانونية الكبرى. ونطبّقها على الغاز المثالي، والغازات الحقيقية، وإشعاع الجسم الأسود (الفوتونات)، والسعة الحرارية للأجسام الصلبة (الفونونات)، والغازات الكمومية الخاضعة لإحصاء بوز-أينشتاين وفيرمي-ديراك.</p>
+    <p>تحتل أوراق المسائل الأسبوعية مكانة محورية في المقرر. فحلّ المسائل بنفسك، خطوةً بخطوة وبجهد صادق، هو السبيل الوحيد لإتقان المادة. وتربط تجارب قصيرة (طريقة روشارت لقياس \(\gamma\)، وآلة حرارية بسيطة) ومحاكاةٌ لدورة كارنو هذا الإطار النظري بأنظمة حقيقية.</p>
+
+topics:
+  - { en: Temperature & the Boltzmann factor, ar: درجة الحرارة وعامل بولتزمان }
+  - { en: The three laws of thermodynamics, ar: قوانين الديناميكا الحرارية الثلاثة }
+  - { en: Entropy & information, ar: الإنتروبيا والمعلومات }
+  - { en: Heat engines & the Carnot cycle, ar: الآلات الحرارية ودورة كارنو }
+  - { en: Thermodynamic potentials & Maxwell relations, ar: الكمونات الترموديناميكية وعلاقات ماكسويل }
+  - { en: Partition function & equipartition, ar: دالة التجزئة وتساوي توزيع الطاقة }
+  - { en: Ideal and real gases, ar: الغازات المثالية والحقيقية }
+  - { en: Chemical potential & grand ensemble, ar: الكمون الكيميائي والمجموعة القانونية الكبرى }
+  - { en: Photons & phonons, ar: الفوتونات والفونونات }
+  - { en: Bose–Einstein & Fermi–Dirac gases, ar: غازات بوز-أينشتاين وفيرمي-ديراك }
+
+outcomes:
+  - id: CLO1
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Explain temperature, the Boltzmann factor and entropy from a statistical (microstate counting) point of view.
+      ar: يشرح درجة الحرارة وعامل بولتزمان والإنتروبيا من منظور إحصائي (عدّ الحالات المجهرية).
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO2
+    bloom: apply
+    domain: knowledge
+    text:
+      en: State the three laws of thermodynamics and apply them to processes, cycles and heat engines (work, heat, efficiency, entropy changes).
+      ar: يصوغ قوانين الديناميكا الحرارية الثلاثة ويطبّقها على التحولات والدورات والآلات الحرارية (الشغل، الحرارة، الكفاءة، تغيرات الإنتروبيا).
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO3
+    bloom: analyze
+    domain: skills
+    text:
+      en: Derive thermodynamic relations using the potentials \(U, H, F, G\) and Maxwell relations, and use them to compute measurable quantities.
+      ar: 'يستنتج العلاقات الترموديناميكية باستعمال الكمونات \(U, H, F, G\) وعلاقات ماكسويل، ويوظّفها في حساب مقادير قابلة للقياس.'
+    assessed_by: [homework, midterm1, final]
+  - id: CLO4
+    bloom: apply
+    domain: skills
+    text:
+      en: Construct the partition function of simple systems in the canonical and grand canonical ensembles and derive from it \(U\), \(F\), \(S\), \(C_V\) and the equation of state.
+      ar: 'يبني دالة التجزئة لأنظمة بسيطة في المجموعتين القانونية والقانونية الكبرى، ويستنتج منها \(U\) و\(F\) و\(S\) و\(C_V\) ومعادلة الحالة.'
+    assessed_by: [quizzes, homework, midterm2, final]
+  - id: CLO5
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Analyse the thermal properties of the classical ideal gas and of gases beyond the ideal approximation (van der Waals, virial expansion).
+      ar: يحلّل الخصائص الحرارية للغاز المثالي الكلاسيكي وللغازات خارج التقريب المثالي (معادلة فان دير فالس، النشر الفيريالي).
+    assessed_by: [homework, midterm2, final]
+  - id: CLO6
+    bloom: apply
+    domain: knowledge
+    text:
+      en: Apply Bose–Einstein and Fermi–Dirac statistics to photons, phonons, conduction electrons and Bose condensates.
+      ar: يطبّق إحصاء بوز-أينشتاين وفيرمي-ديراك على الفوتونات والفونونات وإلكترونات التوصيل وتكاثفات بوز.
+    assessed_by: [quizzes, midterm2, project, final]
+  - id: CLO7
+    bloom: evaluate
+    domain: skills
+    text:
+      en: Use a short computation or simulation to evaluate a thermal property (e.g. Einstein vs Debye heat capacity) and judge the validity of approximations in a written report.
+      ar: يستعمل حسابًا أو محاكاة قصيرة لتقييم خاصية حرارية (مثل السعة الحرارية وفق نموذجي أينشتاين وديباي) ويحكم على صلاحية التقريبات في تقرير مكتوب.
+    assessed_by: [project]
+  - id: CLO8
+    bloom: apply
+    domain: values
+    text:
+      en: Work independently and with academic integrity, presenting complete, clear and logically checked solutions.
+      ar: يعمل باستقلالية ونزاهة أكاديمية، ويقدّم حلولًا كاملة وواضحة ومتحقَّقًا من منطقها.
+    assessed_by: [homework, project]
+
+assessment:
+  - id: quizzes
+    type: quiz
+    weight: 10
+    title: { en: Short quizzes, ar: اختبارات قصيرة }
+    detail:
+      en: Four 15-minute quizzes at the end of each chapter (basic concepts, classical thermodynamics, statistical mechanics, quantum gases). Conceptual questions and one short calculation.
+      ar: أربعة اختبارات قصيرة مدة كلٍّ منها 15 دقيقة في نهاية كل فصل (مفاهيم أساسية، ديناميكا حرارية كلاسيكية، ميكانيكا إحصائية، غازات كمومية). أسئلة مفاهيمية ومسألة حسابية قصيرة.
+    when: { en: 'Weeks 2, 5, 9, 13', ar: الأسابيع 2، 5، 9، 13 }
+  - id: homework
+    type: homework
+    weight: 15
+    title: { en: Weekly problem sets, ar: أوراق المسائل الأسبوعية }
+    detail:
+      en: Eleven problem sets, each due one week after release. Graded on correctness, clarity of reasoning and completeness. Write your own solutions; copying is a breach of academic integrity.
+      ar: إحدى عشرة ورقة مسائل، تُسلَّم كلٌّ منها بعد أسبوع من نشرها. تُقيَّم على صحة الحل ووضوح الاستدلال واكتماله. اكتب حلولك بنفسك، فالنقل خرقٌ للنزاهة الأكاديمية.
+    when: { en: Weeks 2–14, ar: الأسابيع 2–14 }
+  - id: midterm1
+    type: midterm
+    weight: 15
+    title: { en: First periodic exam, ar: الاختبار الدوري الأول }
+    detail:
+      en: 'One hour, in class. Covers basic concepts, probability and classical thermodynamics (first, second and third laws, potentials).'
+      ar: 'ساعة واحدة داخل القاعة. يغطي المفاهيم الأساسية والاحتمالات والديناميكا الحرارية الكلاسيكية (القوانين الأول والثاني والثالث، الكمونات).'
+    when: { en: Week 7, ar: الأسبوع 7 }
+  - id: midterm2
+    type: midterm
+    weight: 15
+    title: { en: Second periodic exam, ar: الاختبار الدوري الثاني }
+    detail:
+      en: One hour, in class. Covers equipartition, the partition function, the ideal gas, the chemical potential, photons and phonons.
+      ar: ساعة واحدة داخل القاعة. يغطي تساوي توزيع الطاقة ودالة التجزئة والغاز المثالي والكمون الكيميائي والفوتونات والفونونات.
+    when: { en: Week 12, ar: الأسبوع 12 }
+  - id: project
+    type: project
+    weight: 5
+    title: { en: Computational mini-project, ar: مشروع حسابي مصغّر }
+    detail:
+      en: A short numerical study (e.g. Einstein vs Debye heat capacity, or the Fermi–Dirac distribution vs temperature) with a 3–4 page report. Graded on correctness, figures and discussion of approximations.
+      ar: دراسة عددية قصيرة (مثل مقارنة السعة الحرارية وفق نموذجي أينشتاين وديباي، أو تغيّر توزيع فيرمي-ديراك مع درجة الحرارة) مع تقرير من 3 إلى 4 صفحات. يُقيَّم على صحة النتائج والأشكال ومناقشة التقريبات.
+    when: { en: 'Assigned week 10, due week 13', ar: يُكلَّف به في الأسبوع 10 ويُسلَّم في الأسبوع 13 }
+  - id: final
+    type: final
+    weight: 40
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail:
+      en: Two hours, comprehensive, with emphasis on statistical mechanics and quantum gases.
+      ar: ساعتان، شامل لكل المقرر مع تركيز على الميكانيكا الإحصائية والغازات الكمومية.
+    when: { en: Final exam period, ar: فترة الاختبارات النهائية }
+
+schedule:
+  - week: 1
+    title: { en: Basic concepts, ar: مفاهيم أساسية }
+    topics:
+      en: [Overview of the course, 'Macroscopic vs microscopic descriptions; the mole, thermal equilibrium', 'Heat and heat capacity']
+      ar: [نظرة عامة على المقرر, 'الوصف العياني والوصف المجهري؛ المول والتوازن الحراري', 'الحرارة والسعة الحرارية']
+    reading: Blundell & Blundell Ch. 1–2
+  - week: 2
+    title: { en: 'Probability, temperature and the Boltzmann distribution', ar: الاحتمالات ودرجة الحرارة وتوزيع بولتزمان }
+    topics:
+      en: ['Discrete and continuous probability distributions, mean and variance', 'Statistical definition of temperature, \(1/k_BT = \dd \ln\Omega/\dd E\)', 'The Boltzmann factor; Maxwell–Boltzmann speed distribution']
+      ar: ['التوزيعات الاحتمالية المتقطعة والمتصلة، المتوسط والتباين', 'التعريف الإحصائي لدرجة الحرارة \(1/k_BT = \dd \ln\Omega/\dd E\)', 'عامل بولتزمان؛ توزيع ماكسويل-بولتزمان للسرعات']
+    reading: Blundell & Blundell Ch. 3–5
+    activity: { en: Problem set 1 released; Quiz 1, ar: نشر ورقة المسائل 1؛ الاختبار القصير 1 }
+    milestone: quiz
+  - week: 3
+    title: { en: The first law, ar: القانون الأول }
+    topics:
+      en: ['Internal energy, work and heat; functions of state', 'Heat capacities \(C_V\) and \(C_p\)', 'Isothermal and adiabatic processes, \(pV^\gamma=\text{const}\)']
+      ar: ['الطاقة الداخلية والشغل والحرارة؛ دوال الحالة', 'السعتان الحراريتان \(C_V\) و\(C_p\)', 'التحولات متساوية درجة الحرارة والكظومة، \(pV^\gamma=\text{const}\)']
+    reading: Blundell & Blundell Ch. 11–12
+    activity: { en: Problem set 2; Rüchardt experiment for \(\gamma\), ar: ورقة المسائل 2؛ تجربة روشارت لقياس \(\gamma\) }
+  - week: 4
+    title: { en: The second law and entropy, ar: القانون الثاني والإنتروبيا }
+    topics:
+      en: ['Heat engines, the Carnot cycle and its efficiency', 'Kelvin and Clausius statements; Clausius inequality', 'Entropy, \(\dd S = \dd Q_\text{rev}/T\); Joule expansion', 'Information theory and Shannon entropy*']
+      ar: ['الآلات الحرارية ودورة كارنو وكفاءتها', 'صيغتا كلفن وكلاوزيوس؛ متباينة كلاوزيوس', 'الإنتروبيا \(\dd S = \dd Q_\text{rev}/T\)؛ تمدد جول', 'نظرية المعلومات وإنتروبيا شانون*']
+    reading: Blundell & Blundell Ch. 13–15
+    activity: { en: Problem set 3; Carnot-cycle simulation, ar: ورقة المسائل 3؛ محاكاة دورة كارنو }
+  - week: 5
+    title: { en: Thermodynamic potentials, ar: الكمونات الترموديناميكية }
+    topics:
+      en: ['Enthalpy, Helmholtz and Gibbs free energies', 'Maxwell relations and their use', 'Availability and equilibrium conditions']
+      ar: ['الإنثالبي وطاقتا هلمهولتز وجيبس الحرتان', 'علاقات ماكسويل وتطبيقاتها', 'الطاقة المتاحة وشروط التوازن']
+    reading: Blundell & Blundell Ch. 16
+    activity: { en: Problem set 4; Quiz 2, ar: ورقة المسائل 4؛ الاختبار القصير 2 }
+    milestone: quiz
+  - week: 6
+    title: { en: 'Rods, bubbles, magnets and the third law', ar: القضبان والفقاعات والمغانط والقانون الثالث }
+    topics:
+      en: ['Thermodynamics of elastic rods, surface tension and paramagnets', 'The third law: Nernst statement and consequences', 'Review for the first exam']
+      ar: ['ديناميكا حرارية للقضبان المرنة والتوتر السطحي والمواد البارامغناطيسية', 'القانون الثالث: صيغة نيرنست ونتائجها', 'مراجعة للاختبار الأول']
+    reading: Blundell & Blundell Ch. 17–18
+    milestone: review
+  - week: 7
+    title: { en: Equipartition of energy, ar: تساوي توزيع الطاقة }
+    topics:
+      en: ['Equipartition theorem: \(\tfrac12 k_BT\) per quadratic degree of freedom', 'Heat capacity of gases and solids; failure at low temperature', First periodic exam]
+      ar: ['مبرهنة تساوي توزيع الطاقة: \(\tfrac12 k_BT\) لكل درجة حرية تربيعية', 'السعة الحرارية للغازات والأجسام الصلبة؛ إخفاق المبرهنة في درجات الحرارة المنخفضة', الاختبار الدوري الأول]
+    reading: Blundell & Blundell Ch. 19
+    activity: { en: Problem set 5, ar: ورقة المسائل 5 }
+    milestone: midterm
+  - week: 8
+    title: { en: The partition function, ar: دالة التجزئة }
+    topics:
+      en: ['Canonical ensemble, \(Z=\sum_i e^{-\beta E_i}\)', 'Obtaining \(U, F, S, C_V\) from \(\ln Z\)', 'Two-level system and harmonic oscillator; combining partition functions']
+      ar: ['المجموعة القانونية، \(Z=\sum_i e^{-\beta E_i}\)', 'استخراج \(U, F, S, C_V\) من \(\ln Z\)', 'نظام المستويين والمهتز التوافقي؛ تركيب دوال التجزئة']
+    reading: Blundell & Blundell Ch. 20
+    activity: { en: Problem set 6, ar: ورقة المسائل 6 }
+  - week: 9
+    title: { en: Statistical mechanics of the ideal gas, ar: الميكانيكا الإحصائية للغاز المثالي }
+    topics:
+      en: ['Single-particle partition function and the thermal wavelength \(\lambda_{th}\)', 'Indistinguishability, the \(N!\) factor and the Gibbs paradox', 'Sackur–Tetrode entropy; internal degrees of freedom']
+      ar: ['دالة التجزئة لجسيم واحد وطول الموجة الحراري \(\lambda_{th}\)', 'عدم التمايز، العامل \(N!\) ومفارقة جيبس', 'إنتروبيا ساكور-تترود؛ درجات الحرية الداخلية']
+    reading: Blundell & Blundell Ch. 21
+    activity: { en: Problem set 7; Quiz 3, ar: ورقة المسائل 7؛ الاختبار القصير 3 }
+    milestone: quiz
+  - week: 10
+    title: { en: Chemical potential and the grand partition function, ar: الكمون الكيميائي ودالة التجزئة الكبرى }
+    topics:
+      en: ['Chemical potential \(\mu\) and particle exchange', 'Grand canonical ensemble and grand potential \(\Phi_G=-k_BT\ln\mathcal{Z}\)', 'Chemical reactions and equilibrium']
+      ar: ['الكمون الكيميائي \(\mu\) وتبادل الجسيمات', 'المجموعة القانونية الكبرى والكمون الأكبر \(\Phi_G=-k_BT\ln\mathcal{Z}\)', 'التفاعلات الكيميائية والتوازن']
+    reading: Blundell & Blundell Ch. 22
+    activity: { en: Problem set 8; mini-project assigned, ar: ورقة المسائل 8؛ تكليف المشروع المصغّر }
+    milestone: project
+  - week: 11
+    title: { en: Photons and phonons, ar: الفوتونات والفونونات }
+    topics:
+      en: ['Black-body radiation, Planck law, Stefan–Boltzmann law', 'Einstein model of a solid', 'Debye model and the \(T^3\) law']
+      ar: ['إشعاع الجسم الأسود، قانون بلانك، قانون ستيفان-بولتزمان', 'نموذج أينشتاين للجسم الصلب', 'نموذج ديباي وقانون \(T^3\)']
+    reading: Blundell & Blundell Ch. 23–24
+  - week: 12
+    title: { en: Relativistic and real gases, ar: الغازات النسبوية والحقيقية }
+    topics:
+      en: ['Ultra-relativistic gas', 'Van der Waals gas, virial expansion, Joule and Joule–Kelvin expansions', Second periodic exam]
+      ar: ['الغاز فائق النسبوية', 'غاز فان دير فالس، النشر الفيريالي، تمدد جول وتمدد جول-كلفن', الاختبار الدوري الثاني]
+    reading: Blundell & Blundell Ch. 25–26
+    activity: { en: Problem set 9, ar: ورقة المسائل 9 }
+    milestone: midterm
+  - week: 13
+    title: { en: Bose–Einstein and Fermi–Dirac distributions, ar: توزيعا بوز-أينشتاين وفيرمي-ديراك }
+    topics:
+      en: ['Exchange symmetry: bosons and fermions', 'Derivation of \(\bar n = 1/(e^{\beta(E-\mu)}\mp 1)\)', 'Classical limit and density of states']
+      ar: ['تناظر التبادل: البوزونات والفرميونات', 'استنتاج \(\bar n = 1/(e^{\beta(E-\mu)}\mp 1)\)', 'النهاية الكلاسيكية وكثافة الحالات']
+    reading: Blundell & Blundell Ch. 29
+    activity: { en: Problem set 10; Quiz 4; mini-project due, ar: ورقة المسائل 10؛ الاختبار القصير 4؛ تسليم المشروع المصغّر }
+    milestone: quiz
+  - week: 14
+    title: { en: Quantum gases and condensates; review, ar: الغازات الكمومية والتكاثفات؛ مراجعة }
+    topics:
+      en: ['Degenerate Fermi gas: Fermi energy, electronic heat capacity', 'Bose–Einstein condensation and \(T_c\)', 'Course review and exam preparation']
+      ar: ['غاز فيرمي المنحلّ: طاقة فيرمي، السعة الحرارية الإلكترونية', 'تكاثف بوز-أينشتاين ودرجة الحرارة الحرجة \(T_c\)', 'مراجعة المقرر والتحضير للاختبار']
+    reading: Blundell & Blundell Ch. 30
+    activity: { en: Problem set 11, ar: ورقة المسائل 11 }
+    milestone: review
+
+materials:
+  # Lecture notes — basic concepts & probability
+  - type: notes
+    title: { en: 1.1 Basic concepts (part 1), ar: 1.1 مفاهيم أساسية (الجزء 1) }
+    url: https://drive.google.com/open?id=15ryXnWJpLxnj-ZqpLXROeIQ4rPA1WAlc
+    week: 1
+    lang: en
+  - type: notes
+    title: { en: 1.2 Basic concepts (part 2), ar: 1.2 مفاهيم أساسية (الجزء 2) }
+    url: https://drive.google.com/open?id=1Z6vf3Ug2ZgI4ktFsFc1nuzq1qcDSDku2
+    week: 1
+    lang: en
+  - type: notes
+    title: { en: 1.3 Probability, ar: 1.3 الاحتمالات }
+    url: https://drive.google.com/open?id=1UrWQyAyKn5q4KhqDK4m8fvPBSnvHlqlM
+    week: 2
+    lang: en
+  - type: notes
+    title: { en: 1.4 Temperature & Boltzmann distribution (part 1), ar: 1.4 درجة الحرارة وتوزيع بولتزمان (الجزء 1) }
+    url: https://drive.google.com/open?id=1kfSRW-zzMogzlk75IomfllI9u3jhb2cW
+    week: 2
+    lang: en
+  - type: notes
+    title: { en: 1.5 Temperature & Boltzmann distribution (part 2), ar: 1.5 درجة الحرارة وتوزيع بولتزمان (الجزء 2) }
+    url: https://drive.google.com/open?id=1ZqzEUI1Shg-jPq_27ZwCsSGT5rSGs7Bl
+    week: 2
+    lang: en
+  - type: notes
+    title: { en: 1.6 Temperature & Boltzmann distribution (part 3), ar: 1.6 درجة الحرارة وتوزيع بولتزمان (الجزء 3) }
+    url: https://drive.google.com/open?id=178Klgk8rpb3ysayxtpuLs1OX7IBiS4HX
+    week: 2
+    lang: en
+  # Classical thermodynamics
+  - type: notes
+    title: { en: 2.1 The first law, ar: 2.1 القانون الأول }
+    url: https://drive.google.com/open?id=1CDkSLobR4_5U5BCbpjSIatqiUM7B1BxY
+    week: 3
+    lang: en
+  - type: notes
+    title: { en: 2.2 Isothermal & adiabatic processes, ar: 2.2 التحولات متساوية درجة الحرارة والكظومة }
+    url: https://drive.google.com/open?id=1cqJ0ABmDlBO32xqI_0wdQzVybwo49N4L
+    week: 3
+    lang: en
+  - type: notes
+    title: { en: 2.3 The second law, ar: 2.3 القانون الثاني }
+    url: https://drive.google.com/open?id=1GPUSrk6przRQXgPXDCRfgZM5IlO9MtL3
+    week: 4
+    lang: en
+  - type: notes
+    title: { en: 2.4 Entropy (part 1), ar: 2.4 الإنتروبيا (الجزء 1) }
+    url: https://drive.google.com/open?id=1UGMjm_j0WwV7acSHsQ38MBjlZ5Wgd7Xh
+    week: 4
+    lang: en
+  - type: notes
+    title: { en: 2.5 Entropy (part 2), ar: 2.5 الإنتروبيا (الجزء 2) }
+    url: https://drive.google.com/open?id=1UPF0Q3UGKvMiKKB8JUHKoEONDX4ig9OS
+    week: 4
+    lang: en
+  - type: notes
+    title: { en: 2.6 Thermodynamic potentials, ar: 2.6 الكمونات الترموديناميكية }
+    url: https://drive.google.com/open?id=1eHwIZVXA1v3dwlsiwWNQBcX0MZikOccK
+    week: 5
+    lang: en
+  - type: notes
+    title: { en: 2.7 The third law, ar: 2.7 القانون الثالث }
+    url: https://drive.google.com/open?id=1FORdkWZugIrJlFPwXmIW-XiSs8x-F7vZ
+    week: 6
+    lang: en
+  # Statistical mechanics
+  - type: notes
+    title: { en: 3.1 Equipartition of energy, ar: 3.1 تساوي توزيع الطاقة }
+    url: https://drive.google.com/open?id=1aB6uj6v0HyBnuleQjx_O2ZEmabCD7cmu
+    week: 7
+    lang: en
+  - type: notes
+    title: { en: 3.2 The partition function, ar: 3.2 دالة التجزئة }
+    url: https://drive.google.com/open?id=1M7yNPZp7cxJDA16I5ZrYhN3maV1rCzI8
+    week: 8
+    lang: en
+  - type: notes
+    title: { en: 3.3 Statistical mechanics of an ideal gas, ar: 3.3 الميكانيكا الإحصائية للغاز المثالي }
+    url: https://drive.google.com/open?id=1g5v30ri81n6NKrfJLrkl1VZ-wpYzIE65
+    week: 9
+    lang: en
+  # Problem sets and solutions
+  - type: problems
+    title: { en: Problem set 1, ar: ورقة المسائل 1 }
+    url: https://drive.google.com/open?id=1ewQEDbQWQ3JSCg1zdxF0wRVEw5wlVWhA
+    week: 2
+    lang: en
+  - type: solutions
+    title: { en: Solutions to problem set 1, ar: حلول ورقة المسائل 1 }
+    url: https://drive.google.com/open?id=1pZ0BrsrWELgIt3989rMe2JmVg3OGiV29
+    week: 2
+    lang: en
+  - type: problems
+    title: { en: Problem set 2, ar: ورقة المسائل 2 }
+    url: https://drive.google.com/open?id=1wskkxAz6N9Q18wyN1v3NhFZm4Pfz_62x
+    week: 3
+    lang: en
+  - type: problems
+    title: { en: Problem set 3, ar: ورقة المسائل 3 }
+    url: https://drive.google.com/open?id=1ohpLgEMbvCjilZzVu3w_AFbzWuWgAqR0
+    week: 4
+    lang: en
+  - type: problems
+    title: { en: Problem set 4, ar: ورقة المسائل 4 }
+    url: https://drive.google.com/open?id=1I3PqNlCbcD95UBaVWlKcDAxKSWYi0n7U
+    week: 5
+    lang: en
+  - type: problems
+    title: { en: Problem set 5, ar: ورقة المسائل 5 }
+    url: https://drive.google.com/open?id=13NiUFHZhuAi5n772yDdU0fufbQKfgZ_x
+    week: 7
+    lang: en
+  - type: problems
+    title: { en: Problem set 6, ar: ورقة المسائل 6 }
+    url: https://drive.google.com/open?id=1-5U3SKWfSb2jXPVk3OdYDal87Xae5J6Q
+    week: 8
+    lang: en
+  - type: problems
+    title: { en: Problem set 7, ar: ورقة المسائل 7 }
+    url: https://drive.google.com/open?id=1nbR-PWXavyk3gSCI4eKeHBBglNCZaKOs
+    week: 9
+    lang: en
+  - type: problems
+    title: { en: Problem set 8, ar: ورقة المسائل 8 }
+    url: https://drive.google.com/open?id=1OGVq3XamEf6wNHbFdmd-y5gW68eyq3JU
+    week: 10
+    lang: en
+  # Formula sheet, experiments, simulation
+  - type: formula
+    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+    lang: en
+  - type: lab
+    title: { en: 'Rüchardt''s experiment: measuring the adiabatic index \(\gamma = C_p/C_V\)', ar: 'تجربة روشارت: قياس الأس الكظوم \(\gamma = C_p/C_V\)' }
+    url: https://drive.google.com/open?id=129Q5W93xEBYnnghvPHeTwdguKCA7PhVr
+    week: 3
+  - type: lab
+    title: { en: Hero's engine — an early (toy) heat engine, ar: آلة هيرون — آلة حرارية قديمة (لعبة) }
+    url: https://drive.google.com/open?id=1x9G2d0qOzRWNEr59oFIAKm8CjlppNw-u
+    week: 4
+  - type: sim
+    title: { en: Carnot cycle simulation for a gas–piston system, ar: محاكاة دورة كارنو لنظام غاز-مكبس }
+    url: https://drive.google.com/open?id=1buWtNO6LDETJfwdlUvdi6yRDhqRdr7BQ
+    week: 4
+  # Supplementary material in Arabic
+  - type: reading
+    title: { en: Statistical mechanics — complete lecture notes (Arabic), ar: الميكانيكا الإحصائية — مذكرات كاملة بالعربية }
+    url: https://faculty.kfupm.edu.sa/PHYS/imnasser/SM_Chapter_All.pdf
+    lang: ar
+  - type: reading
+    title: { en: Thermodynamics — lecture notes (Arabic), ar: الديناميكا الحرارية — مذكرات بالعربية }
+    url: http://www.uobabylon.edu.iq/eprints/pubdoc_3_14399_1405.doc
+    lang: ar
+  - type: link
+    title: { en: Collection of translated thermodynamics books (Arabic), ar: مجموعة كتب مترجمة في الديناميكا الحرارية }
+    url: https://www.alfreed-ph.com/2017/09/Books-thermodynamics-pdf.html
+    lang: ar
+
+exams:
+  - title: { en: First periodic exam, ar: الاختبار الدوري الأول }
+    session: 2019–2020
+    paper: https://drive.google.com/open?id=1QGz2xqX31OkYxwsotok-LrgM90XHG4YH
+    solution: https://drive.google.com/open?id=1RXT3n9Kk92nTDW5s9VGvkTp8P4WK9pq6
+    lang: en
+  - title: { en: Second periodic exam, ar: الاختبار الدوري الثاني }
+    session: 2019–2020
+    paper: https://drive.google.com/open?id=1a1bM8SZ0s_UxseaqZ7HqqiFTUuLJ5o9l
+    solution: https://drive.google.com/open?id=1qF0d1I--b8cW9OfrJJEPED2NkgiXy6mj
+    lang: en
+  - title: { en: Final exam, ar: الاختبار النهائي }
+    session: 2019–2020
+    paper: https://drive.google.com/open?id=1z8kSx6Yzf6Vx8Ixr3wdz8h0d3fYbInyy
+    solution: https://drive.google.com/open?id=1rTL9ZHB9i4h7hOPvESysmpNtt49TX9rt
+    lang: en
+  - title: { en: Past exam (paper I), ar: اختبار سابق (النموذج الأول) }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1xiSI1fkwDCua0hrdjYan0PXjAs7nABov
+    lang: en
+  - title: { en: Past exam (paper II), ar: اختبار سابق (النموذج الثاني) }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=15tdcWdgSFrWg3tz6VMDv6EM0zGIScmsW
+    lang: en
+
+exam_guide:
+  format:
+    en: Periodic exams last 60 minutes and contain 3–4 problems, usually one conceptual question plus derivations and short calculations. The final exam lasts 2 hours, is comprehensive and contains 5–6 problems of increasing difficulty.
+    ar: تدوم الاختبارات الدورية 60 دقيقة وتتضمن 3 إلى 4 مسائل، عادةً سؤال مفاهيمي إلى جانب استنتاجات وحسابات قصيرة. ويدوم الاختبار النهائي ساعتين، وهو شامل ويتضمن 5 إلى 6 مسائل متدرجة الصعوبة.
+  allowed:
+    en: A non-programmable scientific calculator. A sheet of physical constants and standard integrals (Gaussian, Bose and Fermi integrals) is provided with the paper; personal notes are not allowed.
+    ar: آلة حاسبة علمية غير قابلة للبرمجة. تُرفق بورقة الاختبار ورقة بالثوابت الفيزيائية والتكاملات المعيارية (تكاملات غاوس وبوز وفيرمي)؛ ولا يُسمح بالمذكرات الشخصية.
+  tips:
+    - en: Always start by identifying the system, the constraints (fixed \(T\), \(V\), \(N\)?) and therefore the natural potential or ensemble.
+      ar: 'ابدأ دائمًا بتحديد النظام والقيود (هل \(T\) و\(V\) و\(N\) ثابتة؟) ومن ثمّ الكمون أو المجموعة الإحصائية المناسبة.'
+    - en: For entropy changes in irreversible processes, compute along a reversible path between the same end states — entropy is a function of state.
+      ar: لحساب تغيّر الإنتروبيا في التحولات غير العكوسة، احسبه على مسار عكوس بين الحالتين نفسيهما؛ فالإنتروبيا دالة حالة.
+    - en: Once you have \(\ln Z\), every thermodynamic quantity follows by differentiation. Write \(Z\) carefully first, then differentiate.
+      ar: 'بمجرد حصولك على \(\ln Z\) تُستخرج كل المقادير الترموديناميكية بالاشتقاق. اكتب \(Z\) بعناية أولًا ثم اشتق.'
+    - en: Check limits — high and low temperature, classical limit, dimensions — before handing in an answer.
+      ar: تحقق من النهايات (درجات الحرارة المرتفعة والمنخفضة، النهاية الكلاسيكية) ومن الأبعاد قبل تسليم الإجابة.
+    - en: Practise with the past papers under timed conditions; most questions are close variants of problem-set exercises.
+      ar: تدرّب على الاختبارات السابقة في زمن محدد؛ فمعظم الأسئلة صيغ قريبة من تمارين أوراق المسائل.
+
+problems:
+  - title: { en: Two-level system and the Schottky anomaly, ar: نظام المستويين وشذوذ شوتكي }
+    difficulty: 1
+    statement:
+      en: |
+        A solid contains \(N\) independent, distinguishable impurities, each with two energy levels \(0\) and \(\varepsilon>0\), in equilibrium at temperature \(T\).
+        (a) Write the single-particle partition function. (b) Find the internal energy \(U(T)\). (c) Find the heat capacity \(C(T)\) and its behaviour at low and high temperature.
+      ar: |
+        يحتوي جسم صلب على \(N\) شائبة مستقلة وقابلة للتمييز، لكلٍّ منها مستويا طاقة \(0\) و\(\varepsilon>0\)، في حالة توازن عند درجة الحرارة \(T\).
+        (أ) اكتب دالة التجزئة لجسيم واحد. (ب) أوجد الطاقة الداخلية \(U(T)\). (ج) أوجد السعة الحرارية \(C(T)\) وسلوكها عند درجات الحرارة المنخفضة والمرتفعة.
+    hint:
+      en: 'Use \(U = -N\,\partial \ln Z_1/\partial\beta\) and \(C = \dd U/\dd T\). Introduce \(x = \beta\varepsilon = \varepsilon/k_BT\).'
+      ar: 'استعمل \(U = -N\,\partial \ln Z_1/\partial\beta\) و\(C = \dd U/\dd T\). وضع \(x = \beta\varepsilon = \varepsilon/k_BT\).'
+    solution:
+      en: |
+        (a) \(Z_1 = 1 + e^{-\beta\varepsilon}\).
+        (b) \[U = -N\pdv{\ln Z_1}{\beta} = \frac{N\varepsilon\, e^{-\beta\varepsilon}}{1+e^{-\beta\varepsilon}} = \frac{N\varepsilon}{e^{\beta\varepsilon}+1}.\]
+        (c) With \(x=\varepsilon/k_BT\), \(\dd x/\dd T = -x/T\):
+        \[C = \dv{U}{T} = N k_B\, \frac{x^2 e^{x}}{(e^{x}+1)^2}.\]
+        Low \(T\) (\(x\gg1\)): \(C \approx N k_B x^2 e^{-x}\to 0\) exponentially — too little thermal energy to excite the upper level.
+        High \(T\) (\(x\ll1\)): \(C \approx N k_B x^2/4 \to 0\) — both levels are almost equally populated and \(U\to N\varepsilon/2\) saturates.
+        Between these limits \(C\) has a maximum (the <em>Schottky anomaly</em>) at \(x\approx 2.40\), i.e. \(k_BT\approx 0.42\,\varepsilon\), with \(C_\text{max}\approx 0.44\,Nk_B\).
+      ar: |
+        (أ) \(Z_1 = 1 + e^{-\beta\varepsilon}\).
+        (ب) \[U = -N\pdv{\ln Z_1}{\beta} = \frac{N\varepsilon\, e^{-\beta\varepsilon}}{1+e^{-\beta\varepsilon}} = \frac{N\varepsilon}{e^{\beta\varepsilon}+1}.\]
+        (ج) بوضع \(x=\varepsilon/k_BT\) حيث \(\dd x/\dd T = -x/T\):
+        \[C = \dv{U}{T} = N k_B\, \frac{x^2 e^{x}}{(e^{x}+1)^2}.\]
+        عند \(T\) المنخفضة (\(x\gg1\)): \(C \approx N k_B x^2 e^{-x}\to 0\) أسيًّا، لأن الطاقة الحرارية لا تكفي لإثارة المستوى الأعلى.
+        عند \(T\) المرتفعة (\(x\ll1\)): \(C \approx N k_B x^2/4 \to 0\)، إذ يتساوى إشغال المستويين تقريبًا وتتشبّع \(U\to N\varepsilon/2\).
+        وبين هاتين النهايتين تبلغ \(C\) قيمة عظمى (<em>شذوذ شوتكي</em>) عند \(x\approx 2.40\) أي \(k_BT\approx 0.42\,\varepsilon\)، حيث \(C_\text{max}\approx 0.44\,Nk_B\).
+  - title: { en: Entropy of the universe when heating water, ar: إنتروبيا الكون عند تسخين الماء }
+    difficulty: 2
+    statement:
+      en: |
+        A 1.00 kg sample of water at \(20^\circ\text{C}\) is placed in thermal contact with a large reservoir at \(80^\circ\text{C}\) and reaches equilibrium. Take \(c = 4186\ \text{J kg}^{-1}\text{K}^{-1}\), constant.
+        Compute the entropy change of (a) the water, (b) the reservoir, (c) the universe. Comment on the sign of (c).
+      ar: |
+        توضع كتلة 1.00 kg من الماء عند \(20^\circ\text{C}\) في تماس حراري مع خزان حراري كبير عند \(80^\circ\text{C}\) حتى تبلغ التوازن. خذ \(c = 4186\ \text{J kg}^{-1}\text{K}^{-1}\) ثابتة.
+        احسب تغيّر الإنتروبيا (أ) للماء، (ب) للخزان، (ج) للكون. علّق على إشارة (ج).
+    hint:
+      en: 'The water''s entropy change is computed along a reversible heating path: \(\dd S = mc\,\dd T/T\). The reservoir stays at fixed \(T\).'
+      ar: 'يُحسب تغيّر إنتروبيا الماء على مسار تسخين عكوس: \(\dd S = mc\,\dd T/T\). أما الخزان فتبقى درجة حرارته ثابتة.'
+    solution:
+      en: |
+        \(T_1 = 293.15\ \text{K}\), \(T_2 = 353.15\ \text{K}\).
+        (a) \[\Delta S_\text{w} = mc\ln\frac{T_2}{T_1} = 4186\,\ln\frac{353.15}{293.15} \approx +779\ \text{J/K}.\]
+        (b) The reservoir gives \(Q = mc\,(T_2-T_1) = 4186\times 60 = 2.51\times10^5\ \text{J}\) at constant \(T_2\):
+        \[\Delta S_\text{res} = -\frac{Q}{T_2} = -\frac{2.51\times10^5}{353.15}\approx -711\ \text{J/K}.\]
+        (c) \(\Delta S_\text{univ} = 779 - 711 \approx +68\ \text{J/K} > 0\).
+        Heat flowing across a finite temperature difference is irreversible, so the total entropy increases, as the second law requires.
+      ar: |
+        \(T_1 = 293.15\ \text{K}\) و\(T_2 = 353.15\ \text{K}\).
+        (أ) \[\Delta S_\text{w} = mc\ln\frac{T_2}{T_1} = 4186\,\ln\frac{353.15}{293.15} \approx +779\ \text{J/K}.\]
+        (ب) يعطي الخزان حرارة \(Q = mc\,(T_2-T_1) = 4186\times 60 = 2.51\times10^5\ \text{J}\) عند درجة الحرارة الثابتة \(T_2\):
+        \[\Delta S_\text{res} = -\frac{Q}{T_2} = -\frac{2.51\times10^5}{353.15}\approx -711\ \text{J/K}.\]
+        (ج) \(\Delta S_\text{univ} = 779 - 711 \approx +68\ \text{J/K} > 0\).
+        انتقال الحرارة عبر فرق منتهٍ في درجة الحرارة عملية غير عكوسة، لذا تزداد الإنتروبيا الكلية كما يقتضي القانون الثاني.
+  - title: { en: Van der Waals gas in a Joule expansion, ar: غاز فان دير فالس في تمدد جول }
+    difficulty: 2
+    statement:
+      en: |
+        (a) Using a Maxwell relation, show that \(\left(\pdv{U}{V}\right)_T = T\left(\pdv{p}{T}\right)_V - p\).
+        (b) For \(n\) moles of a van der Waals gas, \(\left(p + \frac{an^2}{V^2}\right)(V-nb) = nRT\), evaluate \((\partial U/\partial V)_T\).
+        (c) The gas expands freely into vacuum (Joule expansion) from \(V_1\) to \(V_2\). Assuming \(C_V\) constant, find the temperature change.
+      ar: |
+        (أ) باستعمال إحدى علاقات ماكسويل، بيّن أن \(\left(\pdv{U}{V}\right)_T = T\left(\pdv{p}{T}\right)_V - p\).
+        (ب) من أجل \(n\) مول من غاز فان دير فالس \(\left(p + \frac{an^2}{V^2}\right)(V-nb) = nRT\)، احسب \((\partial U/\partial V)_T\).
+        (ج) يتمدد الغاز تمددًا حرًّا في الفراغ (تمدد جول) من \(V_1\) إلى \(V_2\). بافتراض \(C_V\) ثابتة، أوجد تغيّر درجة الحرارة.
+    hint:
+      en: 'Start from \(\dd U = T\dd S - p\dd V\) and use \((\partial S/\partial V)_T = (\partial p/\partial T)_V\) from \(\dd F = -S\dd T - p\dd V\). In a Joule expansion \(\Delta U = 0\).'
+      ar: 'انطلق من \(\dd U = T\dd S - p\dd V\) واستعمل \((\partial S/\partial V)_T = (\partial p/\partial T)_V\) المستخرجة من \(\dd F = -S\dd T - p\dd V\). في تمدد جول يكون \(\Delta U = 0\).'
+    solution:
+      en: |
+        (a) Dividing \(\dd U = T\dd S - p\dd V\) by \(\dd V\) at constant \(T\): \((\partial U/\partial V)_T = T(\partial S/\partial V)_T - p\). The Maxwell relation from \(F\) gives \((\partial S/\partial V)_T=(\partial p/\partial T)_V\), hence the result.
+        (b) \(p = \dfrac{nRT}{V-nb} - \dfrac{an^2}{V^2}\), so \(T(\partial p/\partial T)_V = \dfrac{nRT}{V-nb}\) and
+        \[\left(\pdv{U}{V}\right)_T = \frac{an^2}{V^2}.\]
+        (For an ideal gas, \(a=0\) and \(U\) depends on \(T\) only.)
+        (c) \(\dd U = C_V\dd T + \dfrac{an^2}{V^2}\dd V = 0\), so
+        \[\Delta T = -\frac{an^2}{C_V}\left(\frac{1}{V_1}-\frac{1}{V_2}\right) < 0 .\]
+        The gas cools: work is done against the attractive intermolecular forces (the \(a\) term).
+      ar: |
+        (أ) بقسمة \(\dd U = T\dd S - p\dd V\) على \(\dd V\) عند \(T\) ثابتة: \((\partial U/\partial V)_T = T(\partial S/\partial V)_T - p\). وتعطي علاقة ماكسويل المستخرجة من \(F\) أن \((\partial S/\partial V)_T=(\partial p/\partial T)_V\)، ومنه النتيجة.
+        (ب) \(p = \dfrac{nRT}{V-nb} - \dfrac{an^2}{V^2}\)، إذن \(T(\partial p/\partial T)_V = \dfrac{nRT}{V-nb}\) و
+        \[\left(\pdv{U}{V}\right)_T = \frac{an^2}{V^2}.\]
+        (في الغاز المثالي \(a=0\) فتتعلق \(U\) بدرجة الحرارة وحدها.)
+        (ج) \(\dd U = C_V\dd T + \dfrac{an^2}{V^2}\dd V = 0\)، إذن
+        \[\Delta T = -\frac{an^2}{C_V}\left(\frac{1}{V_1}-\frac{1}{V_2}\right) < 0 .\]
+        يبرد الغاز، لأنه يبذل شغلًا ضد قوى التجاذب بين الجزيئات (الحد \(a\)).
+  - title: { en: Ideal gas from the partition function (Sackur–Tetrode), ar: الغاز المثالي من دالة التجزئة (معادلة ساكور-تترود) }
+    difficulty: 3
+    statement:
+      en: |
+        For \(N\) indistinguishable monatomic particles of mass \(m\) in a volume \(V\), the single-particle partition function is \(Z_1 = V/\lambda^3\) with \(\lambda = h/\sqrt{2\pi m k_BT}\).
+        Using \(Z_N = Z_1^N/N!\) and Stirling's formula, derive \(F\), the equation of state, \(U\) and the entropy \(S\). When is this treatment valid?
+      ar: |
+        من أجل \(N\) جسيمًا أحادي الذرة غير قابل للتمييز، كتلة كلٍّ منها \(m\)، في حجم \(V\)، دالة التجزئة لجسيم واحد هي \(Z_1 = V/\lambda^3\) حيث \(\lambda = h/\sqrt{2\pi m k_BT}\).
+        باستعمال \(Z_N = Z_1^N/N!\) وصيغة ستيرلنغ، استنتج \(F\) ومعادلة الحالة و\(U\) والإنتروبيا \(S\). متى تكون هذه المعالجة صالحة؟
+    hint:
+      en: '\(\ln N! \approx N\ln N - N\); \(F=-k_BT\ln Z_N\); \(p = -(\partial F/\partial V)_T\); \(S = (U-F)/T\); note \(\lambda^3 \propto \beta^{3/2}\).'
+      ar: '\(\ln N! \approx N\ln N - N\)؛ \(F=-k_BT\ln Z_N\)؛ \(p = -(\partial F/\partial V)_T\)؛ \(S = (U-F)/T\)؛ ولاحظ أن \(\lambda^3 \propto \beta^{3/2}\).'
+    solution:
+      en: |
+        \[\ln Z_N = N\ln\frac{V}{\lambda^3} - N\ln N + N \;\Rightarrow\; F = -Nk_BT\left[\ln\frac{V}{N\lambda^3}+1\right].\]
+        Equation of state: \(p = -(\partial F/\partial V)_T = Nk_BT/V\), i.e. \(pV = Nk_BT\).
+        Energy: since \(\ln Z_N = -\tfrac{3N}{2}\ln\beta + (\text{terms independent of }\beta)\),
+        \[U = -\pdv{\ln Z_N}{\beta} = \frac{3N}{2\beta} = \tfrac32 Nk_BT .\]
+        Entropy:
+        \[S = \frac{U-F}{T} = Nk_B\left[\ln\frac{V}{N\lambda^3} + \frac52\right]\quad\text{(Sackur–Tetrode)}.\]
+        The \(1/N!\) makes \(S\) extensive (it resolves the Gibbs paradox). The treatment is valid when the gas is non-degenerate, \(n\lambda^3 \ll 1\): the mean interparticle spacing is much larger than the thermal wavelength, so each state is rarely multiply occupied.
+      ar: |
+        \[\ln Z_N = N\ln\frac{V}{\lambda^3} - N\ln N + N \;\Rightarrow\; F = -Nk_BT\left[\ln\frac{V}{N\lambda^3}+1\right].\]
+        معادلة الحالة: \(p = -(\partial F/\partial V)_T = Nk_BT/V\)، أي \(pV = Nk_BT\).
+        الطاقة: بما أن \(\ln Z_N = -\tfrac{3N}{2}\ln\beta + (\text{حدود لا تتعلق بـ }\beta)\)،
+        \[U = -\pdv{\ln Z_N}{\beta} = \frac{3N}{2\beta} = \tfrac32 Nk_BT .\]
+        الإنتروبيا:
+        \[S = \frac{U-F}{T} = Nk_B\left[\ln\frac{V}{N\lambda^3} + \frac52\right]\quad\text{(Sackur–Tetrode)}.\]
+        يجعل العامل \(1/N!\) الإنتروبيا مقدارًا شاملًا (وبه تُحلّ مفارقة جيبس). وتصح المعالجة عندما يكون الغاز غير منحلّ، \(n\lambda^3 \ll 1\): أي أن المسافة المتوسطة بين الجسيمات أكبر بكثير من طول الموجة الحراري، فنادرًا ما تُشغَل الحالة الواحدة بأكثر من جسيم.
+  - title: { en: Einstein model of a solid, ar: نموذج أينشتاين للجسم الصلب }
+    difficulty: 2
+    statement:
+      en: |
+        Model a solid of \(N\) atoms as \(3N\) independent quantum harmonic oscillators of the same angular frequency \(\omega\), with energies \(E_n = (n+\tfrac12)\hbar\omega\).
+        Find the mean energy and the heat capacity, and discuss the high- and low-temperature limits.
+      ar: |
+        نمذج جسمًا صلبًا من \(N\) ذرة بـ \(3N\) مهتزًّا توافقيًّا كموميًّا مستقلًّا لها التردد الزاوي نفسه \(\omega\)، وطاقاتها \(E_n = (n+\tfrac12)\hbar\omega\).
+        أوجد الطاقة المتوسطة والسعة الحرارية، وناقش النهايتين عند درجات الحرارة المرتفعة والمنخفضة.
+    hint:
+      en: 'Sum the geometric series for \(Z_1\). Use \(x = \hbar\omega/k_BT\) and expand \(e^x\) for small \(x\).'
+      ar: 'اجمع المتسلسلة الهندسية لحساب \(Z_1\). استعمل \(x = \hbar\omega/k_BT\) ونشر \(e^x\) عند \(x\) الصغيرة.'
+    solution:
+      en: |
+        \[Z_1 = \sum_{n=0}^{\infty} e^{-\beta\hbar\omega(n+1/2)} = \frac{e^{-\beta\hbar\omega/2}}{1-e^{-\beta\hbar\omega}},\qquad
+        \expval{E} = -\pdv{\ln Z_1}{\beta} = \frac{\hbar\omega}{2} + \frac{\hbar\omega}{e^{\beta\hbar\omega}-1}.\]
+        For \(3N\) oscillators, \(U = 3N\expval{E}\) and with \(x=\hbar\omega/k_BT\):
+        \[C_V = 3Nk_B\,\frac{x^2 e^{x}}{(e^{x}-1)^2}.\]
+        High \(T\) (\(x\ll1\)): \((e^x-1)^2\approx x^2\), so \(C_V\to 3Nk_B = 3R\) per mole — the Dulong–Petit law, as equipartition predicts.
+        Low \(T\) (\(x\gg1\)): \(C_V\approx 3Nk_B x^2 e^{-x}\), which vanishes exponentially. Experiment shows \(C_V\propto T^3\): a single frequency cannot describe the low-energy acoustic phonons, which is corrected by the Debye model.
+      ar: |
+        \[Z_1 = \sum_{n=0}^{\infty} e^{-\beta\hbar\omega(n+1/2)} = \frac{e^{-\beta\hbar\omega/2}}{1-e^{-\beta\hbar\omega}},\qquad
+        \expval{E} = -\pdv{\ln Z_1}{\beta} = \frac{\hbar\omega}{2} + \frac{\hbar\omega}{e^{\beta\hbar\omega}-1}.\]
+        من أجل \(3N\) مهتزًّا يكون \(U = 3N\expval{E}\)، وبوضع \(x=\hbar\omega/k_BT\):
+        \[C_V = 3Nk_B\,\frac{x^2 e^{x}}{(e^{x}-1)^2}.\]
+        عند \(T\) المرتفعة (\(x\ll1\)): \((e^x-1)^2\approx x^2\)، فإن \(C_V\to 3Nk_B = 3R\) لكل مول، وهو قانون ديولونغ-بوتي كما تتنبأ مبرهنة تساوي توزيع الطاقة.
+        عند \(T\) المنخفضة (\(x\gg1\)): \(C_V\approx 3Nk_B x^2 e^{-x}\) وتتلاشى أسيًّا. غير أن التجربة تُظهر أن \(C_V\propto T^3\)؛ فتردد وحيد لا يصف الفونونات الصوتية منخفضة الطاقة، وهو ما يصحّحه نموذج ديباي.
+  - title: { en: Fermi energy of conduction electrons in copper, ar: طاقة فيرمي لإلكترونات التوصيل في النحاس }
+    difficulty: 3
+    statement:
+      en: |
+        Copper has \(n = 8.47\times10^{28}\) conduction electrons per m³. Treating them as an ideal Fermi gas (spin \(\tfrac12\)) at \(T=0\):
+        (a) derive \(E_F = \dfrac{\hbar^2}{2m}(3\pi^2 n)^{2/3}\) and evaluate it in eV, together with the Fermi temperature \(T_F\);
+        (b) using \(C_\text{el}\approx \dfrac{\pi^2}{2}Nk_B\dfrac{T}{T_F}\), compare the electronic heat capacity at 300 K with the classical value \(\tfrac32 Nk_B\).
+      ar: |
+        يحتوي النحاس على \(n = 8.47\times10^{28}\) إلكترون توصيل في كل m³. بمعاملتها كغاز فيرمي مثالي (اللف المغزلي \(\tfrac12\)) عند \(T=0\):
+        (أ) استنتج \(E_F = \dfrac{\hbar^2}{2m}(3\pi^2 n)^{2/3}\) واحسب قيمتها بالإلكترون-فولت مع درجة حرارة فيرمي \(T_F\)؛
+        (ب) باستعمال \(C_\text{el}\approx \dfrac{\pi^2}{2}Nk_B\dfrac{T}{T_F}\)، قارن السعة الحرارية الإلكترونية عند 300 K بالقيمة الكلاسيكية \(\tfrac32 Nk_B\).
+    hint:
+      en: At \(T=0\) all states inside the Fermi sphere of radius \(k_F\) are filled, two electrons (spin up and down) per \(k\)-state; each \(k\)-state occupies \((2\pi)^3/V\) of \(k\)-space.
+      ar: 'عند \(T=0\) تُملأ كل الحالات داخل كرة فيرمي ذات نصف القطر \(k_F\)، بإلكترونين (لف مغزلي علوي وسفلي) لكل حالة \(k\)؛ وتشغل كل حالة \(k\) حجمًا قدره \((2\pi)^3/V\) من فضاء \(k\).'
+    solution:
+      en: |
+        (a) Counting states: \(N = 2\cdot\dfrac{V}{(2\pi)^3}\cdot\dfrac{4\pi k_F^3}{3}\Rightarrow n = \dfrac{k_F^3}{3\pi^2}\), so \(k_F = (3\pi^2 n)^{1/3}\) and \(E_F = \hbar^2k_F^2/2m\) gives the formula.
+        Numerically \(k_F = (3\pi^2\times 8.47\times10^{28})^{1/3} = 1.36\times10^{10}\ \text{m}^{-1}\) and
+        \[E_F = \frac{(1.055\times10^{-34})^2(1.36\times10^{10})^2}{2\times 9.11\times10^{-31}} \approx 1.13\times10^{-18}\ \text{J}\approx 7.0\ \text{eV},\qquad T_F = \frac{E_F}{k_B}\approx 8.2\times10^{4}\ \text{K}.\]
+        (b) At 300 K, \(T/T_F\approx 3.7\times10^{-3}\):
+        \[C_\text{el}\approx \frac{\pi^2}{2}\times 3.7\times10^{-3}\,Nk_B \approx 0.018\,Nk_B,\]
+        about 1% of the classical \(1.5\,Nk_B\). Only electrons within \(\sim k_BT\) of \(E_F\) can be excited (Pauli exclusion), which explains why conduction electrons contribute so little to the heat capacity of metals at room temperature.
+      ar: |
+        (أ) بعدّ الحالات: \(N = 2\cdot\dfrac{V}{(2\pi)^3}\cdot\dfrac{4\pi k_F^3}{3}\Rightarrow n = \dfrac{k_F^3}{3\pi^2}\)، إذن \(k_F = (3\pi^2 n)^{1/3}\)، ومن \(E_F = \hbar^2k_F^2/2m\) نحصل على الصيغة.
+        عدديًّا \(k_F = (3\pi^2\times 8.47\times10^{28})^{1/3} = 1.36\times10^{10}\ \text{m}^{-1}\) و
+        \[E_F = \frac{(1.055\times10^{-34})^2(1.36\times10^{10})^2}{2\times 9.11\times10^{-31}} \approx 1.13\times10^{-18}\ \text{J}\approx 7.0\ \text{eV},\qquad T_F = \frac{E_F}{k_B}\approx 8.2\times10^{4}\ \text{K}.\]
+        (ب) عند 300 K تكون \(T/T_F\approx 3.7\times10^{-3}\):
+        \[C_\text{el}\approx \frac{\pi^2}{2}\times 3.7\times10^{-3}\,Nk_B \approx 0.018\,Nk_B,\]
+        أي نحو 1% من القيمة الكلاسيكية \(1.5\,Nk_B\). فلا يمكن إثارة إلا الإلكترونات الواقعة ضمن \(\sim k_BT\) من \(E_F\) (مبدأ الاستبعاد لباولي)، وهذا ما يفسّر ضآلة إسهام إلكترونات التوصيل في السعة الحرارية للمعادن عند درجة حرارة الغرفة.
+
+quizzes:
+  - title: { en: 'Temperature, probability and the Boltzmann factor', ar: 'درجة الحرارة والاحتمالات وعامل بولتزمان' }
+    questions:
+      - q:
+          en: 'Two non-degenerate levels are separated by \(\Delta E = k_BT\). What is the ratio of the upper to the lower population?'
+          ar: 'مستويان غير منحلّين يفصل بينهما \(\Delta E = k_BT\). ما نسبة إشغال المستوى الأعلى إلى إشغال المستوى الأدنى؟'
+        options:
+          - '\(e\approx 2.72\)'
+          - '\(e^{-2}\approx 0.14\)'
+          - '\(e^{-1}\approx 0.37\)'
+          - '\(0.5\)'
+        answer: 2
+        explain:
+          en: 'The Boltzmann factor gives \(N_2/N_1 = e^{-\Delta E/k_BT} = e^{-1}\approx 0.37\).'
+          ar: 'يعطي عامل بولتزمان \(N_2/N_1 = e^{-\Delta E/k_BT} = e^{-1}\approx 0.37\).'
+      - q:
+          en: 'What is the most probable speed in the Maxwell–Boltzmann distribution \(f(v)\propto v^2 e^{-mv^2/2k_BT}\)?'
+          ar: 'ما السرعة الأكثر احتمالًا في توزيع ماكسويل-بولتزمان \(f(v)\propto v^2 e^{-mv^2/2k_BT}\)؟'
+        options:
+          - '\(\sqrt{2k_BT/m}\)'
+          - '\(\sqrt{3k_BT/m}\)'
+          - '\(\sqrt{8k_BT/\pi m}\)'
+          - '\(\sqrt{k_BT/m}\)'
+        answer: 0
+        explain:
+          en: 'Setting \(\dd f/\dd v = 0\): \(2v - v^3 m/k_BT = 0\Rightarrow v_p=\sqrt{2k_BT/m}\). \(\sqrt{8k_BT/\pi m}\) is the mean speed and \(\sqrt{3k_BT/m}\) the rms speed.'
+          ar: 'بوضع \(\dd f/\dd v = 0\): \(2v - v^3 m/k_BT = 0\Rightarrow v_p=\sqrt{2k_BT/m}\). أما \(\sqrt{8k_BT/\pi m}\) فهي السرعة المتوسطة و\(\sqrt{3k_BT/m}\) جذر متوسط مربع السرعة.'
+      - q:
+          en: 'If the absolute temperature of an ideal gas is multiplied by 4, the rms speed of its molecules is'
+          ar: 'إذا ضُربت درجة الحرارة المطلقة لغاز مثالي في 4، فإن جذر متوسط مربع سرعة جزيئاته'
+        options:
+          - { en: 'multiplied by 4', ar: 'يُضرب في 4' }
+          - { en: 'multiplied by 16', ar: 'يُضرب في 16' }
+          - { en: 'unchanged', ar: 'لا يتغير' }
+          - { en: 'multiplied by 2', ar: 'يُضرب في 2' }
+        answer: 3
+        explain:
+          en: '\(v_\text{rms}=\sqrt{3k_BT/m}\propto\sqrt{T}\), so a factor 4 in \(T\) gives a factor 2 in \(v_\text{rms}\).'
+          ar: '\(v_\text{rms}=\sqrt{3k_BT/m}\propto\sqrt{T}\)، فمضاعفة \(T\) أربع مرات تضاعف \(v_\text{rms}\) مرتين.'
+      - q:
+          en: 'The zeroth law of thermodynamics'
+          ar: 'ينص القانون الصفري للديناميكا الحرارية على'
+        options:
+          - { en: 'states that absolute zero cannot be reached', ar: 'أن الصفر المطلق لا يمكن بلوغه' }
+          - { en: 'makes thermal equilibrium transitive and so defines temperature', ar: 'أن التوازن الحراري علاقة متعدية، ومنه تعريف درجة الحرارة' }
+          - { en: 'states that energy is conserved', ar: 'أن الطاقة محفوظة' }
+          - { en: 'states that entropy never decreases', ar: 'أن الإنتروبيا لا تتناقص أبدًا' }
+        answer: 1
+        explain:
+          en: 'If A is in equilibrium with C and B with C, then A is in equilibrium with B. This allows a common label — temperature — to be assigned. The other options are the first, second and third laws.'
+          ar: 'إذا كان A في توازن مع C وكان B في توازن مع C فإن A في توازن مع B، وهذا يسمح بإسناد مقدار مشترك هو درجة الحرارة. أما الخيارات الأخرى فهي القوانين الأول والثاني والثالث.'
+      - q:
+          en: 'The energy of a system is the sum of \(N\) independent, identical contributions. How does the relative fluctuation \(\sigma_E/\expval{E}\) scale with \(N\)?'
+          ar: 'طاقة نظام هي مجموع \(N\) إسهامًا مستقلًّا ومتماثلًا. كيف يتغير التذبذب النسبي \(\sigma_E/\expval{E}\) مع \(N\)؟'
+        options:
+          - { en: 'independent of \(N\)', ar: 'لا يتعلق بـ \(N\)' }
+          - '\(1/\sqrt{N}\)'
+          - '\(1/N\)'
+          - '\(\sqrt{N}\)'
+        answer: 1
+        explain:
+          en: 'Means add: \(\expval{E}\propto N\). Variances of independent variables add: \(\sigma_E^2\propto N\). Hence \(\sigma_E/\expval{E}\propto 1/\sqrt N\), about \(10^{-12}\) for a mole — why thermodynamics is so sharp.'
+          ar: 'تُجمع المتوسطات: \(\expval{E}\propto N\)، وتُجمع تباينات المتغيرات المستقلة: \(\sigma_E^2\propto N\). إذن \(\sigma_E/\expval{E}\propto 1/\sqrt N\)، أي نحو \(10^{-12}\) لمول واحد، ولهذا تكون نتائج الديناميكا الحرارية دقيقة إلى هذا الحد.'
+  - title: { en: 'Laws of thermodynamics and entropy', ar: 'قوانين الديناميكا الحرارية والإنتروبيا' }
+    questions:
+      - q:
+          en: 'What is the maximum efficiency of a heat engine operating between reservoirs at 600 K and 300 K?'
+          ar: 'ما أقصى كفاءة لآلة حرارية تعمل بين خزانين عند 600 K و300 K؟'
+        options:
+          - '100%'
+          - '33%'
+          - '67%'
+          - '50%'
+        answer: 3
+        explain:
+          en: 'The Carnot efficiency \(\eta = 1 - T_c/T_h = 1 - 300/600 = 0.5\). No engine between these reservoirs can do better.'
+          ar: 'كفاءة كارنو \(\eta = 1 - T_c/T_h = 1 - 300/600 = 0.5\)، ولا يمكن لأي آلة تعمل بين هذين الخزانين أن تتجاوزها.'
+      - q:
+          en: 'One mole of ideal gas undergoes a free (Joule) expansion into vacuum, doubling its volume. Its entropy change is'
+          ar: 'يخضع مول واحد من غاز مثالي لتمدد حر (تمدد جول) في الفراغ فيتضاعف حجمه. تغيّر إنتروبيته يساوي'
+        options:
+          - '\(R\ln 2\)'
+          - '\(-R\ln 2\)'
+          - '\(R/2\)'
+          - '\(0\)'
+        answer: 0
+        explain:
+          en: 'No heat flows, but the process is irreversible. \(S\) is a function of state, so compute along a reversible isotherm (\(T\) is unchanged for an ideal gas): \(\Delta S = R\ln(V_2/V_1) = R\ln2\approx 5.76\ \text{J/K}\).'
+          ar: 'لا تنتقل حرارة لكن التحول غير عكوس. وبما أن \(S\) دالة حالة نحسبها على مسار عكوس متساوي درجة الحرارة (لا تتغير \(T\) في الغاز المثالي): \(\Delta S = R\ln(V_2/V_1) = R\ln2\approx 5.76\ \text{J/K}\).'
+      - q:
+          en: 'For a reversible adiabatic process of an ideal gas with \(\gamma = C_p/C_V\), which quantity is constant?'
+          ar: 'في تحول كظوم عكوس لغاز مثالي حيث \(\gamma = C_p/C_V\)، أيّ المقادير التالية يبقى ثابتًا؟'
+        options:
+          - '\(TV^\gamma\)'
+          - '\(p/T\)'
+          - '\(pV^\gamma\)'
+          - '\(pV\)'
+        answer: 2
+        explain:
+          en: 'From \(\dd U = -p\,\dd V\) with \(\dd U = C_V\dd T\) and \(pV=nRT\) one finds \(pV^\gamma\) = const (equivalently \(TV^{\gamma-1}\) = const). \(pV\) = const is the isotherm.'
+          ar: 'من \(\dd U = -p\,\dd V\) مع \(\dd U = C_V\dd T\) و\(pV=nRT\) نجد أن \(pV^\gamma\) ثابت (أو ما يكافئه \(TV^{\gamma-1}\) ثابت). أما \(pV\) ثابت فهو منحنى التحول متساوي درجة الحرارة.'
+      - q:
+          en: 'Which Maxwell relation follows from \(\dd F = -S\,\dd T - p\,\dd V\)?'
+          ar: 'أيّ علاقات ماكسويل تنتج من \(\dd F = -S\,\dd T - p\,\dd V\)؟'
+        options:
+          - '\((\partial T/\partial V)_S = -(\partial p/\partial S)_V\)'
+          - '\((\partial S/\partial p)_T = -(\partial V/\partial T)_p\)'
+          - '\((\partial T/\partial p)_S = (\partial V/\partial S)_p\)'
+          - '\((\partial S/\partial V)_T = (\partial p/\partial T)_V\)'
+        answer: 3
+        explain:
+          en: 'Equality of mixed second derivatives of \(F(T,V)\): \(\partial_V(-S) = \partial_T(-p)\). The other relations come from \(U\), \(G\) and \(H\) respectively.'
+          ar: 'من تساوي المشتقات الثانية المختلطة لـ \(F(T,V)\): \(\partial_V(-S) = \partial_T(-p)\). أما العلاقات الأخرى فتنتج على الترتيب من \(U\) و\(G\) و\(H\).'
+      - q:
+          en: 'A consequence of the third law is that, as \(T\to0\),'
+          ar: 'من نتائج القانون الثالث أنه عندما \(T\to0\)'
+        options:
+          - { en: '\(T=0\) is reached in a finite number of steps', ar: 'نبلغ \(T=0\) في عدد منتهٍ من الخطوات' }
+          - { en: 'all heat capacities tend to zero', ar: 'تؤول كل السعات الحرارية إلى الصفر' }
+          - { en: 'heat capacities tend to a constant', ar: 'تؤول السعات الحرارية إلى قيمة ثابتة' }
+          - { en: 'the entropy diverges', ar: 'تتباعد الإنتروبيا إلى اللانهاية' }
+        answer: 1
+        explain:
+          en: 'Since \(S(T) = \int_0^T C(T'')\,\dd T''/T''\) must stay finite and tend to a constant, \(C\to 0\). The third law also forbids reaching \(T=0\) in a finite number of steps.'
+          ar: 'بما أن \(S(T) = \int_0^T C(T'')\,\dd T''/T''\) يجب أن تبقى منتهية وتؤول إلى ثابت، فلا بد أن \(C\to 0\). كما يمنع القانون الثالث بلوغ \(T=0\) في عدد منتهٍ من الخطوات.'
+  - title: { en: 'Partition function and equipartition', ar: 'دالة التجزئة وتساوي توزيع الطاقة' }
+    questions:
+      - q:
+          en: 'What is the molar \(C_V\) of a diatomic ideal gas at room temperature, with vibrations frozen out?'
+          ar: 'ما قيمة \(C_V\) المولية لغاز مثالي ثنائي الذرة عند درجة حرارة الغرفة، حيث الاهتزازات مجمَّدة؟'
+        options:
+          - '\(\tfrac72 R\)'
+          - '\(3R\)'
+          - '\(\tfrac52 R\)'
+          - '\(\tfrac32 R\)'
+        answer: 2
+        explain:
+          en: 'Three translational and two rotational quadratic terms give \(5\times\tfrac12 R\). Vibration (two more terms) only contributes when \(k_BT\gtrsim\hbar\omega\), which needs several thousand K.'
+          ar: 'ثلاثة حدود تربيعية انتقالية وحدّان دورانيان تعطي \(5\times\tfrac12 R\). ولا يسهم الاهتزاز (بحدّين إضافيين) إلا عندما \(k_BT\gtrsim\hbar\omega\)، أي عند آلاف الكلفنات.'
+      - q:
+          en: 'What is the partition function of one particle with two levels, of energies \(0\) and \(\varepsilon\)?'
+          ar: 'ما دالة التجزئة لجسيم واحد له مستويان طاقتاهما \(0\) و\(\varepsilon\)؟'
+        options:
+          - '\(1+e^{-\beta\varepsilon}\)'
+          - '\(e^{-\beta\varepsilon}\)'
+          - '\(1-e^{-\beta\varepsilon}\)'
+          - '\(2\cosh\beta\varepsilon\)'
+        answer: 0
+        explain:
+          en: '\(Z=\sum_i e^{-\beta E_i} = e^{0} + e^{-\beta\varepsilon}\).'
+          ar: '\(Z=\sum_i e^{-\beta E_i} = e^{0} + e^{-\beta\varepsilon}\).'
+      - q:
+          en: 'In the canonical ensemble, the mean energy is obtained from \(Z\) as'
+          ar: 'في المجموعة القانونية، تُستخرج الطاقة المتوسطة من \(Z\) بالعلاقة'
+        options:
+          - '\(U = -\partial\ln Z/\partial\beta\)'
+          - '\(U = -k_BT\ln Z\)'
+          - '\(U = k_B\ln Z\)'
+          - '\(U = \partial Z/\partial T\)'
+        answer: 0
+        explain:
+          en: '\(-\partial_\beta\ln Z = \sum_i E_i e^{-\beta E_i}/Z = \expval{E}\). Note \(-k_BT\ln Z\) is the Helmholtz free energy \(F\), not \(U\).'
+          ar: '\(-\partial_\beta\ln Z = \sum_i E_i e^{-\beta E_i}/Z = \expval{E}\). ولاحظ أن \(-k_BT\ln Z\) هي طاقة هلمهولتز الحرة \(F\) وليست \(U\).'
+      - q:
+          en: 'Which thermodynamic potential is directly given by \(-k_BT\ln Z\)?'
+          ar: 'أيّ الكمونات الترموديناميكية يساوي مباشرةً \(-k_BT\ln Z\)؟'
+        options:
+          - { en: 'Enthalpy \(H\)', ar: 'الإنثالبي \(H\)' }
+          - { en: 'Internal energy \(U\)', ar: 'الطاقة الداخلية \(U\)' }
+          - { en: 'Helmholtz free energy \(F\)', ar: 'طاقة هلمهولتز الحرة \(F\)' }
+          - { en: 'Gibbs free energy \(G\)', ar: 'طاقة جيبس الحرة \(G\)' }
+        answer: 2
+        explain:
+          en: 'The canonical ensemble has fixed \(T, V, N\), whose natural potential is \(F(T,V,N) = -k_BT\ln Z\).'
+          ar: 'متغيرات المجموعة القانونية الثابتة هي \(T, V, N\)، وكمونها الطبيعي \(F(T,V,N) = -k_BT\ln Z\).'
+      - q:
+          en: 'According to classical equipartition, the mean total energy of a one-dimensional harmonic oscillator at temperature \(T\) is'
+          ar: 'وفق مبرهنة تساوي توزيع الطاقة الكلاسيكية، الطاقة الكلية المتوسطة لمهتز توافقي أحادي البعد عند درجة الحرارة \(T\) هي'
+        options:
+          - '\(\hbar\omega/2\)'
+          - '\(k_BT\)'
+          - '\(\tfrac12 k_BT\)'
+          - '\(\tfrac32 k_BT\)'
+        answer: 1
+        explain:
+          en: 'Two quadratic terms, \(p^2/2m\) and \(\tfrac12 m\omega^2x^2\), each contribute \(\tfrac12 k_BT\). This is also the high-\(T\) limit of the quantum result.'
+          ar: 'هناك حدّان تربيعيان \(p^2/2m\) و\(\tfrac12 m\omega^2x^2\)، يسهم كلٌّ منهما بـ \(\tfrac12 k_BT\). وهذه أيضًا نهاية النتيجة الكمومية عند \(T\) المرتفعة.'
+  - title: { en: 'Photons, phonons and quantum gases', ar: 'الفوتونات والفونونات والغازات الكمومية' }
+    questions:
+      - q:
+          en: 'What is the Fermi–Dirac occupation of a state whose energy equals the chemical potential, \(E=\mu\)?'
+          ar: 'ما إشغال فيرمي-ديراك لحالة طاقتها تساوي الكمون الكيميائي \(E=\mu\)؟'
+        options:
+          - '\(1\)'
+          - '\(0\)'
+          - '\(1/e\)'
+          - '\(1/2\)'
+        answer: 3
+        explain:
+          en: '\(\bar n = 1/(e^{0}+1) = 1/2\) at any temperature.'
+          ar: '\(\bar n = 1/(e^{0}+1) = 1/2\) عند أي درجة حرارة.'
+      - q:
+          en: 'The absolute temperature of a black body is doubled. Its total emitted power becomes'
+          ar: 'تضاعفت درجة الحرارة المطلقة لجسم أسود. تصبح القدرة الكلية التي يشعّها'
+        options:
+          - { en: '8 times larger', ar: 'أكبر بـ 8 مرات' }
+          - { en: '16 times larger', ar: 'أكبر بـ 16 مرة' }
+          - { en: '4 times larger', ar: 'أكبر بـ 4 مرات' }
+          - { en: '2 times larger', ar: 'أكبر بمرتين' }
+        answer: 1
+        explain:
+          en: 'Stefan–Boltzmann law: \(P = \sigma A T^4\), so \(2^4 = 16\).'
+          ar: 'قانون ستيفان-بولتزمان: \(P = \sigma A T^4\)، إذن \(2^4 = 16\).'
+      - q:
+          en: 'In the Debye model, the lattice heat capacity at low temperature varies as'
+          ar: 'في نموذج ديباي، تتغير السعة الحرارية للشبكة عند درجات الحرارة المنخفضة وفق'
+        options:
+          - '\(T\)'
+          - '\(e^{-\Theta/T}\)'
+          - { en: 'constant', ar: 'قيمة ثابتة' }
+          - '\(T^3\)'
+        answer: 3
+        explain:
+          en: 'Only long-wavelength acoustic phonons with \(\hbar\omega\lesssim k_BT\) are excited. Their number grows as \(T^3\) and each carries \(\sim k_BT\), so \(U\propto T^4\) and \(C\propto T^3\). The exponential is the Einstein-model result.'
+          ar: 'لا تُثار إلا الفونونات الصوتية طويلة الموجة التي تحقق \(\hbar\omega\lesssim k_BT\)، وعددها يتناسب مع \(T^3\) وكلٌّ منها يحمل \(\sim k_BT\)، فتكون \(U\propto T^4\) و\(C\propto T^3\). أما السلوك الأسي فهو نتيجة نموذج أينشتاين.'
+      - q:
+          en: 'What is the chemical potential of black-body photons?'
+          ar: 'ما قيمة الكمون الكيميائي لفوتونات الجسم الأسود؟'
+        options:
+          - '\(-k_BT\)'
+          - '\(\hbar\omega\)'
+          - '\(0\)'
+          - '\(k_BT\)'
+        answer: 2
+        explain:
+          en: 'Photons are freely created and absorbed by the walls, so \(N\) is not conserved. Minimising \(F\) with respect to \(N\) gives \(\mu = (\partial F/\partial N)_{T,V} = 0\).'
+          ar: 'تُخلَق الفوتونات وتُمتص بحرية في الجدران، فلا يكون \(N\) محفوظًا، وتصغير \(F\) بالنسبة إلى \(N\) يعطي \(\mu = (\partial F/\partial N)_{T,V} = 0\).'
+      - q:
+          en: 'For an ideal Bose gas in 3D below \(T_c\), what fraction of particles is in the ground state?'
+          ar: 'في غاز بوز مثالي ثلاثي الأبعاد تحت \(T_c\)، ما نسبة الجسيمات الموجودة في الحالة الأساسية؟'
+        options:
+          - '\(1-(T/T_c)^{3/2}\)'
+          - '\((T/T_c)^{3/2}\)'
+          - '\(1-(T/T_c)^{3}\)'
+          - '\(1-T/T_c\)'
+        answer: 0
+        explain:
+          en: 'Below \(T_c\) (where \(\mu\to 0\)), the excited states can hold at most \(N(T/T_c)^{3/2}\) particles; the rest, \(N_0/N = 1-(T/T_c)^{3/2}\), condense into the ground state.'
+          ar: 'تحت \(T_c\) (حيث \(\mu\to 0\)) لا تستوعب الحالات المثارة أكثر من \(N(T/T_c)^{3/2}\) جسيمًا، ويتكاثف الباقي \(N_0/N = 1-(T/T_c)^{3/2}\) في الحالة الأساسية.'
+
+textbooks:
+  required:
+    - { authors: S. J. Blundell & K. M. Blundell, title: Concepts in Thermal Physics, edition: 2nd, publisher: Oxford University Press, year: 2010 }
+  recommended:
+    - { authors: F. Reif, title: Fundamentals of Statistical and Thermal Physics, publisher: Waveland Press (reissue), year: 2008 }
+    - { authors: D. V. Schroeder, title: An Introduction to Thermal Physics, publisher: Addison-Wesley, year: 2000 }
+    - { authors: F. Mandl, title: Statistical Physics, edition: 2nd, publisher: Wiley, year: 1988 }
+    - { authors: T. L. Hill, title: An Introduction to Statistical Thermodynamics, publisher: Dover Publications, year: 1987 }
+    - { authors: M. Scott Shell, title: 'Thermodynamics and Statistical Mechanics: An Integrated Approach', publisher: Cambridge University Press, year: 2015 }
+    - { authors: D. A. McQuarrie, title: Statistical Mechanics, edition: 2nd, publisher: University Science Books, year: 2000 }
+    - { authors: M. Kardar, title: Statistical Physics of Particles, publisher: Cambridge University Press, year: 2007 }
+  online:
+    - title: { en: 'MIT OCW 8.044 — Statistical Physics I', ar: 'مقرر MIT OCW 8.044 — الفيزياء الإحصائية 1' }
+      url: https://ocw.mit.edu/courses/physics/8-044-statistical-physics-i-spring-2013/
+      note: { en: 'Full lecture notes, problem sets and exams at exactly this level.', ar: مذكرات محاضرات كاملة وأوراق مسائل واختبارات في المستوى نفسه تمامًا. }
+    - title: { en: 'MIT OCW 8.08 — Statistical Physics II', ar: 'مقرر MIT OCW 8.08 — الفيزياء الإحصائية 2' }
+      url: https://ocw.mit.edu/courses/physics/8-08-statistical-physics-ii-spring-2005/
+      note: { en: A follow-up course for those who want to go further., ar: مقرر لاحق لمن يرغب في التعمق أكثر. }
+    - title: { en: 'MIT OCW 5.60 — Thermodynamics & Kinetics', ar: 'مقرر MIT OCW 5.60 — الديناميكا الحرارية والحركية' }
+      url: https://ocw.mit.edu/courses/chemistry/5-60-thermodynamics-kinetics-spring-2008/
+      note: { en: Video lectures on classical thermodynamics from a chemist's viewpoint., ar: محاضرات مرئية في الديناميكا الحرارية الكلاسيكية من منظور كيميائي. }
+    - title: { en: 'D. Tong — Lectures on Statistical Physics (Cambridge)', ar: 'د. تونغ — محاضرات في الفيزياء الإحصائية (كامبريدج)' }
+      url: https://www.damtp.cam.ac.uk/user/tong/statphys.html
+      note: { en: 'Clear, free lecture notes covering ensembles, quantum gases and phase transitions.', ar: مذكرات مجانية واضحة تغطي المجموعات الإحصائية والغازات الكمومية والتحولات الطورية. }
+    - title: { en: 'A. Schekochihin — Kinetic Theory and Statistical Physics (Oxford)', ar: 'أ. شيكوتشيخين — النظرية الحركية والفيزياء الإحصائية (أكسفورد)' }
+      url: https://www-thphys.physics.ox.ac.uk/people/AlexanderSchekochihin/A1/
+      note: { en: Lecture notes with many worked problems., ar: مذكرات محاضرات مع كثير من المسائل المحلولة. }
+    - title: { en: 'Caltech Ph127 — Statistical Physics', ar: 'مقرر Caltech Ph127 — الفيزياء الإحصائية' }
+      url: https://www.pmaweb.caltech.edu/~mcc/Ph127/index.html
+      note: { en: Advanced notes for further reading., ar: مذكرات متقدمة للاستزادة. }
+    - title: { en: 'Gould & Tobochnik — Thermal and Statistical Physics (STP)', ar: 'غولد وتوبوتشنيك — الفيزياء الحرارية والإحصائية (STP)' }
+      url: https://stp.clarku.edu/notes/
+      note: { en: Free textbook with simulations; ideal for the computational mini-project., ar: كتاب مجاني مع محاكاة حاسوبية، مناسب جدًّا للمشروع الحسابي المصغّر. }
+
+glossary:
+  - { en: Temperature, ar: درجة الحرارة, fr: Température, def: { en: 'Statistically, \(1/k_BT = \dd\ln\Omega/\dd E\); the quantity that is equal for two systems in thermal equilibrium.', ar: 'إحصائيًّا \(1/k_BT = \dd\ln\Omega/\dd E\)؛ وهي المقدار الذي يتساوى بين نظامين في حالة توازن حراري.' } }
+  - { en: Thermal equilibrium, ar: التوازن الحراري, fr: Équilibre thermique, def: { en: State in which no net heat flows between systems in thermal contact., ar: حالة لا يحدث فيها انتقال صافٍ للحرارة بين نظامين في تماس حراري. } }
+  - { en: Microstate, ar: الحالة المجهرية, fr: Micro-état, def: { en: A complete specification of the state of every particle of the system., ar: تحديد كامل لحالة كل جسيم من جسيمات النظام. } }
+  - { en: Macrostate, ar: الحالة العيانية, fr: Macro-état, def: { en: 'The state specified by a few macroscopic variables (\(U, V, N\)...); it corresponds to many microstates.', ar: 'الحالة المحددة بعدد قليل من المتغيرات العيانية (\(U, V, N\)...)، وتقابلها حالات مجهرية كثيرة.' } }
+  - { en: Boltzmann factor, ar: عامل بولتزمان, fr: Facteur de Boltzmann, def: { en: 'The factor \(e^{-E/k_BT}\) giving the relative probability of a state of energy \(E\) at temperature \(T\).', ar: 'العامل \(e^{-E/k_BT}\) الذي يعطي الاحتمال النسبي لحالة طاقتها \(E\) عند درجة الحرارة \(T\).' } }
+  - { en: Internal energy, ar: الطاقة الداخلية, fr: Énergie interne, def: { en: 'Total microscopic (kinetic + potential) energy \(U\) of a system; a function of state.', ar: 'مجموع الطاقة المجهرية (الحركية والكامنة) \(U\) للنظام، وهي دالة حالة.' } }
+  - { en: Heat capacity, ar: السعة الحرارية, fr: Capacité thermique, def: { en: 'Heat needed per unit temperature rise, e.g. \(C_V = (\partial U/\partial T)_V\).', ar: 'الحرارة اللازمة لرفع درجة الحرارة بوحدة واحدة، مثل \(C_V = (\partial U/\partial T)_V\).' } }
+  - { en: Adiabatic process, ar: تحول كظوم, fr: Transformation adiabatique, def: { en: A process with no heat exchange; if reversible it is also isentropic., ar: تحول لا يحدث فيه تبادل حراري، وإن كان عكوسًا فهو أيضًا متساوي الإنتروبيا. } }
+  - { en: Isothermal process, ar: تحول متساوي درجة الحرارة, fr: Transformation isotherme, def: { en: A process at constant temperature., ar: تحول يجري عند درجة حرارة ثابتة. } }
+  - { en: Entropy, ar: الإنتروبيا, fr: Entropie, def: { en: 'Function of state with \(\dd S = \dd Q_\text{rev}/T\); statistically \(S = k_B\ln\Omega\).', ar: 'دالة حالة تحقق \(\dd S = \dd Q_\text{rev}/T\)، وإحصائيًّا \(S = k_B\ln\Omega\).' } }
+  - { en: Heat engine, ar: آلة حرارية, fr: Machine thermique, def: { en: A cyclic device converting part of the heat from a hot reservoir into work and rejecting the rest to a cold one., ar: جهاز دوري يحوّل جزءًا من الحرارة المأخوذة من خزان ساخن إلى شغل ويطرح الباقي إلى خزان بارد. } }
+  - { en: Carnot cycle, ar: دورة كارنو, fr: Cycle de Carnot, def: { en: 'A reversible cycle of two isotherms and two adiabats; efficiency \(1-T_c/T_h\).', ar: 'دورة عكوسة مكوّنة من تحولين متساويي درجة الحرارة وتحولين كظومين، كفاءتها \(1-T_c/T_h\).' } }
+  - { en: Efficiency, ar: الكفاءة (المردود), fr: Rendement, def: { en: 'Ratio of work output to heat input, \(\eta = W/Q_h\).', ar: 'نسبة الشغل الناتج إلى الحرارة المكتسبة \(\eta = W/Q_h\).' } }
+  - { en: Enthalpy, ar: الإنثالبي (المحتوى الحراري), fr: Enthalpie, def: { en: '\(H = U + pV\); the heat exchanged at constant pressure.', ar: '\(H = U + pV\)، وتساوي الحرارة المتبادلة عند ضغط ثابت.' } }
+  - { en: Helmholtz free energy, ar: طاقة هلمهولتز الحرة, fr: Énergie libre de Helmholtz, def: { en: '\(F = U - TS = -k_BT\ln Z\); minimal at equilibrium for fixed \(T, V\).', ar: '\(F = U - TS = -k_BT\ln Z\)، وتكون صغرى عند التوازن إذا ثبتت \(T\) و\(V\).' } }
+  - { en: Gibbs free energy, ar: طاقة جيبس الحرة, fr: Enthalpie libre de Gibbs, def: { en: '\(G = H - TS\); minimal at equilibrium for fixed \(T, p\); \(G = N\mu\).', ar: '\(G = H - TS\)، وتكون صغرى عند التوازن إذا ثبتت \(T\) و\(p\)؛ و\(G = N\mu\).' } }
+  - { en: Maxwell relations, ar: علاقات ماكسويل, fr: Relations de Maxwell, def: { en: Identities between partial derivatives that follow from the equality of mixed second derivatives of the potentials., ar: متطابقات بين مشتقات جزئية تنتج عن تساوي المشتقات الثانية المختلطة للكمونات. } }
+  - { en: Third law, ar: القانون الثالث, fr: Troisième principe, def: { en: 'The entropy of a system in equilibrium tends to a constant (zero for a unique ground state) as \(T\to0\).', ar: 'تؤول إنتروبيا نظام في حالة توازن إلى ثابت (صفر إذا كانت الحالة الأساسية وحيدة) عندما \(T\to0\).' } }
+  - { en: Equipartition theorem, ar: مبرهنة تساوي توزيع الطاقة, fr: Théorème d'équipartition, def: { en: 'Classically, each quadratic term in the energy contributes \(\tfrac12k_BT\) to the mean energy.', ar: 'كلاسيكيًّا، يسهم كل حد تربيعي في الطاقة بـ \(\tfrac12k_BT\) في الطاقة المتوسطة.' } }
+  - { en: Partition function, ar: دالة التجزئة, fr: Fonction de partition, def: { en: '\(Z = \sum_i e^{-\beta E_i}\); the normalisation of the Boltzmann distribution, from which all thermodynamics follows.', ar: '\(Z = \sum_i e^{-\beta E_i}\)، ثابت تقييس توزيع بولتزمان، ومنها تُستخرج كل المقادير الترموديناميكية.' } }
+  - { en: Canonical ensemble, ar: المجموعة القانونية, fr: Ensemble canonique, def: { en: 'Systems at fixed \(N, V\) in contact with a heat bath at temperature \(T\).', ar: 'مجموعة أنظمة ذات \(N\) و\(V\) ثابتين في تماس مع حمّام حراري عند درجة الحرارة \(T\).' } }
+  - { en: Grand canonical ensemble, ar: المجموعة القانونية الكبرى, fr: Ensemble grand-canonique, def: { en: 'Systems exchanging both energy and particles with a reservoir at fixed \(T\) and \(\mu\).', ar: 'مجموعة أنظمة تتبادل الطاقة والجسيمات مع خزان عند \(T\) و\(\mu\) ثابتين.' } }
+  - { en: Chemical potential, ar: الكمون الكيميائي, fr: Potentiel chimique, def: { en: '\(\mu = (\partial G/\partial N)_{T,p}\); particles flow from high to low \(\mu\).', ar: '\(\mu = (\partial G/\partial N)_{T,p}\)، وتنتقل الجسيمات من \(\mu\) الأعلى إلى الأدنى.' } }
+  - { en: Thermal de Broglie wavelength, ar: طول موجة دي برولي الحراري, fr: Longueur d'onde thermique de de Broglie, def: { en: '\(\lambda = h/\sqrt{2\pi mk_BT}\); quantum effects matter when \(n\lambda^3\gtrsim1\).', ar: '\(\lambda = h/\sqrt{2\pi mk_BT}\)، وتصبح الآثار الكمومية مهمة عندما \(n\lambda^3\gtrsim1\).' } }
+  - { en: Black-body radiation, ar: إشعاع الجسم الأسود, fr: Rayonnement du corps noir, def: { en: Equilibrium electromagnetic radiation in a cavity; its spectrum is given by Planck's law., ar: إشعاع كهرومغناطيسي في حالة توازن داخل تجويف، يعطى طيفه بقانون بلانك. } }
+  - { en: Phonon, ar: الفونون, fr: Phonon, def: { en: A quantum of lattice vibration; phonons are bosons with zero chemical potential., ar: كمّ اهتزاز الشبكة البلورية، وهو بوزون كمونه الكيميائي معدوم. } }
+  - { en: Fermi–Dirac distribution, ar: توزيع فيرمي-ديراك, fr: Distribution de Fermi-Dirac, def: { en: '\(\bar n = 1/(e^{\beta(E-\mu)}+1)\): mean occupation of a single-particle state by fermions.', ar: '\(\bar n = 1/(e^{\beta(E-\mu)}+1)\): متوسط إشغال حالة جسيم واحد بالفرميونات.' } }
+  - { en: Bose–Einstein distribution, ar: توزيع بوز-أينشتاين, fr: Distribution de Bose-Einstein, def: { en: '\(\bar n = 1/(e^{\beta(E-\mu)}-1)\): mean occupation of a single-particle state by bosons.', ar: '\(\bar n = 1/(e^{\beta(E-\mu)}-1)\): متوسط إشغال حالة جسيم واحد بالبوزونات.' } }
+  - { en: Fermi energy, ar: طاقة فيرمي, fr: Énergie de Fermi, def: { en: Energy of the highest occupied state of an ideal Fermi gas at \(T=0\)., ar: 'طاقة أعلى حالة مشغولة في غاز فيرمي مثالي عند \(T=0\).' } }
+  - { en: Bose–Einstein condensation, ar: تكاثف بوز-أينشتاين, fr: Condensation de Bose-Einstein, def: { en: 'Macroscopic occupation of the ground state by bosons below a critical temperature \(T_c\).', ar: 'إشغال عياني للحالة الأساسية بالبوزونات تحت درجة حرارة حرجة \(T_c\).' } }

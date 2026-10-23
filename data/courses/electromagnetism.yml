@@ -1,0 +1,1029 @@
+slug: electromagnetism
+order: 60
+codes: [UEF 224]
+short: { en: EM, ar: كهرط }
+title: { en: Electromagnetism, ar: الكهرومغناطيسية }
+tagline:
+  en: Four equations, one theory — from Coulomb's law to light.
+  ar: أربع معادلات ونظرية واحدة — من قانون كولوم إلى الضوء.
+area: electromagnetism
+level: 2
+credits: 4
+hours: { lecture: 1.5, tutorial: 1.5, lab: 0 }
+weeks: 14
+instruction: [en, fr]
+prerequisites: [general-physics-2]
+prerequisite_note:
+  en: First-year electricity and magnetism; multivariable calculus (partial derivatives, multiple integrals); vectors; the wave equation met in Vibrations & Waves is helpful.
+  ar: الكهرباء والمغناطيسية في السنة الأولى؛ حساب التفاضل والتكامل لعدة متغيرات (المشتقات الجزئية والتكاملات المتعددة)؛ الأشعة؛ ومن المفيد معرفة معادلة الموجة التي دُرست في مقرر الاهتزازات والأمواج.
+sims: [efield, waves]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/uhbc/electromagnetism/
+  - https://khelifak.wordpress.com/studying/teaching-2/uhbc/electromagnetisme/
+notes: >
+  Merged the English page (mostly empty skeleton) and the richer French page (chapter plan, eight learning
+  outcomes, lecture notes, six problem sheets). The French plan put "EM in matter" as a final chapter (three PDFs);
+  here dielectrics and magnetic materials are taught right after electrostatics and magnetostatics, so its three
+  parts are attached to weeks 6, 10 and 14. Weekly schedule, Griffiths readings, assessment weights (the source only
+  gives 33% continuous + 67% exam, with two tutorial tests), mini-project, CLO mapping, quizzes, worked problems and
+  glossary are reconstructed. The past paper is labelled "2014" in the source (session year not certain). Credits (4)
+  assumed. Instruction languages set to en/fr (all available documents are in French).
+
+description:
+  en: |
+    <p>This course develops classical electromagnetism as a field theory. It starts with the vector-analysis toolkit — gradient, divergence, curl, the theorems of Gauss and Stokes and the Dirac delta — and uses it to build electrostatics from Coulomb's law: Gauss's law, the electric potential, Poisson's and Laplace's equations, conductors, energy and the multipole expansion.</p>
+    <p>Magnetostatics follows the same path from the Lorentz force and the Biot–Savart law to Ampère's law and the vector potential. Both fields are then studied inside matter: polarisation of dielectrics, magnetisation, the auxiliary fields \(\vb{D}\) and \(\vb{H}\), and boundary conditions. Faraday's law of induction and Maxwell's displacement current complete the four Maxwell equations.</p>
+    <p>The course ends with the most spectacular consequence of the theory: electromagnetic waves. Students derive the wave equation, the properties of plane waves in vacuum, energy transport by the Poynting vector, and the basics of propagation in matter and reflection at interfaces — the same wave equation already met in Vibrations &amp; Waves, now describing light.</p>
+  ar: |
+    <p>يُقدّم هذا المقرر الكهرومغناطيسية الكلاسيكية بوصفها نظرية حقول. ويبدأ بالأدوات الرياضية للتحليل الشعاعي — التدرج والتباعد والدوار ونظريتي غاوس وستوكس وتوزيع ديراك — ثم يستعملها لبناء الكهروساكنة انطلاقًا من قانون كولوم: قانون غاوس، والكمون الكهربائي، ومعادلتي بواسون ولابلاس، والنواقل، والطاقة، والنشر متعدد الأقطاب.</p>
+    <p>وتسلك المغناطيسية الساكنة الطريق نفسه من قوة لورنتز وقانون بيو–سافار إلى قانون أمبير والكمون الشعاعي. ثم يُدرس الحقلان داخل المادة: استقطاب العوازل، والتمغنط، والحقلان المساعدان \(\vb{D}\) و\(\vb{H}\)، والشروط الحدية. ويكتمل بناء معادلات ماكسويل الأربع بقانون فاراداي للتحريض وتيار الانزياح.</p>
+    <p>ويُختتم المقرر بأروع نتائج النظرية: الأمواج الكهرومغناطيسية. يستنتج الطالب معادلة الموجة وخصائص الأمواج المستوية في الفراغ، ونقل الطاقة بشعاع بوينتينغ، وأساسيات الانتشار في المادة والانعكاس عند السطوح الفاصلة — إنها معادلة الموجة نفسها التي صادفها في مقرر الاهتزازات والأمواج، لكنها تصف الآن الضوء.</p>
+
+topics:
+  - { en: Vector analysis, ar: التحليل الشعاعي }
+  - { en: Gauss's law & potential, ar: قانون غاوس والكمون }
+  - { en: Dielectrics, ar: العوازل الكهربائية }
+  - { en: Biot–Savart & Ampère, ar: قانونا بيو–سافار وأمبير }
+  - { en: Magnetic materials, ar: المواد المغناطيسية }
+  - { en: Faraday's law & inductance, ar: قانون فاراداي والذاتية }
+  - { en: Maxwell's equations, ar: معادلات ماكسويل }
+  - { en: Plane electromagnetic waves, ar: الأمواج الكهرومغناطيسية المستوية }
+  - { en: Poynting vector & energy, ar: شعاع بوينتينغ والطاقة }
+
+outcomes:
+  - id: CLO1
+    bloom: apply
+    domain: skills
+    text:
+      en: Apply gradient, divergence, curl, the Laplacian and the integral theorems of Gauss and Stokes in Cartesian, cylindrical and spherical coordinates.
+      ar: يطبّق التدرج والتباعد والدوار واللابلاسي ونظريتي غاوس وستوكس التكامليتين في الإحداثيات الديكارتية والأسطوانية والكروية.
+    assessed_by: [quizzes, homework, midterm]
+  - id: CLO2
+    bloom: apply
+    domain: knowledge
+    text:
+      en: Describe the electric field and potential of static charges and calculate them for simple distributions using Coulomb's law, Gauss's law and the potential.
+      ar: يصف الحقل الكهربائي والكمون للشحنات الساكنة ويحسبهما لتوزيعات بسيطة باستعمال قانون كولوم وقانون غاوس والكمون.
+    assessed_by: [quizzes, homework, midterm, final]
+  - id: CLO3
+    bloom: understand
+    domain: knowledge
+    text:
+      en: 'Explain polarisation and magnetisation of matter, bound charges and currents, the fields \(\vb{D}\) and \(\vb{H}\), and the boundary conditions at interfaces.'
+      ar: 'يشرح استقطاب المادة وتمغنطها، والشحنات والتيارات المقيدة، والحقلين \(\vb{D}\) و\(\vb{H}\)، والشروط الحدية عند السطوح الفاصلة.'
+    assessed_by: [quizzes, homework, final]
+  - id: CLO4
+    bloom: apply
+    domain: skills
+    text:
+      en: Calculate magnetic fields of steady currents with the Biot–Savart and Ampère laws, and the forces they exert.
+      ar: يحسب الحقول المغناطيسية للتيارات المستقرة بقانوني بيو–سافار وأمبير، والقوى التي تؤثر بها.
+    assessed_by: [quizzes, homework, midterm, final]
+  - id: CLO5
+    bloom: apply
+    domain: skills
+    text:
+      en: Describe electromagnetic induction and compute induced emfs, currents, inductances and magnetic energy using the laws of Faraday and Lenz.
+      ar: يصف التحريض الكهرومغناطيسي ويحسب القوى المحركة الكهربائية المتحرضة والتيارات والذاتيات والطاقة المغناطيسية باستعمال قانوني فاراداي ولنز.
+    assessed_by: [homework, final]
+  - id: CLO6
+    bloom: understand
+    domain: knowledge
+    text:
+      en: State Maxwell's equations in integral and differential form and explain how each follows from an empirical law, including the role of the displacement current.
+      ar: يكتب معادلات ماكسويل بالصيغتين التكاملية والتفاضلية ويشرح كيف تنتج كل منها من قانون تجريبي، بما في ذلك دور تيار الانزياح.
+    assessed_by: [quizzes, final, project]
+  - id: CLO7
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Derive the properties of plane electromagnetic waves in vacuum from Maxwell's equations and analyse their energy flow, intensity and reflection at normal incidence.
+      ar: يستنتج خصائص الأمواج الكهرومغناطيسية المستوية في الفراغ من معادلات ماكسويل ويحلّل تدفق طاقتها وشدتها وانعكاسها عند السقوط الناظمي.
+    assessed_by: [homework, final, project]
+  - id: CLO8
+    bloom: evaluate
+    domain: values
+    text:
+      en: Research and present a real-world application of electromagnetism, judging the validity of the physical models used and citing sources honestly.
+      ar: يبحث في تطبيق واقعي للكهرومغناطيسية ويعرضه، مع تقييم صلاحية النماذج الفيزيائية المستعملة والإحالة إلى المصادر بأمانة.
+    assessed_by: [project, participation]
+
+assessment:
+  - id: quizzes
+    type: quiz
+    weight: 10
+    title: { en: Tutorial tests, ar: اختبارات الأعمال الموجهة }
+    detail:
+      en: Two 30-minute written tests in tutorial sessions (vector analysis and electrostatics; magnetostatics and induction), each with one or two short problems.
+      ar: اختباران كتابيان مدة كل منهما 30 دقيقة في حصص الأعمال الموجهة (التحليل الشعاعي والكهروساكنة؛ المغناطيسية الساكنة والتحريض)، يتضمن كل منهما مسألة أو مسألتين قصيرتين.
+    when: { en: Weeks 5 and 11, ar: الأسبوعان 5 و11 }
+  - id: homework
+    type: homework
+    weight: 8
+    title: { en: Problem sheets, ar: سلاسل التمارين }
+    detail:
+      en: Selected exercises from each problem sheet are handed in one week after the tutorial; graded on method, correct use of vector calculus, units and clarity.
+      ar: تُسلَّم تمارين مختارة من كل سلسلة بعد أسبوع من حصة الأعمال الموجهة؛ وتُقيَّم على المنهجية والاستعمال الصحيح للتحليل الشعاعي والوحدات والوضوح.
+    when: { en: Weeks 2–14, ar: الأسابيع 2–14 }
+  - id: midterm
+    type: midterm
+    weight: 15
+    title: { en: Midterm exam, ar: الاختبار النصفي }
+    detail:
+      en: 'Written, 1 h 30 min: vector analysis, electrostatics in vacuum and dielectrics.'
+      ar: 'كتابي، مدته ساعة ونصف: التحليل الشعاعي، والكهروساكنة في الفراغ وفي العوازل.'
+    when: { en: Week 8, ar: الأسبوع 8 }
+  - id: project
+    type: project
+    weight: 7
+    title: { en: Mini-project and presentation, ar: مشروع مصغر وعرض }
+    detail:
+      en: In groups of three, students study one application (wireless charging, induction cooking, MRI magnets, microwave ovens, optical fibres, radar…), write a 4-page report with at least one calculation and present it in 10 minutes.
+      ar: يدرس الطلبة في مجموعات من ثلاثة تطبيقًا واحدًا (الشحن اللاسلكي، الطهي بالتحريض، مغانط التصوير بالرنين المغناطيسي، أفران الموجات الميكروية، الألياف البصرية، الرادار…)، ويكتبون تقريرًا من 4 صفحات يتضمن حسابًا واحدًا على الأقل، ويعرضونه في 10 دقائق.
+    when: { en: Report and talk in week 13, ar: التقرير والعرض في الأسبوع 13 }
+  - id: participation
+    type: participation
+    weight: 5
+    title: { en: Attendance and participation, ar: الحضور والمشاركة }
+    detail:
+      en: Attendance at tutorials and contributions at the board.
+      ar: حضور الأعمال الموجهة والمساهمة في حل التمارين على السبورة.
+    when: { en: Throughout, ar: طوال الفصل }
+  - id: final
+    type: final
+    weight: 55
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail:
+      en: Written, 1 h 30 min, comprehensive with emphasis on magnetostatics, induction, Maxwell's equations and electromagnetic waves.
+      ar: كتابي، مدته ساعة ونصف، شامل مع تركيز على المغناطيسية الساكنة والتحريض ومعادلات ماكسويل والأمواج الكهرومغناطيسية.
+    when: { en: Exam period, ar: فترة الاختبارات }
+
+schedule:
+  - week: 1
+    title: { en: Vector analysis (I), ar: التحليل الشعاعي (1) }
+    topics:
+      en:
+        - Scalar and vector fields; vector algebra
+        - 'The operator \(\nabla\): gradient, divergence, curl, Laplacian'
+        - Cylindrical and spherical coordinates
+      ar:
+        - الحقول السلمية والشعاعية؛ الجبر الشعاعي
+        - 'المؤثر \(\nabla\): التدرج والتباعد والدوار واللابلاسي'
+        - الإحداثيات الأسطوانية والكروية
+    reading: Griffiths §1.1–1.2, §1.4
+    activity: { en: Problem sheet 1 released, ar: نشر السلسلة 1 }
+  - week: 2
+    title: { en: Vector analysis (II), ar: التحليل الشعاعي (2) }
+    topics:
+      en:
+        - Line, surface and volume integrals; fundamental theorems
+        - Divergence (Gauss–Ostrogradsky) and Stokes theorems
+        - 'The Dirac delta and point charges; \(\nabla\cdot(\hat{\vb{r}}/r^2) = 4\pi\delta^3(\vb{r})\)'
+        - Helmholtz theorem; scalar and vector potentials
+      ar:
+        - التكاملات الخطية والسطحية والحجمية؛ النظريات الأساسية
+        - نظريتا التباعد (غاوس–أوستروغرادسكي) وستوكس
+        - 'توزيع ديراك والشحنات النقطية؛ \(\nabla\cdot(\hat{\vb{r}}/r^2) = 4\pi\delta^3(\vb{r})\)'
+        - نظرية هلمهولتز؛ الكمونات السلمية والشعاعية
+    reading: Griffiths §1.3, §1.5–1.6
+  - week: 3
+    title: { en: 'Electrostatics (I): Coulomb''s law', ar: 'الكهروساكنة (1): قانون كولوم' }
+    topics:
+      en:
+        - Coulomb's law and superposition
+        - The electric field of discrete and continuous charge distributions
+        - Field lines and flux
+      ar:
+        - قانون كولوم ومبدأ التراكب
+        - الحقل الكهربائي لتوزيعات شحنية متقطعة ومستمرة
+        - خطوط الحقل والتدفق
+    reading: Griffiths §2.1
+    activity: { en: Problem sheet 2 released, ar: نشر السلسلة 2 }
+  - week: 4
+    title: { en: 'Electrostatics (II): Gauss''s law', ar: 'الكهروساكنة (2): قانون غاوس' }
+    topics:
+      en:
+        - Gauss's law in integral and differential form
+        - Using symmetry (spherical, cylindrical, planar)
+        - 'Curl of \(\vb{E}\) and the conservative nature of the field'
+      ar:
+        - قانون غاوس بالصيغتين التكاملية والتفاضلية
+        - استغلال التناظر (كروي، أسطواني، مستوٍ)
+        - 'دوار \(\vb{E}\) والطبيعة المحافظة للحقل'
+    reading: Griffiths §2.2
+  - week: 5
+    title: { en: 'Electrostatics (III): potential, energy and conductors', ar: 'الكهروساكنة (3): الكمون والطاقة والنواقل' }
+    topics:
+      en:
+        - 'Electric potential; Poisson and Laplace equations'
+        - Work and energy in electrostatics
+        - Conductors in equilibrium; capacitors; uniqueness and the method of images
+      ar:
+        - 'الكمون الكهربائي؛ معادلتا بواسون ولابلاس'
+        - العمل والطاقة في الكهروساكنة
+        - النواقل في حالة التوازن؛ المكثفات؛ نظرية الوحدانية وطريقة الصور
+    reading: Griffiths §2.3–2.5, §3.1–3.2
+    activity: { en: Tutorial test 1, ar: اختبار الأعمال الموجهة 1 }
+    milestone: quiz
+  - week: 6
+    title: { en: Multipoles and polarisation, ar: متعددات الأقطاب والاستقطاب }
+    topics:
+      en:
+        - Multipole expansion; the electric dipole
+        - Dielectrics; induced dipoles; polarisation \(\vb{P}\)
+        - Bound surface and volume charges
+      ar:
+        - النشر متعدد الأقطاب؛ ثنائي القطب الكهربائي
+        - العوازل الكهربائية؛ ثنائيات الأقطاب المتحرضة؛ شعاع الاستقطاب \(\vb{P}\)
+        - الشحنات المقيدة السطحية والحجمية
+    reading: Griffiths §3.4, §4.1–4.2
+  - week: 7
+    title: { en: Electrostatics in dielectrics, ar: الكهروساكنة في العوازل }
+    topics:
+      en:
+        - 'Electric displacement \(\vb{D} = \varepsilon_0\vb{E} + \vb{P}\); Gauss''s law in matter'
+        - Linear dielectrics; susceptibility and permittivity
+        - Boundary conditions; energy in dielectric systems
+      ar:
+        - 'شعاع الانزياح الكهربائي \(\vb{D} = \varepsilon_0\vb{E} + \vb{P}\)؛ قانون غاوس في المادة'
+        - العوازل الخطية؛ القابلية الكهربائية والسماحية
+        - الشروط الحدية؛ الطاقة في الجمل العازلة
+    reading: Griffiths §4.3–4.4
+    activity: { en: Mini-project topics assigned, ar: توزيع مواضيع المشاريع المصغرة }
+  - week: 8
+    title: { en: 'Magnetostatics (I): Lorentz force and Biot–Savart', ar: 'المغناطيسية الساكنة (1): قوة لورنتز وقانون بيو–سافار' }
+    topics:
+      en:
+        - Lorentz force; currents, current density and the continuity equation
+        - The Biot–Savart law; field of a wire and of a loop
+      ar:
+        - قوة لورنتز؛ التيارات وكثافة التيار ومعادلة الاستمرارية
+        - قانون بيو–سافار؛ حقل سلك وحقل حلقة
+    reading: Griffiths §5.1–5.2
+    activity: { en: Midterm exam; problem sheet 3 released, ar: الاختبار النصفي؛ نشر السلسلة 3 }
+    milestone: midterm
+  - week: 9
+    title: { en: 'Magnetostatics (II): Ampère''s law and vector potential', ar: 'المغناطيسية الساكنة (2): قانون أمبير والكمون الشعاعي' }
+    topics:
+      en:
+        - 'Divergence and curl of \(\vb{B}\); Ampère''s law and its applications'
+        - 'The magnetic vector potential \(\vb{A}\)'
+        - Magnetic dipole; multipole expansion of the vector potential
+      ar:
+        - 'تباعد \(\vb{B}\) ودواره؛ قانون أمبير وتطبيقاته'
+        - 'الكمون الشعاعي المغناطيسي \(\vb{A}\)'
+        - ثنائي القطب المغناطيسي؛ النشر متعدد الأقطاب للكمون الشعاعي
+    reading: Griffiths §5.3–5.4
+  - week: 10
+    title: { en: Magnetic fields in matter, ar: الحقول المغناطيسية في المادة }
+    topics:
+      en:
+        - 'Magnetisation \(\vb{M}\); bound currents'
+        - 'The auxiliary field \(\vb{H}\); Ampère''s law in matter'
+        - Dia-, para- and ferromagnetism; permeability; boundary conditions
+      ar:
+        - 'التمغنط \(\vb{M}\)؛ التيارات المقيدة'
+        - 'الحقل المساعد \(\vb{H}\)؛ قانون أمبير في المادة'
+        - 'المغناطيسية المعاكسة والمسايرة والحديدية؛ النفاذية؛ الشروط الحدية'
+    reading: Griffiths Ch. 6
+  - week: 11
+    title: { en: Electromagnetic induction, ar: التحريض الكهرومغناطيسي }
+    topics:
+      en:
+        - Electromotive force; motional emf
+        - 'Faraday''s law and Lenz''s rule'
+        - Self and mutual inductance; energy in magnetic fields
+      ar:
+        - القوة المحركة الكهربائية؛ القوة المحركة الحركية
+        - قانون فاراداي وقاعدة لنز
+        - الذاتية والتحريض المتبادل؛ الطاقة في الحقول المغناطيسية
+    reading: Griffiths §7.1–7.2
+    activity: { en: Tutorial test 2; problem sheet 4 released, ar: اختبار الأعمال الموجهة 2؛ نشر السلسلة 4 }
+    milestone: quiz
+  - week: 12
+    title: { en: Maxwell's equations, ar: معادلات ماكسويل }
+    topics:
+      en:
+        - Displacement current; Maxwell's equations in vacuum and in matter
+        - Integral and differential forms; boundary conditions
+        - Scalar and vector potentials; gauge transformations
+        - 'Energy conservation: Poynting''s theorem'
+      ar:
+        - تيار الانزياح؛ معادلات ماكسويل في الفراغ وفي المادة
+        - الصيغتان التكاملية والتفاضلية؛ الشروط الحدية
+        - الكمونان السلمي والشعاعي؛ تحويلات المعايرة
+        - 'انحفاظ الطاقة: نظرية بوينتينغ'
+    reading: Griffiths §7.3, §8.1, §10.1
+  - week: 13
+    title: { en: Electromagnetic waves in vacuum, ar: الأمواج الكهرومغناطيسية في الفراغ }
+    topics:
+      en:
+        - 'Wave equations for \(\vb{E}\) and \(\vb{B}\); \(c = 1/\sqrt{\mu_0\varepsilon_0}\)'
+        - Monochromatic plane waves; transversality; polarisation
+        - Energy density, Poynting vector, intensity and radiation pressure
+      ar:
+        - 'معادلتا الموجة لـ \(\vb{E}\) و\(\vb{B}\)؛ \(c = 1/\sqrt{\mu_0\varepsilon_0}\)'
+        - الأمواج المستوية أحادية اللون؛ العرضانية؛ الاستقطاب
+        - كثافة الطاقة وشعاع بوينتينغ والشدة وضغط الإشعاع
+    reading: Griffiths §9.1–9.2
+    activity: { en: Mini-project presentations; problem sheet 5 released, ar: عروض المشاريع المصغرة؛ نشر السلسلة 5 }
+    milestone: project
+  - week: 14
+    title: { en: Waves in matter and course review, ar: الأمواج في المادة ومراجعة المقرر }
+    topics:
+      en:
+        - Waves in linear media; refractive index
+        - Reflection and transmission at normal incidence; laws of reflection and refraction; Fresnel equations (overview)
+        - Waves in conductors and skin depth; introduction to guided waves
+        - Review
+      ar:
+        - الأمواج في الأوساط الخطية؛ قرينة الانكسار
+        - الانعكاس والنفاذ عند السقوط الناظمي؛ قانونا الانعكاس والانكسار؛ معادلات فرينل (لمحة)
+        - الأمواج في النواقل وعمق القشرة؛ مدخل إلى الأمواج الموجَّهة
+        - مراجعة
+    reading: Griffiths §9.3–9.5
+    activity: { en: Problem sheet 6 (EM in matter), ar: السلسلة 6 (الكهرومغناطيسية في المادة) }
+    milestone: review
+
+materials:
+  - type: notes
+    title: { en: Complete lecture notes (all chapters), ar: مذكرات المحاضرات الكاملة (جميع الفصول) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours.pdf
+    lang: fr
+  - type: notes
+    title: { en: Chapter 1 — Mathematical tools, ar: الفصل 1 — الأدوات الرياضية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap11.pdf
+    week: 1
+    lang: fr
+  - type: notes
+    title: { en: Chapter 2 — Electrostatics, ar: الفصل 2 — الكهروساكنة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap21.pdf
+    week: 3
+    lang: fr
+  - type: notes
+    title: { en: 'Chapter 6 (part 1) — Electrostatics in materials', ar: 'الفصل 6 (الجزء 1) — الكهروساكنة في المواد' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_chap6a.pdf
+    week: 6
+    lang: fr
+  - type: notes
+    title: { en: Chapter 3 — Magnetostatics, ar: الفصل 3 — المغناطيسية الساكنة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap31.pdf
+    week: 8
+    lang: fr
+  - type: notes
+    title: { en: 'Chapter 6 (part 2) — Magnetostatics in materials', ar: 'الفصل 6 (الجزء 2) — المغناطيسية الساكنة في المواد' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_chap6b.pdf
+    week: 10
+    lang: fr
+  - type: notes
+    title: { en: 'Chapter 4 — Electrodynamics and Maxwell''s equations', ar: الفصل 4 — الكهروديناميكا ومعادلات ماكسويل }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap41.pdf
+    week: 11
+    lang: fr
+  - type: notes
+    title: { en: Chapter 5 — Propagation of electromagnetic waves, ar: الفصل 5 — انتشار الأمواج الكهرومغناطيسية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap51.pdf
+    week: 13
+    lang: fr
+  - type: notes
+    title: { en: 'Chapter 6 (part 3) — Maxwell''s equations and EM waves in materials', ar: 'الفصل 6 (الجزء 3) — معادلات ماكسويل والأمواج الكهرومغناطيسية في المواد' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_chap6c.pdf
+    week: 14
+    lang: fr
+  - type: summary
+    title: { en: Summary 1 — Mathematical tools, ar: الملخص 1 — الأدوات الرياضية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_resume1.pdf
+    week: 1
+    lang: fr
+  - type: problems
+    title: { en: Problem sheet 1 — Mathematical tools, ar: السلسلة 1 — الأدوات الرياضية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_serie1.pdf
+    week: 1
+    lang: fr
+  - type: problems
+    title: { en: Problem sheet 2 — Electrostatics, ar: السلسلة 2 — الكهروساكنة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/02/em_serie2.pdf
+    week: 3
+    lang: fr
+  - type: problems
+    title: { en: Problem sheet 3 — Magnetostatics, ar: السلسلة 3 — المغناطيسية الساكنة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/02/em_serie3.pdf
+    week: 8
+    lang: fr
+  - type: problems
+    title: { en: 'Problem sheet 4 — Maxwell''s equations', ar: السلسلة 4 — معادلات ماكسويل }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/03/em_serie4.pdf
+    week: 11
+    lang: fr
+  - type: problems
+    title: { en: Problem sheet 5 — Propagation of electromagnetic waves, ar: السلسلة 5 — انتشار الأمواج الكهرومغناطيسية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_serie5.pdf
+    week: 13
+    lang: fr
+  - type: problems
+    title: { en: Problem sheet 6 — Electromagnetism in materials, ar: السلسلة 6 — الكهرومغناطيسية في المواد }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/05/em_serie6.pdf
+    week: 14
+    lang: fr
+  - type: solutions
+    title: { en: Problem sheet 6 — Solutions, ar: السلسلة 6 — الحلول }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/05/em_serie6_s.pdf
+    week: 14
+    lang: fr
+
+exams:
+  - title: { en: Final exam, ar: الاختبار النهائي }
+    session: '2014'
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_exam.pdf
+    lang: fr
+
+exam_guide:
+  format:
+    en: The final exam is a 1 h 30 min written paper with three or four exercises — typically one field calculation with Gauss's or Ampère's law, one on dielectrics or magnetic materials, one on induction, and one on Maxwell's equations and plane waves. The midterm (1 h 30 min) covers vector analysis and electrostatics.
+    ar: الاختبار النهائي ورقة كتابية مدتها ساعة ونصف تتضمن ثلاثة أو أربعة تمارين — عادةً حساب حقل بقانون غاوس أو أمبير، وتمرين حول العوازل أو المواد المغناطيسية، وتمرين حول التحريض، وتمرين حول معادلات ماكسويل والأمواج المستوية. ويشمل الاختبار النصفي (ساعة ونصف) التحليل الشعاعي والكهروساكنة.
+  allowed:
+    en: A non-programmable scientific calculator. The vector-operator formulas in cylindrical and spherical coordinates and the values of the constants are given on the paper.
+    ar: آلة حاسبة علمية غير قابلة للبرمجة. تُعطى في ورقة الاختبار عبارات المؤثرات الشعاعية في الإحداثيات الأسطوانية والكروية وقيم الثوابت.
+  tips:
+    - en: Before applying Gauss's or Ampère's law, state the symmetry and deduce the direction and dependence of the field — this justification is graded.
+      ar: قبل تطبيق قانون غاوس أو أمبير، اذكر التناظر واستنتج اتجاه الحقل والمتغيرات التي يتعلق بها — فهذا التبرير يُقيَّم.
+    - en: 'Draw the Gaussian surface or Amperian loop and write \(\oint\) explicitly, with the orientation of \(\dd\vb{S}\) or \(\dd\vb{l}\).'
+      ar: 'ارسم سطح غاوس أو حلقة أمبير واكتب \(\oint\) صراحة مع توجيه \(\dd\vb{S}\) أو \(\dd\vb{l}\).'
+    - en: Check limiting cases (far away the field of any finite charge looks like a point charge) and units (V/m, T, W/m²).
+      ar: تحقّق من الحالات الحدية (بعيدًا عن أي شحنة محدودة يشبه حقلها حقل شحنة نقطية) ومن الوحدات (V/m، T، W/m²).
+    - en: 'In induction problems, fix the sign convention first and use Lenz''s rule to check the direction of the induced current.'
+      ar: في مسائل التحريض، ثبّت اصطلاح الإشارات أولًا ثم استعمل قاعدة لنز للتحقق من جهة التيار المتحرض.
+    - en: 'Know Maxwell''s four equations by heart in both forms — they are the backbone of the second half of the paper.'
+      ar: احفظ معادلات ماكسويل الأربع بصيغتيها — فهي العمود الفقري للنصف الثاني من الاختبار.
+
+problems:
+  - title: { en: Uniformly charged sphere, ar: كرة مشحونة بانتظام }
+    difficulty: 1
+    statement:
+      en: |
+        A sphere of radius \(R\) carries a charge \(Q\) distributed uniformly through its volume.
+
+        (a) Use Gauss's law to find the field \(\vb{E}(r)\) inside and outside the sphere.
+        (b) Find the potential \(V(r)\) everywhere, taking \(V(\infty) = 0\). Compare \(V(0)\) with \(V(R)\).
+        (c) Show that the electrostatic energy of the sphere is \(W = \dfrac{3}{5}\dfrac{Q^2}{4\pi\varepsilon_0 R}\).
+      ar: |
+        كرة نصف قطرها \(R\) تحمل شحنة \(Q\) موزعة بانتظام على حجمها.
+
+        (أ) استعمل قانون غاوس لإيجاد الحقل \(\vb{E}(r)\) داخل الكرة وخارجها.
+        (ب) أوجد الكمون \(V(r)\) في كل مكان باعتبار \(V(\infty) = 0\). قارن \(V(0)\) مع \(V(R)\).
+        (ج) بيّن أن الطاقة الكهروساكنة للكرة هي \(W = \dfrac{3}{5}\dfrac{Q^2}{4\pi\varepsilon_0 R}\).
+    hint:
+      en: 'By symmetry \(\vb{E} = E(r)\hat{\vb{r}}\); use a concentric spherical Gaussian surface. For (c) use \(W = \frac{\varepsilon_0}{2}\int E^2\,\dd\tau\) over all space.'
+      ar: 'بالتناظر \(\vb{E} = E(r)\hat{\vb{r}}\)؛ استعمل سطح غاوس كرويًا متحد المركز. وفي (ج) استعمل \(W = \frac{\varepsilon_0}{2}\int E^2\,\dd\tau\) على كامل الفضاء.'
+    solution:
+      en: |
+        (a) The charge density is \(\rho = 3Q/4\pi R^3\). A Gaussian sphere of radius \(r\) gives \(4\pi r^2 E = Q_{\text{enc}}/\varepsilon_0\):
+        \[ E(r) = \begin{cases} \dfrac{Q\,r}{4\pi\varepsilon_0R^3}, & r<R,\\[2mm] \dfrac{Q}{4\pi\varepsilon_0r^2}, & r>R. \end{cases} \]
+        The field grows linearly inside and falls as \(1/r^2\) outside; it is continuous at \(r = R\).
+
+        (b) Outside, \(V = Q/4\pi\varepsilon_0 r\). Inside, \(V(r) = V(R) - \int_R^r E\,\dd r'\):
+        \[ V(r) = \frac{Q}{8\pi\varepsilon_0R}\left(3 - \frac{r^2}{R^2}\right), \qquad V(0) = \tfrac32\,V(R). \]
+
+        (c) \[ W = \frac{\varepsilon_0}{2}\left[\int_0^R\Big(\frac{Qr}{4\pi\varepsilon_0R^3}\Big)^2 4\pi r^2\dd r + \int_R^\infty\Big(\frac{Q}{4\pi\varepsilon_0r^2}\Big)^2 4\pi r^2\dd r\right] = \frac{Q^2}{8\pi\varepsilon_0R}\left(\frac15 + 1\right) = \frac35\,\frac{Q^2}{4\pi\varepsilon_0R}. \]
+      ar: |
+        (أ) الكثافة الحجمية للشحنة \(\rho = 3Q/4\pi R^3\). سطح غاوس كروي نصف قطره \(r\) يعطي \(4\pi r^2 E = Q_{\text{enc}}/\varepsilon_0\):
+        \[ E(r) = \begin{cases} \dfrac{Q\,r}{4\pi\varepsilon_0R^3}, & r<R,\\[2mm] \dfrac{Q}{4\pi\varepsilon_0r^2}, & r>R. \end{cases} \]
+        يتزايد الحقل خطيًا في الداخل ويتناقص كـ \(1/r^2\) في الخارج، وهو مستمر عند \(r = R\).
+
+        (ب) في الخارج \(V = Q/4\pi\varepsilon_0 r\). وفي الداخل \(V(r) = V(R) - \int_R^r E\,\dd r'\):
+        \[ V(r) = \frac{Q}{8\pi\varepsilon_0R}\left(3 - \frac{r^2}{R^2}\right), \qquad V(0) = \tfrac32\,V(R). \]
+
+        (ج) \[ W = \frac{\varepsilon_0}{2}\left[\int_0^R\Big(\frac{Qr}{4\pi\varepsilon_0R^3}\Big)^2 4\pi r^2\dd r + \int_R^\infty\Big(\frac{Q}{4\pi\varepsilon_0r^2}\Big)^2 4\pi r^2\dd r\right] = \frac{Q^2}{8\pi\varepsilon_0R}\left(\frac15 + 1\right) = \frac35\,\frac{Q^2}{4\pi\varepsilon_0R}. \]
+  - title: { en: From a ring to a disk to a plane, ar: من الحلقة إلى القرص إلى المستوي }
+    difficulty: 2
+    statement:
+      en: |
+        (a) A thin ring of radius \(a\) carries a charge \(Q\) uniformly. Find the electric field at a point on its axis at distance \(z\) from the centre.
+        (b) Use (a) to find the field on the axis of a disk of radius \(R\) with uniform surface charge \(\sigma\).
+        (c) Discuss the limits \(R\to\infty\) and \(z\gg R\).
+      ar: |
+        (أ) حلقة رقيقة نصف قطرها \(a\) تحمل شحنة \(Q\) موزعة بانتظام. أوجد الحقل الكهربائي في نقطة من محورها على بعد \(z\) من مركزها.
+        (ب) استعمل نتيجة (أ) لإيجاد الحقل على محور قرص نصف قطره \(R\) يحمل شحنة سطحية منتظمة \(\sigma\).
+        (ج) ناقش الحالتين الحديتين \(R\to\infty\) و\(z\gg R\).
+    hint:
+      en: By symmetry only the axial components add. Slice the disk into rings of radius \(r\), width \(\dd r\), charge \(\sigma\,2\pi r\,\dd r\).
+      ar: بالتناظر لا تُجمع إلا المركبات المحورية. قسّم القرص إلى حلقات نصف قطرها \(r\) وعرضها \(\dd r\) وشحنتها \(\sigma\,2\pi r\,\dd r\).
+    solution:
+      en: |
+        (a) Every element \(\dd q\) is at distance \(\sqrt{z^2+a^2}\); the transverse components cancel in pairs and the axial fraction is \(z/\sqrt{z^2+a^2}\):
+        \[ E_z = \frac{1}{4\pi\varepsilon_0}\,\frac{Qz}{(z^2+a^2)^{3/2}}. \]
+
+        (b) Summing rings (\(z>0\)):
+        \[ E_z = \frac{\sigma z}{2\varepsilon_0}\int_0^R \frac{r\,\dd r}{(z^2+r^2)^{3/2}} = \frac{\sigma}{2\varepsilon_0}\left(1 - \frac{z}{\sqrt{z^2+R^2}}\right). \]
+
+        (c) For \(R\to\infty\): \(E_z \to \sigma/2\varepsilon_0\), the uniform field of an infinite plane. For \(z\gg R\): \(1 - z/\sqrt{z^2+R^2}\approx R^2/2z^2\), so \(E_z \approx \dfrac{\sigma\pi R^2}{4\pi\varepsilon_0 z^2} = \dfrac{Q}{4\pi\varepsilon_0z^2}\): from far away the disk looks like a point charge.
+      ar: |
+        (أ) يقع كل عنصر \(\dd q\) على بعد \(\sqrt{z^2+a^2}\)؛ تتلاشى المركبات العرضية مثنى مثنى، والجزء المحوري هو \(z/\sqrt{z^2+a^2}\):
+        \[ E_z = \frac{1}{4\pi\varepsilon_0}\,\frac{Qz}{(z^2+a^2)^{3/2}}. \]
+
+        (ب) بجمع الحلقات (\(z>0\)):
+        \[ E_z = \frac{\sigma z}{2\varepsilon_0}\int_0^R \frac{r\,\dd r}{(z^2+r^2)^{3/2}} = \frac{\sigma}{2\varepsilon_0}\left(1 - \frac{z}{\sqrt{z^2+R^2}}\right). \]
+
+        (ج) عندما \(R\to\infty\): \(E_z \to \sigma/2\varepsilon_0\)، وهو الحقل المنتظم لمستوٍ لانهائي. وعندما \(z\gg R\): \(1 - z/\sqrt{z^2+R^2}\approx R^2/2z^2\)، ومنه \(E_z \approx \dfrac{\sigma\pi R^2}{4\pi\varepsilon_0 z^2} = \dfrac{Q}{4\pi\varepsilon_0z^2}\): يبدو القرص من بعيد كشحنة نقطية.
+  - title: { en: Capacitor partly filled with a dielectric, ar: مكثفة مملوءة جزئيًا بعازل }
+    difficulty: 2
+    statement:
+      en: |
+        A parallel-plate capacitor has plate area \(A\) and separation \(d\) and carries free charges \(\pm Q\). A dielectric slab of thickness \(t<d\) and relative permittivity \(\varepsilon_r\) is placed parallel to the plates (edge effects neglected).
+
+        (a) Find \(\vb{D}\) and \(\vb{E}\) in the air gap and in the slab.
+        (b) Find the capacitance.
+        (c) Find the bound surface charge density on the faces of the slab.
+        (d) Evaluate \(C\) for \(A = 100\ \text{cm}^2\), \(d = 2\ \text{mm}\), \(t = 1\ \text{mm}\), \(\varepsilon_r = 4\), and compare with the empty capacitor.
+      ar: |
+        مكثفة مستوية مساحة لبوسيها \(A\) والمسافة بينهما \(d\)، وتحمل شحنتين حرتين \(\pm Q\). نضع بين اللبوسين، موازيًا لهما، لوحًا عازلًا سمكه \(t<d\) وسماحيته النسبية \(\varepsilon_r\) (تُهمل آثار الحواف).
+
+        (أ) أوجد \(\vb{D}\) و\(\vb{E}\) في الفجوة الهوائية وفي اللوح.
+        (ب) أوجد سعة المكثفة.
+        (ج) أوجد الكثافة السطحية للشحنة المقيدة على وجهي اللوح.
+        (د) احسب \(C\) من أجل \(A = 100\ \text{cm}^2\)، \(d = 2\ \text{mm}\)، \(t = 1\ \text{mm}\)، \(\varepsilon_r = 4\)، وقارنها بسعة المكثفة الفارغة.
+    hint:
+      en: '\(\vb{D}\) depends only on the free charge: apply Gauss''s law for \(\vb{D}\) with a pill-box. Then \(\vb{E} = \vb{D}/\varepsilon\) in each region.'
+      ar: '\(\vb{D}\) لا يتعلق إلا بالشحنة الحرة: طبّق قانون غاوس على \(\vb{D}\) بأسطوانة صغيرة. ثم \(\vb{E} = \vb{D}/\varepsilon\) في كل منطقة.'
+    solution:
+      en: |
+        (a) With \(\sigma = Q/A\), Gauss's law for \(\vb{D}\) gives \(D = \sigma\) everywhere between the plates (directed from + to −). Hence
+        \[ E_{\text{air}} = \frac{\sigma}{\varepsilon_0}, \qquad E_{\text{slab}} = \frac{\sigma}{\varepsilon_0\varepsilon_r}. \]
+
+        (b) \(V = E_{\text{air}}(d-t) + E_{\text{slab}}\,t = \dfrac{\sigma}{\varepsilon_0}\Big(d - t + \dfrac{t}{\varepsilon_r}\Big)\), so
+        \[ C = \frac{Q}{V} = \frac{\varepsilon_0 A}{d - t + t/\varepsilon_r}. \]
+
+        (c) \(P = \varepsilon_0(\varepsilon_r-1)E_{\text{slab}} = \sigma\big(1 - 1/\varepsilon_r\big)\), so \(\sigma_b = \pm\sigma(1-1/\varepsilon_r)\), the negative bound charge facing the positive plate. It partially screens the free charge inside the slab.
+
+        (d) \(C = \dfrac{8.85\times10^{-12}\times10^{-2}}{1.25\times10^{-3}} \approx 70.8\ \text{pF}\), while the empty capacitor has \(C_0 = \varepsilon_0A/d \approx 44.3\ \text{pF}\): the slab increases the capacitance by a factor 1.6.
+      ar: |
+        (أ) مع \(\sigma = Q/A\)، يعطي قانون غاوس لـ \(\vb{D}\) أن \(D = \sigma\) في كل مكان بين اللبوسين (موجهًا من + إلى −). ومنه
+        \[ E_{\text{air}} = \frac{\sigma}{\varepsilon_0}, \qquad E_{\text{slab}} = \frac{\sigma}{\varepsilon_0\varepsilon_r}. \]
+
+        (ب) \(V = E_{\text{air}}(d-t) + E_{\text{slab}}\,t = \dfrac{\sigma}{\varepsilon_0}\Big(d - t + \dfrac{t}{\varepsilon_r}\Big)\)، إذن
+        \[ C = \frac{Q}{V} = \frac{\varepsilon_0 A}{d - t + t/\varepsilon_r}. \]
+
+        (ج) \(P = \varepsilon_0(\varepsilon_r-1)E_{\text{slab}} = \sigma\big(1 - 1/\varepsilon_r\big)\)، ومنه \(\sigma_b = \pm\sigma(1-1/\varepsilon_r)\)، حيث تقابل الشحنةُ المقيدة السالبة اللبوسَ الموجب. وهي تحجب جزئيًا الشحنة الحرة داخل اللوح.
+
+        (د) \(C = \dfrac{8.85\times10^{-12}\times10^{-2}}{1.25\times10^{-3}} \approx 70.8\ \text{pF}\)، بينما سعة المكثفة الفارغة \(C_0 = \varepsilon_0A/d \approx 44.3\ \text{pF}\): يزيد اللوح السعة بمعامل 1.6.
+  - title: { en: Coaxial cable — field and inductance, ar: الكبل المحوري — الحقل والذاتية }
+    difficulty: 2
+    statement:
+      en: |
+        A long coaxial cable consists of a solid inner conductor of radius \(a\) carrying a current \(I\) uniformly distributed over its cross-section, and a thin outer cylindrical shell of radius \(b\) carrying the return current \(-I\).
+
+        (a) Find \(\vb{B}(r)\) for \(r<a\), \(a<r<b\) and \(r>b\).
+        (b) Compute the magnetic energy per unit length and deduce the self-inductance per unit length.
+      ar: |
+        كبل محوري طويل يتكون من ناقل داخلي مصمت نصف قطره \(a\) يمر فيه تيار \(I\) موزع بانتظام على مقطعه، ومن غلاف أسطواني خارجي رقيق نصف قطره \(b\) يمر فيه تيار العودة \(-I\).
+
+        (أ) أوجد \(\vb{B}(r)\) من أجل \(r<a\) و\(a<r<b\) و\(r>b\).
+        (ب) احسب الطاقة المغناطيسية لوحدة الطول واستنتج الذاتية لوحدة الطول.
+    hint:
+      en: 'Use circular Amperian loops; \(\vb{B} = B(r)\hat{\boldsymbol\phi}\). Then \(W/\ell = \frac{1}{2\mu_0}\int B^2\,2\pi r\,\dd r\) and \(W = \tfrac12 LI^2\).'
+      ar: 'استعمل حلقات أمبير دائرية؛ \(\vb{B} = B(r)\hat{\boldsymbol\phi}\). ثم \(W/\ell = \frac{1}{2\mu_0}\int B^2\,2\pi r\,\dd r\) و\(W = \tfrac12 LI^2\).'
+    solution:
+      en: |
+        (a) Ampère's law \(2\pi r B = \mu_0 I_{\text{enc}}\):
+        \[ B(r) = \begin{cases} \dfrac{\mu_0 I r}{2\pi a^2}, & r<a,\\[2mm] \dfrac{\mu_0 I}{2\pi r}, & a<r<b,\\[2mm] 0, & r>b. \end{cases} \]
+        Outside the cable the enclosed current is zero: a coaxial line does not radiate a static field outside.
+
+        (b) Inside the inner conductor: \(\dfrac{1}{2\mu_0}\Big(\dfrac{\mu_0I}{2\pi a^2}\Big)^2\displaystyle\int_0^a r^2\,2\pi r\,\dd r = \dfrac{\mu_0I^2}{16\pi}\). Between the conductors: \(\dfrac{1}{2\mu_0}\Big(\dfrac{\mu_0I}{2\pi}\Big)^2\displaystyle\int_a^b\dfrac{2\pi r\,\dd r}{r^2} = \dfrac{\mu_0I^2}{4\pi}\ln\dfrac{b}{a}\). With \(W/\ell = \tfrac12 L' I^2\):
+        \[ L' = \frac{\mu_0}{2\pi}\ln\frac{b}{a} + \frac{\mu_0}{8\pi}. \]
+        The second term comes from the field inside the inner conductor; it disappears at high frequency, when the current flows only on the surface.
+      ar: |
+        (أ) قانون أمبير \(2\pi r B = \mu_0 I_{\text{enc}}\):
+        \[ B(r) = \begin{cases} \dfrac{\mu_0 I r}{2\pi a^2}, & r<a,\\[2mm] \dfrac{\mu_0 I}{2\pi r}, & a<r<b,\\[2mm] 0, & r>b. \end{cases} \]
+        خارج الكبل يكون التيار المحتوى معدومًا: فالخط المحوري لا يُنشئ حقلًا ساكنًا خارجه.
+
+        (ب) داخل الناقل الداخلي: \(\dfrac{1}{2\mu_0}\Big(\dfrac{\mu_0I}{2\pi a^2}\Big)^2\displaystyle\int_0^a r^2\,2\pi r\,\dd r = \dfrac{\mu_0I^2}{16\pi}\). وبين الناقلين: \(\dfrac{1}{2\mu_0}\Big(\dfrac{\mu_0I}{2\pi}\Big)^2\displaystyle\int_a^b\dfrac{2\pi r\,\dd r}{r^2} = \dfrac{\mu_0I^2}{4\pi}\ln\dfrac{b}{a}\). ومع \(W/\ell = \tfrac12 L' I^2\):
+        \[ L' = \frac{\mu_0}{2\pi}\ln\frac{b}{a} + \frac{\mu_0}{8\pi}. \]
+        يأتي الحد الثاني من الحقل داخل الناقل الداخلي، ويختفي في الترددات العالية حين يسري التيار على السطح فقط.
+  - title: { en: Magnetic braking of a sliding rod, ar: الكبح المغناطيسي لساق منزلقة }
+    difficulty: 3
+    statement:
+      en: |
+        A conducting rod of mass \(m\) slides without friction on two horizontal parallel rails separated by \(\ell\), closed at one end by a resistor \(R\) (rails and rod have negligible resistance). A uniform vertical field \(B\) fills the region. The rod is launched with speed \(v_0\).
+
+        (a) Find the induced emf and current, and the magnetic force on the rod. Check the direction with Lenz's rule.
+        (b) Find \(v(t)\) and the total distance travelled.
+        (c) Show that the total Joule heat equals the initial kinetic energy.
+        (d) Numerical values: \(m = 0.1\ \text{kg}\), \(\ell = 0.5\ \text{m}\), \(B = 0.4\ \text{T}\), \(R = 0.2\ \Omega\), \(v_0 = 2\ \text{m/s}\).
+      ar: |
+        ساق ناقلة كتلتها \(m\) تنزلق دون احتكاك على سكتين أفقيتين متوازيتين المسافة بينهما \(\ell\)، مغلقتين من أحد الطرفين بمقاومة \(R\) (مقاومة السكتين والساق مهملة). يسود المنطقةَ حقلٌ مغناطيسي منتظم شاقولي \(B\). تُقذف الساق بسرعة \(v_0\).
+
+        (أ) أوجد القوة المحركة الكهربائية المتحرضة والتيار، والقوة المغناطيسية المؤثرة على الساق. تحقّق من الاتجاه بقاعدة لنز.
+        (ب) أوجد \(v(t)\) والمسافة الكلية المقطوعة.
+        (ج) بيّن أن حرارة جول الكلية تساوي الطاقة الحركية الابتدائية.
+        (د) قيم عددية: \(m = 0.1\ \text{kg}\)، \(\ell = 0.5\ \text{m}\)، \(B = 0.4\ \text{T}\)، \(R = 0.2\ \Omega\)، \(v_0 = 2\ \text{m/s}\).
+    hint:
+      en: 'The flux through the circuit is \(\Phi = B\ell x\). The force on the rod is \(I\ell B\) and opposes the motion.'
+      ar: 'التدفق عبر الدارة هو \(\Phi = B\ell x\). القوة المؤثرة على الساق هي \(I\ell B\) وتعاكس الحركة.'
+    solution:
+      en: |
+        (a) \(|\mathcal{E}| = \left|\dv{\Phi}{t}\right| = B\ell v\), so \(I = B\ell v/R\). The force on the rod has magnitude
+        \[ F = I\ell B = \frac{B^2\ell^2}{R}\,v \]
+        and points against the velocity: the induced current opposes the increase of flux (Lenz), so it brakes the rod.
+
+        (b) \(m\dv{v}{t} = -\dfrac{B^2\ell^2}{R}v\), hence
+        \[ v(t) = v_0\,e^{-t/\tau}, \qquad \tau = \frac{mR}{B^2\ell^2}, \qquad x_\infty = \int_0^\infty v\,\dd t = v_0\tau. \]
+
+        (c) \(\displaystyle\int_0^\infty I^2R\,\dd t = \frac{B^2\ell^2}{R}\int_0^\infty v_0^2e^{-2t/\tau}\dd t = \frac{B^2\ell^2}{R}\,\frac{v_0^2\tau}{2} = \frac12 mv_0^2.\) All the kinetic energy ends up as heat in the resistor.
+
+        (d) \(B^2\ell^2 = 0.04\ \text{T}^2\text{m}^2\), \(\tau = 0.5\ \text{s}\), \(x_\infty = 1\ \text{m}\), initial current \(I_0 = 2\ \text{A}\), heat \(= 0.2\ \text{J}\).
+      ar: |
+        (أ) \(|\mathcal{E}| = \left|\dv{\Phi}{t}\right| = B\ell v\)، إذن \(I = B\ell v/R\). وطويلة القوة المؤثرة على الساق
+        \[ F = I\ell B = \frac{B^2\ell^2}{R}\,v \]
+        وجهتها عكس السرعة: فالتيار المتحرض يعاكس تزايد التدفق (قاعدة لنز)، فيكبح الساق.
+
+        (ب) \(m\dv{v}{t} = -\dfrac{B^2\ell^2}{R}v\)، ومنه
+        \[ v(t) = v_0\,e^{-t/\tau}, \qquad \tau = \frac{mR}{B^2\ell^2}, \qquad x_\infty = \int_0^\infty v\,\dd t = v_0\tau. \]
+
+        (ج) \(\displaystyle\int_0^\infty I^2R\,\dd t = \frac{B^2\ell^2}{R}\int_0^\infty v_0^2e^{-2t/\tau}\dd t = \frac{B^2\ell^2}{R}\,\frac{v_0^2\tau}{2} = \frac12 mv_0^2.\) تتحول الطاقة الحركية كلها إلى حرارة في المقاومة.
+
+        (د) \(B^2\ell^2 = 0.04\ \text{T}^2\text{m}^2\)، \(\tau = 0.5\ \text{s}\)، \(x_\infty = 1\ \text{m}\)، التيار الابتدائي \(I_0 = 2\ \text{A}\)، الحرارة \(= 0.2\ \text{J}\).
+  - title: { en: Sunlight as a plane wave, ar: ضوء الشمس كموجة مستوية }
+    difficulty: 2
+    statement:
+      en: |
+        A plane wave in vacuum has electric field \(\vb{E} = E_0\cos(kz-\omega t)\,\hat{\vb{x}}\).
+
+        (a) Use Faraday's law to find \(\vb{B}\).
+        (b) Find the Poynting vector and its time average (the intensity).
+        (c) Sunlight at the top of the atmosphere has intensity \(I = 1361\ \text{W/m}^2\). Find \(E_0\), \(B_0\) and the radiation pressure on a perfectly absorbing surface.
+      ar: |
+        موجة مستوية في الفراغ حقلها الكهربائي \(\vb{E} = E_0\cos(kz-\omega t)\,\hat{\vb{x}}\).
+
+        (أ) استعمل قانون فاراداي لإيجاد \(\vb{B}\).
+        (ب) أوجد شعاع بوينتينغ ومتوسطه الزمني (الشدة).
+        (ج) شدة ضوء الشمس في أعلى الغلاف الجوي \(I = 1361\ \text{W/m}^2\). أوجد \(E_0\) و\(B_0\) وضغط الإشعاع على سطح ماصّ تمامًا.
+    hint:
+      en: '\(\nabla\times\vb{E} = -\partial\vb{B}/\partial t\); \(\vb{S} = \vb{E}\times\vb{B}/\mu_0\); \(\omega/k = c\); \(\langle\cos^2\rangle = 1/2\); pressure on an absorber is \(I/c\).'
+      ar: '\(\nabla\times\vb{E} = -\partial\vb{B}/\partial t\)؛ \(\vb{S} = \vb{E}\times\vb{B}/\mu_0\)؛ \(\omega/k = c\)؛ \(\langle\cos^2\rangle = 1/2\)؛ الضغط على سطح ماصّ هو \(I/c\).'
+    solution:
+      en: |
+        (a) \(\nabla\times\vb{E} = \partial_z E_x\,\hat{\vb{y}} = -kE_0\sin(kz-\omega t)\,\hat{\vb{y}} = -\partial_t\vb{B}\). Integrating in time:
+        \[ \vb{B} = \frac{E_0}{c}\cos(kz-\omega t)\,\hat{\vb{y}}. \]
+        \(\vb{E}\), \(\vb{B}\) and \(\hat{\vb{z}}\) form a right-handed set and the two fields are in phase.
+
+        (b) \[ \vb{S} = \frac{1}{\mu_0}\vb{E}\times\vb{B} = \frac{E_0^2}{\mu_0c}\cos^2(kz-\omega t)\,\hat{\vb{z}}, \qquad I = \langle S\rangle = \frac{E_0^2}{2\mu_0c} = \tfrac12 c\varepsilon_0E_0^2. \]
+
+        (c) \[ E_0 = \sqrt{\frac{2I}{c\varepsilon_0}} = \sqrt{\frac{2\times1361}{3.00\times10^8\times8.85\times10^{-12}}} \approx 1.01\times10^3\ \text{V/m}, \]
+        \(B_0 = E_0/c \approx 3.4\ \mu\text{T}\) (about 1/15 of the Earth's field), and \(p = I/c \approx 4.5\times10^{-6}\ \text{Pa}\).
+      ar: |
+        (أ) \(\nabla\times\vb{E} = \partial_z E_x\,\hat{\vb{y}} = -kE_0\sin(kz-\omega t)\,\hat{\vb{y}} = -\partial_t\vb{B}\). وبالمكاملة بالنسبة إلى الزمن:
+        \[ \vb{B} = \frac{E_0}{c}\cos(kz-\omega t)\,\hat{\vb{y}}. \]
+        تشكّل \(\vb{E}\) و\(\vb{B}\) و\(\hat{\vb{z}}\) ثلاثية مباشرة، والحقلان على توافق في الطور.
+
+        (ب) \[ \vb{S} = \frac{1}{\mu_0}\vb{E}\times\vb{B} = \frac{E_0^2}{\mu_0c}\cos^2(kz-\omega t)\,\hat{\vb{z}}, \qquad I = \langle S\rangle = \frac{E_0^2}{2\mu_0c} = \tfrac12 c\varepsilon_0E_0^2. \]
+
+        (ج) \[ E_0 = \sqrt{\frac{2I}{c\varepsilon_0}} = \sqrt{\frac{2\times1361}{3.00\times10^8\times8.85\times10^{-12}}} \approx 1.01\times10^3\ \text{V/m}, \]
+        و\(B_0 = E_0/c \approx 3.4\ \mu\text{T}\) (نحو 1/15 من الحقل المغناطيسي الأرضي)، و\(p = I/c \approx 4.5\times10^{-6}\ \text{Pa}\).
+
+quizzes:
+  - title: { en: Vector analysis, ar: التحليل الشعاعي }
+    questions:
+      - q:
+          en: 'For the position vector \(\vb{r} = x\hat{\vb{x}} + y\hat{\vb{y}} + z\hat{\vb{z}}\), \(\nabla\cdot\vb{r}\) equals'
+          ar: 'من أجل شعاع الموضع \(\vb{r} = x\hat{\vb{x}} + y\hat{\vb{y}} + z\hat{\vb{z}}\)، يساوي \(\nabla\cdot\vb{r}\)'
+        options:
+          - '0'
+          - '1'
+          - '3'
+          - '\(r\)'
+        answer: 2
+        explain:
+          en: '\(\partial x/\partial x + \partial y/\partial y + \partial z/\partial z = 3\): the position field spreads out uniformly from every point.'
+          ar: '\(\partial x/\partial x + \partial y/\partial y + \partial z/\partial z = 3\): حقل الموضع ينتشر بانتظام انطلاقًا من كل نقطة.'
+      - q:
+          en: For any smooth scalar function \(f\), \(\nabla\times(\nabla f)\) is
+          ar: من أجل أي دالة سلمية ملساء \(f\)، يكون \(\nabla\times(\nabla f)\)
+        options:
+          - '\(\nabla^2 f\)'
+          - '\(\vb{0}\)'
+          - '\(\nabla f\)'
+          - en: undefined
+            ar: غير معرّف
+        answer: 1
+        explain:
+          en: The curl of a gradient vanishes identically because mixed partial derivatives commute. This is why an electrostatic field, \(\vb{E} = -\nabla V\), has zero curl.
+          ar: دوار التدرج منعدم تطابقيًا لأن المشتقات الجزئية المختلطة تتبادل. ولهذا يكون دوار الحقل الكهروساكن \(\vb{E} = -\nabla V\) معدومًا.
+      - q:
+          en: 'The divergence of \(\hat{\vb{r}}/r^2\) (the field of a point charge, up to a constant) is'
+          ar: 'تباعد \(\hat{\vb{r}}/r^2\) (حقل شحنة نقطية مع إهمال ثابت) هو'
+        options:
+          - en: zero everywhere
+            ar: معدوم في كل مكان
+          - '\(1/r^3\)'
+          - '\(-4\pi/r\)'
+          - '\(4\pi\delta^3(\vb{r})\)'
+        answer: 3
+        explain:
+          en: 'It vanishes for \(r\neq0\), but its flux through any sphere around the origin is \(4\pi\). The divergence theorem then requires a delta function at the origin: \(4\pi\delta^3(\vb{r})\).'
+          ar: 'ينعدم من أجل \(r\neq0\)، لكن تدفقه عبر أي كرة تحيط بالمبدأ يساوي \(4\pi\). وتقتضي نظرية التباعد عندئذ وجود دالة دلتا في المبدأ: \(4\pi\delta^3(\vb{r})\).'
+      - q:
+          en: Stokes' theorem states that
+          ar: تنص نظرية ستوكس على أن
+        options:
+          - '\(\oint_C\vb{A}\cdot\dd\vb{l} = \iint_S(\nabla\times\vb{A})\cdot\dd\vb{S}\)'
+          - '\(\oint_S\vb{A}\cdot\dd\vb{S} = \iiint_V\nabla\cdot\vb{A}\,\dd\tau\)'
+          - '\(\int_a^b\nabla f\cdot\dd\vb{l} = f(b)-f(a)\)'
+          - '\(\oint_C\vb{A}\cdot\dd\vb{l} = \iiint_V\nabla\cdot\vb{A}\,\dd\tau\)'
+        answer: 0
+        explain:
+          en: The circulation of a field around a closed curve equals the flux of its curl through any surface bounded by that curve. The second option is the divergence theorem, the third the gradient theorem.
+          ar: دوران الحقل على منحنٍ مغلق يساوي تدفق دواره عبر أي سطح يحدّه ذلك المنحني. الخيار الثاني هو نظرية التباعد، والثالث نظرية التدرج.
+      - q:
+          en: The gradient of \(f = 1/r\) is
+          ar: تدرج الدالة \(f = 1/r\) هو
+        options:
+          - '\(\hat{\vb{r}}/r^2\)'
+          - '\(-\hat{\vb{r}}/r^2\)'
+          - '\(-1/r\)'
+          - '\(\hat{\vb{r}}/r\)'
+        answer: 1
+        explain:
+          en: '\(f\) depends only on \(r\), so \(\nabla f = \dv{f}{r}\hat{\vb{r}} = -\hat{\vb{r}}/r^2\). The gradient points towards increasing \(f\), i.e. inwards (towards smaller \(r\)).'
+          ar: '\(f\) لا تتعلق إلا بـ \(r\)، إذن \(\nabla f = \dv{f}{r}\hat{\vb{r}} = -\hat{\vb{r}}/r^2\)؛ فالتدرج يتجه نحو تزايد \(f\)، أي نحو الداخل.'
+  - title: { en: Electrostatics and dielectrics, ar: الكهروساكنة والعوازل }
+    questions:
+      - q:
+          en: The flux of \(\vb{E}\) through a closed surface enclosing a net charge \(q\) is
+          ar: تدفق \(\vb{E}\) عبر سطح مغلق يحيط بشحنة صافية \(q\) هو
+        options:
+          - '\(\varepsilon_0 q\)'
+          - '\(q/4\pi\varepsilon_0\)'
+          - '0'
+          - '\(q/\varepsilon_0\)'
+        answer: 3
+        explain:
+          en: Gauss's law, whatever the shape of the surface and the position of the charge inside it.
+          ar: إنه قانون غاوس، مهما كان شكل السطح وموضع الشحنة داخله.
+      - q:
+          en: Inside a conductor in electrostatic equilibrium
+          ar: داخل ناقل في حالة توازن كهروساكن
+        options:
+          - en: the electric field is zero
+            ar: يكون الحقل الكهربائي معدومًا
+          - en: the potential is zero
+            ar: يكون الكمون معدومًا
+          - en: there is a uniform volume charge
+            ar: توجد شحنة حجمية منتظمة
+          - en: the field is perpendicular to the surface
+            ar: يكون الحقل عموديًا على السطح
+        answer: 0
+        explain:
+          en: Any field inside would move the free charges, so equilibrium requires \(\vb{E} = 0\). The potential is then constant (not necessarily zero) and any net charge sits on the surface.
+          ar: أي حقل في الداخل يحرّك الشحنات الحرة، فالتوازن يقتضي \(\vb{E} = 0\). ويكون الكمون عندئذ ثابتًا (وليس بالضرورة معدومًا)، وتستقر أي شحنة صافية على السطح.
+      - q:
+          en: Far from a neutral pure dipole, its potential decreases as
+          ar: بعيدًا عن ثنائي قطب نقي متعادل، يتناقص كمونه كـ
+        options:
+          - '\(1/r\)'
+          - '\(1/r^2\)'
+          - '\(1/r^3\)'
+          - '\(e^{-r}\)'
+        answer: 1
+        explain:
+          en: '\(V = \dfrac{\vb{p}\cdot\hat{\vb{r}}}{4\pi\varepsilon_0 r^2}\): the monopole term vanishes for a neutral system and the dipole term is the leading one. The field then falls as \(1/r^3\).'
+          ar: '\(V = \dfrac{\vb{p}\cdot\hat{\vb{r}}}{4\pi\varepsilon_0 r^2}\): حد أحادي القطب منعدم لجملة متعادلة، وحد ثنائي القطب هو الغالب. أما الحقل فيتناقص كـ \(1/r^3\).'
+      - q:
+          en: An isolated charged capacitor (charge \(Q\) fixed) is completely filled with a dielectric of permittivity \(\varepsilon_r\). The voltage between its plates
+          ar: مكثفة مشحونة معزولة (الشحنة \(Q\) ثابتة) تُملأ كليًا بعازل سماحيته النسبية \(\varepsilon_r\). التوتر بين لبوسيها
+        options:
+          - en: increases by the factor εr
+            ar: يزداد بمعامل εr
+          - en: is unchanged
+            ar: لا يتغير
+          - en: decreases by the factor εr
+            ar: ينقص بمعامل εr
+          - en: drops to zero
+            ar: ينعدم
+        answer: 2
+        explain:
+          en: '\(C\) is multiplied by \(\varepsilon_r\) while \(Q\) is fixed, so \(V = Q/C\) is divided by \(\varepsilon_r\): the bound charges partly cancel the field of the free charges.'
+          ar: 'تُضرب \(C\) في \(\varepsilon_r\) بينما \(Q\) ثابتة، فيُقسم \(V = Q/C\) على \(\varepsilon_r\): الشحنات المقيدة تلغي جزئيًا حقل الشحنات الحرة.'
+      - q:
+          en: At an interface carrying a free surface charge \(\sigma_f\),
+          ar: عند سطح فاصل يحمل شحنة سطحية حرة \(\sigma_f\)،
+        options:
+          - en: the normal component of D jumps by σf
+            ar: تقفز المركبة الناظمية لـ D بمقدار σf
+          - en: the tangential component of E jumps by σf/ε0
+            ar: تقفز المركبة المماسية لـ E بمقدار σf/ε0
+          - en: the normal component of E is always continuous
+            ar: تكون المركبة الناظمية لـ E مستمرة دائمًا
+          - en: D is continuous in all its components
+            ar: يكون D مستمرًا في كل مركباته
+        answer: 0
+        explain:
+          en: 'Gauss''s law for \(\vb{D}\) on a pill-box gives \(D_{2\perp} - D_{1\perp} = \sigma_f\); the curl-free nature of \(\vb{E}\) makes its tangential component continuous.'
+          ar: 'قانون غاوس لـ \(\vb{D}\) على أسطوانة صغيرة يعطي \(D_{2\perp} - D_{1\perp} = \sigma_f\)؛ وانعدام دوار \(\vb{E}\) يجعل مركبته المماسية مستمرة.'
+  - title: { en: Magnetostatics and induction, ar: المغناطيسية الساكنة والتحريض }
+    questions:
+      - q:
+          en: The magnetic force on a moving point charge does no work because
+          ar: لا تنجز القوة المغناطيسية المؤثرة على شحنة نقطية متحركة أي عمل لأن
+        options:
+          - en: it is always perpendicular to the velocity
+            ar: القوة عمودية دائمًا على السرعة
+          - en: it is always very small
+            ar: القوة صغيرة جدًا دائمًا
+          - en: the magnetic field is conservative
+            ar: الحقل المغناطيسي محافظ
+          - en: magnetic monopoles do not exist
+            ar: الأقطاب المغناطيسية المنفردة غير موجودة
+        answer: 0
+        explain:
+          en: '\(\vb{F} = q\vb{v}\times\vb{B}\) is perpendicular to \(\vb{v}\), so \(\vb{F}\cdot\vb{v} = 0\): magnetic forces change the direction of motion, not the speed.'
+          ar: '\(\vb{F} = q\vb{v}\times\vb{B}\) عمودية على \(\vb{v}\)، إذن \(\vb{F}\cdot\vb{v} = 0\): تغيّر القوى المغناطيسية اتجاه الحركة لا مقدار السرعة.'
+      - q:
+          en: The magnetic field at distance \(s\) from a long straight wire carrying current \(I\) is
+          ar: الحقل المغناطيسي على بعد \(s\) من سلك مستقيم طويل يمر فيه تيار \(I\) هو
+        options:
+          - '\(\mu_0 I/4\pi s^2\)'
+          - '\(\mu_0 I/2s\)'
+          - '\(\mu_0 I s/2\pi\)'
+          - '\(\mu_0 I/2\pi s\)'
+        answer: 3
+        explain:
+          en: 'Ampère''s law on a circle of radius \(s\): \(B\cdot2\pi s = \mu_0I\). (\(\mu_0I/2R\) is the field at the centre of a circular loop.)'
+          ar: 'قانون أمبير على دائرة نصف قطرها \(s\): \(B\cdot2\pi s = \mu_0I\). (أما \(\mu_0I/2R\) فهو الحقل في مركز حلقة دائرية.)'
+      - q:
+          en: The equation \(\nabla\cdot\vb{B} = 0\) expresses the fact that
+          ar: تعبّر المعادلة \(\nabla\cdot\vb{B} = 0\) عن أن
+        options:
+          - en: B is always uniform
+            ar: B منتظم دائمًا
+          - en: there are no magnetic monopoles and field lines have no ends
+            ar: لا توجد أقطاب مغناطيسية منفردة وخطوط الحقل ليس لها بداية ولا نهاية
+          - en: currents are always steady
+            ar: التيارات مستقرة دائمًا
+          - en: the magnetic field does no work
+            ar: الحقل المغناطيسي لا ينجز عملًا
+        answer: 1
+        explain:
+          en: Zero divergence means zero net flux through every closed surface — no sources or sinks of B. This also allows writing \(\vb{B} = \nabla\times\vb{A}\).
+          ar: انعدام التباعد يعني انعدام التدفق الصافي عبر كل سطح مغلق — فلا منابع ولا مصارف لـ B. وهذا ما يسمح بكتابة \(\vb{B} = \nabla\times\vb{A}\).
+      - q:
+          en: Inside a long ideal solenoid with \(n\) turns per unit length carrying current \(I\), the field is
+          ar: داخل وشيعة مثالية طويلة فيها \(n\) لفة في وحدة الطول ويمر فيها تيار \(I\)، يكون الحقل
+        options:
+          - '0'
+          - '\(\mu_0 I/2\pi r\)'
+          - '\(\mu_0 nI\)'
+          - '\(\mu_0 n I/2\)'
+        answer: 2
+        explain:
+          en: A rectangular Amperian loop with one side inside and one outside (where \(B\approx0\)) gives \(BL = \mu_0 nLI\). The field is uniform inside.
+          ar: حلقة أمبير مستطيلة أحد أضلاعها داخل الوشيعة والآخر خارجها (حيث \(B\approx0\)) تعطي \(BL = \mu_0 nLI\). والحقل منتظم في الداخل.
+      - q:
+          en: A bar magnet is pushed towards a closed conducting loop. The induced current
+          ar: يُدفع مغنطيس مستقيم نحو حلقة ناقلة مغلقة. التيار المتحرض
+        options:
+          - en: is zero because the loop does not move
+            ar: معدوم لأن الحلقة لا تتحرك
+          - en: creates a field that reinforces the change of flux
+            ar: ينشئ حقلًا يدعم تغيّر التدفق
+          - en: depends only on the magnet's field, not on its motion
+            ar: لا يتعلق إلا بحقل المغنطيس لا بحركته
+          - en: creates a field that opposes the change of flux and repels the magnet
+            ar: ينشئ حقلًا يعاكس تغيّر التدفق ويدفع المغنطيس
+        answer: 3
+        explain:
+          en: 'Lenz''s rule (the minus sign in \(\mathcal{E} = -\dd\Phi/\dd t\)): the induced current opposes the increase of flux, so the loop pushes back on the approaching magnet. Otherwise energy would be created from nothing.'
+          ar: 'قاعدة لنز (إشارة الناقص في \(\mathcal{E} = -\dd\Phi/\dd t\)): يعاكس التيار المتحرض تزايد التدفق، فتدفع الحلقة المغنطيسَ المقترب. ولولا ذلك لخُلقت الطاقة من العدم.'
+  - title: { en: Maxwell's equations and electromagnetic waves, ar: معادلات ماكسويل والأمواج الكهرومغناطيسية }
+    questions:
+      - q:
+          en: The displacement current density introduced by Maxwell is
+          ar: كثافة تيار الانزياح التي أدخلها ماكسويل هي
+        options:
+          - '\(\mu_0\,\partial\vb{B}/\partial t\)'
+          - '\(\varepsilon_0\,\partial\vb{E}/\partial t\)'
+          - '\(\sigma\vb{E}\)'
+          - '\(\nabla\times\vb{H}\)'
+        answer: 1
+        explain:
+          en: 'Without \(\varepsilon_0\partial_t\vb{E}\), Ampère''s law would contradict charge conservation (take the divergence of both sides). With it, a changing E field produces B — the key to EM waves.'
+          ar: 'بدون \(\varepsilon_0\partial_t\vb{E}\) يتناقض قانون أمبير مع انحفاظ الشحنة (خذ تباعد الطرفين). وبإضافته يُنتج الحقل الكهربائي المتغير حقلًا مغناطيسيًا — وهذا مفتاح الأمواج الكهرومغناطيسية.'
+      - q:
+          en: Maxwell's equations predict that electromagnetic waves travel in vacuum at
+          ar: تتنبأ معادلات ماكسويل بأن الأمواج الكهرومغناطيسية تنتشر في الفراغ بسرعة
+        options:
+          - '\(1/\sqrt{\mu_0\varepsilon_0}\)'
+          - '\(\sqrt{\mu_0\varepsilon_0}\)'
+          - '\(\mu_0/\varepsilon_0\)'
+          - '\(1/(\mu_0\varepsilon_0)\)'
+        answer: 0
+        explain:
+          en: 'Combining the curl equations gives \(\nabla^2\vb{E} = \mu_0\varepsilon_0\,\partial_t^2\vb{E}\), a wave equation with \(v^2 = 1/\mu_0\varepsilon_0\), i.e. \(v = 3.00\times10^8\ \text{m/s}\).'
+          ar: 'بدمج معادلتي الدوار نحصل على \(\nabla^2\vb{E} = \mu_0\varepsilon_0\,\partial_t^2\vb{E}\)، وهي معادلة موجة حيث \(v^2 = 1/\mu_0\varepsilon_0\)، أي \(v = 3.00\times10^8\ \text{m/s}\).'
+      - q:
+          en: In a plane electromagnetic wave in vacuum, E and B are
+          ar: في موجة كهرومغناطيسية مستوية في الفراغ، يكون E وB
+        options:
+          - en: parallel to each other and to the direction of propagation
+            ar: متوازيين ومتوازيين مع اتجاه الانتشار
+          - en: perpendicular to each other but 90° out of phase
+            ar: متعامدين لكن بينهما فرق طور 90°
+          - en: perpendicular to each other and to the propagation direction, in phase, with B = E/c
+            ar: متعامدين ومتعامدين مع اتجاه الانتشار، على توافق في الطور، مع B = E/c
+          - en: equal in magnitude in SI units
+            ar: متساويين في الطويلة بوحدات SI
+        answer: 2
+        explain:
+          en: 'The divergence equations make both fields transverse, and Faraday''s law gives \(\vb{B} = \hat{\vb{k}}\times\vb{E}/c\), in phase with \(\vb{E}\).'
+          ar: 'معادلتا التباعد تجعلان الحقلين عرضيين، ويعطي قانون فاراداي \(\vb{B} = \hat{\vb{k}}\times\vb{E}/c\) على توافق في الطور مع \(\vb{E}\).'
+      - q:
+          en: The intensity (time-averaged Poynting vector) of a plane wave of amplitude \(E_0\) in vacuum is
+          ar: شدة موجة مستوية سعتها \(E_0\) في الفراغ (المتوسط الزمني لشعاع بوينتينغ) هي
+        options:
+          - '\(c\varepsilon_0E_0^2\)'
+          - '\(\varepsilon_0E_0^2/2\)'
+          - '\(E_0^2/2\mu_0\)'
+          - '\(\tfrac12 c\varepsilon_0E_0^2\)'
+        answer: 3
+        explain:
+          en: '\(S = E^2/\mu_0c\) oscillates as \(\cos^2\), whose average is ½, so \(I = E_0^2/2\mu_0c = \tfrac12c\varepsilon_0E_0^2\). \(\varepsilon_0E_0^2/2\) is the mean energy density, which must be multiplied by \(c\).'
+          ar: '\(S = E^2/\mu_0c\) يتغير كـ \(\cos^2\) الذي متوسطه ½، إذن \(I = E_0^2/2\mu_0c = \tfrac12c\varepsilon_0E_0^2\). أما \(\varepsilon_0E_0^2/2\) فهي متوسط كثافة الطاقة، ويجب ضربها في \(c\).'
+      - q:
+          en: For a non-magnetic transparent dielectric of relative permittivity \(\varepsilon_r\), the refractive index is
+          ar: من أجل عازل شفاف غير مغناطيسي سماحيته النسبية \(\varepsilon_r\)، تكون قرينة الانكسار
+        options:
+          - '\(\varepsilon_r\)'
+          - '\(\sqrt{\varepsilon_r}\)'
+          - '\(1/\varepsilon_r\)'
+          - '\(\varepsilon_r^2\)'
+        answer: 1
+        explain:
+          en: 'In a linear medium \(v = 1/\sqrt{\mu\varepsilon}\); with \(\mu\approx\mu_0\), \(n = c/v = \sqrt{\varepsilon_r}\) (evaluated at the optical frequency).'
+          ar: 'في وسط خطي \(v = 1/\sqrt{\mu\varepsilon}\)؛ ومع \(\mu\approx\mu_0\) تكون \(n = c/v = \sqrt{\varepsilon_r}\) (محسوبة عند تواتر الضوء).'
+
+textbooks:
+  required:
+    - { authors: D. J. Griffiths, title: Introduction to Electrodynamics, edition: 4th, publisher: Cambridge University Press, year: 2017 }
+  recommended:
+    - { authors: E. M. Purcell & D. J. Morin, title: Electricity and Magnetism, edition: 3rd, publisher: Cambridge University Press, year: 2013 }
+    - { authors: 'R. P. Feynman, R. B. Leighton & M. Sands', title: 'The Feynman Lectures on Physics, Vol. II', publisher: Addison-Wesley, year: 1964 }
+    - { authors: A. Zangwill, title: Modern Electrodynamics, publisher: Cambridge University Press, year: 2013 }
+    - { authors: J. D. Jackson, title: Classical Electrodynamics, edition: 3rd, publisher: Wiley, year: 1998 }
+    - { authors: L. D. Landau & E. M. Lifshitz, title: 'The Classical Theory of Fields (Course of Theoretical Physics, Vol. 2)', edition: 4th, publisher: Pergamon, year: 1975 }
+    - { authors: 'J.-P. Pérez, R. Carles & R. Fleckinger', title: 'Électromagnétisme : fondements et applications', publisher: Dunod, year: 2011 }
+  online:
+    - title: { en: D. Tong — Lectures on Electromagnetism, ar: D. Tong — محاضرات في الكهرومغناطيسية }
+      url: https://www.damtp.cam.ac.uk/user/tong/em.html
+      note: { en: Clear and modern lecture notes at exactly this level., ar: مذكرات محاضرات واضحة وحديثة في المستوى نفسه تمامًا. }
+    - title: { en: 'The Feynman Lectures on Physics, Volume II', ar: 'محاضرات فاينمان في الفيزياء، المجلد الثاني' }
+      url: https://www.feynmanlectures.caltech.edu/II_toc.html
+      note: { en: Free official online edition — physical intuition first., ar: النسخة الرسمية المجانية على الخط — الحدس الفيزيائي أولًا. }
+    - title: { en: Landau & Lifshitz — The Classical Theory of Fields, ar: لانداو وليفشيتس — النظرية الكلاسيكية للحقول }
+      url: https://archive.org/details/TheClassicalTheoryOfFields
+      note: { en: Advanced reference (relativistic formulation)., ar: مرجع متقدم (الصياغة النسبية). }
+    - title: { en: A. Macfarlane — Electromagnetism (lecture notes), ar: A. Macfarlane — الكهرومغناطيسية (مذكرات محاضرات) }
+      url: https://www.damtp.cam.ac.uk/user/tong/em/macfarlane.pdf
+      note: { en: Concise mathematical lecture notes., ar: مذكرات رياضية موجزة. }
+    - title: { en: K. Likharev — Classical Electrodynamics (Essential Graduate Physics), ar: K. Likharev — الكهروديناميكا الكلاسيكية }
+      url: https://mysbfiles.stonybrook.edu/%7Eklikharev/EGP/
+      note: { en: Graduate-level notes with many solved problems., ar: مذكرات بمستوى الدراسات العليا مع مسائل محلولة كثيرة. }
+    - title: { en: R. Fitzpatrick — Classical Electromagnetism, ar: R. Fitzpatrick — الكهرومغناطيسية الكلاسيكية }
+      url: https://farside.ph.utexas.edu/teaching/jk1/jk1.html
+      note: { en: Complete online course., ar: مقرر كامل على الخط. }
+    - title: { en: E. Poisson — Classical Electrodynamics (lecture notes), ar: E. Poisson — الكهروديناميكا الكلاسيكية (مذكرات) }
+      url: https://www.physics.uoguelph.ca/poisson/research/notes.html
+      note: { en: Lecture notes for further study., ar: مذكرات محاضرات للتعمق. }
+    - title: { en: H. Djelouah — Électromagnétisme (French course and exercises), ar: H. Djelouah — الكهرومغناطيسية (دروس وتمارين بالفرنسية) }
+      url: https://www.usthb.dz/fphy/hdjelouah/electromagnetisme.html
+      note: { en: French-language course following the same syllabus., ar: مقرر بالفرنسية يتبع المفردات نفسها. }
+
+glossary:
+  - { en: Electric field, ar: الحقل (المجال) الكهربائي, fr: Champ électrique, def: { en: Force per unit charge exerted on a test charge., ar: القوة المؤثرة على شحنة اختبار مقسومة على قيمتها. } }
+  - { en: Electric potential, ar: الكمون (الجهد) الكهربائي, fr: Potentiel électrique, def: { en: 'Scalar function with \(\vb{E} = -\nabla V\); potential energy per unit charge.', ar: 'دالة سلمية تحقق \(\vb{E} = -\nabla V\)؛ الطاقة الكامنة لوحدة الشحنة.' } }
+  - { en: Gradient, ar: التدرج, fr: Gradient, def: { en: Vector pointing in the direction of fastest increase of a scalar field., ar: شعاع يتجه نحو أسرع تزايد لحقل سلمي. } }
+  - { en: Divergence, ar: التباعد, fr: Divergence, def: { en: Net outward flux per unit volume of a vector field — its source density., ar: التدفق الصافي الخارج لوحدة الحجم من حقل شعاعي — أي كثافة منابعه. } }
+  - { en: Curl, ar: الدوار, fr: Rotationnel, def: { en: Circulation per unit area of a vector field — measures its swirling., ar: الدوران لوحدة المساحة لحقل شعاعي — يقيس دورانيته. } }
+  - { en: Dirac delta, ar: دالة (توزيع) ديراك, fr: Distribution de Dirac, def: { en: Distribution that is zero except at one point and has unit integral; models point charges., ar: توزيع منعدم إلا في نقطة واحدة وتكامله يساوي الواحد؛ يُنمذج الشحنات النقطية. } }
+  - { en: Gauss's law, ar: قانون (نظرية) غاوس, fr: Théorème de Gauss, def: { en: Flux of E through a closed surface equals enclosed charge over ε₀., ar: تدفق E عبر سطح مغلق يساوي الشحنة المحتواة مقسومة على ε₀. } }
+  - { en: Poisson's equation, ar: معادلة بواسون, fr: Équation de Poisson, def: { en: '\(\nabla^2V = -\rho/\varepsilon_0\); reduces to Laplace''s equation where \(\rho = 0\).', ar: '\(\nabla^2V = -\rho/\varepsilon_0\)؛ تؤول إلى معادلة لابلاس حيث \(\rho = 0\).' } }
+  - { en: Electric dipole moment, ar: عزم ثنائي القطب الكهربائي, fr: Moment dipolaire électrique, def: { en: '\(\vb{p} = q\vb{d}\) for two opposite charges separated by \(\vb{d}\).', ar: '\(\vb{p} = q\vb{d}\) لشحنتين متعاكستين يفصل بينهما \(\vb{d}\).' } }
+  - { en: Polarisation, ar: الاستقطاب, fr: Polarisation, def: { en: Dipole moment per unit volume of a dielectric., ar: عزم ثنائي القطب لوحدة الحجم في عازل. } }
+  - { en: Bound charge, ar: الشحنة المقيدة, fr: Charge liée, def: { en: 'Charge due to polarisation: \(\sigma_b = \vb{P}\cdot\hat{\vb{n}}\), \(\rho_b = -\nabla\cdot\vb{P}\).', ar: 'الشحنة الناتجة عن الاستقطاب: \(\sigma_b = \vb{P}\cdot\hat{\vb{n}}\)، \(\rho_b = -\nabla\cdot\vb{P}\).' } }
+  - { en: Electric displacement, ar: شعاع الانزياح الكهربائي, fr: Induction (déplacement) électrique, def: { en: '\(\vb{D} = \varepsilon_0\vb{E} + \vb{P}\); its sources are the free charges only.', ar: '\(\vb{D} = \varepsilon_0\vb{E} + \vb{P}\)؛ منابعه الشحنات الحرة فقط.' } }
+  - { en: Permittivity, ar: السماحية, fr: Permittivité, def: { en: 'Constant \(\varepsilon = \varepsilon_0\varepsilon_r\) relating D to E in a linear dielectric.', ar: 'الثابت \(\varepsilon = \varepsilon_0\varepsilon_r\) الذي يربط D بـ E في عازل خطي.' } }
+  - { en: Lorentz force, ar: قوة لورنتز, fr: Force de Lorentz, def: { en: '\(\vb{F} = q(\vb{E} + \vb{v}\times\vb{B})\).', ar: '\(\vb{F} = q(\vb{E} + \vb{v}\times\vb{B})\).' } }
+  - { en: Biot–Savart law, ar: قانون بيو–سافار, fr: Loi de Biot et Savart, def: { en: Gives the magnetic field produced by a steady current element., ar: يعطي الحقل المغناطيسي الناتج عن عنصر تيار مستقر. } }
+  - { en: Ampère's law, ar: قانون (نظرية) أمبير, fr: Théorème d'Ampère, def: { en: Circulation of B around a closed loop equals μ₀ times the current through it., ar: دوران B على حلقة مغلقة يساوي μ₀ مضروبًا في التيار المار عبرها. } }
+  - { en: Vector potential, ar: الكمون الشعاعي, fr: Potentiel vecteur, def: { en: 'Field \(\vb{A}\) with \(\vb{B} = \nabla\times\vb{A}\).', ar: 'حقل \(\vb{A}\) يحقق \(\vb{B} = \nabla\times\vb{A}\).' } }
+  - { en: Magnetisation, ar: التمغنط, fr: Aimantation, def: { en: Magnetic dipole moment per unit volume., ar: عزم ثنائي القطب المغناطيسي لوحدة الحجم. } }
+  - { en: Permeability, ar: النفاذية المغناطيسية, fr: Perméabilité, def: { en: 'Constant \(\mu = \mu_0\mu_r\) relating B to H in a linear magnetic medium.', ar: 'الثابت \(\mu = \mu_0\mu_r\) الذي يربط B بـ H في وسط مغناطيسي خطي.' } }
+  - { en: Electromotive force (emf), ar: القوة المحركة الكهربائية, fr: Force électromotrice, def: { en: Work per unit charge done around a circuit by the driving force., ar: العمل لوحدة الشحنة الذي تنجزه القوة المحرّكة على طول الدارة. } }
+  - { en: Faraday's law, ar: قانون فاراداي, fr: Loi de Faraday, def: { en: 'The induced emf equals minus the rate of change of magnetic flux: \(\mathcal{E} = -\dd\Phi/\dd t\).', ar: 'القوة المحركة المتحرضة تساوي سالب معدل تغيّر التدفق المغناطيسي: \(\mathcal{E} = -\dd\Phi/\dd t\).' } }
+  - { en: Lenz's rule, ar: قاعدة لنز, fr: Loi de Lenz, def: { en: The induced current opposes the change of flux that produces it., ar: يعاكس التيار المتحرض تغيّر التدفق الذي سبّبه. } }
+  - { en: Self-inductance, ar: الذاتية (المحاثة الذاتية), fr: Inductance propre, def: { en: 'Ratio \(L = \Phi/I\) of the flux through a circuit to its own current.', ar: 'النسبة \(L = \Phi/I\) بين التدفق عبر دارة والتيار المار فيها.' } }
+  - { en: Displacement current, ar: تيار الانزياح, fr: Courant de déplacement, def: { en: 'The term \(\varepsilon_0\partial\vb{E}/\partial t\) added by Maxwell to Ampère''s law.', ar: 'الحد \(\varepsilon_0\partial\vb{E}/\partial t\) الذي أضافه ماكسويل إلى قانون أمبير.' } }
+  - { en: Maxwell's equations, ar: معادلات ماكسويل, fr: Équations de Maxwell, def: { en: The four equations that govern all classical electromagnetic fields., ar: المعادلات الأربع التي تحكم جميع الحقول الكهرومغناطيسية الكلاسيكية. } }
+  - { en: Gauge transformation, ar: تحويل المعايرة, fr: Transformation de jauge, def: { en: Change of the potentials that leaves E and B unchanged., ar: تغيير في الكمونين يترك E وB دون تغيير. } }
+  - { en: Poynting vector, ar: شعاع بوينتينغ, fr: Vecteur de Poynting, def: { en: '\(\vb{S} = \vb{E}\times\vb{B}/\mu_0\): energy flux density of the field (W/m²).', ar: '\(\vb{S} = \vb{E}\times\vb{B}/\mu_0\): كثافة تدفق طاقة الحقل (W/m²).' } }
+  - { en: Plane wave, ar: الموجة المستوية, fr: Onde plane, def: { en: Wave whose fields are uniform over planes perpendicular to the propagation direction., ar: موجة حقولها منتظمة على المستويات العمودية على اتجاه الانتشار. } }
+  - { en: Refractive index, ar: قرينة الانكسار, fr: Indice de réfraction, def: { en: 'Ratio \(n = c/v\) of the speed of light in vacuum to that in the medium.', ar: 'النسبة \(n = c/v\) بين سرعة الضوء في الفراغ وسرعته في الوسط.' } }
+  - { en: Skin depth, ar: عمق القشرة (العمق الجلدي), fr: Épaisseur de peau, def: { en: Distance over which a wave amplitude in a conductor falls by a factor e., ar: المسافة التي تنقص عليها سعة الموجة داخل ناقل بمعامل e. } }

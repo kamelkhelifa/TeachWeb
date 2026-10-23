@@ -1,0 +1,1003 @@
+slug: general-physics-2
+order: 20
+codes: [PHYS 102, PHYS 193]
+short: { en: 'GP II', ar: 'ف.ع 2' }
+title:
+  en: 'General Physics II: Electricity & Magnetism'
+  ar: 'الفيزياء العامة 2: الكهرباء والمغناطيسية'
+tagline:
+  en: 'From Coulomb''s law to Faraday''s law: fields, potentials, circuits and induction.'
+  ar: 'من قانون كولوم إلى قانون فاراداي: الحقول والكمونات والدارات والتحريض.'
+area: electromagnetism
+level: 1
+credits: 3
+hours: { lecture: 3, tutorial: 1, lab: 0 }
+weeks: 14
+instruction: [en, ar, fr]
+prerequisites: [general-physics-1]
+prerequisite_note:
+  en: 'Newtonian mechanics (forces, work, energy), vectors, and single-variable calculus (derivatives and simple integrals). The companion laboratory course is normally taken in the same semester.'
+  ar: 'الميكانيكا النيوتونية (القوى، الشغل، الطاقة)، والمتجهات، وحساب التفاضل والتكامل لمتغير واحد (المشتقات والتكاملات البسيطة). يُدرس مقرر المختبر المرافق عادةً في الفصل نفسه.'
+sims: [efield, rc-circuit]
+sources:
+  - 'https://khelifak.wordpress.com/studying/teaching-2/iu/phys102-general-physicsii/'
+  - 'https://khelifak.wordpress.com/studying/teaching-2/usthb/tp-phys-2-electricite/'
+notes: >
+  Main source: PHYS 102 page (Halliday 10th ed., 14 chapters, slides for each). That offering covered
+  waves and thermodynamics (Halliday ch. 16–20) before E&M; since this course is defined as E&M (as in
+  PHYS 193), the 14-week schedule covers Halliday ch. 21–30 only, and the waves/thermodynamics slides,
+  problem sheets 1–4 and the MIT 5.60 / Open Yale links are kept as "complementary" materials without a
+  week. The PHYS 102 past papers (2017–2018) probably include waves/thermo questions (quizzes, midterm 1).
+  The lecture/tutorial part of the French "Electricité" page (UEF 212: lecture notes, electrostatics
+  summary, TD 1 + solution, two tests in two versions each, final exam paper) was placed here because it
+  is E&M lecture material; its lab sheets went to the electricity-lab course. Original PHYS 102 weighting
+  was quizzes 5 %, two periodic exams 30 %, lab 25 %, final 40 %; since the lab is now a separate course,
+  the scheme was rebuilt. CLOs were adapted from the 12 outcomes on the PHYS 102 page. Mark lists and a
+  bookshop link for Alonso–Finn were not kept. Quizzes, problems, glossary, readings written new.
+
+description:
+  en: |
+    <p>The second semester of the introductory calculus-based sequence is devoted to electricity and magnetism. Starting from electric charge and Coulomb's law, the course builds the concepts of electric field and electric potential, applies Gauss's law to symmetric charge distributions and conductors, and studies capacitors and dielectrics.</p>
+    <p>The second half turns to moving charges: current, resistance and direct-current circuits (Ohm's law, Kirchhoff's rules, RC transients), magnetic forces on charges and currents, magnetic fields produced by currents (Biot–Savart and Ampère's laws), and finally electromagnetic induction (Faraday's and Lenz's laws, inductance and RL circuits), which prepares Maxwell's equations.</p>
+    <p>Lectures follow the chapter order of Halliday, Resnick &amp; Walker (ch. 21–30) with a slide deck per chapter. French lecture notes, an electrostatics summary and a solved tutorial sheet offer a second presentation of the first half. Interactive labs on this page let you drag charges to see field lines and equipotentials, and watch a capacitor charge through a resistor. An earlier version of the course opened with a short unit on waves and thermodynamics; its slides and problem sheets are kept as complementary material, and some past papers contain questions on those topics.</p>
+  ar: |
+    <p>يُخصَّص الفصل الثاني من سلسلة الفيزياء التمهيدية القائمة على التفاضل والتكامل للكهرباء والمغناطيسية. ينطلق المقرر من الشحنة الكهربائية وقانون كولوم ليبني مفهومي الحقل الكهربائي والكمون الكهربائي، ثم يطبّق قانون غاوس على توزيعات الشحن المتناظرة وعلى النواقل، ويدرس المكثفات والعوازل.</p>
+    <p>ويتناول النصف الثاني الشحنات المتحركة: التيار والمقاومة ودارات التيار المستمر (قانون أوم، قانونا كيرشوف، النظام الانتقالي في الدارة RC)، والقوى المغناطيسية المؤثرة في الشحنات والتيارات، والحقول المغناطيسية الناشئة عن التيارات (قانونا بيو-سافار وأمبير)، وأخيرًا التحريض الكهرومغناطيسي (قانونا فاراداي ولنز، الذاتية والدارة RL)، تمهيدًا لمعادلات ماكسويل.</p>
+    <p>تتبع المحاضرات ترتيب فصول كتاب Halliday وResnick وWalker (الفصول 21–30) مع مجموعة شرائح لكل فصل. وتقدّم المطبوعة الفرنسية وملخص الكهروساكنة وسلسلة تمارين محلولة عرضًا ثانيًا للنصف الأول من المقرر. وتتيح المختبرات التفاعلية في هذه الصفحة سحب الشحنات لمشاهدة خطوط الحقل والسطوح متساوية الكمون، ومتابعة شحن مكثفة عبر مقاومة. كانت نسخة سابقة من المقرر تبدأ بوحدة قصيرة عن الأمواج والديناميكا الحرارية، وقد احتُفظ بشرائحها وسلاسل مسائلها موادَّ تكميلية، وبعض الاختبارات السابقة يتضمن أسئلة في هذين الموضوعين.</p>
+
+topics:
+  - { en: 'Coulomb''s law', ar: 'قانون كولوم' }
+  - { en: 'Electric field & dipoles', ar: 'الحقل الكهربائي وثنائيات الأقطاب' }
+  - { en: 'Gauss''s law', ar: 'قانون غاوس' }
+  - { en: 'Electric potential', ar: 'الكمون الكهربائي' }
+  - { en: 'Capacitors & dielectrics', ar: 'المكثفات والعوازل' }
+  - { en: 'Current & resistance', ar: 'التيار والمقاومة' }
+  - { en: 'DC & RC circuits', ar: 'دارات التيار المستمر والدارة RC' }
+  - { en: 'Magnetic force', ar: 'القوة المغناطيسية' }
+  - { en: 'Biot–Savart & Ampère', ar: 'قانونا بيو-سافار وأمبير' }
+  - { en: 'Faraday induction & inductance', ar: 'تحريض فاراداي والذاتية' }
+
+outcomes:
+  - id: CLO1
+    bloom: understand
+    domain: knowledge
+    text:
+      en: 'Describe electric charge, Coulomb''s law, the electric field and the electric potential, and explain the superposition principle.'
+      ar: 'يصف الشحنة الكهربائية وقانون كولوم والحقل الكهربائي والكمون الكهربائي، ويشرح مبدأ التراكب.'
+    assessed_by: [quizzes, midterm1, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Calculate electric fields and potentials of point charges, dipoles and continuous charge distributions by superposition and integration, and relate them through \(\vec E = -\nabla V\).'
+      ar: 'يحسب الحقول والكمونات الكهربائية للشحنات النقطية وثنائيات الأقطاب والتوزيعات المتصلة بالتراكب والتكامل، ويربط بينها بالعلاقة \(\vec E = -\nabla V\).'
+    assessed_by: [homework, midterm1, final]
+  - id: CLO3
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Apply Gauss''s law to charge distributions with spherical, cylindrical and planar symmetry, and to conductors in electrostatic equilibrium.'
+      ar: 'يطبّق قانون غاوس على توزيعات الشحن ذات التناظر الكروي والأسطواني والمستوي، وعلى النواقل في حالة التوازن الكهروساكن.'
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO4
+    bloom: analyze
+    domain: skills
+    text:
+      en: 'Analyse capacitor networks, including the effect of dielectrics and the energy stored in the electric field.'
+      ar: 'يحلل شبكات المكثفات، بما في ذلك أثر العوازل والطاقة المخزنة في الحقل الكهربائي.'
+    assessed_by: [homework, midterm2, final]
+  - id: CLO5
+    bloom: analyze
+    domain: skills
+    text:
+      en: 'Analyse direct-current circuits with Ohm''s law and Kirchhoff''s rules, and describe the charging and discharging of an RC circuit.'
+      ar: 'يحلل دارات التيار المستمر باستعمال قانون أوم وقانوني كيرشوف، ويصف شحن الدارة RC وتفريغها.'
+    assessed_by: [quizzes, midterm2, project, final]
+  - id: CLO6
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Determine magnetic forces on moving charges and currents, and compute magnetic fields of currents with the Biot–Savart and Ampère laws.'
+      ar: 'يحدد القوى المغناطيسية المؤثرة في الشحنات المتحركة والتيارات، ويحسب الحقول المغناطيسية للتيارات بقانوني بيو-سافار وأمبير.'
+    assessed_by: [homework, midterm2, final]
+  - id: CLO7
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Use Faraday''s and Lenz''s laws to find induced emfs and currents, and compute self-inductance and the behaviour of RL circuits.'
+      ar: 'يستعمل قانوني فاراداي ولنز لإيجاد القوى المحركة الكهربائية والتيارات المتحرَّضة، ويحسب الذاتية وسلوك الدارة RL.'
+    assessed_by: [quizzes, final]
+  - id: CLO8
+    bloom: evaluate
+    domain: values
+    text:
+      en: 'Investigate a field or circuit with an interactive simulation, compare it critically with theory, and communicate the results clearly and honestly.'
+      ar: 'يستقصي حقلًا أو دارة بواسطة محاكاة تفاعلية، ويقارن النتائج بالنظرية مقارنة نقدية، ويعرضها بوضوح وأمانة.'
+    assessed_by: [project, participation]
+
+assessment:
+  - id: quizzes
+    type: quiz
+    weight: 10
+    title: { en: 'Short quizzes', ar: 'اختبارات قصيرة' }
+    detail:
+      en: 'Three 15-minute quizzes on the most recent chapters (one short problem or five MCQs each).'
+      ar: 'ثلاثة اختبارات قصيرة مدة كل منها 15 دقيقة حول الفصول الأخيرة (مسألة قصيرة أو خمسة أسئلة اختيار من متعدد).'
+    when: { en: 'Weeks 4, 10, 13', ar: 'الأسابيع 4 و10 و13' }
+  - id: homework
+    type: homework
+    weight: 10
+    title: { en: 'Problem sets', ar: 'سلاسل المسائل' }
+    detail:
+      en: 'One problem set per chapter; two or three problems are graded for physical reasoning, correct vector directions and units.'
+      ar: 'سلسلة مسائل لكل فصل؛ تُقيَّم مسألتان أو ثلاث منها على أساس الاستدلال الفيزيائي وصحة اتجاهات المتجهات والوحدات.'
+    when: { en: 'Weekly', ar: 'أسبوعيًا' }
+  - id: midterm1
+    type: midterm
+    weight: 15
+    title: { en: 'Midterm exam 1', ar: 'الاختبار الدوري الأول' }
+    detail:
+      en: '75-minute written exam on electrostatics: charge, field, Gauss''s law and potential (weeks 1–6).'
+      ar: 'اختبار كتابي مدته 75 دقيقة في الكهروساكنة: الشحنة والحقل وقانون غاوس والكمون (الأسابيع 1–6).'
+    when: { en: 'Week 7', ar: 'الأسبوع 7' }
+  - id: midterm2
+    type: midterm
+    weight: 15
+    title: { en: 'Midterm exam 2', ar: 'الاختبار الدوري الثاني' }
+    detail:
+      en: '75-minute written exam on capacitance, current, circuits and magnetic force (weeks 7–11).'
+      ar: 'اختبار كتابي مدته 75 دقيقة في السعة والتيار والدارات والقوة المغناطيسية (الأسابيع 7–11).'
+    when: { en: 'Week 12', ar: 'الأسبوع 12' }
+  - id: project
+    type: project
+    weight: 5
+    title: { en: 'Simulation mini-project', ar: 'مشروع مصغّر بالمحاكاة' }
+    detail:
+      en: 'In pairs, use the electric-field or RC-circuit simulation to test a prediction (e.g. the \(1/r^2\) law, or \(\tau = RC\)); hand in a two-page report with screenshots, data and a comparison with theory.'
+      ar: 'يستعمل الطلاب في ثنائيات محاكاة الحقل الكهربائي أو الدارة RC لاختبار توقّع ما (مثل قانون \(1/r^2\) أو \(\tau = RC\))، ويسلّمون تقريرًا من صفحتين يتضمن لقطات شاشة وبيانات ومقارنة مع النظرية.'
+    when: { en: 'Due week 13', ar: 'التسليم في الأسبوع 13' }
+  - id: participation
+    type: participation
+    weight: 5
+    title: { en: 'Participation', ar: 'المشاركة' }
+    detail:
+      en: 'Active work in tutorial sessions: presenting a solution at the board, concept questions in class.'
+      ar: 'العمل الفعّال في حصص التمارين: عرض حل على السبورة، والإجابة عن الأسئلة المفاهيمية في القسم.'
+    when: { en: 'Throughout', ar: 'طوال الفصل' }
+  - id: final
+    type: final
+    weight: 40
+    title: { en: 'Final exam', ar: 'الاختبار النهائي' }
+    detail:
+      en: 'Comprehensive 2-hour written exam: conceptual MCQs and 4–5 problems covering the whole course, with emphasis on circuits, magnetism and induction.'
+      ar: 'اختبار كتابي شامل مدته ساعتان: أسئلة مفاهيمية من نوع الاختيار من متعدد و4–5 مسائل تغطي المقرر كاملًا، مع التركيز على الدارات والمغناطيسية والتحريض.'
+    when: { en: 'After week 14', ar: 'بعد الأسبوع 14' }
+
+schedule:
+  - week: 1
+    title: { en: 'Electric charge and Coulomb''s law', ar: 'الشحنة الكهربائية وقانون كولوم' }
+    topics:
+      en:
+        - 'Electrification; conductors and insulators'
+        - 'Quantisation and conservation of charge'
+        - 'Coulomb''s law; superposition of forces'
+      ar:
+        - 'التكهرب؛ النواقل والعوازل'
+        - 'تكمية الشحنة وانحفاظها'
+        - 'قانون كولوم؛ تراكب القوى'
+    reading: Halliday ch. 21
+    activity: { en: 'Problem set on Coulomb''s law', ar: 'سلسلة مسائل حول قانون كولوم' }
+  - week: 2
+    title: { en: 'The electric field', ar: 'الحقل الكهربائي' }
+    topics:
+      en:
+        - 'Definition of the electric field; field lines'
+        - 'Field of a point charge; superposition'
+        - 'Field of an electric dipole'
+      ar:
+        - 'تعريف الحقل الكهربائي؛ خطوط الحقل'
+        - 'حقل شحنة نقطية؛ التراكب'
+        - 'حقل ثنائي القطب الكهربائي'
+    reading: Halliday §22.1–22.3
+    activity: { en: 'Explore field lines with the electric-field simulation', ar: 'استكشف خطوط الحقل بمحاكاة الحقل الكهربائي' }
+  - week: 3
+    title: { en: 'Continuous distributions; charges in a field', ar: 'التوزيعات المتصلة؛ الشحنات في حقل' }
+    topics:
+      en:
+        - 'Field of a line of charge, a ring and a disc'
+        - 'Motion of a point charge in a uniform field'
+        - 'Torque and potential energy of a dipole in a field'
+      ar:
+        - 'حقل خط مشحون وحلقة وقرص'
+        - 'حركة شحنة نقطية في حقل منتظم'
+        - 'عزم المزدوجة وطاقة الوضع لثنائي قطب في حقل'
+    reading: Halliday §22.4–22.7
+  - week: 4
+    title: { en: 'Gauss''s law', ar: 'قانون غاوس' }
+    topics:
+      en:
+        - 'Electric flux'
+        - 'Gauss''s law and its relation to Coulomb''s law'
+        - 'A charged isolated conductor'
+      ar:
+        - 'التدفق الكهربائي'
+        - 'قانون غاوس وعلاقته بقانون كولوم'
+        - 'ناقل معزول مشحون'
+    reading: Halliday §23.1–23.3
+    activity: { en: 'Quiz 1 (charge and field)', ar: 'الاختبار القصير 1 (الشحنة والحقل)' }
+    milestone: quiz
+  - week: 5
+    title: { en: 'Applications of Gauss''s law', ar: 'تطبيقات قانون غاوس' }
+    topics:
+      en:
+        - 'Cylindrical symmetry: line of charge'
+        - 'Planar symmetry: sheets and parallel plates'
+        - 'Spherical symmetry: shells and solid spheres'
+      ar:
+        - 'التناظر الأسطواني: خط مشحون'
+        - 'التناظر المستوي: الصفائح والألواح المتوازية'
+        - 'التناظر الكروي: القشرات والكرات المصمتة'
+    reading: Halliday §23.4–23.6
+  - week: 6
+    title: { en: 'Electric potential', ar: 'الكمون الكهربائي' }
+    topics:
+      en:
+        - 'Electric potential energy and potential'
+        - 'Equipotential surfaces; potential from the field'
+        - 'Potential of a point charge and of a dipole'
+      ar:
+        - 'طاقة الوضع الكهربائية والكمون'
+        - 'السطوح متساوية الكمون؛ حساب الكمون من الحقل'
+        - 'كمون شحنة نقطية وكمون ثنائي قطب'
+    reading: Halliday §24.1–24.4
+  - week: 7
+    title: { en: 'Potential of distributions and conductors', ar: 'كمون التوزيعات والنواقل' }
+    topics:
+      en:
+        - 'Potential of continuous charge distributions'
+        - 'Field from potential: \(\vec E = -\nabla V\)'
+        - 'Potential energy of a system of charges'
+        - 'Potential of a charged isolated conductor'
+      ar:
+        - 'كمون التوزيعات المتصلة للشحن'
+        - 'الحقل انطلاقًا من الكمون: \(\vec E = -\nabla V\)'
+        - 'طاقة الوضع لجملة شحنات'
+        - 'كمون ناقل معزول مشحون'
+    reading: Halliday §24.5–24.8
+    activity: { en: 'Midterm exam 1 (weeks 1–6)', ar: 'الاختبار الدوري الأول (الأسابيع 1–6)' }
+    milestone: midterm
+  - week: 8
+    title: { en: 'Capacitance', ar: 'السعة' }
+    topics:
+      en:
+        - 'Capacitance; parallel-plate, cylindrical and spherical capacitors'
+        - 'Capacitors in series and in parallel'
+        - 'Energy stored; energy density of the electric field'
+        - 'Dielectrics and Gauss''s law'
+      ar:
+        - 'السعة؛ المكثفة المستوية والأسطوانية والكروية'
+        - 'ربط المكثفات على التسلسل وعلى التفرع'
+        - 'الطاقة المخزنة؛ كثافة طاقة الحقل الكهربائي'
+        - 'العوازل وقانون غاوس'
+    reading: Halliday ch. 25
+  - week: 9
+    title: { en: 'Current and resistance', ar: 'التيار والمقاومة' }
+    topics:
+      en:
+        - 'Electric current and current density; drift speed'
+        - 'Resistance and resistivity; Ohm''s law'
+        - 'Microscopic view of conduction; power in circuits'
+      ar:
+        - 'التيار الكهربائي وكثافة التيار؛ سرعة الانجراف'
+        - 'المقاومة والمقاومية؛ قانون أوم'
+        - 'النظرة المجهرية للنقل الكهربائي؛ القدرة في الدارات'
+    reading: Halliday ch. 26
+  - week: 10
+    title: { en: 'Direct-current circuits', ar: 'دارات التيار المستمر' }
+    topics:
+      en:
+        - 'Electromotive force; single-loop circuits'
+        - 'Multiloop circuits and Kirchhoff''s rules'
+        - 'Ammeters and voltmeters'
+        - 'RC circuits: charging and discharging'
+      ar:
+        - 'القوة المحركة الكهربائية؛ الدارات ذات الحلقة الواحدة'
+        - 'الدارات متعددة الحلقات وقانونا كيرشوف'
+        - 'مقياس التيار ومقياس الجهد'
+        - 'الدارة RC: الشحن والتفريغ'
+    reading: Halliday ch. 27
+    activity: { en: 'Quiz 2 (capacitance and current); explore the RC-circuit simulation', ar: 'الاختبار القصير 2 (السعة والتيار)؛ استكشف محاكاة الدارة RC' }
+    milestone: quiz
+  - week: 11
+    title: { en: 'Magnetic fields and forces', ar: 'الحقول والقوى المغناطيسية' }
+    topics:
+      en:
+        - 'Magnetic force on a moving charge; crossed fields and the Hall effect'
+        - 'Circulating charged particle; cyclotron'
+        - 'Force on a current-carrying wire; torque on a current loop'
+        - 'Magnetic dipole moment'
+      ar:
+        - 'القوة المغناطيسية على شحنة متحركة؛ الحقلان المتعامدان وظاهرة هول'
+        - 'حركة جسيم مشحون على مسار دائري؛ السيكلوترون'
+        - 'القوة على سلك يحمل تيارًا؛ عزم المزدوجة على حلقة تيار'
+        - 'العزم المغناطيسي ثنائي القطب'
+    reading: Halliday ch. 28
+  - week: 12
+    title: { en: 'Magnetic fields due to currents', ar: 'الحقول المغناطيسية الناشئة عن التيارات' }
+    topics:
+      en:
+        - 'Biot–Savart law: straight wire, circular arc'
+        - 'Force between two parallel currents'
+        - 'Ampère''s law; solenoids and toroids'
+      ar:
+        - 'قانون بيو-سافار: سلك مستقيم، قوس دائري'
+        - 'القوة بين تيارين متوازيين'
+        - 'قانون أمبير؛ الوشائع الحلزونية والوشائع الحلقية'
+    reading: Halliday ch. 29
+    activity: { en: 'Midterm exam 2 (weeks 7–11)', ar: 'الاختبار الدوري الثاني (الأسابيع 7–11)' }
+    milestone: midterm
+  - week: 13
+    title: { en: 'Electromagnetic induction', ar: 'التحريض الكهرومغناطيسي' }
+    topics:
+      en:
+        - 'Faraday''s law of induction; magnetic flux'
+        - 'Lenz''s law'
+        - 'Induction and energy transfer; motional emf'
+        - 'Induced electric fields'
+      ar:
+        - 'قانون فاراداي للتحريض؛ التدفق المغناطيسي'
+        - 'قانون لنز'
+        - 'التحريض وتحويل الطاقة؛ القوة المحركة الحركية'
+        - 'الحقول الكهربائية المتحرَّضة'
+    reading: Halliday §30.1–30.4
+    activity: { en: 'Quiz 3 (magnetism); mini-project due', ar: 'الاختبار القصير 3 (المغناطيسية)؛ تسليم المشروع المصغّر' }
+    milestone: project
+  - week: 14
+    title: { en: 'Inductance and review', ar: 'الذاتية والمراجعة' }
+    topics:
+      en:
+        - 'Inductors and self-induction'
+        - 'RL circuits; energy stored in a magnetic field'
+        - 'Mutual induction; overview of Maxwell''s equations'
+        - 'Course review and past-paper practice'
+      ar:
+        - 'الوشائع والتحريض الذاتي'
+        - 'الدارة RL؛ الطاقة المخزنة في الحقل المغناطيسي'
+        - 'التحريض المتبادل؛ نظرة عامة على معادلات ماكسويل'
+        - 'مراجعة المقرر والتدرّب على اختبارات سابقة'
+    reading: Halliday §30.5–30.10
+    activity: { en: 'Review session before the final exam', ar: 'حصة مراجعة قبل الاختبار النهائي' }
+    milestone: review
+
+materials:
+  # Lecture slides (English), Halliday ch. 21–30
+  - type: slides
+    title: { en: 'Coulomb''s law (ch. 21)', ar: 'قانون كولوم (الفصل 21)' }
+    url: https://drive.google.com/open?id=1GrnDzUzuHuQXCeqpMIfmeWZ-p1yrjJCU
+    week: 1
+    lang: en
+  - type: slides
+    title: { en: 'Electric fields (ch. 22)', ar: 'الحقول الكهربائية (الفصل 22)' }
+    url: https://drive.google.com/open?id=1aa3AhBvRKxxCis9l2DGM_iuAB5KhCz0k
+    week: 2
+    lang: en
+  - type: slides
+    title: { en: 'Gauss''s law (ch. 23)', ar: 'قانون غاوس (الفصل 23)' }
+    url: https://drive.google.com/open?id=14Ks_4HgEAc7JCur7MOVWTh2VSXVLo6dd
+    week: 4
+    lang: en
+  - type: slides
+    title: { en: 'Electric potential (ch. 24)', ar: 'الكمون الكهربائي (الفصل 24)' }
+    url: https://drive.google.com/open?id=1sgHTfNTkaVwd4fZucWdCGpADrePTnGkw
+    week: 6
+    lang: en
+  - type: slides
+    title: { en: 'Capacitance (ch. 25)', ar: 'السعة (الفصل 25)' }
+    url: https://drive.google.com/open?id=1ImOKWUhWmN-F-zIvRUK-utV2evg7QPij
+    week: 8
+    lang: en
+  - type: slides
+    title: { en: 'Current and resistance (ch. 26)', ar: 'التيار والمقاومة (الفصل 26)' }
+    url: https://drive.google.com/open?id=1v82mBpx9mrkR3kUXpMGlM8Fjd7TKGbw3
+    week: 9
+    lang: en
+  - type: slides
+    title: { en: 'Circuits (ch. 27)', ar: 'الدارات (الفصل 27)' }
+    url: https://drive.google.com/open?id=1BTNuxOznGgfopi_4-YKW7PdZKKtO9rll
+    week: 10
+    lang: en
+  - type: slides
+    title: { en: 'Magnetic fields (ch. 28)', ar: 'الحقول المغناطيسية (الفصل 28)' }
+    url: https://drive.google.com/open?id=1m8sogqzq3vPspNIr2TzGe-ImcSWEQSXX
+    week: 11
+    lang: en
+  - type: slides
+    title: { en: 'Magnetic fields due to currents (ch. 29)', ar: 'الحقول المغناطيسية الناشئة عن التيارات (الفصل 29)' }
+    url: https://drive.google.com/open?id=1gyH2emtchpznI6L3mJYgEiZZuC774OAE
+    week: 12
+    lang: en
+  - type: slides
+    title: { en: 'Induction and inductance (ch. 30)', ar: 'التحريض والذاتية (الفصل 30)' }
+    url: https://drive.google.com/open?id=1rRp6VWa7bqdW3SPuI5YIjP95j9pu23hU
+    week: 13
+    lang: en
+  # French lecture/tutorial material (electrostatics)
+  - type: notes
+    title: { en: 'Electricity lecture notes (French)', ar: 'مطبوعة محاضرات الكهرباء (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/electricite_poly.pdf
+    lang: fr
+  - type: summary
+    title: { en: 'Electrostatics — summary (French)', ar: 'الكهروساكنة — ملخص (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/05/phys2_res1.pdf
+    week: 3
+    lang: fr
+  - type: problems
+    title: { en: 'TD 1 — Electrostatics (French)', ar: 'السلسلة الموجهة 1 — الكهروساكنة (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/04/s2_phys2_td1.pdf
+    week: 3
+    lang: fr
+  - type: solutions
+    title: { en: 'TD 1 — Electrostatics, solutions (French)', ar: 'السلسلة الموجهة 1 — الكهروساكنة، الحلول (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/05/s2_phys2_td1_soln.pdf
+    week: 3
+    lang: fr
+  # Formula sheets
+  - type: formula
+    title: { en: 'Table of mathematical formulae', ar: 'جدول الصيغ الرياضية' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+    lang: en
+  - type: formula
+    title: { en: 'Mathematical formulae you should know (French)', ar: 'صيغ رياضية ينبغي معرفتها (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
+    lang: fr
+  - type: formula
+    title: { en: 'Essential constants and conversion factors (French)', ar: 'ثوابت ومعاملات تحويل أساسية (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
+    lang: fr
+  # Complementary unit: waves and thermodynamics (earlier version of the course)
+  - type: slides
+    title: { en: 'Complementary — Waves I and II (ch. 16–17)', ar: 'مادة تكميلية — الأمواج 1 و2 (الفصلان 16–17)' }
+    url: https://drive.google.com/open?id=15JQ2TIWm7ErOiR5cvIiIJCHNE6IUaOY3
+    lang: en
+  - type: slides
+    title: { en: 'Complementary — Temperature, heat and the first law (ch. 18, part 1)', ar: 'مادة تكميلية — درجة الحرارة والحرارة والقانون الأول (الفصل 18، الجزء 1)' }
+    url: https://drive.google.com/open?id=1CwP-lSBhoxwug0r4aR2R-XxGkiYsfJWL
+    lang: en
+  - type: slides
+    title: { en: 'Complementary — Temperature, heat and the first law (ch. 18, part 2)', ar: 'مادة تكميلية — درجة الحرارة والحرارة والقانون الأول (الفصل 18، الجزء 2)' }
+    url: https://drive.google.com/open?id=1pWjSy2wcPmZEU6hdzuuw3TKbZdZI61I8
+    lang: en
+  - type: slides
+    title: { en: 'Complementary — The kinetic theory of gases (ch. 19)', ar: 'مادة تكميلية — النظرية الحركية للغازات (الفصل 19)' }
+    url: https://drive.google.com/open?id=1YLSMqs2BR2bjbbfE-IBeIYjyzxZVGjD6
+    lang: en
+  - type: slides
+    title: { en: 'Complementary — Entropy and the second law (ch. 20)', ar: 'مادة تكميلية — الإنتروبيا والقانون الثاني (الفصل 20)' }
+    url: https://drive.google.com/open?id=1xCo_liBH5SCKSI1Ba78atSOU3Jz-uKwr
+    lang: en
+  - type: problems
+    title: { en: 'Complementary — Problem sheet 1: wave motion and sound', ar: 'مادة تكميلية — السلسلة 1: الحركة الموجية والصوت' }
+    url: https://drive.google.com/open?id=1x6ROyrj0NCKTFWJghlpeWYZaBOo8mXfz
+    lang: en
+  - type: problems
+    title: { en: 'Complementary — Problem sheet 2: temperature, heat and the first law', ar: 'مادة تكميلية — السلسلة 2: درجة الحرارة والحرارة والقانون الأول' }
+    url: https://drive.google.com/open?id=15b_UNDyJyp0N2BhpuDFKkJWQL2DQft9v
+    lang: en
+  - type: problems
+    title: { en: 'Complementary — Problem sheet 3: kinetic theory of gases', ar: 'مادة تكميلية — السلسلة 3: النظرية الحركية للغازات' }
+    url: https://drive.google.com/open?id=1AWa1DSCB0Bh-FQYoTgfWTCfebRYUEE8j
+    lang: en
+  - type: problems
+    title: { en: 'Complementary — Problem sheet 4: entropy and the second law', ar: 'مادة تكميلية — السلسلة 4: الإنتروبيا والقانون الثاني' }
+    url: https://drive.google.com/open?id=1R6-gmvzeJnRGznDQLjbTzlbl_X3WBt30
+    lang: en
+  - type: link
+    title: { en: 'Complementary — MIT OCW 5.60 Thermodynamics & Kinetics', ar: 'مادة تكميلية — مقرر MIT OCW 5.60 الديناميكا الحرارية والحركية الكيميائية' }
+    url: https://ocw.mit.edu/courses/chemistry/5-60-thermodynamics-kinetics-spring-2008/
+    lang: en
+  - type: video
+    title: { en: 'Complementary — Open Yale PHYS 200, lecture 21 (thermodynamics)', ar: 'مادة تكميلية — Open Yale PHYS 200، المحاضرة 21 (الديناميكا الحرارية)' }
+    url: https://oyc.yale.edu/physics/phys-200/lecture-21
+    lang: en
+
+exams:
+  - title: { en: 'Quiz 1', ar: 'الاختبار القصير 1' }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1jW5ifGCleFTGYT_XYdOZldZ3Pka79jqm
+    solution: https://drive.google.com/open?id=1D8ANf5uO1owtl27hLN20sjJxbTQ62Qcy
+    lang: en
+  - title: { en: 'Midterm exam 1', ar: 'الاختبار الدوري الأول' }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1NRzs2DOCetojyWCcI-mbmU30mGEub0SF
+    solution: https://drive.google.com/open?id=1XaQxThoORQOLUm9o2pZdupksLkk2rtI8
+    lang: en
+  - title: { en: 'Quiz 2', ar: 'الاختبار القصير 2' }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1YJIjbLqlarHUjNmB1bCzMcat_ROk2nvd
+    solution: https://drive.google.com/open?id=1p76pAhXONiAR3qcp7_oVgjSHiAbvOn72
+    lang: en
+  - title: { en: 'Midterm exam 2', ar: 'الاختبار الدوري الثاني' }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1p19LyP1tvP1tH4A2di4Isix6-5pggTj8
+    solution: https://drive.google.com/open?id=1EdhWSdS2nbdwyuU635nb5Rc4vUC68Qqv
+    lang: en
+  - title: { en: 'Final exam', ar: 'الاختبار النهائي' }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1zBPU5ctOQ4uqkjs-Mwuo-z1uPb4SpXL9
+    solution: https://drive.google.com/open?id=1NIHHZHKw6hnmeOF566tqlUUshZ_FgASC
+    lang: en
+  - title: { en: 'Electrostatics test 1 (version A)', ar: 'فرض الكهروساكنة 1 (النموذج أ)' }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/04/test1_g21.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/04/test1_g2_soln.pdf
+    lang: fr
+  - title: { en: 'Electrostatics test 1 (version B)', ar: 'فرض الكهروساكنة 1 (النموذج ب)' }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/04/test1_g41.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/04/test1_g4_soln.pdf
+    lang: fr
+  - title: { en: 'Electrostatics test 2 (version A)', ar: 'فرض الكهروساكنة 2 (النموذج أ)' }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g2.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g2_soln.pdf
+    lang: fr
+  - title: { en: 'Electrostatics test 2 (version B)', ar: 'فرض الكهروساكنة 2 (النموذج ب)' }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g4.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g4_soln.pdf
+    lang: fr
+  - title: { en: 'Final exam (electrostatics)', ar: 'الاختبار النهائي (الكهروساكنة)' }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/06/mi_a1314_s2_phys2.pdf
+    lang: fr
+
+exam_guide:
+  format:
+    en: 'Midterms last 75 minutes: about five conceptual MCQs and two or three problems. The 2-hour final covers the whole course with 8–10 MCQs and 4–5 multi-step problems (typically: a superposition or Gauss''s-law problem, a capacitor or circuit problem, a magnetic-field problem and an induction problem).'
+    ar: 'مدة كل اختبار دوري 75 دقيقة: نحو خمسة أسئلة مفاهيمية من نوع الاختيار من متعدد ومسألتان أو ثلاث. ويغطي الاختبار النهائي (ساعتان) المقرر كاملًا بـ 8–10 أسئلة اختيار من متعدد و4–5 مسائل متعددة الخطوات (عادةً: مسألة تراكب أو قانون غاوس، ومسألة مكثفات أو دارات، ومسألة حقل مغناطيسي، ومسألة تحريض).'
+  allowed:
+    en: 'A non-programmable scientific calculator. A sheet of constants (\(k = 8.99\times10^9\ \mathrm{N\,m^2/C^2}\), \(\varepsilon_0\), \(\mu_0 = 4\pi\times10^{-7}\ \mathrm{T\,m/A}\), \(e\), \(m_e\)…) and key formulas is provided. No personal notes or phones.'
+    ar: 'آلة حاسبة علمية غير قابلة للبرمجة. تُوفَّر ورقة ثوابت (\(k = 8.99\times10^9\ \mathrm{N\,m^2/C^2}\) و\(\varepsilon_0\) و\(\mu_0 = 4\pi\times10^{-7}\ \mathrm{T\,m/A}\) و\(e\) و\(m_e\)…) وأهم الصيغ. لا يُسمح بالملاحظات الشخصية ولا بالهواتف.'
+  tips:
+    - en: 'For fields, always draw the vectors from each source before adding components; use symmetry to cancel components first.'
+      ar: 'عند حساب الحقول ارسم دائمًا متجه كل مصدر قبل جمع المركّبات، واستعمل التناظر أولًا لحذف المركّبات التي تلغي بعضها.'
+    - en: 'Gauss''s law is only useful when symmetry makes \(E\) constant on the Gaussian surface — state that symmetry explicitly.'
+      ar: 'لا يكون قانون غاوس مفيدًا إلا إذا جعل التناظر \(E\) ثابتًا على سطح غاوس — صرّح بهذا التناظر بوضوح.'
+    - en: 'In circuits, choose current directions once, write one junction equation fewer than the number of nodes, and check with a power balance.'
+      ar: 'في الدارات اختر اتجاهات التيارات مرة واحدة، واكتب عددًا من معادلات العقد يقل بواحد عن عدد العقد، ثم تحقق بموازنة القدرات.'
+    - en: 'For induction, find the sign with Lenz''s law separately from the magnitude \(|\mathcal E| = |\dd\Phi_B/\dd t|\).'
+      ar: 'في التحريض حدّد الإشارة بقانون لنز بمعزل عن حساب المقدار \(|\mathcal E| = |\dd\Phi_B/\dd t|\).'
+
+problems:
+  - title: { en: 'Where does the field vanish?', ar: 'أين ينعدم الحقل؟' }
+    difficulty: 1
+    statement:
+      en: 'A charge \(q_1 = +4.0\ \mu\mathrm{C}\) is at \(x = 0\) and \(q_2 = +1.0\ \mu\mathrm{C}\) at \(x = 0.30\ \mathrm{m}\). (a) Find the point on the \(x\)-axis where the electric field is zero. (b) Find the force on a charge \(q_3 = -2.0\ \mathrm{nC}\) placed at \(x = 0.10\ \mathrm{m}\).'
+      ar: 'توجد شحنة \(q_1 = +4.0\ \mu\mathrm{C}\) عند \(x = 0\) وشحنة \(q_2 = +1.0\ \mu\mathrm{C}\) عند \(x = 0.30\ \mathrm{m}\). (أ) أوجد النقطة على المحور \(x\) التي ينعدم فيها الحقل الكهربائي. (ب) أوجد القوة المؤثرة في شحنة \(q_3 = -2.0\ \mathrm{nC}\) موضوعة عند \(x = 0.10\ \mathrm{m}\).'
+    hint:
+      en: 'For two like charges the zero must lie between them, closer to the smaller one.'
+      ar: 'في حالة شحنتين من النوع نفسه تقع نقطة الانعدام بينهما، وأقرب إلى الشحنة الأصغر.'
+    solution:
+      en: |
+        (a) Between the charges the two fields point in opposite directions. Setting their magnitudes equal:
+        \[ \frac{k(4.0)}{x^2} = \frac{k(1.0)}{(0.30 - x)^2} \;\Rightarrow\; \frac{2}{x} = \frac{1}{0.30 - x} \;\Rightarrow\; x = 0.20\ \mathrm{m} \]
+        (Outside the segment both fields point the same way, so no other zero exists.)
+        (b) At \(x = 0.10\ \mathrm{m}\):
+        \[ E_1 = \frac{(8.99\times10^9)(4.0\times10^{-6})}{(0.10)^2} = 3.60\times10^6\ \mathrm{N/C}\ (+x), \quad E_2 = \frac{(8.99\times10^9)(1.0\times10^{-6})}{(0.20)^2} = 2.25\times10^5\ \mathrm{N/C}\ (-x) \]
+        \(E = 3.37\times10^6\ \mathrm{N/C}\) along \(+x\), so \(F = q_3E = (-2.0\times10^{-9})(3.37\times10^6) = -6.7\times10^{-3}\ \mathrm{N}\): \(6.7\ \mathrm{mN}\) towards \(q_1\) (negative charges feel a force opposite to \(\vec E\)).
+      ar: |
+        (أ) بين الشحنتين يتجه الحقلان اتجاهين متعاكسين. بمساواة مقداريهما:
+        \[ \frac{k(4.0)}{x^2} = \frac{k(1.0)}{(0.30 - x)^2} \;\Rightarrow\; \frac{2}{x} = \frac{1}{0.30 - x} \;\Rightarrow\; x = 0.20\ \mathrm{m} \]
+        (خارج القطعة المستقيمة يكون للحقلين الاتجاه نفسه، فلا توجد نقطة انعدام أخرى.)
+        (ب) عند \(x = 0.10\ \mathrm{m}\):
+        \[ E_1 = \frac{(8.99\times10^9)(4.0\times10^{-6})}{(0.10)^2} = 3.60\times10^6\ \mathrm{N/C}\ (+x), \quad E_2 = \frac{(8.99\times10^9)(1.0\times10^{-6})}{(0.20)^2} = 2.25\times10^5\ \mathrm{N/C}\ (-x) \]
+        \(E = 3.37\times10^6\ \mathrm{N/C}\) في الاتجاه \(+x\)، إذن \(F = q_3E = (-2.0\times10^{-9})(3.37\times10^6) = -6.7\times10^{-3}\ \mathrm{N}\): أي \(6.7\ \mathrm{mN}\) نحو \(q_1\) (الشحنة السالبة تخضع لقوة معاكسة لاتجاه \(\vec E\)).
+  - title: { en: 'Field on the axis of a charged ring', ar: 'الحقل على محور حلقة مشحونة' }
+    difficulty: 2
+    statement:
+      en: 'A thin ring of radius \(R\) carries a charge \(Q > 0\) uniformly distributed. (a) Find the electric field at a point on its axis at distance \(z\) from the centre. (b) Check the limits \(z = 0\) and \(z \gg R\). (c) At what distance is the field maximum? Evaluate \(E_{\max}\) for \(Q = 10\ \mathrm{nC}\), \(R = 5.0\ \mathrm{cm}\).'
+      ar: 'حلقة رقيقة نصف قطرها \(R\) تحمل شحنة \(Q > 0\) موزعة بانتظام. (أ) أوجد الحقل الكهربائي في نقطة من محورها على بعد \(z\) من المركز. (ب) تحقق من الحالتين الحدّيتين \(z = 0\) و\(z \gg R\). (ج) عند أي مسافة يكون الحقل أعظميًا؟ احسب \(E_{\max}\) من أجل \(Q = 10\ \mathrm{nC}\) و\(R = 5.0\ \mathrm{cm}\).'
+    hint:
+      en: 'Every element \(\dd q\) is at the same distance \(\sqrt{z^2 + R^2}\); by symmetry only the axial components survive.'
+      ar: 'كل عنصر \(\dd q\) يقع على البعد نفسه \(\sqrt{z^2 + R^2}\)، وبسبب التناظر لا تبقى إلا المركّبات المحورية.'
+    solution:
+      en: |
+        (a) The axial component of the field of \(\dd q\) is \(\dd E_z = \dfrac{k\,\dd q}{z^2 + R^2}\cdot\dfrac{z}{\sqrt{z^2 + R^2}}\); perpendicular components cancel in pairs. Integrating over the ring:
+        \[ E_z = \frac{kQz}{(z^2 + R^2)^{3/2}} \]
+        (b) At \(z = 0\), \(E = 0\) (contributions cancel). For \(z \gg R\), \(E \approx kQ/z^2\): the ring looks like a point charge.
+        (c) \[ \dv{E}{z} = kQ\,\frac{(z^2 + R^2) - 3z^2}{(z^2 + R^2)^{5/2}} = 0 \;\Rightarrow\; z = \frac{R}{\sqrt2} \]
+        \[ E_{\max} = \frac{2}{3\sqrt3}\,\frac{kQ}{R^2} = 0.385\times\frac{(8.99\times10^9)(10\times10^{-9})}{(0.050)^2} = 1.38\times10^4\ \mathrm{N/C} \]
+      ar: |
+        (أ) المركّبة المحورية لحقل العنصر \(\dd q\) هي \(\dd E_z = \dfrac{k\,\dd q}{z^2 + R^2}\cdot\dfrac{z}{\sqrt{z^2 + R^2}}\)، أما المركّبات العمودية على المحور فتلغي بعضها مثنى مثنى. بالتكامل على الحلقة:
+        \[ E_z = \frac{kQz}{(z^2 + R^2)^{3/2}} \]
+        (ب) عند \(z = 0\) يكون \(E = 0\) (تلغي المساهمات بعضها). ومن أجل \(z \gg R\) يكون \(E \approx kQ/z^2\): تبدو الحلقة كشحنة نقطية.
+        (ج) \[ \dv{E}{z} = kQ\,\frac{(z^2 + R^2) - 3z^2}{(z^2 + R^2)^{5/2}} = 0 \;\Rightarrow\; z = \frac{R}{\sqrt2} \]
+        \[ E_{\max} = \frac{2}{3\sqrt3}\,\frac{kQ}{R^2} = 0.385\times\frac{(8.99\times10^9)(10\times10^{-9})}{(0.050)^2} = 1.38\times10^4\ \mathrm{N/C} \]
+  - title: { en: 'Uniformly charged insulating sphere', ar: 'كرة عازلة مشحونة بانتظام' }
+    difficulty: 3
+    statement:
+      en: 'An insulating sphere of radius \(R\) carries a total charge \(Q\) uniformly distributed in its volume. (a) Use Gauss''s law to find \(E(r)\) inside and outside. (b) Find the potential at the centre, taking \(V(\infty) = 0\).'
+      ar: 'كرة عازلة نصف قطرها \(R\) تحمل شحنة كلية \(Q\) موزعة بانتظام في حجمها. (أ) استعمل قانون غاوس لإيجاد \(E(r)\) داخل الكرة وخارجها. (ب) أوجد الكمون في المركز باعتبار \(V(\infty) = 0\).'
+    hint:
+      en: 'Use concentric spherical Gaussian surfaces; inside, the enclosed charge is \(Q r^3/R^3\). Then integrate \(V(0) = \int_0^\infty E\,\dd r\).'
+      ar: 'استعمل سطوح غاوس كروية متحدة المركز؛ الشحنة المحصورة داخل الكرة هي \(Q r^3/R^3\). ثم كامل \(V(0) = \int_0^\infty E\,\dd r\).'
+    solution:
+      en: |
+        (a) By spherical symmetry \(\vec E = E(r)\,\hat r\) and \(\oint \vec E\cdot\dd\vec A = 4\pi r^2 E\).
+        \[ r \ge R:\; 4\pi r^2 E = \frac{Q}{\varepsilon_0} \Rightarrow E = \frac{kQ}{r^2}; \qquad r < R:\; 4\pi r^2 E = \frac{Q r^3}{\varepsilon_0 R^3} \Rightarrow E = \frac{kQ\,r}{R^3} \]
+        The field grows linearly inside, peaks at \(r = R\) and is continuous there.
+        (b) \[ V(0) = \int_0^R \frac{kQr}{R^3}\,\dd r + \int_R^\infty \frac{kQ}{r^2}\,\dd r = \frac{kQ}{2R} + \frac{kQ}{R} = \frac{3kQ}{2R} \]
+        The centre is at 1.5 times the surface potential.
+      ar: |
+        (أ) بسبب التناظر الكروي \(\vec E = E(r)\,\hat r\) و\(\oint \vec E\cdot\dd\vec A = 4\pi r^2 E\).
+        \[ r \ge R:\; 4\pi r^2 E = \frac{Q}{\varepsilon_0} \Rightarrow E = \frac{kQ}{r^2}; \qquad r < R:\; 4\pi r^2 E = \frac{Q r^3}{\varepsilon_0 R^3} \Rightarrow E = \frac{kQ\,r}{R^3} \]
+        يتزايد الحقل خطيًا داخل الكرة، ويبلغ قيمته العظمى عند \(r = R\) وهو مستمر عندها.
+        (ب) \[ V(0) = \int_0^R \frac{kQr}{R^3}\,\dd r + \int_R^\infty \frac{kQ}{r^2}\,\dd r = \frac{kQ}{2R} + \frac{kQ}{R} = \frac{3kQ}{2R} \]
+        كمون المركز يساوي 1.5 مرة كمون السطح.
+  - title: { en: 'A capacitor network', ar: 'شبكة مكثفات' }
+    difficulty: 2
+    statement:
+      en: 'A capacitor \(C_1 = 4.0\ \mu\mathrm{F}\) is connected in series with the parallel combination of \(C_2 = 2.0\ \mu\mathrm{F}\) and \(C_3 = 6.0\ \mu\mathrm{F}\), across a \(12\ \mathrm{V}\) battery. Find the equivalent capacitance, the charge and voltage of each capacitor, and the total stored energy.'
+      ar: 'مكثفة \(C_1 = 4.0\ \mu\mathrm{F}\) موصولة على التسلسل مع التجميع على التفرع للمكثفتين \(C_2 = 2.0\ \mu\mathrm{F}\) و\(C_3 = 6.0\ \mu\mathrm{F}\)، والمجموعة موصولة ببطارية \(12\ \mathrm{V}\). أوجد السعة المكافئة، وشحنة كل مكثفة وفرق الكمون بين لبوسيها، والطاقة الكلية المخزنة.'
+    hint:
+      en: 'Series capacitors carry the same charge; parallel capacitors share the same voltage.'
+      ar: 'المكثفات على التسلسل تحمل الشحنة نفسها، والمكثفات على التفرع لها فرق الكمون نفسه.'
+    solution:
+      en: |
+        \(C_{23} = C_2 + C_3 = 8.0\ \mu\mathrm{F}\); \(C_{eq} = \dfrac{C_1 C_{23}}{C_1 + C_{23}} = \dfrac{4 \times 8}{12} = 2.67\ \mu\mathrm{F}\).
+        \(Q_1 = Q_{23} = C_{eq}V = 2.67 \times 12 = 32\ \mu\mathrm{C}\).
+        \(V_1 = Q_1/C_1 = 8.0\ \mathrm{V}\), \(V_{23} = 12 - 8 = 4.0\ \mathrm{V}\); \(Q_2 = C_2V_{23} = 8.0\ \mu\mathrm{C}\), \(Q_3 = 24\ \mu\mathrm{C}\) (and \(Q_2 + Q_3 = 32\ \mu\mathrm{C}\) ✓).
+        \[ U = \tfrac12 C_{eq}V^2 = \tfrac12(2.67\times10^{-6})(12)^2 = 192\ \mu\mathrm{J} \]
+        Check: \(\tfrac12(32)(8) + \tfrac12(8)(4) + \tfrac12(24)(4) = 128 + 16 + 48 = 192\ \mu\mathrm{J}\) ✓.
+      ar: |
+        \(C_{23} = C_2 + C_3 = 8.0\ \mu\mathrm{F}\)؛ \(C_{eq} = \dfrac{C_1 C_{23}}{C_1 + C_{23}} = \dfrac{4 \times 8}{12} = 2.67\ \mu\mathrm{F}\).
+        \(Q_1 = Q_{23} = C_{eq}V = 2.67 \times 12 = 32\ \mu\mathrm{C}\).
+        \(V_1 = Q_1/C_1 = 8.0\ \mathrm{V}\)، \(V_{23} = 12 - 8 = 4.0\ \mathrm{V}\)؛ \(Q_2 = C_2V_{23} = 8.0\ \mu\mathrm{C}\)، \(Q_3 = 24\ \mu\mathrm{C}\) (و\(Q_2 + Q_3 = 32\ \mu\mathrm{C}\) ✓).
+        \[ U = \tfrac12 C_{eq}V^2 = \tfrac12(2.67\times10^{-6})(12)^2 = 192\ \mu\mathrm{J} \]
+        تحقق: \(\tfrac12(32)(8) + \tfrac12(8)(4) + \tfrac12(24)(4) = 128 + 16 + 48 = 192\ \mu\mathrm{J}\) ✓.
+  - title: { en: 'Two-loop circuit with Kirchhoff''s rules', ar: 'دارة بحلقتين وقانونا كيرشوف' }
+    difficulty: 2
+    statement:
+      en: 'Three branches connect node \(a\) (top) to node \(b\) (bottom). Left branch: an ideal battery \(\mathcal E_1 = 12\ \mathrm{V}\) (positive terminal towards \(a\)) in series with \(R_1 = 2.0\ \Omega\). Middle branch: \(R_3 = 6.0\ \Omega\). Right branch: an ideal battery \(\mathcal E_2 = 6.0\ \mathrm{V}\) (positive terminal towards \(a\)) in series with \(R_2 = 4.0\ \Omega\). Find the current in each branch and \(V_a - V_b\), and check the power balance.'
+      ar: 'ثلاثة فروع تصل العقدة \(a\) (في الأعلى) بالعقدة \(b\) (في الأسفل). الفرع الأيسر: بطارية مثالية \(\mathcal E_1 = 12\ \mathrm{V}\) (قطبها الموجب نحو \(a\)) على التسلسل مع \(R_1 = 2.0\ \Omega\). الفرع الأوسط: \(R_3 = 6.0\ \Omega\). الفرع الأيمن: بطارية مثالية \(\mathcal E_2 = 6.0\ \mathrm{V}\) (قطبها الموجب نحو \(a\)) على التسلسل مع \(R_2 = 4.0\ \Omega\). أوجد التيار في كل فرع و\(V_a - V_b\)، ثم تحقق من موازنة القدرات.'
+    hint:
+      en: 'Assume \(I_1\) and \(I_2\) flow up through the battery branches into \(a\) and \(I_3\) flows down through \(R_3\). A negative result just means the true direction is opposite.'
+      ar: 'افترض أن \(I_1\) و\(I_2\) يصعدان عبر فرعي البطاريتين نحو \(a\)، وأن \(I_3\) ينزل عبر \(R_3\). النتيجة السالبة تعني فقط أن الاتجاه الحقيقي معاكس.'
+    solution:
+      en: |
+        Junction \(a\): \(I_1 + I_2 = I_3\).
+        Left loop: \(12 - 2I_1 - 6I_3 = 0\); right loop: \(6 - 4I_2 - 6I_3 = 0\).
+        So \(I_1 = 6 - 3I_3\), \(I_2 = 1.5 - 1.5I_3\), and \(7.5 - 4.5I_3 = I_3\):
+        \[ I_3 = \tfrac{15}{11} = 1.36\ \mathrm{A}, \quad I_1 = \tfrac{21}{11} = 1.91\ \mathrm{A}, \quad I_2 = -\tfrac{6}{11} = -0.545\ \mathrm{A} \]
+        \(I_2 < 0\): current flows <em>into</em> the positive terminal of \(\mathcal E_2\), which is being charged.
+        \(V_a - V_b = R_3 I_3 = 90/11 = 8.18\ \mathrm{V}\).
+        Power: \(\mathcal E_1\) supplies \(12 \times 21/11 = 22.9\ \mathrm{W}\); \(\mathcal E_2\) absorbs \(6 \times 6/11 = 3.27\ \mathrm{W}\); resistors dissipate \(\sum RI^2 = 2376/121 = 19.6\ \mathrm{W}\); and \(22.9 - 3.27 = 19.6\ \mathrm{W}\) ✓.
+      ar: |
+        العقدة \(a\): \(I_1 + I_2 = I_3\).
+        الحلقة اليسرى: \(12 - 2I_1 - 6I_3 = 0\)؛ الحلقة اليمنى: \(6 - 4I_2 - 6I_3 = 0\).
+        إذن \(I_1 = 6 - 3I_3\) و\(I_2 = 1.5 - 1.5I_3\)، ومنه \(7.5 - 4.5I_3 = I_3\):
+        \[ I_3 = \tfrac{15}{11} = 1.36\ \mathrm{A}, \quad I_1 = \tfrac{21}{11} = 1.91\ \mathrm{A}, \quad I_2 = -\tfrac{6}{11} = -0.545\ \mathrm{A} \]
+        \(I_2 < 0\): يدخل التيار من القطب الموجب للبطارية \(\mathcal E_2\)، أي أنها في حالة شحن.
+        \(V_a - V_b = R_3 I_3 = 90/11 = 8.18\ \mathrm{V}\).
+        القدرات: تقدّم \(\mathcal E_1\) القدرة \(12 \times 21/11 = 22.9\ \mathrm{W}\)، وتمتص \(\mathcal E_2\) القدرة \(6 \times 6/11 = 3.27\ \mathrm{W}\)، وتبدد المقاومات \(\sum RI^2 = 2376/121 = 19.6\ \mathrm{W}\)؛ و\(22.9 - 3.27 = 19.6\ \mathrm{W}\) ✓.
+  - title: { en: 'Sliding rod on rails', ar: 'قضيب منزلق على سكتين' }
+    difficulty: 2
+    statement:
+      en: 'A conducting rod of length \(L = 0.50\ \mathrm{m}\) slides without friction at constant speed \(v = 2.0\ \mathrm{m/s}\) on two parallel rails joined by a resistor \(R = 2.0\ \Omega\). A uniform field \(B = 0.40\ \mathrm{T}\) is perpendicular to the plane of the rails. Neglecting the resistance of rod and rails, find the induced emf, the current, the force needed to keep \(v\) constant, and compare the mechanical power with the Joule power.'
+      ar: 'قضيب ناقل طوله \(L = 0.50\ \mathrm{m}\) ينزلق دون احتكاك بسرعة ثابتة \(v = 2.0\ \mathrm{m/s}\) على سكتين متوازيتين تصل بينهما مقاومة \(R = 2.0\ \Omega\). يوجد حقل منتظم \(B = 0.40\ \mathrm{T}\) عمودي على مستوي السكتين. بإهمال مقاومة القضيب والسكتين، أوجد القوة المحركة الكهربائية المتحرَّضة، والتيار، والقوة اللازمة لإبقاء \(v\) ثابتة، ثم قارن القدرة الميكانيكية بقدرة جول.'
+    hint:
+      en: 'The flux through the circuit is \(\Phi_B = BLx\) and \(\dd x/\dd t = v\).'
+      ar: 'التدفق عبر الدارة هو \(\Phi_B = BLx\) و\(\dd x/\dd t = v\).'
+    solution:
+      en: |
+        \[ |\mathcal E| = \left|\dv{\Phi_B}{t}\right| = BLv = (0.40)(0.50)(2.0) = 0.40\ \mathrm{V}, \qquad I = \frac{\mathcal E}{R} = 0.20\ \mathrm{A} \]
+        By Lenz's law the current opposes the increase of flux, so the magnetic force on the rod, \(F_B = ILB = (0.20)(0.50)(0.40) = 0.040\ \mathrm{N}\), opposes the motion. An external force of \(0.040\ \mathrm{N}\) is needed.
+        Mechanical power \(P = Fv = 0.080\ \mathrm{W}\); Joule power \(RI^2 = 2.0 \times 0.040 = 0.080\ \mathrm{W}\) ✓ — the work done by the hand is entirely converted into heat in the resistor, as energy conservation requires.
+      ar: |
+        \[ |\mathcal E| = \left|\dv{\Phi_B}{t}\right| = BLv = (0.40)(0.50)(2.0) = 0.40\ \mathrm{V}, \qquad I = \frac{\mathcal E}{R} = 0.20\ \mathrm{A} \]
+        حسب قانون لنز يعاكس التيار تزايد التدفق، فتكون القوة المغناطيسية على القضيب \(F_B = ILB = (0.20)(0.50)(0.40) = 0.040\ \mathrm{N}\) معاكسة للحركة، ويلزم تطبيق قوة خارجية مقدارها \(0.040\ \mathrm{N}\).
+        القدرة الميكانيكية \(P = Fv = 0.080\ \mathrm{W}\)، وقدرة جول \(RI^2 = 2.0 \times 0.040 = 0.080\ \mathrm{W}\) ✓ — أي أن الشغل المبذول يتحول كليًا إلى حرارة في المقاومة، كما يقتضي مبدأ حفظ الطاقة.
+
+quizzes:
+  - title: { en: 'Charge, field and Gauss''s law', ar: 'الشحنة والحقل وقانون غاوس' }
+    questions:
+      - q:
+          en: 'Two point charges exert a force \(F\) on each other. If both charges are doubled and their separation is also doubled, the new force is:'
+          ar: 'تتبادل شحنتان نقطيتان قوة \(F\). إذا ضوعفت كلتا الشحنتين وضوعفت المسافة بينهما أيضًا، فإن القوة الجديدة تساوي:'
+        options:
+          - '\(2F\)'
+          - '\(F\)'
+          - '\(F/2\)'
+          - '\(4F\)'
+        answer: 1
+        explain:
+          en: '\(F = kq_1q_2/r^2\): the numerator is multiplied by 4 and the denominator by 4, so the force is unchanged.'
+          ar: '\(F = kq_1q_2/r^2\): يُضرب البسط في 4 والمقام في 4، فتبقى القوة دون تغيير.'
+      - q:
+          en: 'What is the electric field at the midpoint between two equal positive charges?'
+          ar: 'ما الحقل الكهربائي في منتصف المسافة بين شحنتين موجبتين متساويتين؟'
+        options:
+          - { en: 'perpendicular to the line joining them', ar: 'عمودي على المستقيم الواصل بينهما' }
+          - { en: 'directed towards one of the charges', ar: 'متجه نحو إحدى الشحنتين' }
+          - { en: 'twice the field of one charge', ar: 'ضعف حقل شحنة واحدة' }
+          - { en: 'zero', ar: 'منعدم' }
+        answer: 3
+        explain:
+          en: 'Each charge produces a field of the same magnitude pointing away from itself, i.e. in opposite directions at the midpoint: they cancel. (The potential there is not zero, however.)'
+          ar: 'تنتج كل شحنة حقلًا له المقدار نفسه ويتجه مبتعدًا عنها، أي في اتجاهين متعاكسين عند المنتصف، فيلغي أحدهما الآخر. (لكن الكمون هناك ليس منعدمًا.)'
+      - q:
+          en: 'A closed surface encloses an electric dipole (\(+q\) and \(-q\)). The net electric flux through the surface is:'
+          ar: 'سطح مغلق يحيط بثنائي قطب كهربائي (\(+q\) و\(-q\)). التدفق الكهربائي الكلي عبر السطح هو:'
+        options:
+          - '\(2q/\varepsilon_0\)'
+          - '\(-q/\varepsilon_0\)'
+          - '0'
+          - '\(q/\varepsilon_0\)'
+        answer: 2
+        explain:
+          en: 'Gauss''s law: \(\Phi = Q_{enc}/\varepsilon_0\) and \(Q_{enc} = +q - q = 0\). The field on the surface is not zero; only its total flux is.'
+          ar: 'قانون غاوس: \(\Phi = Q_{enc}/\varepsilon_0\) و\(Q_{enc} = +q - q = 0\). الحقل على السطح ليس منعدمًا، وإنما تدفقه الكلي هو المنعدم.'
+      - q:
+          en: 'Inside the material of a conductor in electrostatic equilibrium, the electric field is:'
+          ar: 'داخل مادة ناقل في حالة توازن كهروساكن، يكون الحقل الكهربائي:'
+        options:
+          - { en: 'tangent to the surface', ar: 'مماسيًا للسطح' }
+          - { en: 'equal to \(\sigma/\varepsilon_0\)', ar: 'مساويًا لـ \(\sigma/\varepsilon_0\)' }
+          - { en: 'radial and proportional to \(r\)', ar: 'قطريًا ومتناسبًا مع \(r\)' }
+          - { en: 'zero', ar: 'منعدمًا' }
+        answer: 3
+        explain:
+          en: 'If \(E\) were non-zero, free charges would move — contradicting equilibrium. Any excess charge resides on the surface, and just outside \(E = \sigma/\varepsilon_0\), perpendicular to the surface.'
+          ar: 'لو لم يكن \(E\) منعدمًا لتحركت الشحنات الحرة، وهذا يناقض التوازن. وتتوزع الشحنة الزائدة على السطح، ويكون الحقل خارجه مباشرة \(E = \sigma/\varepsilon_0\) وعموديًا على السطح.'
+      - q:
+          en: 'The field of a large uniformly charged non-conducting sheet with surface density \(\sigma\) is:'
+          ar: 'حقل صفيحة عازلة كبيرة مشحونة بانتظام بكثافة سطحية \(\sigma\) هو:'
+        options:
+          - { en: '\(\sigma/\varepsilon_0\), independent of distance', ar: '\(\sigma/\varepsilon_0\)، مستقل عن البعد' }
+          - { en: 'proportional to \(1/r\)', ar: 'متناسب مع \(1/r\)' }
+          - { en: '\(\sigma/2\varepsilon_0\), independent of distance', ar: '\(\sigma/2\varepsilon_0\)، مستقل عن البعد' }
+          - { en: 'proportional to \(1/r^2\)', ar: 'متناسب مع \(1/r^2\)' }
+        answer: 2
+        explain:
+          en: 'A Gaussian "pillbox" crossing the sheet has flux \(2EA = \sigma A/\varepsilon_0\), so \(E = \sigma/2\varepsilon_0\). The value \(\sigma/\varepsilon_0\) holds just outside a conductor, where the field exists on one side only.'
+          ar: 'سطح غاوس أسطواني يخترق الصفيحة يعطي تدفقًا \(2EA = \sigma A/\varepsilon_0\)، إذن \(E = \sigma/2\varepsilon_0\). أما القيمة \(\sigma/\varepsilon_0\) فتصح خارج ناقل مباشرة، حيث يوجد الحقل في جهة واحدة فقط.'
+  - title: { en: 'Potential and capacitance', ar: 'الكمون والسعة' }
+    questions:
+      - q:
+          en: 'How much work does the electric field do on a charge moved along an equipotential surface?'
+          ar: 'ما الشغل الذي ينجزه الحقل الكهربائي على شحنة تُنقل على سطح متساوي الكمون؟'
+        options:
+          - '\(qEd\)'
+          - '\(qV\)'
+          - { en: 'zero', ar: 'منعدم' }
+          - { en: 'it depends on the path', ar: 'يتعلق بالمسار' }
+        answer: 2
+        explain:
+          en: '\(W = -q\Delta V\) and \(\Delta V = 0\) on an equipotential; equivalently, \(\vec E\) is perpendicular to the surface and thus to the displacement.'
+          ar: '\(W = -q\Delta V\) و\(\Delta V = 0\) على سطح متساوي الكمون؛ وبعبارة أخرى، \(\vec E\) عمودي على السطح ومن ثم على الانتقال.'
+      - q:
+          en: 'In a region the potential is \(V(x) = 5x^2\) (V, with \(x\) in m). What is \(E_x\) at \(x = 2\ \mathrm{m}\)?'
+          ar: 'في منطقة ما يُعطى الكمون بـ \(V(x) = 5x^2\) (بالفولط، و\(x\) بالمتر). ما قيمة \(E_x\) عند \(x = 2\ \mathrm{m}\)؟'
+        options:
+          - '\(-10\ \mathrm{V/m}\)'
+          - '\(+20\ \mathrm{V}\)'
+          - '\(-20\ \mathrm{V/m}\)'
+          - '\(+20\ \mathrm{V/m}\)'
+        answer: 2
+        explain:
+          en: '\(E_x = -\dd V/\dd x = -10x = -20\ \mathrm{V/m}\): the field points towards decreasing potential, here the \(-x\) direction.'
+          ar: '\(E_x = -\dd V/\dd x = -10x = -20\ \mathrm{V/m}\): يتجه الحقل نحو تناقص الكمون، أي في الاتجاه \(-x\) هنا.'
+      - q:
+          en: 'A proton is accelerated from rest through a potential difference of \(1000\ \mathrm{V}\). Its kinetic energy is:'
+          ar: 'يُسرَّع بروتون من السكون عبر فرق كمون \(1000\ \mathrm{V}\). طاقته الحركية تساوي:'
+        options:
+          - '\(1\ \mathrm{keV} = 1.6\times10^{-16}\ \mathrm{J}\)'
+          - '\(1\ \mathrm{MeV}\)'
+          - '\(1000\ \mathrm{J}\)'
+          - '\(1.6\times10^{-19}\ \mathrm{J}\)'
+        answer: 0
+        explain:
+          en: '\(K = e\Delta V = (1.6\times10^{-19}\ \mathrm{C})(1000\ \mathrm{V}) = 1.6\times10^{-16}\ \mathrm{J} = 1000\ \mathrm{eV}\).'
+          ar: '\(K = e\Delta V = (1.6\times10^{-19}\ \mathrm{C})(1000\ \mathrm{V}) = 1.6\times10^{-16}\ \mathrm{J} = 1000\ \mathrm{eV}\).'
+      - q:
+          en: 'A parallel-plate capacitor stays connected to a battery while its plate separation is doubled. The charge on its plates:'
+          ar: 'مكثفة مستوية تبقى موصولة ببطارية بينما تُضاعف المسافة بين لبوسيها. الشحنة على لبوسيها:'
+        options:
+          - { en: 'is halved', ar: 'تنقص إلى النصف' }
+          - { en: 'is unchanged', ar: 'لا تتغير' }
+          - { en: 'is multiplied by 4', ar: 'تُضرب في 4' }
+          - { en: 'is doubled', ar: 'تتضاعف' }
+        answer: 0
+        explain:
+          en: '\(C = \varepsilon_0A/d\) is halved; the battery keeps \(V\) fixed, so \(Q = CV\) is halved. (If the capacitor were isolated, \(Q\) would stay fixed and \(V\) would double.)'
+          ar: '\(C = \varepsilon_0A/d\) تنقص إلى النصف، والبطارية تُبقي \(V\) ثابتًا، إذن \(Q = CV\) تنقص إلى النصف. (لو كانت المكثفة معزولة لبقيت \(Q\) ثابتة وتضاعف \(V\).)'
+      - q:
+          en: 'Capacitors of \(2\ \mu\mathrm{F}\) and \(3\ \mu\mathrm{F}\) are connected in series. The equivalent capacitance is:'
+          ar: 'مكثفتان سعتاهما \(2\ \mu\mathrm{F}\) و\(3\ \mu\mathrm{F}\) موصولتان على التسلسل. السعة المكافئة هي:'
+        options:
+          - '\(1.2\ \mu\mathrm{F}\)'
+          - '\(2.5\ \mu\mathrm{F}\)'
+          - '\(5\ \mu\mathrm{F}\)'
+          - '\(6\ \mu\mathrm{F}\)'
+        answer: 0
+        explain:
+          en: '\(1/C = 1/2 + 1/3 = 5/6\), so \(C = 6/5 = 1.2\ \mu\mathrm{F}\) — always smaller than the smallest capacitor in the series.'
+          ar: '\(1/C = 1/2 + 1/3 = 5/6\)، إذن \(C = 6/5 = 1.2\ \mu\mathrm{F}\) — وهي دائمًا أصغر من أصغر سعة في التسلسل.'
+  - title: { en: 'Current and DC circuits', ar: 'التيار ودارات التيار المستمر' }
+    questions:
+      - q:
+          en: 'A wire is replaced by one of the same material, twice as long and with twice the diameter. Its resistance is:'
+          ar: 'استُبدل سلك بآخر من المادة نفسها طوله ضعف الأول وقطره ضعف الأول. مقاومته:'
+        options:
+          - { en: 'halved', ar: 'تنقص إلى النصف' }
+          - { en: 'unchanged', ar: 'لا تتغير' }
+          - { en: 'doubled', ar: 'تتضاعف' }
+          - { en: 'divided by 4', ar: 'تُقسم على 4' }
+        answer: 0
+        explain:
+          en: '\(R = \rho L/A\): \(L\) is doubled and \(A \propto d^2\) is multiplied by 4, so \(R\) is multiplied by \(2/4 = 1/2\).'
+          ar: '\(R = \rho L/A\): يتضاعف \(L\) وتُضرب \(A \propto d^2\) في 4، إذن تُضرب \(R\) في \(2/4 = 1/2\).'
+      - q:
+          en: 'Three identical resistors \(R\) are connected in parallel. The equivalent resistance is:'
+          ar: 'ثلاث مقاومات متماثلة \(R\) موصولة على التفرع. المقاومة المكافئة هي:'
+        options:
+          - '\(3R\)'
+          - '\(R\)'
+          - '\(2R/3\)'
+          - '\(R/3\)'
+        answer: 3
+        explain:
+          en: '\(1/R_{eq} = 3/R\), so \(R_{eq} = R/3\), smaller than each branch.'
+          ar: '\(1/R_{eq} = 3/R\)، إذن \(R_{eq} = R/3\)، وهي أصغر من مقاومة كل فرع.'
+      - q:
+          en: 'Kirchhoff''s junction rule is a consequence of:'
+          ar: 'قانون العقد لكيرشوف هو نتيجة لـ:'
+        options:
+          - { en: 'Coulomb''s law', ar: 'قانون كولوم' }
+          - { en: 'Ohm''s law', ar: 'قانون أوم' }
+          - { en: 'conservation of electric charge', ar: 'انحفاظ الشحنة الكهربائية' }
+          - { en: 'conservation of energy', ar: 'حفظ الطاقة' }
+        answer: 2
+        explain:
+          en: 'Charge cannot accumulate at a node in steady state, so what flows in must flow out. The loop rule, in contrast, expresses energy conservation.'
+          ar: 'لا يمكن للشحنة أن تتراكم في عقدة في النظام الدائم، فما يدخلها يخرج منها. أما قانون الحلقات فيعبّر عن حفظ الطاقة.'
+      - q:
+          en: 'A capacitor charges through \(R = 10\ \mathrm{k\Omega}\) with \(C = 100\ \mu\mathrm{F}\). After one time constant, the charge has reached what fraction of its final value?'
+          ar: 'تُشحن مكثفة \(C = 100\ \mu\mathrm{F}\) عبر مقاومة \(R = 10\ \mathrm{k\Omega}\). بعد مرور ثابت زمن واحد، ما النسبة التي بلغتها الشحنة من قيمتها النهائية؟'
+        options:
+          - { en: '50 % (after \(\tau = 0.1\ \mathrm{s}\))', ar: '50 % (بعد \(\tau = 0.1\ \mathrm{s}\))' }
+          - { en: 'about 63 % (after \(\tau = 1\ \mathrm{s}\))', ar: 'نحو 63 % (بعد \(\tau = 1\ \mathrm{s}\))' }
+          - { en: 'about 37 % (after \(\tau = 1\ \mathrm{s}\))', ar: 'نحو 37 % (بعد \(\tau = 1\ \mathrm{s}\))' }
+          - { en: '100 % (after \(\tau = 1\ \mathrm{ms}\))', ar: '100 % (بعد \(\tau = 1\ \mathrm{ms}\))' }
+        answer: 1
+        explain:
+          en: '\(\tau = RC = (10^4)(10^{-4}) = 1\ \mathrm{s}\) and \(q(\tau) = Q_f(1 - e^{-1}) = 0.632\,Q_f\). The value 37 % is what remains during a <em>discharge</em>.'
+          ar: '\(\tau = RC = (10^4)(10^{-4}) = 1\ \mathrm{s}\) و\(q(\tau) = Q_f(1 - e^{-1}) = 0.632\,Q_f\). أما النسبة 37 % فهي ما يتبقى أثناء <em>التفريغ</em>.'
+      - q:
+          en: 'A 60 W and a 100 W bulb, both rated for the same voltage, are connected in series to that voltage. Which glows brighter?'
+          ar: 'مصباحان 60 W و100 W مصمَّمان للجهد نفسه وُصلا على التسلسل بذلك الجهد. أيهما يتوهج أكثر؟'
+        options:
+          - { en: 'the 100 W bulb', ar: 'المصباح 100 W' }
+          - { en: 'the 60 W bulb', ar: 'المصباح 60 W' }
+          - { en: 'neither lights up', ar: 'لا يضيء أي منهما' }
+          - { en: 'both equally', ar: 'كلاهما بالقدر نفسه' }
+        answer: 1
+        explain:
+          en: 'From \(P = V^2/R\), the 60 W bulb has the larger resistance. In series both carry the same current, and \(P = I^2R\) is larger for the larger \(R\).'
+          ar: 'من \(P = V^2/R\) تكون مقاومة المصباح 60 W أكبر. وفي التسلسل يمر التيار نفسه في المصباحين، فتكون \(P = I^2R\) أكبر للمقاومة الأكبر.'
+  - title: { en: 'Magnetism and induction', ar: 'المغناطيسية والتحريض' }
+    questions:
+      - q:
+          en: 'A charged particle moves parallel to a uniform magnetic field. The magnetic force on it is:'
+          ar: 'جسيم مشحون يتحرك موازيًا لحقل مغناطيسي منتظم. القوة المغناطيسية المؤثرة فيه:'
+        options:
+          - { en: 'directed towards the centre of a circle', ar: 'متجهة نحو مركز دائرة' }
+          - { en: 'parallel to \(\vec B\)', ar: 'موازية لـ \(\vec B\)' }
+          - '\(qvB\)'
+          - { en: 'zero', ar: 'منعدمة' }
+        answer: 3
+        explain:
+          en: '\(\vec F = q\vec v\times\vec B\) and the cross product of parallel vectors is zero; the particle continues in a straight line.'
+          ar: '\(\vec F = q\vec v\times\vec B\)، والجداء المتجهي لمتجهين متوازيين منعدم، فيواصل الجسيم حركته في خط مستقيم.'
+      - q:
+          en: 'A charged particle moves on a circle perpendicular to a uniform field \(B\). If its speed is doubled, the radius of the circle:'
+          ar: 'جسيم مشحون يتحرك على دائرة عمودية على حقل منتظم \(B\). إذا ضوعفت سرعته فإن نصف قطر الدائرة:'
+        options:
+          - { en: 'doubles', ar: 'يتضاعف' }
+          - { en: 'is multiplied by 4', ar: 'يُضرب في 4' }
+          - { en: 'is unchanged', ar: 'لا يتغير' }
+          - { en: 'halves', ar: 'ينقص إلى النصف' }
+        answer: 0
+        explain:
+          en: '\(qvB = mv^2/r \Rightarrow r = mv/|q|B\propto v\). The period \(2\pi m/|q|B\), however, does not depend on speed (cyclotron principle).'
+          ar: '\(qvB = mv^2/r \Rightarrow r = mv/|q|B\propto v\). أما الدور \(2\pi m/|q|B\) فلا يتعلق بالسرعة (مبدأ السيكلوترون).'
+      - q:
+          en: 'Two long parallel wires carry currents in the <em>same</em> direction. They:'
+          ar: 'سلكان طويلان متوازيان يحملان تيارين في الاتجاه <em>نفسه</em>. فإنهما:'
+        options:
+          - { en: 'exert no force', ar: 'لا يتبادلان أي قوة' }
+          - { en: 'repel each other', ar: 'يتنافران' }
+          - { en: 'exert a torque only', ar: 'يتبادلان عزمًا فقط' }
+          - { en: 'attract each other', ar: 'يتجاذبان' }
+        answer: 3
+        explain:
+          en: 'The field of wire 1 at wire 2 combined with \(\vec F = I\vec L\times\vec B\) gives a force towards wire 1, of magnitude \(\mu_0 I_1I_2L/2\pi d\). Antiparallel currents repel.'
+          ar: 'حقل السلك 1 عند السلك 2 مع العلاقة \(\vec F = I\vec L\times\vec B\) يعطي قوة نحو السلك 1 مقدارها \(\mu_0 I_1I_2L/2\pi d\). أما التياران المتعاكسان فيتنافران.'
+      - q:
+          en: 'The north pole of a bar magnet is pushed towards a closed wire loop. The induced current in the loop:'
+          ar: 'يُقرَّب القطب الشمالي لمغناطيس مستقيم من حلقة سلكية مغلقة. التيار المتحرَّض في الحلقة:'
+        options:
+          - { en: 'makes the loop attract the magnet', ar: 'يجعل الحلقة تجذب المغناطيس' }
+          - { en: 'produces a field in the same direction as the magnet''s', ar: 'ينتج حقلًا في اتجاه حقل المغناطيس نفسه' }
+          - { en: 'makes the loop repel the magnet', ar: 'يجعل الحلقة تنافر المغناطيس' }
+          - { en: 'is zero because the magnet is not inside the loop', ar: 'منعدم لأن المغناطيس ليس داخل الحلقة' }
+        answer: 2
+        explain:
+          en: 'Lenz''s law: the induced current opposes the increase of flux, so the face of the loop towards the magnet becomes a north pole and repels it. Otherwise energy would be created from nothing.'
+          ar: 'قانون لنز: يعاكس التيار المتحرَّض تزايد التدفق، فيصبح وجه الحلقة المقابل للمغناطيس قطبًا شماليًا وينافره. ولو حدث العكس لتولدت طاقة من العدم.'
+      - q:
+          en: 'At fixed current, the number of turns per unit length of a long solenoid is doubled. The field inside:'
+          ar: 'عند تيار ثابت، ضوعف عدد اللفات في وحدة الطول لوشيعة حلزونية طويلة. الحقل داخلها:'
+        options:
+          - { en: 'halves', ar: 'ينقص إلى النصف' }
+          - { en: 'is multiplied by 4', ar: 'يُضرب في 4' }
+          - { en: 'doubles', ar: 'يتضاعف' }
+          - { en: 'is unchanged', ar: 'لا يتغير' }
+        answer: 2
+        explain:
+          en: 'Ampère''s law gives \(B = \mu_0 n I\) inside a long solenoid, proportional to \(n\). (The self-inductance \(L = \mu_0 n^2 A\ell\), however, is multiplied by 4.)'
+          ar: 'يعطي قانون أمبير \(B = \mu_0 n I\) داخل وشيعة طويلة، أي أنه متناسب مع \(n\). (أما الذاتية \(L = \mu_0 n^2 A\ell\) فتُضرب في 4.)'
+
+textbooks:
+  required:
+    - { authors: 'D. Halliday, R. Resnick & J. Walker', title: 'Fundamentals of Physics', edition: '10th', publisher: 'John Wiley & Sons', year: 2014 }
+  recommended:
+    - { authors: 'R. A. Serway & J. W. Jewett', title: 'Physics for Scientists and Engineers', edition: '9th', publisher: 'Cengage Learning', year: 2013 }
+    - { authors: 'H. D. Young & R. A. Freedman', title: 'Sears and Zemansky''s University Physics', edition: '12th', publisher: 'Pearson Addison-Wesley', year: 2007 }
+    - { authors: 'D. Halliday, R. Resnick & K. S. Krane', title: 'Physics, Volume 2', edition: '5th', publisher: 'John Wiley & Sons' }
+    - { authors: 'M. Alonso & E. J. Finn', title: 'Physique générale, tome 2 : Champs et ondes — cours et exercices corrigés', publisher: 'Dunod', year: 2005 }
+    - { authors: 'E. M. Purcell & D. J. Morin', title: 'Electricity and Magnetism', edition: '3rd', publisher: 'Cambridge University Press', year: 2013 }
+  online:
+    - title: { en: 'MIT OCW 8.02SC — Physics II: Electricity and Magnetism', ar: 'مقرر MIT OCW 8.02SC — الفيزياء 2: الكهرباء والمغناطيسية' }
+      url: https://ocw.mit.edu/courses/physics/8-02sc-physics-ii-electricity-and-magnetism-fall-2010/
+      note: { en: 'Scholar edition: lecture videos, worked examples, problem-solving help and exams.', ar: 'نسخة التعلّم الذاتي: محاضرات مصوّرة، أمثلة محلولة، إرشادات لحل المسائل، واختبارات.' }
+    - title: { en: 'OpenStax — University Physics, Volume 2', ar: 'OpenStax — الفيزياء الجامعية، المجلد 2' }
+      url: https://openstax.org/details/books/university-physics-volume-2
+      note: { en: 'Free textbook; chapters 5–14 cover this course.', ar: 'كتاب مجاني؛ الفصول 5–14 تغطي هذا المقرر.' }
+    - title: { en: 'PhET — Charges and Fields', ar: 'PhET — الشحنات والحقول' }
+      url: https://phet.colorado.edu/en/simulations/charges-and-fields
+      note: { en: 'Place charges, measure field and potential, draw equipotentials.', ar: 'ضع شحنات، وقِس الحقل والكمون، وارسم السطوح متساوية الكمون.' }
+    - title: { en: 'PhET — Faraday''s Law', ar: 'PhET — قانون فاراداي' }
+      url: https://phet.colorado.edu/en/simulations/faradays-law
+      note: { en: 'Move a magnet through coils and watch the induced emf.', ar: 'حرّك مغناطيسًا عبر وشائع وراقب القوة المحركة الكهربائية المتحرَّضة.' }
+
+glossary:
+  - { en: 'Electric charge', ar: 'الشحنة الكهربائية', fr: 'Charge électrique', def: { en: 'Conserved, quantised property of matter (\(e = 1.602\times10^{-19}\ \mathrm{C}\)) that is the source of electric fields.', ar: 'خاصية للمادة محفوظة ومكمّاة (\(e = 1.602\times10^{-19}\ \mathrm{C}\))، وهي مصدر الحقول الكهربائية.' } }
+  - { en: 'Coulomb''s law', ar: 'قانون كولوم', fr: 'Loi de Coulomb', def: { en: 'Force between point charges: \(F = k|q_1q_2|/r^2\), with \(k = 1/4\pi\varepsilon_0\).', ar: 'القوة بين شحنتين نقطيتين \(F = k|q_1q_2|/r^2\) حيث \(k = 1/4\pi\varepsilon_0\).' } }
+  - { en: 'Electric field', ar: 'الحقل الكهربائي', fr: 'Champ électrique', def: { en: 'Force per unit positive test charge, \(\vec E = \vec F/q_0\); unit N/C = V/m.', ar: 'القوة لكل وحدة شحنة اختبار موجبة \(\vec E = \vec F/q_0\)؛ وحدته N/C = V/m.' } }
+  - { en: 'Field line', ar: 'خط الحقل', fr: 'Ligne de champ', def: { en: 'Curve tangent to \(\vec E\) everywhere; lines start on positive and end on negative charges.', ar: 'منحنى يمس \(\vec E\) في كل نقطة؛ تبدأ الخطوط من الشحنات الموجبة وتنتهي عند السالبة.' } }
+  - { en: 'Superposition principle', ar: 'مبدأ التراكب', fr: 'Principe de superposition', def: { en: 'The total field (or force) is the vector sum of the contributions of each source.', ar: 'الحقل (أو القوة) الكلي هو المجموع المتجهي لمساهمات كل مصدر.' } }
+  - { en: 'Electric dipole moment', ar: 'عزم ثنائي القطب الكهربائي', fr: 'Moment dipolaire électrique', def: { en: '\(\vec p = q\vec d\), from \(-q\) to \(+q\); in a field it feels the torque \(\vec\tau = \vec p\times\vec E\).', ar: '\(\vec p = q\vec d\) يتجه من \(-q\) إلى \(+q\)؛ ويخضع في حقل لعزم مزدوجة \(\vec\tau = \vec p\times\vec E\).' } }
+  - { en: 'Electric flux', ar: 'التدفق الكهربائي', fr: 'Flux électrique', def: { en: '\(\Phi_E = \int\vec E\cdot\dd\vec A\), the "number of field lines" crossing a surface.', ar: '\(\Phi_E = \int\vec E\cdot\dd\vec A\)، ويمثل "عدد خطوط الحقل" التي تعبر سطحًا.' } }
+  - { en: 'Gauss''s law', ar: 'قانون غاوس', fr: 'Théorème de Gauss', def: { en: '\(\oint\vec E\cdot\dd\vec A = Q_{enc}/\varepsilon_0\) for any closed surface.', ar: '\(\oint\vec E\cdot\dd\vec A = Q_{enc}/\varepsilon_0\) لأي سطح مغلق.' } }
+  - { en: 'Permittivity of free space', ar: 'سماحية الفراغ', fr: 'Permittivité du vide', def: { en: '\(\varepsilon_0 = 8.85\times10^{-12}\ \mathrm{C^2/(N\,m^2)}\).', ar: '\(\varepsilon_0 = 8.85\times10^{-12}\ \mathrm{C^2/(N\,m^2)}\).' } }
+  - { en: 'Electric potential', ar: 'الكمون الكهربائي', fr: 'Potentiel électrique', def: { en: 'Potential energy per unit charge, \(V = U/q_0\); \(\Delta V = -\int\vec E\cdot\dd\vec s\); unit volt.', ar: 'طاقة الوضع لكل وحدة شحنة \(V = U/q_0\)؛ \(\Delta V = -\int\vec E\cdot\dd\vec s\)؛ ووحدته الفولط.' } }
+  - { en: 'Equipotential surface', ar: 'سطح متساوي الكمون', fr: 'Surface équipotentielle', def: { en: 'Surface of constant \(V\); always perpendicular to field lines.', ar: 'سطح يكون عليه \(V\) ثابتًا، وهو دائمًا عمودي على خطوط الحقل.' } }
+  - { en: 'Electron-volt', ar: 'الإلكترون فولط', fr: 'Électron-volt', def: { en: 'Energy gained by charge \(e\) through 1 V: \(1\ \mathrm{eV} = 1.602\times10^{-19}\ \mathrm{J}\).', ar: 'الطاقة التي تكتسبها الشحنة \(e\) عبر فرق كمون 1 V: \(1\ \mathrm{eV} = 1.602\times10^{-19}\ \mathrm{J}\).' } }
+  - { en: 'Capacitance', ar: 'السعة', fr: 'Capacité', def: { en: '\(C = Q/V\); for a parallel-plate capacitor \(C = \varepsilon_0A/d\); unit farad.', ar: '\(C = Q/V\)؛ وللمكثفة المستوية \(C = \varepsilon_0A/d\)؛ ووحدتها الفاراد.' } }
+  - { en: 'Dielectric', ar: 'العازل الكهربائي', fr: 'Diélectrique', def: { en: 'Insulator that polarises in a field and multiplies capacitance by its dielectric constant \(\kappa\).', ar: 'مادة عازلة تستقطب في الحقل وتضرب السعة في ثابت العزل \(\kappa\).' } }
+  - { en: 'Electric current', ar: 'التيار الكهربائي', fr: 'Courant électrique', def: { en: 'Rate of charge flow through a cross-section, \(I = \dd q/\dd t\); unit ampere.', ar: 'معدل تدفق الشحنة عبر مقطع \(I = \dd q/\dd t\)؛ ووحدته الأمبير.' } }
+  - { en: 'Resistivity', ar: 'المقاومية', fr: 'Résistivité', def: { en: 'Material property \(\rho = E/J\); a wire has \(R = \rho L/A\).', ar: 'خاصية للمادة \(\rho = E/J\)؛ ومقاومة سلك \(R = \rho L/A\).' } }
+  - { en: 'Ohm''s law', ar: 'قانون أوم', fr: 'Loi d''Ohm', def: { en: '\(V = RI\) with \(R\) independent of \(V\) (ohmic conductor).', ar: '\(V = RI\) حيث \(R\) لا تتعلق بـ \(V\) (ناقل أومي).' } }
+  - { en: 'Electromotive force (emf)', ar: 'القوة المحركة الكهربائية', fr: 'Force électromotrice', def: { en: 'Work per unit charge done by a source to move charge around a circuit, \(\mathcal E\); unit volt.', ar: 'الشغل لكل وحدة شحنة الذي ينجزه مولد لتحريك الشحنة في الدارة \(\mathcal E\)؛ ووحدتها الفولط.' } }
+  - { en: 'Kirchhoff''s rules', ar: 'قانونا كيرشوف', fr: 'Lois de Kirchhoff', def: { en: 'Junction rule \(\sum I = 0\) (charge conservation) and loop rule \(\sum\Delta V = 0\) (energy conservation).', ar: 'قانون العقد \(\sum I = 0\) (انحفاظ الشحنة) وقانون الحلقات \(\sum\Delta V = 0\) (حفظ الطاقة).' } }
+  - { en: 'Time constant', ar: 'ثابت الزمن', fr: 'Constante de temps', def: { en: '\(\tau = RC\) (or \(L/R\)): time for a transient to change by a factor \(e\).', ar: '\(\tau = RC\) (أو \(L/R\)): الزمن اللازم ليتغير النظام الانتقالي بمعامل \(e\).' } }
+  - { en: 'Magnetic field', ar: 'الحقل المغناطيسي', fr: 'Champ magnétique', def: { en: 'Field \(\vec B\) defined by the force on a moving charge; unit tesla.', ar: 'حقل \(\vec B\) يُعرَّف بالقوة المؤثرة في شحنة متحركة؛ ووحدته التسلا.' } }
+  - { en: 'Lorentz force', ar: 'قوة لورنتز', fr: 'Force de Lorentz', def: { en: '\(\vec F = q(\vec E + \vec v\times\vec B)\).', ar: '\(\vec F = q(\vec E + \vec v\times\vec B)\).' } }
+  - { en: 'Biot–Savart law', ar: 'قانون بيو-سافار', fr: 'Loi de Biot et Savart', def: { en: '\(\dd\vec B = \dfrac{\mu_0}{4\pi}\dfrac{I\,\dd\vec s\times\hat r}{r^2}\): field of a current element.', ar: '\(\dd\vec B = \dfrac{\mu_0}{4\pi}\dfrac{I\,\dd\vec s\times\hat r}{r^2}\): حقل عنصر تيار.' } }
+  - { en: 'Ampère''s law', ar: 'قانون أمبير', fr: 'Théorème d''Ampère', def: { en: '\(\oint\vec B\cdot\dd\vec s = \mu_0 I_{enc}\) for any closed loop (steady currents).', ar: '\(\oint\vec B\cdot\dd\vec s = \mu_0 I_{enc}\) لأي مسار مغلق (تيارات مستقرة).' } }
+  - { en: 'Magnetic flux', ar: 'التدفق المغناطيسي', fr: 'Flux magnétique', def: { en: '\(\Phi_B = \int\vec B\cdot\dd\vec A\); unit weber.', ar: '\(\Phi_B = \int\vec B\cdot\dd\vec A\)؛ ووحدته الويبر.' } }
+  - { en: 'Faraday''s law', ar: 'قانون فاراداي', fr: 'Loi de Faraday', def: { en: 'Induced emf \(\mathcal E = -\dd\Phi_B/\dd t\) (times \(N\) for a coil of \(N\) turns).', ar: 'القوة المحركة الكهربائية المتحرَّضة \(\mathcal E = -\dd\Phi_B/\dd t\) (مضروبة في \(N\) لوشيعة من \(N\) لفة).' } }
+  - { en: 'Lenz''s law', ar: 'قانون لنز', fr: 'Loi de Lenz', def: { en: 'The induced current flows so as to oppose the change of flux that produces it.', ar: 'يسري التيار المتحرَّض في اتجاه يعاكس تغيّر التدفق الذي أحدثه.' } }
+  - { en: 'Self-inductance', ar: 'الذاتية (معامل التحريض الذاتي)', fr: 'Inductance propre', def: { en: '\(L = N\Phi_B/I\); a coil opposes changes of current with \(\mathcal E_L = -L\,\dd I/\dd t\); unit henry.', ar: '\(L = N\Phi_B/I\)؛ تعاكس الوشيعة تغيرات التيار بقوة \(\mathcal E_L = -L\,\dd I/\dd t\)؛ ووحدتها الهنري.' } }
+  - { en: 'Hall effect', ar: 'ظاهرة هول', fr: 'Effet Hall', def: { en: 'Transverse voltage across a current-carrying conductor in a magnetic field; used to measure \(B\).', ar: 'فرق كمون عرضي يظهر في ناقل يحمل تيارًا داخل حقل مغناطيسي، ويُستعمل لقياس \(B\).' } }

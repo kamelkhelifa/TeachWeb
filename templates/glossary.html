@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% from "_macros.html" import icon %}
+{% block title %}{{ ui('glossary_title') }} · {{ site.name if lang == 'en' else site.name_ar }}{% endblock %}
+{% block description %}{{ ui('glossary_lead') | plain }}{% endblock %}
+{% block main %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ icon('glossary', 'ic xs') }} {{ ui('nav_glossary') }}</p>
+    <h1>{{ ui('glossary_title') }}</h1>
+    <p class="lead">{{ ui('glossary_lead') }}</p>
+  </div>
+</section>
+<section class="section tight">
+  <div class="wrap">
+    {% include "_glossary.html" %}
+  </div>
+</section>
+{% endblock %}

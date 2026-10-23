@@ -1,0 +1,805 @@
+slug: electricity-lab
+order: 30
+codes: [UEF 212, PHYS 194]
+short: { en: 'E-Lab', ar: 'مختبر' }
+title:
+  en: 'Experimental Physics: Electricity & Magnetism Lab'
+  ar: 'الفيزياء التجريبية: مختبر الكهرباء والمغناطيسية'
+tagline:
+  en: 'Measure, analyse and question: hands-on electricity and magnetism with uncertainties.'
+  ar: 'قِس وحلّل وتساءل: الكهرباء والمغناطيسية بالتجربة مع حساب الارتيابات.'
+area: laboratory
+level: 1
+credits: 1
+hours: { lecture: 0, tutorial: 0, lab: 3 }
+weeks: 14
+instruction: [en, ar, fr]
+prerequisites: []
+prerequisite_note:
+  en: 'Taken alongside General Physics II (Electricity & Magnetism). Basic mechanics, algebra, logarithms and plotting graphs are assumed.'
+  ar: 'يُدرس بالتوازي مع مقرر الفيزياء العامة 2 (الكهرباء والمغناطيسية). يُفترض إلمام الطالب بأساسيات الميكانيكا والجبر واللوغاريتمات ورسم المنحنيات البيانية.'
+sims: [rc-circuit]
+sources:
+  - 'https://khelifak.wordpress.com/studying/teaching-2/usthb/tp-phys-2-electricite/'
+notes: >
+  Source: the French "Electricité" page (UEF 212), which had 5 lab sheets (TP1 introduction, TP2
+  characteristics of two-terminal components, TP3 oscilloscope, TP4 RC/RL transients, TP5 electrolytic
+  tank), a lab exam with marking scheme, and a record that reports 1+2 covered TP2 and TP5. Its lecture /
+  tutorial material (electrostatics notes, TD, tests, exam) was placed in general-physics-2. Labs were
+  fortnightly in the source; the 14-week, 3 h/week plan is reconstructed from standard calculus-based
+  E&M lab courses (PHYS 194 type): Ohm's law, Kirchhoff, Wheatstone bridge, coil field (Hall probe),
+  induction/transformer were added and have no hand-out yet. Assessment, CLOs, quizzes, problems and
+  glossary written new. Mark lists not kept. Please check: whether the electricity lecture notes
+  should also be listed here, and whether lab-sheet solutions exist.
+
+description:
+  en: |
+    <p>This laboratory course accompanies the lecture course on electricity and magnetism. Each three-hour session is built around one experiment: students prepare it beforehand, assemble the circuit from a schematic, take careful measurements, and analyse them on the spot in a bound lab notebook.</p>
+    <p>The first weeks establish the habits of an experimental physicist: electrical safety, correct use of multimeters and power supplies, reading the accuracy class of an instrument, estimating and propagating uncertainties, linearising data and fitting a straight line. The experiments then cover current–voltage characteristics (resistor, lamp, diode), Kirchhoff's laws, the Wheatstone bridge, mapping equipotentials in an electrolytic tank, the oscilloscope, RC and RL transients, the magnetic field of a coil and electromagnetic induction.</p>
+    <p>The emphasis is not on "getting the right answer" but on <strong>comparing a measurement with a model honestly</strong>: is the discrepancy covered by the uncertainty? If not, which systematic effect could explain it? Lab sheets are in French; the pre-lab questions, worked data-analysis problems and glossary on this page are bilingual.</p>
+  ar: |
+    <p>يرافق هذا المقرر التجريبي مقرر المحاضرات في الكهرباء والمغناطيسية. تتمحور كل حصة (ثلاث ساعات) حول تجربة واحدة: يحضّرها الطلاب مسبقًا، ثم يركّبون الدارة انطلاقًا من مخططها، ويأخذون قياسات دقيقة، ويحللونها فورًا في دفتر مختبر مجلّد.</p>
+    <p>تُرسّخ الأسابيع الأولى عادات الفيزيائي التجريبي: السلامة الكهربائية، والاستعمال الصحيح لأجهزة القياس المتعددة ومولدات التغذية، وقراءة صنف دقة الجهاز، وتقدير الارتيابات وانتشارها، وتحويل البيانات إلى علاقة خطية وملاءمة مستقيم. ثم تتناول التجارب المميزات تيار-جهد (مقاومة، مصباح، ثنائي)، وقانوني كيرشوف، وقنطرة ويتستون، ورسم خطوط تساوي الكمون في الحوض الإلكتروليتي، وراسم الاهتزاز المهبطي، والنظام الانتقالي في الدارتين RC وRL، والحقل المغناطيسي لوشيعة، والتحريض الكهرومغناطيسي.</p>
+    <p>لا ينصبّ التركيز على "الحصول على الإجابة الصحيحة"، بل على <strong>مقارنة القياس بالنموذج بأمانة</strong>: هل يغطي الارتيابُ الفرقَ الملاحظ؟ وإن لم يكن كذلك، فأيّ أثر منهجي قد يفسّره؟ أوراق التجارب محررة بالفرنسية، أما أسئلة التحضير والمسائل المحلولة في تحليل البيانات والمسرد في هذه الصفحة فهي ثنائية اللغة.</p>
+
+topics:
+  - { en: 'Lab safety', ar: 'السلامة في المختبر' }
+  - { en: 'Uncertainties & error propagation', ar: 'الارتيابات وانتشار الأخطاء' }
+  - { en: 'Graphs & least squares', ar: 'التمثيل البياني والمربعات الصغرى' }
+  - { en: 'I–V characteristics', ar: 'المميزات تيار-جهد' }
+  - { en: 'Kirchhoff & Wheatstone bridge', ar: 'قانونا كيرشوف وقنطرة ويتستون' }
+  - { en: 'Equipotential mapping', ar: 'رسم خطوط تساوي الكمون' }
+  - { en: 'The oscilloscope', ar: 'راسم الاهتزاز المهبطي' }
+  - { en: 'RC & RL transients', ar: 'النظام الانتقالي في RC وRL' }
+  - { en: 'Field of a coil', ar: 'الحقل المغناطيسي لوشيعة' }
+  - { en: 'Electromagnetic induction', ar: 'التحريض الكهرومغناطيسي' }
+
+outcomes:
+  - id: CLO1
+    bloom: apply
+    domain: values
+    text:
+      en: 'Follow electrical safety rules and good laboratory practice at every stage of an experiment.'
+      ar: 'يلتزم بقواعد السلامة الكهربائية والممارسات المخبرية السليمة في كل مراحل التجربة.'
+    assessed_by: [prelab, participation, practical]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Assemble circuits from schematic diagrams and use multimeters, power supplies, function generators and the oscilloscope correctly.'
+      ar: 'يركّب الدارات انطلاقًا من مخططاتها، ويستعمل أجهزة القياس المتعددة ومولدات التغذية ومولدات الإشارات وراسم الاهتزاز استعمالًا صحيحًا.'
+    assessed_by: [notebook, practical]
+  - id: CLO3
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Estimate instrumental and statistical uncertainties, propagate them, and report results with appropriate significant figures.'
+      ar: 'يقدّر الارتيابات الآلية والإحصائية وينشرها، ويعرض النتائج بعدد مناسب من الأرقام المعنوية.'
+    assessed_by: [prelab, reports, written]
+  - id: CLO4
+    bloom: analyze
+    domain: skills
+    text:
+      en: 'Linearise data and use graphical and least-squares fits to extract physical parameters (resistance, time constant, \(\mu_0\)…) with their uncertainties.'
+      ar: 'يحوّل البيانات إلى علاقات خطية ويستعمل الملاءمة البيانية وطريقة المربعات الصغرى لاستخراج المقادير الفيزيائية (المقاومة، ثابت الزمن، \(\mu_0\)…) مع ارتياباتها.'
+    assessed_by: [reports, written]
+  - id: CLO5
+    bloom: evaluate
+    domain: skills
+    text:
+      en: 'Compare measurements with theoretical models (Ohm, Kirchhoff, RC/RL transients, Biot–Savart, Faraday), judge agreement within uncertainty and identify systematic errors.'
+      ar: 'يقارن القياسات بالنماذج النظرية (أوم، كيرشوف، النظام الانتقالي RC/RL، بيو-سافار، فاراداي)، ويحكم على التوافق في حدود الارتياب، ويحدد الأخطاء المنهجية.'
+    assessed_by: [reports, practical, written]
+  - id: CLO6
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: 'Explain the physical principle behind each experiment and predict the expected behaviour before measuring.'
+      ar: 'يشرح المبدأ الفيزيائي لكل تجربة ويتوقع السلوك المنتظر قبل إجراء القياس.'
+    assessed_by: [prelab, written]
+  - id: CLO7
+    bloom: create
+    domain: values
+    text:
+      en: 'Keep a complete and honest lab notebook and write clear, structured laboratory reports as part of a team.'
+      ar: 'يحتفظ بدفتر مختبر كامل وأمين، ويكتب ضمن فريق تقارير مخبرية واضحة ومنظمة.'
+    assessed_by: [notebook, reports, participation]
+
+assessment:
+  - id: prelab
+    type: quiz
+    weight: 10
+    title: { en: 'Pre-lab quizzes', ar: 'اختبارات التحضير القبلي' }
+    detail:
+      en: 'A 10-minute quiz at the start of each session on the principle, expected results and safety points of the day''s experiment. The safety quiz of week 1 must be passed before working with mains-powered equipment.'
+      ar: 'اختبار مدته 10 دقائق في بداية كل حصة حول مبدأ تجربة اليوم ونتائجها المتوقعة ونقاط السلامة فيها. يجب اجتياز اختبار السلامة في الأسبوع الأول قبل العمل بأجهزة موصولة بالشبكة الكهربائية.'
+    when: { en: 'Weeks 2–13', ar: 'الأسابيع 2–13' }
+  - id: notebook
+    type: portfolio
+    weight: 10
+    title: { en: 'Lab notebook', ar: 'دفتر المختبر' }
+    detail:
+      en: 'Bound notebook written in ink during the session: circuit diagrams, raw data tables with units and uncertainties, quick graphs, observations. Checked and signed at the end of each session.'
+      ar: 'دفتر مجلّد يُكتب بالحبر أثناء الحصة: مخططات الدارات، وجداول البيانات الخام مع الوحدات والارتيابات، ومنحنيات سريعة، وملاحظات. يُراجَع ويُوقَّع في نهاية كل حصة.'
+    when: { en: 'Every session', ar: 'كل حصة' }
+  - id: reports
+    type: report
+    weight: 30
+    title: { en: 'Lab reports', ar: 'تقارير المختبر' }
+    detail:
+      en: 'Four formal reports (aim, principle, method, results with uncertainties, graphs with fitted lines, discussion, conclusion), handed in one week after the experiment. Graded with a published rubric.'
+      ar: 'أربعة تقارير رسمية (الهدف، المبدأ، الطريقة، النتائج مع الارتيابات، المنحنيات مع المستقيمات الملائمة، المناقشة، الخلاصة)، تُسلَّم بعد أسبوع من التجربة، وتُقيَّم وفق سلّم تنقيط معلن.'
+    when: { en: 'Weeks 5, 8, 11, 13', ar: 'الأسابيع 5 و8 و11 و13' }
+  - id: participation
+    type: participation
+    weight: 5
+    title: { en: 'Conduct and teamwork', ar: 'السلوك والعمل الجماعي' }
+    detail:
+      en: 'Punctuality, safe handling of equipment, tidy bench, effective sharing of tasks within the team.'
+      ar: 'الانضباط في المواعيد، والتعامل الآمن مع الأجهزة، ونظافة طاولة العمل، والتوزيع الفعّال للمهام داخل الفريق.'
+    when: { en: 'Throughout', ar: 'طوال الفصل' }
+  - id: practical
+    type: lab
+    weight: 25
+    title: { en: 'Practical exam', ar: 'الامتحان التطبيقي' }
+    detail:
+      en: 'Individual 90-minute exam: assemble a circuit, take a series of measurements, produce a graph and a result with its uncertainty, followed by a short oral question on the method.'
+      ar: 'امتحان فردي مدته 90 دقيقة: تركيب دارة، وإجراء سلسلة قياسات، ورسم منحنى، واستخراج نتيجة مع ارتيابها، يليه سؤال شفهي قصير حول الطريقة المتبعة.'
+    when: { en: 'Week 14', ar: 'الأسبوع 14' }
+  - id: written
+    type: final
+    weight: 20
+    title: { en: 'Final written test', ar: 'الاختبار الكتابي النهائي' }
+    detail:
+      en: '60-minute written test: principles of the experiments, instrument use, uncertainty calculations and the analysis of a given data set.'
+      ar: 'اختبار كتابي مدته 60 دقيقة: مبادئ التجارب، واستعمال الأجهزة، وحساب الارتيابات، وتحليل مجموعة بيانات معطاة.'
+    when: { en: 'Week 14', ar: 'الأسبوع 14' }
+
+schedule:
+  - week: 1
+    title: { en: 'Safety, instruments and measurement', ar: 'السلامة والأجهزة والقياس' }
+    topics:
+      en:
+        - 'Electrical safety rules; organisation of the lab'
+        - 'DC power supply, breadboard, digital and analogue multimeters'
+        - 'Resolution, accuracy class and reading uncertainty'
+      ar:
+        - 'قواعد السلامة الكهربائية؛ تنظيم المختبر'
+        - 'مولد التغذية المستمرة، لوحة التجارب، أجهزة القياس المتعددة الرقمية والتماثلية'
+        - 'دقة التمييز وصنف الدقة وارتياب القراءة'
+    reading: Taylor ch. 1–2
+    activity: { en: 'TP 1 — Introduction (part 1); safety quiz', ar: 'العمل التطبيقي 1 — مقدمة (الجزء 1)؛ اختبار السلامة' }
+  - week: 2
+    title: { en: 'Uncertainties and graphs', ar: 'الارتيابات والتمثيل البياني' }
+    topics:
+      en:
+        - 'Propagation of uncertainties: maximum error and quadrature'
+        - 'Significant figures and presentation of results'
+        - 'Linearisation and graphical slope; least-squares fit'
+      ar:
+        - 'انتشار الارتيابات: الخطأ الأعظمي والجمع التربيعي'
+        - 'الأرقام المعنوية وطريقة عرض النتائج'
+        - 'التحويل إلى علاقة خطية والميل البياني؛ ملاءمة المربعات الصغرى'
+    reading: Taylor ch. 3, 8
+    activity: { en: 'TP 1 — Introduction (part 2): data-analysis exercises', ar: 'العمل التطبيقي 1 — مقدمة (الجزء 2): تمارين في تحليل البيانات' }
+  - week: 3
+    title: { en: 'Ohm''s law and resistivity', ar: 'قانون أوم والمقاومية' }
+    topics:
+      en:
+        - 'Voltmeter and ammeter connections and their systematic errors'
+        - 'I–V line of a resistor; resistance from the slope'
+        - 'Resistivity of a wire from \(R\) versus length'
+      ar:
+        - 'طريقتا ربط مقياس الجهد ومقياس التيار وأخطاؤهما المنهجية'
+        - 'المميزة تيار-جهد لمقاومة؛ المقاومة من الميل'
+        - 'مقاومية سلك من تغيّر \(R\) بدلالة الطول'
+    reading: Halliday §26.3–26.5
+    milestone: lab
+  - week: 4
+    title: { en: 'Characteristics of two-terminal components', ar: 'مميزات ثنائيات الأقطاب' }
+    topics:
+      en:
+        - 'Linear and non-linear components: resistor, filament lamp'
+        - 'Semiconductor diode in forward and reverse bias; threshold voltage'
+        - 'Static and dynamic resistance'
+      ar:
+        - 'العناصر الخطية وغير الخطية: المقاومة، مصباح التوهج'
+        - 'الثنائي نصف الناقل في الاستقطاب المباشر والعكسي؛ جهد العتبة'
+        - 'المقاومة الساكنة والمقاومة الديناميكية'
+    activity: { en: 'TP 2 — Characteristics of two-terminal components', ar: 'العمل التطبيقي 2 — مميزات ثنائيات الأقطاب' }
+    milestone: lab
+  - week: 5
+    title: { en: 'Kirchhoff''s laws and real sources', ar: 'قانونا كيرشوف والمولدات الحقيقية' }
+    topics:
+      en:
+        - 'Series and parallel combinations of resistors'
+        - 'Verification of the junction and loop rules'
+        - 'emf and internal resistance of a battery from its V–I line'
+      ar:
+        - 'ربط المقاومات على التسلسل وعلى التفرع'
+        - 'التحقق من قانوني العقد والحلقات'
+        - 'القوة المحركة الكهربائية والمقاومة الداخلية لبطارية من مميزتها'
+    reading: Halliday §27.1–27.3
+    activity: { en: 'Report 1 due (characteristics)', ar: 'تسليم التقرير 1 (المميزات)' }
+    milestone: lab
+  - week: 6
+    title: { en: 'The Wheatstone bridge', ar: 'قنطرة ويتستون' }
+    topics:
+      en:
+        - 'Balance condition of the bridge'
+        - 'Slide-wire bridge; sensitivity and best balance point'
+        - 'Comparison with a direct ohmmeter reading'
+      ar:
+        - 'شرط توازن القنطرة'
+        - 'قنطرة السلك المنزلق؛ الحساسية وأفضل نقطة توازن'
+        - 'المقارنة مع القراءة المباشرة لمقياس المقاومة'
+    milestone: lab
+  - week: 7
+    title: { en: 'Equipotentials in an electrolytic tank', ar: 'خطوط تساوي الكمون في الحوض الإلكتروليتي' }
+    topics:
+      en:
+        - 'Mapping equipotential lines for several electrode shapes'
+        - 'Drawing field lines perpendicular to equipotentials'
+        - 'Estimating \(E \approx -\Delta V/\Delta s\)'
+      ar:
+        - 'رسم خطوط تساوي الكمون لعدة أشكال من الأقطاب'
+        - 'رسم خطوط الحقل عموديًا على خطوط تساوي الكمون'
+        - 'تقدير \(E \approx -\Delta V/\Delta s\)'
+    reading: Halliday §24.2
+    activity: { en: 'TP 5 — The electrolytic (rheographic) tank', ar: 'العمل التطبيقي 5 — الحوض الإلكتروليتي (الريوغرافي)' }
+    milestone: lab
+  - week: 8
+    title: { en: 'Report workshop and mid-course review', ar: 'ورشة التقارير ومراجعة منتصف المقرر' }
+    topics:
+      en:
+        - 'Feedback on report 1; what makes a good figure and a good discussion'
+        - 'Make-up session for missed experiments'
+      ar:
+        - 'ملاحظات على التقرير 1؛ مواصفات المنحنى الجيد والمناقشة الجيدة'
+        - 'حصة استدراك للتجارب الفائتة'
+    activity: { en: 'Report 2 due (bridge and equipotentials)', ar: 'تسليم التقرير 2 (القنطرة وخطوط تساوي الكمون)' }
+    milestone: review
+  - week: 9
+    title: { en: 'The oscilloscope', ar: 'راسم الاهتزاز المهبطي' }
+    topics:
+      en:
+        - 'Vertical sensitivity, time base, triggering'
+        - 'Measuring amplitude, period, frequency and rms value'
+        - 'XY mode: Lissajous figures and phase shift'
+      ar:
+        - 'الحساسية الشاقولية والقاعدة الزمنية والتزامن'
+        - 'قياس السعة والدور والتواتر والقيمة الفعالة'
+        - 'النمط XY: منحنيات ليساجو وفرق الطور'
+    activity: { en: 'TP 3 — The oscilloscope', ar: 'العمل التطبيقي 3 — راسم الاهتزاز المهبطي' }
+    milestone: lab
+  - week: 10
+    title: { en: 'RC circuit transients', ar: 'النظام الانتقالي في الدارة RC' }
+    topics:
+      en:
+        - 'Charging and discharging with a square-wave generator'
+        - 'Time constant from the 63 % point, the half-life and a semi-log plot'
+        - 'Effect of the generator''s output resistance'
+      ar:
+        - 'الشحن والتفريغ بواسطة مولد إشارة مربعة'
+        - 'ثابت الزمن من نقطة 63 % ومن زمن نصف القيمة ومن منحنى نصف لوغاريتمي'
+        - 'أثر المقاومة الداخلية للمولد'
+    reading: Halliday §27.4
+    activity: { en: 'TP 4 — Transients (RC part); compare with the RC-circuit simulation', ar: 'العمل التطبيقي 4 — النظام الانتقالي (جزء RC)؛ قارن مع محاكاة الدارة RC' }
+    milestone: lab
+  - week: 11
+    title: { en: 'RL circuit transients', ar: 'النظام الانتقالي في الدارة RL' }
+    topics:
+      en:
+        - 'Growth and decay of current in an RL circuit'
+        - 'Time constant \(L/R\) and the resistance of the coil'
+        - 'Determining an inductance'
+      ar:
+        - 'نمو التيار وتناقصه في الدارة RL'
+        - 'ثابت الزمن \(L/R\) ومقاومة الوشيعة'
+        - 'تعيين ذاتية وشيعة'
+    reading: Halliday §30.7
+    activity: { en: 'TP 4 — Transients (RL part); report 3 due (oscilloscope and RC)', ar: 'العمل التطبيقي 4 — النظام الانتقالي (جزء RL)؛ تسليم التقرير 3 (راسم الاهتزاز وRC)' }
+    milestone: lab
+  - week: 12
+    title: { en: 'Magnetic field of a coil', ar: 'الحقل المغناطيسي لوشيعة' }
+    topics:
+      en:
+        - 'Hall-probe teslameter; zeroing and orientation'
+        - 'Field at the centre versus current; \(B = \mu_0 NI/2R\)'
+        - 'Field along the axis; Helmholtz configuration'
+      ar:
+        - 'مقياس التسلا بمسبار هول؛ ضبط الصفر والتوجيه'
+        - 'الحقل في المركز بدلالة التيار؛ \(B = \mu_0 NI/2R\)'
+        - 'الحقل على طول المحور؛ تشكيلة هلمهولتز'
+    reading: Halliday §29.1–29.2, 29.5
+    milestone: lab
+  - week: 13
+    title: { en: 'Electromagnetic induction', ar: 'التحريض الكهرومغناطيسي' }
+    topics:
+      en:
+        - 'Induced emf from a moving magnet; Lenz''s law'
+        - 'Mutual induction between two coils versus frequency'
+        - 'Voltage ratio of a transformer'
+      ar:
+        - 'القوة المحركة المتحرَّضة بمغناطيس متحرك؛ قانون لنز'
+        - 'التحريض المتبادل بين وشيعتين بدلالة التواتر'
+        - 'نسبة التحويل في المحوّل'
+    reading: Halliday §30.1–30.2, 30.10
+    activity: { en: 'Report 4 due (coil field)', ar: 'تسليم التقرير 4 (حقل الوشيعة)' }
+    milestone: lab
+  - week: 14
+    title: { en: 'Practical exam and written test', ar: 'الامتحان التطبيقي والاختبار الكتابي' }
+    topics:
+      en:
+        - 'Individual practical exam'
+        - 'Final written test on methods and data analysis'
+      ar:
+        - 'امتحان تطبيقي فردي'
+        - 'اختبار كتابي نهائي في الطرق وتحليل البيانات'
+    milestone: final
+
+materials:
+  - type: lab
+    title: { en: 'TP 1 — Introduction: instruments and measurement', ar: 'العمل التطبيقي 1 — مقدمة: الأجهزة والقياس' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/03/tp1.pdf
+    week: 1
+    lang: fr
+  - type: lab
+    title: { en: 'TP 2 — Characteristics of two-terminal components', ar: 'العمل التطبيقي 2 — مميزات ثنائيات الأقطاب' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp2.pdf
+    week: 4
+    lang: fr
+  - type: lab
+    title: { en: 'TP 5 — The electrolytic (rheographic) tank', ar: 'العمل التطبيقي 5 — الحوض الإلكتروليتي (الريوغرافي)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp5.pdf
+    week: 7
+    lang: fr
+  - type: lab
+    title: { en: 'TP 3 — The oscilloscope', ar: 'العمل التطبيقي 3 — راسم الاهتزاز المهبطي' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp3.pdf
+    week: 9
+    lang: fr
+  - type: lab
+    title: { en: 'TP 4 — Transient behaviour of RC and RL circuits', ar: 'العمل التطبيقي 4 — النظام الانتقالي في الدارتين RC وRL' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp4.pdf
+    week: 10
+    lang: fr
+  - type: formula
+    title: { en: 'Mathematical formulae you should know (French)', ar: 'صيغ رياضية ينبغي معرفتها (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
+    lang: fr
+  - type: formula
+    title: { en: 'Essential constants and conversion factors (French)', ar: 'ثوابت ومعاملات تحويل أساسية (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
+    lang: fr
+  - type: reading
+    title: { en: 'Electricity lecture notes — background reading (French)', ar: 'مطبوعة محاضرات الكهرباء — قراءة داعمة (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/electricite_poly.pdf
+    lang: fr
+
+exams:
+  - title: { en: 'Lab exam (with marking scheme)', ar: 'امتحان الأعمال التطبيقية (مع سلّم التنقيط)' }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/05/st_s2_tp_phys2.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/05/st_s2_tp_phys2_barem.pdf
+    lang: fr
+
+exam_guide:
+  format:
+    en: 'Practical exam (90 min, individual): you draw one experiment from those done in the semester, assemble it, take measurements, and hand in a data table, a graph and a result with its uncertainty; a short oral question follows. Written test (60 min): short questions on principles and instruments, an uncertainty calculation, and the analysis of a given data set.'
+    ar: 'الامتحان التطبيقي (90 دقيقة، فردي): تسحب تجربة من التجارب المنجزة خلال الفصل، فتركّبها وتجري القياسات، ثم تسلّم جدول بيانات ومنحنى ونتيجة مع ارتيابها، ويلي ذلك سؤال شفهي قصير. الاختبار الكتابي (60 دقيقة): أسئلة قصيرة حول المبادئ والأجهزة، وحساب ارتياب، وتحليل مجموعة بيانات معطاة.'
+  allowed:
+    en: 'Scientific calculator, ruler and graph paper. For the practical exam your own lab notebook is allowed; lab sheets and reports are not. No phones.'
+    ar: 'آلة حاسبة علمية ومسطرة وورق ميليمتري. يُسمح في الامتحان التطبيقي بدفتر المختبر الشخصي، ولا يُسمح بأوراق التجارب ولا بالتقارير. لا يُسمح بالهواتف.'
+  tips:
+    - en: 'Before switching on, have your circuit checked, set the supply to zero and use the highest meter range first.'
+      ar: 'قبل التشغيل اطلب التحقق من دارتك، واضبط المولد على الصفر، وابدأ بأعلى عيار في جهاز القياس.'
+    - en: 'Write every reading with its unit and uncertainty immediately; never copy raw data later from memory.'
+      ar: 'اكتب كل قراءة مع وحدتها وارتيابها فورًا، ولا تنقل البيانات الخام لاحقًا من الذاكرة أبدًا.'
+    - en: 'Plot as you measure: a quick graph during the session reveals a bad point while you can still repeat it.'
+      ar: 'ارسم أثناء القياس: المنحنى السريع خلال الحصة يكشف النقطة الشاذة ما دام بإمكانك إعادة قياسها.'
+    - en: 'Round the uncertainty to one or two significant figures, then round the result to the same decimal place.'
+      ar: 'قرّب الارتياب إلى رقم أو رقمين معنويين، ثم قرّب النتيجة إلى المرتبة العشرية نفسها.'
+    - en: 'In the discussion, state whether theory and experiment agree within uncertainty — and if not, name a plausible systematic error.'
+      ar: 'في المناقشة صرّح هل تتوافق النظرية والتجربة في حدود الارتياب، وإن لم تتوافقا فاذكر خطأً منهجيًا محتملًا.'
+
+problems:
+  - title: { en: 'Resistance from one measurement', ar: 'المقاومة من قياس واحد' }
+    difficulty: 1
+    statement:
+      en: 'A resistor is measured with \(V = 6.00 \pm 0.03\ \mathrm{V}\) and \(I = 25.0 \pm 0.2\ \mathrm{mA}\). Find \(R\) and its uncertainty (a) adding relative uncertainties in quadrature (independent errors), (b) with the maximum-error method. Write both results correctly rounded.'
+      ar: 'قيست مقاومة فكان \(V = 6.00 \pm 0.03\ \mathrm{V}\) و\(I = 25.0 \pm 0.2\ \mathrm{mA}\). أوجد \(R\) وارتيابها (أ) بجمع الارتيابات النسبية تربيعيًا (أخطاء مستقلة)، (ب) بطريقة الخطأ الأعظمي. اكتب النتيجتين مقرّبتين تقريبًا صحيحًا.'
+    hint:
+      en: 'For a quotient, relative uncertainties combine: \(\Delta R/R = \sqrt{(\Delta V/V)^2 + (\Delta I/I)^2}\) or, at most, \(\Delta V/V + \Delta I/I\).'
+      ar: 'في حالة القسمة تُجمع الارتيابات النسبية: \(\Delta R/R = \sqrt{(\Delta V/V)^2 + (\Delta I/I)^2}\) أو على الأكثر \(\Delta V/V + \Delta I/I\).'
+    solution:
+      en: |
+        \(R = V/I = 6.00/0.0250 = 240.0\ \Omega\). Relative uncertainties: \(\Delta V/V = 0.50\,\%\), \(\Delta I/I = 0.80\,\%\).
+        (a) \[ \frac{\Delta R}{R} = \sqrt{0.50^2 + 0.80^2}\,\% = 0.94\,\% \;\Rightarrow\; \Delta R = 2.3\ \Omega,\quad R = (240 \pm 2)\ \Omega \]
+        (b) \[ \frac{\Delta R}{R} = 0.50\,\% + 0.80\,\% = 1.3\,\% \;\Rightarrow\; \Delta R = 3.1\ \Omega,\quad R = (240 \pm 3)\ \Omega \]
+        The maximum error is a safe upper bound; the quadrature sum is the realistic estimate when the two errors are independent. Either way the result is quoted to the units digit.
+      ar: |
+        \(R = V/I = 6.00/0.0250 = 240.0\ \Omega\). الارتيابان النسبيان: \(\Delta V/V = 0.50\,\%\) و\(\Delta I/I = 0.80\,\%\).
+        (أ) \[ \frac{\Delta R}{R} = \sqrt{0.50^2 + 0.80^2}\,\% = 0.94\,\% \;\Rightarrow\; \Delta R = 2.3\ \Omega,\quad R = (240 \pm 2)\ \Omega \]
+        (ب) \[ \frac{\Delta R}{R} = 0.50\,\% + 0.80\,\% = 1.3\,\% \;\Rightarrow\; \Delta R = 3.1\ \Omega,\quad R = (240 \pm 3)\ \Omega \]
+        الخطأ الأعظمي حدٌّ أعلى مأمون، أما الجمع التربيعي فهو التقدير الواقعي عندما يكون الخطآن مستقلين. وفي الحالتين تُكتب النتيجة حتى رقم الآحاد.
+  - title: { en: 'Least-squares fit of an I–V characteristic', ar: 'ملاءمة مميزة تيار-جهد بالمربعات الصغرى' }
+    difficulty: 2
+    statement:
+      en: 'The following data were taken for a resistor: \(I\) (mA) = 10, 20, 30, 40, 50 and \(V\) (V) = 1.02, 1.98, 3.05, 3.96, 5.01. Fit the line \(V = RI + V_0\) by least squares, give \(R\) with its standard uncertainty, and decide whether \(V_0\) is compatible with zero.'
+      ar: 'أُخذت القياسات التالية لمقاومة: \(I\) (mA) = 10، 20، 30، 40، 50 و\(V\) (V) = 1.02، 1.98، 3.05، 3.96، 5.01. لائم المستقيم \(V = RI + V_0\) بطريقة المربعات الصغرى، وأعطِ \(R\) مع ارتيابها المعياري، ثم قرّر هل \(V_0\) متوافق مع الصفر.'
+    hint:
+      en: 'With \(\bar I\), \(\bar V\), \(S_{II} = \sum(I_i - \bar I)^2\) and \(S_{IV} = \sum(I_i - \bar I)(V_i - \bar V)\): slope \(= S_{IV}/S_{II}\), intercept \(= \bar V - R\bar I\). The scatter is \(s = \sqrt{\sum r_i^2/(n-2)}\).'
+      ar: 'باستعمال \(\bar I\) و\(\bar V\) و\(S_{II} = \sum(I_i - \bar I)^2\) و\(S_{IV} = \sum(I_i - \bar I)(V_i - \bar V)\): الميل \(= S_{IV}/S_{II}\)، والتقاطع \(= \bar V - R\bar I\). والتشتت \(s = \sqrt{\sum r_i^2/(n-2)}\).'
+    solution:
+      en: |
+        In SI units: \(\bar I = 0.030\ \mathrm{A}\), \(\bar V = 3.004\ \mathrm{V}\), \(S_{II} = 1.0\times10^{-3}\ \mathrm{A^2}\), \(S_{IV} = 0.0996\ \mathrm{V\,A}\).
+        \[ R = \frac{S_{IV}}{S_{II}} = 99.6\ \Omega, \qquad V_0 = \bar V - R\bar I = 3.004 - 2.988 = 0.016\ \mathrm{V} \]
+        Residuals \(r_i = V_i - (RI_i + V_0)\): \(+0.008, -0.028, +0.046, -0.040, +0.014\ \mathrm{V}\), so \(s = \sqrt{0.00476/3} = 0.040\ \mathrm{V}\).
+        \[ \sigma_R = \frac{s}{\sqrt{S_{II}}} = \frac{0.040}{0.0316} = 1.3\ \Omega, \qquad \sigma_{V_0} = s\sqrt{\frac{1}{n} + \frac{\bar I^2}{S_{II}}} = 0.042\ \mathrm{V} \]
+        Result: \(R = (99.6 \pm 1.3)\ \Omega\). Since \(|V_0| = 0.016\ \mathrm{V} < \sigma_{V_0}\), the intercept is compatible with zero: the resistor is ohmic and the meters show no significant offset.
+      ar: |
+        بوحدات النظام الدولي: \(\bar I = 0.030\ \mathrm{A}\) و\(\bar V = 3.004\ \mathrm{V}\) و\(S_{II} = 1.0\times10^{-3}\ \mathrm{A^2}\) و\(S_{IV} = 0.0996\ \mathrm{V\,A}\).
+        \[ R = \frac{S_{IV}}{S_{II}} = 99.6\ \Omega, \qquad V_0 = \bar V - R\bar I = 3.004 - 2.988 = 0.016\ \mathrm{V} \]
+        البواقي \(r_i = V_i - (RI_i + V_0)\): \(+0.008, -0.028, +0.046, -0.040, +0.014\ \mathrm{V}\)، إذن \(s = \sqrt{0.00476/3} = 0.040\ \mathrm{V}\).
+        \[ \sigma_R = \frac{s}{\sqrt{S_{II}}} = \frac{0.040}{0.0316} = 1.3\ \Omega, \qquad \sigma_{V_0} = s\sqrt{\frac{1}{n} + \frac{\bar I^2}{S_{II}}} = 0.042\ \mathrm{V} \]
+        النتيجة: \(R = (99.6 \pm 1.3)\ \Omega\). وبما أن \(|V_0| = 0.016\ \mathrm{V} < \sigma_{V_0}\) فالتقاطع متوافق مع الصفر: المقاومة أومية ولا يظهر في الأجهزة انزياح معتبر.
+  - title: { en: 'Best balance point of a slide-wire bridge', ar: 'أفضل نقطة توازن في قنطرة السلك المنزلق' }
+    difficulty: 2
+    statement:
+      en: 'In a slide-wire Wheatstone bridge (wire length \(L = 100.0\ \mathrm{cm}\)), balance gives \(R_x/R = \ell/(L - \ell)\), where \(R = 100.0\ \Omega\) is a precision standard. Balance is found at \(\ell = 40.0 \pm 0.1\ \mathrm{cm}\). (a) Find \(R_x\) and its uncertainty. (b) Show that the relative uncertainty is smallest when the balance point is at the middle of the wire, and say how to choose \(R\).'
+      ar: 'في قنطرة ويتستون ذات سلك منزلق (طول السلك \(L = 100.0\ \mathrm{cm}\)) يعطي التوازن \(R_x/R = \ell/(L - \ell)\)، حيث \(R = 100.0\ \Omega\) مقاومة معيارية دقيقة. وُجد التوازن عند \(\ell = 40.0 \pm 0.1\ \mathrm{cm}\). (أ) أوجد \(R_x\) وارتيابها. (ب) بيّن أن الارتياب النسبي يكون أصغر ما يمكن عندما تقع نقطة التوازن في منتصف السلك، واذكر كيف تُختار \(R\).'
+    hint:
+      en: '\(\ell\) and \(L - \ell\) are not independent: differentiate \(R_x(\ell)\) directly.'
+      ar: '\(\ell\) و\(L - \ell\) غير مستقلين: اشتقّ \(R_x(\ell)\) مباشرة.'
+    solution:
+      en: |
+        (a) \(R_x = 100.0 \times \dfrac{40.0}{60.0} = 66.7\ \Omega\).
+        \[ \dv{R_x}{\ell} = \frac{RL}{(L - \ell)^2} \;\Rightarrow\; \Delta R_x = \frac{(100)(100)}{(60)^2}(0.1) = 0.28\ \Omega, \quad R_x = (66.7 \pm 0.3)\ \Omega \]
+        (b) \[ \frac{\Delta R_x}{R_x} = \frac{L\,\Delta\ell}{\ell(L - \ell)} \]
+        The product \(\ell(L - \ell)\) is maximum at \(\ell = L/2\), so the relative uncertainty is minimum there (\(0.40\,\%\) instead of \(0.42\,\%\) here, and it blows up near the ends of the wire). Hence choose the standard \(R\) close to the expected \(R_x\), so that balance falls near the middle.
+      ar: |
+        (أ) \(R_x = 100.0 \times \dfrac{40.0}{60.0} = 66.7\ \Omega\).
+        \[ \dv{R_x}{\ell} = \frac{RL}{(L - \ell)^2} \;\Rightarrow\; \Delta R_x = \frac{(100)(100)}{(60)^2}(0.1) = 0.28\ \Omega, \quad R_x = (66.7 \pm 0.3)\ \Omega \]
+        (ب) \[ \frac{\Delta R_x}{R_x} = \frac{L\,\Delta\ell}{\ell(L - \ell)} \]
+        الجداء \(\ell(L - \ell)\) أعظمي عند \(\ell = L/2\)، فيكون الارتياب النسبي أصغريًا هناك (\(0.40\,\%\) بدل \(0.42\,\%\) في حالتنا، ويتزايد بشدة قرب طرفي السلك). لذلك تُختار المقاومة المعيارية \(R\) قريبة من القيمة المتوقعة لـ \(R_x\) كي يقع التوازن قرب المنتصف.
+  - title: { en: 'Time constant from discharge data', ar: 'ثابت الزمن من بيانات التفريغ' }
+    difficulty: 2
+    statement:
+      en: 'A capacitor discharges through \(R = 50.0\ \mathrm{k\Omega}\). The voltage readings are: \(t\) (s) = 0, 2, 4, 6, 8, 10 and \(V\) (V) = 10.0, 6.70, 4.49, 3.01, 2.02, 1.35. Linearise the data, find the time constant and the capacitance, and predict the time at which \(V = 5.00\ \mathrm{V}\).'
+      ar: 'تُفرَّغ مكثفة عبر مقاومة \(R = 50.0\ \mathrm{k\Omega}\). كانت قراءات الجهد: \(t\) (s) = 0، 2، 4، 6، 8، 10 و\(V\) (V) = 10.0، 6.70، 4.49، 3.01، 2.02، 1.35. حوّل البيانات إلى علاقة خطية، وأوجد ثابت الزمن والسعة، ثم توقّع اللحظة التي يصبح فيها \(V = 5.00\ \mathrm{V}\).'
+    hint:
+      en: '\(V = V_0e^{-t/\tau}\Rightarrow \ln V = \ln V_0 - t/\tau\): plot \(\ln V\) against \(t\).'
+      ar: '\(V = V_0e^{-t/\tau}\Rightarrow \ln V = \ln V_0 - t/\tau\): ارسم \(\ln V\) بدلالة \(t\).'
+    solution:
+      en: |
+        \(\ln V\) = 2.303, 1.902, 1.502, 1.102, 0.703, 0.300: the points lie on a straight line, confirming the exponential model.
+        Slope \(= (0.300 - 2.303)/10 = -0.200\ \mathrm{s^{-1}}\) (a least-squares fit gives the same), so
+        \[ \tau = 5.00\ \mathrm{s}, \qquad C = \frac{\tau}{R} = \frac{5.00}{5.00\times10^4} = 1.00\times10^{-4}\ \mathrm{F} = 100\ \mu\mathrm{F} \]
+        Half-voltage time: \(t_{1/2} = \tau\ln 2 = 3.47\ \mathrm{s}\).
+        On an oscilloscope one would rather read \(\tau\) as the time to fall to 37 % of the initial value, or \(t_{1/2}/\ln 2\); the semi-log plot uses all points and so is more precise.
+      ar: |
+        قيم \(\ln V\) هي 2.303، 1.902، 1.502، 1.102، 0.703، 0.300: تقع النقاط على مستقيم، مما يؤكد النموذج الأسّي.
+        الميل \(= (0.300 - 2.303)/10 = -0.200\ \mathrm{s^{-1}}\) (وتعطي ملاءمة المربعات الصغرى القيمة نفسها)، إذن
+        \[ \tau = 5.00\ \mathrm{s}, \qquad C = \frac{\tau}{R} = \frac{5.00}{5.00\times10^4} = 1.00\times10^{-4}\ \mathrm{F} = 100\ \mu\mathrm{F} \]
+        زمن نصف الجهد: \(t_{1/2} = \tau\ln 2 = 3.47\ \mathrm{s}\).
+        على راسم الاهتزاز يُقرأ \(\tau\) عادةً بوصفه الزمن اللازم لينخفض الجهد إلى 37 % من قيمته الابتدائية، أو \(t_{1/2}/\ln 2\)؛ أما المنحنى نصف اللوغاريتمي فيستعمل جميع النقاط ولذلك فهو أدق.
+  - title: { en: 'Measuring \(\mu_0\) with a flat coil', ar: 'قياس \(\mu_0\) بوشيعة مسطحة' }
+    difficulty: 3
+    statement:
+      en: 'A flat circular coil has \(N = 100\) turns and radius \(R = 10.0 \pm 0.1\ \mathrm{cm}\). A Hall probe at its centre gives a linear \(B\)–\(I\) graph with slope \(0.620 \pm 0.015\ \mathrm{mT/A}\). (a) Compare with the theoretical slope. (b) Deduce \(\mu_0\) with its uncertainty and comment.'
+      ar: 'وشيعة دائرية مسطحة عدد لفاتها \(N = 100\) ونصف قطرها \(R = 10.0 \pm 0.1\ \mathrm{cm}\). أعطى مسبار هول موضوع في مركزها منحنى \(B\) بدلالة \(I\) خطيًا ميله \(0.620 \pm 0.015\ \mathrm{mT/A}\). (أ) قارن بالميل النظري. (ب) استنتج \(\mu_0\) مع ارتيابه وعلّق.'
+    hint:
+      en: 'At the centre of a flat coil, \(B = \mu_0 NI/2R\), so the slope is \(\mu_0 N/2R\).'
+      ar: 'في مركز وشيعة مسطحة \(B = \mu_0 NI/2R\)، فيكون الميل \(\mu_0 N/2R\).'
+    solution:
+      en: |
+        (a) \[ \text{slope}_{th} = \frac{\mu_0 N}{2R} = \frac{(4\pi\times10^{-7})(100)}{0.200} = 6.28\times10^{-4}\ \mathrm{T/A} = 0.628\ \mathrm{mT/A} \]
+        The measured slope differs by \(0.008\ \mathrm{mT/A}\) (1.3 %), less than its uncertainty \(0.015\ \mathrm{mT/A}\): agreement.
+        (b) \(\mu_0 = 2R\cdot\text{slope}/N = (0.200)(6.20\times10^{-4})/100 = 1.24\times10^{-6}\ \mathrm{T\,m/A}\).
+        \[ \frac{\Delta\mu_0}{\mu_0} = \sqrt{\left(\frac{0.015}{0.620}\right)^2 + \left(\frac{0.1}{10.0}\right)^2} = \sqrt{2.4^2 + 1.0^2}\,\% = 2.6\,\% \]
+        \(\mu_0 = (1.24 \pm 0.03)\times10^{-6}\ \mathrm{T\,m/A}\), compatible with the accepted \(1.257\times10^{-6}\ \mathrm{T\,m/A}\). Possible systematic effects: finite thickness of the winding (the effective radius is not exactly \(R\)), probe not exactly at the centre or not perpendicular to the field, and the Earth's field (removed by the intercept of the fit).
+      ar: |
+        (أ) \[ \text{slope}_{th} = \frac{\mu_0 N}{2R} = \frac{(4\pi\times10^{-7})(100)}{0.200} = 6.28\times10^{-4}\ \mathrm{T/A} = 0.628\ \mathrm{mT/A} \]
+        يختلف الميل المقيس بمقدار \(0.008\ \mathrm{mT/A}\) (1.3 %)، وهو أقل من ارتيابه \(0.015\ \mathrm{mT/A}\): هناك توافق.
+        (ب) \(\mu_0 = 2R\cdot\text{slope}/N = (0.200)(6.20\times10^{-4})/100 = 1.24\times10^{-6}\ \mathrm{T\,m/A}\).
+        \[ \frac{\Delta\mu_0}{\mu_0} = \sqrt{\left(\frac{0.015}{0.620}\right)^2 + \left(\frac{0.1}{10.0}\right)^2} = \sqrt{2.4^2 + 1.0^2}\,\% = 2.6\,\% \]
+        \(\mu_0 = (1.24 \pm 0.03)\times10^{-6}\ \mathrm{T\,m/A}\)، وهي متوافقة مع القيمة المعتمدة \(1.257\times10^{-6}\ \mathrm{T\,m/A}\). الآثار المنهجية المحتملة: سُمك اللف (فنصف القطر الفعلي ليس \(R\) تمامًا)، وعدم وضع المسبار في المركز تمامًا أو عدم تعامده مع الحقل، والحقل المغناطيسي الأرضي (الذي يُستبعد بتقاطع المستقيم الملائم).
+
+quizzes:
+  - title: { en: 'Measurement and uncertainties', ar: 'القياس والارتيابات' }
+    questions:
+      - q:
+          en: 'A digital voltmeter on its 20 V range (resolution 0.01 V) reads 4.73 V. Its specification is ±(0.5 % of reading + 2 digits). The uncertainty is about:'
+          ar: 'يقرأ مقياس جهد رقمي على عيار 20 V (دقة التمييز 0.01 V) القيمة 4.73 V. مواصفته ±(0.5 % من القراءة + رقمان). الارتياب يساوي تقريبًا:'
+        options:
+          - '\(\pm 0.04\ \mathrm{V}\)'
+          - '\(\pm 0.005\ \mathrm{V}\)'
+          - '\(\pm 0.02\ \mathrm{V}\)'
+          - '\(\pm 0.24\ \mathrm{V}\)'
+        answer: 0
+        explain:
+          en: '\(0.5\,\% \times 4.73 = 0.024\ \mathrm{V}\), plus 2 digits \(= 0.02\ \mathrm{V}\): total \(0.044 \approx 0.04\ \mathrm{V}\). Forgetting either term underestimates the uncertainty.'
+          ar: '\(0.5\,\% \times 4.73 = 0.024\ \mathrm{V}\)، يُضاف إليها رقمان \(= 0.02\ \mathrm{V}\): المجموع \(0.044 \approx 0.04\ \mathrm{V}\). إهمال أحد الحدّين يؤدي إلى تقدير أقل من الحقيقي للارتياب.'
+      - q:
+          en: 'With \(V = 5.00 \pm 0.05\ \mathrm{V}\) and \(I = 0.100 \pm 0.002\ \mathrm{A}\) (independent errors), the result \(R = V/I\) should be written:'
+          ar: 'إذا كان \(V = 5.00 \pm 0.05\ \mathrm{V}\) و\(I = 0.100 \pm 0.002\ \mathrm{A}\) (أخطاء مستقلة)، فإن النتيجة \(R = V/I\) تُكتب:'
+        options:
+          - '\((50 \pm 0.03)\ \Omega\)'
+          - '\((50.0 \pm 1.1)\ \Omega\)'
+          - '\((50.0 \pm 0.07)\ \Omega\)'
+          - '\((50.00 \pm 1.118)\ \Omega\)'
+        answer: 1
+        explain:
+          en: 'Relative errors 1 % and 2 % add in quadrature: \(\sqrt{1 + 4} = 2.2\,\%\) of 50 Ω \(= 1.1\ \Omega\). The value and its uncertainty must end at the same decimal place, with 1–2 significant figures in the uncertainty. (The maximum-error method would give ±1.5 Ω.)'
+          ar: 'يُجمع الارتيابان النسبيان 1 % و2 % تربيعيًا: \(\sqrt{1 + 4} = 2.2\,\%\) من 50 Ω \(= 1.1\ \Omega\). ويجب أن تنتهي القيمة وارتيابها عند المرتبة العشرية نفسها، مع رقم أو رقمين معنويين في الارتياب. (طريقة الخطأ الأعظمي تعطي ±1.5 Ω.)'
+      - q:
+          en: 'An analogue voltmeter of accuracy class 1.5 is used on its 10 V range. Why should you switch to the 3 V range to measure about 2 V?'
+          ar: 'يُستعمل مقياس جهد تماثلي من صنف الدقة 1.5 على عيار 10 V. لماذا ينبغي الانتقال إلى عيار 3 V لقياس جهد قيمته نحو 2 V؟'
+        options:
+          - { en: 'It makes no difference', ar: 'لا فرق بين العيارين' }
+          - { en: 'Because the absolute uncertainty is a fixed fraction of full scale, so the relative uncertainty is smaller on a lower range', ar: 'لأن الارتياب المطلق نسبة ثابتة من أقصى التدريج، فيكون الارتياب النسبي أصغر على العيار الأدنى' }
+          - { en: 'Because the meter draws more current on high ranges', ar: 'لأن الجهاز يستهلك تيارًا أكبر على العيارات العليا' }
+          - { en: 'Because the needle cannot move below 20 % of the scale', ar: 'لأن الإبرة لا تتحرك تحت 20 % من التدريج' }
+        answer: 1
+        explain:
+          en: 'Class 1.5 means \(\Delta V = 1.5\,\% \times\) full scale: 0.15 V on the 10 V range (7.5 % of 2 V) but 0.045 V on the 3 V range (2.3 %). Always use the lowest range that contains the reading.'
+          ar: 'صنف الدقة 1.5 يعني \(\Delta V = 1.5\,\% \times\) أقصى التدريج: أي 0.15 V على عيار 10 V (7.5 % من 2 V)، و0.045 V فقط على عيار 3 V (2.3 %). استعمل دائمًا أدنى عيار يحتوي القراءة.'
+      - q:
+          en: 'A voltmeter shows 0.10 V when its leads are short-circuited, and this offset is never corrected. This causes:'
+          ar: 'يُظهر مقياس جهد القيمة 0.10 V عندما يُقصَر طرفاه، ولم يُصحَّح هذا الانزياح أبدًا. ينتج عن ذلك:'
+        options:
+          - { en: 'a systematic error, not reduced by repeating measurements', ar: 'خطأ منهجي لا يقل بتكرار القياس' }
+          - { en: 'a random error that averages out', ar: 'خطأ عشوائي يزول بأخذ المتوسط' }
+          - { en: 'a reading error only', ar: 'خطأ قراءة فقط' }
+          - { en: 'no error, because all readings are shifted equally', ar: 'لا خطأ، لأن جميع القراءات تنزاح بالقدر نفسه' }
+        answer: 0
+        explain:
+          en: 'An offset shifts every reading the same way: averaging many readings cannot remove it. It must be found (zero check) and corrected; on a fitted line it shows up as a non-zero intercept.'
+          ar: 'الانزياح يزيح كل القراءات في الاتجاه نفسه، فلا يمكن إزالته بأخذ متوسط عدد كبير من القراءات. يجب اكتشافه (بفحص الصفر) وتصحيحه؛ ويظهر على المستقيم الملائم في صورة تقاطع غير منعدم.'
+      - q:
+          en: 'Which is the correct way to report \(3.14159 \pm 0.0237\ \mathrm{s}\)?'
+          ar: 'ما الطريقة الصحيحة لكتابة \(3.14159 \pm 0.0237\ \mathrm{s}\)؟'
+        options:
+          - '\((3 \pm 0.02)\ \mathrm{s}\)'
+          - '\((3.14 \pm 0.02)\ \mathrm{s}\)'
+          - '\((3.1 \pm 0.0237)\ \mathrm{s}\)'
+          - '\((3.14159 \pm 0.02)\ \mathrm{s}\)'
+        answer: 1
+        explain:
+          en: 'Round the uncertainty to one (or two) significant figures — 0.02 s — then round the value to the same decimal place: 3.14 s.'
+          ar: 'يُقرَّب الارتياب إلى رقم معنوي واحد (أو اثنين) — 0.02 s — ثم تُقرَّب القيمة إلى المرتبة العشرية نفسها: 3.14 s.'
+  - title: { en: 'DC circuits and instruments', ar: 'دارات التيار المستمر والأجهزة' }
+    questions:
+      - q:
+          en: 'How are an ammeter and a voltmeter connected to measure the current through and the voltage across a resistor?'
+          ar: 'كيف يُربط مقياس التيار ومقياس الجهد لقياس التيار المار في مقاومة والجهد بين طرفيها؟'
+        options:
+          - { en: 'Both in series', ar: 'كلاهما على التسلسل' }
+          - { en: 'Ammeter in series, voltmeter in parallel', ar: 'مقياس التيار على التسلسل، ومقياس الجهد على التفرع' }
+          - { en: 'Both in parallel', ar: 'كلاهما على التفرع' }
+          - { en: 'Ammeter in parallel, voltmeter in series', ar: 'مقياس التيار على التفرع، ومقياس الجهد على التسلسل' }
+        answer: 1
+        explain:
+          en: 'The ammeter (very low resistance) must carry the same current, so it goes in series; the voltmeter (very high resistance) measures a potential difference between two points, so it goes in parallel. An ammeter placed in parallel acts as a short circuit and may blow its fuse.'
+          ar: 'يجب أن يمر في مقياس التيار (ذي المقاومة الصغيرة جدًا) التيار نفسه، فيُربط على التسلسل؛ ويقيس مقياس الجهد (ذو المقاومة الكبيرة جدًا) فرق الكمون بين نقطتين، فيُربط على التفرع. وضع مقياس التيار على التفرع يُحدث دارة قصيرة وقد يُتلف منصهره.'
+      - q:
+          en: 'A voltage divider is made of two 1 MΩ resistors across a battery. A 10 MΩ voltmeter is connected across one of them. The reading is:'
+          ar: 'مجزّئ جهد مكوَّن من مقاومتين قيمة كل منهما 1 MΩ موصولتين ببطارية. وُصل مقياس جهد مقاومته 10 MΩ بين طرفي إحداهما. القراءة تكون:'
+        options:
+          - { en: 'exact, since a voltmeter draws no current', ar: 'دقيقة، لأن مقياس الجهد لا يستهلك تيارًا' }
+          - { en: 'lower than the true value, because the meter in parallel lowers the effective resistance', ar: 'أقل من القيمة الحقيقية، لأن الجهاز الموصول على التفرع يخفّض المقاومة الفعلية' }
+          - { en: 'zero', ar: 'منعدمة' }
+          - { en: 'higher than the true value', ar: 'أكبر من القيمة الحقيقية' }
+        answer: 1
+        explain:
+          en: '1 MΩ in parallel with 10 MΩ gives 0.91 MΩ, so the reading is \(0.91/1.91 = 47.6\,\%\) of the battery voltage instead of 50 % — the "loading" effect. It is negligible only when the meter resistance is much larger than the resistance being measured.'
+          ar: 'المقاومة 1 MΩ على التفرع مع 10 MΩ تعطي 0.91 MΩ، فتكون القراءة \(0.91/1.91 = 47.6\,\%\) من جهد البطارية بدل 50 % — وهو "أثر التحميل". ولا يكون مهملًا إلا إذا كانت مقاومة الجهاز أكبر بكثير من المقاومة المقيسة.'
+      - q:
+          en: 'A silicon diode in forward bias starts to conduct appreciably at about:'
+          ar: 'يبدأ ثنائي من السيليسيوم في الاستقطاب المباشر بالتوصيل بشكل ملحوظ عند جهد يقارب:'
+        options:
+          - '\(0.1\ \mathrm{V}\)'
+          - '\(5\ \mathrm{V}\)'
+          - '\(0.6\text{–}0.7\ \mathrm{V}\)'
+          - { en: 'any voltage: it is ohmic', ar: 'أي جهد: فهو أومي' }
+        answer: 2
+        explain:
+          en: 'Below the threshold (≈0.6–0.7 V for silicon) the current is tiny; above it the current rises almost exponentially. The I–V curve is strongly non-linear, so a diode has no single "resistance".'
+          ar: 'تحت جهد العتبة (≈0.6–0.7 V للسيليسيوم) يكون التيار ضئيلًا جدًا، وفوقه يتزايد التيار تزايدًا شبه أسّي. المميزة غير خطية بشدة، فلا يمكن نسبة "مقاومة" واحدة للثنائي.'
+      - q:
+          en: 'At balance of a Wheatstone bridge, the galvanometer reads zero because:'
+          ar: 'عند توازن قنطرة ويتستون يشير الغلفانومتر إلى الصفر لأن:'
+        options:
+          - { en: 'no current flows from the battery', ar: 'لا يمر أي تيار من البطارية' }
+          - { en: 'the galvanometer resistance is infinite', ar: 'مقاومة الغلفانومتر لا نهائية' }
+          - { en: 'the two points it connects are at the same potential', ar: 'النقطتين اللتين يصل بينهما لهما الكمون نفسه' }
+          - { en: 'all four resistances are equal', ar: 'المقاومات الأربع متساوية' }
+        answer: 2
+        explain:
+          en: 'Balance means equal potentials at the two mid-points, which gives \(R_1/R_2 = R_3/R_x\) — only the ratios must match. Because it is a null method, the result does not depend on the galvanometer''s calibration.'
+          ar: 'التوازن يعني تساوي كموني النقطتين الوسطيين، مما يعطي \(R_1/R_2 = R_3/R_x\) — أي يكفي تساوي النسب. وبما أنها طريقة صفرية فالنتيجة لا تتعلق بمعايرة الغلفانومتر.'
+      - q:
+          en: 'The terminal voltage of a battery falls from 9.0 V (open circuit) to 8.4 V when it delivers 0.30 A. Its internal resistance is:'
+          ar: 'ينخفض الجهد بين قطبي بطارية من 9.0 V (دارة مفتوحة) إلى 8.4 V عندما تقدّم تيارًا 0.30 A. مقاومتها الداخلية هي:'
+        options:
+          - '\(0.18\ \Omega\)'
+          - '\(2.0\ \Omega\)'
+          - '\(28\ \Omega\)'
+          - '\(30\ \Omega\)'
+        answer: 1
+        explain:
+          en: '\(V = \mathcal E - rI \Rightarrow r = (9.0 - 8.4)/0.30 = 2.0\ \Omega\). The value 28 Ω is the external load \(8.4/0.30\).'
+          ar: '\(V = \mathcal E - rI \Rightarrow r = (9.0 - 8.4)/0.30 = 2.0\ \Omega\). أما القيمة 28 Ω فهي مقاومة الحمل الخارجي \(8.4/0.30\).'
+  - title: { en: 'Oscilloscope and transients', ar: 'راسم الاهتزاز والأنظمة الانتقالية' }
+    questions:
+      - q:
+          en: 'A sine wave spans 6 divisions peak-to-peak with the vertical sensitivity at 2 V/div. Its rms value is:'
+          ar: 'إشارة جيبية يمتد مطالها من القمة إلى القمة على 6 تدريجات، والحساسية الشاقولية 2 V/div. قيمتها الفعالة هي:'
+        options:
+          - '\(8.5\ \mathrm{V}\)'
+          - '\(12\ \mathrm{V}\)'
+          - '\(6.0\ \mathrm{V}\)'
+          - '\(4.2\ \mathrm{V}\)'
+        answer: 3
+        explain:
+          en: '\(V_{pp} = 6 \times 2 = 12\ \mathrm{V}\), amplitude \(V_m = 6\ \mathrm{V}\), and for a sine wave \(V_{rms} = V_m/\sqrt2 = 4.2\ \mathrm{V}\) — what a multimeter in AC mode would show.'
+          ar: '\(V_{pp} = 6 \times 2 = 12\ \mathrm{V}\)، والسعة \(V_m = 6\ \mathrm{V}\)، وللإشارة الجيبية \(V_{rms} = V_m/\sqrt2 = 4.2\ \mathrm{V}\) — وهي القيمة التي يعرضها جهاز القياس المتعدد في وضع التيار المتناوب.'
+      - q:
+          en: 'One full cycle occupies 4 divisions with the time base at 0.5 ms/div. The frequency is:'
+          ar: 'تشغل دورة كاملة 4 تدريجات والقاعدة الزمنية 0.5 ms/div. التواتر هو:'
+        options:
+          - '\(200\ \mathrm{Hz}\)'
+          - '\(500\ \mathrm{Hz}\)'
+          - '\(125\ \mathrm{Hz}\)'
+          - '\(2\ \mathrm{kHz}\)'
+        answer: 1
+        explain:
+          en: '\(T = 4 \times 0.5\ \mathrm{ms} = 2\ \mathrm{ms}\), so \(f = 1/T = 500\ \mathrm{Hz}\).'
+          ar: '\(T = 4 \times 0.5\ \mathrm{ms} = 2\ \mathrm{ms}\)، إذن \(f = 1/T = 500\ \mathrm{Hz}\).'
+      - q:
+          en: 'During the discharge of an RC circuit, the time for the voltage to fall to half its initial value is:'
+          ar: 'أثناء تفريغ دارة RC، الزمن اللازم لينخفض الجهد إلى نصف قيمته الابتدائية هو:'
+        options:
+          - '\(\tau\)'
+          - '\(\tau/2\)'
+          - '\(\tau\ln 2 \approx 0.69\,\tau\)'
+          - '\(2\tau\)'
+        answer: 2
+        explain:
+          en: '\(e^{-t/\tau} = 1/2 \Rightarrow t = \tau\ln 2\). Measuring this half-time on the screen is a quick way to find \(\tau\).'
+          ar: '\(e^{-t/\tau} = 1/2 \Rightarrow t = \tau\ln 2\). قياس زمن نصف القيمة على الشاشة طريقة سريعة لإيجاد \(\tau\).'
+      - q:
+          en: 'To extract \(\tau\) from all the points of a discharge curve, you should plot:'
+          ar: 'لاستخراج \(\tau\) من جميع نقاط منحنى التفريغ، ينبغي رسم:'
+        options:
+          - { en: '\(1/V\) versus \(t\); the slope is \(1/\tau\)', ar: '\(1/V\) بدلالة \(t\)؛ والميل يساوي \(1/\tau\)' }
+          - { en: '\(V\) versus \(t\); the slope is \(-\tau\)', ar: '\(V\) بدلالة \(t\)؛ والميل يساوي \(-\tau\)' }
+          - { en: '\(\ln V\) versus \(t\); the slope is \(-1/\tau\)', ar: '\(\ln V\) بدلالة \(t\)؛ والميل يساوي \(-1/\tau\)' }
+          - { en: '\(V\) versus \(\ln t\); the slope is \(\tau\)', ar: '\(V\) بدلالة \(\ln t\)؛ والميل يساوي \(\tau\)' }
+        answer: 2
+        explain:
+          en: '\(V = V_0e^{-t/\tau}\) gives \(\ln V = \ln V_0 - t/\tau\), a straight line in \(t\) with slope \(-1/\tau\).'
+          ar: 'من \(V = V_0e^{-t/\tau}\) نحصل على \(\ln V = \ln V_0 - t/\tau\)، وهو مستقيم بدلالة \(t\) ميله \(-1/\tau\).'
+      - q:
+          en: 'An RL circuit has \(L = 10\ \mathrm{mH}\) and a total resistance of \(100\ \Omega\). Its time constant is:'
+          ar: 'دارة RL فيها \(L = 10\ \mathrm{mH}\) ومقاومة كلية \(100\ \Omega\). ثابت زمنها هو:'
+        options:
+          - '\(1\ \mathrm{s}\)'
+          - '\(0.1\ \mathrm{ms}\)'
+          - '\(10\ \mathrm{ms}\)'
+          - '\(1\ \mathrm{ms}\)'
+        answer: 1
+        explain:
+          en: '\(\tau = L/R = 10^{-2}/100 = 10^{-4}\ \mathrm{s} = 0.1\ \mathrm{ms}\). Remember that \(R\) includes the coil''s own resistance and the generator''s output resistance.'
+          ar: '\(\tau = L/R = 10^{-2}/100 = 10^{-4}\ \mathrm{s} = 0.1\ \mathrm{ms}\). تذكّر أن \(R\) تشمل مقاومة الوشيعة نفسها والمقاومة الداخلية للمولد.'
+  - title: { en: 'Fields, coils and induction', ar: 'الحقول والوشائع والتحريض' }
+    questions:
+      - q:
+          en: 'In the electrolytic tank, the field lines you draw must be:'
+          ar: 'في الحوض الإلكتروليتي، يجب أن تكون خطوط الحقل التي ترسمها:'
+        options:
+          - { en: 'drawn at random between electrodes', ar: 'مرسومة عشوائيًا بين القطبين' }
+          - { en: 'circles around each electrode', ar: 'دوائر حول كل قطب' }
+          - { en: 'perpendicular to the equipotential lines', ar: 'عمودية على خطوط تساوي الكمون' }
+          - { en: 'parallel to the equipotential lines', ar: 'موازية لخطوط تساوي الكمون' }
+        answer: 2
+        explain:
+          en: 'Moving along an equipotential, \(\dd V = -\vec E\cdot\dd\vec s = 0\), so \(\vec E\) is perpendicular to it, pointing towards lower potential. Field lines are closer where equipotentials are closer (stronger field).'
+          ar: 'عند الانتقال على خط تساوي الكمون يكون \(\dd V = -\vec E\cdot\dd\vec s = 0\)، فيكون \(\vec E\) عموديًا عليه ومتجهًا نحو الكمون الأدنى. وتتقارب خطوط الحقل حيث تتقارب خطوط تساوي الكمون (حقل أشد).'
+      - q:
+          en: 'Doubling the number of turns of a flat coil at constant current changes the field at its centre by a factor:'
+          ar: 'مضاعفة عدد لفات وشيعة مسطحة مع ثبات التيار تغيّر الحقل في مركزها بمعامل:'
+        options:
+          - '4'
+          - '2'
+          - '1'
+          - '1/2'
+        answer: 1
+        explain:
+          en: '\(B = \mu_0 NI/2R\) is proportional to \(N\): each turn adds the same contribution at the centre.'
+          ar: '\(B = \mu_0 NI/2R\) متناسب مع \(N\): كل لفة تضيف المساهمة نفسها في المركز.'
+      - q:
+          en: 'Helmholtz coils are two identical coaxial coils carrying the same current, separated by:'
+          ar: 'وشيعتا هلمهولتز هما وشيعتان متماثلتان متحدتا المحور يمر فيهما التيار نفسه، والمسافة بينهما تساوي:'
+        options:
+          - { en: 'any distance; only the current matters', ar: 'أي مسافة؛ المهم هو التيار فقط' }
+          - { en: 'zero, so the coils overlap', ar: 'صفرًا، أي أن الوشيعتين متطابقتان' }
+          - { en: 'their radius, which makes the field very uniform near the centre', ar: 'نصف قطرهما، مما يجعل الحقل منتظمًا جدًا قرب المركز' }
+          - { en: 'their diameter, which doubles the field', ar: 'قطرهما، مما يضاعف الحقل' }
+        answer: 2
+        explain:
+          en: 'With separation equal to the radius, the second derivative of \(B\) along the axis vanishes at the midpoint, giving a region of nearly uniform field — useful for calibrating a Hall probe.'
+          ar: 'عندما تساوي المسافة نصف القطر ينعدم المشتق الثاني لـ \(B\) على المحور في المنتصف، فتنشأ منطقة حقل شبه منتظم — وهي مفيدة لمعايرة مسبار هول.'
+      - q:
+          en: 'The flux through each turn of a 100-turn coil changes by 2.0 mWb in 0.10 s. The average induced emf is:'
+          ar: 'يتغير التدفق عبر كل لفة من وشيعة ذات 100 لفة بمقدار 2.0 mWb خلال 0.10 s. متوسط القوة المحركة الكهربائية المتحرَّضة هو:'
+        options:
+          - '\(0.02\ \mathrm{V}\)'
+          - '\(20\ \mathrm{V}\)'
+          - '\(2.0\ \mathrm{V}\)'
+          - '\(0.2\ \mathrm{V}\)'
+        answer: 2
+        explain:
+          en: '\(|\mathcal E| = N\,\Delta\Phi/\Delta t = 100 \times (2.0\times10^{-3})/0.10 = 2.0\ \mathrm{V}\). The answer 0.02 V forgets the factor \(N\).'
+          ar: '\(|\mathcal E| = N\,\Delta\Phi/\Delta t = 100 \times (2.0\times10^{-3})/0.10 = 2.0\ \mathrm{V}\). الإجابة 0.02 V تنسى المعامل \(N\).'
+      - q:
+          en: 'An ideal transformer has 1000 primary turns and 50 secondary turns, with 220 V (AC) on the primary. The secondary voltage is:'
+          ar: 'محوّل مثالي عدد لفات أوّليه 1000 وعدد لفات ثانويه 50، ويُطبَّق على الأوّلي جهد متناوب 220 V. جهد الثانوي هو:'
+        options:
+          - '\(11\ \mathrm{V}\)'
+          - '\(4400\ \mathrm{V}\)'
+          - '\(220\ \mathrm{V}\)'
+          - '\(0\ \mathrm{V}\)'
+        answer: 0
+        explain:
+          en: '\(V_s/V_p = N_s/N_p = 50/1000\), so \(V_s = 11\ \mathrm{V}\). With a DC supply the flux would not change and the secondary voltage would be zero.'
+          ar: '\(V_s/V_p = N_s/N_p = 50/1000\)، إذن \(V_s = 11\ \mathrm{V}\). ولو كانت التغذية مستمرة لما تغير التدفق ولانعدم جهد الثانوي.'
+
+textbooks:
+  required:
+    - { authors: 'J. R. Taylor', title: 'An Introduction to Error Analysis: The Study of Uncertainties in Physical Measurements', edition: '2nd', publisher: 'University Science Books', year: 1997 }
+  recommended:
+    - { authors: 'D. Halliday, R. Resnick & J. Walker', title: 'Fundamentals of Physics', edition: '10th', publisher: 'John Wiley & Sons', year: 2014 }
+    - { authors: 'I. G. Hughes & T. P. A. Hase', title: 'Measurements and their Uncertainties: A Practical Guide to Modern Error Analysis', publisher: 'Oxford University Press', year: 2010 }
+    - { authors: 'M. Alonso & E. J. Finn', title: 'Physique générale, tome 2 : Champs et ondes — cours et exercices corrigés', publisher: 'Dunod', year: 2005 }
+  online:
+    - title: { en: 'NIST — Essentials of expressing measurement uncertainty', ar: 'NIST — أساسيات التعبير عن ارتياب القياس' }
+      url: https://physics.nist.gov/cuu/Uncertainty/
+      note: { en: 'Short, authoritative guide to standard and expanded uncertainty.', ar: 'دليل مختصر وموثوق للارتياب المعياري والارتياب الموسّع.' }
+    - title: { en: 'MIT OCW 8.02SC — Electricity and Magnetism', ar: 'مقرر MIT OCW 8.02SC — الكهرباء والمغناطيسية' }
+      url: https://ocw.mit.edu/courses/physics/8-02sc-physics-ii-electricity-and-magnetism-fall-2010/
+      note: { en: 'Theory behind every experiment, with demonstrations.', ar: 'النظرية التي تقوم عليها كل تجربة، مع عروض تجريبية.' }
+    - title: { en: 'PhET — Circuit Construction Kit: DC', ar: 'PhET — عُدّة بناء الدارات: التيار المستمر' }
+      url: https://phet.colorado.edu/en/simulations/circuit-construction-kit-dc
+      note: { en: 'Rehearse circuits and meter connections before the session.', ar: 'تدرّب على الدارات وطرق ربط أجهزة القياس قبل الحصة.' }
+
+glossary:
+  - { en: 'Measurement uncertainty', ar: 'ارتياب القياس', fr: 'Incertitude de mesure', def: { en: 'Range within which the true value is expected to lie, written \(x \pm \Delta x\).', ar: 'المجال الذي يُتوقع أن تقع فيه القيمة الحقيقية، ويُكتب \(x \pm \Delta x\).' } }
+  - { en: 'Relative uncertainty', ar: 'الارتياب النسبي', fr: 'Incertitude relative', def: { en: '\(\Delta x/|x|\), often in percent; used to compare precisions and to propagate through products.', ar: '\(\Delta x/|x|\)، ويُعبَّر عنه غالبًا بالنسبة المئوية؛ يُستعمل لمقارنة الدقة ولنشر الارتياب في الجداءات.' } }
+  - { en: 'Systematic error', ar: 'الخطأ المنهجي', fr: 'Erreur systématique', def: { en: 'Error that shifts all readings the same way (offset, calibration, method); not reduced by averaging.', ar: 'خطأ يزيح كل القراءات في الاتجاه نفسه (انزياح، معايرة، طريقة)؛ ولا يقل بأخذ المتوسط.' } }
+  - { en: 'Random error', ar: 'الخطأ العشوائي', fr: 'Erreur aléatoire', def: { en: 'Unpredictable scatter of repeated readings; reduced by averaging \(n\) readings as \(1/\sqrt n\).', ar: 'تشتت غير متوقع للقراءات المتكررة؛ يقل بأخذ متوسط \(n\) قراءة بنسبة \(1/\sqrt n\).' } }
+  - { en: 'Accuracy class', ar: 'صنف الدقة', fr: 'Classe de précision', def: { en: 'For an analogue meter, the maximum error as a percentage of full scale.', ar: 'في الجهاز التماثلي، الخطأ الأعظمي معبَّرًا عنه بنسبة مئوية من أقصى التدريج.' } }
+  - { en: 'Resolution', ar: 'دقة التمييز', fr: 'Résolution', def: { en: 'Smallest change an instrument can display (last digit or smallest division).', ar: 'أصغر تغيّر يستطيع الجهاز إظهاره (آخر رقم أو أصغر تدريجة).' } }
+  - { en: 'Significant figures', ar: 'الأرقام المعنوية', fr: 'Chiffres significatifs', def: { en: 'Meaningful digits of a result, fixed by the size of its uncertainty.', ar: 'أرقام النتيجة ذات المعنى، ويحددها مقدار ارتيابها.' } }
+  - { en: 'Propagation of uncertainty', ar: 'انتشار الارتيابات', fr: 'Propagation des incertitudes', def: { en: 'Computing the uncertainty of \(f(x, y,\dots)\) from those of \(x, y,\dots\), by quadrature (independent errors) or maximum-error sum.', ar: 'حساب ارتياب \(f(x, y,\dots)\) انطلاقًا من ارتيابات \(x, y,\dots\)، بالجمع التربيعي (أخطاء مستقلة) أو بجمع الأخطاء العظمى.' } }
+  - { en: 'Least-squares fit', ar: 'الملاءمة بطريقة المربعات الصغرى', fr: 'Ajustement par moindres carrés', def: { en: 'Choosing the line that minimises the sum of squared residuals; gives slope, intercept and their uncertainties.', ar: 'اختيار المستقيم الذي يجعل مجموع مربعات البواقي أصغر ما يمكن؛ ويعطي الميل والتقاطع وارتيابيهما.' } }
+  - { en: 'Multimeter', ar: 'جهاز القياس المتعدد', fr: 'Multimètre', def: { en: 'Instrument measuring voltage, current and resistance on selectable ranges.', ar: 'جهاز يقيس الجهد والتيار والمقاومة على عيارات قابلة للاختيار.' } }
+  - { en: 'Ammeter', ar: 'مقياس التيار (الأمبيرمتر)', fr: 'Ampèremètre', def: { en: 'Current meter of very low resistance, connected in series.', ar: 'جهاز لقياس التيار مقاومته صغيرة جدًا، يُربط على التسلسل.' } }
+  - { en: 'Voltmeter', ar: 'مقياس الجهد (الفولطمتر)', fr: 'Voltmètre', def: { en: 'Voltage meter of very high resistance, connected in parallel.', ar: 'جهاز لقياس الجهد مقاومته كبيرة جدًا، يُربط على التفرع.' } }
+  - { en: 'Internal resistance', ar: 'المقاومة الداخلية', fr: 'Résistance interne', def: { en: 'Resistance \(r\) of a real source: terminal voltage \(V = \mathcal E - rI\).', ar: 'مقاومة المولد الحقيقي \(r\): الجهد بين قطبيه \(V = \mathcal E - rI\).' } }
+  - { en: 'Current–voltage characteristic', ar: 'المميزة تيار-جهد', fr: 'Caractéristique courant-tension', def: { en: 'Graph \(I(V)\) of a two-terminal component; a straight line through the origin for an ohmic resistor.', ar: 'المنحنى \(I(V)\) لثنائي قطب؛ وهو مستقيم يمر بالمبدأ في حالة المقاومة الأومية.' } }
+  - { en: 'Diode', ar: 'الثنائي (الديود)', fr: 'Diode', def: { en: 'Semiconductor component that conducts mainly in one direction, above a threshold voltage.', ar: 'عنصر نصف ناقل يوصل أساسًا في اتجاه واحد، فوق جهد عتبة معيّن.' } }
+  - { en: 'Wheatstone bridge', ar: 'قنطرة ويتستون', fr: 'Pont de Wheatstone', def: { en: 'Four-resistor network used to measure an unknown resistance by a null method.', ar: 'شبكة من أربع مقاومات تُستعمل لقياس مقاومة مجهولة بطريقة صفرية.' } }
+  - { en: 'Galvanometer', ar: 'الغلفانومتر', fr: 'Galvanomètre', def: { en: 'Very sensitive current detector, used as a null indicator.', ar: 'كاشف تيار شديد الحساسية، يُستعمل مؤشرًا صفريًا.' } }
+  - { en: 'Equipotential line', ar: 'خط تساوي الكمون', fr: 'Ligne équipotentielle', def: { en: 'Line along which the potential is constant; perpendicular to the field.', ar: 'خط يكون الكمون على طوله ثابتًا، وهو عمودي على الحقل.' } }
+  - { en: 'Electrolytic tank', ar: 'الحوض الإلكتروليتي', fr: 'Cuve rhéographique', def: { en: 'Shallow tank of conducting liquid used to map the potential between electrodes.', ar: 'حوض ضحل يحتوي سائلًا ناقلًا يُستعمل لرسم توزيع الكمون بين الأقطاب.' } }
+  - { en: 'Oscilloscope', ar: 'راسم الاهتزاز المهبطي', fr: 'Oscilloscope', def: { en: 'Instrument displaying a voltage as a function of time (or of another voltage in XY mode).', ar: 'جهاز يعرض الجهد بدلالة الزمن (أو بدلالة جهد آخر في النمط XY).' } }
+  - { en: 'Time base', ar: 'القاعدة الزمنية', fr: 'Base de temps', def: { en: 'Horizontal scale of the oscilloscope, in time per division.', ar: 'السلّم الأفقي لراسم الاهتزاز، بوحدة الزمن لكل تدريجة.' } }
+  - { en: 'RMS value', ar: 'القيمة الفعالة', fr: 'Valeur efficace', def: { en: 'Root-mean-square value; for a sine wave \(V_{rms} = V_m/\sqrt2\).', ar: 'الجذر التربيعي لمتوسط المربع؛ وللإشارة الجيبية \(V_{rms} = V_m/\sqrt2\).' } }
+  - { en: 'Function generator', ar: 'مولد الإشارات', fr: 'Générateur basse fréquence (GBF)', def: { en: 'Source of sine, square or triangle voltages of adjustable frequency and amplitude.', ar: 'منبع لجهود جيبية أو مربعة أو مثلثية قابلة لضبط التواتر والسعة.' } }
+  - { en: 'Time constant', ar: 'ثابت الزمن', fr: 'Constante de temps', def: { en: '\(\tau = RC\) or \(L/R\); characteristic time of an exponential transient.', ar: '\(\tau = RC\) أو \(L/R\)؛ الزمن المميز لنظام انتقالي أسّي.' } }
+  - { en: 'Hall probe', ar: 'مسبار هول', fr: 'Sonde à effet Hall', def: { en: 'Sensor whose transverse voltage is proportional to the magnetic field component perpendicular to it.', ar: 'حسّاس يتناسب جهده العرضي مع مركّبة الحقل المغناطيسي العمودية عليه.' } }
+  - { en: 'Helmholtz coils', ar: 'وشيعتا هلمهولتز', fr: 'Bobines de Helmholtz', def: { en: 'Pair of coaxial coils separated by their radius, producing a nearly uniform field.', ar: 'وشيعتان متحدتا المحور تفصل بينهما مسافة تساوي نصف قطرهما، وتنتجان حقلًا شبه منتظم.' } }
+  - { en: 'Induced emf', ar: 'القوة المحركة الكهربائية المتحرَّضة', fr: 'Force électromotrice induite', def: { en: 'emf produced by a changing magnetic flux, \(\mathcal E = -N\,\dd\Phi_B/\dd t\).', ar: 'قوة محركة كهربائية تنشأ عن تغيّر التدفق المغناطيسي \(\mathcal E = -N\,\dd\Phi_B/\dd t\).' } }
+  - { en: 'Transformer', ar: 'المحوّل', fr: 'Transformateur', def: { en: 'Two coils coupled by an iron core; for AC, \(V_s/V_p \approx N_s/N_p\).', ar: 'وشيعتان مقترنتان بنواة حديدية؛ وفي التيار المتناوب \(V_s/V_p \approx N_s/N_p\).' } }

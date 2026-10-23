@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% from "_macros.html" import icon %}
+{% block title %}{{ ui('guide_title') }} · {{ site.name if lang == 'en' else site.name_ar }}{% endblock %}
+{% block description %}{{ ui('guide_lead') | plain }}{% endblock %}
+{% block main %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ icon('layers', 'ic xs') }} {{ ui('nav_guide') }}</p>
+    <h1>{{ ui('guide_title') }}</h1>
+    <p class="lead">{{ ui('guide_lead') }}</p>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap guide">
+    <div class="prose big">{{ t(guide.intro) | para }}</div>
+
+    <h2 class="guide-h">{{ ui('structure_title') }}</h2>
+    <ol class="structure-list">
+      {% for id, ico in [('overview','overview'),('outcomes','outcomes'),('schedule','schedule'),('assessment','assessment'),('materials','materials'),('exams','exams'),('problems','problems'),('quizzes','quizzes'),('lab','lab'),('library','library'),('glossary','glossary')] %}
+      <li><span class="sl-icon">{{ icon(ico) }}</span><div><h3>{{ ui('sec_' ~ id) }}</h3><p>{{ ui('sec_' ~ id ~ '_d') }}</p></div></li>
+      {% endfor %}
+    </ol>
+
+    <h2 class="guide-h">{{ t(guide.quality_title) }}</h2>
+    <div class="card-grid-2">
+      {% for q in guide.quality %}<div class="panel"><h3 class="panel-title">{{ t(q.title) }}</h3><div class="prose">{{ t(q.text) | para }}</div></div>{% endfor %}
+    </div>
+
+    <h2 class="guide-h">{{ t(guide.bloom_title) }}</h2>
+    <p class="lead">{{ t(guide.bloom_lead) }}</p>
+    <ol class="bloom-ladder">
+      {% for key, b in site.bloom.items() %}
+      <li style="--rank: {{ b.rank }}"><span class="bl-rank">{{ b.rank }}</span><div><h3>{{ t(b) }}</h3><p>{{ t(guide.bloom_verbs[key]) }}</p></div></li>
+      {% endfor %}
+    </ol>
+
+    <h2 class="guide-h">{{ t(guide.study_title) }}</h2>
+    <ol class="timeline">
+      {% for s in guide.study %}<li><h3>{{ t(s.title) }}</h3><p>{{ t(s.text) }}</p></li>{% endfor %}
+    </ol>
+
+    <h2 class="guide-h">{{ t(guide.method_title) }}</h2>
+    <ol class="method">{% for m in guide.method %}<li>{{ t(m) }}</li>{% endfor %}</ol>
+
+    <h2 class="guide-h">{{ t(guide.teachers_title) }}</h2>
+    <div class="prose">{{ t(guide.teachers) | para }}</div>
+
+    <h2 class="guide-h">{{ t(guide.features_title) }}</h2>
+    <ul class="tips">{% for f in guide.features %}<li>{{ t(f) }}</li>{% endfor %}</ul>
+  </div>
+</section>
+{% endblock %}

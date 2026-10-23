@@ -1,0 +1,1022 @@
+slug: modern-physics-2
+order: 90
+codes: [PHYS 342]
+short: { en: ModP II, ar: ف.ح 2 }
+title: { en: Modern Physics II, ar: الفيزياء الحديثة 2 }
+tagline:
+  en: Quantum mechanics at work — atoms, solids and nuclei.
+  ar: ميكانيكا الكم في الميدان — الذرات والأجسام الصلبة والأنوية.
+area: modern
+level: 3
+credits: 3
+hours: { lecture: 3, tutorial: 0, lab: 0 }
+weeks: 15
+instruction: [en]
+prerequisites: [general-physics-2]
+prerequisite_note:
+  en: 'Modern Physics I or equivalent (special relativity, photons, Bohr model, de Broglie waves), calculus including partial derivatives, and complex numbers.'
+  ar: 'الفيزياء الحديثة 1 أو ما يعادلها (النسبية الخاصة، الفوتونات، نموذج بور، موجات دي برولي)، والتفاضل والتكامل بما في ذلك المشتقات الجزئية، والأعداد المركبة.'
+sims: [blackbody, particles]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/modern-physics-2/
+notes: >
+  Syllabus, weekly lecture notes (weeks 1-15), homework sets 2-15, solutions 2-6, quizzes, midterms,
+  final and three past exams taken from the source page (15-week course, so weeks: 15). Week-by-week
+  allocation inside each chapter, textbook section numbers (Serway, Moses & Moyer 3rd ed.), CLOs,
+  assessment weights (source gave only the list of tests), quizzes, worked problems and glossary are
+  reconstructed/new. The marks PDF (student grades) was deliberately not linked. Past-exam session
+  years converted from Hijri labels 1437(S1), 1437(S2), 1438(S1) to 2015-2016 / 2016-2017: please
+  double-check. Supplementary external readings kept with neutral titles. The 'particles' sim was
+  added for the nuclear/decay chapter (beta decay, neutrinos).
+
+description:
+  en: |
+    <p>This course turns the student's classical, Newtonian picture of nature into the quantum picture of modern physics, and then uses it to explain the structure of matter from the atom to the nucleus. It starts with a short review of the old quantum theory and introduces the Schrödinger equation and its one-dimensional applications: the Born interpretation, free particles and wave packets, the particle in a box, the finite well and the quantum oscillator, expectation values, observables and operators.</p>
+    <p>The Schrödinger equation is then solved in three dimensions: the three-dimensional box, central forces and angular momentum, space quantisation and the hydrogen atom. Atomic structure follows — orbital magnetism and the normal Zeeman effect, electron spin, spin–orbit coupling and fine structure, exchange symmetry and the Pauli principle, the periodic table and X-ray spectra.</p>
+    <p>The last part applies these ideas to condensed and nuclear matter: the free-electron model and band theory of solids, semiconductors and superconductivity; properties of nuclei, binding energy, nuclear models, radioactivity and the alpha, beta and gamma decay processes.</p>
+  ar: |
+    <p>يهدف هذا المقرر إلى نقل الطالب من التصور الكلاسيكي (النيوتوني) للطبيعة إلى التصور الكمومي للفيزياء الحديثة، ثم توظيفه في تفسير بنية المادة من الذرة إلى النواة. يبدأ بمراجعة قصيرة لنظرية الكم القديمة، ثم يقدّم معادلة شرودنغر وتطبيقاتها في بعد واحد: تفسير بورن، والجسيم الحر والحُزم الموجية، والجسيم في صندوق، والبئر المنتهي، والمتذبذب الكمومي، والقيم المتوقعة، والمقادير القابلة للقياس والمؤثرات.</p>
+    <p>ثم تُحلّ معادلة شرودنغر في ثلاثة أبعاد: الصندوق ثلاثي الأبعاد، والقوى المركزية والزخم الزاوي، والتكميم الفضائي، وذرة الهيدروجين. وتليها البنية الذرية: المغناطيسية المدارية وظاهرة زيمان العادية، وسبين الإلكترون، والاقتران المغزلي-المداري والبنية الدقيقة، وتناظر التبادل ومبدأ باولي، والجدول الدوري، وأطياف الأشعة السينية.</p>
+    <p>ويطبّق الجزء الأخير هذه الأفكار على المادة المكثفة والمادة النووية: نموذج الإلكترون الحر ونظرية العصابات في الأجسام الصلبة، وأشباه الموصلات، والموصلية الفائقة؛ ثم خصائص الأنوية، وطاقة الربط، والنماذج النووية، والنشاط الإشعاعي، وعمليات الاضمحلال ألفا وبيتا وغاما.</p>
+
+topics:
+  - { en: Schrödinger equation, ar: معادلة شرودنغر }
+  - { en: Particle in a box & oscillator, ar: الجسيم في صندوق والمتذبذب }
+  - { en: Hydrogen atom, ar: ذرة الهيدروجين }
+  - { en: Angular momentum & space quantisation, ar: الزخم الزاوي والتكميم الفضائي }
+  - { en: Electron spin & Zeeman effect, ar: سبين الإلكترون وظاهرة زيمان }
+  - { en: Pauli principle & periodic table, ar: مبدأ باولي والجدول الدوري }
+  - { en: Band theory & superconductivity, ar: نظرية العصابات والموصلية الفائقة }
+  - { en: Nuclear structure & binding energy, ar: البنية النووية وطاقة الربط }
+  - { en: Radioactivity & decay processes, ar: النشاط الإشعاعي وعمليات الاضمحلال }
+
+outcomes:
+  - id: CLO1
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Explain why classical physics fails at atomic scales and summarise the experimental basis of quantum theory (blackbody radiation, photoelectric and Compton effects, atomic spectra, matter waves).
+      ar: يشرح لماذا تفشل الفيزياء الكلاسيكية على السلّم الذري، ويلخّص الأساس التجريبي لنظرية الكم (إشعاع الجسم الأسود، الظاهرة الكهروضوئية وظاهرة كومبتون، الأطياف الذرية، الموجات المادية).
+    assessed_by: [quizzes, midterm1, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: Solve the time-independent Schrödinger equation for the infinite and finite wells and the harmonic oscillator, normalise wavefunctions and compute probabilities and expectation values.
+      ar: يحل معادلة شرودنغر المستقلة عن الزمن للبئر اللانهائي والبئر المنتهي والمتذبذب التوافقي، وينظّم الدوال الموجية، ويحسب الاحتمالات والقيم المتوقعة.
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO3
+    bloom: apply
+    domain: skills
+    text:
+      en: Describe the hydrogen atom with the quantum numbers n, l, m, compute energy levels, radial probabilities and angular-momentum magnitudes, and interpret space quantisation.
+      ar: يصف ذرة الهيدروجين بالأعداد الكمومية n وl وm، ويحسب مستويات الطاقة والاحتمالات القطرية ومقادير الزخم الزاوي، ويفسّر التكميم الفضائي.
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO4
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Analyse atomic spectra using electron spin, the Zeeman effect, spin–orbit coupling, the exclusion principle and Moseley's law, and relate electron configurations to the periodic table.
+      ar: يحلّل الأطياف الذرية باستعمال سبين الإلكترون وظاهرة زيمان والاقتران المغزلي-المداري ومبدأ الاستبعاد وقانون موزلي، ويربط التوزيعات الإلكترونية بالجدول الدوري.
+    assessed_by: [quizzes, homework, midterm2, final]
+  - id: CLO5
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Explain the electrical properties of metals, insulators and semiconductors with the free-electron and band models, and describe the main features of superconductivity.
+      ar: يفسّر الخصائص الكهربائية للمعادن والعوازل وأشباه الموصلات بنموذجي الإلكترون الحر والعصابات، ويصف السمات الرئيسة للموصلية الفائقة.
+    assessed_by: [homework, midterm2, final]
+  - id: CLO6
+    bloom: apply
+    domain: skills
+    text:
+      en: Calculate nuclear sizes, binding energies and decay energetics, apply the radioactive decay law (half-life, activity, dating) and identify alpha, beta and gamma processes.
+      ar: يحسب أحجام الأنوية وطاقات الربط وطاقات الاضمحلال، ويطبّق قانون الاضمحلال الإشعاعي (عمر النصف، النشاطية، التأريخ)، ويميّز عمليات ألفا وبيتا وغاما.
+    assessed_by: [quizzes, homework, final]
+  - id: CLO7
+    bloom: create
+    domain: values
+    text:
+      en: Prepare and deliver a short, well-sourced presentation on a modern technological application of quantum physics, and submit honest, independently written homework.
+      ar: يُعدّ ويقدّم عرضًا قصيرًا موثّق المصادر حول تطبيق تقني حديث لفيزياء الكم، ويسلّم واجبات نزيهة مكتوبة باستقلالية.
+    assessed_by: [presentation, homework, participation]
+
+assessment:
+  - id: quizzes
+    type: quiz
+    weight: 10
+    title: { en: Quizzes, ar: اختبارات قصيرة }
+    detail:
+      en: Two 20-minute quizzes with short problems on the most recent chapters.
+      ar: اختباران قصيران مدة كل منهما 20 دقيقة، فيهما مسائل قصيرة حول الفصول الأخيرة.
+    when: { en: Weeks 4 and 9, ar: الأسبوعان 4 و9 }
+  - id: homework
+    type: homework
+    weight: 10
+    title: { en: Weekly homework, ar: الواجبات الأسبوعية }
+    detail:
+      en: One homework set per week, due the following week; problems mirror the lecture of that week. Graded on completeness and correctness.
+      ar: سلسلة واجبات واحدة كل أسبوع تُسلَّم في الأسبوع الموالي؛ وتوافق مسائلها محاضرة ذلك الأسبوع. يُقيَّم الحل على أساس اكتماله وصحته.
+    when: { en: Weeks 1–15, ar: الأسابيع 1–15 }
+  - id: midterm1
+    type: midterm
+    weight: 15
+    title: { en: Mid-term test 1, ar: الاختبار النصفي 1 }
+    detail:
+      en: 'Fifty minutes: old quantum theory, QM in one dimension and the beginning of QM in three dimensions.'
+      ar: 'خمسون دقيقة: نظرية الكم القديمة، وميكانيكا الكم في بعد واحد، وبداية ميكانيكا الكم في ثلاثة أبعاد.'
+    when: { en: Week 7, ar: الأسبوع 7 }
+  - id: midterm2
+    type: midterm
+    weight: 15
+    title: { en: Mid-term test 2, ar: الاختبار النصفي 2 }
+    detail:
+      en: 'Fifty minutes: hydrogen atom, atomic structure and solid state.'
+      ar: 'خمسون دقيقة: ذرة الهيدروجين، والبنية الذرية، والحالة الصلبة.'
+    when: { en: Week 12, ar: الأسبوع 12 }
+  - id: presentation
+    type: presentation
+    weight: 5
+    title: { en: Application presentation, ar: عرض حول تطبيق }
+    detail:
+      en: 'A 10-minute talk (in pairs) on an application of modern physics: lasers, LEDs and solar cells, MRI, scanning tunnelling microscopy, superconducting magnets, nuclear power or radiocarbon dating.'
+      ar: 'عرض مدته 10 دقائق (ضمن ثنائيات) حول تطبيق من تطبيقات الفيزياء الحديثة: الليزر، الثنائيات الباعثة للضوء والخلايا الشمسية، التصوير بالرنين المغناطيسي، مجهر المسح النفقي، المغانط فائقة التوصيل، الطاقة النووية أو التأريخ بالكربون المشع.'
+    when: { en: Weeks 13–14, ar: الأسبوعان 13–14 }
+  - id: participation
+    type: participation
+    weight: 5
+    title: { en: Class participation, ar: المشاركة في القسم }
+    detail:
+      en: Attendance, answers to in-class questions and contributions to problem discussions.
+      ar: الحضور، والإجابة عن الأسئلة داخل القسم، والمساهمة في مناقشة المسائل.
+    when: { en: Throughout, ar: طوال الفصل }
+  - id: final
+    type: final
+    weight: 40
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail:
+      en: Comprehensive two-hour exam covering all chapters, with emphasis on atomic structure and nuclear physics.
+      ar: اختبار شامل مدته ساعتان يغطي كل الفصول، مع التركيز على البنية الذرية والفيزياء النووية.
+    when: { en: Final exam period, ar: فترة الاختبارات النهائية }
+
+schedule:
+  - week: 1
+    title: { en: Review of the old quantum theory, ar: مراجعة نظرية الكم القديمة }
+    topics:
+      en:
+        - Blackbody radiation and Planck's hypothesis
+        - Photoelectric and Compton effects
+        - Bohr model of hydrogen; de Broglie waves
+        - Uncertainty principle
+      ar:
+        - إشعاع الجسم الأسود وفرضية بلانك
+        - الظاهرة الكهروضوئية وظاهرة كومبتون
+        - نموذج بور للهيدروجين؛ موجات دي برولي
+        - مبدأ الارتياب
+    reading: Serway ch. 3–5
+    activity: { en: Homework 1, ar: الواجب 1 }
+  - week: 2
+    title: { en: The Schrödinger equation, ar: معادلة شرودنغر }
+    topics:
+      en:
+        - The Born interpretation; normalisation
+        - Wavefunction for a free particle; wave packets
+      ar:
+        - تفسير بورن؛ التنظيم
+        - الدالة الموجية لجسيم حر؛ الحُزم الموجية
+    reading: Serway §6.1–6.2
+    activity: { en: Homework 2, ar: الواجب 2 }
+  - week: 3
+    title: { en: Particles in potential wells, ar: الجسيمات في آبار الجهد }
+    topics:
+      en:
+        - Wavefunctions in the presence of forces
+        - The particle in a box (infinite square well)
+        - The finite square well; tunnelling (overview)
+      ar:
+        - الدوال الموجية في وجود قوى
+        - الجسيم في صندوق (بئر جهد لانهائي)
+        - البئر المربع المنتهي؛ النفق الكمومي (نظرة عامة)
+    reading: Serway §6.3–6.5, ch. 7
+    activity: { en: Homework 3, ar: الواجب 3 }
+  - week: 4
+    title: { en: Oscillator and operators, ar: المتذبذب والمؤثرات }
+    topics:
+      en:
+        - The quantum oscillator; zero-point energy
+        - Expectation values
+        - Observables and operators
+      ar:
+        - المتذبذب الكمومي؛ طاقة نقطة الصفر
+        - القيم المتوقعة
+        - المقادير القابلة للقياس والمؤثرات
+    reading: Serway §6.6–6.8
+    activity: { en: Homework 4; quiz 1, ar: الواجب 4؛ الاختبار القصير 1 }
+    milestone: quiz
+  - week: 5
+    title: { en: Schrödinger equation in three dimensions, ar: معادلة شرودنغر في ثلاثة أبعاد }
+    topics:
+      en:
+        - Particle in a three-dimensional box
+        - Separation of variables; degeneracy
+      ar:
+        - جسيم في صندوق ثلاثي الأبعاد
+        - فصل المتغيرات؛ الانحلال
+    reading: Serway §8.1
+    activity: { en: Homework 5, ar: الواجب 5 }
+  - week: 6
+    title: { en: Central forces and angular momentum, ar: القوى المركزية والزخم الزاوي }
+    topics:
+      en:
+        - Central forces; spherical coordinates
+        - 'Quantisation of \(L^2\) and \(L_z\)'
+        - Space quantisation
+      ar:
+        - القوى المركزية؛ الإحداثيات الكروية
+        - 'تكميم \(L^2\) و\(L_z\)'
+        - التكميم الفضائي
+    reading: Serway §8.2–8.3
+    activity: { en: Homework 6, ar: الواجب 6 }
+  - week: 7
+    title: { en: The hydrogen atom, ar: ذرة الهيدروجين }
+    topics:
+      en:
+        - Atomic hydrogen and hydrogen-like ions
+        - Radial probability densities
+        - Mid-term test 1
+      ar:
+        - الهيدروجين الذري والأيونات الشبيهة بالهيدروجين
+        - كثافات الاحتمال القطرية
+        - الاختبار النصفي 1
+    reading: Serway §8.4–8.5
+    activity: { en: Homework 7, ar: الواجب 7 }
+    milestone: midterm
+  - week: 8
+    title: { en: Orbital magnetism, ar: المغناطيسية المدارية }
+    topics:
+      en:
+        - Magnetic moment of an orbiting electron; Bohr magneton
+        - The normal Zeeman effect
+      ar:
+        - العزم المغناطيسي للإلكترون المداري؛ مغنطون بور
+        - ظاهرة زيمان العادية
+    reading: Serway §9.1
+    activity: { en: Homework 8, ar: الواجب 8 }
+  - week: 9
+    title: { en: The spinning electron, ar: الإلكترون المغزلي }
+    topics:
+      en:
+        - Stern–Gerlach experiment; electron spin
+        - Spin–orbit coupling; fine structure
+        - Total angular momentum J
+      ar:
+        - تجربة شتيرن-غرلاخ؛ سبين الإلكترون
+        - الاقتران المغزلي-المداري؛ البنية الدقيقة
+        - الزخم الزاوي الكلي J
+    reading: Serway §9.2–9.3
+    activity: { en: Homework 9; quiz 2, ar: الواجب 9؛ الاختبار القصير 2 }
+    milestone: quiz
+  - week: 10
+    title: { en: Many-electron atoms, ar: الذرات المتعددة الإلكترونات }
+    topics:
+      en:
+        - Exchange symmetry and the exclusion principle
+        - Screening; the periodic table
+        - X-ray spectra and Moseley's law
+        - Bonding in molecules and solids
+      ar:
+        - تناظر التبادل ومبدأ الاستبعاد
+        - الحجب؛ الجدول الدوري
+        - أطياف الأشعة السينية وقانون موزلي
+        - الروابط في الجزيئات والأجسام الصلبة
+    reading: Serway §9.4–9.7, ch. 11
+    activity: { en: Homework 10, ar: الواجب 10 }
+  - week: 11
+    title: { en: The solid state, ar: الحالة الصلبة }
+    topics:
+      en:
+        - Classical free-electron model
+        - Quantum theory of metals; Fermi energy
+        - Band theory; semiconductors
+        - Superconductivity
+      ar:
+        - النموذج الكلاسيكي للإلكترون الحر
+        - النظرية الكمومية للمعادن؛ طاقة فيرمي
+        - نظرية العصابات؛ أشباه الموصلات
+        - الموصلية الفائقة
+    reading: Serway §12.1–12.6
+    activity: { en: Homework 11, ar: الواجب 11 }
+  - week: 12
+    title: { en: Properties of nuclei, ar: خصائص الأنوية }
+    topics:
+      en:
+        - Composition, size and density of nuclei
+        - Nuclear spin and magnetic moments
+        - Mid-term test 2
+      ar:
+        - تركيب الأنوية وحجمها وكثافتها
+        - سبين النواة وعزومها المغناطيسية
+        - الاختبار النصفي 2
+    reading: Serway §13.1
+    activity: { en: Homework 12, ar: الواجب 12 }
+    milestone: midterm
+  - week: 13
+    title: { en: Binding energy and nuclear models, ar: طاقة الربط والنماذج النووية }
+    topics:
+      en:
+        - Mass defect and binding energy per nucleon
+        - The nuclear force
+        - Liquid-drop model and semi-empirical mass formula
+        - Shell model; magic numbers
+      ar:
+        - النقص الكتلي وطاقة الربط لكل نوكليون
+        - القوة النووية
+        - نموذج القطرة السائلة وصيغة الكتلة شبه التجريبية
+        - نموذج الطبقات؛ الأعداد السحرية
+    reading: Serway §13.2–13.3
+    activity: { en: Homework 13; presentations begin, ar: الواجب 13؛ بداية العروض }
+    milestone: project
+  - week: 14
+    title: { en: Radioactivity, ar: النشاط الإشعاعي }
+    topics:
+      en:
+        - Decay law; activity and half-life
+        - Natural radioactivity and decay series
+        - Radioactive dating
+      ar:
+        - قانون الاضمحلال؛ النشاطية وعمر النصف
+        - النشاط الإشعاعي الطبيعي وسلاسل الاضمحلال
+        - التأريخ الإشعاعي
+    reading: Serway §13.4, §13.6
+    activity: { en: Homework 14; presentations, ar: الواجب 14؛ العروض }
+  - week: 15
+    title: { en: Decay processes and review, ar: عمليات الاضمحلال والمراجعة }
+    topics:
+      en:
+        - Alpha decay and tunnelling
+        - Beta decay and the neutrino
+        - Gamma decay
+        - Course review
+      ar:
+        - اضمحلال ألفا والنفق الكمومي
+        - اضمحلال بيتا والنيوترينو
+        - اضمحلال غاما
+        - مراجعة المقرر
+    reading: Serway §13.5
+    activity: { en: Homework 15, ar: الواجب 15 }
+    milestone: review
+
+materials:
+  # ---- Weekly lecture notes ----
+  - type: notes
+    title: { en: 'Week 1 — review of the old quantum theory', ar: 'الأسبوع 1 — مراجعة نظرية الكم القديمة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNbWxrMExlbjVadkk
+    week: 1
+    lang: en
+  - type: notes
+    title: { en: 'Week 2 — QM in one dimension (I)', ar: 'الأسبوع 2 — ميكانيكا الكم في بعد واحد (1)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNU0lRQmtzaDBYTFk
+    week: 2
+    lang: en
+  - type: notes
+    title: { en: 'Week 3 — QM in one dimension (II)', ar: 'الأسبوع 3 — ميكانيكا الكم في بعد واحد (2)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNMnBtbVc4cjVnR1E
+    week: 3
+    lang: en
+  - type: notes
+    title: { en: 'Week 4 — QM in one dimension (III)', ar: 'الأسبوع 4 — ميكانيكا الكم في بعد واحد (3)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNbVc4bW5seDBBdWs
+    week: 4
+    lang: en
+  - type: notes
+    title: { en: 'Week 5 — Schrödinger equation in 3D (I)', ar: 'الأسبوع 5 — معادلة شرودنغر في ثلاثة أبعاد (1)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNTXUxUURNRjd5bTA
+    week: 5
+    lang: en
+  - type: notes
+    title: { en: 'Week 6 — Schrödinger equation in 3D (II)', ar: 'الأسبوع 6 — معادلة شرودنغر في ثلاثة أبعاد (2)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNd0xGSWY2MGEzZ00
+    week: 6
+    lang: en
+  - type: notes
+    title: { en: 'Week 7 — Schrödinger equation in 3D (III)', ar: 'الأسبوع 7 — معادلة شرودنغر في ثلاثة أبعاد (3)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNLXFKNDh2Yy1hVEU
+    week: 7
+    lang: en
+  - type: notes
+    title: { en: 'Week 8 — atomic structure (I)', ar: 'الأسبوع 8 — البنية الذرية (1)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNY3cxODNzZEYySFU
+    week: 8
+    lang: en
+  - type: notes
+    title: { en: 'Week 9 — atomic structure (II)', ar: 'الأسبوع 9 — البنية الذرية (2)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNR1lkRkVZU2owZVU
+    week: 9
+    lang: en
+  - type: notes
+    title: { en: 'Week 10 — atomic structure (III)', ar: 'الأسبوع 10 — البنية الذرية (3)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNbzNKTEJhVWVrUTA
+    week: 10
+    lang: en
+  - type: notes
+    title: { en: 'Week 11 — the solid state', ar: 'الأسبوع 11 — الحالة الصلبة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNb3V3SkZwWFl4RHc
+    week: 11
+    lang: en
+  - type: notes
+    title: { en: 'Week 12 — nuclear structure (I)', ar: 'الأسبوع 12 — البنية النووية (1)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNeGhGV21kRmlYUUU
+    week: 12
+    lang: en
+  - type: notes
+    title: { en: 'Week 13 — nuclear structure (II)', ar: 'الأسبوع 13 — البنية النووية (2)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNZXFhcDMtMno3RDQ
+    week: 13
+    lang: en
+  - type: notes
+    title: { en: 'Week 14 — nuclear structure (III)', ar: 'الأسبوع 14 — البنية النووية (3)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNYnBXRi16UEhOYzg
+    week: 14
+    lang: en
+  - type: notes
+    title: { en: 'Week 15 — nuclear structure (IV)', ar: 'الأسبوع 15 — البنية النووية (4)' }
+    url: https://drive.google.com/open?id=1RwIVKJbLwAUt3kvpfU3TMh6XnVUh88Sw
+    week: 15
+    lang: en
+  # ---- Animations ----
+  - type: video
+    title: { en: 'Animation — time evolution of a free-electron wave packet in 1D', ar: 'رسم متحرك — التطور الزمني لحزمة موجية لإلكترون حر في بعد واحد' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNRi05Q21aTmVXTk0
+    week: 2
+  - type: video
+    title: { en: 'Animation — time evolution of the probability density of a free electron in 1D', ar: 'رسم متحرك — التطور الزمني لكثافة الاحتمال لإلكترون حر في بعد واحد' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNdUFYcEJ6RTF1Rzg
+    week: 2
+  # ---- Homework and solutions ----
+  - type: problems
+    title: { en: Homework 2, ar: الواجب 2 }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNV2ZLMlJfN2ZVdk0
+    week: 2
+    lang: en
+  - type: solutions
+    title: { en: Solutions to homework 2, ar: حلول الواجب 2 }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNQ0pkamJfS00tX2c
+    week: 2
+    lang: en
+  - type: problems
+    title: { en: Homework 3, ar: الواجب 3 }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNNzhkSTR2RWFaUlE
+    week: 3
+    lang: en
+  - type: solutions
+    title: { en: Solutions to homework 3, ar: حلول الواجب 3 }
+    url: https://drive.google.com/open?id=1qrsZlnaqrueJOO9NI2SX0F6yZaJCztmo
+    week: 3
+    lang: en
+  - type: problems
+    title: { en: Homework 4, ar: الواجب 4 }
+    url: https://drive.google.com/open?id=157_krvt8sqFOvxR_cajMH7neY56gNjGY
+    week: 4
+    lang: en
+  - type: solutions
+    title: { en: Solutions to homework 4, ar: حلول الواجب 4 }
+    url: https://drive.google.com/open?id=1se96xAWR-cRbtdWZMvdCiG-74t__z3Vy
+    week: 4
+    lang: en
+  - type: problems
+    title: { en: Homework 5, ar: الواجب 5 }
+    url: https://drive.google.com/open?id=10S_S3fqr4Sv2GShVqBIWQGm4H63wnAaE
+    week: 5
+    lang: en
+  - type: solutions
+    title: { en: Solutions to homework 5, ar: حلول الواجب 5 }
+    url: https://drive.google.com/open?id=1P4pf8OEieOLl3NiuC0C3MAeqBftnclIG
+    week: 5
+    lang: en
+  - type: problems
+    title: { en: Homework 6, ar: الواجب 6 }
+    url: https://drive.google.com/open?id=1E2pumQAswGvmzWP5ZdJG68q_K0yAmJai
+    week: 6
+    lang: en
+  - type: solutions
+    title: { en: Solutions to homework 6, ar: حلول الواجب 6 }
+    url: https://drive.google.com/open?id=1zR7sZGsXhy08ZutZNrfwiLSCu3Hcg7xN
+    week: 6
+    lang: en
+  - type: problems
+    title: { en: Homework 7, ar: الواجب 7 }
+    url: https://drive.google.com/open?id=1flBbN_DEmT-a0YgI1-kcXfV5WkCUQL-C
+    week: 7
+    lang: en
+  - type: problems
+    title: { en: Homework 8, ar: الواجب 8 }
+    url: https://drive.google.com/open?id=1gAsTzKkdr0np5BFao2QLE3KM6t2rLeT0
+    week: 8
+    lang: en
+  - type: problems
+    title: { en: Homework 9, ar: الواجب 9 }
+    url: https://drive.google.com/open?id=1s9Id3ifQFQGsf-AVcq3u7q7ZijTMfpea
+    week: 9
+    lang: en
+  - type: problems
+    title: { en: Homework 10, ar: الواجب 10 }
+    url: https://drive.google.com/open?id=1Af_F3pd1ZoopPo4mRM-rLa2cre_uTkTB
+    week: 10
+    lang: en
+  - type: problems
+    title: { en: Homework 11, ar: الواجب 11 }
+    url: https://drive.google.com/open?id=1ucqFR8HnuuuPZp5XndlE38qHlLsBADXn
+    week: 11
+    lang: en
+  - type: problems
+    title: { en: Homework 12, ar: الواجب 12 }
+    url: https://drive.google.com/open?id=1-OFAoEDDt2V70HmLZiKmVVYaTaHLtqQb
+    week: 12
+    lang: en
+  - type: problems
+    title: { en: Homework 13, ar: الواجب 13 }
+    url: https://drive.google.com/open?id=1kOsNsNNZK17xAooJ_qteAg3hl05Trx0f
+    week: 13
+    lang: en
+  - type: problems
+    title: { en: Homework 14, ar: الواجب 14 }
+    url: https://drive.google.com/open?id=1GbFy_Mf-BJ-4eeRsPA_fr_2Sji48ddXC
+    week: 14
+    lang: en
+  - type: problems
+    title: { en: Homework 15, ar: الواجب 15 }
+    url: https://drive.google.com/open?id=17crgZgpIldqf7D1eooPdAI4h3VUi1fhI
+    week: 15
+    lang: en
+  - type: formula
+    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية الشائعة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+    lang: en
+  # ---- Supplementary readings ----
+  - type: reading
+    title: { en: 'Hydrogen atom in quantum mechanics — lecture notes', ar: 'ذرة الهيدروجين في ميكانيكا الكم — مذكرة محاضرة' }
+    url: https://www1.udel.edu/pchem/C444/spLectures/04152008.pdf
+    week: 7
+    lang: en
+  - type: reading
+    title: { en: Atomic physics — lecture notes, ar: الفيزياء الذرية — مذكرات دروس }
+    url: https://users.physics.ox.ac.uk/~ewart/Atomic%20Physics%20lecture%20notes%20C%20port.pdf
+    week: 8
+    lang: en
+  - type: reading
+    title: { en: Magnetic moment and spin — lecture notes, ar: العزم المغناطيسي والسبين — مذكرة دروس }
+    url: https://folk.ntnu.no/ioverbo/TFY4250/til12eng.pdf
+    week: 9
+    lang: en
+  - type: reading
+    title: { en: 'Introduction to nuclear physics (MIT OCW 22.02, chapter 1)', ar: 'مدخل إلى الفيزياء النووية (MIT OCW 22.02، الفصل 1)' }
+    url: https://ocw.mit.edu/courses/nuclear-engineering/22-02-introduction-to-applied-nuclear-physics-spring-2012/lecture-notes/MIT22_02S12_lec_ch1.pdf
+    week: 12
+    lang: en
+  - type: link
+    title: { en: Atomic and nuclear physics II — online course, ar: الفيزياء الذرية والنووية 2 — مقرر على الإنترنت }
+    url: https://www.astro.uwo.ca/~jlandstr/p467/
+    lang: en
+
+exams:
+  - title: { en: Quiz 1, ar: الاختبار القصير 1 }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1iXpbb3WgBnT0SWriKLg7HlFKY4JvBxE5
+    solution: https://drive.google.com/open?id=1eTXgdh8r5VSZHz_RQxB1k_7A2s470OGK
+    lang: en
+  - title: { en: Mid-term test 1, ar: الاختبار النصفي 1 }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1nPEKueKopqbfhoNBtTox_Pj5rU9Py6I4
+    solution: https://drive.google.com/open?id=1VJygxYuBpn7FyH10kDZdyfsFBLmKnZfj
+    lang: en
+  - title: { en: Quiz 2, ar: الاختبار القصير 2 }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=15-IZkOTQ8OUsbSkmnPfRHS9bslJZaHfV
+    solution: https://drive.google.com/open?id=1c0zeWZJgnFhoK71R_KDZtiG1QdKw1aua
+    lang: en
+  - title: { en: Mid-term test 2, ar: الاختبار النصفي 2 }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1SUtW6T0zttBy8XXP_LntHlfsRBWlqvjW
+    solution: https://drive.google.com/open?id=14TGuWt9UflpBsNZyiN_QOYdQxFHv3WJr
+    lang: en
+  - title: { en: Final exam, ar: الاختبار النهائي }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1KODy8_Du-PqeAgZWLTU4ziUN3FrgdbFV
+    solution: https://drive.google.com/open?id=1SH0xqWnVWvo1FyUf3n7eevLVysPwGUgZ
+    lang: en
+  - title: { en: Past final exam (A), ar: اختبار نهائي سابق (أ) }
+    session: 2015–2016
+    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNbS1PR1JRMzhnbjQ
+    lang: en
+  - title: { en: Past final exam (B), ar: اختبار نهائي سابق (ب) }
+    session: 2015–2016
+    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNSTY1Rk1YLWUtWGM
+    lang: en
+  - title: { en: Past final exam, ar: اختبار نهائي سابق }
+    session: 2016–2017
+    paper: https://drive.google.com/open?id=1SjVvv6DMYXq0_Yl3V4T0eqI7VY3t1dYu
+    lang: en
+
+exam_guide:
+  format:
+    en: Two 20-minute quizzes, two 50-minute mid-term tests (three or four problems each, often with a short conceptual part) and a two-hour comprehensive final with five or six problems. Problems are mostly numerical applications of the course formulas, with short derivations and explanations.
+    ar: اختباران قصيران مدة كل منهما 20 دقيقة، واختباران نصفيان مدة كل منهما 50 دقيقة (ثلاث أو أربع مسائل لكل منهما، غالبًا مع جزء مفاهيمي قصير)، واختبار نهائي شامل مدته ساعتان يتضمن خمس أو ست مسائل. المسائل في معظمها تطبيقات عددية لصيغ المقرر، مع اشتقاقات وشروح قصيرة.
+  allowed:
+    en: A non-programmable scientific calculator. Physical constants and a short table of integrals are given on the paper; no personal notes.
+    ar: آلة حاسبة علمية غير قابلة للبرمجة. تُعطى الثوابت الفيزيائية وجدول قصير للتكاملات على ورقة الاختبار؛ ولا يُسمح بالمذكرات الشخصية.
+  tips:
+    - en: 'Learn the handy combinations: \(hc = 1240\) eV·nm, \(\hbar c = 197.3\) MeV·fm, \(m_ec^2 = 0.511\) MeV, \(1\ \text{u} = 931.5\) MeV/\(c^2\). They save time and errors.'
+      ar: 'احفظ التركيبات المفيدة: \(hc = 1240\) eV·nm، \(\hbar c = 197.3\) MeV·fm، \(m_ec^2 = 0.511\) MeV، \(1\ \text{u} = 931.5\) MeV/\(c^2\). فهي توفّر الوقت وتقلّل الأخطاء.'
+    - en: Always state which quantum numbers label a state and how many states share an energy — many marks are lost on degeneracies.
+      ar: حدِّد دائمًا الأعداد الكمومية التي تميّز الحالة وعدد الحالات التي تشترك في طاقة واحدة؛ فكثير من العلامات تضيع في حساب الانحلال.
+    - en: In nuclear problems use atomic masses consistently (the electron masses cancel) and keep at least six significant figures in mass differences.
+      ar: في المسائل النووية استعمل الكتل الذرية بشكل متّسق (فكتل الإلكترونات تُختزل)، واحتفظ بستة أرقام معنوية على الأقل في فروق الكتل.
+    - en: Re-do the homework problems without looking at the solutions; exam problems closely follow them.
+      ar: أعد حل مسائل الواجبات دون النظر إلى الحلول؛ فمسائل الاختبارات قريبة منها جدًا.
+
+problems:
+  - title: { en: Electron in a box, ar: إلكترون في صندوق }
+    difficulty: 1
+    statement:
+      en: |
+        An electron is confined to a one-dimensional infinite square well of width \(L = 1.00\) nm.
+        (a) Find its ground-state energy in eV.
+        (b) Find the wavelength of the photon emitted in the transition \(n=2 \to n=1\).
+        (c) In the ground state, what is the probability of finding the electron in the middle third of the well, \(L/3 < x < 2L/3\)?
+      ar: |
+        إلكترون محصور في بئر جهد مربع لانهائي أحادي البعد عرضه \(L = 1.00\) nm.
+        (أ) أوجد طاقة حالته الأرضية بالإلكترون-فولط.
+        (ب) أوجد طول موجة الفوتون المنبعث في الانتقال \(n=2 \to n=1\).
+        (ج) ما احتمال وجود الإلكترون، وهو في حالته الأرضية، في الثلث الأوسط من البئر \(L/3 < x < 2L/3\)؟
+    hint:
+      en: '\(E_n = n^2h^2/8mL^2\) and \(\psi_n = \sqrt{2/L}\,\sin(n\pi x/L)\). Use \(\sin^2u = \frac12(1-\cos2u)\).'
+      ar: '\(E_n = n^2h^2/8mL^2\) و\(\psi_n = \sqrt{2/L}\,\sin(n\pi x/L)\). استعمل \(\sin^2u = \frac12(1-\cos2u)\).'
+    solution:
+      en: |
+        (a) \(E_1 = \dfrac{h^2}{8mL^2} = \dfrac{(6.626\times10^{-34})^2}{8(9.109\times10^{-31})(1.00\times10^{-9})^2} = 6.02\times10^{-20}\ \text{J} = 0.376\ \text{eV}\).
+        (b) \(\Delta E = E_2 - E_1 = 3E_1 = 1.13\) eV, so \(\lambda = hc/\Delta E = (1240\ \text{eV·nm})/(1.13\ \text{eV}) \approx 1.10\times10^{3}\) nm (near infrared).
+        (c)
+        \[ P = \frac{2}{L}\int_{L/3}^{2L/3}\sin^2\frac{\pi x}{L}\,dx = \frac13 - \frac{1}{2\pi}\left[\sin\frac{4\pi}{3}-\sin\frac{2\pi}{3}\right] = \frac13+\frac{\sqrt3}{2\pi} \approx 0.609. \]
+        Classically (uniform probability) the answer would be 1/3; the quantum ground state is concentrated near the centre.
+      ar: |
+        (أ) \(E_1 = \dfrac{h^2}{8mL^2} = \dfrac{(6.626\times10^{-34})^2}{8(9.109\times10^{-31})(1.00\times10^{-9})^2} = 6.02\times10^{-20}\ \text{J} = 0.376\ \text{eV}\).
+        (ب) \(\Delta E = E_2 - E_1 = 3E_1 = 1.13\) eV، إذن \(\lambda = hc/\Delta E = (1240\ \text{eV·nm})/(1.13\ \text{eV}) \approx 1.10\times10^{3}\) nm (في المجال تحت الأحمر القريب).
+        (ج)
+        \[ P = \frac{2}{L}\int_{L/3}^{2L/3}\sin^2\frac{\pi x}{L}\,dx = \frac13 - \frac{1}{2\pi}\left[\sin\frac{4\pi}{3}-\sin\frac{2\pi}{3}\right] = \frac13+\frac{\sqrt3}{2\pi} \approx 0.609. \]
+        في الفيزياء الكلاسيكية (احتمال منتظم) يكون الجواب 1/3؛ أما الحالة الأرضية الكمومية فتتركّز قرب المركز.
+  - title: { en: 'Where is the electron in hydrogen?', ar: أين يوجد الإلكترون في ذرة الهيدروجين؟ }
+    difficulty: 2
+    statement:
+      en: |
+        The ground-state wavefunction of hydrogen is \(\psi_{100} = \frac{1}{\sqrt{\pi a_0^3}}e^{-r/a_0}\).
+        (a) Find the radial probability density \(P(r)\) and the most probable distance from the nucleus.
+        (b) Find the probability that the electron is found inside a sphere of radius \(a_0\).
+      ar: |
+        الدالة الموجية للحالة الأرضية لذرة الهيدروجين هي \(\psi_{100} = \frac{1}{\sqrt{\pi a_0^3}}e^{-r/a_0}\).
+        (أ) أوجد كثافة الاحتمال القطرية \(P(r)\) والمسافة الأكثر احتمالًا عن النواة.
+        (ب) أوجد احتمال وجود الإلكترون داخل كرة نصف قطرها \(a_0\).
+    hint:
+      en: '\(P(r)\,dr = |\psi|^2\,4\pi r^2\,dr\). For (b) integrate by parts or use \(\int x^2e^{-x}dx = -(x^2+2x+2)e^{-x}\).'
+      ar: '\(P(r)\,dr = |\psi|^2\,4\pi r^2\,dr\). في (ب) كامل بالتجزئة أو استعمل \(\int x^2e^{-x}dx = -(x^2+2x+2)e^{-x}\).'
+    solution:
+      en: |
+        (a) \(P(r) = 4\pi r^2|\psi_{100}|^2 = \dfrac{4r^2}{a_0^3}e^{-2r/a_0}\).
+        \(\dv{P}{r} = \dfrac{4}{a_0^3}\left(2r - \dfrac{2r^2}{a_0}\right)e^{-2r/a_0} = 0 \Rightarrow r = a_0\): the most probable radius is the Bohr radius.
+        (b) With \(x = 2r/a_0\):
+        \[ P(r<a_0) = \frac12\int_0^{2}x^2e^{-x}\,dx = \frac12\left[2-(4+4+2)e^{-2}\right] = 1-5e^{-2} \approx 0.323. \]
+        Only about one third of the time is the electron closer than \(a_0\); its mean distance is \(\expval{r} = 1.5\,a_0\).
+      ar: |
+        (أ) \(P(r) = 4\pi r^2|\psi_{100}|^2 = \dfrac{4r^2}{a_0^3}e^{-2r/a_0}\).
+        \(\dv{P}{r} = \dfrac{4}{a_0^3}\left(2r - \dfrac{2r^2}{a_0}\right)e^{-2r/a_0} = 0 \Rightarrow r = a_0\): نصف القطر الأكثر احتمالًا هو نصف قطر بور.
+        (ب) بوضع \(x = 2r/a_0\):
+        \[ P(r<a_0) = \frac12\int_0^{2}x^2e^{-x}\,dx = \frac12\left[2-(4+4+2)e^{-2}\right] = 1-5e^{-2} \approx 0.323. \]
+        لا يوجد الإلكترون على مسافة أقل من \(a_0\) إلا في نحو ثلث الوقت؛ ومتوسط بُعده \(\expval{r} = 1.5\,a_0\).
+  - title: { en: Normal Zeeman effect on the H-alpha line, ar: ظاهرة زيمان العادية على خط H-ألفا }
+    difficulty: 2
+    statement:
+      en: |
+        The red Balmer line of hydrogen (\(3 \to 2\), \(\lambda = 656.3\) nm) is observed in a magnetic field \(B = 1.00\) T. Ignoring electron spin (normal Zeeman effect):
+        (a) Into how many components does the line split, and why?
+        (b) Find the energy separation and the wavelength separation between adjacent components.
+      ar: |
+        يُرصد خط بالمر الأحمر للهيدروجين (\(3 \to 2\)، \(\lambda = 656.3\) nm) في مجال مغناطيسي \(B = 1.00\) T. بإهمال سبين الإلكترون (ظاهرة زيمان العادية):
+        (أ) إلى كم مركّبة ينشطر الخط، ولماذا؟
+        (ب) أوجد الفرق في الطاقة والفرق في طول الموجة بين مركّبتين متجاورتين.
+    hint:
+      en: 'Each level shifts by \(m_l\mu_BB\) with \(\mu_B = 5.788\times10^{-5}\) eV/T; the selection rule is \(\Delta m_l = 0, \pm1\). Use \(\abs{\Delta\lambda} = \lambda^2\Delta E/hc\).'
+      ar: 'ينزاح كل مستوى بمقدار \(m_l\mu_BB\) حيث \(\mu_B = 5.788\times10^{-5}\) eV/T؛ وقاعدة الانتقاء هي \(\Delta m_l = 0, \pm1\). استعمل \(\abs{\Delta\lambda} = \lambda^2\Delta E/hc\).'
+    solution:
+      en: |
+        (a) The photon energy becomes \(h\nu = h\nu_0 + \Delta m_l\,\mu_BB\). Since only \(\Delta m_l = 0,\pm1\) are allowed, the line splits into <strong>three</strong> equally spaced components, whatever the values of \(l\) involved.
+        (b) \(\Delta E = \mu_BB = 5.79\times10^{-5}\) eV. Then
+        \[ \abs{\Delta\lambda} = \frac{\lambda^2\,\Delta E}{hc} = \frac{(656.3\ \text{nm})^2(5.79\times10^{-5}\ \text{eV})}{1240\ \text{eV·nm}} \approx 2.01\times10^{-2}\ \text{nm}. \]
+        The splitting is tiny (0.003 % of \(\lambda\)), which is why a high-resolution spectrometer is needed. With spin included the pattern becomes the more complex anomalous Zeeman effect.
+      ar: |
+        (أ) تصبح طاقة الفوتون \(h\nu = h\nu_0 + \Delta m_l\,\mu_BB\). وبما أن الانتقالات المسموح بها هي \(\Delta m_l = 0,\pm1\) فقط، ينشطر الخط إلى <strong>ثلاث</strong> مركّبات متساوية التباعد، مهما كانت قيم \(l\) المعنية.
+        (ب) \(\Delta E = \mu_BB = 5.79\times10^{-5}\) eV. ومنه
+        \[ \abs{\Delta\lambda} = \frac{\lambda^2\,\Delta E}{hc} = \frac{(656.3\ \text{nm})^2(5.79\times10^{-5}\ \text{eV})}{1240\ \text{eV·nm}} \approx 2.01\times10^{-2}\ \text{nm}. \]
+        الانشطار ضئيل جدًا (0.003 % من \(\lambda\))، ولذلك نحتاج إلى مطياف عالي الدقة. وعند أخذ السبين في الحسبان يصبح النمط أعقد، وهو ظاهرة زيمان الشاذة.
+  - title: { en: Fermi energy of copper, ar: طاقة فيرمي للنحاس }
+    difficulty: 2
+    statement:
+      en: |
+        Copper has one conduction electron per atom and a free-electron density \(n = 8.47\times10^{28}\ \text{m}^{-3}\). Using the quantum free-electron model, compute the Fermi energy \(E_F = \frac{\hbar^2}{2m}(3\pi^2n)^{2/3}\) and the Fermi temperature \(T_F = E_F/k_B\). Comment on the result.
+      ar: |
+        في النحاس إلكترون توصيل واحد لكل ذرة، وكثافة الإلكترونات الحرة \(n = 8.47\times10^{28}\ \text{m}^{-3}\). باستعمال النموذج الكمومي للإلكترون الحر، احسب طاقة فيرمي \(E_F = \frac{\hbar^2}{2m}(3\pi^2n)^{2/3}\) ودرجة حرارة فيرمي \(T_F = E_F/k_B\). علّق على النتيجة.
+    hint:
+      en: 'Compute \(3\pi^2n\) first, then its \(2/3\) power; \(\hbar^2/2m_e = 6.10\times10^{-39}\ \text{J·m}^2\).'
+      ar: 'احسب أولًا \(3\pi^2n\) ثم ارفعه إلى القوة \(2/3\)؛ و\(\hbar^2/2m_e = 6.10\times10^{-39}\ \text{J·m}^2\).'
+    solution:
+      en: |
+        \(3\pi^2n = 29.61\times8.47\times10^{28} = 2.51\times10^{30}\ \text{m}^{-3}\), so \((3\pi^2n)^{2/3} = 1.85\times10^{20}\ \text{m}^{-2}\).
+        \[ E_F = (6.10\times10^{-39})(1.85\times10^{20}) = 1.13\times10^{-18}\ \text{J} = 7.04\ \text{eV}. \]
+        \[ T_F = \frac{E_F}{k_B} = \frac{7.04\ \text{eV}}{8.617\times10^{-5}\ \text{eV/K}} \approx 8.2\times10^{4}\ \text{K}. \]
+        Since \(T_F\) is hundreds of times room temperature, only electrons within about \(k_BT\) of \(E_F\) can be thermally excited. This explains why the electronic heat capacity of metals is far smaller than the classical prediction \(\frac32 k_B\) per electron.
+      ar: |
+        \(3\pi^2n = 29.61\times8.47\times10^{28} = 2.51\times10^{30}\ \text{m}^{-3}\)، إذن \((3\pi^2n)^{2/3} = 1.85\times10^{20}\ \text{m}^{-2}\).
+        \[ E_F = (6.10\times10^{-39})(1.85\times10^{20}) = 1.13\times10^{-18}\ \text{J} = 7.04\ \text{eV}. \]
+        \[ T_F = \frac{E_F}{k_B} = \frac{7.04\ \text{eV}}{8.617\times10^{-5}\ \text{eV/K}} \approx 8.2\times10^{4}\ \text{K}. \]
+        بما أن \(T_F\) تفوق درجة حرارة الغرفة بمئات المرات، فلا يمكن إثارة إلا الإلكترونات الواقعة في حدود \(k_BT\) تقريبًا من \(E_F\) حراريًا. وهذا يفسّر لماذا تكون السعة الحرارية الإلكترونية للمعادن أصغر بكثير من التوقع الكلاسيكي \(\frac32 k_B\) لكل إلكترون.
+  - title: { en: Binding energy of helium-4, ar: طاقة الربط لنواة الهيليوم-4 }
+    difficulty: 1
+    statement:
+      en: |
+        Using the atomic masses \(M(^4\text{He}) = 4.002603\) u, \(M(^1\text{H}) = 1.007825\) u and \(m_n = 1.008665\) u, compute the total binding energy of \(^4\text{He}\) and its binding energy per nucleon (\(1\ \text{u} = 931.494\ \text{MeV}/c^2\)).
+      ar: |
+        باستعمال الكتل الذرية \(M(^4\text{He}) = 4.002603\) u و\(M(^1\text{H}) = 1.007825\) u و\(m_n = 1.008665\) u، احسب طاقة الربط الكلية لنواة \(^4\text{He}\) وطاقة الربط لكل نوكليون (\(1\ \text{u} = 931.494\ \text{MeV}/c^2\)).
+    hint:
+      en: '\(B = \left[Z\,M(^1\text{H}) + N\,m_n - M(^A\text{X})\right]c^2\); using hydrogen atomic masses makes the electron masses cancel.'
+      ar: '\(B = \left[Z\,M(^1\text{H}) + N\,m_n - M(^A\text{X})\right]c^2\)؛ واستعمال الكتل الذرية للهيدروجين يجعل كتل الإلكترونات تُختزل.'
+    solution:
+      en: |
+        \[ \Delta M = 2(1.007825) + 2(1.008665) - 4.002603 = 4.032980 - 4.002603 = 0.030377\ \text{u}. \]
+        \[ B = 0.030377 \times 931.494\ \text{MeV} = 28.3\ \text{MeV}, \qquad \frac{B}{A} = \frac{28.3}{4} = 7.07\ \text{MeV per nucleon}. \]
+        This is unusually large for such a light nucleus (compare 1.11 MeV for the deuteron), which is why alpha particles are emitted as a unit in heavy-nucleus decays.
+      ar: |
+        \[ \Delta M = 2(1.007825) + 2(1.008665) - 4.002603 = 4.032980 - 4.002603 = 0.030377\ \text{u}. \]
+        \[ B = 0.030377 \times 931.494\ \text{MeV} = 28.3\ \text{MeV}, \qquad \frac{B}{A} = \frac{28.3}{4} = 7.07\ \text{MeV}. \]
+        أي 7.07 MeV لكل نوكليون، وهي قيمة كبيرة على نحو غير معتاد لنواة بهذه الخفة (قارنها بـ 1.11 MeV للديوترون)، ولهذا تنبعث جسيمات ألفا ككتلة واحدة في اضمحلال الأنوية الثقيلة.
+  - title: { en: Radiocarbon dating, ar: التأريخ بالكربون المشع }
+    difficulty: 2
+    statement:
+      en: |
+        Living wood has a \(^{14}\text{C}\) activity of 15.3 decays per minute per gram of carbon. A wooden artefact shows 3.8 decays per minute per gram. Given \(T_{1/2}(^{14}\text{C}) = 5730\) y, estimate the age of the artefact.
+      ar: |
+        للخشب الحي نشاطية \(^{14}\text{C}\) قدرها 15.3 تفككًا في الدقيقة لكل غرام من الكربون. وتُظهر قطعة أثرية خشبية 3.8 تفككات في الدقيقة لكل غرام. علمًا أن \(T_{1/2}(^{14}\text{C}) = 5730\) سنة، قدّر عمر القطعة.
+    hint:
+      en: '\(A(t) = A_0e^{-\lambda t}\) with \(\lambda = \ln2/T_{1/2}\).'
+      ar: '\(A(t) = A_0e^{-\lambda t}\) حيث \(\lambda = \ln2/T_{1/2}\).'
+    solution:
+      en: |
+        \[ t = \frac{1}{\lambda}\ln\frac{A_0}{A} = \frac{T_{1/2}}{\ln2}\ln\frac{15.3}{3.8} = \frac{5730\ \text{y}}{0.693}\times\ln(4.03) = 8267\ \text{y}\times1.393 \approx 1.15\times10^{4}\ \text{y}. \]
+        Check: the activity has dropped by a factor of about 4, i.e. two half-lives (11 460 y) — consistent.
+      ar: |
+        \[ t = \frac{1}{\lambda}\ln\frac{A_0}{A} = \frac{T_{1/2}}{\ln2}\ln\frac{15.3}{3.8} = \frac{5730\ \text{y}}{0.693}\times\ln(4.03) = 8267\ \text{y}\times1.393 \approx 1.15\times10^{4}\ \text{y}. \]
+        للتحقق: انخفضت النشاطية بعامل يقارب 4، أي ما يعادل عمرَي نصف (11460 سنة)، وهذا متّسق.
+
+quizzes:
+  - title: { en: Quantum mechanics in one dimension, ar: ميكانيكا الكم في بعد واحد }
+    questions:
+      - q:
+          en: 'For a particle in an infinite square well, what is the ratio \(E_3/E_1\)?'
+          ar: 'لجسيم في بئر مربع لانهائي، ما قيمة النسبة \(E_3/E_1\)؟'
+        options: ['3', '6', '27', '9']
+        answer: 3
+        explain:
+          en: '\(E_n = n^2E_1\), so \(E_3/E_1 = 9\).'
+          ar: '\(E_n = n^2E_1\)، إذن \(E_3/E_1 = 9\).'
+      - q:
+          en: 'According to the Born interpretation, \(|\Psi(x,t)|^2\,dx\) is:'
+          ar: 'حسب تفسير بورن، يمثّل \(|\Psi(x,t)|^2\,dx\):'
+        options:
+          - { en: The charge of the particle in dx, ar: شحنة الجسيم في dx }
+          - { en: 'The probability of finding the particle between x and x + dx at time t', ar: 'احتمال وجود الجسيم بين x وx + dx عند اللحظة t' }
+          - { en: The energy stored in dx, ar: الطاقة المخزّنة في dx }
+          - { en: The fraction of the particle located in dx, ar: جزء الجسيم الموجود في dx }
+        answer: 1
+        explain:
+          en: 'The wavefunction is a probability amplitude; its squared modulus is a probability density, which is why \(\Psi\) must be normalised.'
+          ar: 'الدالة الموجية سعة احتمال، ومربع طويلتها كثافة احتمال؛ ولهذا يجب تنظيم \(\Psi\).'
+      - q:
+          en: 'What is the lowest possible energy of a quantum harmonic oscillator of angular frequency \(\omega\)?'
+          ar: 'ما أدنى طاقة ممكنة لمتذبذب توافقي كمومي تردده الزاوي \(\omega\)؟'
+        options: ['\(0\)', '\(\hbar\omega/2\)', '\(\hbar\omega\)', '\(3\hbar\omega/2\)']
+        answer: 1
+        explain:
+          en: '\(E_n = (n+\frac12)\hbar\omega\); the zero-point energy \(\hbar\omega/2\) is required by the uncertainty principle — the particle cannot be at rest at the bottom of the well.'
+          ar: '\(E_n = (n+\frac12)\hbar\omega\)؛ وطاقة نقطة الصفر \(\hbar\omega/2\) يفرضها مبدأ الارتياب، إذ لا يمكن للجسيم أن يسكن في قاع البئر.'
+      - q:
+          en: 'Why can a single plane wave \(e^{i(kx-\omega t)}\) not represent a real free particle?'
+          ar: 'لماذا لا يمكن لموجة مستوية واحدة \(e^{i(kx-\omega t)}\) أن تمثّل جسيمًا حرًّا حقيقيًا؟'
+        options:
+          - { en: It does not satisfy the Schrödinger equation, ar: لأنها لا تحقق معادلة شرودنغر }
+          - { en: Its momentum is undefined, ar: لأن زخمها غير معرّف }
+          - { en: It cannot be normalised (uniform probability over all space), ar: لأنها غير قابلة للتنظيم (احتمال منتظم في كل الفضاء) }
+          - { en: Its energy is negative, ar: لأن طاقتها سالبة }
+        answer: 2
+        explain:
+          en: '\(|e^{i(kx-\omega t)}|^2 = 1\) everywhere, so the integral over all space diverges. Physical particles are wave packets — superpositions of plane waves (see the wave-packet animation).'
+          ar: '\(|e^{i(kx-\omega t)}|^2 = 1\) في كل مكان، فيتباعد التكامل على كامل الفضاء. الجسيمات الفيزيائية حُزم موجية، أي تراكبات لموجات مستوية (انظر الرسم المتحرك للحزمة الموجية).'
+      - q:
+          en: 'In one dimension, which operator represents the momentum \(p\)?'
+          ar: 'في بعد واحد، أي مؤثر يمثّل الزخم \(p\)؟'
+        options: ['\(i\hbar\,\partial/\partial x\)', '\(-i\hbar\,\partial/\partial x\)', '\(-i\hbar\,\partial/\partial t\)', '\(\hbar k x\)']
+        answer: 1
+        explain:
+          en: '\(\hat p = -i\hbar\,\partial/\partial x\): acting on \(e^{ikx}\) it gives \(\hbar k\,e^{ikx}\), in agreement with de Broglie''s \(p = \hbar k\).'
+          ar: '\(\hat p = -i\hbar\,\partial/\partial x\): بتأثيره على \(e^{ikx}\) نحصل على \(\hbar k\,e^{ikx}\)، وهذا يوافق علاقة دي برولي \(p = \hbar k\).'
+  - title: { en: QM in three dimensions and hydrogen, ar: ميكانيكا الكم في ثلاثة أبعاد والهيدروجين }
+    questions:
+      - q:
+          en: 'For a particle in a cubic box, the first excited level \((n_x,n_y,n_z) = (2,1,1)\) and permutations has degeneracy:'
+          ar: 'لجسيم في صندوق مكعب، درجة انحلال المستوى المثار الأول \((n_x,n_y,n_z) = (2,1,1)\) وتبديلاته هي:'
+        options: ['1', '2', '3', '6']
+        answer: 2
+        explain:
+          en: '\((2,1,1), (1,2,1), (1,1,2)\) all have \(E = 6E_0\): three states. The degeneracy comes from the cubic symmetry.'
+          ar: '\((2,1,1), (1,2,1), (1,1,2)\) لها جميعًا الطاقة \(E = 6E_0\): ثلاث حالات. وينشأ الانحلال من التناظر المكعبي.'
+      - q:
+          en: 'What is the energy of the \(n=2\) level of hydrogen?'
+          ar: 'ما طاقة المستوى \(n=2\) في ذرة الهيدروجين؟'
+        options: ['\(-13.6\) eV', '\(-6.8\) eV', '\(-3.4\) eV', '\(-1.51\) eV']
+        answer: 2
+        explain:
+          en: '\(E_n = -13.6\ \text{eV}/n^2\), so \(E_2 = -3.4\) eV (and \(E_3 = -1.51\) eV).'
+          ar: '\(E_n = -13.6\ \text{eV}/n^2\)، إذن \(E_2 = -3.4\) eV (و\(E_3 = -1.51\) eV).'
+      - q:
+          en: 'What is the magnitude of the orbital angular momentum of an electron with \(l = 1\)?'
+          ar: 'ما مقدار الزخم الزاوي المداري لإلكترون فيه \(l = 1\)؟'
+        options: ['\(\hbar\)', '\(\sqrt2\,\hbar\)', '\(2\hbar\)', '\(\hbar/2\)']
+        answer: 1
+        explain:
+          en: '\(|\vb{L}| = \sqrt{l(l+1)}\,\hbar = \sqrt2\,\hbar\) — larger than the maximum \(L_z = \hbar\), so \(\vb{L}\) can never point exactly along \(z\).'
+          ar: '\(|\vb{L}| = \sqrt{l(l+1)}\,\hbar = \sqrt2\,\hbar\)، وهو أكبر من القيمة العظمى \(L_z = \hbar\)، فلا يمكن لـ \(\vb{L}\) أن يتجه تمامًا على المحور \(z\).'
+      - q:
+          en: 'For \(l = 1\), \(m_l = 1\), what is the angle between \(\vb{L}\) and the \(z\)-axis?'
+          ar: 'من أجل \(l = 1\) و\(m_l = 1\)، ما الزاوية بين \(\vb{L}\) والمحور \(z\)؟'
+        options: ['\(0^\circ\)', '\(30^\circ\)', '\(45^\circ\)', '\(60^\circ\)']
+        answer: 2
+        explain:
+          en: '\(\cos\theta = m_l/\sqrt{l(l+1)} = 1/\sqrt2\), so \(\theta = 45^\circ\). This is space quantisation.'
+          ar: '\(\cos\theta = m_l/\sqrt{l(l+1)} = 1/\sqrt2\)، إذن \(\theta = 45^\circ\). وهذا هو التكميم الفضائي.'
+      - q:
+          en: 'Ignoring spin, how many states share the hydrogen energy level with principal quantum number \(n\)?'
+          ar: 'بإهمال السبين، كم حالة تشترك في مستوى الطاقة ذي العدد الكمومي الرئيسي \(n\) في ذرة الهيدروجين؟'
+        options: ['\(n\)', '\(2n+1\)', '\(2n^2\)', '\(n^2\)']
+        answer: 3
+        explain:
+          en: '\(\sum_{l=0}^{n-1}(2l+1) = n^2\). Including the two spin states gives \(2n^2\).'
+          ar: '\(\sum_{l=0}^{n-1}(2l+1) = n^2\). وبإضافة حالتي السبين نحصل على \(2n^2\).'
+  - title: { en: Atomic structure, ar: البنية الذرية }
+    questions:
+      - q:
+          en: 'In the normal Zeeman effect, a spectral line splits into how many components?'
+          ar: 'في ظاهرة زيمان العادية، إلى كم مركّبة ينشطر الخط الطيفي؟'
+        options: ['2', '3', '\(2l+1\)', '\(n^2\)']
+        answer: 1
+        explain:
+          en: 'The selection rule \(\Delta m_l = 0,\pm1\) allows only three photon energies, \(h\nu_0\) and \(h\nu_0\pm\mu_BB\).'
+          ar: 'قاعدة الانتقاء \(\Delta m_l = 0,\pm1\) لا تسمح إلا بثلاث طاقات للفوتون: \(h\nu_0\) و\(h\nu_0\pm\mu_BB\).'
+      - q:
+          en: 'What is the magnitude of the spin angular momentum of an electron?'
+          ar: 'ما مقدار الزخم الزاوي المغزلي (السبين) للإلكترون؟'
+        options: ['\(\hbar/2\)', '\(\hbar\)', '\(\frac{\sqrt3}{2}\hbar\)', '\(\sqrt2\,\hbar\)']
+        answer: 2
+        explain:
+          en: '\(|\vb{S}| = \sqrt{s(s+1)}\,\hbar\) with \(s = \frac12\): \(\frac{\sqrt3}{2}\hbar\). Its \(z\)-component is \(\pm\hbar/2\).'
+          ar: '\(|\vb{S}| = \sqrt{s(s+1)}\,\hbar\) مع \(s = \frac12\): \(\frac{\sqrt3}{2}\hbar\). ومركّبته على \(z\) تساوي \(\pm\hbar/2\).'
+      - q:
+          en: 'The two yellow sodium D lines (589.0 and 589.6 nm) are due to:'
+          ar: 'ينشأ خطّا الصوديوم الأصفران D (589.0 و589.6 nm) عن:'
+        options:
+          - { en: The Zeeman effect of the Earth's field, ar: ظاهرة زيمان الناتجة عن المجال الأرضي }
+          - { en: 'Spin–orbit splitting of the 3p level into \(3p_{3/2}\) and \(3p_{1/2}\)', ar: 'الانشطار المغزلي-المداري للمستوى 3p إلى \(3p_{3/2}\) و\(3p_{1/2}\)' }
+          - { en: Two different isotopes of sodium, ar: نظيرين مختلفين للصوديوم }
+          - { en: The hyperfine structure of the 3s level, ar: البنية فائقة الدقة للمستوى 3s }
+        answer: 1
+        explain:
+          en: 'Spin–orbit coupling splits 3p into \(j = 3/2\) and \(j = 1/2\) levels separated by about 2 meV; transitions from each to \(3s_{1/2}\) give the D2 and D1 lines.'
+          ar: 'يشطر الاقتران المغزلي-المداري المستوى 3p إلى مستويين \(j = 3/2\) و\(j = 1/2\) يفصل بينهما نحو 2 meV؛ والانتقالان منهما إلى \(3s_{1/2}\) يعطيان الخطين D2 وD1.'
+      - q:
+          en: 'According to Moseley''s law, the frequency of the \(K_\alpha\) X-ray line is proportional to:'
+          ar: 'حسب قانون موزلي، يتناسب تردد خط الأشعة السينية \(K_\alpha\) مع:'
+        options: ['\(Z\)', '\(Z^2\)', '\((Z-1)^2\)', '\(1/Z^2\)']
+        answer: 2
+        explain:
+          en: 'A 2p electron filling a 1s hole sees the nuclear charge screened by the remaining 1s electron: \(f \propto (Z-1)^2\). This allowed Moseley to order the elements by atomic number.'
+          ar: 'يرى إلكترون 2p الذي يملأ ثغرة في 1s شحنة النواة محجوبة بإلكترون 1s المتبقي: \(f \propto (Z-1)^2\). وقد مكّن ذلك موزلي من ترتيب العناصر حسب عددها الذري.'
+      - q:
+          en: 'What is the ground-state electron configuration of sodium (Z = 11)?'
+          ar: 'ما التوزيع الإلكتروني للحالة الأرضية للصوديوم (Z = 11)؟'
+        options:
+          - '\(1s^2\,2s^2\,2p^6\,3s^1\)'
+          - '\(1s^2\,2s^2\,2p^7\)'
+          - '\(1s^2\,2s^2\,2p^5\,3s^2\)'
+          - '\(1s^2\,2s^1\,2p^6\,3s^2\)'
+        answer: 0
+        explain:
+          en: 'The Pauli principle allows at most 2 electrons in s and 6 in p subshells; the 11th electron goes to 3s. One loosely bound outer electron makes sodium an alkali metal.'
+          ar: 'يسمح مبدأ باولي بإلكترونين على الأكثر في الطبقة الجزئية s وبستة في p؛ فيذهب الإلكترون الحادي عشر إلى 3s. ووجود إلكترون خارجي واحد ضعيف الارتباط يجعل الصوديوم فلزًا قلويًا.'
+  - title: { en: Solids and nuclei, ar: الأجسام الصلبة والأنوية }
+    questions:
+      - q:
+          en: 'In band theory, what distinguishes a metal from an insulator?'
+          ar: 'في نظرية العصابات، ما الذي يميّز المعدن عن العازل؟'
+        options:
+          - { en: The metal has more electrons per atom, ar: للمعدن عدد أكبر من الإلكترونات لكل ذرة }
+          - { en: The metal has a partially filled band; the insulator has a filled band separated by a large gap, ar: للمعدن عصابة مملوءة جزئيًا؛ أما العازل فعصابته مملوءة وتفصلها فجوة كبيرة }
+          - { en: Only metals have a band structure, ar: المعادن وحدها لها بنية عصابات }
+          - { en: The insulator has no valence electrons, ar: لا يملك العازل إلكترونات تكافؤ }
+        answer: 1
+        explain:
+          en: 'Electrons can be accelerated by a field only if empty states lie just above them. A partially filled band provides them; a full band separated by a gap of several eV does not. A semiconductor is an insulator with a small gap (Si: 1.1 eV).'
+          ar: 'لا يمكن للمجال أن يسرّع الإلكترونات إلا إذا وُجدت حالات فارغة فوقها مباشرة. والعصابة المملوءة جزئيًا توفّرها، أما العصابة الممتلئة التي تفصلها فجوة من عدة eV فلا. وشبه الموصل عازل ذو فجوة صغيرة (Si: 1.1 eV).'
+      - q:
+          en: 'Nuclear radii follow \(R = r_0A^{1/3}\). What is the ratio of the radius of a nucleus with \(A = 216\) to that of one with \(A = 27\)?'
+          ar: 'تتبع أنصاف أقطار الأنوية العلاقة \(R = r_0A^{1/3}\). ما نسبة نصف قطر نواة فيها \(A = 216\) إلى نصف قطر نواة فيها \(A = 27\)؟'
+        options: ['2', '4', '8', '1.5']
+        answer: 0
+        explain:
+          en: '\((216/27)^{1/3} = 8^{1/3} = 2\). Volume grows like \(A\): all nuclei have roughly the same density, about \(2.3\times10^{17}\ \text{kg/m}^3\).'
+          ar: '\((216/27)^{1/3} = 8^{1/3} = 2\). ويتناسب الحجم مع \(A\): فلكل الأنوية تقريبًا الكثافة نفسها، نحو \(2.3\times10^{17}\ \text{kg/m}^3\).'
+      - q:
+          en: 'The binding energy per nucleon is largest for nuclei near:'
+          ar: 'تكون طاقة الربط لكل نوكليون أكبر ما يمكن للأنوية القريبة من:'
+        options:
+          - '\(^{4}\text{He}\)'
+          - '\(^{56}\text{Fe}\)'
+          - '\(^{235}\text{U}\)'
+          - '\(^{12}\text{C}\)'
+        answer: 1
+        explain:
+          en: 'The curve peaks near iron and nickel (about 8.8 MeV per nucleon). This is why fusion of light nuclei and fission of heavy nuclei both release energy.'
+          ar: 'يبلغ المنحنى قمّته قرب الحديد والنيكل (نحو 8.8 MeV لكل نوكليون). ولهذا يحرّر كلٌّ من اندماج الأنوية الخفيفة وانشطار الأنوية الثقيلة طاقة.'
+      - q:
+          en: 'What fraction of a radioactive sample remains after three half-lives?'
+          ar: 'ما الجزء المتبقي من عيّنة مشعّة بعد ثلاثة أعمار نصف؟'
+        options: ['\(1/3\)', '\(1/6\)', '\(1/9\)', '\(1/8\)']
+        answer: 3
+        explain:
+          en: '\(N/N_0 = (1/2)^3 = 1/8\).'
+          ar: '\(N/N_0 = (1/2)^3 = 1/8\).'
+      - q:
+          en: 'In \(\beta^-\) decay, \(n \to p + e^- + \bar\nu_e\) inside the nucleus. How do \(Z\) and \(A\) change?'
+          ar: 'في اضمحلال \(\beta^-\) يحدث داخل النواة \(n \to p + e^- + \bar\nu_e\). كيف يتغير \(Z\) و\(A\)؟'
+        options:
+          - { en: 'Z decreases by 1, A unchanged', ar: 'ينقص Z بواحد، ويبقى A ثابتًا' }
+          - { en: 'Z increases by 1, A unchanged', ar: 'يزداد Z بواحد، ويبقى A ثابتًا' }
+          - { en: 'Z decreases by 2, A decreases by 4', ar: 'ينقص Z باثنين، وينقص A بأربعة' }
+          - { en: Both unchanged, ar: يبقى كلاهما ثابتًا }
+        answer: 1
+        explain:
+          en: 'A neutron becomes a proton: \(Z \to Z+1\) with the same \(A\). The antineutrino explains the continuous electron energy spectrum (option 3 describes alpha decay).'
+          ar: 'يتحول نيوترون إلى بروتون: \(Z \to Z+1\) مع بقاء \(A\). ويفسّر ضديد النيوترينو الطيف المتصل لطاقة الإلكترون (أما الخيار الثالث فيصف اضمحلال ألفا).'
+
+textbooks:
+  required:
+    - { authors: R. A. Serway / C. J. Moses / C. A. Moyer, title: Modern Physics, edition: 3rd, publisher: Cengage Learning, year: 2004 }
+  recommended:
+    - { authors: K. S. Krane, title: Modern Physics, edition: 3rd, publisher: John Wiley & Sons, year: 2012 }
+    - { authors: A. Beiser, title: Concepts of Modern Physics, edition: 6th, publisher: McGraw-Hill, year: 2002 }
+    - { authors: J. R. Taylor / C. D. Zafiratos / M. A. Dubson, title: Modern Physics for Scientists and Engineers, edition: 2nd, publisher: Pearson Prentice Hall, year: 2003 }
+    - { authors: H. Haken & H. C. Wolf, title: The Physics of Atoms and Quanta, edition: 7th, publisher: Springer, year: 2005 }
+    - { authors: J. C. Willmott, title: Atomic Physics, publisher: John Wiley & Sons, year: 1975 }
+  online:
+    - title: { en: MIT OCW 22.02 — Introduction to Applied Nuclear Physics, ar: مقرر MIT OCW 22.02 — مدخل إلى الفيزياء النووية التطبيقية }
+      url: https://ocw.mit.edu/courses/nuclear-engineering/22-02-introduction-to-applied-nuclear-physics-spring-2012/lecture-notes/MIT22_02S12_lec_ch1.pdf
+      note: { en: Lecture notes for the nuclear-structure chapter., ar: مذكرات دروس لفصل البنية النووية. }
+    - title: { en: Atomic and nuclear physics II — course page, ar: الفيزياء الذرية والنووية 2 — صفحة المقرر }
+      url: https://www.astro.uwo.ca/~jlandstr/p467/
+      note: { en: Lecture notes covering atomic structure and nuclei at a similar level., ar: مذكرات دروس تغطي البنية الذرية والأنوية بمستوى مماثل. }
+
+glossary:
+  - { en: Wavefunction, ar: الدالة الموجية, fr: Fonction d'onde, def: { en: Complex amplitude whose squared modulus gives the probability density of a particle., ar: سعة مركّبة يعطي مربع طويلتها كثافة احتمال وجود الجسيم. } }
+  - { en: Born interpretation, ar: تفسير بورن, fr: Interprétation de Born, def: { en: 'Statistical reading of \(|\Psi|^2\) as a probability density.', ar: 'القراءة الإحصائية لـ \(|\Psi|^2\) بوصفها كثافة احتمال.' } }
+  - { en: Normalisation, ar: التنظيم (الاستنظام), fr: Normalisation, def: { en: Condition that the total probability of finding the particle somewhere equals one., ar: شرط أن يساوي الاحتمال الكلي لوجود الجسيم في مكان ما واحدًا. } }
+  - { en: Wave packet, ar: الحزمة الموجية, fr: Paquet d'ondes, def: { en: Localised superposition of plane waves describing a particle., ar: تراكب متموضع لموجات مستوية يصف جسيمًا. } }
+  - { en: Infinite square well, ar: بئر الجهد اللانهائي, fr: Puits de potentiel infini, def: { en: Region of zero potential bounded by infinitely high walls; the 'particle in a box'., ar: منطقة جهدها صفر تحدّها جدران لانهائية الارتفاع؛ «الجسيم في صندوق». } }
+  - { en: Zero-point energy, ar: طاقة نقطة الصفر, fr: Énergie de point zéro, def: { en: 'Lowest, non-zero energy of a confined quantum system, e.g. \(\hbar\omega/2\) for the oscillator.', ar: 'أدنى طاقة غير معدومة لنظام كمومي محصور، مثل \(\hbar\omega/2\) للمتذبذب.' } }
+  - { en: Expectation value, ar: القيمة المتوقعة, fr: Valeur moyenne, def: { en: Average of many measurements of an observable on identically prepared systems., ar: متوسط قياسات عديدة لمقدار قابل للقياس على أنظمة محضّرة بشكل متطابق. } }
+  - { en: Operator, ar: المؤثر, fr: Opérateur, def: { en: Mathematical object acting on wavefunctions that represents an observable., ar: كائن رياضي يؤثر على الدوال الموجية ويمثّل مقدارًا قابلًا للقياس. } }
+  - { en: Tunnelling, ar: النفق الكمومي, fr: Effet tunnel, def: { en: Passage of a particle through a classically forbidden barrier., ar: عبور جسيم حاجزًا ممنوعًا كلاسيكيًا. } }
+  - { en: Degeneracy, ar: الانحلال, fr: Dégénérescence, def: { en: Several distinct states having the same energy., ar: اشتراك عدة حالات مختلفة في الطاقة نفسها. } }
+  - { en: Principal quantum number, ar: العدد الكمومي الرئيسي, fr: Nombre quantique principal, def: { en: 'Integer n that fixes the hydrogen energy \(E_n = -13.6\ \text{eV}/n^2\).', ar: 'العدد الصحيح n الذي يحدد طاقة الهيدروجين \(E_n = -13.6\ \text{eV}/n^2\).' } }
+  - { en: Space quantisation, ar: التكميم الفضائي, fr: Quantification spatiale, def: { en: 'Restriction of \(L_z\) to the values \(m_l\hbar\), i.e. discrete orientations of angular momentum.', ar: 'اقتصار \(L_z\) على القيم \(m_l\hbar\)، أي توجهات متقطعة للزخم الزاوي.' } }
+  - { en: Radial probability density, ar: كثافة الاحتمال القطرية, fr: Densité de probabilité radiale, def: { en: 'Probability per unit radius, \(P(r) = r^2|R(r)|^2\).', ar: 'الاحتمال لكل وحدة نصف قطر: \(P(r) = r^2|R(r)|^2\).' } }
+  - { en: Bohr magneton, ar: مغنطون بور, fr: Magnéton de Bohr, def: { en: '\(\mu_B = e\hbar/2m_e\), the natural unit of atomic magnetic moments.', ar: '\(\mu_B = e\hbar/2m_e\)، الوحدة الطبيعية للعزوم المغناطيسية الذرية.' } }
+  - { en: Zeeman effect, ar: ظاهرة زيمان, fr: Effet Zeeman, def: { en: Splitting of spectral lines in a magnetic field., ar: انشطار الخطوط الطيفية في مجال مغناطيسي. } }
+  - { en: Electron spin, ar: سبين الإلكترون, fr: Spin de l'électron, def: { en: 'Intrinsic angular momentum \(s = \frac12\) of the electron.', ar: 'الزخم الزاوي الذاتي \(s = \frac12\) للإلكترون.' } }
+  - { en: Spin–orbit coupling, ar: الاقتران المغزلي-المداري, fr: Couplage spin-orbite, def: { en: Interaction between the spin and the orbital motion of an electron that produces fine structure., ar: تفاعل بين السبين والحركة المدارية للإلكترون ينتج البنية الدقيقة. } }
+  - { en: Pauli exclusion principle, ar: مبدأ الاستبعاد لباولي, fr: Principe d'exclusion de Pauli, def: { en: No two electrons in an atom can have the same set of four quantum numbers., ar: لا يمكن لإلكترونين في ذرة أن يملكا المجموعة نفسها من الأعداد الكمومية الأربعة. } }
+  - { en: Moseley's law, ar: قانون موزلي, fr: Loi de Moseley, def: { en: 'Square root of the \(K_\alpha\) frequency is linear in \(Z-1\).', ar: 'الجذر التربيعي لتردد \(K_\alpha\) دالة خطية في \(Z-1\).' } }
+  - { en: Fermi energy, ar: طاقة فيرمي, fr: Énergie de Fermi, def: { en: Energy of the highest occupied electron state in a metal at absolute zero., ar: طاقة أعلى حالة إلكترونية مشغولة في معدن عند الصفر المطلق. } }
+  - { en: Energy band / band gap, ar: عصابة الطاقة / الفجوة الطاقية, fr: Bande d'énergie / bande interdite, def: { en: Allowed energy ranges of electrons in a crystal and the forbidden range between them., ar: مجالات الطاقة المسموح بها للإلكترونات في البلورة، والمجال الممنوع بينها. } }
+  - { en: Semiconductor, ar: شبه الموصل, fr: Semi-conducteur, def: { en: 'Solid with a small band gap (about 1 eV) whose conductivity rises with temperature and doping.', ar: 'جسم صلب ذو فجوة طاقية صغيرة (نحو 1 eV) تزداد ناقليته مع الحرارة والتطعيم.' } }
+  - { en: Superconductivity, ar: الموصلية الفائقة, fr: Supraconductivité, def: { en: Zero electrical resistance and expulsion of magnetic field (Meissner effect) below a critical temperature., ar: انعدام المقاومة الكهربائية وطرد المجال المغناطيسي (ظاهرة مايسنر) تحت درجة حرارة حرجة. } }
+  - { en: Nucleon, ar: النوكليون, fr: Nucléon, def: { en: A proton or a neutron., ar: بروتون أو نيوترون. } }
+  - { en: Binding energy, ar: طاقة الربط, fr: Énergie de liaison, def: { en: Energy needed to separate a nucleus into its free nucleons; equals the mass defect times c²., ar: الطاقة اللازمة لتفكيك النواة إلى نوكليوناتها الحرة؛ وتساوي النقص الكتلي مضروبًا في c². } }
+  - { en: Liquid-drop model, ar: نموذج القطرة السائلة, fr: Modèle de la goutte liquide, def: { en: Model treating the nucleus as an incompressible charged drop; basis of the semi-empirical mass formula., ar: نموذج يعامل النواة كقطرة مشحونة غير قابلة للانضغاط؛ وهو أساس صيغة الكتلة شبه التجريبية. } }
+  - { en: Shell model, ar: نموذج الطبقات, fr: Modèle en couches, def: { en: 'Model of nucleons in quantised orbits explaining the magic numbers 2, 8, 20, 28, 50, 82, 126.', ar: 'نموذج للنوكليونات في مدارات مكمّاة يفسّر الأعداد السحرية 2، 8، 20، 28، 50، 82، 126.' } }
+  - { en: Half-life, ar: عمر النصف, fr: Demi-vie, def: { en: 'Time for half of the nuclei of a sample to decay, \(T_{1/2} = \ln2/\lambda\).', ar: 'الزمن اللازم لاضمحلال نصف أنوية العيّنة: \(T_{1/2} = \ln2/\lambda\).' } }
+  - { en: Activity, ar: النشاطية الإشعاعية, fr: Activité, def: { en: 'Number of decays per second, \(A = \lambda N\), measured in becquerel.', ar: 'عدد التفككات في الثانية \(A = \lambda N\)، وتقاس بالبكريل.' } }
+  - { en: Alpha / beta / gamma decay, ar: اضمحلال ألفا / بيتا / غاما, fr: Désintégration alpha / bêta / gamma, def: { en: Emission of a helium nucleus / an electron or positron with a (anti)neutrino / a high-energy photon., ar: انبعاث نواة هيليوم / إلكترون أو بوزيترون مع (ضديد) نيوترينو / فوتون عالي الطاقة. } }

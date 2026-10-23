@@ -1,0 +1,880 @@
+slug: physics-training
+order: 140
+codes: [PHYS 390]
+short:
+  en: TRAIN
+  ar: تدريب
+title:
+  en: Physics Field Training
+  ar: التدريب الميداني في الفيزياء
+tagline:
+  en: A supervised placement in a laboratory, company or research group — from safety induction to the final defence.
+  ar: تدريب تحت الإشراف في مختبر أو مؤسسة أو فريق بحثي، من التهيئة على السلامة إلى المناقشة النهائية.
+area: skills
+level: 4
+credits: 3
+hours: { lecture: 0, tutorial: 1, lab: 0 }
+weeks: 14
+instruction: [en, ar]
+prerequisites: []
+prerequisite_note:
+  en: Department approval. Students normally take the training after completing the core experimental and theoretical courses of the first three years.
+  ar: موافقة القسم. يلتحق الطالب عادةً بالتدريب بعد إتمام المقررات التجريبية والنظرية الأساسية للسنوات الثلاث الأولى.
+sims: []
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/phys390-training/
+notes: >
+  The source page has only the course objective and a one-line description. It asks students to undertake
+  laboratory or research work in a public or private institution in a field of physics, collect data, perform analysis,
+  write a report and give a presentation. Its evaluation block (problem sets and periodic exams) is clearly
+  copied from a lecture-course template and was not used. Everything else was reconstructed from
+  standard physics internship and co-op syllabi. This includes the 14-week milestone schedule (2 weeks of
+  preparation, about 8 weeks on placement, 3 weeks of reporting and defence), the assessment scheme
+  (logbook, mid-placement and final reports, defence, employer evaluation, safety and ethics quiz), the CLOs,
+  the exam guide, the quizzes, the problems and the glossary. Credits (3) and placement length (at least 8 weeks
+  full time) are assumptions and should be checked. The source page links no material; its only link was a personal
+  office-hours timetable and was not carried over.
+
+description:
+  en: |
+    <p>Field training gives final-year students their first real professional experience as physicists. Each student spends a supervised placement of <strong>at least eight weeks</strong> in a host organisation. The host can be a university or government research laboratory, a hospital physics or radiation-protection unit, an industrial quality-control or metrology laboratory, an energy or telecommunications company, or a meteorological or geophysical service. There the student carries out a well-defined practical or research task in a specific field of physics.</p>
+    <p>The course is built around a sequence of milestones. Before the placement, students follow an induction on laboratory safety, research ethics and record keeping, and agree a work plan with their host. During the placement, they keep a dated logbook, meet their supervisors every week, collect and analyse data with a proper treatment of uncertainties, and submit a mid-placement progress report. Afterwards they write a final technical report and present their work in a poster or oral defence before a panel. The host supervisor contributes a formal evaluation of their professional conduct.</p>
+    <p>The training develops the skills that lecture courses cannot fully teach. These are working safely with real equipment, handling messy data honestly, managing time and deadlines, working in a team, and communicating results clearly to specialists and non-specialists.</p>
+  ar: |
+    <p>يمنح التدريب الميداني طلبة السنة النهائية أول تجربة مهنية حقيقية لهم كفيزيائيين. يقضي كل طالب فترة تدريب تحت الإشراف لا تقل عن <strong>ثمانية أسابيع</strong> في جهة مستضيفة. قد تكون الجهة مختبرًا بحثيًا جامعيًا أو حكوميًا، أو وحدة فيزياء طبية أو وقاية من الإشعاع في مستشفى، أو مختبرًا صناعيًا لمراقبة الجودة أو للقياسة، أو شركة طاقة أو اتصالات، أو مصلحة للأرصاد الجوية أو للجيوفيزياء. وهناك ينجز الطالب مهمة تطبيقية أو بحثية محددة في مجال من مجالات الفيزياء.</p>
+    <p>يُبنى المقرر على سلسلة من المراحل. قبل التدريب يتلقى الطالب تهيئة في السلامة المخبرية وأخلاقيات البحث وتوثيق العمل، ويتفق مع الجهة المستضيفة على خطة عمل. وأثناء التدريب يمسك دفتر يوميات مؤرخًا، ويلتقي مشرفيه أسبوعيًا، ويجمع المعطيات ويحللها مع معالجة سليمة للارتيابات، ويسلّم تقريرًا مرحليًا في منتصف التدريب. وبعده يكتب تقريرًا تقنيًا نهائيًا ويعرض عمله في ملصق علمي أو مناقشة شفهية أمام لجنة. ويقدّم المشرف في الجهة المستضيفة تقييمًا رسميًا لسلوكه المهني.</p>
+    <p>ينمّي التدريب مهارات لا تستطيع المقررات النظرية تعليمها بالكامل، منها العمل الآمن على أجهزة حقيقية، والتعامل النزيه مع معطيات غير مثالية، وإدارة الوقت والآجال، والعمل ضمن فريق، وإيصال النتائج بوضوح إلى المتخصصين وغير المتخصصين.</p>
+
+topics:
+  - { en: Placement & work plan, ar: التدريب وخطة العمل }
+  - { en: Laboratory safety, ar: السلامة المخبرية }
+  - { en: Research ethics, ar: أخلاقيات البحث العلمي }
+  - { en: Logbook & record keeping, ar: دفتر اليوميات وتوثيق العمل }
+  - { en: Data analysis & uncertainty, ar: تحليل المعطيات والارتياب }
+  - { en: Technical report writing, ar: كتابة التقرير التقني }
+  - { en: Poster & oral defence, ar: الملصق العلمي والمناقشة الشفهية }
+  - { en: Professional skills, ar: المهارات المهنية }
+
+outcomes:
+  - id: CLO1
+    bloom: apply
+    domain: skills
+    text:
+      en: Apply laboratory safety rules and carry out a simple risk assessment for the equipment and materials used in a professional environment.
+      ar: يطبّق قواعد السلامة المخبرية ويُجري تقييمًا بسيطًا للمخاطر المتعلقة بالأجهزة والمواد المستعملة في بيئة مهنية.
+    assessed_by: [safety, employer]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: Use physics knowledge and instrumentation to carry out a supervised practical or research task in a host organisation.
+      ar: يوظّف معارفه الفيزيائية والأجهزة لإنجاز مهمة تطبيقية أو بحثية تحت الإشراف في جهة مستضيفة.
+    assessed_by: [employer, logbook, finalreport]
+  - id: CLO3
+    bloom: analyze
+    domain: skills
+    text:
+      en: Collect, process and analyse experimental data, including fitting, propagation of uncertainties and critical comparison with expected values.
+      ar: يجمع المعطيات التجريبية ويعالجها ويحللها، بما في ذلك المطابقة ونقل الارتيابات والمقارنة النقدية مع القيم المتوقعة.
+    assessed_by: [midreport, finalreport]
+  - id: CLO4
+    bloom: create
+    domain: skills
+    text:
+      en: Write clear, well-structured mid-placement and final technical reports with properly labelled figures and references.
+      ar: يكتب تقريرًا مرحليًا وتقريرًا تقنيًا نهائيًا واضحين وحسني البنية، مع أشكال معنونة بدقة ومراجع موثّقة.
+    assessed_by: [midreport, finalreport]
+  - id: CLO5
+    bloom: create
+    domain: skills
+    text:
+      en: Present and defend the work in a poster or oral presentation, answering questions from a panel.
+      ar: يعرض عمله ويدافع عنه في ملصق علمي أو عرض شفهي، ويجيب عن أسئلة اللجنة.
+    assessed_by: [defence]
+  - id: CLO6
+    bloom: evaluate
+    domain: values
+    text:
+      en: Judge and follow the ethical rules of research and professional practice (data integrity, confidentiality, authorship, citation).
+      ar: يقدّر القواعد الأخلاقية للبحث والممارسة المهنية ويلتزم بها (نزاهة المعطيات، والسرية، والتأليف، والتوثيق).
+    assessed_by: [safety, logbook, employer]
+  - id: CLO7
+    bloom: apply
+    domain: values
+    text:
+      en: Behave professionally by managing time, communicating with supervisors and working effectively in a team.
+      ar: يتحلى بالسلوك المهني بإدارة وقته والتواصل مع مشرفيه والعمل بفعالية ضمن فريق.
+    assessed_by: [employer, logbook]
+  - id: CLO8
+    bloom: evaluate
+    domain: values
+    text:
+      en: Reflect critically on the skills gained during the placement and their relevance to future studies and career.
+      ar: يتأمل تأملًا نقديًا في المهارات المكتسبة خلال التدريب وصلتها بدراسته المستقبلية ومساره المهني.
+    assessed_by: [logbook, finalreport]
+
+assessment:
+  - id: safety
+    type: quiz
+    weight: 10
+    title:
+      en: Safety and ethics induction quiz
+      ar: اختبار التهيئة في السلامة والأخلاقيات
+    detail:
+      en: A 30-minute multiple-choice quiz on laboratory safety, research ethics, record keeping and basic data handling. A mark of at least 70% is required before the placement starts; it may be retaken once.
+      ar: اختبار متعدد الخيارات مدته 30 دقيقة في السلامة المخبرية وأخلاقيات البحث وتوثيق العمل ومبادئ معالجة المعطيات. يُشترط الحصول على 70% على الأقل قبل بدء التدريب، ويمكن إعادته مرة واحدة.
+    when:
+      en: Week 2
+      ar: الأسبوع 2
+  - id: logbook
+    type: portfolio
+    weight: 15
+    title:
+      en: Logbook and weekly records
+      ar: دفتر اليوميات والسجلات الأسبوعية
+    detail:
+      en: A dated, bound or electronic logbook recording every working day (tasks, settings, raw data, problems, decisions), signed weekly by the host supervisor, with a one-page summary after each weekly meeting and a final reflective statement.
+      ar: دفتر يوميات مؤرخ (ورقي مجلد أو إلكتروني) يسجّل كل يوم عمل (المهام، والإعدادات، والمعطيات الخام، والمشكلات، والقرارات)، يوقّعه المشرف في الجهة المستضيفة أسبوعيًا، مع ملخص من صفحة واحدة بعد كل لقاء أسبوعي وبيان تأملي ختامي.
+    when:
+      en: Weeks 3–14
+      ar: الأسابيع 3–14
+  - id: midreport
+    type: report
+    weight: 15
+    title:
+      en: Mid-placement progress report
+      ar: التقرير المرحلي لمنتصف التدريب
+    detail:
+      en: At most five pages, covering the context and objectives of the task, the methods learned, the first results with uncertainties, the difficulties met and an updated plan for the remaining weeks.
+      ar: خمس صفحات على الأكثر تتناول سياق المهمة وأهدافها، والطرائق المكتسبة، والنتائج الأولى مع ارتياباتها، والصعوبات المصادفة، وخطة محدّثة للأسابيع المتبقية.
+    when:
+      en: Week 7
+      ar: الأسبوع 7
+  - id: finalreport
+    type: report
+    weight: 30
+    title:
+      en: Final technical report
+      ar: التقرير التقني النهائي
+    detail:
+      en: A report of 20–30 pages with abstract, introduction, background, methods, results with uncertainty analysis, discussion, conclusion, references and appendices. A draft is reviewed in week 12. It is graded by the academic supervisor and a second reader.
+      ar: تقرير من 20–30 صفحة يضم ملخصًا ومقدمة وخلفية نظرية وطرائق ونتائج مع تحليل الارتيابات ومناقشة وخلاصة ومراجع وملاحق. تُراجَع مسودته في الأسبوع 12. ويقيّمه المشرف الأكاديمي وقارئ ثانٍ.
+    when:
+      en: Week 13
+      ar: الأسبوع 13
+  - id: defence
+    type: presentation
+    weight: 15
+    title:
+      en: Poster or oral defence
+      ar: الملصق العلمي أو المناقشة الشفهية
+    detail:
+      en: A 15-minute presentation (or an A0 poster session) followed by 10 minutes of questions from a panel of at least two examiners. The panel grades clarity, mastery of the physics, quality of the results and answers to questions.
+      ar: عرض مدته 15 دقيقة (أو جلسة ملصق علمي بمقاس A0) تليه 10 دقائق من أسئلة لجنة من ممتحنَين اثنين على الأقل. تقيّم اللجنة الوضوح والتمكن من الفيزياء وجودة النتائج والإجابة عن الأسئلة.
+    when:
+      en: Week 14
+      ar: الأسبوع 14
+  - id: employer
+    type: participation
+    weight: 15
+    title:
+      en: Host supervisor evaluation
+      ar: تقييم المشرف في الجهة المستضيفة
+    detail:
+      en: A standard form completed by the host supervisor. It rates attendance and punctuality, safety behaviour, technical competence, initiative, teamwork, communication and the quality of the work delivered.
+      ar: استمارة موحّدة يملؤها المشرف في الجهة المستضيفة لتقييم الحضور والانضباط في المواعيد، والالتزام بالسلامة، والكفاءة التقنية، وروح المبادرة، والعمل الجماعي، والتواصل، وجودة العمل المنجز.
+    when:
+      en: End of placement (week 11)
+      ar: نهاية التدريب (الأسبوع 11)
+
+schedule:
+  - week: 1
+    title:
+      en: Orientation and placement matching
+      ar: التوجيه وتحديد جهة التدريب
+    topics:
+      en:
+        - Aims, rules and assessment of the training
+        - Choosing a host organisation and a task
+        - Placement agreement and confidentiality
+      ar:
+        - أهداف التدريب وقواعده وطرق تقييمه
+        - اختيار الجهة المستضيفة والمهمة
+        - اتفاقية التدريب والسرية
+    activity:
+      en: Submit host preferences and CV
+      ar: تقديم رغبات جهة التدريب والسيرة الذاتية
+  - week: 2
+    title:
+      en: Safety, ethics and the logbook
+      ar: السلامة والأخلاقيات ودفتر اليوميات
+    topics:
+      en:
+        - General laboratory safety and risk assessment
+        - Research integrity, authorship and data ownership
+        - Keeping a logbook; data management
+      ar:
+        - السلامة المخبرية العامة وتقييم المخاطر
+        - النزاهة البحثية والتأليف وملكية المعطيات
+        - مسك دفتر اليوميات؛ إدارة المعطيات
+    reading: Taylor ch. 1–3; On Being a Scientist
+    activity:
+      en: Safety and ethics quiz
+      ar: اختبار السلامة والأخلاقيات
+    milestone: quiz
+  - week: 3
+    title:
+      en: Start of placement
+      ar: بداية التدريب
+    topics:
+      en:
+        - Induction at the host and site-specific safety rules
+        - Work plan and timeline (Gantt chart) agreed with the host supervisor
+      ar:
+        - التهيئة في الجهة المستضيفة وقواعد السلامة الخاصة بالموقع
+        - خطة العمل والجدول الزمني (مخطط غانت) بالاتفاق مع المشرف المستضيف
+    activity:
+      en: Submit signed work plan
+      ar: تسليم خطة العمل موقّعة
+  - week: 4
+    title:
+      en: Background and instruments
+      ar: الخلفية العلمية والأجهزة
+    topics:
+      en:
+        - Background reading on the task
+        - Learning the instruments and procedures
+      ar:
+        - قراءات حول خلفية المهمة
+        - التعرّف على الأجهزة والإجراءات
+    activity:
+      en: Weekly supervisor meeting; logbook signed
+      ar: اللقاء الأسبوعي مع المشرف؛ توقيع دفتر اليوميات
+  - week: 5
+    title:
+      en: Data collection
+      ar: جمع المعطيات
+    topics:
+      en:
+        - First measurements or simulations
+        - Calibration, file naming and back-ups
+      ar:
+        - القياسات أو المحاكاة الأولى
+        - المعايرة وتسمية الملفات والنسخ الاحتياطي
+    activity:
+      en: Weekly supervisor meeting; logbook signed
+      ar: اللقاء الأسبوعي مع المشرف؛ توقيع دفتر اليوميات
+  - week: 6
+    title:
+      en: Measurement and uncertainty
+      ar: القياس والارتياب
+    topics:
+      en:
+        - Random and systematic errors
+        - Propagation of uncertainties; least-squares fitting
+      ar:
+        - الأخطاء العشوائية والمنهجية
+        - نقل الارتيابات؛ المطابقة بطريقة المربعات الصغرى
+    reading: Taylor ch. 3–4 and 8
+    activity:
+      en: Weekly supervisor meeting; logbook signed
+      ar: اللقاء الأسبوعي مع المشرف؛ توقيع دفتر اليوميات
+  - week: 7
+    title:
+      en: Mid-placement review
+      ar: المراجعة المرحلية
+    topics:
+      en:
+        - Mid-placement progress report
+        - Site visit or video call by the academic supervisor
+      ar:
+        - التقرير المرحلي لمنتصف التدريب
+        - زيارة ميدانية أو اتصال مرئي من المشرف الأكاديمي
+    activity:
+      en: Mid-placement report due
+      ar: تسليم التقرير المرحلي
+    milestone: project
+  - week: 8
+    title:
+      en: Feedback and refinement
+      ar: التغذية الراجعة وتحسين العمل
+    topics:
+      en:
+        - Acting on the feedback on the mid-placement report
+        - Improving the method and repeating key measurements
+      ar:
+        - العمل بالملاحظات على التقرير المرحلي
+        - تحسين الطريقة وإعادة القياسات الأساسية
+    activity:
+      en: Weekly supervisor meeting; logbook signed
+      ar: اللقاء الأسبوعي مع المشرف؛ توقيع دفتر اليوميات
+  - week: 9
+    title:
+      en: Analysis and modelling
+      ar: التحليل والنمذجة
+    topics:
+      en:
+        - Comparing data with a model or specification
+        - Consistency tests and weighted means
+      ar:
+        - مقارنة المعطيات بنموذج أو بمواصفة
+        - اختبارات الاتساق والمتوسطات الموزونة
+    activity:
+      en: Weekly supervisor meeting; logbook signed
+      ar: اللقاء الأسبوعي مع المشرف؛ توقيع دفتر اليوميات
+  - week: 10
+    title:
+      en: Consolidating results
+      ar: تثبيت النتائج
+    topics:
+      en:
+        - Final figures and tables
+        - Preparing the hand-over of data and documentation to the host
+      ar:
+        - الأشكال والجداول النهائية
+        - تحضير تسليم المعطيات والوثائق للجهة المستضيفة
+    activity:
+      en: Weekly supervisor meeting; logbook signed
+      ar: اللقاء الأسبوعي مع المشرف؛ توقيع دفتر اليوميات
+  - week: 11
+    title:
+      en: End of placement
+      ar: نهاية التدريب
+    topics:
+      en:
+        - Final week at the host; hand-over
+        - Host supervisor evaluation form
+      ar:
+        - الأسبوع الأخير في الجهة المستضيفة؛ تسليم العمل
+        - استمارة تقييم المشرف المستضيف
+    activity:
+      en: Employer evaluation submitted; logbook closed
+      ar: إرسال تقييم الجهة المستضيفة؛ إغلاق دفتر اليوميات
+  - week: 12
+    title:
+      en: Writing the final report
+      ar: كتابة التقرير النهائي
+    topics:
+      en:
+        - Structure of a technical report; writing the abstract
+        - Figures, tables, references and appendices
+      ar:
+        - بنية التقرير التقني؛ كتابة الملخص
+        - الأشكال والجداول والمراجع والملاحق
+    reading: Gastel & Day, selected chapters
+    activity:
+      en: Draft report submitted for feedback
+      ar: تسليم مسودة التقرير لإبداء الملاحظات
+  - week: 13
+    title:
+      en: Final report and poster
+      ar: التقرير النهائي والملصق العلمي
+    topics:
+      en:
+        - Final report submission
+        - Designing a poster or slides
+      ar:
+        - تسليم التقرير النهائي
+        - تصميم الملصق العلمي أو الشرائح
+    activity:
+      en: Final report due
+      ar: موعد تسليم التقرير النهائي
+    milestone: project
+  - week: 14
+    title:
+      en: Defence
+      ar: المناقشة
+    topics:
+      en:
+        - Poster session or oral defence before the panel
+        - Reflective statement and course feedback
+      ar:
+        - جلسة الملصقات العلمية أو المناقشة الشفهية أمام اللجنة
+        - البيان التأملي وتقييم المقرر
+    milestone: final
+
+materials: []
+
+exams: []
+
+exam_guide:
+  format:
+    en: There is no written final exam. The main summative assessment is the defence, a 15-minute oral presentation (or an A0 poster session) followed by about 10 minutes of questions from a panel of at least two examiners. Before the placement there is also a 30-minute multiple-choice quiz on safety, ethics and data handling, with a pass mark of 70%.
+    ar: لا يوجد اختبار نهائي كتابي. التقييم الختامي الأساسي هو المناقشة، وهي عرض شفهي مدته 15 دقيقة (أو جلسة ملصق علمي بمقاس A0) تليه نحو 10 دقائق من أسئلة لجنة من ممتحنَين اثنين على الأقل. ويسبق التدريبَ اختبار متعدد الخيارات مدته 30 دقيقة في السلامة والأخلاقيات ومعالجة المعطيات، وعلامة النجاح فيه 70%.
+  allowed:
+    en: For the defence, bring your slides or poster, your logbook and a printed copy of the final report. For the induction quiz, a calculator is allowed but no notes.
+    ar: 'في المناقشة: أحضر شرائحك أو ملصقك، ودفتر اليوميات، ونسخة مطبوعة من التقرير النهائي. وفي اختبار التهيئة: يُسمح بالآلة الحاسبة دون المذكرات.'
+  tips:
+    - en: Rehearse your talk aloud at least twice and keep to time; the panel will stop you at 15 minutes.
+      ar: تدرّب على عرضك بصوت عالٍ مرتين على الأقل والتزم بالوقت، فاللجنة ستوقفك عند 15 دقيقة.
+    - en: Explain the physics behind your task in simple terms before showing results, because examiners may not know your host's field.
+      ar: اشرح الفيزياء وراء مهمتك بعبارات بسيطة قبل عرض النتائج، فقد لا يكون الممتحنون مختصين في مجال الجهة المستضيفة.
+    - en: Every number on a slide needs a unit and an uncertainty, and every graph needs labelled axes.
+      ar: كل عدد في الشرائح يحتاج وحدة وارتيابًا، وكل منحنى يحتاج محاور معنونة.
+    - en: Be honest about what did not work and what you would do next; this shows maturity and is rewarded.
+      ar: كن صريحًا بشأن ما لم ينجح وما كنت ستفعله لاحقًا، فهذا يدل على النضج ويُكافأ عليه.
+    - en: Respect confidentiality, and show only data that the host has allowed you to present.
+      ar: احترم السرية، ولا تعرض إلا المعطيات التي أذنت لك الجهة المستضيفة بعرضها.
+
+problems:
+  - title:
+      en: Order-of-magnitude estimates in the laboratory
+      ar: تقديرات رتبة المقدار في المختبر
+    difficulty: 1
+    statement:
+      en: |
+        (a) Estimate the mass of air in a laboratory measuring 10 m × 8 m × 3 m.
+        <br>(b) A helium–neon laser emits 1.0 mW at \(\lambda = 632.8\ \text{nm}\). How many photons does it emit per second?
+      ar: |
+        (أ) قدّر كتلة الهواء في مختبر أبعاده 10 m × 8 m × 3 m.
+        <br>(ب) ليزر هيليوم–نيون يُصدر قدرة 1.0 mW عند \(\lambda = 632.8\ \text{nm}\). كم فوتونًا يُصدر في الثانية؟
+    hint:
+      en: 'Air density at room conditions is about \(1.2\ \text{kg m}^{-3}\). Photon energy \(E = hc/\lambda\), with \(hc = 1.986\times10^{-25}\ \text{J m}\).'
+      ar: 'كثافة الهواء في الظروف العادية نحو \(1.2\ \text{kg m}^{-3}\). وطاقة الفوتون \(E = hc/\lambda\) حيث \(hc = 1.986\times10^{-25}\ \text{J m}\).'
+    solution:
+      en: |
+        (a) \(V = 10\times8\times3 = 240\ \text{m}^3\), so \(m = \rho V \approx 1.2\times240 \approx 290\ \text{kg}\). Roughly 300 kg of air, which is more than most of the equipment in the room.
+        <br>(b) \(E = \dfrac{hc}{\lambda} = \dfrac{1.986\times10^{-25}}{632.8\times10^{-9}} = 3.14\times10^{-19}\ \text{J}\ (\approx 1.96\ \text{eV})\).
+        \[ \dot N = \frac{P}{E} = \frac{1.0\times10^{-3}}{3.14\times10^{-19}} \approx 3.2\times10^{15}\ \text{photons s}^{-1}. \]
+        Such estimates are useful for checking that a reading is plausible before trusting it.
+      ar: |
+        (أ) \(V = 10\times8\times3 = 240\ \text{m}^3\)، ومنه \(m = \rho V \approx 1.2\times240 \approx 290\ \text{kg}\)، أي نحو 300 kg من الهواء، وهو أكثر من كتلة معظم أجهزة المختبر.
+        <br>(ب) \(E = \dfrac{hc}{\lambda} = \dfrac{1.986\times10^{-25}}{632.8\times10^{-9}} = 3.14\times10^{-19}\ \text{J}\ (\approx 1.96\ \text{eV})\).
+        \[ \dot N = \frac{P}{E} = \frac{1.0\times10^{-3}}{3.14\times10^{-19}} \approx 3.2\times10^{15}\ \text{photons s}^{-1}. \]
+        وتفيد هذه التقديرات في التحقق من معقولية قراءة ما قبل الوثوق بها.
+  - title:
+      en: Propagating uncertainties — the pendulum
+      ar: نقل الارتيابات — النواس
+    difficulty: 2
+    statement:
+      en: |
+        During a calibration task you measure a pendulum of length \(L = 1.000 \pm 0.002\ \text{m}\). Twenty oscillations take \(40.1 \pm 0.2\ \text{s}\). Find \(g = 4\pi^2L/T^2\) with its uncertainty, and say which measurement limits the precision.
+      ar: |
+        خلال مهمة معايرة تقيس نواسًا طوله \(L = 1.000 \pm 0.002\ \text{m}\). وتستغرق عشرون اهتزازة \(40.1 \pm 0.2\ \text{s}\). أوجد \(g = 4\pi^2L/T^2\) مع ارتيابه، وبيّن أي القياسين يحدّ من الدقة.
+    hint:
+      en: 'Timing 20 periods divides the timing uncertainty by 20. For a product of powers, \(\left(\delta g/g\right)^2 = \left(\delta L/L\right)^2 + \left(2\,\delta T/T\right)^2\).'
+      ar: 'توقيت 20 دورًا يقسم ارتياب التوقيت على 20. ولجداء قوى: \(\left(\delta g/g\right)^2 = \left(\delta L/L\right)^2 + \left(2\,\delta T/T\right)^2\).'
+    solution:
+      en: |
+        \(T = 40.1/20 = 2.005\ \text{s}\), \(\delta T = 0.2/20 = 0.010\ \text{s}\).
+        \[ g = \frac{4\pi^2(1.000)}{(2.005)^2} = 9.82\ \text{m s}^{-2}. \]
+        Relative uncertainties: \(\delta L/L = 0.2\%\); \(2\,\delta T/T = 2(0.010/2.005) = 1.0\%\).
+        \[ \frac{\delta g}{g} = \sqrt{(0.002)^2 + (0.0100)^2} = 1.0\%, \qquad \delta g = 0.10\ \text{m s}^{-2}. \]
+        Result: \(g = 9.82 \pm 0.10\ \text{m s}^{-2}\). The timing dominates, so to improve the result you should time more oscillations or use a light gate. Measuring \(L\) more precisely would not help.
+      ar: |
+        \(T = 40.1/20 = 2.005\ \text{s}\)، و\(\delta T = 0.2/20 = 0.010\ \text{s}\).
+        \[ g = \frac{4\pi^2(1.000)}{(2.005)^2} = 9.82\ \text{m s}^{-2}. \]
+        الارتيابات النسبية: \(\delta L/L = 0.2\%\)؛ و\(2\,\delta T/T = 2(0.010/2.005) = 1.0\%\).
+        \[ \frac{\delta g}{g} = \sqrt{(0.002)^2 + (0.0100)^2} = 1.0\%, \qquad \delta g = 0.10\ \text{m s}^{-2}. \]
+        النتيجة: \(g = 9.82 \pm 0.10\ \text{m s}^{-2}\). التوقيت هو العامل المهيمن، فلتحسين النتيجة ينبغي توقيت عدد أكبر من الاهتزازات أو استعمال بوابة ضوئية. أما تحسين قياس \(L\) فلن يفيد.
+  - title:
+      en: Are two results consistent? Combining measurements
+      ar: هل النتيجتان متسقتان؟ دمج القياسات
+    difficulty: 2
+    statement:
+      en: |
+        Your pendulum gives \(g_1 = 9.82 \pm 0.10\ \text{m s}^{-2}\). The host laboratory's free-fall apparatus gives \(g_2 = 9.75 \pm 0.04\ \text{m s}^{-2}\). (a) Are the two results consistent? (b) Find the best combined value and its uncertainty.
+      ar: |
+        أعطى نواسك \(g_1 = 9.82 \pm 0.10\ \text{m s}^{-2}\)، وأعطى جهاز السقوط الحر في المختبر المستضيف \(g_2 = 9.75 \pm 0.04\ \text{m s}^{-2}\). (أ) هل النتيجتان متسقتان؟ (ب) أوجد أفضل قيمة مدمجة وارتيابها.
+    hint:
+      en: 'Compare the difference with \(\sigma = \sqrt{\sigma_1^2 + \sigma_2^2}\). Use the weighted mean with weights \(w_i = 1/\sigma_i^2\).'
+      ar: 'قارن الفرق بـ \(\sigma = \sqrt{\sigma_1^2 + \sigma_2^2}\). واستعمل المتوسط الموزون بأوزان \(w_i = 1/\sigma_i^2\).'
+    solution:
+      en: |
+        (a) \(\abs{g_1 - g_2} = 0.07\), \(\sigma = \sqrt{0.10^2 + 0.04^2} = 0.108\). The difference is \(0.07/0.108 \approx 0.65\sigma\), well below \(2\sigma\), so the results are consistent.
+        <br>(b) \(w_1 = 1/0.10^2 = 100\), \(w_2 = 1/0.04^2 = 625\).
+        \[ \bar g = \frac{100(9.82) + 625(9.75)}{725} = 9.760, \qquad \sigma_{\bar g} = \frac{1}{\sqrt{725}} = 0.037. \]
+        Best value: \(g = 9.76 \pm 0.04\ \text{m s}^{-2}\). It is dominated by the more precise free-fall result, as it should be.
+      ar: |
+        (أ) \(\abs{g_1 - g_2} = 0.07\)، و\(\sigma = \sqrt{0.10^2 + 0.04^2} = 0.108\). الفرق \(0.07/0.108 \approx 0.65\sigma\)، وهو أقل بكثير من \(2\sigma\)، فالنتيجتان متسقتان.
+        <br>(ب) \(w_1 = 1/0.10^2 = 100\)، و\(w_2 = 1/0.04^2 = 625\).
+        \[ \bar g = \frac{100(9.82) + 625(9.75)}{725} = 9.760, \qquad \sigma_{\bar g} = \frac{1}{\sqrt{725}} = 0.037. \]
+        أفضل قيمة: \(g = 9.76 \pm 0.04\ \text{m s}^{-2}\). وهي تميل إلى نتيجة السقوط الحر الأدق، كما ينبغي.
+  - title:
+      en: Least-squares fit of a resistor's I–V data
+      ar: مطابقة معطيات التيار والجهد لمقاومة بالمربعات الصغرى
+    difficulty: 3
+    statement:
+      en: |
+        A quality-control test of a resistor gives:
+        <br>\(V\) (V): 1.0, 2.0, 3.0, 4.0, 5.0
+        <br>\(I\) (mA): 2.1, 4.0, 6.1, 7.9, 10.0
+        <br>Fit \(I = a + bV\) by least squares, estimate the uncertainty in \(b\) from the scatter of the points, and deduce \(R\). Is the intercept significant?
+      ar: |
+        أعطى اختبار لمراقبة جودة مقاومة ما يلي:
+        <br>\(V\) (V): 1.0, 2.0, 3.0, 4.0, 5.0
+        <br>\(I\) (mA): 2.1, 4.0, 6.1, 7.9, 10.0
+        <br>طابق العلاقة \(I = a + bV\) بطريقة المربعات الصغرى، وقدّر ارتياب \(b\) من تشتت النقاط، واستنتج \(R\). هل للمقطع \(a\) دلالة؟
+    hint:
+      en: '\(b = S_{xy}/S_{xx}\) with \(S_{xx} = \sum(x-\bar x)^2\) and \(S_{xy} = \sum(x-\bar x)(y-\bar y)\); \(a = \bar y - b\bar x\). Then \(s^2 = \sum r_i^2/(N-2)\) and \(\sigma_b = s/\sqrt{S_{xx}}\).'
+      ar: '\(b = S_{xy}/S_{xx}\) حيث \(S_{xx} = \sum(x-\bar x)^2\) و\(S_{xy} = \sum(x-\bar x)(y-\bar y)\)؛ و\(a = \bar y - b\bar x\). ثم \(s^2 = \sum r_i^2/(N-2)\) و\(\sigma_b = s/\sqrt{S_{xx}}\).'
+    solution:
+      en: |
+        \(\bar V = 3.0\ \text{V}\), \(\bar I = 30.1/5 = 6.02\ \text{mA}\), \(S_{xx} = 4+1+0+1+4 = 10\ \text{V}^2\).
+        \[ S_{xy} = (-2)(-3.92) + (-1)(-2.02) + 0 + (1)(1.88) + (2)(3.98) = 19.70\ \text{V mA}. \]
+        \(b = 19.70/10 = 1.970\ \text{mA V}^{-1}\), \(a = 6.02 - 1.970\times3.0 = 0.11\ \text{mA}\).
+        <br>Residuals \(r_i = I_i - (a + bV_i)\): \(+0.02, -0.05, +0.08, -0.09, +0.04\) mA, so \(\sum r_i^2 = 0.019\).
+        \[ s = \sqrt{0.019/3} = 0.080\ \text{mA}, \qquad \sigma_b = \frac{0.080}{\sqrt{10}} = 0.025\ \text{mA V}^{-1}. \]
+        \(R = 1/b = 1/(1.970\times10^{-3}\ \text{A V}^{-1}) = 508\ \Omega\), with relative uncertainty \(0.025/1.970 = 1.3\%\), so \(R = 508 \pm 7\ \Omega\).
+        <br>Intercept: \(\sigma_a = s\sqrt{1/N + \bar x^2/S_{xx}} = 0.080\sqrt{0.2 + 0.9} = 0.084\ \text{mA}\). Since \(a = 0.11 \pm 0.08\ \text{mA}\) is within about \(1.3\sigma\) of zero, it is not significant, and the data are consistent with Ohm's law through the origin.
+      ar: |
+        \(\bar V = 3.0\ \text{V}\)، و\(\bar I = 30.1/5 = 6.02\ \text{mA}\)، و\(S_{xx} = 4+1+0+1+4 = 10\ \text{V}^2\).
+        \[ S_{xy} = (-2)(-3.92) + (-1)(-2.02) + 0 + (1)(1.88) + (2)(3.98) = 19.70\ \text{V mA}. \]
+        \(b = 19.70/10 = 1.970\ \text{mA V}^{-1}\)، و\(a = 6.02 - 1.970\times3.0 = 0.11\ \text{mA}\).
+        <br>البواقي \(r_i = I_i - (a + bV_i)\): \(+0.02, -0.05, +0.08, -0.09, +0.04\) mA، ومنه \(\sum r_i^2 = 0.019\).
+        \[ s = \sqrt{0.019/3} = 0.080\ \text{mA}, \qquad \sigma_b = \frac{0.080}{\sqrt{10}} = 0.025\ \text{mA V}^{-1}. \]
+        \(R = 1/b = 1/(1.970\times10^{-3}\ \text{A V}^{-1}) = 508\ \Omega\)، وارتيابها النسبي \(0.025/1.970 = 1.3\%\)، إذن \(R = 508 \pm 7\ \Omega\).
+        <br>المقطع: \(\sigma_a = s\sqrt{1/N + \bar x^2/S_{xx}} = 0.080\sqrt{0.2 + 0.9} = 0.084\ \text{mA}\). وبما أن \(a = 0.11 \pm 0.08\ \text{mA}\) لا يبعد عن الصفر إلا بنحو \(1.3\sigma\)، فليست له دلالة، والمعطيات متسقة مع قانون أوم المار بالمبدأ.
+  - title:
+      en: An inconvenient data point (ethics case study)
+      ar: نقطة قياس مزعجة (دراسة حالة أخلاقية)
+    difficulty: 2
+    statement:
+      en: |
+        Two days before your mid-placement report is due, one of twelve calibration points lies far from the straight line that fits all the others. With that point removed the fit looks perfect, and a colleague suggests simply deleting it from the spreadsheet. What should you do? Give a step-by-step answer.
+      ar: |
+        قبل يومين من موعد تسليم التقرير المرحلي، تقع نقطة واحدة من اثنتي عشرة نقطة معايرة بعيدًا عن الخط المستقيم الذي يطابق النقاط الأخرى. وبحذفها تبدو المطابقة مثالية، فيقترح عليك زميل أن تحذفها ببساطة من جدول المعطيات. ماذا ينبغي أن تفعل؟ أجب خطوة بخطوة.
+    hint:
+      en: Distinguish between rejecting a point for a documented reason and hiding a point because it is inconvenient. What does your logbook say?
+      ar: ميّز بين استبعاد نقطة لسبب موثّق وإخفائها لأنها مزعجة. ماذا يقول دفتر يومياتك؟
+    solution:
+      en: |
+        <em>Model answer.</em>
+        <br>1. <strong>Do not delete the raw data.</strong> Removing a point without justification is falsification, a serious breach of research integrity, even in an internship report.
+        <br>2. <strong>Check the logbook</strong> for that measurement. Was there a note about a loose cable, a range change, a temperature drift or a typing error? If a documented cause exists, the point may be excluded. You must state this explicitly in the report, giving the reason, and keep the raw value in an appendix.
+        <br>3. <strong>Test it statistically</strong>. How many standard deviations is it from the fit? With 12 points, one point at about \(3\sigma\) is unlikely (probability about 0.3% each). One at about \(2\sigma\) is quite normal and must stay.
+        <br>4. <strong>Repeat the measurement</strong> if the set-up is still available. This is the most convincing answer.
+        <br>5. <strong>Report transparently</strong>. Show the fit with and without the point if necessary, and discuss the possible physical meaning; an "outlier" is sometimes a real effect. Tell your supervisor before the deadline rather than after.
+      ar: |
+        <em>جواب نموذجي.</em>
+        <br>1. <strong>لا تحذف المعطيات الخام.</strong> فحذف نقطة دون مبرر تزوير للمعطيات، وهو خرق جسيم للنزاهة البحثية حتى في تقرير تدريب.
+        <br>2. <strong>راجع دفتر اليوميات</strong> عند ذلك القياس. هل دُوّنت ملاحظة عن سلك مرتخٍ أو تغيير في المدى أو انجراف في درجة الحرارة أو خطأ في الإدخال؟ إذا وُجد سبب موثّق جاز استبعاد النقطة. ويجب التصريح بذلك في التقرير مع ذكر السبب، والاحتفاظ بالقيمة الخام في ملحق.
+        <br>3. <strong>اختبرها إحصائيًا</strong>. كم انحرافًا معياريًا تبعد عن المطابقة؟ مع 12 نقطة، يُستبعد وجود نقطة على بعد \(3\sigma\) تقريبًا (احتمال نحو 0.3% لكل نقطة). أما نقطة على بعد \(2\sigma\) تقريبًا فأمر طبيعي جدًا ويجب إبقاؤها.
+        <br>4. <strong>أعد القياس</strong> إن كان التركيب التجريبي ما يزال متاحًا. وهذا هو الجواب الأكثر إقناعًا.
+        <br>5. <strong>اعرض النتائج بشفافية</strong>. اعرض المطابقة بالنقطة ودونها إن لزم الأمر، وناقش معناها الفيزيائي المحتمل، فالنقطة الشاذة قد تكون أحيانًا أثرًا حقيقيًا. وأبلغ مشرفك قبل الموعد لا بعده.
+  - title:
+      en: From logbook to progress report
+      ar: من دفتر اليوميات إلى التقرير المرحلي
+    difficulty: 2
+    statement:
+      en: |
+        Turn these logbook entries into the "Progress and difficulties" section of a mid-placement report (about 120 words, formal style, past tense, passive where appropriate).
+        <br><em>Wk 3: induction, safety training, read manual of XRD machine. Wk 4: learnt sample prep, 3 test samples, one cracked. Wk 5: 8 samples measured, peak positions OK vs database, intensity low on 2 – maybe bad mounting. Wk 6: remeasured 2 → fine now. Fitting peaks with Python, Scherrer size ~25 nm.</em>
+      ar: |
+        حوّل مداخل دفتر اليوميات التالية إلى قسم "التقدم والصعوبات" في تقرير مرحلي (نحو 120 كلمة، بأسلوب رسمي، بالزمن الماضي، وبالمبني للمجهول حيث يناسب).
+        <br><em>Wk 3: induction, safety training, read manual of XRD machine. Wk 4: learnt sample prep, 3 test samples, one cracked. Wk 5: 8 samples measured, peak positions OK vs database, intensity low on 2 – maybe bad mounting. Wk 6: remeasured 2 → fine now. Fitting peaks with Python, Scherrer size ~25 nm.</em>
+    hint:
+      en: 'Organise by theme, not day by day: training → measurements → problem and solution → current status and next steps. Spell out abbreviations (XRD = X-ray diffraction) and give numbers with units.'
+      ar: 'نظّم المحتوى حسب المواضيع لا حسب الأيام: التكوين ← القياسات ← المشكلة وحلها ← الوضع الحالي والخطوات القادمة. اكتب الاختصارات كاملة (XRD = حيود الأشعة السينية) وأرفق الأعداد بوحداتها.'
+    solution:
+      en: |
+        <em>Model answer:</em> “During the first week, safety training was completed and the operating procedure of the X-ray diffractometer (XRD) was studied. Sample preparation was then learnt on three test samples, one of which cracked during mounting. In week 5, eight samples were measured. The peak positions agreed with the reference database, but two samples gave unusually low intensities, probably because of poor mounting. These two samples were remounted and remeasured in week 6, and the intensities were then normal. The diffraction peaks are currently being fitted with a Python script, and the Scherrer equation gives a mean crystallite size of about 25 nm. The next step is to estimate the uncertainty of this size and to compare it with electron-microscopy data.”
+      ar: |
+        <em>جواب نموذجي (بالإنجليزية كما يُكتب التقرير):</em> “During the first week, safety training was completed and the operating procedure of the X-ray diffractometer (XRD) was studied. Sample preparation was then learnt on three test samples, one of which cracked during mounting. In week 5, eight samples were measured. The peak positions agreed with the reference database, but two samples gave unusually low intensities, probably because of poor mounting. These two samples were remounted and remeasured in week 6, and the intensities were then normal. The diffraction peaks are currently being fitted with a Python script, and the Scherrer equation gives a mean crystallite size of about 25 nm. The next step is to estimate the uncertainty of this size and to compare it with electron-microscopy data.”
+        <br>لاحظ: التنظيم حسب المواضيع، وتحويل الملاحظات المختصرة إلى جمل كاملة، والصراحة في ذكر المشكلة وحلها، والختام بالخطوة القادمة.
+
+quizzes:
+  - title:
+      en: Laboratory safety
+      ar: السلامة المخبرية
+    questions:
+      - q:
+          en: Before using an unfamiliar chemical or material, the first document to consult is its
+          ar: قبل استعمال مادة كيميائية أو مادة غير مألوفة، أول وثيقة ينبغي الرجوع إليها هي
+        options:
+          - { en: purchase invoice, ar: فاتورة الشراء }
+          - { en: Safety Data Sheet (SDS), ar: صحيفة بيانات السلامة (SDS) }
+          - { en: last year's lab report, ar: تقرير المختبر للسنة الماضية }
+          - { en: supplier's catalogue price list, ar: قائمة أسعار المورّد }
+        answer: 1
+        explain:
+          en: The Safety Data Sheet lists the hazards, safe handling, storage, required protective equipment and first-aid measures for the substance.
+          ar: تبيّن صحيفة بيانات السلامة مخاطر المادة وطرق التعامل الآمن معها وتخزينها ومعدات الوقاية اللازمة وإجراءات الإسعاف الأولي.
+      - q:
+          en: In the hierarchy of hazard controls, which measure is the MOST effective?
+          ar: في هرم التحكم في المخاطر، أي إجراء هو الأكثر فعالية؟
+        options:
+          - { en: Personal protective equipment, ar: معدات الوقاية الشخصية }
+          - { en: Warning signs, ar: اللافتات التحذيرية }
+          - { en: Administrative rules and training, ar: القواعد الإدارية والتدريب }
+          - { en: Eliminating the hazard, ar: إزالة مصدر الخطر }
+        answer: 3
+        explain:
+          en: 'The order is elimination, substitution, engineering controls (shielding, interlocks), administrative controls, and finally PPE. PPE is the last line of defence, not the first.'
+          ar: 'الترتيب هو الإزالة، ثم الاستبدال، ثم الضوابط الهندسية (الحواجز وأقفال الأمان)، ثم الضوابط الإدارية، وأخيرًا معدات الوقاية الشخصية. فهذه المعدات خط الدفاع الأخير لا الأول.'
+      - q:
+          en: When aligning a Class 4 laser, what is the main reason for removing watches and rings?
+          ar: عند ضبط محاذاة ليزر من الصنف 4، ما السبب الرئيسي لنزع الساعات والخواتم؟
+        options:
+          - { en: They can reflect the beam into someone's eyes, ar: لأنها قد تعكس الحزمة إلى أعين الأشخاص }
+          - { en: They disturb the magnetic field, ar: لأنها تشوّش المجال المغناطيسي }
+          - { en: They may be damaged by heat, ar: لأنها قد تتلف بالحرارة }
+          - { en: It is a dress-code rule only, ar: لأنها قاعدة لباس فقط }
+        answer: 0
+        explain:
+          en: 'Specular reflections from shiny objects are a major cause of laser eye injuries. Wear goggles rated for the wavelength, keep the beam below eye level, and never look along it.'
+          ar: 'الانعكاسات المرآوية من الأجسام اللامعة سبب رئيسي لإصابات العين بالليزر. ارتدِ نظارات واقية مناسبة لطول الموجة، وأبقِ الحزمة تحت مستوى العين، ولا تنظر على امتدادها أبدًا.'
+      - q:
+          en: A colleague is still in contact with a live electrical conductor. What should you do first?
+          ar: زميل ما يزال ملامسًا لموصل كهربائي مكهرب. ماذا تفعل أولًا؟
+        options:
+          - { en: Pull them away with your hands, ar: اسحبه بيديك }
+          - { en: Throw water on them, ar: ارمِ عليه الماء }
+          - { en: Switch off or isolate the power supply, ar: افصل التغذية الكهربائية أو اعزلها }
+          - { en: Start chest compressions immediately, ar: ابدأ فورًا بالضغط على الصدر }
+        answer: 2
+        explain:
+          en: 'Touching the victim would make you part of the circuit. Cut the power (emergency stop or breaker), or push the victim away with a dry insulating object, then call for help and give first aid.'
+          ar: 'لمس المصاب يجعلك جزءًا من الدارة. اقطع التيار (زر الإيقاف الطارئ أو القاطع)، أو أبعد المصاب بجسم عازل جاف، ثم اطلب المساعدة وقدّم الإسعاف الأولي.'
+      - q:
+          en: What is the main danger of using liquid nitrogen in a small, poorly ventilated room?
+          ar: ما الخطر الرئيسي لاستعمال النيتروجين السائل في غرفة صغيرة سيئة التهوية؟
+        options:
+          - { en: Explosion of the nitrogen, ar: انفجار النيتروجين }
+          - { en: Asphyxiation as nitrogen gas displaces oxygen, ar: الاختناق لأن غاز النيتروجين يحل محل الأكسجين }
+          - { en: Radioactive contamination, ar: التلوث الإشعاعي }
+          - { en: Toxic fumes, ar: الأبخرة السامة }
+        answer: 1
+        explain:
+          en: 'One litre of liquid nitrogen produces about 700 litres of gas, which can lower the oxygen level without any warning smell. Burns from contact and pressure build-up in closed containers are also hazards.'
+          ar: 'لتر واحد من النيتروجين السائل ينتج نحو 700 لتر من الغاز، وقد يخفض نسبة الأكسجين دون أي رائحة تنبّه إلى ذلك. ومن المخاطر أيضًا الحروق عند التلامس وتراكم الضغط في الأوعية المغلقة.'
+  - title:
+      en: Research ethics and integrity
+      ar: أخلاقيات البحث والنزاهة العلمية
+    questions:
+      - q:
+          en: Inventing measurements that were never made is called
+          ar: اختلاق قياسات لم تُجرَ أصلًا يسمّى
+        options:
+          - { en: fabrication, ar: الاختلاق }
+          - { en: falsification, ar: التزوير }
+          - { en: plagiarism, ar: الانتحال }
+          - { en: approximation, ar: التقريب }
+        answer: 0
+        explain:
+          en: 'Fabrication is making up data. Falsification is manipulating real data or methods. Plagiarism is using others'' work without credit. Together they are the three classic forms of research misconduct.'
+          ar: 'الاختلاق هو تأليف معطيات وهمية، والتزوير هو التلاعب بمعطيات حقيقية أو بالطرائق، والانتحال هو استعمال عمل الآخرين دون نسبته إليهم. وهذه هي الأشكال الثلاثة الكلاسيكية لسوء السلوك البحثي.'
+      - q:
+          en: Removing data points without a documented reason, to make a fit look better, is
+          ar: حذف نقاط من المعطيات دون سبب موثّق لتحسين مظهر المطابقة يُعدّ
+        options:
+          - { en: acceptable if the trend is unchanged, ar: مقبولًا إذا لم يتغير الاتجاه العام }
+          - { en: normal data cleaning, ar: تنقية عادية للمعطيات }
+          - { en: falsification, ar: تزويرًا }
+          - { en: allowed in internship reports, ar: مسموحًا في تقارير التدريب }
+        answer: 2
+        explain:
+          en: 'Data may be excluded only for a documented reason, such as an equipment fault noted in the logbook. The exclusion must be reported. Otherwise it is falsification.'
+          ar: 'لا يجوز استبعاد معطيات إلا لسبب موثّق (مثل عطل في جهاز مدوّن في دفتر اليوميات)، ويجب التصريح بالاستبعاد. وإلا فهو تزوير.'
+      - q:
+          en: Who should normally be listed as an author of a paper that uses your internship results?
+          ar: من ينبغي عادةً أن يُدرج مؤلفًا في مقال يستعمل نتائج تدريبك؟
+        options:
+          - { en: Everyone who works in the laboratory, ar: كل من يعمل في المختبر }
+          - { en: Only the head of the institution, ar: رئيس المؤسسة فقط }
+          - { en: Only people who paid for the equipment, ar: من موّلوا الأجهزة فقط }
+          - { en: Those who made a substantial intellectual contribution and approve the final text, ar: من قدّموا إسهامًا فكريًا جوهريًا ووافقوا على النص النهائي }
+        answer: 3
+        explain:
+          en: Authorship requires a real contribution to the work and responsibility for its content. Other help, such as technical or financial support, is recognised in the acknowledgements.
+          ar: يتطلب التأليف إسهامًا حقيقيًا في العمل وتحمّل مسؤولية محتواه. أما المساعدات الأخرى، كالدعم التقني أو المالي، فتُذكر في الشكر والتقدير.
+      - q:
+          en: Your host company's process data are confidential. For your final report you should
+          ar: معطيات العمليات في الشركة المستضيفة سرية. في تقريرك النهائي ينبغي أن
+        options:
+          - { en: 'publish them anyway, since science must be open', ar: 'تنشرها على أي حال لأن العلم يجب أن يكون مفتوحًا' }
+          - { en: 'agree with the host what can be shown, anonymising or normalising data if needed', ar: 'تتفق مع الجهة المستضيفة على ما يمكن عرضه، مع إخفاء الهوية أو تطبيع المعطيات عند الحاجة' }
+          - { en: leave the report empty, ar: تترك التقرير فارغًا }
+          - { en: change the numbers slightly so they are not recognised, ar: تغيّر الأعداد قليلًا حتى لا تُعرف }
+        answer: 1
+        explain:
+          en: 'Respect the placement agreement. Data can often be shown in normalised units or with the host''s approval. Altering numbers would be falsification.'
+          ar: 'احترم اتفاقية التدريب. يمكن غالبًا عرض المعطيات بوحدات مطبّعة أو بموافقة الجهة المستضيفة. أما تغيير الأعداد فتزوير.'
+      - q:
+          en: Which is good practice for a laboratory logbook?
+          ar: أي ممارسة سليمة في مسك دفتر يوميات المختبر؟
+        options:
+          - { en: 'Dated entries in ink; errors crossed out with a single line, never erased', ar: 'مداخل مؤرخة بالحبر؛ تُشطب الأخطاء بخط واحد ولا تُمحى أبدًا' }
+          - { en: Writing everything on loose sheets and copying it neatly later, ar: الكتابة على أوراق متفرقة ثم نسخها بعناية لاحقًا }
+          - { en: Recording only the successful measurements, ar: تسجيل القياسات الناجحة فقط }
+          - { en: Using pencil so mistakes can be erased, ar: استعمال قلم الرصاص لمحو الأخطاء }
+        answer: 0
+        explain:
+          en: 'The logbook is the primary, permanent record of what was done. It must be complete, chronological and unaltered, including failed attempts.'
+          ar: 'دفتر اليوميات هو السجل الأصلي الدائم لما أُنجز، فيجب أن يكون كاملًا ومرتبًا زمنيًا وغير معدّل، بما في ذلك المحاولات الفاشلة.'
+  - title:
+      en: Data handling and uncertainty
+      ar: معالجة المعطيات والارتياب
+    questions:
+      - q:
+          en: Repeating a measurement many times and averaging reduces
+          ar: تكرار القياس مرات عديدة وأخذ المتوسط يقلّل
+        options:
+          - { en: systematic errors, ar: الأخطاء المنهجية }
+          - { en: random errors, ar: الأخطاء العشوائية }
+          - { en: calibration errors, ar: أخطاء المعايرة }
+          - { en: all errors equally, ar: كل الأخطاء بالقدر نفسه }
+        answer: 1
+        explain:
+          en: 'Averaging reduces random scatter. Systematic errors, such as an offset or a wrong calibration, shift every reading the same way and are not reduced by repetition.'
+          ar: 'المتوسط يقلّل التشتت العشوائي. أما الأخطاء المنهجية (كالانزياح أو المعايرة الخاطئة) فتزيح كل القراءات في الاتجاه نفسه ولا يقلّلها التكرار.'
+      - q:
+          en: 'N independent measurements have standard deviation \(\sigma\). The uncertainty of their mean is'
+          ar: 'لدينا N قياسًا مستقلًا انحرافها المعياري \(\sigma\). ارتياب متوسطها هو'
+        options:
+          - '\(\sigma\)'
+          - '\(\sigma/N\)'
+          - '\(\sigma/\sqrt{N}\)'
+          - '\(\sigma\sqrt{N}\)'
+        answer: 2
+        explain:
+          en: 'The standard error of the mean is \(\sigma/\sqrt N\). To halve it you need four times as many measurements.'
+          ar: 'الخطأ المعياري للمتوسط هو \(\sigma/\sqrt N\)، ولتنصيفه تحتاج إلى أربعة أضعاف عدد القياسات.'
+      - q:
+          en: Which result is correctly reported?
+          ar: أي نتيجة مكتوبة بشكل صحيح؟
+        options:
+          - '\(g = 9.8204 \pm 0.0999\ \text{m s}^{-2}\)'
+          - '\(g = 9.8 \pm 0.0999\ \text{m s}^{-2}\)'
+          - '\(g = 9.82\ \text{m s}^{-2} \pm 10\%\)'
+          - '\(g = 9.82 \pm 0.10\ \text{m s}^{-2}\)'
+        answer: 3
+        explain:
+          en: 'Round the uncertainty to one or two significant figures, then round the value to the same decimal place. Give the unit once, for both numbers.'
+          ar: 'قرّب الارتياب إلى رقم أو رقمين معنويين، ثم قرّب القيمة إلى المنزلة العشرية نفسها، واذكر الوحدة مرة واحدة للعددين.'
+      - q:
+          en: 'The radius of a disc is measured with a 2% uncertainty. What is the relative uncertainty of its area \(A = \pi r^2\)?'
+          ar: 'قيس نصف قطر قرص بارتياب 2%. ما الارتياب النسبي لمساحته \(A = \pi r^2\)؟'
+        options: ['1%', '2%', '4%', '8%']
+        answer: 2
+        explain:
+          en: 'For \(A \propto r^n\), \(\delta A/A = n\,\delta r/r = 2\times2\% = 4\%\).'
+          ar: 'من أجل \(A \propto r^n\) لدينا \(\delta A/A = n\,\delta r/r = 2\times2\% = 4\%\).'
+      - q:
+          en: A voltmeter reads 0.05 V when its leads are shorted together. This is
+          ar: يقرأ مقياس الجهد 0.05 V عند وصل طرفيه ببعضهما. هذا
+        options:
+          - { en: a systematic (zero-offset) error, ar: خطأ منهجي (انزياح الصفر) }
+          - { en: a random error, ar: خطأ عشوائي }
+          - { en: a blunder that cannot be corrected, ar: غلطة لا يمكن تصحيحها }
+          - { en: the resolution of the meter, ar: دقة تمييز الجهاز }
+        answer: 0
+        explain:
+          en: 'A constant offset shifts every reading by the same amount. It is a systematic error, and it can be corrected by subtracting it (zeroing) and recording this in the logbook.'
+          ar: 'الانزياح الثابت يزيح كل القراءات بالمقدار نفسه، فهو خطأ منهجي، ويمكن تصحيحه بطرحه (تصفير الجهاز) وتدوين ذلك في دفتر اليوميات.'
+  - title:
+      en: Scientific writing and reporting
+      ar: الكتابة العلمية وإعداد التقارير
+    questions:
+      - q:
+          en: In which section of a report are the results interpreted and compared with theory or the literature?
+          ar: في أي قسم من التقرير تُفسَّر النتائج وتُقارن بالنظرية أو بالأدبيات؟
+        options:
+          - { en: Methods, ar: الطريقة }
+          - { en: Abstract, ar: الملخص }
+          - { en: Appendix, ar: الملحق }
+          - { en: Discussion, ar: المناقشة }
+        answer: 3
+        explain:
+          en: 'Results present what was measured. The Discussion explains what it means, compares it with expectations and discusses the limitations.'
+          ar: 'يعرض قسم النتائج ما قيس، أما المناقشة فتشرح معناه وتقارنه بالمتوقع وتناقش حدوده.'
+      - q:
+          en: Which is the correct label for a graph axis?
+          ar: ما العنوان الصحيح لمحور منحنى؟
+        options:
+          - { en: '“t”', ar: '“t” (الرمز وحده)' }
+          - { en: '“Time t (s)”', ar: '“Time t (s)” (الزمن t بالثانية)' }
+          - { en: '“seconds”', ar: '“seconds” (ثوانٍ)' }
+          - { en: '“Data 1”', ar: '“Data 1” (معطيات 1)' }
+        answer: 1
+        explain:
+          en: 'An axis label gives the quantity, its symbol and its unit. Without units, a graph cannot be read quantitatively.'
+          ar: 'عنوان المحور يذكر المقدار ورمزه ووحدته، ودون الوحدات لا يمكن قراءة المنحنى كميًا.'
+      - q:
+          en: A good scientific poster
+          ar: الملصق العلمي الجيد
+        options:
+          - { en: reproduces the full report in small print, ar: ينسخ التقرير الكامل بخط صغير }
+          - { en: 'has no figures, so that the text fits', ar: 'لا يحتوي على أشكال حتى يتسع النص' }
+          - { en: 'is visual and concise, and readable from 1.5–2 m', ar: 'مرئي وموجز ويمكن قراءته من مسافة 1.5–2 m' }
+          - { en: uses as many colours and fonts as possible, ar: يستعمل أكبر عدد ممكن من الألوان والخطوط }
+        answer: 2
+        explain:
+          en: 'A poster is read in a few minutes while standing. It needs a clear title, a few key figures, short text blocks and a take-home message.'
+          ar: 'يُقرأ الملصق في دقائق قليلة وقوفًا، فيحتاج إلى عنوان واضح وأشكال أساسية قليلة وفقرات قصيرة ورسالة ختامية واضحة.'
+      - q:
+          en: When is the abstract of a report best written?
+          ar: متى يُفضّل كتابة ملخص التقرير؟
+        options:
+          - { en: 'Last, when the report is complete', ar: 'في الأخير، بعد اكتمال التقرير' }
+          - { en: 'First, before any measurement', ar: 'في البداية، قبل أي قياس' }
+          - { en: In the middle of the placement, ar: في منتصف التدريب }
+          - { en: It is optional and can be left out, ar: هو اختياري ويمكن حذفه }
+        answer: 0
+        explain:
+          en: 'The abstract summarises the aim, the method, the key results (with numbers) and the conclusion. It can only be accurate once these are final.'
+          ar: 'يلخّص الملخص الهدف والطريقة والنتائج الأساسية (بالأرقام) والخلاصة، ولا يكون دقيقًا إلا بعد أن تكتمل هذه العناصر.'
+      - q:
+          en: A figure in your report is taken from the instrument's manual. You must
+          ar: شكل في تقريرك مأخوذ من دليل استعمال الجهاز. يجب أن
+        options:
+          - { en: redraw it so that no citation is needed, ar: تعيد رسمه حتى لا تحتاج إلى توثيق }
+          - { en: 'use it without comment, since manuals are public', ar: 'تستعمله دون تعليق لأن الأدلة عامة' }
+          - { en: remove the caption, ar: تحذف تعليقه }
+          - { en: 'cite the source in the caption (e.g. “Adapted from [3]”)', ar: 'توثّق المصدر في تعليق الشكل (مثل “مقتبس من [3]”)' }
+        answer: 3
+        explain:
+          en: 'Every figure, idea or data set taken from someone else must be cited, even if redrawn. Redrawing does not remove the need to credit the source.'
+          ar: 'كل شكل أو فكرة أو مجموعة معطيات مأخوذة من الغير يجب توثيقها حتى لو أُعيد رسمها، فإعادة الرسم لا تُسقط واجب نسبة العمل إلى مصدره.'
+
+textbooks:
+  required:
+    - { authors: J. R. Taylor, title: 'An Introduction to Error Analysis: The Study of Uncertainties in Physical Measurements', edition: 2nd, publisher: University Science Books, year: 1997 }
+  recommended:
+    - { authors: I. G. Hughes & T. P. A. Hase, title: 'Measurements and their Uncertainties: A Practical Guide to Modern Error Analysis', publisher: Oxford University Press, year: 2010 }
+    - { authors: L. Kirkup, title: Data Analysis for Physical Scientists, edition: 2nd, publisher: Cambridge University Press, year: 2012 }
+    - { authors: B. Gastel & R. A. Day, title: How to Write and Publish a Scientific Paper, edition: 9th, publisher: Cambridge University Press, year: 2022 }
+    - { authors: National Academy of Sciences, title: 'On Being a Scientist: A Guide to Responsible Conduct in Research', edition: 3rd, publisher: National Academies Press, year: 2009 }
+    - { authors: M. Alley, title: The Craft of Scientific Presentations, edition: 2nd, publisher: Springer, year: 2013 }
+  online:
+    - title: { en: 'On Being a Scientist (free online edition)', ar: 'كتاب On Being a Scientist (نسخة مجانية على الإنترنت)' }
+      url: https://nap.nationalacademies.org/catalog/12192/on-being-a-scientist-a-guide-to-responsible-conduct-in
+      note: { en: Short case-based guide to research integrity., ar: دليل قصير قائم على دراسات حالة في النزاهة البحثية. }
+    - title: { en: NIST Technical Note 1297 – expressing measurement uncertainty, ar: المذكرة التقنية 1297 للمعهد NIST – التعبير عن ارتياب القياس }
+      url: https://www.nist.gov/pml/nist-technical-note-1297
+      note: { en: Concise official guidelines for evaluating and reporting uncertainty., ar: إرشادات رسمية موجزة لتقدير الارتياب والتصريح به. }
+    - title: { en: Academic Phrasebank (University of Manchester), ar: بنك العبارات الأكاديمية (جامعة مانشستر) }
+      url: https://www.phrasebank.manchester.ac.uk/
+      note: { en: Useful phrases for each section of a report., ar: عبارات مفيدة لكل قسم من أقسام التقرير. }
+
+glossary:
+  - { en: Placement, ar: فترة التدريب الميداني, fr: Stage, def: { en: 'Period of supervised work in a host organisation.', ar: 'فترة عمل تحت الإشراف في جهة مستضيفة.' } }
+  - { en: Host supervisor, ar: المشرف في الجهة المستضيفة, fr: Maître de stage, def: { en: 'Professional who guides the trainee on site and evaluates their work.', ar: 'مهني يوجّه المتدرب في موقع العمل ويقيّم عمله.' } }
+  - { en: Academic supervisor, ar: المشرف الأكاديمي, fr: Encadrant universitaire, def: { en: 'Faculty member responsible for the academic follow-up and the grading of the training.', ar: 'عضو هيئة التدريس المسؤول عن المتابعة الأكاديمية للتدريب وتقييمه.' } }
+  - { en: Placement agreement, ar: اتفاقية التدريب, fr: Convention de stage, def: { en: 'Signed document that sets the task, dates, rules and confidentiality of the placement.', ar: 'وثيقة موقّعة تحدد مهمة التدريب ومواعيده وقواعده وشروط السرية.' } }
+  - { en: Work plan, ar: خطة العمل, fr: Plan de travail, def: { en: 'Agreed list of objectives, tasks and deadlines for the placement.', ar: 'قائمة متفق عليها بأهداف التدريب ومهامه وآجاله.' } }
+  - { en: Gantt chart, ar: مخطط غانت, fr: Diagramme de Gantt, def: { en: 'Bar chart showing tasks against time.', ar: 'مخطط بأشرطة يبيّن المهام بدلالة الزمن.' } }
+  - { en: Logbook, ar: دفتر اليوميات, fr: Cahier de laboratoire, def: { en: 'Dated, permanent record of all work, settings and raw data.', ar: 'سجل مؤرخ ودائم لكل الأعمال والإعدادات والمعطيات الخام.' } }
+  - { en: Risk assessment, ar: تقييم المخاطر, fr: Évaluation des risques, def: { en: 'Identifying hazards, estimating their risk and deciding control measures.', ar: 'تحديد مصادر الخطر وتقدير مخاطرها وتقرير إجراءات التحكم فيها.' } }
+  - { en: Personal protective equipment (PPE), ar: معدات الوقاية الشخصية, fr: Équipement de protection individuelle (EPI), def: { en: 'Goggles, gloves, lab coat and similar items worn to reduce exposure.', ar: 'النظارات والقفازات والمئزر ونحوها مما يُلبس للحد من التعرض للخطر.' } }
+  - { en: Safety Data Sheet (SDS), ar: صحيفة بيانات السلامة, fr: Fiche de données de sécurité (FDS), def: { en: 'Document giving the hazards and safe handling of a substance.', ar: 'وثيقة تبيّن مخاطر مادة وطرق التعامل الآمن معها.' } }
+  - { en: Standard operating procedure (SOP), ar: إجراء التشغيل القياسي, fr: Mode opératoire normalisé, def: { en: 'Written step-by-step instructions for a routine operation.', ar: 'تعليمات مكتوبة خطوة بخطوة لعملية روتينية.' } }
+  - { en: Calibration, ar: المعايرة, fr: Étalonnage, def: { en: 'Comparing an instrument with a reference standard to correct its readings.', ar: 'مقارنة جهاز بمعيار مرجعي لتصحيح قراءاته.' } }
+  - { en: Traceability, ar: قابلية التتبع (المترولوجي), fr: Traçabilité, def: { en: 'Link of a measurement to national or international standards through an unbroken chain of calibrations.', ar: 'ربط القياس بالمعايير الوطنية أو الدولية عبر سلسلة متصلة من المعايرات.' } }
+  - { en: Random error, ar: الخطأ العشوائي, fr: Erreur aléatoire, def: { en: 'Unpredictable scatter of readings; reduced by averaging.', ar: 'تشتت غير متوقع للقراءات؛ يقلّ بأخذ المتوسط.' } }
+  - { en: Systematic error, ar: الخطأ المنهجي, fr: Erreur systématique, def: { en: 'Bias that shifts all readings in the same direction.', ar: 'انحياز يزيح كل القراءات في الاتجاه نفسه.' } }
+  - { en: Standard uncertainty, ar: الارتياب المعياري, fr: Incertitude-type, def: { en: 'Uncertainty expressed as a standard deviation.', ar: 'ارتياب يُعبَّر عنه بانحراف معياري.' } }
+  - { en: Propagation of uncertainty, ar: نقل الارتياب, fr: Propagation des incertitudes, def: { en: 'Calculating the uncertainty of a result from those of its inputs.', ar: 'حساب ارتياب نتيجة من ارتيابات المقادير الداخلة فيها.' } }
+  - { en: Significant figures, ar: الأرقام المعنوية, fr: Chiffres significatifs, def: { en: 'Digits of a number that carry meaningful information.', ar: 'أرقام العدد التي تحمل معلومات ذات معنى.' } }
+  - { en: Least-squares fit, ar: المطابقة بالمربعات الصغرى, fr: Ajustement par moindres carrés, def: { en: 'Choosing model parameters that minimise the sum of squared residuals.', ar: 'اختيار وسائط النموذج التي تجعل مجموع مربعات البواقي أصغريًا.' } }
+  - { en: Outlier, ar: القيمة الشاذة, fr: Valeur aberrante, def: { en: 'Data point far from the others; it may be excluded only for a documented reason.', ar: 'نقطة بعيدة عن البقية؛ لا يجوز استبعادها إلا لسبب موثّق.' } }
+  - { en: Reproducibility, ar: قابلية إعادة الإنتاج, fr: Reproductibilité, def: { en: 'Ability of independent workers to obtain the same result.', ar: 'قدرة باحثين مستقلين على الحصول على النتيجة نفسها.' } }
+  - { en: Fabrication, ar: اختلاق المعطيات, fr: Fabrication de données, def: { en: 'Making up data or results.', ar: 'تأليف معطيات أو نتائج وهمية.' } }
+  - { en: Falsification, ar: تزوير المعطيات, fr: Falsification, def: { en: 'Manipulating data, equipment or processes so that the record is not accurate.', ar: 'التلاعب بالمعطيات أو الأجهزة أو الإجراءات بحيث لا يعكس السجل الحقيقة.' } }
+  - { en: Plagiarism, ar: الانتحال العلمي, fr: Plagiat, def: { en: 'Using another person''s words, ideas or figures without credit.', ar: 'استعمال كلمات الغير أو أفكاره أو أشكاله دون نسبتها إليه.' } }
+  - { en: Confidentiality agreement, ar: اتفاقية السرية, fr: Accord de confidentialité, def: { en: 'Commitment not to disclose the host''s sensitive information.', ar: 'التزام بعدم إفشاء المعلومات الحساسة للجهة المستضيفة.' } }
+  - { en: Progress report, ar: التقرير المرحلي, fr: Rapport d'avancement, def: { en: 'Interim report on what has been done, the problems met and the plans.', ar: 'تقرير مؤقت عما أُنجز والمشكلات المصادفة والخطط.' } }
+  - { en: Technical report, ar: التقرير التقني, fr: Rapport technique, def: { en: 'Structured final document describing the work, methods and results.', ar: 'وثيقة نهائية منظمة تصف العمل والطرائق والنتائج.' } }
+  - { en: Poster session, ar: جلسة الملصقات العلمية, fr: Session de posters, def: { en: 'Presentation of work on a large printed poster, discussed one-to-one.', ar: 'عرض العمل على ملصق مطبوع كبير ومناقشته مع الزوار فرديًا.' } }
+  - { en: Oral defence, ar: المناقشة الشفهية, fr: Soutenance, def: { en: 'Presentation of the work followed by questions from an examining panel.', ar: 'عرض العمل تليه أسئلة لجنة الامتحان.' } }
+  - { en: Reflective statement, ar: البيان التأملي, fr: Bilan réflexif, def: { en: 'Short personal analysis of what was learned and how.', ar: 'تحليل شخصي قصير لما تعلّمه المتدرب وكيف تعلّمه.' } }

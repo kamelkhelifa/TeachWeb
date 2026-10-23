@@ -1,0 +1,1522 @@
+slug: quantum-mechanics-1
+order: 120
+codes: [PHYS 354, PHYS 401, UEF 223]
+short:
+  en: QM I
+  ar: ك.ك 1
+title:
+  en: Quantum Mechanics I
+  ar: ميكانيكا الكم 1
+tagline:
+  en: From the wavefunction and the Schrödinger equation to the hydrogen atom and spin.
+  ar: من الدالة الموجية ومعادلة شرودنغر إلى ذرة الهيدروجين واللف المغزلي.
+area: quantum
+level: 3
+credits: 4
+hours: { lecture: 3, tutorial: 1, lab: 0 }
+weeks: 14
+instruction: [en, ar]
+prerequisites: [modern-physics-2, mathematical-physics-2]
+prerequisite_note:
+  en: Modern physics (photons, de Broglie waves, Bohr model), calculus of several variables, ordinary differential equations, linear algebra (eigenvalues, matrices) and complex numbers.
+  ar: الفيزياء الحديثة (الفوتونات، موجات دي بروي، نموذج بور)، وحساب التفاضل والتكامل لعدة متغيرات، والمعادلات التفاضلية العادية، والجبر الخطي (القيم الذاتية والمصفوفات)، والأعداد المركبة.
+sims: [particle-box]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/phys401-quantum-mechanics-1/
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/phys354-quantum-mechanics-1/
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/uef223-%d9%85%d9%8a%d9%83%d8%a7%d9%86%d9%8a%d9%83%d8%a7-%d8%a7%d9%84%d9%83%d9%85-1/
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/%d9%81%d9%8a%d8%b2-401-%d9%85%d9%8a%d9%83%d8%a7%d9%86%d9%8a%d9%83%d8%a7-%d8%a7%d9%84%d9%83%d9%85-1/
+notes: >
+  Merged from three versions of the course (PHYS401 calendar and notes as the backbone, PHYS354 description,
+  notes, problem sets and 2017-18 tests, UEF223 Arabic sets, solutions, videos and past finals). The
+  14-week schedule follows Griffiths ch. 1-4 (3rd ed. numbering) and absorbs the UEF223 introduction to
+  quantum phenomena (week 1) and tensor-product notes (week 11). Week numbers of the PHYS354 multi-part
+  PDFs, the UEF223 sets and the YouTube lectures were assigned by topic order and should be checked.
+  The assessment scheme (quizzes, mini-project, participation), CLO mapping, exam guide, quizzes,
+  problems and glossary were written new. Hijri-year past exams were converted to academic years
+  (1437 = 2015-16, ..., 1440 = 2018-19). Not carried over: marks sheets, student-portal links, course
+  questionnaires, assignment-submission forms and a dead goo.gl short link. The Arabic Griffiths PDF and
+  the translated-book collections are third-party copies; check their copyright status.
+
+description:
+  en: |
+    <p>This is the first full course in quantum mechanics. It starts from the experimental facts that forced physics to abandon the classical picture (black-body radiation, the photoelectric and Compton effects, de Broglie waves) and builds, step by step, the wave mechanics of Schrödinger: the wavefunction and its statistical interpretation, normalisation, expectation values, momentum and the uncertainty principle.</p>
+    <p>The time-independent Schrödinger equation is then solved for the classic one-dimensional systems: the infinite square well, the harmonic oscillator (analytic and ladder-operator methods), the free particle and wave packets, the delta-function potential and the finite square well, including bound and scattering states and quantum tunnelling. The third part introduces the formal language of the theory: Hilbert space, Hermitian operators and observables, the generalised statistical interpretation, commutators and the generalised uncertainty principle, and Dirac notation.</p>
+    <p>The course ends in three dimensions: separation of variables in spherical coordinates, spherical harmonics, the hydrogen atom, the algebra of angular momentum and spin one-half. Weekly problem sets, short quizzes and a small computational project train students to move fluently between physical reasoning and the mathematics of the theory.</p>
+  ar: |
+    <p>هذا هو المقرر الكامل الأول في ميكانيكا الكم. ينطلق من الحقائق التجريبية التي أجبرت الفيزياء على التخلي عن الصورة الكلاسيكية (إشعاع الجسم الأسود، والظاهرة الكهروضوئية، وظاهرة كومبتون، وموجات دي بروي)، ثم يبني خطوة بخطوة الميكانيكا الموجية لشرودنغر: الدالة الموجية وتفسيرها الإحصائي، والاستنظام، والقيم المتوقعة، والزخم، ومبدأ الارتياب.</p>
+    <p>بعد ذلك تُحل معادلة شرودنغر المستقلة عن الزمن للأنظمة الكلاسيكية أحادية البعد: البئر المربع اللانهائي، والمهتز التوافقي (بالطريقة التحليلية وبمؤثرات السلّم)، والجسيم الحر والحزم الموجية، وجهد دالة دلتا، والبئر المربع المتناهي، مع دراسة حالات الارتباط وحالات الاستطارة والنفق الكمومي. ويقدّم الجزء الثالث اللغة الصورية للنظرية: فضاء هيلبرت، والمؤثرات الهرميتية والمقادير القابلة للرصد، والتفسير الإحصائي المعمَّم، والمبدّلات ومبدأ الارتياب المعمَّم، وترميز ديراك.</p>
+    <p>ويُختتم المقرر في ثلاثة أبعاد: فصل المتغيرات في الإحداثيات الكروية، والتوافقيات الكروية، وذرة الهيدروجين، وجبر الزخم الزاوي، واللف المغزلي النصفي. وتدرّب أوراق المسائل الأسبوعية والاختبارات القصيرة ومشروع حسابي صغير الطالبَ على الانتقال بسلاسة بين الاستدلال الفيزيائي والأدوات الرياضية للنظرية.</p>
+
+topics:
+  - { en: Wavefunction & Born rule, ar: الدالة الموجية وقاعدة بورن }
+  - { en: Uncertainty principle, ar: مبدأ الارتياب }
+  - { en: Stationary states, ar: الحالات المستقرة }
+  - { en: Square wells & tunnelling, ar: الآبار المربعة والنفق الكمومي }
+  - { en: Harmonic oscillator, ar: المهتز التوافقي }
+  - { en: Hermitian operators, ar: المؤثرات الهرميتية }
+  - { en: Dirac notation, ar: ترميز ديراك }
+  - { en: Hydrogen atom, ar: ذرة الهيدروجين }
+  - { en: Angular momentum & spin, ar: الزخم الزاوي واللف المغزلي }
+
+outcomes:
+  - id: CLO1
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Explain the experimental origins of quantum theory and the statistical interpretation of the wavefunction, including normalisation, expectation values and the uncertainty principle.
+      ar: يشرح الأصول التجريبية لنظرية الكم والتفسير الإحصائي للدالة الموجية، بما في ذلك الاستنظام والقيم المتوقعة ومبدأ الارتياب.
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: Solve the time-independent Schrödinger equation for standard one-dimensional potentials (infinite and finite square wells, harmonic oscillator, delta function, free particle) and interpret the bound and scattering solutions.
+      ar: يحل معادلة شرودنغر المستقلة عن الزمن للجهود أحادية البعد القياسية (البئران المربعان اللانهائي والمتناهي، والمهتز التوافقي، ودالة دلتا، والجسيم الحر) ويفسّر حلول الارتباط والاستطارة.
+    assessed_by: [homework, midterm1, final]
+  - id: CLO3
+    bloom: analyze
+    domain: skills
+    text:
+      en: Analyse the time evolution of a superposition of stationary states and compute the probabilities and expectation values of energy and position measurements.
+      ar: يحلّل التطور الزمني لتراكب من الحالات المستقرة ويحسب احتمالات نتائج قياس الطاقة والموضع وقيمها المتوقعة.
+    assessed_by: [homework, midterm1, project, final]
+  - id: CLO4
+    bloom: apply
+    domain: knowledge
+    text:
+      en: Use the operator formalism (Hilbert space, Hermitian operators, commutators, Dirac notation) to evaluate observables, measurement probabilities and uncertainty relations.
+      ar: يوظّف الصياغة المؤثرية (فضاء هيلبرت، المؤثرات الهرميتية، المبدّلات، ترميز ديراك) لحساب المقادير القابلة للرصد واحتمالات القياس وعلاقات الارتياب.
+    assessed_by: [quizzes, homework, midterm2, final]
+  - id: CLO5
+    bloom: apply
+    domain: skills
+    text:
+      en: Separate the Schrödinger equation in spherical coordinates for a central potential and derive the energy levels, degeneracies and radial probability distributions of the hydrogen atom.
+      ar: يفصل متغيرات معادلة شرودنغر في الإحداثيات الكروية لجهد مركزي، ويستنتج مستويات الطاقة وانحلالها وتوزيعات الاحتمال القطرية لذرة الهيدروجين.
+    assessed_by: [homework, midterm2, final]
+  - id: CLO6
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Describe the algebra of orbital angular momentum and spin one-half and predict the outcomes of spin measurements with Pauli matrices.
+      ar: يصف جبر الزخم الزاوي المداري واللف المغزلي النصفي، ويتنبأ بنتائج قياسات اللف المغزلي باستعمال مصفوفات باولي.
+    assessed_by: [quizzes, homework, final]
+  - id: CLO7
+    bloom: create
+    domain: skills
+    text:
+      en: Build a short numerical or graphical model of a quantum system (e.g. a wave packet in a well) and report its results in a clear written note.
+      ar: يبني نموذجًا عدديًا أو بيانيًا قصيرًا لنظام كمومي (مثل حزمة موجية في بئر) ويعرض نتائجه في تقرير مكتوب واضح.
+    assessed_by: [project]
+  - id: CLO8
+    bloom: apply
+    domain: values
+    text:
+      en: Work independently and with academic integrity, presenting complete, logical and clearly written solutions.
+      ar: يعمل باستقلالية ونزاهة أكاديمية، ويقدّم حلولًا كاملة ومنطقية ومكتوبة بوضوح.
+    assessed_by: [homework, participation]
+
+assessment:
+  - id: homework
+    type: homework
+    weight: 10
+    title:
+      en: Weekly problem sets
+      ar: أوراق المسائل الأسبوعية
+    detail:
+      en: One problem sheet per week, due one week later. Solve the problems yourself, identify unclear concepts, ask for help when stuck, and write up complete, clear and honest solutions. Two randomly chosen problems per sheet are graded in detail.
+      ar: ورقة مسائل كل أسبوع تُسلَّم بعد أسبوع. حُلّ المسائل بنفسك، وحدّد المفاهيم غير الواضحة، واطلب المساعدة عند التعثّر، واكتب حلولًا كاملة وواضحة ونزيهة. تُصحَّح بالتفصيل مسألتان تُختاران عشوائيًا من كل ورقة.
+    when:
+      en: Weeks 2–13
+      ar: الأسابيع 2–13
+  - id: quizzes
+    type: quiz
+    weight: 10
+    title:
+      en: Short quizzes
+      ar: اختبارات قصيرة
+    detail:
+      en: Four 15-minute quizzes at the end of each chapter (concept questions and one short calculation). The best three count.
+      ar: أربعة اختبارات مدة كل منها 15 دقيقة في نهاية كل فصل (أسئلة مفاهيمية وحساب قصير). تُحتسب أفضل ثلاثة.
+    when:
+      en: Weeks 3, 8, 11, 14
+      ar: الأسابيع 3 و8 و11 و14
+  - id: midterm1
+    type: midterm
+    weight: 15
+    title:
+      en: First periodic exam
+      ar: الاختبار الدوري الأول
+    detail:
+      en: One hour, in class. Chapter 1 and the first half of chapter 2 (wavefunction, stationary states, infinite well, harmonic oscillator, free particle).
+      ar: ساعة واحدة في وقت المحاضرة. يشمل الفصل الأول والنصف الأول من الفصل الثاني (الدالة الموجية، الحالات المستقرة، البئر اللانهائي، المهتز التوافقي، الجسيم الحر).
+    when:
+      en: Week 7
+      ar: الأسبوع 7
+  - id: midterm2
+    type: midterm
+    weight: 15
+    title:
+      en: Second periodic exam
+      ar: الاختبار الدوري الثاني
+    detail:
+      en: One hour, in class. Delta and finite wells, and the formalism of chapter 3.
+      ar: ساعة واحدة في وقت المحاضرة. يشمل جهد دالة دلتا والبئر المتناهي والصياغة الرياضية في الفصل الثالث.
+    when:
+      en: Week 12
+      ar: الأسبوع 12
+  - id: project
+    type: project
+    weight: 5
+    title:
+      en: Computational mini-project
+      ar: مشروع حسابي مصغّر
+    detail:
+      en: In pairs, model a simple quantum system numerically or graphically (e.g. time evolution of a two-state superposition in the infinite well, a finite-well eigenvalue solver, a Gaussian wave packet). Deliverable is a 3-page report with figures and code.
+      ar: يعمل الطلاب في ثنائيات على نمذجة نظام كمومي بسيط عدديًا أو بيانيًا (مثل التطور الزمني لتراكب حالتين في البئر اللانهائي، أو حلّ عددي لقيم البئر المتناهي، أو حزمة موجية غاوسية). المطلوب تقرير من 3 صفحات مع أشكال وشيفرة.
+    when:
+      en: Proposal week 6, report week 13
+      ar: المقترح في الأسبوع 6، والتقرير في الأسبوع 13
+  - id: participation
+    type: participation
+    weight: 5
+    title:
+      en: Attendance and participation
+      ar: الحضور والمشاركة
+    detail:
+      en: Regular attendance, presenting solutions at the board during tutorials, and constructive conduct.
+      ar: الحضور المنتظم، وعرض الحلول على السبورة في حصص الأعمال الموجهة، والسلوك البنّاء.
+    when:
+      en: All weeks
+      ar: كل الأسابيع
+  - id: final
+    type: final
+    weight: 40
+    title:
+      en: Final exam
+      ar: الاختبار النهائي
+    detail:
+      en: Two hours, comprehensive, with emphasis on chapters 3 and 4.
+      ar: ساعتان، شامل لكل المقرر مع التركيز على الفصلين الثالث والرابع.
+    when:
+      en: Final exam period
+      ar: فترة الاختبارات النهائية
+
+schedule:
+  - week: 1
+    title:
+      en: Quantum phenomena and the wavefunction
+      ar: الظواهر الكمومية والدالة الموجية
+    topics:
+      en:
+        - Overview of the course
+        - Black-body radiation, photoelectric and Compton effects, de Broglie waves
+        - The Schrödinger equation and the statistical interpretation
+      ar:
+        - نظرة عامة على المقرر
+        - إشعاع الجسم الأسود والظاهرة الكهروضوئية وظاهرة كومبتون وموجات دي بروي
+        - معادلة شرودنغر والتفسير الإحصائي
+    reading: Griffiths §1.1–1.2
+    activity:
+      en: Problem set 0 (mathematical review)
+      ar: السلسلة 0 (مراجعة رياضية)
+  - week: 2
+    title:
+      en: Probability and normalisation
+      ar: الاحتمالات والاستنظام
+    topics:
+      en:
+        - Discrete and continuous probability distributions
+        - 'Normalisation and its conservation in time'
+        - Expectation values
+      ar:
+        - التوزيعات الاحتمالية المتقطعة والمتصلة
+        - الاستنظام وانحفاظه مع الزمن
+        - القيم المتوقعة
+    reading: Griffiths §1.3–1.4
+    activity:
+      en: Problem set 1 released
+      ar: نشر السلسلة 1
+  - week: 3
+    title:
+      en: Momentum and the uncertainty principle
+      ar: الزخم ومبدأ الارتياب
+    topics:
+      en:
+        - 'Momentum operator \(\hat p = -i\hbar\,\partial/\partial x\)'
+        - Ehrenfest theorem
+        - Heisenberg uncertainty principle
+      ar:
+        - 'مؤثر الزخم \(\hat p = -i\hbar\,\partial/\partial x\)'
+        - مبرهنة إهرنفست
+        - مبدأ الارتياب لهايزنبرغ
+    reading: Griffiths §1.5–1.6
+    activity:
+      en: Problem set 2; quiz 1
+      ar: السلسلة 2؛ الاختبار القصير 1
+    milestone: quiz
+  - week: 4
+    title:
+      en: Stationary states and the infinite square well
+      ar: الحالات المستقرة والبئر المربع اللانهائي
+    topics:
+      en:
+        - Separation of variables and stationary states
+        - 'Infinite square well: \(E_n = n^2\pi^2\hbar^2/2ma^2\)'
+        - Completeness and time evolution of superpositions
+      ar:
+        - فصل المتغيرات والحالات المستقرة
+        - 'البئر المربع اللانهائي: \(E_n = n^2\pi^2\hbar^2/2ma^2\)'
+        - التمام والتطور الزمني للتراكبات
+    reading: Griffiths §2.1–2.2
+    activity:
+      en: Problem set 3; explore the particle-in-a-box lab
+      ar: السلسلة 3؛ استكشاف مختبر الجسيم في صندوق
+  - week: 5
+    title:
+      en: The harmonic oscillator
+      ar: المهتز التوافقي
+    topics:
+      en:
+        - Ladder operators and the spectrum \((n+\tfrac12)\hbar\omega\)
+        - Analytic method and Hermite polynomials
+      ar:
+        - مؤثرات السلّم والطيف \((n+\tfrac12)\hbar\omega\)
+        - الطريقة التحليلية وكثيرات حدود هيرميت
+    reading: Griffiths §2.3
+    activity:
+      en: Problem set 4
+      ar: السلسلة 4
+  - week: 6
+    title:
+      en: The free particle
+      ar: الجسيم الحر
+    topics:
+      en:
+        - Plane waves are not normalisable
+        - Wave packets, phase and group velocity
+        - Fourier transform and momentum space
+      ar:
+        - الموجات المستوية غير قابلة للاستنظام
+        - الحزم الموجية وسرعتا الطور والمجموعة
+        - تحويل فورييه وفضاء الزخم
+    reading: Griffiths §2.4
+    activity:
+      en: Mini-project proposal due
+      ar: تسليم مقترح المشروع المصغّر
+    milestone: project
+  - week: 7
+    title:
+      en: The delta-function potential
+      ar: جهد دالة دلتا
+    topics:
+      en:
+        - Bound and scattering states
+        - Reflection and transmission coefficients
+        - First periodic exam
+      ar:
+        - حالات الارتباط وحالات الاستطارة
+        - معاملا الانعكاس والنفاذ
+        - الاختبار الدوري الأول
+    reading: Griffiths §2.5
+    activity:
+      en: Problem set 5
+      ar: السلسلة 5
+    milestone: midterm
+  - week: 8
+    title:
+      en: The finite square well
+      ar: البئر المربع المتناهي
+    topics:
+      en:
+        - Even and odd bound states, graphical solution
+        - Scattering over the well, transmission resonances
+        - Tunnelling through a barrier
+      ar:
+        - حالات الارتباط الزوجية والفردية والحل البياني
+        - الاستطارة فوق البئر ورنين النفاذ
+        - النفق الكمومي عبر حاجز
+    reading: Griffiths §2.6
+    activity:
+      en: Problem set 6; quiz 2
+      ar: السلسلة 6؛ الاختبار القصير 2
+    milestone: quiz
+  - week: 9
+    title:
+      en: Hilbert space and observables
+      ar: فضاء هيلبرت والمقادير القابلة للرصد
+    topics:
+      en:
+        - Square-integrable functions, inner product
+        - Hermitian operators, determinate states
+      ar:
+        - الدوال القابلة للتكامل التربيعي والجداء الداخلي
+        - المؤثرات الهرميتية والحالات المحدَّدة
+    reading: Griffiths §3.1–3.2
+    activity:
+      en: Problem set 7
+      ar: السلسلة 7
+  - week: 10
+    title:
+      en: Eigenfunctions and the generalised statistical interpretation
+      ar: الدوال الذاتية والتفسير الإحصائي المعمَّم
+    topics:
+      en:
+        - Discrete and continuous spectra
+        - 'Measurement probabilities \(\abs{c_n}^2\) and collapse'
+      ar:
+        - الطيف المتقطع والطيف المتصل
+        - 'احتمالات القياس \(\abs{c_n}^2\) وانهيار الدالة الموجية'
+    reading: Griffiths §3.3–3.4
+    activity:
+      en: Problem set 8
+      ar: السلسلة 8
+  - week: 11
+    title:
+      en: Uncertainty principle and Dirac notation
+      ar: مبدأ الارتياب وترميز ديراك
+    topics:
+      en:
+        - Generalised uncertainty principle, energy–time uncertainty
+        - Time evolution of expectation values
+        - Bras, kets, matrix representation, tensor products
+      ar:
+        - مبدأ الارتياب المعمَّم، وارتياب الطاقة والزمن
+        - التطور الزمني للقيم المتوقعة
+        - البرا والكت والتمثيل المصفوفي والجداء الموتّري
+    reading: Griffiths §3.5–3.6
+    activity:
+      en: Quiz 3
+      ar: الاختبار القصير 3
+    milestone: quiz
+  - week: 12
+    title:
+      en: The Schrödinger equation in three dimensions
+      ar: معادلة شرودنغر في ثلاثة أبعاد
+    topics:
+      en:
+        - Separation of variables in spherical coordinates
+        - Spherical harmonics and the radial equation
+        - Second periodic exam
+      ar:
+        - فصل المتغيرات في الإحداثيات الكروية
+        - التوافقيات الكروية والمعادلة القطرية
+        - الاختبار الدوري الثاني
+    reading: Griffiths §4.1
+    activity:
+      en: Problem set 9
+      ar: السلسلة 9
+    milestone: midterm
+  - week: 13
+    title:
+      en: The hydrogen atom and angular momentum
+      ar: ذرة الهيدروجين والزخم الزاوي
+    topics:
+      en:
+        - 'Energy levels \(E_n = -13.6\ \text{eV}/n^2\), degeneracy \(n^2\)'
+        - Radial wavefunctions and the spectrum of hydrogen
+        - 'Angular momentum algebra, \(L^2\) and \(L_z\) eigenvalues'
+      ar:
+        - 'مستويات الطاقة \(E_n = -13.6\ \text{eV}/n^2\) والانحلال \(n^2\)'
+        - الدوال الموجية القطرية وطيف الهيدروجين
+        - 'جبر الزخم الزاوي والقيم الذاتية لـ \(L^2\) و\(L_z\)'
+    reading: Griffiths §4.2–4.3
+    activity:
+      en: Problem set 10; mini-project report due
+      ar: السلسلة 10؛ تسليم تقرير المشروع المصغّر
+    milestone: project
+  - week: 14
+    title:
+      en: Spin and course review
+      ar: اللف المغزلي ومراجعة المقرر
+    topics:
+      en:
+        - Spin one-half, Pauli matrices, Stern–Gerlach experiment
+        - Review for the final exam
+      ar:
+        - اللف المغزلي النصفي ومصفوفات باولي وتجربة شتيرن–غرلاخ
+        - مراجعة للاختبار النهائي
+    reading: Griffiths §4.4
+    activity:
+      en: Quiz 4; review session
+      ar: الاختبار القصير 4؛ حصة مراجعة
+    milestone: review
+
+materials:
+  # ---- Lecture notes (one PDF per section) ----
+  - type: notes
+    title: { en: 1.1 The wavefunction, ar: 1.1 الدالة الموجية }
+    url: https://drive.google.com/open?id=1dPGHvSNLArE_HBKuzI0o13DaawBULbZw
+    week: 1
+    lang: en
+  - type: notes
+    title: { en: 1.2 Statistical interpretation, ar: 1.2 التفسير الإحصائي }
+    url: https://drive.google.com/open?id=1ImD6uwfz5QPWP8xxNmqL4BRAT2sbb2El
+    week: 1
+    lang: en
+  - type: notes
+    title: { en: 1.3 Review of probability theory, ar: 1.3 مراجعة لنظرية الاحتمالات }
+    url: https://drive.google.com/open?id=1piUdRUqkYT3UkGD5QFcLDOyoDnK5__JZ
+    week: 2
+    lang: en
+  - type: notes
+    title: { en: 1.4 Normalisation, ar: 1.4 الاستنظام }
+    url: https://drive.google.com/open?id=1szGSDn3aNohQtwxeCwv51sFYy-XByl8F
+    week: 2
+    lang: en
+  - type: notes
+    title: { en: 1.5 Momentum, ar: 1.5 الزخم }
+    url: https://drive.google.com/open?id=1f5GVA-gZjae-nDdymlfUcnajldFaIXEX
+    week: 3
+    lang: en
+  - type: notes
+    title: { en: 1.6 The uncertainty principle, ar: 1.6 مبدأ الارتياب }
+    url: https://drive.google.com/open?id=1mrodEYPCxZZ5f8PCw8BhtJY-Sk07GGEX
+    week: 3
+    lang: en
+  - type: notes
+    title: { en: 2.1 Stationary states, ar: 2.1 الحالات المستقرة }
+    url: https://drive.google.com/open?id=1gurE5Xmnd-vnOxcWPFxvzMVI4NV1xd4l
+    week: 4
+    lang: en
+  - type: notes
+    title: { en: 2.2 The infinite square well, ar: 2.2 البئر المربع اللانهائي }
+    url: https://drive.google.com/open?id=1EXzdc6u5CcFwvoSwd19-xOpQhZlkXOh3
+    week: 4
+    lang: en
+  - type: notes
+    title: { en: 2.3 The harmonic oscillator, ar: 2.3 المهتز التوافقي }
+    url: https://drive.google.com/open?id=1uOggFotvruHTEP_aO7VMoqeQyiWUkGc4
+    week: 5
+    lang: en
+  - type: notes
+    title: { en: 2.4 The free particle, ar: 2.4 الجسيم الحر }
+    url: https://drive.google.com/open?id=1ptqbNwDVAepzGSPgRMo2MAgZfgOi_APN
+    week: 6
+    lang: en
+  - type: notes
+    title: { en: 2.5 The delta-function potential, ar: 2.5 جهد دالة دلتا }
+    url: https://drive.google.com/open?id=16ca0fOEN4nNVoNP1DMT61iMhwj6Al1n0
+    week: 7
+    lang: en
+  - type: notes
+    title: { en: 2.6 The finite square well, ar: 2.6 البئر المربع المتناهي }
+    url: https://drive.google.com/open?id=1VHBxy2teXguD0jzcRPhIE5xDgqXbuK5s
+    week: 8
+    lang: en
+  - type: notes
+    title: { en: 3.1 Hilbert space, ar: 3.1 فضاء هيلبرت }
+    url: https://drive.google.com/open?id=1jQygiv6iwrdO-ESdoG4clwTj3SNunPR-
+    week: 9
+    lang: en
+  - type: notes
+    title: { en: 3.2 Observables, ar: 3.2 المقادير القابلة للرصد }
+    url: https://drive.google.com/open?id=1uuSdFdBWpT533zRGMiMie82MyWi7EAgT
+    week: 9
+    lang: en
+  - type: notes
+    title: { en: 3.3–3.4 Hermitian operators and the generalised statistical interpretation, ar: 3.3–3.4 المؤثرات الهرميتية والتفسير الإحصائي المعمَّم }
+    url: https://drive.google.com/open?id=1PzDYRnTjJ0bkuh47bQeQvQJ_NpMAWNqX
+    week: 10
+    lang: en
+  - type: notes
+    title: { en: 3.5 The generalised uncertainty principle, ar: 3.5 مبدأ الارتياب المعمَّم }
+    url: https://drive.google.com/open?id=1lkFtKwBjTNSpB-9O0kRaKV36Ws0WapzF
+    week: 11
+    lang: en
+  - type: notes
+    title: { en: 3.6 Dirac notation, ar: 3.6 ترميز ديراك }
+    url: https://drive.google.com/open?id=19OElYskx8kFb5_bX5lqQP-nl5UDGLup-
+    week: 11
+    lang: en
+  - type: notes
+    title: { en: 4.1 Schrödinger equation in spherical coordinates, ar: 4.1 معادلة شرودنغر في الإحداثيات الكروية }
+    url: https://drive.google.com/open?id=14cNofIr4A0n2r8_JfHoc2jjf8Su0gf4P
+    week: 12
+    lang: en
+  - type: notes
+    title: { en: 4.2 The hydrogen atom, ar: 4.2 ذرة الهيدروجين }
+    url: https://drive.google.com/open?id=1kSeQY5p06eq8DSQ_xZEU32j_rG9WH0-j
+    week: 13
+    lang: en
+  - type: notes
+    title: { en: 4.3 Angular momentum, ar: 4.3 الزخم الزاوي }
+    url: https://drive.google.com/open?id=13Rb44KK0gcDO_iszCH2KDwTYAeVHPf_d
+    week: 13
+    lang: en
+  - type: notes
+    title: { en: 4.4 Spin, ar: 4.4 اللف المغزلي }
+    url: https://drive.google.com/open?id=1-iTsQ0mMEeaZ5X4Z1OirWC-qJU0JPEdF
+    week: 14
+    lang: en
+  # ---- Alternative version of the notes (chapter files) ----
+  - type: notes
+    title: { en: Chapter 1 notes (earlier version) – the wavefunction, ar: مذكرة الفصل 1 (نسخة سابقة) – الدالة الموجية }
+    url: https://drive.google.com/open?id=1Xe36DeqoJ8SNq61n_t0RWgXIQ7OzNxpI
+    week: 1
+    lang: en
+  - type: notes
+    title: { en: Chapter 2 notes (earlier version) – part 1 of 6, ar: مذكرة الفصل 2 (نسخة سابقة) – الجزء 1 من 6 }
+    url: https://drive.google.com/open?id=1UGxzFTVsC-jOMBJ5g2fNJ-i2J7gnkvZi
+    week: 4
+    lang: en
+  - type: notes
+    title: { en: Chapter 2 notes (earlier version) – part 2 of 6, ar: مذكرة الفصل 2 (نسخة سابقة) – الجزء 2 من 6 }
+    url: https://drive.google.com/open?id=19R12gxmYpS73msq_uK2VxJII-M5GI32e
+    week: 4
+    lang: en
+  - type: notes
+    title: { en: Chapter 2 notes (earlier version) – part 3 of 6, ar: مذكرة الفصل 2 (نسخة سابقة) – الجزء 3 من 6 }
+    url: https://drive.google.com/open?id=1p6fxgs3tcj5WVXuNr7EsXAayS8PwUeKK
+    week: 5
+    lang: en
+  - type: notes
+    title: { en: Chapter 2 notes (earlier version) – part 4 of 6, ar: مذكرة الفصل 2 (نسخة سابقة) – الجزء 4 من 6 }
+    url: https://drive.google.com/open?id=15SmjtaNpvItKQf7eGe1PeAX9eCiJyTsY
+    week: 6
+    lang: en
+  - type: notes
+    title: { en: Chapter 2 notes (earlier version) – part 5 of 6, ar: مذكرة الفصل 2 (نسخة سابقة) – الجزء 5 من 6 }
+    url: https://drive.google.com/open?id=1IBGALL5NuRENCsH7Xe1ZAluN8WMQMDnM
+    week: 7
+    lang: en
+  - type: notes
+    title: { en: Chapter 2 notes (earlier version) – part 6 of 6, ar: مذكرة الفصل 2 (نسخة سابقة) – الجزء 6 من 6 }
+    url: https://drive.google.com/open?id=1pWezqaaTCGVXnyRKYXA-YPN6jikhXRR4
+    week: 8
+    lang: en
+  - type: notes
+    title: { en: Chapter 3 notes (earlier version) – part 1 of 6, ar: مذكرة الفصل 3 (نسخة سابقة) – الجزء 1 من 6 }
+    url: https://drive.google.com/file/d/13CZRl1kupNv6gtmOE3PLtRTKZx7_YSx9/view?usp=drivesdk
+    week: 9
+    lang: en
+  - type: notes
+    title: { en: Chapter 3 notes (earlier version) – part 2 of 6, ar: مذكرة الفصل 3 (نسخة سابقة) – الجزء 2 من 6 }
+    url: https://drive.google.com/file/d/1TJoU48rqZ8l_TD6Mi3gec9iXkqwYgSzS/view?usp=drivesdk
+    week: 9
+    lang: en
+  - type: notes
+    title: { en: Chapter 3 notes (earlier version) – part 3 of 6, ar: مذكرة الفصل 3 (نسخة سابقة) – الجزء 3 من 6 }
+    url: https://drive.google.com/file/d/1DIEjgAE1tmV7iupZMfhuFlnoAhX-ZQBC/view?usp=drivesdk
+    week: 10
+    lang: en
+  - type: notes
+    title: { en: Chapter 3 notes (earlier version) – part 4 of 6, ar: مذكرة الفصل 3 (نسخة سابقة) – الجزء 4 من 6 }
+    url: https://drive.google.com/file/d/1CmOD1XF8KwNp7FLsgaDMJqUFXYsm0TZm/view?usp=drivesdk
+    week: 10
+    lang: en
+  - type: notes
+    title: { en: Chapter 3 notes (earlier version) – part 5 of 6, ar: مذكرة الفصل 3 (نسخة سابقة) – الجزء 5 من 6 }
+    url: https://drive.google.com/file/d/1L2LcY_Tz_lBGr2lE-1Qd3UsXmwczE510/view?usp=drivesdk
+    week: 11
+    lang: en
+  - type: notes
+    title: { en: Chapter 3 notes (earlier version) – part 6 of 6, ar: مذكرة الفصل 3 (نسخة سابقة) – الجزء 6 من 6 }
+    url: https://drive.google.com/open?id=1S_5VqZZ5N8oDV_pSydT96rzkNwk7aokr
+    week: 11
+    lang: en
+  # ---- Arabic notes and slides ----
+  - type: notes
+    title: { en: Introduction to quantum phenomena (Arabic notes), ar: مقدمة في الظواهر الكمومية (مذكرة) }
+    url: https://drive.google.com/file/d/1m0mO-LtWl0oZeL6IR1E7nSYegYywfl93/view?usp=sharing
+    week: 1
+    lang: ar
+  - type: slides
+    title: { en: Introduction to quantum phenomena (Arabic slides), ar: مقدمة في الظواهر الكمومية (شرائح العرض) }
+    url: https://docs.google.com/presentation/d/126wDL268evfx-mc7Jm75DlH1eRT7ZLwi8a1EaUw-_XU/edit?usp=share_link
+    week: 1
+    lang: ar
+  # ---- Video lectures (Arabic) ----
+  - type: video
+    title: { en: Video lecture 01 – quantum phenomena, ar: المحاضرة المصورة 01 – الظواهر الكمومية }
+    url: https://www.youtube.com/watch?v=JE8Qr9_NPio
+    week: 1
+    lang: ar
+  - type: video
+    title: { en: Video lecture 02 – the wavefunction, ar: المحاضرة المصورة 02 – الدالة الموجية }
+    url: https://youtu.be/WpEWW6GV35M
+    week: 1
+    lang: ar
+  - type: video
+    title: { en: Video lecture 03 – probability density, ar: المحاضرة المصورة 03 – كثافة الاحتمال }
+    url: https://youtu.be/uq2KzDG07fo
+    week: 2
+    lang: ar
+  - type: video
+    title: { en: Video lecture 04 – expectation values, ar: المحاضرة المصورة 04 – القيم المتوقعة }
+    url: https://youtu.be/bKaEvG4jB8M
+    week: 2
+    lang: ar
+  - type: video
+    title: { en: Video lecture 05 – uncertainty, ar: المحاضرة المصورة 05 – الارتياب }
+    url: https://youtu.be/zBXDylm8M5U
+    week: 3
+    lang: ar
+  - type: video
+    title: { en: Video lecture 06 – the uncertainty principle, ar: المحاضرة المصورة 06 – مبدأ الارتياب }
+    url: https://youtu.be/Y2SntywJabU
+    week: 3
+    lang: ar
+  - type: video
+    title: { en: Video lecture 07 – describing particles (end of chapter), ar: المحاضرة المصورة 07 – وصف الجسيمات (نهاية الفصل) }
+    url: https://youtu.be/VFQBjDcm55w
+    week: 3
+    lang: ar
+  - type: video
+    title: { en: Video lecture 08 – stationary states, ar: المحاضرة المصورة 08 – الحالات المستقرة }
+    url: https://youtu.be/LNqNJDoYUEA
+    week: 4
+    lang: ar
+  - type: video
+    title: { en: Video lecture 09 – the infinite square well, ar: المحاضرة المصورة 09 – البئر المربع اللانهائي }
+    url: https://youtu.be/pLk7z0ErSWo
+    week: 4
+    lang: ar
+  - type: video
+    title: { en: Video lecture 10 – the finite square well, ar: المحاضرة المصورة 10 – البئر المربع المتناهي }
+    url: https://youtu.be/uS0cXEP6UKs
+    week: 8
+    lang: ar
+  - type: video
+    title: { en: Video lecture 14 – Hilbert space, ar: المحاضرة المصورة 14 – فضاء هيلبرت }
+    url: https://youtu.be/n5Ag3HlJhO0
+    week: 9
+    lang: ar
+  - type: video
+    title: { en: Video lecture 15 (part 1) – observables and Hermitian operators, ar: المحاضرة المصورة 15 (الجزء 1) – المقادير القابلة للرصد والمؤثرات الهرميتية }
+    url: https://www.youtube.com/watch?v=3FrV2BhihMM&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=11
+    week: 9
+    lang: ar
+  - type: video
+    title: { en: Video lecture 15 (part 2) – observables and Hermitian operators, ar: المحاضرة المصورة 15 (الجزء 2) – المقادير القابلة للرصد والمؤثرات الهرميتية }
+    url: https://www.youtube.com/watch?v=Ocf4ejiE1Dg&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=10
+    week: 9
+    lang: ar
+  - type: video
+    title: { en: Video lecture 16 (part 1) – eigenfunctions of Hermitian operators, ar: المحاضرة المصورة 16 (الجزء 1) – الدوال الذاتية للمؤثرات الهرميتية }
+    url: https://www.youtube.com/watch?v=PDe_DuFcqGY&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=9
+    week: 10
+    lang: ar
+  - type: video
+    title: { en: Video lecture 16 (part 2) – eigenfunctions of Hermitian operators, ar: المحاضرة المصورة 16 (الجزء 2) – الدوال الذاتية للمؤثرات الهرميتية }
+    url: https://www.youtube.com/watch?v=ph3zbqL7RMo&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=8
+    week: 10
+    lang: ar
+  - type: video
+    title: { en: Video lecture 17 – Dirac notation, ar: المحاضرة المصورة 17 – ترميز ديراك }
+    url: https://www.youtube.com/watch?v=qzqEcWN85Ro&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=7
+    week: 11
+    lang: ar
+  - type: video
+    title: { en: Video lecture 18 – tensor products, ar: المحاضرة المصورة 18 – الجداء الموتّري }
+    url: https://www.youtube.com/watch?v=jfHTTLUuR1M&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=6
+    week: 11
+    lang: ar
+  # ---- Problem sets and solutions (English series) ----
+  - type: problems
+    title: { en: Problem set 1, ar: السلسلة 1 }
+    url: https://drive.google.com/open?id=1jReVMJPpP-GpJYeeJn05HikRJL_vlHmb
+    week: 2
+    lang: en
+  - type: solutions
+    title: { en: Solutions to problem set 1, ar: حلول السلسلة 1 }
+    url: https://drive.google.com/open?id=1HYKYqIgKxMqFjnidHRIFcmwu5oR1s6J6
+    week: 2
+    lang: en
+  - type: problems
+    title: { en: Problem set 2, ar: السلسلة 2 }
+    url: https://drive.google.com/open?id=1_5wq9jKTjl9QJDy4OHtkJJivfs9xfzg6
+    week: 3
+    lang: en
+  - type: solutions
+    title: { en: Solutions to problem set 2, ar: حلول السلسلة 2 }
+    url: https://drive.google.com/open?id=1e2JtKsbMnbz4qqLmRt-u7gJIsh1rmuJ5
+    week: 3
+    lang: en
+  - type: problems
+    title: { en: Problem set 3, ar: السلسلة 3 }
+    url: https://drive.google.com/open?id=1Iwm2-xYelGJst0SDn1wyt8cT_GbJa06p
+    week: 4
+    lang: en
+  - type: solutions
+    title: { en: Solutions to problem set 3, ar: حلول السلسلة 3 }
+    url: https://drive.google.com/open?id=1fXKmehLRzJsgqf5l10GMJsGPYyVO-TB-
+    week: 4
+    lang: en
+  - type: problems
+    title: { en: Problem set 4, ar: السلسلة 4 }
+    url: https://drive.google.com/open?id=1yYhH1uAhW_2Xc1cusMhVzDCoboqaUVIq
+    week: 5
+    lang: en
+  - type: problems
+    title: { en: Problem set 5, ar: السلسلة 5 }
+    url: https://drive.google.com/open?id=1ugMiwLiuMiasLnAJxYWuuq5ILFTTO8Zl
+    week: 7
+    lang: en
+  - type: problems
+    title: { en: Problem set 6, ar: السلسلة 6 }
+    url: https://drive.google.com/open?id=10Zk0bCwc8HpknCat_WBpuqtn0fvshmeE
+    week: 8
+    lang: en
+  - type: problems
+    title: { en: Problem set 7, ar: السلسلة 7 }
+    url: https://drive.google.com/open?id=12l7nyeR2HKsktwLln6NHyrHBTtk6jH4e
+    week: 9
+    lang: en
+  - type: problems
+    title: { en: Problem set 8, ar: السلسلة 8 }
+    url: https://drive.google.com/open?id=1VjCzXm5-3FWolmr5QOhUuV7v3CchSHs5
+    week: 10
+    lang: en
+  - type: problems
+    title: { en: Problem set 9, ar: السلسلة 9 }
+    url: https://drive.google.com/open?id=1QNfBfgNxOdxmQ8lYDAgvPLs8nEe3uz3e
+    week: 12
+    lang: en
+  - type: problems
+    title: { en: Problem set 10, ar: السلسلة 10 }
+    url: https://drive.google.com/open?id=1bMcV9w49DqFi5hmk2g6urHAn1f10j2Vj
+    week: 13
+    lang: en
+  # ---- Chapter problem sheets (earlier English version) ----
+  - type: problems
+    title: { en: Chapter 1 problem sheet (earlier version), ar: مسائل الفصل 1 (نسخة سابقة) }
+    url: https://drive.google.com/open?id=1aNEeL2rEdTLe9JTSWsV1ziEED620edaS
+    week: 3
+    lang: en
+  - type: problems
+    title: { en: Chapter 2 problem sheet (earlier version), ar: مسائل الفصل 2 (نسخة سابقة) }
+    url: https://drive.google.com/open?id=19faKVv9k41DmLqQkqwsGVCjRGbe446K1
+    week: 8
+    lang: en
+  - type: problems
+    title: { en: Chapter 3 problem sheet (earlier version), ar: مسائل الفصل 3 (نسخة سابقة) }
+    url: https://drive.google.com/open?id=1bFUdnhTWrV625QCgRFK1lzXq0UL86o6W
+    week: 11
+    lang: en
+  # ---- Arabic series of exercises and solutions ----
+  - type: problems
+    title: { en: Exercise set 0 – mathematical review (Arabic), ar: السلسلة 0 – مراجعة رياضية }
+    url: https://drive.google.com/file/d/1gVOQY93n9zmSJgpDc9JzJ82PyXnJkbW8/view?usp=share_link
+    week: 1
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 0 (Arabic), ar: حل السلسلة 0 }
+    url: https://drive.google.com/file/d/1FSO0z5ZzDIWYsrE7_2eFEa6uGeru0XBL/view?usp=sharing
+    week: 1
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 1 – quantum phenomena (Arabic), ar: السلسلة 1 – الظواهر الكمومية }
+    url: https://drive.google.com/file/d/1pkKZZrwwCi6Id8FLUPxiYdJ827cRfNQm/view?usp=share_link
+    week: 1
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 1 (Arabic), ar: حل السلسلة 1 }
+    url: https://drive.google.com/file/d/1dHqj1f1UDawwDFm3IFeWXgcylpZ8u2wK/view?usp=sharing
+    week: 1
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 2 – the wavefunction (Arabic), ar: السلسلة 2 – الدالة الموجية }
+    url: https://drive.google.com/file/d/1MSR5_iJwmu_o_hSznaF5BBKmWyP2bf6-/view?usp=share_link
+    week: 2
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 2 (Arabic), ar: حل السلسلة 2 }
+    url: https://drive.google.com/file/d/1i5tvDjQ1_sdEV04rWf8HNyumgDLfIySG/view?usp=sharing
+    week: 2
+    lang: ar
+  - type: problems
+    title: { en: 'Exercise set 3 – probability, normalisation, momentum (Arabic)', ar: السلسلة 3 – الاحتمالات والاستنظام والزخم }
+    url: https://drive.google.com/file/d/1TCdlApOhB5BMtNe9AYgGvyV-QijWAYGr/view?usp=share_link
+    week: 3
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 3 (Arabic), ar: حل السلسلة 3 }
+    url: https://drive.google.com/file/d/1klhB9AtR4yFZdl-oKxJFT5NOU4wuHFAf/view?usp=sharing
+    week: 3
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 4 – uncertainty and stationary states (Arabic), ar: السلسلة 4 – الارتياب والحالات المستقرة }
+    url: https://drive.google.com/file/d/15Xf3f5CDqmuxnSIyCu-C_CqsgJWKlb88/view?usp=share_link
+    week: 4
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 4 (Arabic), ar: حل السلسلة 4 }
+    url: https://drive.google.com/file/d/1t6WMF0xynYGI-RlySbPVewYyiErwUb8-/view?usp=sharing
+    week: 4
+    lang: ar
+  - type: video
+    title: { en: Exercise set 4 – video solution (Arabic), ar: السلسلة 4 – حل مصوَّر }
+    url: https://youtu.be/DlC5SGU1Uzg
+    week: 4
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 5 – the infinite square well (Arabic), ar: السلسلة 5 – البئر المربع اللانهائي }
+    url: https://drive.google.com/file/d/1URBxR3TC9woOZbp1YVIeNMKEFmERhUYw/view?usp=share_link
+    week: 4
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 5 (Arabic), ar: حل السلسلة 5 }
+    url: https://drive.google.com/file/d/1aksmvTFWVOBy99ZFZQ3p1bGaMHdQWsZ8/view?usp=sharing
+    week: 4
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 6 – the finite square well (Arabic), ar: السلسلة 6 – البئر المربع المتناهي }
+    url: https://drive.google.com/file/d/1Kh27yKpEN4HSAL87_6ogj1apo7M476Mr/view?usp=share_link
+    week: 8
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 6 (Arabic), ar: حل السلسلة 6 }
+    url: https://drive.google.com/file/d/1GGAS0jMySjTUEVDklzHnbzdcJOWt8DZN/view?usp=drive_link
+    week: 8
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 7 – Hilbert space (Arabic), ar: السلسلة 7 – فضاء هيلبرت }
+    url: https://drive.google.com/file/d/1kYqlcoRo8IXtYC-1zqO-tXIwX2P4Bwzw/view?usp=share_link
+    week: 9
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 7 (Arabic), ar: حل السلسلة 7 }
+    url: https://drive.google.com/file/d/1pfLeyuOTdUy88s8yL8SSrr2EUlu6yHf6/view?usp=sharing
+    week: 9
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 8 – observables and Hermitian operators (Arabic), ar: السلسلة 8 – المقادير القابلة للرصد والمؤثرات الهرميتية }
+    url: https://drive.google.com/file/d/1Al11pDggsjo2ZhID4nAhQ8n-562699Ow/view?usp=share_link
+    week: 9
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 8 (Arabic), ar: حل السلسلة 8 }
+    url: https://drive.google.com/file/d/1jOCMmWJeLEBsz8PuNIQP6fIuzdq4JLu2/view?usp=drive_link
+    week: 9
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 9 – eigenfunctions and the generalised statistical interpretation (Arabic), ar: السلسلة 9 – الدوال الذاتية والتفسير الإحصائي المعمَّم }
+    url: https://drive.google.com/file/d/1zy_BF0gtwM0tXlCOs8p5sMFc8V_9r0Gb/view?usp=share_link
+    week: 10
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 9 (Arabic), ar: حل السلسلة 9 }
+    url: https://drive.google.com/file/d/1vxxDQsW5s5XP1JU91brIJPjK4L_sgS-Y/view?usp=drive_link
+    week: 10
+    lang: ar
+  - type: problems
+    title: { en: Exercise set 10 – measurement and the postulates (Arabic), ar: السلسلة 10 – القياس ومسلّمات ميكانيكا الكم }
+    url: https://drive.google.com/file/d/1lPv5Q0XYhg2A9TESpyT9tbCcArAAcS06/view?usp=share_link
+    week: 11
+    lang: ar
+  - type: solutions
+    title: { en: Solution of exercise set 10 (Arabic), ar: حل السلسلة 10 }
+    url: https://drive.google.com/file/d/1ncwlJ5uLo6kgbmSnITr6HPQVbyYy5TbU/view?usp=drive_link
+    week: 11
+    lang: ar
+  # ---- Formula sheet and simulations ----
+  - type: formula
+    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+    lang: en
+  - type: sim
+    title: { en: 'Animation – ⟨x⟩(t) in the infinite square well, phase 0 (Griffiths Prob. 2.6)', ar: 'تحريك – ⟨x⟩(t) في البئر اللانهائي، الطور 0 (مسألة غريفيثس 2.6)' }
+    url: https://drive.google.com/open?id=1Dzf5MZgoWrpSCuxKZK407wfmmDRxlAsY
+    week: 4
+  - type: sim
+    title: { en: 'Animation – ⟨x⟩(t) in the infinite square well, phases π/2 and π', ar: 'تحريك – ⟨x⟩(t) في البئر اللانهائي، الطوران π/2 وπ' }
+    url: https://drive.google.com/open?id=1XM7pF917mMaFYm5PESBXMp8kIHa-VJHi
+    week: 4
+  # ---- Textbooks and supplementary reading ----
+  - type: reading
+    title: { en: 'Griffiths, Introduction to Quantum Mechanics – Arabic translation (3rd ed.)', ar: غريفيثس، مقدمة في ميكانيكا الكم – الترجمة العربية (ط3) }
+    url: https://drive.google.com/file/d/1PJIUZnoNkGPogNrcQpQAwptzGFkOU3U5/view?usp=sharing
+    lang: ar
+  - type: reading
+    title: { en: Quantum mechanics – lecture notes in Arabic, ar: الميكانيك الكمي – محاضرات بالعربية }
+    url: https://delenda.files.wordpress.com/2015/01/qm1.pdf
+    lang: ar
+  - type: link
+    title: { en: Collection of translated quantum-mechanics books (1), ar: مجموعة كتب مترجمة في ميكانيكا الكم (1) }
+    url: https://www.alfreed-ph.com/2017/10/Books-in-quantum-mechanics-pdf.html
+    lang: ar
+  - type: link
+    title: { en: Collection of translated quantum-mechanics books (2), ar: مجموعة كتب مترجمة في ميكانيكا الكم (2) }
+    url: https://zoom-teach.blogspot.com/2018/07/Quantum-mechanics-for-beginners-pdf.html
+    lang: ar
+  - type: video
+    title: { en: Quantum mechanics lectures in Arabic (Tikrit University), ar: محاضرات ميكانيك الكم بالعربية (جامعة تكريت) }
+    url: https://ceps.tu.edu.iq/pd/electronic-lectures1/316-%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D9%85%D8%A7%D8%AF%D8%A9-%D9%85%D9%8A%D9%83%D8%A7%D9%86%D9%8A%D9%83-%D8%A7%D9%84%D9%83%D9%85-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA-%D8%B9%D9%84%D9%8A%D8%A7-%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A7%D9%87.html
+    lang: ar
+  - type: link
+    title: { en: Quantum mechanics pages (physicsnh), ar: صفحات في ميكانيكا الكم (physicsnh) }
+    url: https://physicsnh.com/quantum%201.htm
+    lang: en
+
+exams:
+  - title: { en: Quiz 1, ar: الاختبار القصير 1 }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1KkCpefuWZ1Qm_BBHIyqPn1JL-t-WynBK
+    solution: https://drive.google.com/open?id=1eM70aavgJnTqFJMIv-9nVi6wln71nBC4
+    lang: en
+  - title: { en: First mid-term test, ar: الاختبار الفصلي الأول }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1XYALo0X6YfmoWKxpmOPHbhG17X2UeZJg
+    solution: https://drive.google.com/open?id=1d-Ytqtbh8uJ5Wel1d30McvDoovE8u4Tf
+    lang: en
+  - title: { en: Quiz 2, ar: الاختبار القصير 2 }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1jM6UN9oQV_NJ8Mf-iDv4mdQHOnZtZc-C
+    solution: https://drive.google.com/open?id=12N47zi40QExeCSqmies8XZJFTUyx8J4e
+    lang: en
+  - title: { en: Second mid-term test, ar: الاختبار الفصلي الثاني }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1M43Rh0Rxl9EPb_rSx53WL02x83Ym-th0
+    solution: https://drive.google.com/open?id=1YGRKAK6dvlJsRPhDHD_UGU6RMM2ENLEo
+    lang: en
+  - title: { en: Past exam – first semester, ar: اختبار سابق – الفصل الأول }
+    session: 2015–2016
+    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNWXZTdkVhQ2VfY1E
+    lang: en
+  - title: { en: Past exam – second semester, ar: اختبار سابق – الفصل الثاني }
+    session: 2015–2016
+    paper: https://drive.google.com/open?id=1EF32Fh_hQcspJy0sYVjs46VfO-75MYUW
+    lang: en
+  - title: { en: Past exam – first semester, ar: اختبار سابق – الفصل الأول }
+    session: 2016–2017
+    paper: https://drive.google.com/open?id=1dTd8_bcNbjeXOM4plNA_OUbMrOjoTtNk
+    lang: en
+  - title: { en: Past exam – second semester, ar: اختبار سابق – الفصل الثاني }
+    session: 2016–2017
+    paper: https://drive.google.com/open?id=168utvBDfqHl-e1k_bipUweRC184c0UzM
+    lang: en
+  - title: { en: Past exam – first semester, ar: اختبار سابق – الفصل الأول }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1Qtw6cWW-HYUZMzmCGw514lYPFUCyzPq9
+    lang: en
+  - title: { en: Past exam – second semester, ar: اختبار سابق – الفصل الثاني }
+    session: 2017–2018
+    paper: https://drive.google.com/open?id=1R4OeoVtDK2841Sj9V69NdYmtIa7DYvDS
+    lang: en
+  - title: { en: Past exam – first semester, ar: اختبار سابق – الفصل الأول }
+    session: 2018–2019
+    paper: https://drive.google.com/open?id=1tWSvxlJ6fLpcTvEEFhKX4Lz3oIkkKNb0
+    lang: en
+  - title: { en: Final exam (Arabic), ar: الاختبار النهائي }
+    session: '2022'
+    paper: https://drive.google.com/file/d/1J4LunajNmnICR8EAoX8fAyvA4PSSvgxu/view?usp=sharing
+    lang: ar
+  - title: { en: Final exam (Arabic), ar: الاختبار النهائي }
+    session: '2023'
+    paper: https://drive.google.com/file/d/1etTrZMi2lYdxY0zTQoyk-26xQJx-zgGC/view?usp=sharing
+    lang: ar
+  - title: { en: Final exam (Arabic), ar: الاختبار النهائي }
+    session: '2024'
+    paper: https://drive.google.com/file/d/1mJxz_MxiuN0TL8QfwJ3W5TG8rH-QUgNk/view?usp=sharing
+    lang: ar
+
+exam_guide:
+  format:
+    en: Two periodic exams of 60 minutes (3–4 problems each) and a 2-hour comprehensive final (5–6 problems). Every paper opens with short conceptual questions (about 20–30% of the marks), followed by multi-part calculation problems similar to the weekly problem sets and the worked problems below.
+    ar: اختباران دوريان مدة كل منهما 60 دقيقة (3–4 مسائل)، واختبار نهائي شامل مدته ساعتان (5–6 مسائل). يبدأ كل اختبار بأسئلة مفاهيمية قصيرة (نحو 20–30% من العلامة)، تليها مسائل حسابية متعددة الأجزاء مشابهة لأوراق المسائل الأسبوعية وللمسائل المحلولة أدناه.
+  allowed:
+    en: Non-programmable scientific calculator. A table of standard integrals and physical constants (the course formula sheet) is attached to the paper; no personal notes or books.
+    ar: آلة حاسبة علمية غير قابلة للبرمجة. يُرفق بورقة الاختبار جدول التكاملات القياسية والثوابت الفيزيائية (ورقة الصيغ الخاصة بالمقرر)؛ ولا يُسمح بالمذكرات الشخصية أو الكتب.
+  tips:
+    - en: Always check normalisation first — many marks are lost because a constant was never fixed.
+      ar: ابدأ دائمًا بالتحقق من الاستنظام، فكثير من العلامات تضيع بسبب ثابت لم يُحدَّد.
+    - en: Exploit symmetry (parity of the potential, orthogonality of eigenfunctions) before doing any integral.
+      ar: استغلّ التناظر (زوجية الجهد، وتعامد الدوال الذاتية) قبل حساب أي تكامل.
+    - en: For the harmonic oscillator, ladder operators are almost always faster than integrating Hermite polynomials.
+      ar: في المهتز التوافقي، تكون مؤثرات السلّم دائمًا تقريبًا أسرع من مكاملة كثيرات حدود هيرميت.
+    - en: Check dimensions and limiting cases of every final answer (e.g. does an uncertainty product exceed ħ/2?).
+      ar: تحقّق من أبعاد كل جواب نهائي ومن حالاته الحدّية (مثلًا، هل يتجاوز جداء الارتياب ħ/2؟).
+    - en: Write the physical meaning of each result in one sentence — graders reward interpretation, not only algebra.
+      ar: اكتب المعنى الفيزيائي لكل نتيجة في جملة واحدة، فالمصحّح يكافئ التفسير لا الحساب الجبري وحده.
+
+problems:
+  - title:
+      en: Normalisation and uncertainties in the infinite well
+      ar: الاستنظام والارتيابات في البئر اللانهائي
+    difficulty: 1
+    statement:
+      en: |
+        A particle in the infinite square well \(0 \le x \le a\) has the initial wavefunction
+        \[ \Psi(x,0) = A\,x(a-x), \qquad 0\le x\le a, \]
+        and zero outside. (a) Find \(A\). (b) Compute \(\expval{x}\), \(\expval{x^2}\), \(\expval{p}\) and \(\expval{p^2}\). (c) Find \(\sigma_x\sigma_p\) and check the uncertainty principle.
+      ar: |
+        جسيم في البئر المربع اللانهائي \(0 \le x \le a\) دالته الموجية الابتدائية
+        \[ \Psi(x,0) = A\,x(a-x), \qquad 0\le x\le a, \]
+        ومنعدمة خارجه. (أ) أوجد \(A\). (ب) احسب \(\expval{x}\) و\(\expval{x^2}\) و\(\expval{p}\) و\(\expval{p^2}\). (ج) أوجد \(\sigma_x\sigma_p\) وتحقّق من مبدأ الارتياب.
+    hint:
+      en: 'Use \(\int_0^a x^m(a-x)^n\,\dd x = a^{m+n+1}\,m!\,n!/(m+n+1)!\). For \(\expval{p^2}\) use \(\hat p^2 = -\hbar^2\,\dd^2/\dd x^2\).'
+      ar: 'استعمل \(\int_0^a x^m(a-x)^n\,\dd x = a^{m+n+1}\,m!\,n!/(m+n+1)!\). ولحساب \(\expval{p^2}\) استعمل \(\hat p^2 = -\hbar^2\,\dd^2/\dd x^2\).'
+    solution:
+      en: |
+        (a) \(1 = A^2\int_0^a x^2(a-x)^2\,\dd x = A^2\,\dfrac{a^5\,2!\,2!}{5!} = A^2\dfrac{a^5}{30}\), so \(A = \sqrt{30/a^5}\).
+        <br>(b) The density is symmetric about \(a/2\), hence \(\expval{x} = a/2\). Next
+        \[ \expval{x^2} = A^2\int_0^a x^4(a-x)^2\,\dd x = \frac{30}{a^5}\cdot\frac{a^7\,4!\,2!}{7!} = \frac{30}{a^5}\cdot\frac{a^7}{105} = \frac{2a^2}{7}. \]
+        The wavefunction is real, so \(\expval{p} = -i\hbar\int\Psi\Psi'\,\dd x = -\tfrac{i\hbar}{2}\big[\Psi^2\big]_0^a = 0\). With \(\Psi'' = -2A\):
+        \[ \expval{p^2} = -\hbar^2\int_0^a \Psi\Psi''\,\dd x = 2\hbar^2A^2\int_0^a x(a-x)\,\dd x = 2\hbar^2\frac{30}{a^5}\frac{a^3}{6} = \frac{10\hbar^2}{a^2}. \]
+        (c) \(\sigma_x^2 = \tfrac{2a^2}{7} - \tfrac{a^2}{4} = \tfrac{a^2}{28}\), \(\sigma_p^2 = \tfrac{10\hbar^2}{a^2}\), so
+        \[ \sigma_x\sigma_p = \hbar\sqrt{\tfrac{10}{28}} = \hbar\sqrt{\tfrac{5}{14}} \approx 0.598\,\hbar > \tfrac{\hbar}{2}. \]
+        The uncertainty principle is satisfied, and quite tightly: this parabola is very close to the ground state.
+      ar: |
+        (أ) \(1 = A^2\int_0^a x^2(a-x)^2\,\dd x = A^2\,\dfrac{a^5\,2!\,2!}{5!} = A^2\dfrac{a^5}{30}\)، إذن \(A = \sqrt{30/a^5}\).
+        <br>(ب) كثافة الاحتمال متناظرة حول \(a/2\)، ومنه \(\expval{x} = a/2\). ثم
+        \[ \expval{x^2} = A^2\int_0^a x^4(a-x)^2\,\dd x = \frac{30}{a^5}\cdot\frac{a^7\,4!\,2!}{7!} = \frac{30}{a^5}\cdot\frac{a^7}{105} = \frac{2a^2}{7}. \]
+        الدالة الموجية حقيقية، لذا \(\expval{p} = -i\hbar\int\Psi\Psi'\,\dd x = -\tfrac{i\hbar}{2}\big[\Psi^2\big]_0^a = 0\). ومع \(\Psi'' = -2A\):
+        \[ \expval{p^2} = -\hbar^2\int_0^a \Psi\Psi''\,\dd x = 2\hbar^2A^2\int_0^a x(a-x)\,\dd x = 2\hbar^2\frac{30}{a^5}\frac{a^3}{6} = \frac{10\hbar^2}{a^2}. \]
+        (ج) \(\sigma_x^2 = \tfrac{2a^2}{7} - \tfrac{a^2}{4} = \tfrac{a^2}{28}\) و\(\sigma_p^2 = \tfrac{10\hbar^2}{a^2}\)، ومنه
+        \[ \sigma_x\sigma_p = \hbar\sqrt{\tfrac{10}{28}} = \hbar\sqrt{\tfrac{5}{14}} \approx 0.598\,\hbar > \tfrac{\hbar}{2}. \]
+        مبدأ الارتياب محقَّق وبهامش ضيّق، لأن هذا القطع المكافئ قريب جدًا من الحالة الأساسية.
+  - title:
+      en: Expanding a state in energy eigenstates
+      ar: نشر حالة بدلالة الحالات الذاتية للطاقة
+    difficulty: 2
+    statement:
+      en: |
+        For the state \(\Psi(x,0) = \sqrt{30/a^5}\,x(a-x)\) of the previous problem, (a) find the coefficients \(c_n\) of its expansion in the eigenstates \(\psi_n(x) = \sqrt{2/a}\,\sin(n\pi x/a)\); (b) find the probability that an energy measurement gives \(E_1\); (c) compute \(\expval{H}\) and compare with \(E_1\); (d) write \(\Psi(x,t)\).
+      ar: |
+        من أجل الحالة \(\Psi(x,0) = \sqrt{30/a^5}\,x(a-x)\) في المسألة السابقة: (أ) أوجد المعاملات \(c_n\) لنشرها بدلالة الحالات الذاتية \(\psi_n(x) = \sqrt{2/a}\,\sin(n\pi x/a)\)؛ (ب) أوجد احتمال أن يعطي قياس الطاقة القيمة \(E_1\)؛ (ج) احسب \(\expval{H}\) وقارنها بـ \(E_1\)؛ (د) اكتب \(\Psi(x,t)\).
+    hint:
+      en: 'Integrate by parts twice: \(\int_0^a x(a-x)\sin(n\pi x/a)\,\dd x = \frac{2a^3}{(n\pi)^3}\,[1-(-1)^n]\).'
+      ar: 'كامِل بالتجزئة مرتين: \(\int_0^a x(a-x)\sin(n\pi x/a)\,\dd x = \frac{2a^3}{(n\pi)^3}\,[1-(-1)^n]\).'
+    solution:
+      en: |
+        (a) \(c_n = \int_0^a \psi_n\Psi\,\dd x = \sqrt{\tfrac{2}{a}}\sqrt{\tfrac{30}{a^5}}\,\dfrac{2a^3}{(n\pi)^3}[1-(-1)^n]\). Hence
+        \[ c_n = \begin{cases} \dfrac{8\sqrt{15}}{(n\pi)^3}, & n \text{ odd},\\[4pt] 0, & n \text{ even}. \end{cases} \]
+        Even states vanish because \(\Psi\) is symmetric about the centre of the well while \(\psi_{2k}\) are antisymmetric.
+        <br>(b) \(P(E_1) = \abs{c_1}^2 = \dfrac{960}{\pi^6} \approx 0.9986\).
+        <br>(c) \(\expval{H} = \expval{p^2}/2m = \dfrac{5\hbar^2}{ma^2}\), while \(E_1 = \dfrac{\pi^2\hbar^2}{2ma^2} \approx \dfrac{4.935\,\hbar^2}{ma^2}\). As required, \(\expval{H} \ge E_1\) (variational principle), and they are very close because \(\abs{c_1}^2 \approx 1\). Check: \(\sum_n \abs{c_n}^2E_n = \tfrac{960}{\pi^6}\tfrac{\pi^2\hbar^2}{2ma^2}\sum_{\text{odd}}\tfrac{1}{n^4} = \tfrac{5\hbar^2}{ma^2}\), using \(\sum_{\text{odd}} n^{-4} = \pi^4/96\).
+        <br>(d) \[ \Psi(x,t) = \sqrt{\frac{2}{a}}\sum_{n=1,3,5,\dots}\frac{8\sqrt{15}}{(n\pi)^3}\,\sin\!\Big(\frac{n\pi x}{a}\Big)\,e^{-in^2\pi^2\hbar t/2ma^2}. \]
+      ar: |
+        (أ) \(c_n = \int_0^a \psi_n\Psi\,\dd x = \sqrt{\tfrac{2}{a}}\sqrt{\tfrac{30}{a^5}}\,\dfrac{2a^3}{(n\pi)^3}[1-(-1)^n]\)، ومنه
+        \[ c_n = \begin{cases} \dfrac{8\sqrt{15}}{(n\pi)^3}, & n \text{ odd},\\[4pt] 0, & n \text{ even}. \end{cases} \]
+        تنعدم معاملات الحالات ذات \(n\) الزوجي لأن \(\Psi\) متناظرة حول مركز البئر بينما الدوال \(\psi_{2k}\) ضد متناظرة.
+        <br>(ب) \(P(E_1) = \abs{c_1}^2 = \dfrac{960}{\pi^6} \approx 0.9986\).
+        <br>(ج) \(\expval{H} = \expval{p^2}/2m = \dfrac{5\hbar^2}{ma^2}\)، بينما \(E_1 = \dfrac{\pi^2\hbar^2}{2ma^2} \approx \dfrac{4.935\,\hbar^2}{ma^2}\). وكما هو متوقع \(\expval{H} \ge E_1\) (مبدأ التغاير)، والقيمتان متقاربتان جدًا لأن \(\abs{c_1}^2 \approx 1\). للتحقق: \(\sum_n \abs{c_n}^2E_n = \tfrac{960}{\pi^6}\tfrac{\pi^2\hbar^2}{2ma^2}\sum_{\text{odd}}\tfrac{1}{n^4} = \tfrac{5\hbar^2}{ma^2}\)، باستعمال \(\sum_{\text{odd}} n^{-4} = \pi^4/96\).
+        <br>(د) \[ \Psi(x,t) = \sqrt{\frac{2}{a}}\sum_{n=1,3,5,\dots}\frac{8\sqrt{15}}{(n\pi)^3}\,\sin\!\Big(\frac{n\pi x}{a}\Big)\,e^{-in^2\pi^2\hbar t/2ma^2}. \]
+  - title:
+      en: A sloshing harmonic-oscillator state
+      ar: حالة متأرجحة للمهتز التوافقي
+    difficulty: 2
+    statement:
+      en: |
+        A particle of mass \(m\) in the potential \(V = \tfrac12 m\omega^2x^2\) starts in \(\Psi(x,0) = \tfrac{1}{\sqrt2}\big[\psi_0(x) + \psi_1(x)\big]\). (a) Write \(\Psi(x,t)\). (b) Using ladder operators, find \(\expval{x}(t)\) and \(\expval{p}(t)\). (c) Find \(\expval{H}\). (d) Verify Ehrenfest's theorem \(\dd\expval{p}/\dd t = \expval{-\partial V/\partial x}\).
+      ar: |
+        جسيم كتلته \(m\) في الجهد \(V = \tfrac12 m\omega^2x^2\) يبدأ في الحالة \(\Psi(x,0) = \tfrac{1}{\sqrt2}\big[\psi_0(x) + \psi_1(x)\big]\). (أ) اكتب \(\Psi(x,t)\). (ب) باستعمال مؤثرات السلّم أوجد \(\expval{x}(t)\) و\(\expval{p}(t)\). (ج) أوجد \(\expval{H}\). (د) تحقّق من مبرهنة إهرنفست \(\dd\expval{p}/\dd t = \expval{-\partial V/\partial x}\).
+    hint:
+      en: '\(\hat x = \sqrt{\hbar/2m\omega}\,(a_+ + a_-)\), \(a_+\psi_n = \sqrt{n+1}\,\psi_{n+1}\), \(a_-\psi_n = \sqrt{n}\,\psi_{n-1}\).'
+      ar: '\(\hat x = \sqrt{\hbar/2m\omega}\,(a_+ + a_-)\)، و\(a_+\psi_n = \sqrt{n+1}\,\psi_{n+1}\)، و\(a_-\psi_n = \sqrt{n}\,\psi_{n-1}\).'
+    solution:
+      en: |
+        (a) With \(E_n = (n+\tfrac12)\hbar\omega\):
+        \[ \Psi(x,t) = \tfrac{1}{\sqrt2}\Big[\psi_0\,e^{-i\omega t/2} + \psi_1\,e^{-3i\omega t/2}\Big]. \]
+        (b) The only non-zero matrix elements of \(\hat x\) are \(\int\psi_0\,\hat x\,\psi_1\,\dd x = \int\psi_1\,\hat x\,\psi_0\,\dd x = \sqrt{\hbar/2m\omega}\). Therefore
+        \[ \expval{x} = \tfrac12\sqrt{\tfrac{\hbar}{2m\omega}}\big(e^{-i\omega t} + e^{i\omega t}\big) = \sqrt{\frac{\hbar}{2m\omega}}\,\cos\omega t, \qquad \expval{p} = m\frac{\dd\expval{x}}{\dd t} = -\sqrt{\frac{m\hbar\omega}{2}}\,\sin\omega t. \]
+        (c) \(\expval{H} = \tfrac12E_0 + \tfrac12E_1 = \tfrac12\big(\tfrac12+\tfrac32\big)\hbar\omega = \hbar\omega\) — constant in time.
+        <br>(d) \(\dfrac{\dd\expval{p}}{\dd t} = -\omega\sqrt{\tfrac{m\hbar\omega}{2}}\cos\omega t\), and \(\expval{-\partial V/\partial x} = -m\omega^2\expval{x} = -m\omega^2\sqrt{\tfrac{\hbar}{2m\omega}}\cos\omega t = -\omega\sqrt{\tfrac{m\hbar\omega}{2}}\cos\omega t\). The two agree: the centre of the packet oscillates exactly like a classical particle, at the classical frequency \(\omega\).
+      ar: |
+        (أ) مع \(E_n = (n+\tfrac12)\hbar\omega\):
+        \[ \Psi(x,t) = \tfrac{1}{\sqrt2}\Big[\psi_0\,e^{-i\omega t/2} + \psi_1\,e^{-3i\omega t/2}\Big]. \]
+        (ب) العناصر المصفوفية غير المنعدمة الوحيدة لـ \(\hat x\) هي \(\int\psi_0\,\hat x\,\psi_1\,\dd x = \int\psi_1\,\hat x\,\psi_0\,\dd x = \sqrt{\hbar/2m\omega}\). ومنه
+        \[ \expval{x} = \tfrac12\sqrt{\tfrac{\hbar}{2m\omega}}\big(e^{-i\omega t} + e^{i\omega t}\big) = \sqrt{\frac{\hbar}{2m\omega}}\,\cos\omega t, \qquad \expval{p} = m\frac{\dd\expval{x}}{\dd t} = -\sqrt{\frac{m\hbar\omega}{2}}\,\sin\omega t. \]
+        (ج) \(\expval{H} = \tfrac12E_0 + \tfrac12E_1 = \tfrac12\big(\tfrac12+\tfrac32\big)\hbar\omega = \hbar\omega\)، وهي ثابتة مع الزمن.
+        <br>(د) \(\dfrac{\dd\expval{p}}{\dd t} = -\omega\sqrt{\tfrac{m\hbar\omega}{2}}\cos\omega t\)، و\(\expval{-\partial V/\partial x} = -m\omega^2\expval{x} = -m\omega^2\sqrt{\tfrac{\hbar}{2m\omega}}\cos\omega t = -\omega\sqrt{\tfrac{m\hbar\omega}{2}}\cos\omega t\). النتيجتان متطابقتان: يهتز مركز الحزمة تمامًا كجسيم كلاسيكي وبالتردد الكلاسيكي \(\omega\).
+  - title:
+      en: Bound state of the delta-function well
+      ar: حالة الارتباط في بئر دالة دلتا
+    difficulty: 2
+    statement:
+      en: |
+        A particle of mass \(m\) moves in \(V(x) = -\alpha\,\delta(x)\), \(\alpha > 0\). (a) Find the bound-state wavefunction and energy. (b) What is the probability of finding the particle within \(\abs{x} < 1/\kappa\), where \(\psi \propto e^{-\kappa\abs{x}}\)? (c) Evaluate the binding energy for an electron with \(\alpha = 1\ \text{eV}\,\text{nm}\).
+      ar: |
+        جسيم كتلته \(m\) يتحرك في الجهد \(V(x) = -\alpha\,\delta(x)\) حيث \(\alpha > 0\). (أ) أوجد الدالة الموجية وطاقة حالة الارتباط. (ب) ما احتمال وجود الجسيم في المجال \(\abs{x} < 1/\kappa\)، حيث \(\psi \propto e^{-\kappa\abs{x}}\)؟ (ج) احسب طاقة الارتباط لإلكترون من أجل \(\alpha = 1\ \text{eV}\,\text{nm}\).
+    hint:
+      en: 'Integrate the Schrödinger equation from \(-\epsilon\) to \(+\epsilon\): the derivative jumps by \(\Delta\psi'' = -(2m\alpha/\hbar^2)\,\psi(0)\). Use \(\hbar^2/m_e = 0.0762\ \text{eV}\,\text{nm}^2\).'
+      ar: 'كامِل معادلة شرودنغر من \(-\epsilon\) إلى \(+\epsilon\): تقفز المشتقة بمقدار \(\Delta\psi'' = -(2m\alpha/\hbar^2)\,\psi(0)\). استعمل \(\hbar^2/m_e = 0.0762\ \text{eV}\,\text{nm}^2\).'
+    solution:
+      en: |
+        (a) For \(x \ne 0\), \(\psi'' = \kappa^2\psi\) with \(\kappa = \sqrt{-2mE}/\hbar\). Normalisable and continuous: \(\psi = B\,e^{-\kappa\abs{x}}\). The jump condition gives \(-2\kappa B = -\tfrac{2m\alpha}{\hbar^2}B\), so
+        \[ \kappa = \frac{m\alpha}{\hbar^2}, \qquad E = -\frac{\hbar^2\kappa^2}{2m} = -\frac{m\alpha^2}{2\hbar^2}, \qquad \psi(x) = \sqrt{\kappa}\,e^{-\kappa\abs{x}}. \]
+        There is exactly one bound state.
+        <br>(b) \(P = 2\kappa\int_0^{1/\kappa} e^{-2\kappa x}\,\dd x = 1 - e^{-2} \approx 0.865\).
+        <br>(c) \(\abs{E} = \dfrac{\alpha^2}{2(\hbar^2/m_e)} = \dfrac{(1\ \text{eV}\,\text{nm})^2}{2\times 0.0762\ \text{eV}\,\text{nm}^2} \approx 6.6\ \text{eV}\), and \(1/\kappa = (\hbar^2/m_e)/\alpha \approx 0.076\ \text{nm}\): an atomic-size bound state.
+      ar: |
+        (أ) من أجل \(x \ne 0\) لدينا \(\psi'' = \kappa^2\psi\) حيث \(\kappa = \sqrt{-2mE}/\hbar\). الحل القابل للاستنظام والمستمر هو \(\psi = B\,e^{-\kappa\abs{x}}\). ويعطي شرط قفزة المشتقة \(-2\kappa B = -\tfrac{2m\alpha}{\hbar^2}B\)، ومنه
+        \[ \kappa = \frac{m\alpha}{\hbar^2}, \qquad E = -\frac{\hbar^2\kappa^2}{2m} = -\frac{m\alpha^2}{2\hbar^2}, \qquad \psi(x) = \sqrt{\kappa}\,e^{-\kappa\abs{x}}. \]
+        توجد حالة ارتباط واحدة فقط.
+        <br>(ب) \(P = 2\kappa\int_0^{1/\kappa} e^{-2\kappa x}\,\dd x = 1 - e^{-2} \approx 0.865\).
+        <br>(ج) \(\abs{E} = \dfrac{\alpha^2}{2(\hbar^2/m_e)} = \dfrac{(1\ \text{eV}\,\text{nm})^2}{2\times 0.0762\ \text{eV}\,\text{nm}^2} \approx 6.6\ \text{eV}\)، و\(1/\kappa = (\hbar^2/m_e)/\alpha \approx 0.076\ \text{nm}\)، أي حالة ارتباط بحجم ذري.
+  - title:
+      en: Commutators and the time evolution of expectation values
+      ar: المبدّلات والتطور الزمني للقيم المتوقعة
+    difficulty: 2
+    statement:
+      en: |
+        For a particle with Hamiltonian \(\hat H = \hat p^2/2m + V(\hat x)\): (a) show that \(\comm{\hat x}{\hat p} = i\hbar\); (b) compute \(\comm{\hat x}{\hat H}\) and \(\comm{\hat p}{\hat H}\); (c) use \(\dfrac{\dd\expval{Q}}{\dd t} = \dfrac{i}{\hbar}\expval{\comm{\hat H}{\hat Q}}\) to recover Ehrenfest's theorem; (d) deduce the uncertainty relation \(\sigma_x\sigma_H \ge \dfrac{\hbar}{2m}\abs{\expval{p}}\).
+      ar: |
+        لجسيم هاملتونيه \(\hat H = \hat p^2/2m + V(\hat x)\): (أ) بيّن أن \(\comm{\hat x}{\hat p} = i\hbar\)؛ (ب) احسب \(\comm{\hat x}{\hat H}\) و\(\comm{\hat p}{\hat H}\)؛ (ج) استعمل \(\dfrac{\dd\expval{Q}}{\dd t} = \dfrac{i}{\hbar}\expval{\comm{\hat H}{\hat Q}}\) لاسترجاع مبرهنة إهرنفست؛ (د) استنتج علاقة الارتياب \(\sigma_x\sigma_H \ge \dfrac{\hbar}{2m}\abs{\expval{p}}\).
+    hint:
+      en: 'Act on a test function \(f(x)\). Use \(\comm{A}{BC} = \comm{A}{B}C + B\comm{A}{C}\) and the generalised uncertainty principle \(\sigma_A\sigma_B \ge \abs{\expval{\comm{A}{B}}/2i}\).'
+      ar: 'طبّق المؤثرات على دالة اختبار \(f(x)\). استعمل \(\comm{A}{BC} = \comm{A}{B}C + B\comm{A}{C}\) ومبدأ الارتياب المعمَّم \(\sigma_A\sigma_B \ge \abs{\expval{\comm{A}{B}}/2i}\).'
+    solution:
+      en: |
+        (a) \(\comm{\hat x}{\hat p}f = -i\hbar\big(xf' - (xf)'\big) = -i\hbar(xf' - f - xf') = i\hbar f\), so \(\comm{\hat x}{\hat p} = i\hbar\).
+        <br>(b) \(\comm{\hat x}{\hat p^2} = \comm{\hat x}{\hat p}\hat p + \hat p\comm{\hat x}{\hat p} = 2i\hbar\hat p\), and \(\hat x\) commutes with \(V(\hat x)\), hence
+        \[ \comm{\hat x}{\hat H} = \frac{i\hbar}{m}\hat p. \]
+        Acting on \(f\): \(\comm{\hat p}{V}f = -i\hbar\big((Vf)' - Vf'\big) = -i\hbar V'f\), so \(\comm{\hat p}{\hat H} = -i\hbar\,V'(\hat x)\).
+        <br>(c) \(\dfrac{\dd\expval{x}}{\dd t} = \dfrac{i}{\hbar}\Big(-\dfrac{i\hbar}{m}\expval{p}\Big) = \dfrac{\expval{p}}{m}\) and \(\dfrac{\dd\expval{p}}{\dd t} = \dfrac{i}{\hbar}\big(i\hbar\expval{V'}\big) = -\expval{\dfrac{\partial V}{\partial x}}\) — Ehrenfest's theorem.
+        <br>(d) \(\sigma_x\sigma_H \ge \Big|\dfrac{1}{2i}\dfrac{i\hbar}{m}\expval{p}\Big| = \dfrac{\hbar}{2m}\abs{\expval{p}}\). In a stationary state \(\sigma_H = 0\), which is consistent only because \(\expval{p} = 0\) there.
+      ar: |
+        (أ) \(\comm{\hat x}{\hat p}f = -i\hbar\big(xf' - (xf)'\big) = -i\hbar(xf' - f - xf') = i\hbar f\)، إذن \(\comm{\hat x}{\hat p} = i\hbar\).
+        <br>(ب) \(\comm{\hat x}{\hat p^2} = \comm{\hat x}{\hat p}\hat p + \hat p\comm{\hat x}{\hat p} = 2i\hbar\hat p\)، و\(\hat x\) يتبادل مع \(V(\hat x)\)، ومنه
+        \[ \comm{\hat x}{\hat H} = \frac{i\hbar}{m}\hat p. \]
+        وبالتطبيق على \(f\): \(\comm{\hat p}{V}f = -i\hbar\big((Vf)' - Vf'\big) = -i\hbar V'f\)، إذن \(\comm{\hat p}{\hat H} = -i\hbar\,V'(\hat x)\).
+        <br>(ج) \(\dfrac{\dd\expval{x}}{\dd t} = \dfrac{i}{\hbar}\Big(-\dfrac{i\hbar}{m}\expval{p}\Big) = \dfrac{\expval{p}}{m}\) و\(\dfrac{\dd\expval{p}}{\dd t} = \dfrac{i}{\hbar}\big(i\hbar\expval{V'}\big) = -\expval{\dfrac{\partial V}{\partial x}}\)، وهذه مبرهنة إهرنفست.
+        <br>(د) \(\sigma_x\sigma_H \ge \Big|\dfrac{1}{2i}\dfrac{i\hbar}{m}\expval{p}\Big| = \dfrac{\hbar}{2m}\abs{\expval{p}}\). في الحالة المستقرة يكون \(\sigma_H = 0\)، وهذا متّسق فقط لأن \(\expval{p} = 0\) فيها.
+  - title:
+      en: Spin-1/2 measurements and the hydrogen ground state
+      ar: قياسات اللف المغزلي النصفي والحالة الأساسية للهيدروجين
+    difficulty: 3
+    statement:
+      en: |
+        (a) An electron is in the spin state \(\chi = A\begin{pmatrix} 3i \\ 4 \end{pmatrix}\). Normalise it, find the probabilities of \(\pm\hbar/2\) for \(S_z\) and for \(S_x\), and compute \(\expval{S_x}\), \(\expval{S_y}\), \(\expval{S_z}\).
+        <br>(b) In the hydrogen ground state \(\psi_{100} = e^{-r/a}/\sqrt{\pi a^3}\), find the most probable radius, \(\expval{r}\), and the probability that the electron lies inside the Bohr radius \(a\).
+      ar: |
+        (أ) إلكترون في حالة اللف المغزلي \(\chi = A\begin{pmatrix} 3i \\ 4 \end{pmatrix}\). استنظِم هذه الحالة، وأوجد احتمالي القيمتين \(\pm\hbar/2\) لكل من \(S_z\) و\(S_x\)، واحسب \(\expval{S_x}\) و\(\expval{S_y}\) و\(\expval{S_z}\).
+        <br>(ب) في الحالة الأساسية للهيدروجين \(\psi_{100} = e^{-r/a}/\sqrt{\pi a^3}\)، أوجد نصف القطر الأكثر احتمالًا، و\(\expval{r}\)، واحتمال وجود الإلكترون داخل نصف قطر بور \(a\).
+    hint:
+      en: '\(S_i = \tfrac{\hbar}{2}\sigma_i\); the eigenvectors of \(S_x\) are \(\tfrac{1}{\sqrt2}(1,\pm1)^T\). The radial density is \(P(r) = 4\pi r^2\abs{\psi}^2\); use \(\int_0^\infty r^n e^{-\beta r}\dd r = n!/\beta^{n+1}\).'
+      ar: '\(S_i = \tfrac{\hbar}{2}\sigma_i\)؛ والمتجهان الذاتيان لـ \(S_x\) هما \(\tfrac{1}{\sqrt2}(1,\pm1)^T\). كثافة الاحتمال القطرية \(P(r) = 4\pi r^2\abs{\psi}^2\)؛ استعمل \(\int_0^\infty r^n e^{-\beta r}\dd r = n!/\beta^{n+1}\).'
+    solution:
+      en: |
+        (a) \(\abs{A}^2(9+16) = 1 \Rightarrow A = 1/5\). For \(S_z\): \(P(+\hbar/2) = 9/25\), \(P(-\hbar/2) = 16/25\), so \(\expval{S_z} = \tfrac{\hbar}{2}\cdot\tfrac{9-16}{25} = -\tfrac{7\hbar}{50}\).
+        For \(S_x\): \(c_\pm = \tfrac{1}{\sqrt2}\cdot\tfrac{3i\pm4}{5}\), so \(\abs{c_+}^2 = \abs{c_-}^2 = \tfrac{25}{50} = \tfrac12\) and \(\expval{S_x} = 0\).
+        With \(\chi = (a,b)^T\), \(a = 3i/5\), \(b = 4/5\):
+        \[ \expval{S_y} = \tfrac{\hbar}{2}\big(-i\,a^*b + i\,b^*a\big) = \tfrac{\hbar}{2}\Big(-\tfrac{12}{25} - \tfrac{12}{25}\Big) = -\tfrac{12\hbar}{25}. \]
+        Check: \(\sqrt{\expval{S_x}^2 + \expval{S_y}^2 + \expval{S_z}^2} = \tfrac{\hbar}{50}\sqrt{0 + 24^2 + 7^2} = \tfrac{\hbar}{2}\), as it must for a pure spin-1/2 state.
+        <br>(b) \(P(r) = \tfrac{4}{a^3}r^2e^{-2r/a}\). \(P'(r) = 0 \Rightarrow r_{\text{mp}} = a\).
+        \[ \expval{r} = \frac{4}{a^3}\int_0^\infty r^3e^{-2r/a}\,\dd r = \frac{4}{a^3}\cdot\frac{3!}{(2/a)^4} = \frac{3a}{2}. \]
+        With \(u = 2r/a\): \(P(r<a) = \tfrac12\int_0^2 u^2e^{-u}\,\dd u = \tfrac12\big[2 - 10e^{-2}\big] = 1 - 5e^{-2} \approx 0.323\). The electron spends about two-thirds of the time outside the Bohr radius.
+      ar: |
+        (أ) \(\abs{A}^2(9+16) = 1 \Rightarrow A = 1/5\). من أجل \(S_z\): \(P(+\hbar/2) = 9/25\) و\(P(-\hbar/2) = 16/25\)، إذن \(\expval{S_z} = \tfrac{\hbar}{2}\cdot\tfrac{9-16}{25} = -\tfrac{7\hbar}{50}\).
+        ومن أجل \(S_x\): \(c_\pm = \tfrac{1}{\sqrt2}\cdot\tfrac{3i\pm4}{5}\)، ومنه \(\abs{c_+}^2 = \abs{c_-}^2 = \tfrac{25}{50} = \tfrac12\) و\(\expval{S_x} = 0\).
+        ومع \(\chi = (a,b)^T\) حيث \(a = 3i/5\) و\(b = 4/5\):
+        \[ \expval{S_y} = \tfrac{\hbar}{2}\big(-i\,a^*b + i\,b^*a\big) = \tfrac{\hbar}{2}\Big(-\tfrac{12}{25} - \tfrac{12}{25}\Big) = -\tfrac{12\hbar}{25}. \]
+        للتحقق: \(\sqrt{\expval{S_x}^2 + \expval{S_y}^2 + \expval{S_z}^2} = \tfrac{\hbar}{50}\sqrt{0 + 24^2 + 7^2} = \tfrac{\hbar}{2}\)، كما يجب لحالة لف مغزلي نصفي نقية.
+        <br>(ب) \(P(r) = \tfrac{4}{a^3}r^2e^{-2r/a}\). ومن \(P'(r) = 0\) نجد \(r_{\text{mp}} = a\).
+        \[ \expval{r} = \frac{4}{a^3}\int_0^\infty r^3e^{-2r/a}\,\dd r = \frac{4}{a^3}\cdot\frac{3!}{(2/a)^4} = \frac{3a}{2}. \]
+        وبوضع \(u = 2r/a\): \(P(r<a) = \tfrac12\int_0^2 u^2e^{-u}\,\dd u = \tfrac12\big[2 - 10e^{-2}\big] = 1 - 5e^{-2} \approx 0.323\). أي أن الإلكترون يقضي نحو ثلثي الوقت خارج نصف قطر بور.
+
+quizzes:
+  - title:
+      en: The wavefunction
+      ar: الدالة الموجية
+    questions:
+      - q:
+          en: 'According to Born''s statistical interpretation, \(\abs{\Psi(x,t)}^2\,\dd x\) is'
+          ar: 'وفق التفسير الإحصائي لبورن، المقدار \(\abs{\Psi(x,t)}^2\,\dd x\) هو'
+        options:
+          - { en: the charge of the particle between x and x + dx, ar: شحنة الجسيم بين x وx + dx }
+          - { en: the probability of finding the particle between x and x + dx at time t, ar: احتمال وجود الجسيم بين x وx + dx في اللحظة t }
+          - { en: the energy density of the matter wave, ar: كثافة طاقة الموجة المادية }
+          - { en: the fraction of the particle located between x and x + dx, ar: جزء الجسيم الموجود بين x وx + dx }
+        answer: 1
+        explain:
+          en: '\(\abs{\Psi}^2\) is a probability density. The particle is not smeared out: a position measurement always finds it whole at one point, with probability \(\abs{\Psi}^2\dd x\) of lying in \([x, x+\dd x]\).'
+          ar: '\(\abs{\Psi}^2\) كثافة احتمال. الجسيم ليس موزّعًا في الفضاء؛ فقياس الموضع يجده كاملًا في نقطة واحدة، واحتمال وقوعه في \([x, x+\dd x]\) هو \(\abs{\Psi}^2\dd x\).'
+      - q:
+          en: A wavefunction normalised at t = 0 evolves according to the Schrödinger equation with a real potential. Then
+          ar: دالة موجية مستنظمة عند t = 0 تتطور وفق معادلة شرودنغر بجهد حقيقي. عندئذ
+        options:
+          - { en: it must be renormalised at every instant, ar: يجب إعادة استنظامها في كل لحظة }
+          - { en: it stays normalised only for stationary states, ar: تبقى مستنظمة في الحالات المستقرة فقط }
+          - { en: it stays normalised for all times, ar: تبقى مستنظمة في كل الأزمنة }
+          - { en: its norm decreases exponentially, ar: يتناقص معيارها أسيًا }
+        answer: 2
+        explain:
+          en: 'Using the Schrödinger equation one finds \(\frac{\dd}{\dd t}\int\abs{\Psi}^2\dd x = \frac{i\hbar}{2m}\big[\Psi^*\Psi_x - \Psi\Psi^*_x\big]_{-\infty}^{\infty} = 0\) for a normalisable \(\Psi\): probability is conserved.'
+          ar: 'باستعمال معادلة شرودنغر نجد \(\frac{\dd}{\dd t}\int\abs{\Psi}^2\dd x = \frac{i\hbar}{2m}\big[\Psi^*\Psi_x - \Psi\Psi^*_x\big]_{-\infty}^{\infty} = 0\) لكل \(\Psi\) قابلة للاستنظام؛ فالاحتمال منحفظ.'
+      - q:
+          en: In the position representation the momentum operator is
+          ar: في تمثيل الموضع يُكتب مؤثر الزخم على الشكل
+        options:
+          - '\(-i\hbar\,\partial/\partial x\)'
+          - '\(i\hbar\,\partial/\partial x\)'
+          - '\(-\hbar^2\,\partial^2/\partial x^2\)'
+          - '\(m\,\dd x/\dd t\)'
+        answer: 0
+        explain:
+          en: '\(\expval{p} = m\,\dd\expval{x}/\dd t = \int\Psi^*\big(-i\hbar\,\partial_x\big)\Psi\,\dd x\). The sign matters: \(-i\hbar\partial_x e^{ikx} = \hbar k\,e^{ikx}\), consistent with de Broglie.'
+          ar: '\(\expval{p} = m\,\dd\expval{x}/\dd t = \int\Psi^*\big(-i\hbar\,\partial_x\big)\Psi\,\dd x\). والإشارة مهمة: \(-i\hbar\partial_x e^{ikx} = \hbar k\,e^{ikx}\)، بما يتّفق مع علاقة دي بروي.'
+      - q:
+          en: Heisenberg's uncertainty principle states that
+          ar: ينص مبدأ الارتياب لهايزنبرغ على أن
+        options:
+          - '\(\sigma_x\sigma_p \ge \hbar\)'
+          - '\(\sigma_x\sigma_p \ge h\)'
+          - '\(\sigma_x\sigma_p = \hbar/2\)'
+          - '\(\sigma_x\sigma_p \ge \hbar/2\)'
+        answer: 3
+        explain:
+          en: 'The bound is \(\hbar/2\), and it is an inequality; equality is reached only by Gaussian wavefunctions (e.g. the oscillator ground state).'
+          ar: 'الحدّ الأدنى هو \(\hbar/2\) وهي متراجحة؛ ولا تتحقق المساواة إلا للدوال الغاوسية (مثل الحالة الأساسية للمهتز التوافقي).'
+      - q:
+          en: 'For a real, normalisable wavefunction \(\psi(x)\) (no complex phase), the expectation value of momentum is'
+          ar: 'من أجل دالة موجية حقيقية قابلة للاستنظام \(\psi(x)\) (دون طور مركب)، تكون القيمة المتوقعة للزخم'
+        options:
+          - { en: 'zero', ar: 'صفرًا' }
+          - '\(\hbar k\)'
+          - { en: 'positive, equal to \(\hbar/2\sigma_x\)', ar: 'موجبة وتساوي \(\hbar/2\sigma_x\)' }
+          - { en: impossible to determine without more data, ar: غير قابلة للتحديد دون معطيات إضافية }
+        answer: 0
+        explain:
+          en: '\(\expval{p} = -i\hbar\int\psi\psi''\,\dd x = -\tfrac{i\hbar}{2}\big[\psi^2\big]_{-\infty}^{\infty} = 0\). Also, a purely imaginary result for a Hermitian operator would be impossible, so it must vanish.'
+          ar: '\(\expval{p} = -i\hbar\int\psi\psi''\,\dd x = -\tfrac{i\hbar}{2}\big[\psi^2\big]_{-\infty}^{\infty} = 0\). كما أن نتيجة تخيلية بحتة مستحيلة لمؤثر هرميتي، فلا بد أن تنعدم.'
+  - title:
+      en: One-dimensional potentials
+      ar: الجهود أحادية البعد
+    questions:
+      - q:
+          en: 'In an infinite square well, what is the ratio \(E_3/E_1\)?'
+          ar: 'في البئر المربع اللانهائي، ما قيمة النسبة \(E_3/E_1\)؟'
+        options: ['3', '9', '6', '27']
+        answer: 1
+        explain:
+          en: '\(E_n = n^2\pi^2\hbar^2/2ma^2 \propto n^2\), so \(E_3/E_1 = 9\).'
+          ar: '\(E_n = n^2\pi^2\hbar^2/2ma^2 \propto n^2\)، إذن \(E_3/E_1 = 9\).'
+      - q:
+          en: The energy of the first excited state of a harmonic oscillator of angular frequency ω is
+          ar: طاقة الحالة المثارة الأولى لمهتز توافقي تردده الزاوي ω هي
+        options:
+          - '\(\hbar\omega\)'
+          - '\(\hbar\omega/2\)'
+          - '\(3\hbar\omega/2\)'
+          - '\(2\hbar\omega\)'
+        answer: 2
+        explain:
+          en: '\(E_n = (n+\tfrac12)\hbar\omega\); the first excited state has \(n = 1\), so \(E_1 = \tfrac32\hbar\omega\).'
+          ar: '\(E_n = (n+\tfrac12)\hbar\omega\)؛ والحالة المثارة الأولى توافق \(n = 1\)، إذن \(E_1 = \tfrac32\hbar\omega\).'
+      - q:
+          en: 'Why is the plane wave \(e^{i(kx-\omega t)}\) not a physically realisable state of a free particle?'
+          ar: 'لماذا لا تمثل الموجة المستوية \(e^{i(kx-\omega t)}\) حالة فيزيائية ممكنة لجسيم حر؟'
+        options:
+          - { en: It does not satisfy the Schrödinger equation, ar: لأنها لا تحقق معادلة شرودنغر }
+          - { en: Its energy is negative, ar: لأن طاقتها سالبة }
+          - { en: Its velocity exceeds the speed of light, ar: لأن سرعتها تتجاوز سرعة الضوء }
+          - { en: It cannot be normalised; physical states are wave packets, ar: لأنها غير قابلة للاستنظام؛ والحالات الفيزيائية حزم موجية }
+        answer: 3
+        explain:
+          en: '\(\int\abs{e^{ikx}}^2\dd x\) diverges. Plane waves are useful as a basis, but a real particle is a superposition \(\int\phi(k)e^{i(kx-\omega t)}\dd k\) — a normalisable wave packet.'
+          ar: 'التكامل \(\int\abs{e^{ikx}}^2\dd x\) متباعد. الموجات المستوية مفيدة كأساس، لكن الجسيم الحقيقي تراكب \(\int\phi(k)e^{i(kx-\omega t)}\dd k\)، أي حزمة موجية قابلة للاستنظام.'
+      - q:
+          en: 'How many bound states does the attractive delta potential \(V(x) = -\alpha\delta(x)\) have?'
+          ar: 'كم حالة ارتباط يملك جهد دلتا الجاذب \(V(x) = -\alpha\delta(x)\)؟'
+        options:
+          - { en: Exactly one, ar: حالة واحدة بالضبط }
+          - { en: None, ar: لا شيء }
+          - { en: Infinitely many, ar: عدد لانهائي }
+          - { en: It depends on α, ar: يتوقف على α }
+        answer: 0
+        explain:
+          en: 'The derivative-jump condition fixes \(\kappa = m\alpha/\hbar^2\) uniquely, giving the single bound state \(E = -m\alpha^2/2\hbar^2\) for any \(\alpha > 0\).'
+          ar: 'شرط قفزة المشتقة يحدد \(\kappa = m\alpha/\hbar^2\) بشكل وحيد، فنحصل على حالة ارتباط وحيدة \(E = -m\alpha^2/2\hbar^2\) مهما كانت \(\alpha > 0\).'
+      - q:
+          en: In a one-dimensional finite square well,
+          ar: في البئر المربع المتناهي أحادي البعد
+        options:
+          - { en: there may be no bound state if the well is too shallow, ar: قد لا توجد أي حالة ارتباط إذا كان البئر ضحلًا جدًا }
+          - { en: there is always at least one (even) bound state, ar: توجد دائمًا حالة ارتباط واحدة (زوجية) على الأقل }
+          - { en: the number of bound states is always infinite, ar: عدد حالات الارتباط لانهائي دائمًا }
+          - { en: the bound wavefunctions vanish outside the well, ar: تنعدم دوال الارتباط الموجية خارج البئر }
+        answer: 1
+        explain:
+          en: 'In 1D any attractive well binds: the even-state condition \(\tan z = \sqrt{(z_0/z)^2 - 1}\) always has a root. The number of states grows with \(z_0 = (a/\hbar)\sqrt{2mV_0}\), and the wavefunctions leak (decay exponentially) outside.'
+          ar: 'في بعد واحد يربط كل بئر جاذب جسيمًا: شرط الحالات الزوجية \(\tan z = \sqrt{(z_0/z)^2 - 1}\) له دائمًا جذر. ويزداد عدد الحالات مع \(z_0 = (a/\hbar)\sqrt{2mV_0}\)، وتتسرّب الدوال الموجية خارج البئر (تتناقص أسيًا).'
+  - title:
+      en: The formalism
+      ar: الصياغة الرياضية
+    questions:
+      - q:
+          en: The eigenvalues of a Hermitian operator are
+          ar: القيم الذاتية لمؤثر هرميتي تكون
+        options:
+          - { en: always positive, ar: موجبة دائمًا }
+          - { en: purely imaginary, ar: تخيلية بحتة }
+          - { en: real, ar: حقيقية }
+          - { en: integers, ar: أعدادًا صحيحة }
+        answer: 2
+        explain:
+          en: 'If \(\hat Q f = qf\), then \(q\braket{f}{f} = \braket{f}{\hat Qf} = \braket{\hat Qf}{f} = q^*\braket{f}{f}\), so \(q = q^*\). This is why observables are Hermitian.'
+          ar: 'إذا كان \(\hat Q f = qf\) فإن \(q\braket{f}{f} = \braket{f}{\hat Qf} = \braket{\hat Qf}{f} = q^*\braket{f}{f}\)، ومنه \(q = q^*\). ولهذا تُمثَّل المقادير القابلة للرصد بمؤثرات هرميتية.'
+      - q:
+          en: Eigenfunctions of a Hermitian operator belonging to distinct eigenvalues are
+          ar: الدوال الذاتية لمؤثر هرميتي المرافقة لقيم ذاتية مختلفة تكون
+        options:
+          - { en: orthogonal, ar: متعامدة }
+          - { en: parallel, ar: متوازية }
+          - { en: identical up to a phase, ar: متطابقة بغض النظر عن طور }
+          - { en: not normalisable, ar: غير قابلة للاستنظام }
+        answer: 0
+        explain:
+          en: '\(q\braket{g}{f} = \braket{g}{\hat Qf} = \braket{\hat Qg}{f} = q''\braket{g}{f}\); with \(q \ne q''\) this forces \(\braket{g}{f} = 0\).'
+          ar: '\(q\braket{g}{f} = \braket{g}{\hat Qf} = \braket{\hat Qg}{f} = q''\braket{g}{f}\)؛ ومع \(q \ne q''\) يجب أن يكون \(\braket{g}{f} = 0\).'
+      - q:
+          en: 'The commutator \(\comm{\hat x}{\hat p}\) equals'
+          ar: 'المبدّل \(\comm{\hat x}{\hat p}\) يساوي'
+        options:
+          - '\(0\)'
+          - '\(-i\hbar\)'
+          - '\(\hbar\)'
+          - '\(i\hbar\)'
+        answer: 3
+        explain:
+          en: 'Acting on a test function: \(\comm{\hat x}{\hat p}f = -i\hbar(xf'' - (xf)'') = i\hbar f\). The non-zero commutator is the root of \(\sigma_x\sigma_p \ge \hbar/2\).'
+          ar: 'بالتطبيق على دالة اختبار: \(\comm{\hat x}{\hat p}f = -i\hbar(xf'' - (xf)'') = i\hbar f\). وهذا المبدّل غير المنعدم أصل العلاقة \(\sigma_x\sigma_p \ge \hbar/2\).'
+      - q:
+          en: 'A measurement of observable Q on the state \(\sum_n c_n f_n\) gives the eigenvalue \(q_2\). An immediate second measurement of Q gives'
+          ar: 'قياس للمقدار Q على الحالة \(\sum_n c_n f_n\) أعطى القيمة الذاتية \(q_2\). قياس ثانٍ فوري لـ Q يعطي'
+        options:
+          - { en: '\(q_n\) with probability \(\abs{c_n}^2\)', ar: '\(q_n\) باحتمال \(\abs{c_n}^2\)' }
+          - { en: '\(q_2\) with certainty', ar: '\(q_2\) بشكل مؤكد' }
+          - '\(\expval{Q}\)'
+          - { en: a random eigenvalue with equal probabilities, ar: قيمة ذاتية عشوائية باحتمالات متساوية }
+        answer: 1
+        explain:
+          en: 'The first measurement collapses the state onto \(f_2\) (a determinate state of Q). Repeating the measurement at once must give the same value \(q_2\).'
+          ar: 'القياس الأول يُسقط الحالة على \(f_2\) (حالة محدَّدة لـ Q). وتكرار القياس فورًا يجب أن يعطي القيمة نفسها \(q_2\).'
+      - q:
+          en: 'In Dirac notation, the complex conjugate of \(\braket{\alpha}{\beta}\) is'
+          ar: 'في ترميز ديراك، المرافق المركب لـ \(\braket{\alpha}{\beta}\) هو'
+        options:
+          - '\(\braket{\alpha}{\beta}\)'
+          - '\(-\braket{\alpha}{\beta}\)'
+          - '\(\braket{\beta}{\alpha}\)'
+          - '\(\ket{\beta}\bra{\alpha}\)'
+        answer: 2
+        explain:
+          en: 'The inner product is Hermitian-symmetric: \(\braket{\alpha}{\beta}^* = \braket{\beta}{\alpha}\). The last option is an operator, not a number.'
+          ar: 'الجداء الداخلي متناظر هرميتيًا: \(\braket{\alpha}{\beta}^* = \braket{\beta}{\alpha}\). أما الخيار الأخير فهو مؤثر وليس عددًا.'
+  - title:
+      en: Quantum mechanics in three dimensions
+      ar: ميكانيكا الكم في ثلاثة أبعاد
+    questions:
+      - q:
+          en: The energy of the n = 2 level of hydrogen is
+          ar: طاقة المستوى n = 2 في ذرة الهيدروجين هي
+        options:
+          - '\(-6.8\ \text{eV}\)'
+          - '\(-3.4\ \text{eV}\)'
+          - '\(-1.51\ \text{eV}\)'
+          - '\(-13.6\ \text{eV}\)'
+        answer: 1
+        explain:
+          en: '\(E_n = -13.6\ \text{eV}/n^2\), so \(E_2 = -13.6/4 = -3.4\ \text{eV}\).'
+          ar: '\(E_n = -13.6\ \text{eV}/n^2\)، إذن \(E_2 = -13.6/4 = -3.4\ \text{eV}\).'
+      - q:
+          en: Ignoring spin, what is the degeneracy of the n = 3 level of hydrogen?
+          ar: مع إهمال اللف المغزلي، ما درجة انحلال المستوى n = 3 في ذرة الهيدروجين؟
+        options: ['3', '6', '9', '18']
+        answer: 2
+        explain:
+          en: 'For each \(n\), \(l = 0,\dots,n-1\) and \(m = -l,\dots,l\): \(\sum_{l=0}^{n-1}(2l+1) = n^2 = 9\). Including spin it would be \(2n^2 = 18\).'
+          ar: 'لكل \(n\) تأخذ \(l\) القيم \(0,\dots,n-1\) وتأخذ \(m\) القيم \(-l,\dots,l\): \(\sum_{l=0}^{n-1}(2l+1) = n^2 = 9\). ومع احتساب اللف المغزلي يصبح \(2n^2 = 18\).'
+      - q:
+          en: 'The eigenvalue of \(L^2\) for a state with \(l = 2\) is'
+          ar: 'القيمة الذاتية لـ \(L^2\) لحالة ذات \(l = 2\) هي'
+        options:
+          - '\(6\hbar^2\)'
+          - '\(4\hbar^2\)'
+          - '\(2\hbar^2\)'
+          - '\(5\hbar^2\)'
+        answer: 0
+        explain:
+          en: '\(L^2 Y_l^m = \hbar^2 l(l+1) Y_l^m\); for \(l = 2\) this is \(6\hbar^2\). The maximum \(L_z\) is only \(2\hbar\), so \(\vb{L}\) can never point exactly along \(z\).'
+          ar: '\(L^2 Y_l^m = \hbar^2 l(l+1) Y_l^m\)؛ ومن أجل \(l = 2\) نجد \(6\hbar^2\). وأكبر قيمة لـ \(L_z\) هي \(2\hbar\) فقط، لذا لا يمكن أن يتجه \(\vb{L}\) تمامًا على المحور \(z\).'
+      - q:
+          en: 'The commutator \(\comm{L_x}{L_y}\) equals'
+          ar: 'المبدّل \(\comm{L_x}{L_y}\) يساوي'
+        options:
+          - '\(0\)'
+          - '\(i\hbar L_x\)'
+          - '\(\hbar L_z\)'
+          - '\(i\hbar L_z\)'
+        answer: 3
+        explain:
+          en: 'The components obey \(\comm{L_x}{L_y} = i\hbar L_z\) (and cyclic permutations), so they are incompatible observables; only \(L^2\) and one component can be measured simultaneously.'
+          ar: 'تحقق المركبات \(\comm{L_x}{L_y} = i\hbar L_z\) (مع التبديلات الدورية)، فهي مقادير غير متوافقة؛ ولا يمكن قياس سوى \(L^2\) ومركبة واحدة في آن واحد.'
+      - q:
+          en: 'For a spin-1/2 particle, the eigenvalue of \(S^2\) is'
+          ar: 'من أجل جسيم ذي لف مغزلي نصفي، القيمة الذاتية لـ \(S^2\) هي'
+        options:
+          - '\(\hbar^2/4\)'
+          - '\(3\hbar^2/4\)'
+          - '\(\hbar^2/2\)'
+          - '\(\hbar^2\)'
+        answer: 1
+        explain:
+          en: '\(S^2 = \hbar^2 s(s+1)\) with \(s = 1/2\): \(\tfrac12\cdot\tfrac32\hbar^2 = \tfrac34\hbar^2\). Equivalently \(S^2 = \tfrac{\hbar^2}{4}(\sigma_x^2 + \sigma_y^2 + \sigma_z^2) = \tfrac{3\hbar^2}{4}\).'
+          ar: '\(S^2 = \hbar^2 s(s+1)\) مع \(s = 1/2\): \(\tfrac12\cdot\tfrac32\hbar^2 = \tfrac34\hbar^2\). أو بطريقة مكافئة \(S^2 = \tfrac{\hbar^2}{4}(\sigma_x^2 + \sigma_y^2 + \sigma_z^2) = \tfrac{3\hbar^2}{4}\).'
+
+textbooks:
+  required:
+    - { authors: D. J. Griffiths & D. F. Schroeter, title: Introduction to Quantum Mechanics, edition: 3rd, publisher: Cambridge University Press, year: 2018 }
+  recommended:
+    - { authors: R. L. Liboff, title: Introductory Quantum Mechanics, edition: 4th, publisher: Addison-Wesley, year: 2002 }
+    - { authors: S. M. McMurry, title: Quantum Mechanics, publisher: Addison-Wesley, year: 1994 }
+    - { authors: 'R. P. Feynman, R. B. Leighton & M. Sands', title: The Feynman Lectures on Physics – Vol. III, publisher: Basic Books, year: 2011 }
+    - { authors: P. A. M. Dirac, title: The Principles of Quantum Mechanics, edition: 4th, publisher: Oxford University Press, year: 1958 }
+    - { authors: 'C. Cohen-Tannoudji, B. Diu & F. Laloë', title: Mécanique quantique (Quantum Mechanics), publisher: Hermann / Wiley, year: 1997 }
+    - { authors: L. D. Landau & E. M. Lifshitz, title: 'Quantum Mechanics – Non-relativistic Theory (Course of Theoretical Physics, Vol. 3)', edition: 3rd, publisher: Pergamon, year: 1977 }
+  online:
+    - title: { en: MIT OCW 8.04 Quantum Physics I (with video lectures), ar: مقرر MIT OCW 8.04 فيزياء الكم 1 (مع محاضرات مصورة) }
+      url: https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2013/index.htm
+      note: { en: 'Full lecture videos, notes and problem sets at the same level.', ar: محاضرات مصورة كاملة ومذكرات وأوراق مسائل في المستوى نفسه. }
+    - title: { en: The Feynman Lectures on Physics – Volume III, ar: محاضرات فاينمان في الفيزياء – المجلد الثالث }
+      url: https://www.feynmanlectures.caltech.edu/III_toc.html
+      note: { en: Free official online edition; an outstanding physical introduction to amplitudes and spin., ar: النسخة الرسمية المجانية على الإنترنت؛ مدخل فيزيائي ممتاز إلى السعات واللف المغزلي. }
+    - title: { en: Quantum mechanics – J. J. Binney (Oxford), ar: ميكانيكا الكم – ج. ج. بيني (أكسفورد) }
+      url: https://www-thphys.physics.ox.ac.uk/people/JamesBinney/qm_synopsis.html
+      note: { en: Lecture notes with video lectures, ar: مذكرات محاضرات مع محاضرات مصورة }
+    - title: { en: Quantum mechanics lecture podcasts (Oxford), ar: محاضرات صوتية ومرئية في ميكانيكا الكم (أكسفورد) }
+      url: https://podcasts.ox.ac.uk/series/quantum-mechanics
+    - title: { en: The Theoretical Minimum – Quantum mechanics (L. Susskind), ar: الحد الأدنى النظري – ميكانيكا الكم (ل. سسكيند) }
+      url: https://theoreticalminimum.com/courses/quantum-mechanics/2012/winter
+      note: { en: Video lectures, ar: محاضرات مصورة }
+    - title: { en: Quantum Mechanics for Scientists and Engineers (edX), ar: ميكانيكا الكم للعلماء والمهندسين (edX) }
+      url: https://www.edx.org/course/quantum-mechanics-for-scientists-and-engineers-1
+      note: { en: Free online course; optional paid certificate., ar: مقرر مجاني على الإنترنت مع شهادة اختيارية مدفوعة. }
+    - title: { en: Understanding Modern Physics II – Quantum Mechanics and Atoms (Coursera), ar: فهم الفيزياء الحديثة 2 – ميكانيكا الكم والذرات (كورسيرا) }
+      url: https://www.coursera.org/learn/understanding-modern-physics-2-quantum-mechanics-and-atoms
+      note: { en: Free online course; optional paid certificate., ar: مقرر مجاني على الإنترنت مع شهادة اختيارية مدفوعة. }
+
+glossary:
+  - { en: Wavefunction, ar: الدالة الموجية, fr: Fonction d'onde, def: { en: 'Complex function Ψ(x,t) that contains all the information about a quantum state.', ar: 'دالة مركبة Ψ(x,t) تحوي كل المعلومات عن الحالة الكمومية.' } }
+  - { en: Born rule, ar: قاعدة بورن, fr: Règle de Born, def: { en: '|Ψ|² is the probability density for finding the particle at a given position.', ar: '|Ψ|² هي كثافة احتمال وجود الجسيم في موضع معيّن.' } }
+  - { en: Normalisation, ar: الاستنظام, fr: Normalisation, def: { en: Requirement that the total probability ∫|Ψ|²dx equals one., ar: اشتراط أن يساوي الاحتمال الكلي ∫|Ψ|²dx الواحد. } }
+  - { en: Expectation value, ar: القيمة المتوقعة, fr: Valeur moyenne, def: { en: Average of many measurements of an observable on identically prepared systems., ar: متوسط نتائج قياسات عديدة لمقدار قابل للرصد على أنظمة محضّرة بشكل متطابق. } }
+  - { en: Uncertainty principle, ar: مبدأ الارتياب, fr: Principe d'incertitude, def: { en: 'The product of the standard deviations of incompatible observables has a lower bound, e.g. σxσp ≥ ħ/2.', ar: 'لجداء الانحرافين المعياريين لمقدارين غير متوافقين حدّ أدنى، مثل σxσp ≥ ħ/2.' } }
+  - { en: Schrödinger equation, ar: معادلة شرودنغر, fr: Équation de Schrödinger, def: { en: Equation iħ∂Ψ/∂t = ĤΨ governing the time evolution of the wavefunction., ar: المعادلة iħ∂Ψ/∂t = ĤΨ التي تحكم التطور الزمني للدالة الموجية. } }
+  - { en: Stationary state, ar: الحالة المستقرة, fr: État stationnaire, def: { en: Energy eigenstate whose probability density does not change in time., ar: حالة ذاتية للطاقة لا تتغير كثافة احتمالها مع الزمن. } }
+  - { en: Infinite square well, ar: البئر المربع اللانهائي, fr: Puits de potentiel infini, def: { en: Region of zero potential bounded by infinitely high walls; energies grow as n²., ar: منطقة جهد منعدم محصورة بجدارين لانهائيي الارتفاع؛ تتناسب طاقاتها مع n². } }
+  - { en: Harmonic oscillator, ar: المهتز التوافقي, fr: Oscillateur harmonique, def: { en: 'Particle in the potential ½mω²x²; equally spaced levels (n + ½)ħω.', ar: 'جسيم في الجهد ½mω²x²؛ مستوياته متساوية التباعد (n + ½)ħω.' } }
+  - { en: Ladder operators, ar: مؤثرات السلّم, fr: Opérateurs d'échelle, def: { en: Raising and lowering operators a₊ and a₋ that step between adjacent oscillator levels., ar: مؤثرا الرفع والخفض a₊ وa₋ اللذان ينقلان بين مستويات المهتز المتجاورة. } }
+  - { en: Zero-point energy, ar: طاقة نقطة الصفر, fr: Énergie de point zéro, def: { en: 'Lowest possible energy of a confined quantum system, e.g. ħω/2 for the oscillator.', ar: 'أدنى طاقة ممكنة لنظام كمومي محصور، مثل ħω/2 للمهتز التوافقي.' } }
+  - { en: Wave packet, ar: الحزمة الموجية, fr: Paquet d'ondes, def: { en: Normalisable superposition of plane waves describing a localised particle., ar: تراكب قابل للاستنظام من موجات مستوية يصف جسيمًا متموضعًا. } }
+  - { en: Group velocity, ar: سرعة المجموعة, fr: Vitesse de groupe, def: { en: 'dω/dk, the speed of the envelope of a wave packet (equals the classical particle velocity).', ar: dω/dk، سرعة غلاف الحزمة الموجية (تساوي سرعة الجسيم الكلاسيكية). } }
+  - { en: Bound state, ar: حالة الارتباط, fr: État lié, def: { en: Normalisable state with energy below the potential at infinity; discrete spectrum., ar: حالة قابلة للاستنظام طاقتها أقل من قيمة الجهد في اللانهاية؛ طيفها متقطع. } }
+  - { en: Scattering state, ar: حالة الاستطارة, fr: État de diffusion, def: { en: Non-normalisable state with energy above the potential at infinity; continuous spectrum., ar: حالة غير قابلة للاستنظام طاقتها أكبر من قيمة الجهد في اللانهاية؛ طيفها متصل. } }
+  - { en: Quantum tunnelling, ar: النفق الكمومي, fr: Effet tunnel, def: { en: Transmission of a particle through a barrier higher than its energy., ar: نفاذ جسيم عبر حاجز جهد أعلى من طاقته. } }
+  - { en: Transmission coefficient, ar: معامل النفاذ, fr: Coefficient de transmission, def: { en: Probability that an incident particle passes through a potential., ar: احتمال أن يعبر جسيم ساقط منطقة الجهد. } }
+  - { en: Hilbert space, ar: فضاء هيلبرت, fr: Espace de Hilbert, def: { en: Complete vector space with an inner product; quantum states are its vectors., ar: فضاء متجهي تام مزوّد بجداء داخلي؛ الحالات الكمومية هي متجهاته. } }
+  - { en: Hermitian operator, ar: المؤثر الهرميتي, fr: Opérateur hermitien, def: { en: 'Operator equal to its adjoint; it has real eigenvalues and represents an observable.', ar: 'مؤثر يساوي مرافقه؛ قيمه الذاتية حقيقية ويمثّل مقدارًا قابلًا للرصد.' } }
+  - { en: Observable, ar: المقدار القابل للرصد, fr: Observable, def: { en: Measurable physical quantity represented by a Hermitian operator., ar: مقدار فيزيائي قابل للقياس يمثَّل بمؤثر هرميتي. } }
+  - { en: Eigenvalue, ar: القيمة الذاتية, fr: Valeur propre, def: { en: 'Number q such that Q̂f = qf; the possible results of measuring Q.', ar: 'عدد q يحقق Q̂f = qf؛ وهي النتائج الممكنة لقياس Q.' } }
+  - { en: Commutator, ar: المبدّل, fr: Commutateur, def: { en: '[A, B] = AB − BA; observables that do not commute cannot be sharply measured together.', ar: '[A, B] = AB − BA؛ المقادير غير المتبادلة لا يمكن قياسها بدقة معًا.' } }
+  - { en: Dirac notation, ar: ترميز ديراك, fr: Notation de Dirac, def: { en: 'Bra–ket notation ⟨α|β⟩ for states, inner products and operators.', ar: 'ترميز البرا–كت ⟨α|β⟩ للحالات والجداءات الداخلية والمؤثرات.' } }
+  - { en: Collapse of the wavefunction, ar: انهيار الدالة الموجية, fr: Réduction du paquet d'ondes, def: { en: Abrupt change of the state to the eigenfunction corresponding to the measured value., ar: تحوّل مفاجئ للحالة إلى الدالة الذاتية الموافقة للقيمة المقيسة. } }
+  - { en: Spherical harmonics, ar: التوافقيات الكروية, fr: Harmoniques sphériques, def: { en: 'Functions Y_l^m(θ,φ), common eigenfunctions of L² and L_z.', ar: 'الدوال Y_l^m(θ,φ)، وهي دوال ذاتية مشتركة لـ L² وL_z.' } }
+  - { en: Bohr radius, ar: نصف قطر بور, fr: Rayon de Bohr, def: { en: 'a = 4πε₀ħ²/(me²) ≈ 0.529 Å, the natural length scale of hydrogen.', ar: 'a = 4πε₀ħ²/(me²) ≈ 0.529 Å، وهو مقياس الطول الطبيعي لذرة الهيدروجين.' } }
+  - { en: Degeneracy, ar: الانحلال, fr: Dégénérescence, def: { en: Several independent states sharing the same energy (n² for hydrogen without spin)., ar: اشتراك عدة حالات مستقلة في الطاقة نفسها (n² للهيدروجين دون اللف المغزلي). } }
+  - { en: Orbital angular momentum, ar: الزخم الزاوي المداري, fr: Moment cinétique orbital, def: { en: 'L = r × p; L² has eigenvalues ħ²l(l+1) and L_z has mħ.', ar: 'L = r × p؛ القيم الذاتية لـ L² هي ħ²l(l+1) ولـ L_z هي mħ.' } }
+  - { en: Spin, ar: اللف المغزلي, fr: Spin, def: { en: 'Intrinsic angular momentum of a particle, with no classical analogue (s = ½ for the electron).', ar: زخم زاوي ذاتي للجسيم لا مقابل كلاسيكي له (s = ½ للإلكترون). } }
+  - { en: Pauli matrices, ar: مصفوفات باولي, fr: Matrices de Pauli, def: { en: 'Three 2×2 matrices σx, σy, σz with S = (ħ/2)σ for spin ½.', ar: 'ثلاث مصفوفات 2×2 هي σx وσy وσz، حيث S = (ħ/2)σ للف المغزلي النصفي.' } }

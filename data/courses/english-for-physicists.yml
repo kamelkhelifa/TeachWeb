@@ -1,0 +1,910 @@
+slug: english-for-physicists
+order: 40
+codes: [UET 121, UET]
+short:
+  en: ENG
+  ar: إنج
+title:
+  en: English for Physicists
+  ar: اللغة الإنجليزية للفيزيائيين
+tagline:
+  en: Read, write, pronounce and present physics in English — from Newton's laws to quarks and stars.
+  ar: اقرأ الفيزياء واكتبها ونطق رموزها وقدّمها بالإنجليزية، من قوانين نيوتن إلى الكواركات والنجوم.
+area: skills
+level: 1
+credits: 1
+hours: { lecture: 1.5, tutorial: 0, lab: 0 }
+weeks: 14
+instruction: [en]
+prerequisites: []
+prerequisite_note:
+  en: General English at secondary-school level and the physics vocabulary met in first-year courses.
+  ar: اللغة الإنجليزية العامة في مستوى التعليم الثانوي، والمفردات الفيزيائية المكتسبة في مقررات السنة الأولى.
+sims: [vocab]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/english/
+  - https://khelifak.wordpress.com/studying/teaching-2/usthb/anglais-2/
+  - https://khelifak.wordpress.com/studying/teaching-2/uhbc/anglais/
+notes: >
+  Merged from three pages. The recent page (UET, years 2-3 and Master 1) gave the description, the detailed
+  learning outcomes, the lecture-notes PDF, the thematic 18-week calendar (compressed here to 14 weeks), and the final
+  exams with solutions. The two older pages taught the course as a physics review in English and gave
+  the 2014 exam and the 2012-13 exam and resit, which are classical-mechanics papers written in English. The language
+  strand (grammar, writing, presentations), assessment scheme, CLOs, quizzes, problems and glossary were
+  written new. The supplementary links on the page were misspelled and not hyperlinked (bbc.co.uk/learningenglis,
+  learnigenglish.org.uk); they were corrected to BBC Learning English and British Council LearnEnglish, and
+  Academic Phrasebank and the Cambridge Dictionary were added. Not carried over: marks PDFs, student
+  portal, assignment-submission forms and the course questionnaire. The M1 papers and the 2023-24 papers
+  were never uploaded.
+
+description:
+  en: |
+    <p>English is the working language of physics: textbooks, research articles, datasheets, conferences and most online courses use it. This course trains physics students to <strong>read, write, listen and speak about physics in English</strong> with accuracy and confidence. Each week combines a physics theme with a language focus. The themes are forces and motion, energy, gravity, sound and ultrasound, thermodynamics, electricity and magnetism, light and lasers, relativity and quantum physics, atomic and nuclear physics, particles and astronomy.</p>
+    <p>Reading is based on short authentic texts with comprehension questions and vocabulary work: word families, Greek and Latin roots, and false friends with French. Students learn to read numbers, units, symbols and equations aloud. The writing strand covers describing an experiment, describing graphs, lab reports, abstracts and formal emails. The speaking strand ends with a short oral presentation on a physics topic, followed by questions.</p>
+    <p>The same units are used at several levels (second year, third year and Master). Higher levels prepare a complete unit, with text, questions and answers, and present it to the class. The built-in flashcards with spoken pronunciation help students learn the course glossary.</p>
+  ar: |
+    <p>الإنجليزية هي لغة العمل في الفيزياء، إذ تُكتب بها الكتب المرجعية والمقالات البحثية ونشرات البيانات، وتُعقد بها المؤتمرات ومعظم المقررات على الإنترنت. يدرّب هذا المقرر طلبة الفيزياء على <strong>قراءة الفيزياء وكتابتها والاستماع إليها والتحدث عنها بالإنجليزية</strong> بدقة وثقة. ويجمع كل أسبوع بين موضوع فيزيائي ومحور لغوي. أما المواضيع فهي القوى والحركة، والطاقة، والجاذبية، والصوت والموجات فوق الصوتية، والديناميكا الحرارية، والكهرباء والمغناطيسية، والضوء والليزر، والنسبية وفيزياء الكم، والفيزياء الذرية والنووية، والجسيمات وعلم الفلك.</p>
+    <p>تعتمد القراءة على نصوص أصيلة قصيرة مع أسئلة فهم وتمارين في المفردات، منها عائلات الكلمات والجذور اليونانية واللاتينية والكلمات المتشابهة المضللة مع الفرنسية. ويتعلم الطالب قراءة الأعداد والوحدات والرموز والمعادلات بصوت عالٍ. ويغطي محور الكتابة وصف تجربة، ووصف المنحنيات، وتقارير المختبر، والملخصات العلمية، والرسائل الإلكترونية الرسمية. ويُختتم محور التحدث بعرض شفهي قصير حول موضوع فيزيائي تليه أسئلة.</p>
+    <p>تُستعمل الوحدات نفسها في عدة مستويات (السنة الثانية والسنة الثالثة والماستر). وفي المستويات العليا يُعِدّ الطالب وحدة كاملة بنصها وأسئلتها وأجوبتها ويقدّمها لزملائه. وتساعد البطاقات التعليمية المدمجة، مع النطق المسموع، على حفظ مسرد المقرر.</p>
+
+topics:
+  - { en: Reading physics texts, ar: قراءة النصوص الفيزيائية }
+  - { en: Vocabulary of mechanics, ar: مفردات الميكانيكا }
+  - { en: Electricity & magnetism vocabulary, ar: مفردات الكهرباء والمغناطيسية }
+  - { en: Waves & modern physics vocabulary, ar: مفردات الموجات والفيزياء الحديثة }
+  - { en: Reading equations aloud, ar: قراءة المعادلات بصوت عالٍ }
+  - { en: Lab reports & abstracts, ar: تقارير المختبر والملخصات }
+  - { en: Scientific emails, ar: الرسائل العلمية الرسمية }
+  - { en: Oral presentations, ar: العروض الشفهية }
+
+outcomes:
+  - id: CLO1
+    bloom: remember
+    domain: knowledge
+    text:
+      en: Recognise and correctly use the core English vocabulary of mechanics, waves, thermodynamics, electromagnetism and modern physics.
+      ar: يتعرّف على المفردات الإنجليزية الأساسية في الميكانيكا والموجات والديناميكا الحرارية والكهرومغناطيسية والفيزياء الحديثة ويستعملها استعمالًا صحيحًا.
+    assessed_by: [quizzes, homework, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: Read aloud, and write in words, numbers, units, symbols and simple mathematical expressions.
+      ar: يقرأ بصوت عالٍ الأعداد والوحدات والرموز والعبارات الرياضية البسيطة ويكتبها بالحروف.
+    assessed_by: [quizzes, presentation, final]
+  - id: CLO3
+    bloom: analyze
+    domain: skills
+    text:
+      en: Read an elementary scientific or technical text, identify its main ideas and key details, and summarise it orally or in writing.
+      ar: يقرأ نصًا علميًا أو تقنيًا أوليًا، ويحدد أفكاره الرئيسية وتفاصيله المهمة، ويلخّصه شفهيًا أو كتابيًا.
+    assessed_by: [homework, final]
+  - id: CLO4
+    bloom: apply
+    domain: skills
+    text:
+      en: Use the grammar of scientific English (present simple for laws, passive voice for methods, comparatives, cause–effect connectors, hedging) accurately.
+      ar: يوظّف قواعد الإنجليزية العلمية بدقة (المضارع البسيط للقوانين، والمبني للمجهول لوصف الطرائق، وصيغ المقارنة، وأدوات السبب والنتيجة، وصيغ التحفّظ).
+    assessed_by: [quizzes, homework, report, final]
+  - id: CLO5
+    bloom: create
+    domain: skills
+    text:
+      en: Write a short lab report, an abstract, a description of a graph and a formal email with the appropriate structure and register.
+      ar: يكتب تقرير مختبر قصيرًا وملخصًا علميًا ووصفًا لمنحنى ورسالة إلكترونية رسمية بالبنية والأسلوب المناسبين.
+    assessed_by: [report, homework, final]
+  - id: CLO6
+    bloom: create
+    domain: skills
+    text:
+      en: Deliver a structured five-minute oral presentation on a physics topic and answer questions from the audience.
+      ar: يقدّم عرضًا شفهيًا منظّمًا مدته خمس دقائق حول موضوع فيزيائي ويجيب عن أسئلة الحضور.
+    assessed_by: [presentation]
+  - id: CLO7
+    bloom: understand
+    domain: skills
+    text:
+      en: Follow a short lecture, video or technical conversation in English and note its key information.
+      ar: يتابع محاضرة قصيرة أو مقطعًا مرئيًا أو محادثة تقنية بالإنجليزية ويدوّن معلوماتها الأساسية.
+    assessed_by: [participation, homework]
+  - id: CLO8
+    bloom: apply
+    domain: values
+    text:
+      en: Act with academic integrity, citing sources and producing original texts rather than copied or machine-translated ones.
+      ar: يلتزم بالنزاهة الأكاديمية، فيوثّق المصادر وينتج نصوصًا أصيلة لا منسوخة ولا مترجمة آليًا.
+    assessed_by: [report, homework, participation]
+
+assessment:
+  - id: homework
+    type: homework
+    weight: 25
+    title:
+      en: Weekly assignments
+      ar: الواجبات الأسبوعية
+    detail:
+      en: Each unit of the lecture notes ends with a text to read, comprehension and vocabulary questions, and a written-expression task. Answers are due one week later. Master students prepare a whole unit, with full text, questions, answers and the writing task.
+      ar: تنتهي كل وحدة من المذكرة بنص للقراءة وأسئلة في الفهم والمفردات ومهمة في التعبير الكتابي، وتُسلَّم الأجوبة بعد أسبوع. ويُعِدّ طلبة الماستر وحدة كاملة بنصها وأسئلتها وأجوبتها ومهمتها الكتابية.
+    when:
+      en: Weeks 2–12
+      ar: الأسابيع 2–12
+  - id: quizzes
+    type: quiz
+    weight: 10
+    title:
+      en: Vocabulary and grammar quizzes
+      ar: اختبارات قصيرة في المفردات والقواعد
+    detail:
+      en: Three 15-minute quizzes covering vocabulary, the reading of numbers and equations, and grammar points.
+      ar: ثلاثة اختبارات قصيرة مدة كل منها 15 دقيقة في المفردات وقراءة الأعداد والمعادلات والقواعد.
+    when:
+      en: Weeks 4, 8, 11
+      ar: الأسابيع 4 و8 و11
+  - id: report
+    type: report
+    weight: 10
+    title:
+      en: Lab report and abstract
+      ar: تقرير مختبر وملخص علمي
+    detail:
+      en: A two-page report in IMRaD form on a simple experiment (data supplied), with a 100–150-word abstract. Graded on structure, accuracy, register and language.
+      ar: تقرير من صفحتين وفق بنية IMRaD عن تجربة بسيطة (تُقدَّم المعطيات)، مع ملخص من 100–150 كلمة. يُقيَّم على البنية والدقة والأسلوب واللغة.
+    when:
+      en: Due week 10
+      ar: يُسلَّم في الأسبوع 10
+  - id: presentation
+    type: presentation
+    weight: 15
+    title:
+      en: Oral presentation
+      ar: العرض الشفهي
+    detail:
+      en: A five-minute talk with slides on a physics topic of the student's choice, followed by two or three questions. Graded on content, structure, pronunciation of terms and equations, fluency and handling of questions.
+      ar: عرض مدته خمس دقائق مع شرائح حول موضوع فيزيائي يختاره الطالب، تليه سؤالان أو ثلاثة. يُقيَّم على المحتوى والبنية ونطق المصطلحات والمعادلات والطلاقة والتعامل مع الأسئلة.
+    when:
+      en: Weeks 13–14
+      ar: الأسبوعان 13–14
+  - id: participation
+    type: participation
+    weight: 5
+    title:
+      en: Participation
+      ar: المشاركة
+    detail:
+      en: Reading aloud, short listening tasks and pair discussions in class.
+      ar: القراءة بصوت عالٍ ومهام الاستماع القصيرة والنقاش الثنائي داخل القسم.
+    when:
+      en: All weeks
+      ar: كل الأسابيع
+  - id: final
+    type: final
+    weight: 35
+    title:
+      en: Final exam
+      ar: الاختبار النهائي
+    detail:
+      en: One hour. Reading comprehension of an unseen physics text, vocabulary and grammar questions, and a short written-expression task.
+      ar: ساعة واحدة. فهم نص فيزيائي غير مدروس، وأسئلة في المفردات والقواعد، ومهمة قصيرة في التعبير الكتابي.
+    when:
+      en: Final exam period
+      ar: فترة الاختبارات النهائية
+
+schedule:
+  - week: 1
+    title:
+      en: English in physics; numbers, symbols and units
+      ar: الإنجليزية في الفيزياء؛ الأعداد والرموز والوحدات
+    topics:
+      en:
+        - Introductory session and needs analysis
+        - 'Reading numbers aloud: decimals, powers of ten, fractions'
+        - SI units and prefixes; Greek letters
+      ar:
+        - حصة تعريفية وتحديد الاحتياجات
+        - 'قراءة الأعداد بصوت عالٍ: الكسور العشرية وقوى العشرة والكسور'
+        - وحدات النظام الدولي وبادئاتها؛ الحروف اليونانية
+    reading: Lecture notes – introduction
+  - week: 2
+    title:
+      en: Forces and motion
+      ar: القوى والحركة
+    topics:
+      en:
+        - Vocabulary of kinematics and Newton's laws
+        - 'Grammar: present simple for laws and definitions'
+        - Defining with relative clauses
+      ar:
+        - مفردات علم الحركة وقوانين نيوتن
+        - 'القواعد: المضارع البسيط للقوانين والتعاريف'
+        - التعريف باستعمال الجمل الموصولة
+    reading: Lecture notes – Forces & motion
+    activity:
+      en: Assignment 1
+      ar: الواجب 1
+  - week: 3
+    title:
+      en: Energy and its sources
+      ar: الطاقة ومصادرها
+    topics:
+      en:
+        - Work, energy, power; renewable and non-renewable sources
+        - 'Grammar: the passive voice to describe processes'
+      ar:
+        - الشغل والطاقة والقدرة؛ المصادر المتجددة وغير المتجددة
+        - 'القواعد: المبني للمجهول لوصف العمليات'
+    reading: Lecture notes – Energy & its sources
+    activity:
+      en: Assignment 2
+      ar: الواجب 2
+  - week: 4
+    title:
+      en: Gravity
+      ar: الجاذبية
+    topics:
+      en:
+        - Weight, free fall, orbits and tides
+        - Comparatives and superlatives
+        - Reading equations aloud (1)
+      ar:
+        - الوزن والسقوط الحر والمدارات والمد والجزر
+        - صيغ المقارنة والتفضيل
+        - قراءة المعادلات بصوت عالٍ (1)
+    reading: Lecture notes – Gravity
+    activity:
+      en: Assignment 3; quiz 1
+      ar: الواجب 3؛ الاختبار القصير 1
+    milestone: quiz
+  - week: 5
+    title:
+      en: Sound waves
+      ar: الموجات الصوتية
+    topics:
+      en:
+        - Oscillations and waves; amplitude, frequency, wavelength
+        - Describing shape, size and quantity
+      ar:
+        - الاهتزازات والموجات؛ السعة والتردد وطول الموجة
+        - وصف الشكل والحجم والكمية
+    reading: Lecture notes – Sound waves
+    activity:
+      en: Assignment 4
+      ar: الواجب 4
+  - week: 6
+    title:
+      en: Pitch, echoes and ultrasound
+      ar: حدة الصوت والصدى والموجات فوق الصوتية
+    topics:
+      en:
+        - Pitch, loudness, echoes, medical and industrial ultrasound
+        - Describing graphs and trends (rise, fall, peak, level off)
+      ar:
+        - حدة الصوت وشدته والصدى والموجات فوق الصوتية في الطب والصناعة
+        - وصف المنحنيات والاتجاهات (يرتفع، ينخفض، يبلغ ذروته، يستقر)
+    reading: Lecture notes – Pitch, echoes & ultrasound
+    activity:
+      en: Assignment 5
+      ar: الواجب 5
+  - week: 7
+    title:
+      en: 'Thermodynamics: the arrow of time'
+      ar: 'الديناميكا الحرارية: سهم الزمن'
+    topics:
+      en:
+        - Heat, temperature, entropy and irreversibility
+        - Cause and effect connectors (because of, therefore, as a result)
+      ar:
+        - الحرارة ودرجة الحرارة والإنتروبيا واللاعكوسية
+        - أدوات السبب والنتيجة (because of، therefore، as a result)
+    reading: Lecture notes – The arrow of time
+    activity:
+      en: Assignment 6
+      ar: الواجب 6
+  - week: 8
+    title:
+      en: The electricity of things
+      ar: كهرباء الأشياء
+    topics:
+      en:
+        - Charge, current, voltage, resistance, circuits
+        - Giving instructions; reading a technical manual
+      ar:
+        - الشحنة والتيار والجهد والمقاومة والدارات
+        - إعطاء التعليمات؛ قراءة دليل استعمال تقني
+    reading: Lecture notes – Electricity of things
+    activity:
+      en: Assignment 7; quiz 2
+      ar: الواجب 7؛ الاختبار القصير 2
+    milestone: quiz
+  - week: 9
+    title:
+      en: Our own giant magnet
+      ar: مغناطيسنا العملاق
+    topics:
+      en:
+        - Magnetic fields, the Earth's magnetism, compasses
+        - 'Writing a lab report: the IMRaD structure'
+      ar:
+        - المجالات المغناطيسية ومغناطيسية الأرض والبوصلة
+        - 'كتابة تقرير المختبر: بنية IMRaD'
+    reading: Lecture notes – Our own giant magnet
+    activity:
+      en: Assignment 8
+      ar: الواجب 8
+  - week: 10
+    title:
+      en: Light, lasers and the power of light
+      ar: الضوء والليزر وقدرة الضوء
+    topics:
+      en:
+        - Reflection, refraction, lasers and their applications
+        - Writing an abstract
+      ar:
+        - الانعكاس والانكسار والليزر وتطبيقاته
+        - كتابة الملخص العلمي
+    reading: Lecture notes – Lasers; The power of light
+    activity:
+      en: Assignment 9; lab report and abstract due
+      ar: الواجب 9؛ تسليم تقرير المختبر والملخص
+    milestone: project
+  - week: 11
+    title:
+      en: Relativity and quantum mechanics
+      ar: النسبية وميكانيكا الكم
+    topics:
+      en:
+        - Time dilation, mass–energy, photons and wave–particle duality
+        - Hedging and modal verbs (may, might, appears to)
+        - Writing formal emails
+      ar:
+        - تمدد الزمن، وتكافؤ الكتلة والطاقة، والفوتونات، والطبيعة المزدوجة موجة–جسيم
+        - صيغ التحفّظ والأفعال الناقصة (may، might، appears to)
+        - كتابة الرسائل الإلكترونية الرسمية
+    reading: Lecture notes – Relativity; Quantum mechanics
+    activity:
+      en: Assignment 10; quiz 3
+      ar: الواجب 10؛ الاختبار القصير 3
+    milestone: quiz
+  - week: 12
+    title:
+      en: Atomic and nuclear physics
+      ar: الفيزياء الذرية والنووية
+    topics:
+      en:
+        - Atoms, isotopes, radioactivity and half-life
+        - 'Oral presentation skills: structure, signposting, slides'
+      ar:
+        - الذرات والنظائر والنشاط الإشعاعي وعمر النصف
+        - 'مهارات العرض الشفهي: البنية وعبارات الربط والشرائح'
+    reading: Lecture notes – Atomic physics; Nuclear physics
+    activity:
+      en: Assignment 11
+      ar: الواجب 11
+  - week: 13
+    title:
+      en: Particles and the cosmos
+      ar: الجسيمات والكون
+    topics:
+      en:
+        - The Standard Model of particle physics
+        - The life cycles of stars; the Moon
+        - Student presentations (1)
+      ar:
+        - النموذج القياسي لفيزياء الجسيمات
+        - دورة حياة النجوم؛ القمر
+        - عروض الطلبة (1)
+    reading: Lecture notes – Standard Model; Stars; The Moon
+    milestone: project
+  - week: 14
+    title:
+      en: Presentations and review
+      ar: العروض والمراجعة
+    topics:
+      en:
+        - Student presentations (2)
+        - Review and exam practice
+      ar:
+        - عروض الطلبة (2)
+        - مراجعة وتدريب على الاختبار
+    milestone: review
+
+materials:
+  - type: notes
+    title:
+      en: English for Physicists – lecture notes (all units, with assignments)
+      ar: الإنجليزية للفيزيائيين – مذكرة المحاضرات (كل الوحدات مع الواجبات)
+    url: https://drive.google.com/file/d/14QBXlq69X3jb3dZemc1mJhjzdf4lEIDB/view?usp=sharing
+    lang: en
+
+exams:
+  - title:
+      en: Final exam – second-year level
+      ar: الاختبار النهائي – مستوى السنة الثانية
+    paper: https://drive.google.com/file/d/1YPzxdFxeP09qEdA3VDSQTCCai_oAXsOx/view?usp=drive_link
+    solution: https://drive.google.com/file/d/1C0Zs_KqOQN2ulIxTpvZdCHPQk1wOv9j4/view?usp=drive_link
+    lang: en
+  - title:
+      en: Final exam – third-year level
+      ar: الاختبار النهائي – مستوى السنة الثالثة
+    paper: https://drive.google.com/file/d/1E6d1JCw8ZV-WsC7z3-AIw2Y700IgU_tb/view?usp=drive_link
+    solution: https://drive.google.com/file/d/1uKj79gw4dV214tgkmc9nMiLbmqy2qWmq/view?usp=drive_link
+    lang: en
+  - title:
+      en: Final exam – second-year level
+      ar: الاختبار النهائي – مستوى السنة الثانية
+    session: '2022'
+    paper: https://drive.google.com/file/d/1D12s1ZxiX1iM-cfOcWvxrBdjnDgEWEpZ/view?usp=sharing
+    lang: en
+  - title:
+      en: Final exam – third-year level
+      ar: الاختبار النهائي – مستوى السنة الثالثة
+    session: '2022'
+    paper: https://drive.google.com/file/d/1Qp3IguGzWL4oI4iVKtHxEOYdH7WLeRiT/view?usp=sharing
+    lang: en
+  - title:
+      en: Final exam
+      ar: الاختبار النهائي
+    session: '2014'
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2015/02/ang_exam.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2015/02/ang_exam_s.pdf
+    lang: en
+  - title:
+      en: Final exam – mechanics in English
+      ar: الاختبار النهائي – الميكانيكا بالإنجليزية
+    session: 2012–2013
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2013/05/phys4001_exam1.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2013/05/phys4001_soln.pdf
+    lang: en
+  - title:
+      en: Resit exam – mechanics in English
+      ar: الاختبار الاستدراكي – الميكانيكا بالإنجليزية
+    session: 2012–2013
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2013/06/phys4001_rexam.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2013/06/phys4001_rexam_soln1.pdf
+    lang: en
+
+exam_guide:
+  format:
+    en: 'One hour, three parts. Part A (about 40%) is reading comprehension of an unseen physics text, with true/false, short-answer and vocabulary-in-context questions. Part B (about 30%) is language work: grammar, word formation, and writing numbers or equations in words. Part C (about 30%) is a written-expression task of 100–150 words, such as a summary, a description of a graph, an abstract or an email.'
+    ar: 'ساعة واحدة في ثلاثة أجزاء. الجزء (أ) (نحو 40%) فهم نص فيزيائي غير مدروس، بأسئلة صواب/خطأ وأجوبة قصيرة ومفردات في السياق. الجزء (ب) (نحو 30%) تمارين لغوية: القواعد، واشتقاق الكلمات، وكتابة الأعداد أو المعادلات بالحروف. الجزء (ج) (نحو 30%) مهمة تعبير كتابي من 100–150 كلمة، مثل ملخص أو وصف منحنى أو ملخص علمي أو رسالة إلكترونية.'
+  allowed:
+    en: Pen and paper only. Dictionaries, translators, phones and calculators are not allowed.
+    ar: القلم والورقة فقط. لا يُسمح بالقواميس ولا بأدوات الترجمة ولا بالهواتف ولا بالآلات الحاسبة.
+  tips:
+    - en: Read the questions before the text, then scan the text for the answers; underline key words.
+      ar: اقرأ الأسئلة قبل النص، ثم امسح النص بحثًا عن الأجوبة، وضع خطًا تحت الكلمات المفتاحية.
+    - en: Guess unknown words from context and from their roots (e.g. thermo-, -meter, electro-) before giving up.
+      ar: خمّن معاني الكلمات المجهولة من السياق ومن جذورها (مثل البادئة thermo- واللاحقة meter- والبادئة electro-) قبل أن تستسلم.
+    - en: Answer in your own words; copying whole sentences from the text earns few marks.
+      ar: أجب بكلماتك الخاصة؛ فنسخ جمل كاملة من النص لا يمنح إلا علامات قليلة.
+    - en: 'In the writing task, plan three short paragraphs and check verb tenses, articles (a/an/the) and plural -s.'
+      ar: 'في مهمة الكتابة خطّط لثلاث فقرات قصيرة، وراجع أزمنة الأفعال وأدوات التعريف والتنكير (a/an/the) وعلامة الجمع -s.'
+    - en: 'Use a decimal point, not a comma (2.5, not 2,5), and leave a space between number and unit (5 N).'
+      ar: 'استعمل النقطة العشرية لا الفاصلة (2.5 وليس 2,5)، واترك فراغًا بين العدد والوحدة (5 N).'
+
+problems:
+  - title:
+      en: Reading equations aloud
+      ar: قراءة المعادلات بصوت عالٍ
+    difficulty: 1
+    statement:
+      en: |
+        Write in words how each expression is read in English:
+        (a) \(F = ma\); (b) \(E = mc^2\); (c) \(c = 3.0\times10^{8}\ \text{m s}^{-1}\); (d) \(\lambda = h/p\); (e) \(\int_0^{\infty} e^{-x}\,\dd x = 1\); (f) \(\pdv{u}{t} = D\,\dfrac{\partial^2 u}{\partial x^2}\).
+      ar: |
+        اكتب بالحروف الإنجليزية كيف تُقرأ كل عبارة:
+        (أ) \(F = ma\)؛ (ب) \(E = mc^2\)؛ (ج) \(c = 3.0\times10^{8}\ \text{m s}^{-1}\)؛ (د) \(\lambda = h/p\)؛ (هـ) \(\int_0^{\infty} e^{-x}\,\dd x = 1\)؛ (و) \(\pdv{u}{t} = D\,\dfrac{\partial^2 u}{\partial x^2}\).
+    hint:
+      en: '“=” is read “equals” (or “is equal to”), a/b “a over b”, x² “x squared”, 10⁸ “ten to the (power) eight”.'
+      ar: 'تُقرأ “=” equals (أو is equal to)، وa/b تُقرأ a over b، وx² تُقرأ x squared، و10⁸ تُقرأ ten to the (power) eight.'
+    solution:
+      en: |
+        (a) “F equals m a” — or, in full, “force equals mass times acceleration”.
+        <br>(b) “E equals m c squared.”
+        <br>(c) “c equals three point zero times ten to the eight metres per second.”
+        <br>(d) “lambda equals h over p” (“the wavelength equals Planck's constant divided by the momentum”).
+        <br>(e) “The integral from zero to infinity of e to the minus x, d x, equals one.”
+        <br>(f) “Partial u by partial t equals D times partial squared u by partial x squared” — or “the partial derivative of u with respect to t equals D times the second partial derivative of u with respect to x”.
+      ar: |
+        (أ) “F equals m a”، أو كاملة: “force equals mass times acceleration”.
+        <br>(ب) “E equals m c squared.”
+        <br>(ج) “c equals three point zero times ten to the eight metres per second.” لاحظ: النقطة العشرية تُقرأ point، ووحدة m s⁻¹ تُقرأ metres per second.
+        <br>(د) “lambda equals h over p” (أي: طول الموجة يساوي ثابت بلانك مقسومًا على الزخم).
+        <br>(هـ) “The integral from zero to infinity of e to the minus x, d x, equals one.”
+        <br>(و) “Partial u by partial t equals D times partial squared u by partial x squared”، أو “the partial derivative of u with respect to t equals D times the second partial derivative of u with respect to x”.
+  - title:
+      en: Vocabulary in context — the simple pendulum
+      ar: المفردات في السياق — النواس البسيط
+    difficulty: 1
+    statement:
+      en: |
+        Fill in the blanks with: <em>period, amplitude, frequency, oscillates, length, gravitational</em>.
+        <br>“A simple pendulum (1) ___ about its equilibrium position. The maximum displacement from equilibrium is called the (2) ___. The time for one complete swing is the (3) ___, and the number of swings per second is the (4) ___. For small swings, the period depends only on the (5) ___ of the string and on the (6) ___ field strength.”
+      ar: |
+        املأ الفراغات بالكلمات: <em>period, amplitude, frequency, oscillates, length, gravitational</em>.
+        <br>“A simple pendulum (1) ___ about its equilibrium position. The maximum displacement from equilibrium is called the (2) ___. The time for one complete swing is the (3) ___, and the number of swings per second is the (4) ___. For small swings, the period depends only on the (5) ___ of the string and on the (6) ___ field strength.”
+    hint:
+      en: Decide first which blank needs a verb (third person -s) and which need nouns or an adjective.
+      ar: حدّد أولًا أي فراغ يحتاج فعلًا (مع -s للغائب المفرد) وأيها يحتاج اسمًا أو صفة.
+    solution:
+      en: |
+        (1) oscillates (verb, present simple, third person); (2) amplitude; (3) period; (4) frequency; (5) length; (6) gravitational (adjective before “field”).
+        <br>The physics behind it: \(T = 2\pi\sqrt{L/g}\) for small amplitudes, so \(T\) is independent of the mass and of the amplitude.
+      ar: |
+        (1) oscillates (فعل في المضارع البسيط مع ضمير الغائب)؛ (2) amplitude (السعة)؛ (3) period (الدور)؛ (4) frequency (التردد)؛ (5) length (الطول)؛ (6) gravitational (صفة قبل field: شدة مجال الجاذبية).
+        <br>الفيزياء وراء النص: \(T = 2\pi\sqrt{L/g}\) للسعات الصغيرة، فالدور لا يتوقف على الكتلة ولا على السعة.
+  - title:
+      en: From lab notebook to Methods section
+      ar: من دفتر المختبر إلى قسم الطريقة
+    difficulty: 2
+    statement:
+      en: |
+        Rewrite these informal notes as a formal Methods paragraph (passive voice, past simple, complete sentences, correct units). Then compute \(g\) from the result.
+        <br><em>“we took a steel ball. dropped it from 1 m. timed the fall with a light gate. did it 10 times. average 0.45 s.”</em>
+      ar: |
+        أعد صياغة هذه الملاحظات غير الرسمية في فقرة رسمية لقسم الطريقة (المبني للمجهول، الماضي البسيط، جمل كاملة، وحدات صحيحة)، ثم احسب \(g\) من النتيجة.
+        <br><em>“we took a steel ball. dropped it from 1 m. timed the fall with a light gate. did it 10 times. average 0.45 s.”</em>
+    hint:
+      en: 'Methods describe what was done, so use the past simple passive: “was released”, “was measured”. For the free fall, \(h = \tfrac12 g t^2\).'
+      ar: 'قسم الطريقة يصف ما أُنجز، لذا استعمل المبني للمجهول في الماضي البسيط: “was released” و“was measured”. وللسقوط الحر \(h = \tfrac12 g t^2\).'
+    solution:
+      en: |
+        <em>Model answer:</em> “A steel ball was released from rest at a height of 1.00 m above a light gate. The fall time was measured electronically, and the measurement was repeated ten times. The mean fall time was 0.45 s.”
+        <br>Points to notice: the subject is the object studied, not “we”; verbs are in the past simple passive; numbers carry units with a space (1.00 m, 0.45 s); “ten” is written in words because it is a count, not a measurement.
+        <br>Physics: \(g = 2h/t^2 = 2(1.00\ \text{m})/(0.45\ \text{s})^2 \approx 9.9\ \text{m s}^{-2}\).
+      ar: |
+        <em>جواب نموذجي (بالإنجليزية):</em> “A steel ball was released from rest at a height of 1.00 m above a light gate. The fall time was measured electronically, and the measurement was repeated ten times. The mean fall time was 0.45 s.”
+        <br>ملاحظات: الفاعل النحوي هو الشيء المدروس لا “we”؛ والأفعال في الماضي البسيط المبني للمجهول؛ والأعداد مرفقة بوحداتها مع فراغ (1.00 m و0.45 s)؛ وكُتبت “ten” بالحروف لأنها عدد مرات لا قيمة مقيسة.
+        <br>الفيزياء: \(g = 2h/t^2 = 2(1.00\ \text{m})/(0.45\ \text{s})^2 \approx 9.9\ \text{m s}^{-2}\).
+  - title:
+      en: Describing a graph — discharging a capacitor
+      ar: وصف منحنى — تفريغ مكثّف
+    difficulty: 2
+    statement:
+      en: |
+        A graph shows the voltage across a capacitor discharging through a resistor. The voltage starts at 10 V, falls to about 3.7 V after 1 s, to 1.4 V after 2 s, and is almost zero after 5 s. Write a paragraph of 60–80 words describing the graph and explaining its shape. Use at least four expressions of trend.
+      ar: |
+        يمثّل منحنى الجهد بين طرفي مكثّف يتفرغ عبر مقاومة. يبدأ الجهد من 10 V، وينخفض إلى نحو 3.7 V بعد 1 s، ثم إلى 1.4 V بعد 2 s، ويكاد ينعدم بعد 5 s. اكتب بالإنجليزية فقرة من 60–80 كلمة تصف المنحنى وتفسّر شكله، مستعملًا أربع عبارات على الأقل للتعبير عن الاتجاه.
+    hint:
+      en: 'Useful language: “falls sharply”, “decreases gradually”, “levels off”, “approaches zero”, “by a factor of”. The decay law is \(V = V_0 e^{-t/RC}\).'
+      ar: 'عبارات مفيدة: “falls sharply” و“decreases gradually” و“levels off” و“approaches zero” و“by a factor of”. وقانون التناقص هو \(V = V_0 e^{-t/RC}\).'
+    solution:
+      en: |
+        <em>Model answer:</em> “The graph shows how the voltage across the capacitor varies with time during discharge. The voltage falls sharply at first, from 10 V to about 3.7 V in the first second. After that, it decreases more and more slowly, reaching 1.4 V at 2 s, and it levels off close to zero after about 5 s. This is exponential decay: in every second the voltage drops by the same factor, \(e \approx 2.7\), so the time constant \(RC\) is 1 s.”
+        <br>Check: \(10\,e^{-1} = 3.7\ \text{V}\), \(10\,e^{-2} = 1.4\ \text{V}\), \(10\,e^{-5} \approx 0.07\ \text{V}\).
+      ar: |
+        <em>جواب نموذجي (بالإنجليزية):</em> “The graph shows how the voltage across the capacitor varies with time during discharge. The voltage falls sharply at first, from 10 V to about 3.7 V in the first second. After that, it decreases more and more slowly, reaching 1.4 V at 2 s, and it levels off close to zero after about 5 s. This is exponential decay: in every second the voltage drops by the same factor, \(e \approx 2.7\), so the time constant \(RC\) is 1 s.”
+        <br>تحقق: \(10\,e^{-1} = 3.7\ \text{V}\)، \(10\,e^{-2} = 1.4\ \text{V}\)، \(10\,e^{-5} \approx 0.07\ \text{V}\).
+  - title:
+      en: Writing an abstract
+      ar: كتابة ملخص علمي
+    difficulty: 3
+    statement:
+      en: |
+        Write an abstract (maximum 120 words) for this experiment. The period \(T\) of a simple pendulum was measured for ten lengths \(L\) between 0.20 m and 1.00 m, timing 20 oscillations each time. A graph of \(T^2\) against \(L\) was a straight line through the origin with slope \(4.03 \pm 0.02\ \text{s}^2\,\text{m}^{-1}\).
+      ar: |
+        اكتب بالإنجليزية ملخصًا علميًا (120 كلمة على الأكثر) لهذه التجربة. قيس الدور \(T\) لنواس بسيط من أجل عشرة أطوال \(L\) بين 0.20 m و1.00 m، بتوقيت 20 اهتزازة في كل مرة. وكان منحنى \(T^2\) بدلالة \(L\) خطًا مستقيمًا يمر بالمبدأ وميله \(4.03 \pm 0.02\ \text{s}^2\,\text{m}^{-1}\).
+    hint:
+      en: 'An abstract answers four questions in four to six sentences: why, how, what was found, and what it means. Use \(g = 4\pi^2/\text{slope}\) and propagate the relative uncertainty.'
+      ar: 'يجيب الملخص عن أربعة أسئلة في أربع إلى ست جمل: لماذا، وكيف، وماذا وُجد، وما معنى ذلك. استعمل \(g = 4\pi^2/\text{slope}\) وانقل الارتياب النسبي.'
+    solution:
+      en: |
+        Physics first: \(g = 4\pi^2/4.03 = 9.80\ \text{m s}^{-2}\); relative uncertainty \(0.02/4.03 = 0.5\%\), so \(g = 9.80 \pm 0.05\ \text{m s}^{-2}\).
+        <br><em>Model abstract (88 words):</em> “The aim of this experiment was to determine the acceleration due to gravity using a simple pendulum. The period was measured for ten string lengths between 0.20 m and 1.00 m by timing twenty oscillations with a stopwatch. A plot of the square of the period against length was linear and passed through the origin, as predicted by small-angle theory. From its slope, \(g = 9.80 \pm 0.05\ \text{m s}^{-2}\) was obtained, in agreement with the accepted local value. The method is simple, inexpensive and accurate to better than one per cent.”
+      ar: |
+        الفيزياء أولًا: \(g = 4\pi^2/4.03 = 9.80\ \text{m s}^{-2}\)؛ والارتياب النسبي \(0.02/4.03 = 0.5\%\)، إذن \(g = 9.80 \pm 0.05\ \text{m s}^{-2}\).
+        <br><em>ملخص نموذجي (88 كلمة):</em> “The aim of this experiment was to determine the acceleration due to gravity using a simple pendulum. The period was measured for ten string lengths between 0.20 m and 1.00 m by timing twenty oscillations with a stopwatch. A plot of the square of the period against length was linear and passed through the origin, as predicted by small-angle theory. From its slope, \(g = 9.80 \pm 0.05\ \text{m s}^{-2}\) was obtained, in agreement with the accepted local value. The method is simple, inexpensive and accurate to better than one per cent.”
+        <br>لاحظ البنية: الهدف ← الطريقة ← النتيجة مع ارتيابها ← الخلاصة، وكلها بالماضي البسيط ما عدا الحكم العام الأخير.
+  - title:
+      en: A formal email to a supervisor
+      ar: رسالة إلكترونية رسمية إلى مشرف
+    difficulty: 2
+    statement:
+      en: |
+        You cannot submit your lab report on time because the department's oscilloscope was out of order for a week. Write an email (80–120 words) to your supervisor asking for a short extension and proposing a new date.
+      ar: |
+        لا تستطيع تسليم تقرير المختبر في موعده لأن راسم الذبذبات في القسم كان معطّلًا مدة أسبوع. اكتب بالإنجليزية رسالة إلكترونية (80–120 كلمة) إلى مشرفك تطلب فيها تمديدًا قصيرًا وتقترح موعدًا جديدًا.
+    hint:
+      en: 'Clear subject line; formal greeting; reason in one or two sentences; precise request; polite closing (“Kind regards”); full name.'
+      ar: 'سطر موضوع واضح؛ تحية رسمية؛ السبب في جملة أو جملتين؛ طلب محدد؛ ختام مهذّب (“Kind regards”)؛ الاسم الكامل.'
+    solution:
+      en: |
+        <em>Model answer:</em>
+        <br><strong>Subject:</strong> Request for a short extension – RC circuit lab report
+        <br>Dear Dr Smith,
+        <br>I am writing to ask whether I could have a short extension for the RC circuit lab report, which is due this Thursday. The oscilloscope in Laboratory 2 was out of order from 3 to 10 March, so I was only able to record the discharge curves yesterday. I have analysed most of the data and I am confident that I can submit the complete report by Monday 17 March.
+        <br>Thank you for considering my request. I would be happy to discuss it during your office hours.
+        <br>Kind regards,
+        <br>[Your full name], Year 2 Physics
+      ar: |
+        <em>جواب نموذجي (بالإنجليزية):</em>
+        <br><strong>Subject:</strong> Request for a short extension – RC circuit lab report
+        <br>Dear Dr Smith,
+        <br>I am writing to ask whether I could have a short extension for the RC circuit lab report, which is due this Thursday. The oscilloscope in Laboratory 2 was out of order from 3 to 10 March, so I was only able to record the discharge curves yesterday. I have analysed most of the data and I am confident that I can submit the complete report by Monday 17 March.
+        <br>Thank you for considering my request. I would be happy to discuss it during your office hours.
+        <br>Kind regards,
+        <br>[Your full name], Year 2 Physics
+        <br>لاحظ: صيغ الطلب المهذّبة (I am writing to ask whether / I could)، والسبب الموضوعي المختصر، والتاريخ المقترح المحدد، وتجنّب الاختصارات العامية.
+
+quizzes:
+  - title:
+      en: Numbers, symbols and units
+      ar: الأعداد والرموز والوحدات
+    questions:
+      - q:
+          en: 'How is \(x^2\) normally read aloud?'
+          ar: 'كيف تُقرأ \(x^2\) عادةً بصوت عالٍ؟'
+        options: ['x two', 'x squared', 'x double', 'two x']
+        answer: 1
+        explain:
+          en: 'Powers 2 and 3 have special names: “x squared”, “x cubed”. Higher powers are “x to the fourth”, “x to the power n”.'
+          ar: 'للأسّين 2 و3 اسمان خاصان: “x squared” و“x cubed”. أما الأسس الأعلى فتُقرأ “x to the fourth” و“x to the power n”.'
+      - q:
+          en: 'Which SI prefix means \(10^{-6}\)?'
+          ar: 'أي بادئة في النظام الدولي تعني \(10^{-6}\)؟'
+        options: ['milli- (m)', 'nano- (n)', 'micro- (μ)', 'pico- (p)']
+        answer: 2
+        explain:
+          en: 'milli = \(10^{-3}\), micro = \(10^{-6}\), nano = \(10^{-9}\), pico = \(10^{-12}\). “μm” is read “micrometre” (or “micron”).'
+          ar: 'milli = \(10^{-3}\)، وmicro = \(10^{-6}\)، وnano = \(10^{-9}\)، وpico = \(10^{-12}\). وتُقرأ “μm” “micrometre” (أو “micron”).'
+      - q:
+          en: 'How is \(\Delta T\) read?'
+          ar: 'كيف تُقرأ \(\Delta T\)؟'
+        options: ['delta T', 'triangle T', 'd T', 'del T']
+        answer: 0
+        explain:
+          en: 'Δ is the Greek capital letter delta; \(\Delta T\) is read “delta T” and means “the change in T”. “d T” is for an infinitesimal \(\dd T\), and “del” is the operator \(\nabla\).'
+          ar: 'Δ هو الحرف اليوناني الكبير دلتا، و\(\Delta T\) تُقرأ “delta T” وتعني “التغير في T”. أما “d T” فللتفاضل \(\dd T\)، و“del” للمؤثر \(\nabla\).'
+      - q:
+          en: 'How do you read \(3.0\times10^{8}\ \text{m s}^{-1}\)?'
+          ar: 'كيف تقرأ \(3.0\times10^{8}\ \text{m s}^{-1}\)؟'
+        options:
+          - three comma zero ten eight metre second
+          - three zero times eight metres a second
+          - three point zero ten power eight metres
+          - three point zero times ten to the eight metres per second
+        answer: 3
+        explain:
+          en: 'English uses a decimal <em>point</em> (“three point zero”), “times ten to the eight” for the power of ten, and “per” for \(\text{s}^{-1}\).'
+          ar: 'تستعمل الإنجليزية النقطة العشرية (“three point zero”)، وتُقرأ قوة العشرة “times ten to the eight”، وتُقرأ \(\text{s}^{-1}\) “per second”.'
+      - q:
+          en: The number written “2,5” in French is written in English as
+          ar: العدد الذي يُكتب “2,5” بالفرنسية يُكتب بالإنجليزية
+        options:
+          - '2.5 — read “two point five”'
+          - '2,5 — read “two comma five”'
+          - '25 — read “twenty-five”'
+          - '2;5 — read “two and five”'
+        answer: 0
+        explain:
+          en: 'English uses a point as the decimal separator; a comma in English groups thousands (2,500 = two thousand five hundred). Confusing them is a classic error.'
+          ar: 'تستعمل الإنجليزية النقطة فاصلًا عشريًا، أما الفاصلة فتفصل الآلاف (2,500 = ألفان وخمسمائة). والخلط بينهما خطأ شائع.'
+  - title:
+      en: Vocabulary of physics
+      ar: مفردات الفيزياء
+    questions:
+      - q:
+          en: '“The rate of change of velocity with time” is called'
+          ar: '“معدل تغير السرعة المتجهة بالنسبة إلى الزمن” يسمّى'
+        options: ['speed', 'acceleration', 'momentum', 'displacement']
+        answer: 1
+        explain:
+          en: 'Acceleration \(\vb{a} = \dd\vb{v}/\dd t\). Speed is the magnitude of velocity, momentum is \(m\vb{v}\), displacement is the change in position.'
+          ar: 'التسارع \(\vb{a} = \dd\vb{v}/\dd t\). أما speed فهي مقدار السرعة، وmomentum هو الزخم \(m\vb{v}\)، وdisplacement هو الإزاحة (تغير الموضع).'
+      - q:
+          en: '“The number of complete oscillations per second” is the'
+          ar: '“عدد الاهتزازات الكاملة في الثانية” هو'
+        options: ['period', 'wavelength', 'frequency', 'amplitude']
+        answer: 2
+        explain:
+          en: 'Frequency \(f\) is measured in hertz (Hz). The period is its inverse, \(T = 1/f\).'
+          ar: 'التردد \(f\) ويقاس بالهرتز (Hz). والدور هو مقلوبه \(T = 1/f\).'
+      - q:
+          en: '“The opposition of a conductor to the flow of electric current” is its'
+          ar: '“ممانعة الناقل لمرور التيار الكهربائي” هي'
+        options: ['resistance', 'voltage', 'capacitance', 'power']
+        answer: 0
+        explain:
+          en: 'Resistance \(R = V/I\), measured in ohms (Ω). Voltage is the potential difference that drives the current.'
+          ar: 'المقاومة \(R = V/I\) وتقاس بالأوم (Ω). أما voltage فهو فرق الجهد الذي يدفع التيار.'
+      - q:
+          en: '“A quantity that has both magnitude and direction” is a'
+          ar: '“مقدار له قيمة واتجاه معًا” يسمّى'
+        options: ['scalar', 'unit', 'dimension', 'vector']
+        answer: 3
+        explain:
+          en: 'Force, velocity and electric field are vectors; mass, energy and temperature are scalars (magnitude only).'
+          ar: 'القوة والسرعة المتجهة والمجال الكهربائي مقادير متجهة (vectors)؛ أما الكتلة والطاقة ودرجة الحرارة فمقادير قياسية (scalars) لها قيمة فقط.'
+      - q:
+          en: '“The time taken for half of the nuclei in a radioactive sample to decay” is the'
+          ar: '“الزمن اللازم لتفكك نصف أنوية عينة مشعة” هو'
+        options: ['decay constant', 'half-life', 'mean free path', 'period']
+        answer: 1
+        explain:
+          en: 'The half-life is \(t_{1/2} = \ln 2/\lambda\), where \(\lambda\) is the decay constant.'
+          ar: 'عمر النصف \(t_{1/2} = \ln 2/\lambda\)، حيث \(\lambda\) ثابت التفكك.'
+  - title:
+      en: Grammar of scientific English
+      ar: قواعد الإنجليزية العلمية
+    questions:
+      - q:
+          en: Which sentence is most appropriate in the Methods section of a report?
+          ar: أي جملة هي الأنسب في قسم الطريقة من تقرير علمي؟
+        options:
+          - We heat the sample to 300 K.
+          - The sample is heating to 300 K.
+          - The sample was heated to 300 K.
+          - Heat the sample to 300 K!
+        answer: 2
+        explain:
+          en: 'Methods report what was done: past simple, usually passive, so that the focus is on the procedure rather than on the people.'
+          ar: 'قسم الطريقة يروي ما أُنجز: الماضي البسيط وغالبًا بالمبني للمجهول، ليكون التركيز على الإجراء لا على الأشخاص.'
+      - q:
+          en: 'General scientific facts such as “Water boils at 100 °C at sea level” are expressed in the'
+          ar: 'الحقائق العلمية العامة مثل “Water boils at 100 °C at sea level” تُعبَّر عنها بـ'
+        options:
+          - { en: past continuous, ar: الماضي المستمر (past continuous) }
+          - { en: present simple, ar: المضارع البسيط (present simple) }
+          - { en: future perfect, ar: المستقبل التام (future perfect) }
+          - { en: present continuous, ar: المضارع المستمر (present continuous) }
+        answer: 1
+        explain:
+          en: 'The present simple expresses permanent truths, laws and definitions: “Like charges repel.”'
+          ar: 'يعبّر المضارع البسيط عن الحقائق الدائمة والقوانين والتعاريف: “Like charges repel.”'
+      - q:
+          en: In formal scientific writing, which sentence is preferred?
+          ar: في الكتابة العلمية الرسمية، أي جملة هي المفضّلة؟
+        options:
+          - The data are consistent with the model.
+          - The datas are consistent with the model.
+          - The data is consist with the model.
+          - The datum are consistent with the model.
+        answer: 0
+        explain:
+          en: '“Data” is traditionally the plural of “datum”, so formal writing uses “the data are”. “Datas” does not exist, and “consist” is a verb, not an adjective.'
+          ar: 'كلمة “data” في الأصل جمع “datum”، لذا تستعمل الكتابة الرسمية “the data are”. أما “datas” فلا وجود لها، و“consist” فعل لا صفة.'
+      - q:
+          en: 'Choose the most suitably cautious verb: “These results ___ that the effect is caused by impurities.”'
+          ar: 'اختر الفعل الأكثر تحفّظًا: “These results ___ that the effect is caused by impurities.”'
+        options: ['prove absolutely', 'are proving', 'must show', 'suggest']
+        answer: 3
+        explain:
+          en: 'Scientists “hedge” claims that are not certain: suggest, indicate, may, appear to. “Prove absolutely” overstates what a single experiment can show.'
+          ar: 'يتحفّظ العلماء في الادعاءات غير المؤكدة: suggest وindicate وmay وappear to. أما “prove absolutely” فمبالغة لا تستطيع تجربة واحدة إثباتها.'
+      - q:
+          en: 'Fill in the blank: “Temperature strongly ___ the resistance of a metal.”'
+          ar: 'أكمل الفراغ: “Temperature strongly ___ the resistance of a metal.”'
+        options: ['effects', 'affects', 'effect', 'affective']
+        answer: 1
+        explain:
+          en: '“Affect” is the verb (to influence); “effect” is usually the noun (the result). Here a verb in the present simple, third person, is needed: “affects”.'
+          ar: '“affect” فعل بمعنى يؤثّر، و“effect” غالبًا اسم بمعنى الأثر. والمطلوب هنا فعل في المضارع البسيط مع الغائب المفرد: “affects”.'
+  - title:
+      en: Writing and presenting
+      ar: الكتابة والعرض
+    questions:
+      - q:
+          en: What is the usual order of sections in a lab report or research article?
+          ar: ما الترتيب المعتاد لأقسام تقرير المختبر أو المقال البحثي؟
+        options:
+          - Results, Introduction, Discussion, Methods
+          - Discussion, Methods, Introduction, Results
+          - Introduction, Methods, Results, Discussion
+          - Methods, Discussion, Results, Introduction
+        answer: 2
+        explain:
+          en: 'IMRaD: Introduction (why), Methods (how), Results (what was found), and Discussion (what it means). The abstract comes before it all, and the references come after.'
+          ar: 'بنية IMRaD: المقدمة (لماذا)، والطريقة (كيف)، والنتائج (ماذا وُجد)، والمناقشة (ماذا يعني ذلك). ويسبقها الملخص وتليها المراجع.'
+      - q:
+          en: An abstract should
+          ar: ينبغي للملخص العلمي أن
+        options:
+          - { en: 'summarise the aim, method, main results and conclusion in about 100–250 words', ar: يلخّص الهدف والطريقة وأهم النتائج والخلاصة في نحو 100–250 كلمة }
+          - { en: contain all the raw data, ar: يحتوي على كل المعطيات الخام }
+          - { en: include figures and a list of references, ar: يتضمن أشكالًا وقائمة مراجع }
+          - { en: be a long history of the subject, ar: يكون تاريخًا طويلًا للموضوع }
+        answer: 0
+        explain:
+          en: 'Many readers read only the abstract. It must stand alone and be short, with no figures, no references and no undefined abbreviations.'
+          ar: 'كثير من القراء لا يقرؤون إلا الملخص، فيجب أن يكون مستقلًا بذاته وقصيرًا، بلا أشكال ولا مراجع ولا اختصارات غير معرّفة.'
+      - q:
+          en: Which is the best opening for an email to a professor you have not met?
+          ar: ما أفضل افتتاح لرسالة إلكترونية إلى أستاذ لم تلتقه من قبل؟
+        options: ['Hey Prof!', 'Dear Professor Smith,', 'Yo Smith,', 'My dear friend,']
+        answer: 1
+        explain:
+          en: 'Formal emails use “Dear” + title + family name. Close with “Kind regards” or “Yours sincerely” and your full name.'
+          ar: 'تبدأ الرسائل الرسمية بـ “Dear” مع اللقب واسم العائلة، وتُختم بـ “Kind regards” أو “Yours sincerely” مع الاسم الكامل.'
+      - q:
+          en: Which phrase is a “signpost” in an oral presentation?
+          ar: أي عبارة تُعدّ “عبارة ربط إرشادية” في العرض الشفهي؟
+        options: ['Umm… so, yeah.', 'As everybody knows.', 'I don''t know.', 'Now let''s move on to the results.']
+        answer: 3
+        explain:
+          en: 'Signposts tell the audience where the talk is going: “First, I will…”, “Let''s move on to…”, “To sum up…”. They make a talk easy to follow.'
+          ar: 'عبارات الربط الإرشادية تخبر الجمهور إلى أين يتجه العرض: “First, I will…” و“Let''s move on to…” و“To sum up…”، فتجعل العرض سهل المتابعة.'
+      - q:
+          en: Copying a paragraph from an article into your report, even if you translate it, without quotation marks or a citation is
+          ar: نسخ فقرة من مقال في تقريرك، ولو بعد ترجمتها، دون علامات تنصيص أو توثيق، يُعدّ
+        options:
+          - { en: acceptable if the article is online, ar: مقبولًا إذا كان المقال منشورًا على الإنترنت }
+          - { en: good practice in scientific writing, ar: ممارسة جيدة في الكتابة العلمية }
+          - { en: plagiarism, ar: انتحالًا علميًا }
+          - { en: allowed in the Discussion section only, ar: مسموحًا في قسم المناقشة فقط }
+        answer: 2
+        explain:
+          en: 'Using someone else''s words or ideas without credit is plagiarism, whatever the language. Paraphrase in your own words <em>and</em> cite the source.'
+          ar: 'استعمال كلمات الآخرين أو أفكارهم دون نسبتها إليهم انتحال علمي مهما كانت اللغة. أعد الصياغة بكلماتك <em>و</em>وثّق المصدر.'
+
+textbooks:
+  required:
+    - { authors: M. McCarthy & F. O'Dell, title: Academic Vocabulary in Use, edition: 2nd, publisher: Cambridge University Press, year: 2016 }
+  recommended:
+    - { authors: R. Murphy, title: English Grammar in Use, edition: 5th, publisher: Cambridge University Press, year: 2019 }
+    - { authors: J. M. Swales & C. B. Feak, title: Academic Writing for Graduate Students, edition: 3rd, publisher: University of Michigan Press, year: 2012 }
+    - { authors: 'S. Bosworth & B. Marinier', title: Lire l'anglais scientifique et technique, year: 1990 }
+    - { authors: 'S. Bosworth, C. Ingrand & R. Marret', title: Comprendre l'anglais scientifique et technique, year: 1992 }
+    - { authors: A. Eisenberg, title: Reading Technical Books, publisher: Prentice-Hall, year: 1978 }
+    - { authors: 'F. Drobnic, S. Abrams & M. Morray', title: Sci-Tech, publisher: ELS Publications, year: 1981 }
+  online:
+    - title: { en: BBC Learning English, ar: تعلّم الإنجليزية مع BBC }
+      url: https://www.bbc.co.uk/learningenglish
+      note: { en: 'Free grammar, vocabulary and pronunciation lessons with audio and video.', ar: دروس مجانية في القواعد والمفردات والنطق مع مقاطع صوتية ومرئية. }
+    - title: { en: British Council LearnEnglish, ar: منصة LearnEnglish للمجلس الثقافي البريطاني }
+      url: https://learnenglish.britishcouncil.org/
+      note: { en: 'Self-study exercises by level, including listening and writing.', ar: تمارين للتعلم الذاتي حسب المستوى، تشمل الاستماع والكتابة. }
+    - title: { en: Academic Phrasebank (University of Manchester), ar: بنك العبارات الأكاديمية (جامعة مانشستر) }
+      url: https://www.phrasebank.manchester.ac.uk/
+      note: { en: Ready-made phrases for every section of a report or article., ar: عبارات جاهزة لكل قسم من أقسام التقرير أو المقال. }
+    - title: { en: Cambridge Dictionary (with pronunciation), ar: قاموس كامبريدج (مع النطق) }
+      url: https://dictionary.cambridge.org/
+      note: { en: British and American pronunciation of every term., ar: النطق البريطاني والأمريكي لكل مصطلح. }
+    - title: { en: MIT OCW 8.01 Physics I – classical mechanics in English, ar: مقرر MIT OCW 8.01 فيزياء 1 – الميكانيكا الكلاسيكية بالإنجليزية }
+      url: https://ocw.mit.edu/courses/physics/8-01-physics-i-fall-2003/index.htm
+      note: { en: Authentic lectures and notes for listening and reading practice., ar: محاضرات ومذكرات أصيلة للتدرّب على الاستماع والقراءة. }
+
+glossary:
+  - { en: displacement, ar: الإزاحة, fr: déplacement, def: { en: 'The change in position of an object, with direction (a vector).', ar: 'تغير موضع الجسم مع اتجاهه (مقدار متجه).' } }
+  - { en: velocity, ar: السرعة المتجهة, fr: vitesse, def: { en: 'Rate of change of displacement; speed together with direction.', ar: 'معدل تغير الإزاحة؛ أي السرعة مع اتجاهها.' } }
+  - { en: acceleration, ar: التسارع, fr: accélération, def: { en: 'Rate of change of velocity, in m s⁻².', ar: 'معدل تغير السرعة المتجهة، ويقاس بـ m s⁻².' } }
+  - { en: force, ar: القوة, fr: force, def: { en: 'A push or pull that changes the motion of a body, measured in newtons (N).', ar: 'دفع أو جذب يغيّر حركة الجسم، ويقاس بالنيوتن (N).' } }
+  - { en: mass, ar: الكتلة, fr: masse, def: { en: 'Amount of matter in a body and measure of its inertia, in kilograms.', ar: 'كمية المادة في الجسم ومقياس عطالته، وتقاس بالكيلوغرام.' } }
+  - { en: weight, ar: الوزن, fr: poids, def: { en: 'The gravitational force on a body, W = mg (a force, not a mass).', ar: 'قوة الجاذبية المؤثرة في الجسم W = mg (قوة لا كتلة).' } }
+  - { en: momentum, ar: الزخم (كمية الحركة), fr: quantité de mouvement, def: { en: 'Product of mass and velocity, p = mv.', ar: 'جداء الكتلة في السرعة المتجهة p = mv.' } }
+  - { en: friction, ar: الاحتكاك, fr: frottement, def: { en: 'Force that opposes the sliding of one surface over another.', ar: 'قوة تعاكس انزلاق سطح على آخر.' } }
+  - { en: work, ar: الشغل, fr: travail, def: { en: 'Energy transferred by a force acting through a displacement, in joules.', ar: 'الطاقة المنقولة بقوة تنتقل نقطة تأثيرها، ويقاس بالجول.' } }
+  - { en: energy, ar: الطاقة, fr: énergie, def: { en: 'The capacity to do work; it is conserved and measured in joules (J).', ar: 'القدرة على إنجاز شغل؛ وهي منحفظة وتقاس بالجول (J).' } }
+  - { en: power, ar: القدرة, fr: puissance, def: { en: 'Rate of transfer of energy, in watts (W = J s⁻¹).', ar: 'معدل نقل الطاقة، ويقاس بالواط (W = J s⁻¹).' } }
+  - { en: gravity, ar: الجاذبية, fr: gravitation, def: { en: 'The attraction between all masses.', ar: 'التجاذب بين كل الكتل.' } }
+  - { en: orbit, ar: المدار, fr: orbite, def: { en: 'The curved path of a body around a star, planet or moon.', ar: 'المسار المنحني لجسم حول نجم أو كوكب أو قمر.' } }
+  - { en: oscillation, ar: الاهتزاز, fr: oscillation, def: { en: 'Repeated back-and-forth motion about an equilibrium position.', ar: 'حركة ذهاب وإياب متكررة حول وضع توازن.' } }
+  - { en: amplitude, ar: السعة, fr: amplitude, def: { en: 'Maximum displacement from the equilibrium position.', ar: 'أكبر إزاحة عن وضع التوازن.' } }
+  - { en: frequency, ar: التردد, fr: fréquence, def: { en: 'Number of cycles per second, in hertz (Hz).', ar: 'عدد الدورات في الثانية، ويقاس بالهرتز (Hz).' } }
+  - { en: period, ar: الدور, fr: période, def: { en: 'Time for one complete cycle, T = 1/f.', ar: 'زمن دورة كاملة T = 1/f.' } }
+  - { en: wavelength, ar: طول الموجة, fr: longueur d'onde, def: { en: 'Distance between two successive crests of a wave.', ar: 'المسافة بين قمتين متتاليتين للموجة.' } }
+  - { en: pitch, ar: حدة الصوت, fr: hauteur (du son), def: { en: 'How high or low a sound is perceived; set by its frequency.', ar: 'مدى إدراك الصوت حادًا أو غليظًا؛ ويحدّدها التردد.' } }
+  - { en: echo, ar: الصدى, fr: écho, def: { en: 'A sound heard again after reflection from a surface.', ar: 'صوت يُسمع مرة أخرى بعد انعكاسه على سطح.' } }
+  - { en: ultrasound, ar: الموجات فوق الصوتية, fr: ultrason, def: { en: 'Sound with frequency above 20 kHz, beyond human hearing.', ar: 'صوت تردده أعلى من 20 kHz، خارج مجال السمع البشري.' } }
+  - { en: heat, ar: الحرارة, fr: chaleur, def: { en: 'Energy transferred because of a temperature difference.', ar: 'طاقة تنتقل بسبب فرق في درجة الحرارة.' } }
+  - { en: temperature, ar: درجة الحرارة, fr: température, def: { en: 'Measure of the average kinetic energy of particles, in kelvins.', ar: 'مقياس لمتوسط الطاقة الحركية للجسيمات، وتقاس بالكلفن.' } }
+  - { en: entropy, ar: الإنتروبيا, fr: entropie, def: { en: 'Measure of disorder; it never decreases in an isolated system (the arrow of time).', ar: 'مقياس للفوضى؛ لا تتناقص أبدًا في نظام معزول (سهم الزمن).' } }
+  - { en: electric charge, ar: الشحنة الكهربائية, fr: charge électrique, def: { en: 'Property of matter that causes electric forces, in coulombs (C).', ar: 'خاصية للمادة تسبب القوى الكهربائية، وتقاس بالكولوم (C).' } }
+  - { en: current, ar: التيار الكهربائي, fr: courant électrique, def: { en: 'Rate of flow of charge, in amperes (A).', ar: 'معدل تدفق الشحنة، ويقاس بالأمبير (A).' } }
+  - { en: voltage, ar: الجهد الكهربائي (فرق الجهد), fr: tension, def: { en: 'Potential difference; energy per unit charge, in volts (V).', ar: 'فرق الجهد؛ الطاقة لكل وحدة شحنة، ويقاس بالفولط (V).' } }
+  - { en: resistance, ar: المقاومة, fr: résistance, def: { en: 'Opposition to current, R = V/I, in ohms (Ω).', ar: 'ممانعة مرور التيار R = V/I، وتقاس بالأوم (Ω).' } }
+  - { en: circuit, ar: الدارة الكهربائية, fr: circuit, def: { en: 'A closed path through which current can flow.', ar: 'مسار مغلق يمكن أن يمر عبره التيار.' } }
+  - { en: magnetic field, ar: المجال المغناطيسي, fr: champ magnétique, def: { en: 'Region where a magnet or moving charge feels a force, in teslas (T).', ar: 'منطقة يتأثر فيها مغناطيس أو شحنة متحركة بقوة، ويقاس بالتسلا (T).' } }
+  - { en: compass, ar: البوصلة, fr: boussole, def: { en: 'A small magnet that aligns with the Earth''s magnetic field.', ar: 'مغناطيس صغير يصطف مع المجال المغناطيسي للأرض.' } }
+  - { en: refraction, ar: الانكسار, fr: réfraction, def: { en: 'Change of direction of light when it passes from one medium to another.', ar: 'تغير اتجاه الضوء عند انتقاله من وسط إلى آخر.' } }
+  - { en: laser, ar: الليزر, fr: laser, def: { en: 'Light Amplification by Stimulated Emission of Radiation: an intense, coherent, single-colour beam.', ar: 'تضخيم الضوء بالانبعاث المحفَّز للإشعاع: حزمة شديدة مترابطة أحادية اللون.' } }
+  - { en: photon, ar: الفوتون, fr: photon, def: { en: 'A quantum of light with energy E = hf.', ar: 'كمّ الضوء وطاقته E = hf.' } }
+  - { en: relativity, ar: النسبية, fr: relativité, def: { en: 'Einstein''s theory of space, time and motion at high speeds and in gravity.', ar: 'نظرية أينشتاين في المكان والزمان والحركة عند السرعات العالية وفي الجاذبية.' } }
+  - { en: wave–particle duality, ar: ازدواجية الموجة والجسيم, fr: dualité onde–corpuscule, def: { en: 'Light and matter show both wave and particle behaviour.', ar: 'يُظهر الضوء والمادة سلوكًا موجيًا وجسيميًا معًا.' } }
+  - { en: nucleus, ar: النواة, fr: noyau, def: { en: 'The small, dense centre of an atom, made of protons and neutrons.', ar: 'مركز الذرة الصغير الكثيف، ويتكون من بروتونات ونيوترونات.' } }
+  - { en: isotope, ar: النظير, fr: isotope, def: { en: 'Atoms of the same element with different numbers of neutrons.', ar: 'ذرات العنصر نفسه بأعداد مختلفة من النيوترونات.' } }
+  - { en: half-life, ar: عمر النصف, fr: demi-vie, def: { en: 'Time for half of the nuclei in a radioactive sample to decay.', ar: 'الزمن اللازم لتفكك نصف أنوية عينة مشعة.' } }
+  - { en: quark, ar: الكوارك, fr: quark, def: { en: 'Elementary particle that makes up protons and neutrons.', ar: 'جسيم أولي تتكون منه البروتونات والنيوترونات.' } }
+  - { en: hypothesis, ar: الفرضية, fr: hypothèse, def: { en: 'A testable proposed explanation.', ar: 'تفسير مقترح قابل للاختبار.' } }
+  - { en: abstract, ar: الملخص العلمي, fr: résumé, def: { en: 'Short summary of a paper: aim, method, results and conclusion.', ar: 'ملخص قصير للمقال: الهدف والطريقة والنتائج والخلاصة.' } }
+  - { en: lab report, ar: تقرير المختبر, fr: compte rendu de TP, def: { en: 'Structured written account of an experiment (IMRaD).', ar: 'عرض مكتوب منظّم لتجربة (بنية IMRaD).' } }
+  - { en: uncertainty, ar: الارتياب (عدم اليقين في القياس), fr: incertitude, def: { en: 'Range within which the true value of a measurement probably lies.', ar: 'المجال الذي تقع فيه على الأرجح القيمة الحقيقية للمقدار المقيس.' } }
+  - { en: peer review, ar: التحكيم العلمي, fr: évaluation par les pairs, def: { en: 'Evaluation of a manuscript by independent experts before publication.', ar: 'تقييم المخطوط من قبل خبراء مستقلين قبل نشره.' } }

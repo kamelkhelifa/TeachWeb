@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="page-hero center">
+  <div class="wrap">
+    <p class="eyebrow">404</p>
+    <h1>{{ ui('not_found') }}</h1>
+    <p class="lead" lang="ar" dir="rtl">هذه الصفحة غير موجودة.</p>
+    <p><a class="btn btn-primary" href="{{ site.base_url }}/">{{ ui('all_courses') }}</a> <a class="btn btn-ghost" href="{{ site.base_url }}/ar/" lang="ar">كل المقررات</a></p>
+  </div>
+</section>
+{% endblock %}

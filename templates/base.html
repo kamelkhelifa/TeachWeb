@@ -1,0 +1,137 @@
+{% from "_macros.html" import icon %}
+<!doctype html>
+<html lang="{{ lang }}" dir="{{ dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site.name if lang == 'en' else site.name_ar }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ t(site.tagline) | plain }}{% endblock %}">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c0e14" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="{{ site.base_url }}/{{ page_path | replace('index.html', '') }}">
+  <link rel="alternate" hreflang="{{ 'ar' if lang == 'en' else 'en' }}" href="{{ other_url }}">
+  <link rel="icon" href="{{ asset('static/img/favicon.svg') }}" type="image/svg+xml">
+  <meta property="og:title" content="{{ self.title() | plain }}">
+  <meta property="og:description" content="{{ self.description() | plain }}">
+  <meta property="og:type" content="website">
+  <script>
+    (function () {
+      try { var t = localStorage.getItem('tw:theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('static/vendor/katex/katex.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('static/css/teachweb.css') }}">
+</head>
+<body class="page-{{ page }}">
+{% include "_icons.html" %}
+<a class="skip" href="#main">{{ ui('skip') }}</a>
+<div class="progress-bar" aria-hidden="true"><span></span></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ url() }}" aria-label="{{ site.name }}">
+      <span class="brand-mark">{{ icon('logo') }}</span>
+      <span class="brand-name">Teach<b>Web</b></span>
+    </a>
+    <nav class="main-nav" aria-label="{{ ui('menu') }}">
+      <a href="{{ url() }}#courses" {% if page == 'course' %}aria-current="true"{% endif %}>{{ ui('nav_courses') }}</a>
+      <a href="{{ url() }}#path">{{ ui('nav_path') }}</a>
+      <a href="{{ url('glossary/') }}" {% if page == 'glossary' %}aria-current="page"{% endif %}>{{ ui('nav_glossary') }}</a>
+      <a href="{{ url('guide/') }}" {% if page == 'guide' %}aria-current="page"{% endif %}>{{ ui('nav_guide') }}</a>
+    </nav>
+    <div class="header-tools">
+      <button class="tool search-open" type="button" data-search-open aria-label="{{ ui('search') }}">
+        {{ icon('search') }}<span class="search-label">{{ ui('search') }}</span><kbd>/</kbd>
+      </button>
+      <a class="tool lang-switch" href="{{ other_url }}" hreflang="{{ 'ar' if lang == 'en' else 'en' }}" lang="{{ 'ar' if lang == 'en' else 'en' }}" aria-label="{{ ui('switch_lang_aria') }}">{{ ui('switch_lang') }}</a>
+      <button class="tool theme-toggle" type="button" aria-label="{{ ui('theme_toggle') }}">{{ icon('sun', 'ic only-dark') }}{{ icon('moon', 'ic only-light') }}</button>
+      <a class="tool home-link" href="{{ site.home_url if lang == 'en' else site.home_url_ar }}" title="{{ ui('home_site') }}">{{ icon('home') }}<span>{{ ui('home_site') }}</span></a>
+      <button class="tool menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="{{ ui('menu') }}">{{ icon('menu') }}</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" hidden>
+    <a href="{{ url() }}#courses">{{ ui('nav_courses') }}</a>
+    <a href="{{ url() }}#path">{{ ui('nav_path') }}</a>
+    <a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a>
+    <a href="{{ url('guide/') }}">{{ ui('nav_guide') }}</a>
+    <a href="{{ site.home_url if lang == 'en' else site.home_url_ar }}">{{ ui('home_site') }} {{ icon('external') }}</a>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="{{ url() }}"><span class="brand-mark">{{ icon('logo') }}</span><span class="brand-name">Teach<b>Web</b></span></a>
+      <p>{{ ui('footer_text') }}</p>
+      <p class="muted small">{{ ui('privacy_note') }}</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h2>{{ ui('nav_courses') }}</h2>
+        <ul>
+          {% for c in courses %}<li><a href="{{ url('courses/' ~ c.slug ~ '/') }}">{{ t(c.title) }}</a></li>{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h2>TeachWeb</h2>
+        <ul>
+          <li><a href="{{ url() }}#path">{{ ui('nav_path') }}</a></li>
+          <li><a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a></li>
+          <li><a href="{{ url('guide/') }}">{{ ui('nav_guide') }}</a></li>
+          <li><a href="{{ other_url }}" lang="{{ 'ar' if lang == 'en' else 'en' }}">{{ ui('switch_lang') }}</a></li>
+          <li><a href="{{ site.home_url if lang == 'en' else site.home_url_ar }}">{{ ui('home_site') }} {{ icon('external', 'ic xs') }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>{{ ui('footer_license') }}</span>
+    <span>{{ ui('footer_updated') }}: {{ t(site.last_updated) }}</span>
+  </div>
+</footer>
+
+<div class="palette" role="dialog" aria-modal="true" aria-label="{{ ui('search') }}" hidden>
+  <div class="palette-backdrop" data-search-close></div>
+  <div class="palette-box">
+    <div class="palette-input">
+      {{ icon('search') }}
+      <input type="search" placeholder="{{ ui('search_placeholder') }}" autocomplete="off" spellcheck="false" aria-label="{{ ui('search') }}">
+      <button type="button" class="palette-close" data-search-close aria-label="Esc">Esc</button>
+    </div>
+    <ul class="palette-results" role="listbox"></ul>
+    <p class="palette-hint">{{ ui('search_hint') }}</p>
+  </div>
+</div>
+
+<button class="to-top" type="button" aria-label="{{ ui('back_top') }}">{{ icon('chevron') }}</button>
+
+<script>
+  window.TW = {
+    lang: "{{ lang }}",
+    root: "{{ url() }}",
+    ui: {{ {
+      'search_empty': ui('search_empty'), 'kind_course': ui('kind_course'), 'kind_term': ui('kind_term'),
+      'kind_week': ui('kind_week'), 'kind_topic': ui('kind_topic'), 'correct': ui('correct'), 'incorrect': ui('incorrect'),
+      'question': ui('question'), 'of': ui('of'), 'check': ui('check'), 'next': ui('next'), 'finish': ui('finish'),
+      'retry': ui('retry'), 'your_score': ui('your_score'), 'best_score': ui('best_score'), 'quiz_great': ui('quiz_great'),
+      'quiz_good': ui('quiz_good'), 'quiz_low': ui('quiz_low'), 'show_hint': ui('show_hint'), 'show_solution': ui('show_solution'),
+      'hide': ui('hide'), 'flip': ui('flip'), 'completed_weeks': ui('completed_weeks')
+    } | tojson_safe }}
+  };
+</script>
+<script defer src="{{ asset('static/js/search-' ~ lang ~ '.js') }}"></script>
+<script defer src="{{ asset('static/vendor/katex/katex.min.js') }}"></script>
+<script defer src="{{ asset('static/vendor/katex/contrib/auto-render.min.js') }}"></script>
+{% block scripts %}{% endblock %}
+<script defer src="{{ asset('static/js/teachweb.js') }}"></script>
+</body>
+</html>

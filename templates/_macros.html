@@ -1,0 +1,35 @@
+{% macro icon(name, cls="ic") %}<svg class="{{ cls }}" aria-hidden="true"><use href="#i-{{ name }}"/></svg>{% endmacro %}
+
+{% macro course_card(c, t, ui, url, site) %}
+<article class="course-card" style="--hue: {{ c.hue }}" data-area="{{ c.area }}" data-level="{{ c.level }}" data-slug="{{ c.slug }}">
+  <a class="card-link" href="{{ url('courses/' ~ c.slug ~ '/') }}">
+    <div class="card-top">
+      <span class="card-badge">{{ t(c.short) }}</span>
+      <span class="card-ring" data-progress-ring="{{ c.slug }}" data-weeks="{{ c.weeks }}" aria-hidden="true">
+        <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.5"/><circle class="ring-val" cx="18" cy="18" r="15.5" pathLength="100" stroke-dasharray="0 100"/></svg>
+      </span>
+    </div>
+    <p class="card-area">{{ t(site.areas[c.area]) }} · {{ t(site.levels[c.level]) }}</p>
+    <h3 class="card-title">{{ t(c.title) }}</h3>
+    <p class="card-tagline">{{ t(c.tagline) }}</p>
+    <ul class="card-meta">
+      <li>{{ icon('schedule', 'ic xs') }} {{ c.weeks }} {{ ui('weeks') }}</li>
+      {% if c.n_materials %}<li>{{ icon('materials', 'ic xs') }} {{ c.n_materials }}</li>{% endif %}
+      {% if c.n_questions %}<li>{{ icon('quizzes', 'ic xs') }} {{ c.n_questions }}</li>{% endif %}
+      {% if c.sims %}<li>{{ icon('lab', 'ic xs') }} {{ c.sims | length }}</li>{% endif %}
+    </ul>
+    <span class="card-go">{{ icon('arrow', 'ic flip') }}</span>
+  </a>
+</article>
+{% endmacro %}
+
+{% macro section_head(id, ico, ui, num) %}
+<header class="sec-head">
+  <span class="sec-icon">{{ icon(ico) }}</span>
+  <div>
+    <p class="sec-num">{{ '%02d' % num }}</p>
+    <h2 id="{{ id }}-title">{{ ui('sec_' ~ id) }}</h2>
+    <p class="sec-lead">{{ ui('sec_' ~ id ~ '_d') }}</p>
+  </div>
+</header>
+{% endmacro %}

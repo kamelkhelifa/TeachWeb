@@ -1,0 +1,985 @@
+slug: classical-mechanics-2
+order: 100
+codes: [PHYS 302]
+short: { en: CM II, ar: م.ك 2 }
+title: { en: Classical Mechanics II, ar: الميكانيكا الكلاسيكية 2 }
+tagline:
+  en: Spinning tops, least action and phase space — mechanics beyond Newton's laws.
+  ar: الخذاريف ومبدأ الفعل الأصغري وفضاء الطور — الميكانيكا فيما وراء قوانين نيوتن.
+area: mechanics
+level: 3
+credits: 3
+hours: { lecture: 3, tutorial: 0, lab: 0 }
+weeks: 14
+instruction: [en]
+prerequisites: [general-physics-1, vibrations-waves, mathematical-physics-2]
+prerequisite_note:
+  en: Newtonian mechanics of a particle (Classical Mechanics I level, including central forces and non-inertial frames); ordinary differential equations; linear algebra (matrices, eigenvalues); multivariable calculus.
+  ar: ميكانيكا نيوتن للنقطة المادية (مستوى الميكانيكا الكلاسيكية 1، بما فيها القوى المركزية والمراجع غير العطالية)؛ المعادلات التفاضلية العادية؛ الجبر الخطي (المصفوفات والقيم الذاتية)؛ حساب التفاضل والتكامل لعدة متغيرات.
+sims: [phase-space, oscillator]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/phys302-classical-mechanics-ii/
+notes: >
+  Single source page (English, with Arabic translation). Kept: textbook (Fowles & Cassiday) and its chapter
+  structure (Ch. 7–10 listed in the source, Ch. 11 named in the description), the five source learning outcomes
+  (merged into CLO1–CLO2), the two lecture-note PDFs, three problem sets, the formula table, and the quiz/midterm
+  papers with solutions. The marks spreadsheet link and the course-evaluation Google Form were not kept. The source
+  evaluation was 2 quizzes (10%) + 2 midterms (50%) + final (40%); homework and a small computational project were
+  added and the weights rebalanced (proposal). Weeks 9–14 (calculus of variations, Lagrangian and Hamiltonian
+  mechanics, small oscillations, continuous systems) were only listed by title in the source and are reconstructed;
+  section numbers refer to Fowles & Cassiday 7th ed. and should be checked. The source page shows no lab content,
+  so lab hours are 0. Quizzes, problems and glossary are new.
+
+description:
+  en: |
+    <p>This course takes mechanics from single particles to extended bodies and from forces to energies. The first part treats systems of particles — centre of mass, the two-body problem and reduced mass, collisions and rocket motion — and then rigid bodies: moments of inertia, the physical pendulum, rolling and impulsive motion in a plane, and finally fully three-dimensional rotation with the inertia tensor, principal axes, Euler's equations, the gyroscope and the spinning top.</p>
+    <p>The second part reformulates mechanics. The calculus of variations leads to Hamilton's principle of stationary action and to Lagrange's equations in generalised coordinates, which handle constraints effortlessly and reveal the link between symmetries and conservation laws. The Hamiltonian formulation then describes motion as a flow in phase space — the language of statistical and quantum mechanics.</p>
+    <p>The course closes with small oscillations of systems with many degrees of freedom — normal modes and normal coordinates — and the passage to continuous systems and the wave equation. Interactive phase-space and oscillator simulations accompany the lectures, and a short computational project trains students to test analytic results numerically.</p>
+  ar: |
+    <p>ينقل هذا المقرر الميكانيكا من النقطة المادية إلى الأجسام الممتدة، ومن القوى إلى الطاقات. يتناول الجزء الأول جمل الجسيمات — مركز الكتلة، ومسألة الجسمين والكتلة المختزلة، والتصادمات، وحركة الصاروخ — ثم الأجسام الصلبة: عزوم العطالة، والنواس الفيزيائي، والدحرجة والحركة الدفعية في المستوي، وأخيرًا الدوران في ثلاثة أبعاد بموتر العطالة والمحاور الرئيسية ومعادلات أويلر والجيروسكوب والخذروف.</p>
+    <p>ويعيد الجزء الثاني صياغة الميكانيكا. فحساب التغيرات يقود إلى مبدأ هاملتون للفعل المستقر وإلى معادلات لاغرانج بالإحداثيات المعممة، التي تعالج القيود بسهولة وتكشف الصلة بين التناظرات وقوانين الانحفاظ. ثم تصف صياغة هاملتون الحركة كتدفق في فضاء الطور — وهي لغة الميكانيكا الإحصائية وميكانيكا الكم.</p>
+    <p>ويُختتم المقرر بالاهتزازات الصغيرة للجمل ذات درجات الحرية المتعددة — الأنماط الذاتية والإحداثيات الطبيعية — والانتقال إلى الجمل المستمرة ومعادلة الموجة. وترافق المحاضراتِ محاكاةٌ تفاعلية لفضاء الطور وللهزاز، ويُدرّب مشروع حسابي قصير الطلبةَ على اختبار النتائج التحليلية عدديًا.</p>
+
+topics:
+  - { en: Systems of particles & collisions, ar: جمل الجسيمات والتصادمات }
+  - { en: Rocket motion, ar: حركة الصاروخ }
+  - { en: Moment of inertia & plane motion, ar: عزم العطالة والحركة المستوية }
+  - { en: Inertia tensor & Euler's equations, ar: موتر العطالة ومعادلات أويلر }
+  - { en: Gyroscopes & spinning tops, ar: الجيروسكوبات والخذاريف }
+  - { en: Calculus of variations, ar: حساب التغيرات }
+  - { en: Lagrangian mechanics, ar: ميكانيكا لاغرانج }
+  - { en: Hamiltonian mechanics & phase space, ar: ميكانيكا هاملتون وفضاء الطور }
+  - { en: Normal modes, ar: الأنماط الذاتية }
+  - { en: Continuous systems & waves, ar: الجمل المستمرة والأمواج }
+
+outcomes:
+  - id: CLO1
+    bloom: apply
+    domain: knowledge
+    text:
+      en: Apply the laws of motion and conservation of momentum, angular momentum and energy to systems of particles, the two-body problem, collisions and variable-mass systems.
+      ar: يطبّق قوانين الحركة وانحفاظ كمية الحركة والعزم الحركي والطاقة على جمل الجسيمات ومسألة الجسمين والتصادمات والجمل ذات الكتلة المتغيرة.
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: Compute centres of mass and moments of inertia of rigid bodies and analyse their rotation about a fixed axis and their plane (laminar) motion, including rolling and impulsive collisions.
+      ar: يحسب مراكز الكتلة وعزوم العطالة للأجسام الصلبة ويحلّل دورانها حول محور ثابت وحركتها المستوية، بما في ذلك الدحرجة والتصادمات الدفعية.
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO3
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Construct the inertia tensor, find principal axes, and use Euler's equations to analyse free rotation, gyroscopes and the heavy symmetric top.
+      ar: يبني موتر العطالة ويحدد المحاور الرئيسية، ويستعمل معادلات أويلر لتحليل الدوران الحر والجيروسكوبات والخذروف الثقيل المتناظر.
+    assessed_by: [homework, midterm2, final]
+  - id: CLO4
+    bloom: apply
+    domain: skills
+    text:
+      en: Use the calculus of variations and Hamilton's principle to derive Lagrange's equations for constrained systems in generalised coordinates, and identify cyclic coordinates and conserved quantities.
+      ar: يستعمل حساب التغيرات ومبدأ هاملتون لاستنتاج معادلات لاغرانج للجمل المقيدة بالإحداثيات المعممة، ويحدد الإحداثيات الدورية والمقادير المنحفظة.
+    assessed_by: [quizzes, homework, midterm2, final]
+  - id: CLO5
+    bloom: apply
+    domain: knowledge
+    text:
+      en: Construct the Hamiltonian of a system, write Hamilton's equations and interpret motion as trajectories in phase space.
+      ar: يبني دالة هاملتون لجملة ويكتب معادلات هاملتون ويفسّر الحركة كمسارات في فضاء الطور.
+    assessed_by: [homework, project, final]
+  - id: CLO6
+    bloom: analyze
+    domain: skills
+    text:
+      en: Linearise a system about stable equilibrium, determine its normal frequencies, mode shapes and normal coordinates, and take the continuum limit leading to the wave equation.
+      ar: يحوّل جملة إلى الشكل الخطي حول توازن مستقر، ويحدد تواتراتها الذاتية وأشكال أنماطها وإحداثياتها الطبيعية، ويأخذ نهاية الوسط المستمر التي تقود إلى معادلة الموجة.
+    assessed_by: [homework, final]
+  - id: CLO7
+    bloom: create
+    domain: skills
+    text:
+      en: Build a short numerical simulation of a mechanical system (e.g. a double pendulum or a top) and use it to test analytic predictions such as conservation laws and small-oscillation frequencies.
+      ar: يُنشئ محاكاة عددية قصيرة لجملة ميكانيكية (مثل النواس المزدوج أو الخذروف) ويستعملها لاختبار التنبؤات التحليلية كقوانين الانحفاظ وتواترات الاهتزازات الصغيرة.
+    assessed_by: [project]
+  - id: CLO8
+    bloom: evaluate
+    domain: values
+    text:
+      en: Present complete, honest and well-justified solutions, critically checking results against limiting cases, dimensions and symmetry.
+      ar: يقدّم حلولًا كاملة وأمينة ومبرَّرة، ويتحقق من نتائجه بنظرة نقدية عبر الحالات الحدية والأبعاد والتناظر.
+    assessed_by: [homework, project]
+
+assessment:
+  - id: quizzes
+    type: quiz
+    weight: 10
+    title: { en: Quizzes, ar: اختبارات قصيرة }
+    detail:
+      en: Two 20-minute in-class quizzes (one short problem each) on the material of the preceding weeks; papers and solutions of earlier quizzes are available under Exams.
+      ar: اختباران قصيران في القاعة مدة كل منهما 20 دقيقة (مسألة قصيرة واحدة لكل منهما) حول محتوى الأسابيع السابقة؛ وتتوفر أوراق الاختبارات السابقة وحلولها في قسم الاختبارات.
+    when: { en: Weeks 5 and 10, ar: الأسبوعان 5 و10 }
+  - id: homework
+    type: homework
+    weight: 10
+    title: { en: Problem sets, ar: سلاسل المسائل }
+    detail:
+      en: One problem set per chapter, due one week after release; graded on the physical setup, correctness of the derivation and the final checks (units, limits).
+      ar: سلسلة مسائل لكل فصل تُسلَّم بعد أسبوع من نشرها؛ تُقيَّم على صياغة المسألة فيزيائيًا وصحة الاستنتاج والتحققات النهائية (الوحدات والحالات الحدية).
+    when: { en: Weeks 2–13, ar: الأسابيع 2–13 }
+  - id: midterm1
+    type: midterm
+    weight: 20
+    title: { en: Midterm exam 1, ar: الاختبار النصفي 1 }
+    detail:
+      en: 'Written, 1 h 30 min: systems of particles and plane motion of rigid bodies.'
+      ar: 'كتابي، مدته ساعة ونصف: جمل الجسيمات والحركة المستوية للأجسام الصلبة.'
+    when: { en: Week 7, ar: الأسبوع 7 }
+  - id: midterm2
+    type: midterm
+    weight: 20
+    title: { en: Midterm exam 2, ar: الاختبار النصفي 2 }
+    detail:
+      en: 'Written, 1 h 30 min: rigid bodies in three dimensions, calculus of variations and Lagrangian mechanics.'
+      ar: 'كتابي، مدته ساعة ونصف: الأجسام الصلبة في ثلاثة أبعاد، وحساب التغيرات، وميكانيكا لاغرانج.'
+    when: { en: Week 12, ar: الأسبوع 12 }
+  - id: project
+    type: project
+    weight: 5
+    title: { en: Computational mini-project, ar: مشروع حسابي مصغر }
+    detail:
+      en: Individually or in pairs, integrate the equations of motion of a chosen system (double pendulum, heavy top, bead on a rotating hoop…) with a Runge–Kutta method, check energy or momentum conservation, and compare with the analytic small-oscillation result. Two-page report with plots.
+      ar: فرديًا أو في ثنائيات، يُكامَل عدديًا نظام معادلات الحركة لجملة مختارة (نواس مزدوج، خذروف ثقيل، خرزة على حلقة دوّارة…) بطريقة رونغه–كوتا، مع التحقق من انحفاظ الطاقة أو كمية الحركة ومقارنة النتائج بنتيجة الاهتزازات الصغيرة التحليلية. تقرير من صفحتين مع منحنيات.
+    when: { en: Due week 13, ar: يُسلَّم في الأسبوع 13 }
+  - id: final
+    type: final
+    weight: 35
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail:
+      en: Written, 2 h, comprehensive, with emphasis on Lagrangian and Hamiltonian mechanics and small oscillations.
+      ar: كتابي، مدته ساعتان، شامل، مع تركيز على ميكانيكا لاغرانج وهاملتون والاهتزازات الصغيرة.
+    when: { en: Exam period, ar: فترة الاختبارات }
+
+schedule:
+  - week: 1
+    title: { en: Systems of particles (I), ar: جمل الجسيمات (1) }
+    topics:
+      en:
+        - Centre of mass and linear momentum of a system
+        - Angular momentum and kinetic energy of a system; internal and external forces
+      ar:
+        - مركز الكتلة وكمية الحركة الخطية لجملة
+        - العزم الحركي والطاقة الحركية لجملة؛ القوى الداخلية والخارجية
+    reading: Fowles & Cassiday §7.1–7.2
+  - week: 2
+    title: { en: Systems of particles (II), ar: جمل الجسيمات (2) }
+    topics:
+      en:
+        - Motion of two interacting bodies; reduced mass
+        - Elastic and inelastic collisions; laboratory and centre-of-mass frames
+        - Motion of a body with variable mass — the rocket
+      ar:
+        - حركة جسمين متفاعلين؛ الكتلة المختزلة
+        - التصادمات المرنة وغير المرنة؛ مرجع المخبر ومرجع مركز الكتلة
+        - حركة جسم كتلته متغيرة — الصاروخ
+    reading: Fowles & Cassiday §7.3–7.7
+    activity: { en: Problem set 1 released, ar: نشر السلسلة 1 }
+  - week: 3
+    title: { en: 'Rigid bodies (I): moment of inertia', ar: 'الأجسام الصلبة (1): عزم العطالة' }
+    topics:
+      en:
+        - Centre of mass of a rigid body
+        - Rotation about a fixed axis; moment of inertia
+        - Parallel- and perpendicular-axis theorems
+      ar:
+        - مركز كتلة الجسم الصلب
+        - الدوران حول محور ثابت؛ عزم العطالة
+        - نظريتا المحاور المتوازية والمحاور المتعامدة
+    reading: Fowles & Cassiday §8.1–8.3
+  - week: 4
+    title: { en: 'Rigid bodies (II): physical pendulum and plane motion', ar: 'الأجسام الصلبة (2): النواس الفيزيائي والحركة المستوية' }
+    topics:
+      en:
+        - The physical pendulum; centre of percussion
+        - Angular momentum of a rigid body in laminar motion
+        - Rolling with and without slipping
+      ar:
+        - النواس الفيزيائي؛ مركز الصدم
+        - العزم الحركي لجسم صلب في حركة مستوية
+        - الدحرجة مع الانزلاق ودونه
+    reading: Fowles & Cassiday §8.4–8.6
+    activity: { en: Problem set 2 released, ar: نشر السلسلة 2 }
+  - week: 5
+    title: { en: 'Rigid bodies (III): impulse and collisions', ar: 'الأجسام الصلبة (3): الدفع والتصادمات' }
+    topics:
+      en:
+        - Angular impulse; impulsive motion of rigid bodies
+        - Collisions involving rigid bodies
+      ar:
+        - الدفع الزاوي؛ الحركة الدفعية للأجسام الصلبة
+        - التصادمات التي تشمل أجسامًا صلبة
+    reading: Fowles & Cassiday §8.7
+    activity: { en: Quiz 1, ar: الاختبار القصير 1 }
+    milestone: quiz
+  - week: 6
+    title: { en: 'Rigid bodies in 3D (I): the inertia tensor', ar: 'الأجسام الصلبة في ثلاثة أبعاد (1): موتر العطالة' }
+    topics:
+      en:
+        - Rotation about an arbitrary axis; products of inertia
+        - 'The inertia tensor; \(\vb{L} = \mathsf{I}\,\boldsymbol\omega\) and \(T = \tfrac12\boldsymbol\omega\cdot\mathsf{I}\,\boldsymbol\omega\)'
+        - Principal axes as an eigenvalue problem
+      ar:
+        - الدوران حول محور كيفي؛ جداءات العطالة
+        - 'موتر العطالة؛ \(\vb{L} = \mathsf{I}\,\boldsymbol\omega\) و\(T = \tfrac12\boldsymbol\omega\cdot\mathsf{I}\,\boldsymbol\omega\)'
+        - المحاور الرئيسية كمسألة قيم ذاتية
+    reading: Fowles & Cassiday §9.1–9.2
+    activity: { en: Problem set 3 released, ar: نشر السلسلة 3 }
+  - week: 7
+    title: { en: 'Rigid bodies in 3D (II): Euler''s equations', ar: 'الأجسام الصلبة في ثلاثة أبعاد (2): معادلات أويلر' }
+    topics:
+      en:
+        - 'Rotating frames: time derivatives, centrifugal and Coriolis terms (review)'
+        - 'Euler''s equations of motion'
+        - Torque-free rotation; stability of rotation about principal axes
+      ar:
+        - 'المراجع الدوّارة: المشتقات الزمنية والحدّان النابذ وكوريوليس (مراجعة)'
+        - معادلات أويلر للحركة
+        - الدوران الحر دون عزم؛ استقرار الدوران حول المحاور الرئيسية
+    reading: Fowles & Cassiday §5.2–5.3, §9.3–9.5
+    activity: { en: Midterm exam 1, ar: الاختبار النصفي 1 }
+    milestone: midterm
+  - week: 8
+    title: { en: 'Rigid bodies in 3D (III): tops and gyroscopes', ar: 'الأجسام الصلبة في ثلاثة أبعاد (3): الخذاريف والجيروسكوبات' }
+    topics:
+      en:
+        - Euler angles
+        - The heavy symmetric top; precession and nutation
+        - The gyroscope and the gyrocompass
+      ar:
+        - زوايا أويلر
+        - الخذروف الثقيل المتناظر؛ المبادرة والترنّح
+        - الجيروسكوب والبوصلة الجيروسكوبية
+    reading: Fowles & Cassiday §9.6–9.8
+  - week: 9
+    title: { en: Calculus of variations and Hamilton's principle, ar: حساب التغيرات ومبدأ هاملتون }
+    topics:
+      en:
+        - Functionals and the Euler–Lagrange equation
+        - Brachistochrone, geodesics and minimal surfaces
+        - 'Hamilton''s principle \(\delta\int L\,\dd t = 0\)'
+      ar:
+        - الداليات (الدوال التابعية) ومعادلة أويلر–لاغرانج
+        - منحني أقصر زمن، والخطوط الجيوديزية، والسطوح الصغرى
+        - 'مبدأ هاملتون \(\delta\int L\,\dd t = 0\)'
+    reading: Fowles & Cassiday §10.8; Taylor Ch. 6
+  - week: 10
+    title: { en: Lagrangian mechanics, ar: ميكانيكا لاغرانج }
+    topics:
+      en:
+        - Generalised coordinates and constraints; generalised forces
+        - 'Lagrange''s equations'
+        - Generalised momenta; cyclic (ignorable) coordinates and conservation laws
+      ar:
+        - الإحداثيات المعممة والقيود؛ القوى المعممة
+        - معادلات لاغرانج
+        - كميات الحركة المعممة؛ الإحداثيات الدورية (المهملة) وقوانين الانحفاظ
+    reading: Fowles & Cassiday §10.1–10.5
+    activity: { en: Quiz 2; problem set 4 released, ar: الاختبار القصير 2؛ نشر السلسلة 4 }
+    milestone: quiz
+  - week: 11
+    title: { en: Applications of Lagrangian mechanics, ar: تطبيقات ميكانيكا لاغرانج }
+    topics:
+      en:
+        - Lagrange multipliers and forces of constraint
+        - Central-force motion; effective potential
+        - Rotating systems (bead on a rotating hoop); the energy function
+      ar:
+        - مضاعفات لاغرانج وقوى القيد
+        - الحركة تحت تأثير قوة مركزية؛ الكمون الفعّال
+        - الجمل الدوّارة (خرزة على حلقة دوّارة)؛ دالة الطاقة
+    reading: Fowles & Cassiday §10.4, §10.6; Ch. 6 (review)
+  - week: 12
+    title: { en: Hamiltonian mechanics, ar: ميكانيكا هاملتون }
+    topics:
+      en:
+        - Legendre transformation; the Hamiltonian function
+        - 'Hamilton''s canonical equations'
+        - Phase space and phase portraits; conservation of phase-space volume (Liouville)
+      ar:
+        - تحويل لوجاندر؛ دالة هاملتون
+        - معادلات هاملتون القانونية
+        - فضاء الطور وصور الطور؛ انحفاظ حجم فضاء الطور (نظرية ليوفيل)
+    reading: Fowles & Cassiday §10.9–10.10
+    activity: { en: Midterm exam 2, ar: الاختبار النصفي 2 }
+    milestone: midterm
+  - week: 13
+    title: { en: Small oscillations and normal modes, ar: الاهتزازات الصغيرة والأنماط الذاتية }
+    topics:
+      en:
+        - Potential energy and stability of equilibrium
+        - Coupled harmonic oscillators; the matrix eigenvalue problem
+        - Normal coordinates; general theory of vibrating systems
+      ar:
+        - الطاقة الكامنة واستقرار التوازن
+        - الهزازات التوافقية المتقارنة؛ مسألة القيم الذاتية المصفوفية
+        - الإحداثيات الطبيعية؛ النظرية العامة للجمل المهتزة
+    reading: Fowles & Cassiday §11.1–11.5
+    activity: { en: Computational mini-project due, ar: تسليم المشروع الحسابي المصغر }
+    milestone: project
+  - week: 14
+    title: { en: Continuous systems and review, ar: الجمل المستمرة ومراجعة }
+    topics:
+      en:
+        - The loaded string and its continuum limit
+        - The wave equation for a continuous string
+        - Course review
+      ar:
+        - الوتر المحمَّل ونهايته المستمرة
+        - معادلة الموجة لوتر مستمر
+        - مراجعة المقرر
+    reading: Fowles & Cassiday §11.6–11.7
+    milestone: review
+
+materials:
+  - type: notes
+    title: { en: 'Chapter 1 — Dynamics of systems of particles', ar: 'الفصل 1 — ديناميكا جمل الجسيمات' }
+    url: https://drive.google.com/open?id=1b4IQx7wlo-PI-PaSPXXz1HYV65eUIvhZ
+    week: 1
+    lang: en
+  - type: notes
+    title: { en: 'Chapter 2 — Mechanics of rigid bodies (plane motion)', ar: 'الفصل 2 — ميكانيكا الأجسام الصلبة (الحركة المستوية)' }
+    url: https://drive.google.com/open?id=1CwCZ5mlJ6RXXqX00OjlSAK9BOO_VI4dk
+    week: 3
+    lang: en
+  - type: problems
+    title: { en: Problem set 1 — Systems of particles, ar: السلسلة 1 — جمل الجسيمات }
+    url: https://drive.google.com/open?id=1EXqtOt64TEE2um9hp_oz2EOmyn21VFLG
+    week: 2
+    lang: en
+  - type: problems
+    title: { en: Problem set 2 — Rigid bodies in plane motion, ar: السلسلة 2 — الأجسام الصلبة في حركة مستوية }
+    url: https://drive.google.com/open?id=1svleg_gvjKCpBqGdP2GCLF0aLG1NxK_3
+    week: 4
+    lang: en
+  - type: problems
+    title: { en: Problem set 3 — Rigid bodies in three dimensions, ar: السلسلة 3 — الأجسام الصلبة في ثلاثة أبعاد }
+    url: https://drive.google.com/open?id=1TrElHsdeM6D7gN2Y763Vc1TM4I0O72u3
+    week: 6
+    lang: en
+  - type: formula
+    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+    lang: en
+  - type: sim
+    title: { en: myPhysicsLab — interactive mechanics simulations, ar: myPhysicsLab — محاكاة تفاعلية في الميكانيكا }
+    url: https://www.myphysicslab.com/
+    lang: en
+  - type: sim
+    title: { en: PhET interactive simulations, ar: محاكاة PhET التفاعلية }
+    url: https://phet.colorado.edu/en/simulations/category/new
+    lang: en
+
+exams:
+  - title: { en: Quiz 1, ar: الاختبار القصير 1 }
+    paper: https://drive.google.com/open?id=1SRzrrnut3TmQPE-aVWBWeMGyUz2W46Bb
+    solution: https://drive.google.com/open?id=1K_smOlnrUNy1SCG0IIHCE8lcIBAprvtE
+    lang: en
+  - title: { en: Midterm exam 1, ar: الاختبار النصفي 1 }
+    paper: https://drive.google.com/open?id=1rteHCUSNT2OMtKoiBTFfBRD4mP5CX7y6
+    solution: https://drive.google.com/open?id=1b9Gd53UUcFWSpLlnO_fUhKYQbRl-l3CY
+    lang: en
+  - title: { en: Quiz 2, ar: الاختبار القصير 2 }
+    paper: https://drive.google.com/open?id=1jV8IiUa2VRR4Fr7QUlCXN2JDkIwX7WwR
+    solution: https://drive.google.com/open?id=1pfwj_gLMFN65kNY3yrh1BfPucTjEv498
+    lang: en
+  - title: { en: Midterm exam 2, ar: الاختبار النصفي 2 }
+    paper: https://drive.google.com/open?id=1iMT6YHNkpaYgSw2j0-9uUTPzd26dCZmz
+    solution: https://drive.google.com/open?id=1ZLtfr8_Y69oEB_Z5TySEAm-q3OpHLx2C
+    lang: en
+
+exam_guide:
+  format:
+    en: The final exam is a 2-hour written paper with four or five problems — typically one on systems of particles or plane rigid-body motion, one on three-dimensional rotation, one or two Lagrangian problems (set up coordinates, find the equations of motion, conserved quantities, small oscillations) and one Hamiltonian or normal-mode problem. Midterms last 1 h 30 min with three problems each.
+    ar: الاختبار النهائي ورقة كتابية مدتها ساعتان تتضمن أربع أو خمس مسائل — عادةً مسألة حول جمل الجسيمات أو الحركة المستوية للجسم الصلب، ومسألة حول الدوران في ثلاثة أبعاد، ومسألة أو مسألتان بطريقة لاغرانج (اختيار الإحداثيات، معادلات الحركة، المقادير المنحفظة، الاهتزازات الصغيرة)، ومسألة حول صياغة هاملتون أو الأنماط الذاتية. ومدة كل اختبار نصفي ساعة ونصف بثلاث مسائل.
+  allowed:
+    en: A non-programmable scientific calculator. A table of moments of inertia of standard bodies is provided; no other notes.
+    ar: آلة حاسبة علمية غير قابلة للبرمجة. يُقدَّم جدول بعزوم عطالة الأجسام المألوفة؛ ولا يُسمح بأي مذكرات أخرى.
+  tips:
+    - en: 'In Lagrangian problems, count the degrees of freedom first, choose coordinates that make the constraints automatic, and write T and U carefully — velocity of each mass in the chosen coordinates is where most errors occur.'
+      ar: في مسائل لاغرانج، احسب عدد درجات الحرية أولًا، واختر إحداثيات تجعل القيود محققة تلقائيًا، واكتب T وU بعناية — فحساب سرعة كل كتلة بالإحداثيات المختارة هو موضع معظم الأخطاء.
+    - en: Look for cyclic coordinates and time-independence before solving anything — the conserved quantities often give the answer directly.
+      ar: ابحث عن الإحداثيات الدورية وعن عدم تعلق دالة لاغرانج بالزمن قبل أي حل — فالمقادير المنحفظة تعطي الجواب مباشرة في كثير من الأحيان.
+    - en: For rigid bodies, always state the axis about which a moment of inertia is taken; use the parallel-axis theorem only from the centre of mass.
+      ar: في الأجسام الصلبة، حدّد دائمًا المحور الذي يُحسب حوله عزم العطالة؛ ولا تستعمل نظرية المحاور المتوازية إلا انطلاقًا من مركز الكتلة.
+    - en: Check every result in a limiting case (zero rotation, equal masses, small angles) and with dimensional analysis.
+      ar: تحقّق من كل نتيجة في حالة حدّية (دوران معدوم، كتل متساوية، زوايا صغيرة) وبالتحليل البُعدي.
+
+problems:
+  - title: { en: Physical pendulum — the best pivot, ar: النواس الفيزيائي — أفضل نقطة تعليق }
+    difficulty: 1
+    statement:
+      en: |
+        A uniform rod of mass \(M\) and length \(L\) swings in a vertical plane about a horizontal pivot located a distance \(d\) from its centre.
+
+        (a) Find the period of small oscillations \(T(d)\).
+        (b) For which \(d\) is the period minimal? What is \(T_{\min}\) for \(L = 1\ \text{m}\)?
+        (c) Show that pivoting at the distance \(d' = L^2/12d\) on the other side of the centre gives the same period.
+      ar: |
+        قضيب متجانس كتلته \(M\) وطوله \(L\) يهتز في مستوٍ شاقولي حول محور أفقي يبعد مسافة \(d\) عن مركزه.
+
+        (أ) أوجد دور الاهتزازات الصغيرة \(T(d)\).
+        (ب) من أجل أي قيمة لـ \(d\) يكون الدور أصغريًا؟ ما قيمة \(T_{\min}\) من أجل \(L = 1\ \text{m}\)؟
+        (ج) بيّن أن التعليق على البعد \(d' = L^2/12d\) من الجهة الأخرى للمركز يعطي الدور نفسه.
+    hint:
+      en: 'Torque about the pivot: \(-Mgd\sin\theta\). Moment of inertia about the pivot: \(I = ML^2/12 + Md^2\).'
+      ar: 'العزم حول نقطة التعليق: \(-Mgd\sin\theta\). وعزم العطالة حولها: \(I = ML^2/12 + Md^2\).'
+    solution:
+      en: |
+        (a) \(I\ddot\theta = -Mgd\sin\theta \approx -Mgd\,\theta\), with \(I = M(L^2/12 + d^2)\):
+        \[ T(d) = 2\pi\sqrt{\frac{L^2/12 + d^2}{g\,d}}. \]
+
+        (b) Minimise \(f(d) = L^2/12d + d\): \(f'(d) = -L^2/12d^2 + 1 = 0\), so
+        \[ d^\ast = \frac{L}{\sqrt{12}} \approx 0.289\,L, \qquad T_{\min} = 2\pi\sqrt{\frac{2d^\ast}{g}} \approx 2\pi\sqrt{\frac{0.577}{9.81}} \approx 1.52\ \text{s}. \]
+
+        (c) \(f(d') = \dfrac{L^2}{12d'} + d' = d + \dfrac{L^2}{12d} = f(d)\). The equivalent simple-pendulum length is \(\ell = d + d'\); the two pivot points are conjugate (this is the principle of Kater's reversible pendulum).
+      ar: |
+        (أ) \(I\ddot\theta = -Mgd\sin\theta \approx -Mgd\,\theta\)، مع \(I = M(L^2/12 + d^2)\):
+        \[ T(d) = 2\pi\sqrt{\frac{L^2/12 + d^2}{g\,d}}. \]
+
+        (ب) نجعل \(f(d) = L^2/12d + d\) أصغرية: \(f'(d) = -L^2/12d^2 + 1 = 0\)، ومنه
+        \[ d^\ast = \frac{L}{\sqrt{12}} \approx 0.289\,L, \qquad T_{\min} = 2\pi\sqrt{\frac{2d^\ast}{g}} \approx 2\pi\sqrt{\frac{0.577}{9.81}} \approx 1.52\ \text{s}. \]
+
+        (ج) \(f(d') = \dfrac{L^2}{12d'} + d' = d + \dfrac{L^2}{12d} = f(d)\). طول النواس البسيط المكافئ هو \(\ell = d + d'\)؛ ونقطتا التعليق مترافقتان (وهذا مبدأ نواس كاتر العكوس).
+  - title: { en: Rocket launch with gravity, ar: إطلاق صاروخ مع الثقالة }
+    difficulty: 2
+    statement:
+      en: |
+        A rocket of initial mass \(m_0\) ejects gas at constant speed \(u = 2.5\ \text{km/s}\) relative to itself, at a constant rate, until its mass is \(m_f = m_0/4\) after \(t_b = 100\ \text{s}\).
+
+        (a) Derive the rocket equation in free space and find the speed gained.
+        (b) The rocket is now launched vertically from the ground in a uniform field \(g = 9.81\ \text{m/s}^2\) (no air). Check that it can lift off, and find its speed at burn-out.
+      ar: |
+        صاروخ كتلته الابتدائية \(m_0\) يقذف الغاز بسرعة ثابتة \(u = 2.5\ \text{km/s}\) بالنسبة إليه، وبمعدل ثابت، حتى تصبح كتلته \(m_f = m_0/4\) بعد \(t_b = 100\ \text{s}\).
+
+        (أ) استنتج معادلة الصاروخ في الفضاء الحر وأوجد السرعة المكتسبة.
+        (ب) يُطلق الصاروخ الآن شاقوليًا من سطح الأرض في حقل ثقالة منتظم \(g = 9.81\ \text{m/s}^2\) (دون هواء). تحقّق من أنه يستطيع الإقلاع، وأوجد سرعته عند انتهاء الاحتراق.
+    hint:
+      en: 'Write the momentum of rocket + ejected gas at \(t\) and \(t+\dd t\). The thrust is \(u\,|\dd m/\dd t|\).'
+      ar: 'اكتب كمية حركة الصاروخ والغاز المقذوف عند \(t\) وعند \(t+\dd t\). قوة الدفع هي \(u\,|\dd m/\dd t|\).'
+    solution:
+      en: |
+        (a) In a time \(\dd t\) the rocket ejects a mass \(-\dd m>0\) with velocity \(v-u\). Conservation of momentum gives \(m\,\dd v = -u\,\dd m\), hence
+        \[ \Delta v = u\ln\frac{m_0}{m_f} = 2.5\ln 4 \approx 3.47\ \text{km/s}. \]
+
+        (b) With gravity, \(m\dv{v}{t} = -u\dv{m}{t} - mg\). The burn rate is \(|\dot m| = 0.75\,m_0/100\ \text{s}\), so the initial thrust \(u|\dot m| = 18.75\,m_0\ \text{N/kg}\) exceeds the weight \(9.81\,m_0\): the rocket lifts off (thrust-to-weight ratio ≈ 1.9). Integrating,
+        \[ v(t_b) = u\ln\frac{m_0}{m_f} - g\,t_b \approx 3.47 - 0.98 \approx 2.49\ \text{km/s}. \]
+        Gravity losses cost about 1 km/s — one reason real rockets burn fast.
+      ar: |
+        (أ) خلال \(\dd t\) يقذف الصاروخ كتلة \(-\dd m>0\) بسرعة \(v-u\). يعطي انحفاظ كمية الحركة \(m\,\dd v = -u\,\dd m\)، ومنه
+        \[ \Delta v = u\ln\frac{m_0}{m_f} = 2.5\ln 4 \approx 3.47\ \text{km/s}. \]
+
+        (ب) مع الثقالة \(m\dv{v}{t} = -u\dv{m}{t} - mg\). معدل الاحتراق \(|\dot m| = 0.75\,m_0/100\ \text{s}\)، فقوة الدفع الابتدائية \(u|\dot m| = 18.75\,m_0\ \text{N/kg}\) أكبر من الثقل \(9.81\,m_0\): يقلع الصاروخ (نسبة الدفع إلى الثقل ≈ 1.9). وبالمكاملة
+        \[ v(t_b) = u\ln\frac{m_0}{m_f} - g\,t_b \approx 3.47 - 0.98 \approx 2.49\ \text{km/s}. \]
+        تكلّف الثقالة نحو 1 km/s — وهذا أحد أسباب الاحتراق السريع في الصواريخ الحقيقية.
+  - title: { en: Inertia tensor of a square plate, ar: موتر العطالة لصفيحة مربعة }
+    difficulty: 2
+    statement:
+      en: |
+        A thin uniform square plate of mass \(M\) and side \(a\) lies in the \(xy\)-plane with one corner at the origin and two edges along the \(x\)- and \(y\)-axes.
+
+        (a) Compute the inertia tensor about the origin.
+        (b) Find the principal moments and principal axes at the corner.
+        (c) The plate rotates with \(\boldsymbol\omega = \omega\hat{\vb{x}}\). Find \(\vb{L}\) and explain why it is not parallel to \(\boldsymbol\omega\).
+      ar: |
+        صفيحة مربعة رقيقة متجانسة كتلتها \(M\) وطول ضلعها \(a\) تقع في المستوي \(xy\)، أحد رؤوسها في المبدأ وضلعان منها على المحورين \(x\) و\(y\).
+
+        (أ) احسب موتر العطالة بالنسبة إلى المبدأ.
+        (ب) أوجد العزوم الرئيسية والمحاور الرئيسية عند الرأس.
+        (ج) تدور الصفيحة بـ \(\boldsymbol\omega = \omega\hat{\vb{x}}\). أوجد \(\vb{L}\) واشرح لماذا لا يوازي \(\boldsymbol\omega\).
+    hint:
+      en: 'Surface density \(\sigma = M/a^2\). \(I_{xx} = \int y^2\,\dd m\), \(I_{xy} = -\int xy\,\dd m\); for a plane body \(I_{zz} = I_{xx}+I_{yy}\).'
+      ar: 'الكثافة السطحية \(\sigma = M/a^2\). \(I_{xx} = \int y^2\,\dd m\)، \(I_{xy} = -\int xy\,\dd m\)؛ ولجسم مستوٍ \(I_{zz} = I_{xx}+I_{yy}\).'
+    solution:
+      en: |
+        (a) \(I_{xx} = \sigma\int_0^a\!\int_0^a y^2\,\dd x\,\dd y = \tfrac13Ma^2 = I_{yy}\), \(I_{zz} = \tfrac23Ma^2\), \(I_{xy} = -\sigma\left(\tfrac{a^2}{2}\right)^2 = -\tfrac14Ma^2\), and \(I_{xz} = I_{yz} = 0\) (since \(z = 0\)):
+        \[ \mathsf{I} = Ma^2\begin{pmatrix} 1/3 & -1/4 & 0\\ -1/4 & 1/3 & 0\\ 0 & 0 & 2/3 \end{pmatrix}. \]
+
+        (b) The \(z\)-axis is principal with \(I_3 = \tfrac23Ma^2\). The \(2\times2\) block has eigenvalues \(\tfrac13\mp\tfrac14\):
+        \[ I_1 = \tfrac{1}{12}Ma^2,\ \ \hat{\vb{e}}_1 = \tfrac{1}{\sqrt2}(1,1,0); \qquad I_2 = \tfrac{7}{12}Ma^2,\ \ \hat{\vb{e}}_2 = \tfrac{1}{\sqrt2}(1,-1,0). \]
+        Check: the diagonal passes through the centre, so \(I_1 = Ma^2/12\); the perpendicular axis through the corner is at distance \(a/\sqrt2\) from the centre, so \(I_2 = Ma^2/12 + Ma^2/2 = 7Ma^2/12\).
+
+        (c) \(\vb{L} = \mathsf{I}\boldsymbol\omega = Ma^2\omega\left(\tfrac13, -\tfrac14, 0\right)\). The \(x\)-axis is not a principal axis (\(I_{xy}\neq0\)), so \(\vb{L}\) has a component along \(y\) and rotates with the body: bearings holding such an axis must supply a torque.
+      ar: |
+        (أ) \(I_{xx} = \sigma\int_0^a\!\int_0^a y^2\,\dd x\,\dd y = \tfrac13Ma^2 = I_{yy}\)، \(I_{zz} = \tfrac23Ma^2\)، \(I_{xy} = -\sigma\left(\tfrac{a^2}{2}\right)^2 = -\tfrac14Ma^2\)، و\(I_{xz} = I_{yz} = 0\) (لأن \(z = 0\)):
+        \[ \mathsf{I} = Ma^2\begin{pmatrix} 1/3 & -1/4 & 0\\ -1/4 & 1/3 & 0\\ 0 & 0 & 2/3 \end{pmatrix}. \]
+
+        (ب) المحور \(z\) رئيسي مع \(I_3 = \tfrac23Ma^2\). وللكتلة \(2\times2\) القيمتان الذاتيتان \(\tfrac13\mp\tfrac14\):
+        \[ I_1 = \tfrac{1}{12}Ma^2,\ \ \hat{\vb{e}}_1 = \tfrac{1}{\sqrt2}(1,1,0); \qquad I_2 = \tfrac{7}{12}Ma^2,\ \ \hat{\vb{e}}_2 = \tfrac{1}{\sqrt2}(1,-1,0). \]
+        أي أن \(I_1\) يوافق القطر و\(I_2\) يوافق المحور العمودي عليه في المستوي. تحقق: القطر يمر بالمركز، إذن \(I_1 = Ma^2/12\)؛ والمحور العمودي عليه المار بالرأس يبعد \(a/\sqrt2\) عن المركز، إذن \(I_2 = Ma^2/12 + Ma^2/2 = 7Ma^2/12\).
+
+        (ج) \(\vb{L} = \mathsf{I}\boldsymbol\omega = Ma^2\omega\left(\tfrac13, -\tfrac14, 0\right)\). المحور \(x\) ليس محورًا رئيسيًا (\(I_{xy}\neq0\))، فلـ \(\vb{L}\) مركبة على \(y\) تدور مع الجسم: ويجب على المساند التي تثبّت هذا المحور أن تؤثر بعزم.
+  - title: { en: Bead on a rotating hoop, ar: خرزة على حلقة دوّارة }
+    difficulty: 3
+    statement:
+      en: |
+        A bead of mass \(m\) slides without friction on a circular hoop of radius \(R\). The hoop rotates at constant angular velocity \(\omega\) about its vertical diameter. Let \(\theta\) be the angle of the bead measured from the bottom of the hoop.
+
+        (a) Write the Lagrangian and the equation of motion.
+        (b) Find the equilibrium positions and discuss their stability as a function of \(\omega\).
+        (c) Find the frequency of small oscillations about each stable equilibrium.
+        (d) Is the total energy conserved? Identify the conserved quantity.
+      ar: |
+        خرزة كتلتها \(m\) تنزلق دون احتكاك على حلقة دائرية نصف قطرها \(R\). تدور الحلقة بسرعة زاوية ثابتة \(\omega\) حول قطرها الشاقولي. لتكن \(\theta\) زاوية الخرزة مقيسة من أسفل الحلقة.
+
+        (أ) اكتب دالة لاغرانج ومعادلة الحركة.
+        (ب) أوجد أوضاع التوازن وناقش استقرارها بدلالة \(\omega\).
+        (ج) أوجد تواتر الاهتزازات الصغيرة حول كل وضع توازن مستقر.
+        (د) هل الطاقة الكلية منحفظة؟ حدّد المقدار المنحفظ.
+    hint:
+      en: 'The bead''s velocity has a component \(R\dot\theta\) along the hoop and \(R\omega\sin\theta\) perpendicular to the plane of the hoop. Height: \(-R\cos\theta\).'
+      ar: 'لسرعة الخرزة مركبة \(R\dot\theta\) على طول الحلقة ومركبة \(R\omega\sin\theta\) عمودية على مستوي الحلقة. الارتفاع: \(-R\cos\theta\).'
+    solution:
+      en: |
+        (a) \[ L = \tfrac12 mR^2\left(\dot\theta^2 + \omega^2\sin^2\theta\right) + mgR\cos\theta, \]
+        \[ \ddot\theta = \sin\theta\left(\omega^2\cos\theta - \frac{g}{R}\right) \equiv F(\theta). \]
+
+        (b) Equilibria: \(\theta = 0\), \(\theta = \pi\), and, if \(\omega^2 > g/R\), \(\cos\theta_0 = g/R\omega^2\). Stability requires \(F'(\theta_{\text{eq}})<0\), with \(F'(\theta) = \cos\theta(\omega^2\cos\theta - g/R) - \omega^2\sin^2\theta\).
+        <ul><li>\(\theta = 0\): \(F'(0) = \omega^2 - g/R\) — stable only if \(\omega^2 < g/R\).</li><li>\(\theta = \pi\): \(F'(\pi) = \omega^2 + g/R > 0\) — always unstable.</li><li>\(\theta_0\): \(F'(\theta_0) = -\omega^2\sin^2\theta_0 < 0\) — stable whenever it exists.</li></ul>
+        Above the critical rate \(\omega_c = \sqrt{g/R}\) the bottom becomes unstable and the bead moves to \(\pm\theta_0\) (a symmetry-breaking bifurcation).
+
+        (c) \(\Omega^2 = -F'(\theta_{\text{eq}})\):
+        \[ \Omega_{\theta=0} = \sqrt{\frac{g}{R} - \omega^2}, \qquad \Omega_{\theta_0} = \omega\sin\theta_0 = \sqrt{\omega^2 - \frac{g^2}{R^2\omega^2}}. \]
+
+        (d) The constraint is time-dependent (the hoop is driven), so \(T+U\) is not conserved — the motor does work. But \(L\) has no explicit time dependence, so the energy function is conserved:
+        \[ h = \dot\theta\pdv{L}{\dot\theta} - L = \tfrac12mR^2\dot\theta^2 - \tfrac12mR^2\omega^2\sin^2\theta - mgR\cos\theta. \]
+      ar: |
+        (أ) \[ L = \tfrac12 mR^2\left(\dot\theta^2 + \omega^2\sin^2\theta\right) + mgR\cos\theta, \]
+        \[ \ddot\theta = \sin\theta\left(\omega^2\cos\theta - \frac{g}{R}\right) \equiv F(\theta). \]
+
+        (ب) أوضاع التوازن: \(\theta = 0\)، \(\theta = \pi\)، وإذا كان \(\omega^2 > g/R\) فأيضًا \(\cos\theta_0 = g/R\omega^2\). يتطلب الاستقرار \(F'(\theta_{\text{eq}})<0\)، حيث \(F'(\theta) = \cos\theta(\omega^2\cos\theta - g/R) - \omega^2\sin^2\theta\).
+        <ul><li>\(\theta = 0\): \(F'(0) = \omega^2 - g/R\) — مستقر فقط إذا كان \(\omega^2 < g/R\).</li><li>\(\theta = \pi\): \(F'(\pi) = \omega^2 + g/R > 0\) — غير مستقر دائمًا.</li><li>\(\theta_0\): \(F'(\theta_0) = -\omega^2\sin^2\theta_0 < 0\) — مستقر كلما وُجد.</li></ul>
+        فوق السرعة الحرجة \(\omega_c = \sqrt{g/R}\) يصبح الوضع السفلي غير مستقر وتنتقل الخرزة إلى \(\pm\theta_0\) (تفرّع يكسر التناظر).
+
+        (ج) \(\Omega^2 = -F'(\theta_{\text{eq}})\):
+        \[ \Omega_{\theta=0} = \sqrt{\frac{g}{R} - \omega^2}, \qquad \Omega_{\theta_0} = \omega\sin\theta_0 = \sqrt{\omega^2 - \frac{g^2}{R^2\omega^2}}. \]
+
+        (د) القيد متعلق بالزمن (الحلقة مُدارة بمحرك)، فالمجموع \(T+U\) غير منحفظ — إذ ينجز المحرك عملًا. لكن \(L\) لا تتعلق بالزمن صراحة، فدالة الطاقة منحفظة:
+        \[ h = \dot\theta\pdv{L}{\dot\theta} - L = \tfrac12mR^2\dot\theta^2 - \tfrac12mR^2\omega^2\sin^2\theta - mgR\cos\theta. \]
+  - title: { en: Hamiltonian of a central-force orbit, ar: دالة هاملتون لمدار تحت قوة مركزية }
+    difficulty: 3
+    statement:
+      en: |
+        A particle of mass \(m\) moves in a plane under the attractive potential \(U(r) = -k/r\).
+
+        (a) Using polar coordinates, write the Lagrangian, the conjugate momenta and the Hamiltonian.
+        (b) Write Hamilton's equations and identify the conserved quantities.
+        (c) Find the radius \(r_0\) of the circular orbit with angular momentum \(\ell\).
+        (d) Show that the angular frequency of small radial oscillations about \(r_0\) equals the orbital angular velocity. What does this imply for the shape of slightly non-circular orbits?
+      ar: |
+        جسيم كتلته \(m\) يتحرك في مستوٍ تحت تأثير الكمون الجاذب \(U(r) = -k/r\).
+
+        (أ) باستعمال الإحداثيات القطبية، اكتب دالة لاغرانج وكميات الحركة المرافقة ودالة هاملتون.
+        (ب) اكتب معادلات هاملتون وحدّد المقادير المنحفظة.
+        (ج) أوجد نصف قطر المدار الدائري \(r_0\) ذي العزم الحركي \(\ell\).
+        (د) بيّن أن النبض الزاوي للاهتزازات القطرية الصغيرة حول \(r_0\) يساوي السرعة الزاوية المدارية. ماذا يعني ذلك بالنسبة لشكل المدارات القريبة من الدائرية؟
+    hint:
+      en: 'Effective potential \(U_{\text{eff}}(r) = \ell^2/2mr^2 + U(r)\); small radial oscillations have \(\omega_r^2 = U_{\text{eff}}''''(r_0)/m\).'
+      ar: 'الكمون الفعّال \(U_{\text{eff}}(r) = \ell^2/2mr^2 + U(r)\)؛ وللاهتزازات القطرية الصغيرة \(\omega_r^2 = U_{\text{eff}}''''(r_0)/m\).'
+    solution:
+      en: |
+        (a) \(L = \tfrac12m(\dot r^2 + r^2\dot\theta^2) + k/r\); \(p_r = m\dot r\), \(p_\theta = mr^2\dot\theta\);
+        \[ H = \frac{p_r^2}{2m} + \frac{p_\theta^2}{2mr^2} - \frac{k}{r}. \]
+
+        (b) \[ \dot r = \frac{p_r}{m},\quad \dot p_r = \frac{p_\theta^2}{mr^3} - \frac{k}{r^2},\quad \dot\theta = \frac{p_\theta}{mr^2},\quad \dot p_\theta = 0. \]
+        \(\theta\) is cyclic, so \(p_\theta = \ell\) (angular momentum) is conserved; \(H\) has no explicit time dependence, so \(H = E\) is conserved.
+
+        (c) A circular orbit needs \(\dot p_r = 0\): \(\ell^2/mr_0^3 = k/r_0^2\), i.e. \(r_0 = \ell^2/mk\).
+
+        (d) \(U_{\text{eff}}'' = 3\ell^2/mr^4 - 2k/r^3\); at \(r_0\) (using \(\ell^2 = mkr_0\)) this is \(k/r_0^3\), so \(\omega_r^2 = k/mr_0^3\). The orbital angular velocity is \(\dot\theta = \ell/mr_0^2\), and \(\dot\theta^2 = \ell^2/m^2r_0^4 = k/mr_0^3\). Hence \(\omega_r = \dot\theta\): the radius returns to the same value after exactly one revolution, so nearly circular orbits close on themselves — they are ellipses, and the perihelion does not precess. This is special to the \(1/r\) potential (and the harmonic one).
+      ar: |
+        (أ) \(L = \tfrac12m(\dot r^2 + r^2\dot\theta^2) + k/r\)؛ \(p_r = m\dot r\)، \(p_\theta = mr^2\dot\theta\)؛
+        \[ H = \frac{p_r^2}{2m} + \frac{p_\theta^2}{2mr^2} - \frac{k}{r}. \]
+
+        (ب) \[ \dot r = \frac{p_r}{m},\quad \dot p_r = \frac{p_\theta^2}{mr^3} - \frac{k}{r^2},\quad \dot\theta = \frac{p_\theta}{mr^2},\quad \dot p_\theta = 0. \]
+        الإحداثية \(\theta\) دورية، فـ \(p_\theta = \ell\) (العزم الحركي) منحفظ؛ و\(H\) لا تتعلق بالزمن صراحة، فـ \(H = E\) منحفظة.
+
+        (ج) يتطلب المدار الدائري \(\dot p_r = 0\): \(\ell^2/mr_0^3 = k/r_0^2\)، أي \(r_0 = \ell^2/mk\).
+
+        (د) \(U_{\text{eff}}'' = 3\ell^2/mr^4 - 2k/r^3\)؛ وعند \(r_0\) (باستعمال \(\ell^2 = mkr_0\)) تساوي \(k/r_0^3\)، إذن \(\omega_r^2 = k/mr_0^3\). والسرعة الزاوية المدارية \(\dot\theta = \ell/mr_0^2\)، و\(\dot\theta^2 = \ell^2/m^2r_0^4 = k/mr_0^3\). ومنه \(\omega_r = \dot\theta\): يعود نصف القطر إلى القيمة نفسها بعد دورة واحدة بالضبط، فتنغلق المدارات القريبة من الدائرية على نفسها — إنها قطوع ناقصة، ولا يتقدم الحضيض. وهذه خاصية مميزة للكمون \(1/r\) (وللكمون التوافقي).
+  - title: { en: Normal modes of the double pendulum, ar: الأنماط الذاتية للنواس المزدوج }
+    difficulty: 3
+    statement:
+      en: |
+        A double pendulum consists of two equal masses \(m\) and two massless rods of equal length \(l\), moving in a vertical plane. Let \(\theta_1, \theta_2\) be the angles of the upper and lower rods with the vertical.
+
+        (a) Write \(T\) and \(U\) to second order in the small angles and velocities.
+        (b) Find the two normal frequencies.
+        (c) Find the mode shapes and describe them physically.
+      ar: |
+        نواس مزدوج يتكون من كتلتين متساويتين \(m\) وقضيبين مهملي الكتلة طول كل منهما \(l\)، يتحرك في مستوٍ شاقولي. لتكن \(\theta_1, \theta_2\) زاويتا القضيبين العلوي والسفلي مع الشاقول.
+
+        (أ) اكتب \(T\) و\(U\) حتى الرتبة الثانية في الزوايا والسرعات الصغيرة.
+        (ب) أوجد التواترين الذاتيين.
+        (ج) أوجد أشكال الأنماط وصفها فيزيائيًا.
+    hint:
+      en: 'Position of the lower mass: \((l\sin\theta_1 + l\sin\theta_2,\ -l\cos\theta_1 - l\cos\theta_2)\). Solve \(\det(\mathsf{K} - \omega^2\mathsf{M}) = 0\).'
+      ar: 'موضع الكتلة السفلى: \((l\sin\theta_1 + l\sin\theta_2,\ -l\cos\theta_1 - l\cos\theta_2)\). حلّ \(\det(\mathsf{K} - \omega^2\mathsf{M}) = 0\).'
+    solution:
+      en: |
+        (a) To second order (\(\cos(\theta_1-\theta_2)\approx1\)):
+        \[ T = \tfrac12ml^2\left(2\dot\theta_1^2 + 2\dot\theta_1\dot\theta_2 + \dot\theta_2^2\right), \qquad U = \tfrac12mgl\left(2\theta_1^2 + \theta_2^2\right) + \text{const}. \]
+        So \(\mathsf{M} = ml^2\begin{pmatrix}2&1\\1&1\end{pmatrix}\), \(\mathsf{K} = mgl\begin{pmatrix}2&0\\0&1\end{pmatrix}\).
+
+        (b) With \(x = \omega^2 l/g\): \(\det\begin{pmatrix}2-2x & -x\\ -x & 1-x\end{pmatrix} = 2(1-x)^2 - x^2 = 0\), so \(\sqrt2(1-x) = \pm x\) and
+        \[ \omega_{1,2}^2 = \left(2\mp\sqrt2\right)\frac{g}{l}, \qquad \omega_1\approx0.765\sqrt{g/l},\quad \omega_2\approx1.848\sqrt{g/l}. \]
+
+        (c) From the first row, \(A_2/A_1 = (2-2x)/x\):
+        <ul><li>slow mode, \(x = 2-\sqrt2\): \(A_2/A_1 = +\sqrt2\) — both rods swing in the same direction, the lower one with larger amplitude;</li><li>fast mode, \(x = 2+\sqrt2\): \(A_2/A_1 = -\sqrt2\) — the rods swing in opposite directions.</li></ul>
+        Any small motion is a superposition of these two modes; since \(\omega_2/\omega_1 = \sqrt2+1\) is irrational, the general motion is never periodic.
+      ar: |
+        (أ) حتى الرتبة الثانية (\(\cos(\theta_1-\theta_2)\approx1\)):
+        \[ T = \tfrac12ml^2\left(2\dot\theta_1^2 + 2\dot\theta_1\dot\theta_2 + \dot\theta_2^2\right), \qquad U = \tfrac12mgl\left(2\theta_1^2 + \theta_2^2\right) + \text{const}. \]
+        إذن \(\mathsf{M} = ml^2\begin{pmatrix}2&1\\1&1\end{pmatrix}\)، \(\mathsf{K} = mgl\begin{pmatrix}2&0\\0&1\end{pmatrix}\).
+
+        (ب) بوضع \(x = \omega^2 l/g\): \(\det\begin{pmatrix}2-2x & -x\\ -x & 1-x\end{pmatrix} = 2(1-x)^2 - x^2 = 0\)، أي \(\sqrt2(1-x) = \pm x\) و
+        \[ \omega_{1,2}^2 = \left(2\mp\sqrt2\right)\frac{g}{l}, \qquad \omega_1\approx0.765\sqrt{g/l},\quad \omega_2\approx1.848\sqrt{g/l}. \]
+
+        (ج) من السطر الأول \(A_2/A_1 = (2-2x)/x\):
+        <ul><li>النمط البطيء، \(x = 2-\sqrt2\): \(A_2/A_1 = +\sqrt2\) — يتأرجح القضيبان في الاتجاه نفسه، والسفلي بسعة أكبر؛</li><li>النمط السريع، \(x = 2+\sqrt2\): \(A_2/A_1 = -\sqrt2\) — يتأرجح القضيبان في اتجاهين متعاكسين.</li></ul>
+        كل حركة صغيرة هي تراكب لهذين النمطين؛ وبما أن \(\omega_2/\omega_1 = \sqrt2+1\) عدد غير ناطق، فإن الحركة العامة ليست دورية أبدًا.
+
+quizzes:
+  - title: { en: Systems of particles and collisions, ar: جمل الجسيمات والتصادمات }
+    questions:
+      - q:
+          en: The total linear momentum of a system of particles is conserved when
+          ar: تنحفظ كمية الحركة الخطية الكلية لجملة جسيمات عندما
+        options:
+          - en: the internal forces vanish
+            ar: تنعدم القوى الداخلية
+          - en: the total kinetic energy is conserved
+            ar: تنحفظ الطاقة الحركية الكلية
+          - en: the net external force is zero
+            ar: تنعدم محصلة القوى الخارجية
+          - en: all collisions are elastic
+            ar: تكون كل التصادمات مرنة
+        answer: 2
+        explain:
+          en: '\(\dd\vb{P}/\dd t = \vb{F}_{\text{ext}}\): internal forces cancel in pairs (Newton''s third law), whatever their size, and energy conservation is not required.'
+          ar: '\(\dd\vb{P}/\dd t = \vb{F}_{\text{ext}}\): القوى الداخلية تتلاشى مثنى مثنى (قانون نيوتن الثالث) مهما كانت شدتها، ولا يُشترط انحفاظ الطاقة.'
+      - q:
+          en: The reduced mass of two bodies \(m_1\) and \(m_2\) is
+          ar: الكتلة المختزلة لجسمين \(m_1\) و\(m_2\) هي
+        options:
+          - '\(m_1+m_2\)'
+          - '\(\dfrac{m_1m_2}{m_1+m_2}\)'
+          - '\(\sqrt{m_1m_2}\)'
+          - '\(\dfrac{m_1+m_2}{2}\)'
+        answer: 1
+        explain:
+          en: 'The relative coordinate obeys \(\mu\ddot{\vb{r}} = \vb{F}\) with \(1/\mu = 1/m_1 + 1/m_2\). If \(m_2\gg m_1\), \(\mu\approx m_1\).'
+          ar: 'يحقق الإحداثي النسبي \(\mu\ddot{\vb{r}} = \vb{F}\) حيث \(1/\mu = 1/m_1 + 1/m_2\). وإذا كان \(m_2\gg m_1\) فإن \(\mu\approx m_1\).'
+      - q:
+          en: A mass \(m\) moving at speed \(v\) sticks to an identical mass at rest. The fraction of kinetic energy lost is
+          ar: كتلة \(m\) تتحرك بسرعة \(v\) تلتحم بكتلة مماثلة ساكنة. نسبة الطاقة الحركية الضائعة هي
+        options:
+          - '0'
+          - '1/4'
+          - '3/4'
+          - '1/2'
+        answer: 3
+        explain:
+          en: 'Momentum gives a final speed \(v/2\); final KE \(= \tfrac12(2m)(v/2)^2 = \tfrac14mv^2\), half of the initial \(\tfrac12mv^2\).'
+          ar: 'من انحفاظ كمية الحركة تكون السرعة النهائية \(v/2\)؛ والطاقة الحركية النهائية \(= \tfrac12(2m)(v/2)^2 = \tfrac14mv^2\)، أي نصف الطاقة الابتدائية \(\tfrac12mv^2\).'
+      - q:
+          en: A coefficient of restitution \(e = 1\) characterises
+          ar: يميّز معامل الارتداد \(e = 1\)
+        options:
+          - en: an elastic collision
+            ar: تصادمًا مرنًا
+          - en: a perfectly inelastic collision
+            ar: تصادمًا عديم المرونة كليًا
+          - en: an explosion
+            ar: انفجارًا
+          - en: a collision in which momentum is not conserved
+            ar: تصادمًا لا تنحفظ فيه كمية الحركة
+        answer: 0
+        explain:
+          en: '\(e\) is the ratio of relative speeds after and before the collision. \(e = 1\) means kinetic energy is conserved; \(e = 0\) means the bodies stick together.'
+          ar: '\(e\) هو نسبة السرعتين النسبيتين بعد التصادم وقبله. \(e = 1\) يعني انحفاظ الطاقة الحركية، و\(e = 0\) يعني التحام الجسمين.'
+      - q:
+          en: In free space, a rocket with exhaust speed \(u\) goes from mass \(m_0\) to \(m_f\). Its gain in speed is
+          ar: في الفضاء الحر، ينتقل صاروخ سرعة غازاته \(u\) من الكتلة \(m_0\) إلى \(m_f\). الزيادة في سرعته هي
+        options:
+          - '\(u(m_0-m_f)/m_0\)'
+          - '\(u\,m_0/m_f\)'
+          - '\(u\ln(m_0/m_f)\)'
+          - '\(u\ln(m_f/m_0)\)'
+        answer: 2
+        explain:
+          en: '\(m\,\dd v = -u\,\dd m\) integrates to Tsiolkovsky''s equation. The logarithm shows why large speed gains need very large mass ratios (or staging).'
+          ar: 'بمكاملة \(m\,\dd v = -u\,\dd m\) نحصل على معادلة تسيولكوفسكي. ويبيّن اللوغاريتم لماذا تحتاج الزيادات الكبيرة في السرعة إلى نسب كتل كبيرة جدًا (أو إلى صواريخ متعددة المراحل).'
+  - title: { en: Rigid bodies, ar: الأجسام الصلبة }
+    questions:
+      - q:
+          en: The moment of inertia of a uniform rod of mass \(M\) and length \(L\) about an axis through one end, perpendicular to the rod, is
+          ar: عزم عطالة قضيب متجانس كتلته \(M\) وطوله \(L\) حول محور يمر بأحد طرفيه عموديًا عليه هو
+        options:
+          - '\(ML^2/12\)'
+          - '\(ML^2/3\)'
+          - '\(ML^2/2\)'
+          - '\(ML^2\)'
+        answer: 1
+        explain:
+          en: '\(I = \int_0^L x^2\,(M/L)\,\dd x = ML^2/3\), or \(ML^2/12 + M(L/2)^2\) by the parallel-axis theorem.'
+          ar: '\(I = \int_0^L x^2\,(M/L)\,\dd x = ML^2/3\)، أو \(ML^2/12 + M(L/2)^2\) بنظرية المحاور المتوازية.'
+      - q:
+          en: The parallel-axis theorem states that \(I = I_{\text{cm}} + Md^2\), where \(I_{\text{cm}}\) is taken about
+          ar: تنص نظرية المحاور المتوازية على أن \(I = I_{\text{cm}} + Md^2\)، حيث يُحسب \(I_{\text{cm}}\) حول
+        options:
+          - en: any axis parallel to the new one
+            ar: أي محور مواز للمحور الجديد
+          - en: the axis of symmetry only
+            ar: محور التناظر فقط
+          - en: a principal axis through the origin
+            ar: محور رئيسي يمر بالمبدأ
+          - en: the parallel axis through the centre of mass
+            ar: المحور الموازي المار بمركز الكتلة
+        answer: 3
+        explain:
+          en: The cross term vanishes only when the reference axis passes through the centre of mass. Consequently the moment of inertia is smallest about the centroidal axis of a family of parallel axes.
+          ar: لا ينعدم الحد المختلط إلا إذا مر المحور المرجعي بمركز الكتلة. لذلك يكون عزم العطالة أصغريًا حول المحور المار بمركز الكتلة من بين عائلة محاور متوازية.
+      - q:
+          en: A uniform solid sphere rolls without slipping down an incline of angle \(\alpha\). Its acceleration is
+          ar: كرة مصمتة متجانسة تتدحرج دون انزلاق على مستوٍ مائل بزاوية \(\alpha\). تسارعها هو
+        options:
+          - '\(\tfrac57 g\sin\alpha\)'
+          - '\(g\sin\alpha\)'
+          - '\(\tfrac23 g\sin\alpha\)'
+          - '\(\tfrac12 g\sin\alpha\)'
+        answer: 0
+        explain:
+          en: '\(a = g\sin\alpha/(1 + I/MR^2)\) with \(I = \tfrac25MR^2\). Part of the energy goes into rotation, so the sphere is slower than a frictionless block. (\(\tfrac23\) is for a thin spherical shell.)'
+          ar: '\(a = g\sin\alpha/(1 + I/MR^2)\) مع \(I = \tfrac25MR^2\). يذهب جزء من الطاقة إلى الدوران، فتكون الكرة أبطأ من جسم ينزلق دون احتكاك. (أما \(\tfrac23\) فتخص قشرة كروية رقيقة.)'
+      - q:
+          en: A rigid body rotates about one of its principal axes. Then
+          ar: يدور جسم صلب حول أحد محاوره الرئيسية. عندئذ
+        options:
+          - en: L is perpendicular to ω
+            ar: يكون L عموديًا على ω
+          - en: the inertia tensor is zero
+            ar: يكون موتر العطالة معدومًا
+          - en: L is parallel to ω
+            ar: يكون L موازيًا لـ ω
+          - en: the kinetic energy is zero
+            ar: تكون الطاقة الحركية معدومة
+        answer: 2
+        explain:
+          en: 'Principal axes are eigenvectors of the inertia tensor: \(\mathsf{I}\boldsymbol\omega = I_k\boldsymbol\omega\). No torque is needed to keep the axis fixed (dynamic balance).'
+          ar: 'المحاور الرئيسية أشعة ذاتية لموتر العطالة: \(\mathsf{I}\boldsymbol\omega = I_k\boldsymbol\omega\). فلا حاجة إلى عزم لتثبيت المحور (توازن ديناميكي).'
+      - q:
+          en: For torque-free rotation of a body with three different principal moments, rotation about the axis of intermediate moment is
+          ar: في الدوران الحر دون عزم لجسم له ثلاثة عزوم رئيسية مختلفة، يكون الدوران حول محور العزم المتوسط
+        options:
+          - en: stable
+            ar: مستقرًا
+          - en: unstable
+            ar: غير مستقر
+          - en: impossible
+            ar: مستحيلًا
+          - en: stable only if the body is symmetric
+            ar: مستقرًا فقط إذا كان الجسم متناظرًا
+        answer: 1
+        explain:
+          en: 'Linearising Euler''s equations gives exponential growth of perturbations for the intermediate axis and bounded oscillations for the largest and smallest — the "tennis-racket" (Dzhanibekov) effect.'
+          ar: 'بجعل معادلات أويلر خطية نجد نموًا أُسيًا للاضطرابات حول المحور المتوسط، واهتزازات محدودة حول المحورين الأكبر والأصغر — وهو أثر «مضرب التنس» (أثر جانيبيكوف).'
+  - title: { en: Variational principles and Lagrangian mechanics, ar: المبادئ التغايرية وميكانيكا لاغرانج }
+    questions:
+      - q:
+          en: The functional \(J = \int f(y, y', x)\,\dd x\) is stationary when
+          ar: تكون الدالية \(J = \int f(y, y', x)\,\dd x\) مستقرة عندما
+        options:
+          - '\(\pdv{f}{y} - \dv{}{x}\pdv{f}{y''} = 0\)'
+          - '\(\pdv{f}{y} + \pdv{f}{y''} = 0\)'
+          - '\(\dv{f}{x} = 0\)'
+          - '\(\pdv{f}{y''} = 0\)'
+        answer: 0
+        explain:
+          en: Varying \(y\to y+\eta\) and integrating by parts (with \(\eta = 0\) at the endpoints) gives the Euler–Lagrange equation. With \(f = L\), \(y = q\), \(x = t\) it becomes Lagrange's equation.
+          ar: بتغيير \(y\to y+\eta\) والمكاملة بالتجزئة (مع \(\eta = 0\) عند الطرفين) نحصل على معادلة أويلر–لاغرانج. ومع \(f = L\)، \(y = q\)، \(x = t\) تصبح معادلة لاغرانج.
+      - q:
+          en: How many generalised coordinates does a planar double pendulum with rigid rods need?
+          ar: كم إحداثية معممة يحتاج نواس مزدوج مستوٍ بقضيبين صلبين؟
+        options:
+          - '1'
+          - '4'
+          - '6'
+          - '2'
+        answer: 3
+        explain:
+          en: Two masses in a plane have 4 Cartesian coordinates, minus 2 constraints (fixed rod lengths) = 2 degrees of freedom, e.g. the two angles.
+          ar: لكتلتين في مستوٍ 4 إحداثيات ديكارتية، ناقص قيدين (طولا القضيبين ثابتان) = درجتا حرية، مثل الزاويتين.
+      - q:
+          en: If the Lagrangian does not depend on a coordinate \(q_k\) (cyclic coordinate), then
+          ar: إذا كانت دالة لاغرانج لا تتعلق بإحداثية \(q_k\) (إحداثية دورية)، فإن
+        options:
+          - '\(\dot q_k = 0\)'
+          - en: '\(p_k = \partial L/\partial\dot q_k\) is conserved'
+            ar: '\(p_k = \partial L/\partial\dot q_k\) منحفظة'
+          - en: the energy is not conserved
+            ar: الطاقة غير منحفظة
+          - '\(q_k = 0\)'
+        answer: 1
+        explain:
+          en: 'Lagrange''s equation reduces to \(\dd p_k/\dd t = \partial L/\partial q_k = 0\). Example: the azimuthal angle of a central-force problem gives conservation of angular momentum.'
+          ar: 'تؤول معادلة لاغرانج إلى \(\dd p_k/\dd t = \partial L/\partial q_k = 0\). مثال: الزاوية السمتية في مسألة القوة المركزية تعطي انحفاظ العزم الحركي.'
+      - q:
+          en: For a free particle in plane polar coordinates, \(L = \tfrac12m(\dot r^2 + r^2\dot\theta^2)\). The momentum conjugate to \(\theta\) is
+          ar: من أجل جسيم حر بالإحداثيات القطبية المستوية \(L = \tfrac12m(\dot r^2 + r^2\dot\theta^2)\). كمية الحركة المرافقة لـ \(\theta\) هي
+        options:
+          - '\(m\dot\theta\)'
+          - '\(mr\dot\theta\)'
+          - '\(mr^2\dot\theta\)'
+          - '\(m\dot r\)'
+        answer: 2
+        explain:
+          en: '\(p_\theta = \partial L/\partial\dot\theta = mr^2\dot\theta\), the angular momentum. Generalised momenta need not have the dimensions of linear momentum.'
+          ar: '\(p_\theta = \partial L/\partial\dot\theta = mr^2\dot\theta\)، وهو العزم الحركي. ولا يُشترط أن تكون لكميات الحركة المعممة أبعاد كمية الحركة الخطية.'
+      - q:
+          en: If \(L\) has no explicit time dependence, which quantity is conserved?
+          ar: إذا كانت \(L\) لا تتعلق بالزمن صراحة، فما المقدار المنحفظ؟
+        options:
+          - en: '\(L\) itself'
+            ar: '\(L\) نفسها'
+          - '\(\sum_k q_k\,\partial L/\partial q_k\)'
+          - en: the action
+            ar: الفعل
+          - '\(h = \sum_k\dot q_k\,\partial L/\partial\dot q_k - L\)'
+        answer: 3
+        explain:
+          en: '\(\dd h/\dd t = -\partial L/\partial t = 0\). \(h\) equals the total energy \(T+U\) when the constraints are time-independent; for a driven system (e.g. a rotating hoop) it differs from \(T+U\).'
+          ar: '\(\dd h/\dd t = -\partial L/\partial t = 0\). وتساوي \(h\) الطاقة الكلية \(T+U\) إذا كانت القيود مستقلة عن الزمن؛ أما في جملة مُدارة (كالحلقة الدوّارة) فتختلف عن \(T+U\).'
+  - title: { en: Hamiltonian mechanics and small oscillations, ar: ميكانيكا هاملتون والاهتزازات الصغيرة }
+    questions:
+      - q:
+          en: 'Hamilton''s canonical equations are:'
+          ar: 'معادلات هاملتون القانونية هي:'
+        options:
+          - '\(\dot q = -\partial H/\partial p,\ \dot p = \partial H/\partial q\)'
+          - '\(\dot q = \partial H/\partial p,\ \dot p = -\partial H/\partial q\)'
+          - '\(\dot q = \partial H/\partial q,\ \dot p = \partial H/\partial p\)'
+          - en: '\(\dot q = p/m,\ \dot p = 0\) always'
+            ar: '\(\dot q = p/m,\ \dot p = 0\) دائمًا'
+        answer: 1
+        explain:
+          en: 'Check with \(H = p^2/2m + U(q)\): \(\dot q = p/m\) and \(\dot p = -U''(q)\), i.e. Newton''s law.'
+          ar: 'للتحقق خذ \(H = p^2/2m + U(q)\): \(\dot q = p/m\) و\(\dot p = -U''(q)\)، أي قانون نيوتن.'
+      - q:
+          en: In phase space \((q, p)\), the trajectories of a one-dimensional harmonic oscillator are
+          ar: في فضاء الطور \((q, p)\)، تكون مسارات الهزاز التوافقي أحادي البعد
+        options:
+          - en: straight lines
+            ar: مستقيمات
+          - en: parabolas
+            ar: قطوعًا مكافئة
+          - en: ellipses
+            ar: قطوعًا ناقصة
+          - en: spirals towards the origin
+            ar: حلزونات نحو المبدأ
+        answer: 2
+        explain:
+          en: '\(H = p^2/2m + \tfrac12kq^2 = E\) is an ellipse. Spirals appear only with damping; for the pendulum, closed curves near the bottom become open curves beyond the separatrix.'
+          ar: '\(H = p^2/2m + \tfrac12kq^2 = E\) معادلة قطع ناقص. ولا تظهر الحلزونات إلا مع التخامد؛ وفي النواس تتحول المنحنيات المغلقة قرب الوضع السفلي إلى منحنيات مفتوحة وراء الفاصل.'
+      - q:
+          en: An equilibrium of a conservative system is stable when the potential energy there is
+          ar: يكون توازن جملة محافظة مستقرًا عندما تكون الطاقة الكامنة عنده
+        options:
+          - en: a local minimum
+            ar: قيمة صغرى محلية
+          - en: a local maximum
+            ar: قيمة عظمى محلية
+          - en: equal to zero
+            ar: معدومة
+          - en: a saddle point
+            ar: نقطة سرج
+        answer: 0
+        explain:
+          en: A positive-definite matrix of second derivatives gives real normal frequencies and bounded oscillations; a maximum or saddle gives exponentially growing modes.
+          ar: مصفوفة مشتقات ثانية موجبة التحديد تعطي تواترات ذاتية حقيقية واهتزازات محدودة؛ أما القيمة العظمى أو نقطة السرج فتعطي أنماطًا تنمو أُسيًا.
+      - q:
+          en: A linear triatomic molecule is modelled as three masses joined by two springs, moving along the axis only. How many of its normal modes have zero frequency?
+          ar: تُنمذَج جزيئة ثلاثية الذرات خطية بثلاث كتل يربطها نابضان، وتتحرك على المحور فقط. كم نمطًا ذاتيًا منها تواتره معدوم؟
+        options:
+          - '0'
+          - '2'
+          - '3'
+          - '1'
+        answer: 3
+        explain:
+          en: Three degrees of freedom give three modes. Uniform translation of the whole molecule costs no potential energy (zero frequency); the other two are the symmetric and antisymmetric stretches.
+          ar: ثلاث درجات حرية تعطي ثلاثة أنماط. الانسحاب المنتظم للجزيئة كلها لا يكلّف طاقة كامنة (تواتر معدوم)؛ والنمطان الآخران هما التمدد المتناظر والتمدد غير المتناظر.
+      - q:
+          en: In the continuum limit of a loaded string (N beads, spacing \(a\), tension \(T\)), the beads' equations become
+          ar: في نهاية الوسط المستمر لوتر محمَّل (N خرزة، تباعد \(a\)، توتر \(T\))، تصبح معادلات الخرزات
+        options:
+          - en: Laplace's equation
+            ar: معادلة لابلاس
+          - en: the heat equation
+            ar: معادلة الحرارة
+          - en: the wave equation with v² = T/μ
+            ar: معادلة الموجة مع v² = T/μ
+          - en: Euler's equations
+            ar: معادلات أويلر
+        answer: 2
+        explain:
+          en: 'The coupling term \(T(y_{j+1} - 2y_j + y_{j-1})/a\) becomes \(Ta\,\partial_x^2y\), and with \(m = \mu a\) one obtains \(\mu\,\partial_t^2y = T\,\partial_x^2y\).'
+          ar: 'يصبح حد التقارن \(T(y_{j+1} - 2y_j + y_{j-1})/a\) مساويًا \(Ta\,\partial_x^2y\)، ومع \(m = \mu a\) نحصل على \(\mu\,\partial_t^2y = T\,\partial_x^2y\).'
+
+textbooks:
+  required:
+    - { authors: G. R. Fowles & G. L. Cassiday, title: Analytical Mechanics, edition: 7th, publisher: Brooks/Cole (Thomson), year: 2005 }
+  recommended:
+    - { authors: J. R. Taylor, title: Classical Mechanics, publisher: University Science Books, year: 2005 }
+    - { authors: S. T. Thornton & J. B. Marion, title: Classical Dynamics of Particles and Systems, edition: 5th, publisher: Brooks/Cole, year: 2004 }
+    - { authors: D. Morin, title: 'Introduction to Classical Mechanics: With Problems and Solutions', edition: 1st, publisher: Cambridge University Press, year: 2008 }
+    - { authors: D. Kleppner & R. Kolenkow, title: An Introduction to Mechanics, edition: 2nd, publisher: Cambridge University Press, year: 2013 }
+    - { authors: A. P. Arya, title: Introduction to Classical Mechanics, edition: 2nd, publisher: Prentice Hall, year: 1998 }
+    - { authors: 'H. Goldstein, C. Poole & J. Safko', title: Classical Mechanics, edition: 3rd, publisher: Addison-Wesley, year: 2002 }
+  online:
+    - title: { en: myPhysicsLab — physics simulations, ar: myPhysicsLab — محاكاة فيزيائية }
+      url: https://www.myphysicslab.com/
+      note: { en: 'Double pendulum, rigid-body collisions, rolling and more, with the equations behind each simulation.', ar: 'النواس المزدوج وتصادمات الأجسام الصلبة والدحرجة وغيرها، مع المعادلات التي تقوم عليها كل محاكاة.' }
+    - title: { en: PhET Interactive Simulations, ar: محاكاة PhET التفاعلية }
+      url: https://phet.colorado.edu/en/simulations/category/new
+      note: { en: Free interactive simulations from the University of Colorado., ar: محاكاة تفاعلية مجانية من جامعة كولورادو. }
+
+glossary:
+  - { en: Centre of mass, ar: مركز الكتلة, fr: Centre de masse, def: { en: Mass-weighted average position of a system; it moves as if all external forces acted on the total mass there., ar: الموضع المتوسط المرجَّح بالكتل؛ يتحرك كأن كل القوى الخارجية تؤثر على الكتلة الكلية المجمعة فيه. } }
+  - { en: Reduced mass, ar: الكتلة المختزلة, fr: Masse réduite, def: { en: 'The mass \(\mu = m_1m_2/(m_1+m_2)\) governing the relative motion of two bodies.', ar: 'الكتلة \(\mu = m_1m_2/(m_1+m_2)\) التي تحكم الحركة النسبية لجسمين.' } }
+  - { en: Coefficient of restitution, ar: معامل الارتداد, fr: Coefficient de restitution, def: { en: Ratio of relative speeds after and before a collision., ar: نسبة السرعتين النسبيتين بعد التصادم وقبله. } }
+  - { en: Impulse, ar: الدفع, fr: Impulsion (percussion), def: { en: Time integral of a force; equals the change in momentum., ar: التكامل الزمني للقوة؛ يساوي التغير في كمية الحركة. } }
+  - { en: Rigid body, ar: الجسم الصلب, fr: Solide indéformable, def: { en: A body whose inter-particle distances stay fixed., ar: جسم تبقى المسافات بين جسيماته ثابتة. } }
+  - { en: Moment of inertia, ar: عزم العطالة, fr: Moment d'inertie, def: { en: 'Rotational inertia about an axis, \(I = \sum m_i d_i^2\).', ar: 'العطالة الدورانية حول محور، \(I = \sum m_i d_i^2\).' } }
+  - { en: Parallel-axis theorem, ar: نظرية المحاور المتوازية (هويغنز–شتاينر), fr: Théorème de Huygens, def: { en: '\(I = I_{\text{cm}} + Md^2\) for parallel axes a distance \(d\) apart.', ar: '\(I = I_{\text{cm}} + Md^2\) لمحورين متوازيين البعد بينهما \(d\).' } }
+  - { en: Physical pendulum, ar: النواس الفيزيائي (المركب), fr: Pendule pesant, def: { en: A rigid body oscillating about a fixed horizontal axis under gravity., ar: جسم صلب يهتز حول محور أفقي ثابت تحت تأثير الثقالة. } }
+  - { en: Rolling without slipping, ar: الدحرجة دون انزلاق, fr: Roulement sans glissement, def: { en: 'Motion with zero velocity at the contact point: \(v_{\text{cm}} = R\omega\).', ar: 'حركة تنعدم فيها السرعة عند نقطة التماس: \(v_{\text{cm}} = R\omega\).' } }
+  - { en: Inertia tensor, ar: موتر العطالة, fr: Tenseur d'inertie, def: { en: 'Symmetric matrix linking angular velocity to angular momentum, \(\vb{L} = \mathsf{I}\boldsymbol\omega\).', ar: 'مصفوفة متناظرة تربط السرعة الزاوية بالعزم الحركي، \(\vb{L} = \mathsf{I}\boldsymbol\omega\).' } }
+  - { en: Principal axes, ar: المحاور الرئيسية, fr: Axes principaux d'inertie, def: { en: Axes in which the inertia tensor is diagonal; L is parallel to ω along them., ar: محاور يكون فيها موتر العطالة قطريًا؛ ويوازي L عندها ω. } }
+  - { en: Euler's equations, ar: معادلات أويلر, fr: Équations d'Euler, def: { en: Equations of rotational motion of a rigid body written in its principal-axis frame., ar: معادلات الحركة الدورانية لجسم صلب مكتوبة في مرجع محاوره الرئيسية. } }
+  - { en: Euler angles, ar: زوايا أويلر, fr: Angles d'Euler, def: { en: Three angles specifying the orientation of a rigid body., ar: ثلاث زوايا تحدد توجّه جسم صلب. } }
+  - { en: Precession, ar: المبادرة (الحركة البدارية), fr: Précession, def: { en: Slow rotation of the spin axis of a top or gyroscope about the vertical., ar: دوران بطيء لمحور دوران الخذروف أو الجيروسكوب حول الشاقول. } }
+  - { en: Nutation, ar: الترنّح, fr: Nutation, def: { en: Nodding oscillation of the axis of a top superposed on its precession., ar: تأرجح محور الخذروف صعودًا ونزولًا متراكبًا مع حركة المبادرة. } }
+  - { en: Coriolis force, ar: قوة كوريوليس, fr: Force de Coriolis, def: { en: 'Inertial force \(-2m\boldsymbol\omega\times\vb{v}''\) felt by a body moving in a rotating frame.', ar: 'قوة عطالية \(-2m\boldsymbol\omega\times\vb{v}''\) يخضع لها جسم يتحرك في مرجع دوّار.' } }
+  - { en: Functional, ar: الدالية (الدالة التابعية), fr: Fonctionnelle, def: { en: A map that assigns a number to a whole function (e.g. the action)., ar: تطبيق يقرن عددًا بدالة كاملة (مثل الفعل). } }
+  - { en: Euler–Lagrange equation, ar: معادلة أويلر–لاغرانج, fr: Équation d'Euler-Lagrange, def: { en: Condition for a functional to be stationary., ar: شرط استقرار دالية. } }
+  - { en: Action, ar: الفعل, fr: Action, def: { en: 'Time integral of the Lagrangian, \(S = \int L\,\dd t\).', ar: 'التكامل الزمني لدالة لاغرانج، \(S = \int L\,\dd t\).' } }
+  - { en: Hamilton's principle, ar: مبدأ هاملتون, fr: Principe de Hamilton, def: { en: The actual motion makes the action stationary., ar: الحركة الفعلية تجعل الفعل مستقرًا. } }
+  - { en: Generalised coordinates, ar: الإحداثيات المعممة, fr: Coordonnées généralisées, def: { en: Independent variables that specify the configuration and respect the constraints., ar: متغيرات مستقلة تحدد هيئة الجملة وتحترم القيود. } }
+  - { en: Constraint, ar: القيد (الرابط), fr: Liaison, def: { en: A geometric or kinematic condition restricting the motion., ar: شرط هندسي أو حركي يحدّ من الحركة. } }
+  - { en: Lagrange multiplier, ar: مضاعف لاغرانج, fr: Multiplicateur de Lagrange, def: { en: Auxiliary variable that enforces a constraint and yields the constraint force., ar: متغير مساعد يفرض القيد ويعطي قوة القيد. } }
+  - { en: Cyclic coordinate, ar: الإحداثية الدورية (المهملة), fr: Coordonnée cyclique, def: { en: A coordinate absent from the Lagrangian; its conjugate momentum is conserved., ar: إحداثية غائبة عن دالة لاغرانج؛ وكمية الحركة المرافقة لها منحفظة. } }
+  - { en: Generalised momentum, ar: كمية الحركة المعممة (المرافقة), fr: Moment conjugué, def: { en: '\(p_k = \partial L/\partial\dot q_k\).', ar: '\(p_k = \partial L/\partial\dot q_k\).' } }
+  - { en: Hamiltonian, ar: دالة هاملتون (الهاملتوني), fr: Hamiltonien, def: { en: 'Legendre transform of the Lagrangian, \(H = \sum p_k\dot q_k - L\); usually the total energy.', ar: 'تحويل لوجاندر لدالة لاغرانج، \(H = \sum p_k\dot q_k - L\)؛ وهي عادة الطاقة الكلية.' } }
+  - { en: Phase space, ar: فضاء الطور, fr: Espace des phases, def: { en: The space of all coordinates and momenta; each state is one point., ar: فضاء كل الإحداثيات وكميات الحركة؛ تمثَّل كل حالة بنقطة. } }
+  - { en: Normal coordinates, ar: الإحداثيات الطبيعية, fr: Coordonnées normales, def: { en: Coordinates in which small oscillations decouple into independent harmonic oscillators., ar: إحداثيات تنفصل فيها الاهتزازات الصغيرة إلى هزازات توافقية مستقلة. } }
+  - { en: Effective potential, ar: الكمون الفعّال, fr: Potentiel effectif, def: { en: 'Radial potential \(U(r) + \ell^2/2mr^2\) including the centrifugal barrier.', ar: 'الكمون القطري \(U(r) + \ell^2/2mr^2\) شاملًا الحاجز النابذ.' } }

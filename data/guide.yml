@@ -1,0 +1,107 @@
+# Content of the "How it works" page. Each block: { en: …, ar: … }
+
+intro:
+  en: >
+    TeachWeb gathers complete physics courses in one place. Every course page has the same
+    eleven sections, in the same order, so that once you know one course you know them all.
+    Everything is available in English and in Arabic; switch at any time with the language
+    button at the top of the page.
+  ar: >
+    يجمع تيتش ويب مقررات فيزياء كاملة في مكان واحد. لكل صفحة مقرر الأقسام الأحد عشر نفسها
+    وبالترتيب نفسه، فإذا عرفت مقررًا واحدًا عرفت المقررات كلها. كل المحتوى متاح بالعربية
+    والإنجليزية، ويمكنك التبديل بينهما في أي لحظة بزرّ اللغة أعلى الصفحة.
+
+quality_title: { en: The quality framework, ar: إطار الجودة }
+quality:
+  - title: { en: Learning outcomes first, ar: مخرجات التعلّم أولًا }
+    text:
+      en: >
+        Each course states 6–8 Course Learning Outcomes (CLOs): what a successful student can
+        do at the end. Every outcome is written with an action verb and classified by its level
+        in Bloom's taxonomy and by domain (knowledge, skills, values).
+      ar: >
+        يحدّد كل مقرر من 6 إلى 8 مخرجات تعلّم: ما يستطيع الطالب الناجح فعله في نهاية المقرر.
+        يُصاغ كل مخرج بفعل إجرائي، ويُصنَّف حسب مستواه في تصنيف بلوم وحسب مجاله (معرفة، مهارات، قيم).
+  - title: { en: Constructive alignment, ar: الاتساق البنائي }
+    text:
+      en: >
+        Outcomes, teaching activities and assessment are designed together. The alignment matrix
+        on every course page shows which assessment measures which outcome, so that nothing is
+        taught without being assessed, and nothing is assessed without being taught.
+      ar: >
+        تُصمَّم المخرجات وأنشطة التدريس والتقويم معًا. تُظهر مصفوفة الاتساق في كل صفحة مقرر أيّ
+        أسلوب تقويم يقيس أيّ مخرج، فلا يُدرَّس شيء دون أن يُقيَّم، ولا يُقيَّم شيء دون أن يُدرَّس.
+  - title: { en: A variety of assessment, ar: تنوّع أساليب التقويم }
+    text:
+      en: >
+        Quizzes, homework, exams, lab work, projects and presentations measure different abilities.
+        Weights always add up to 100%, and each outcome is measured by at least two methods.
+      ar: >
+        تقيس الاختبارات القصيرة والواجبات والاختبارات والعمل المخبري والمشاريع والعروض قدراتٍ مختلفة.
+        مجموع الأوزان دائمًا 100٪، ويُقاس كل مخرج بأسلوبين على الأقل.
+  - title: { en: Realistic workload, ar: عبء دراسي واقعي }
+    text:
+      en: >
+        Contact hours are listed for every course, together with the recommended self-study time
+        (about two hours of personal work for each hour in class).
+      ar: >
+        تُذكر ساعات الحضور لكل مقرر، مع وقت الدراسة الذاتية المقترح (نحو ساعتين من العمل الشخصي
+        لكل ساعة حضور).
+
+bloom_title: { en: "Bloom's taxonomy in one glance", ar: تصنيف بلوم في لمحة }
+bloom_lead:
+  en: The six levels used to classify every learning outcome, from recalling facts to creating something new.
+  ar: المستويات الستة المستعملة لتصنيف كل مخرج تعلّم، من استرجاع المعلومات إلى إنتاج الجديد.
+bloom_verbs:
+  remember:   { en: "define, state, list, recall", ar: "يعرّف، يذكر، يعدّد، يسترجع" }
+  understand: { en: "explain, describe, interpret, summarise", ar: "يشرح، يصف، يفسّر، يلخّص" }
+  apply:      { en: "calculate, solve, use, demonstrate", ar: "يحسب، يحلّ، يستعمل، يبرهن" }
+  analyze:    { en: "derive, compare, distinguish, examine", ar: "يستنتج، يقارن، يميّز، يفحص" }
+  evaluate:   { en: "assess, justify, critique, estimate", ar: "يقيّم، يعلّل، ينقد، يقدّر" }
+  create:     { en: "design, model, build, propose", ar: "يصمّم، ينمذج، يبني، يقترح" }
+
+study_title: { en: How to study with a course page, ar: كيف تدرس بصفحة المقرر }
+study:
+  - title: { en: Before the week, ar: قبل الأسبوع }
+    text:
+      en: Open the weekly plan, read the topics and skim the reading. Ten minutes of preview doubles what you get from the lecture.
+      ar: افتح الخطة الأسبوعية، واقرأ المحاور، وتصفّح القراءة المقترحة. عشر دقائق من الاطلاع المسبق تضاعف استفادتك من المحاضرة.
+  - title: { en: During the week, ar: خلال الأسبوع }
+    text:
+      en: Attend, take notes, and work through the problem set yourself before looking at solutions. Struggling with a problem is where learning happens.
+      ar: احضر، ودوّن ملاحظاتك، وحلّ سلسلة التمارين بنفسك قبل الاطلاع على الحلول. فالتعلّم الحقيقي يحدث حين تجتهد في المسألة.
+  - title: { en: End of the week, ar: نهاية الأسبوع }
+    text:
+      en: Take the self-check quiz, read every explanation (even for the questions you got right), then tick the week as studied.
+      ar: أجب عن أسئلة التقويم الذاتي، واقرأ كل شرح (حتى للأسئلة التي أصبت فيها)، ثم أشِّر على الأسبوع بأنه تمت دراسته.
+  - title: { en: Before an exam, ar: قبل الاختبار }
+    text:
+      en: Read the exam guide, solve the worked problems without looking, then a past paper under timed conditions. Revise vocabulary with the glossary flashcards.
+      ar: اقرأ دليل الاختبار، وحلّ المسائل المحلولة دون النظر إلى الحل، ثم اختبارًا سابقًا في ظروف زمنية حقيقية. وراجع المصطلحات ببطاقات المعجم.
+
+method_title: { en: A method for solving physics problems, ar: منهجية لحلّ مسائل الفيزياء }
+method:
+  - { en: "Understand: draw a diagram, list the known and unknown quantities, and their units.", ar: "افهم: ارسم مخططًا، واكتب المعطيات والمجاهيل ووحداتها." }
+  - { en: "Plan: identify the principles that apply (conservation laws, equations of motion, symmetries).", ar: "خطّط: حدّد المبادئ التي تنطبق (قوانين الانحفاظ، معادلات الحركة، التناظرات)." }
+  - { en: "Solve symbolically first; substitute numbers only at the end.", ar: "حلّ بالرموز أولًا، ولا تعوّض بالقيم العددية إلا في النهاية." }
+  - { en: "Check: units, limiting cases, signs and orders of magnitude.", ar: "تحقّق: من الوحدات، والحالات الحدّية، والإشارات، ورتب المقادير." }
+
+teachers_title: { en: For teachers, ar: للأساتذة }
+teachers:
+  en: >
+    Course pages are designed to be reused. The syllabus, outcomes, assessment scheme and weekly
+    plan follow the structure expected by most accreditation and quality-assurance templates, and
+    can be printed directly with the "Print syllabus" button. The bilingual glossary is useful
+    when teaching in Arabic with English or French references.
+  ar: >
+    صُمّمت صفحات المقررات لإعادة الاستخدام. تتبع المفردات ومخرجات التعلّم ونظام التقويم والخطة
+    الأسبوعية البنيةَ التي تطلبها أغلب نماذج الاعتماد وضمان الجودة، ويمكن طباعتها مباشرة بزرّ
+    «اطبع المفردات». والمعجم ثنائي اللغة مفيد عند التدريس بالعربية مع مراجع إنجليزية أو فرنسية.
+
+features_title: { en: Small things that help, ar: تفاصيل صغيرة مفيدة }
+features:
+  - { en: "Press <kbd>/</kbd> anywhere to search all courses, weekly topics and glossary terms.", ar: "اضغط <kbd>/</kbd> في أي مكان للبحث في كل المقررات والمحاور الأسبوعية ومصطلحات المعجم." }
+  - { en: "Your ticked weeks and best quiz scores are saved in your browser, and shown on the course cards.", ar: "تُحفظ الأسابيع التي أشّرت عليها وأفضل نتائجك في متصفحك، وتظهر على بطاقات المقررات." }
+  - { en: "Light and dark themes follow your device; switch them with the sun / moon button.", ar: "يتبع الوضعان الفاتح والداكن إعدادات جهازك، ويمكنك التبديل بزرّ الشمس / القمر." }
+  - { en: "Every page prints cleanly, without menus or interactive parts.", ar: "تُطبع كل صفحة بشكل نظيف، دون القوائم أو العناصر التفاعلية." }
+  - { en: "The glossary speaks: press the speaker icon to hear the English pronunciation.", ar: "المعجم ناطق: اضغط أيقونة السمّاعة لتسمع النطق الإنجليزي." }

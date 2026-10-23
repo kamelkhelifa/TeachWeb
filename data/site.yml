@@ -1,0 +1,91 @@
+# ─────────────────────────────────────────────────────────────
+#  TeachWeb · global settings
+#  Text that differs by language is written as { en: …, ar: … }.
+# ─────────────────────────────────────────────────────────────
+
+name: TeachWeb
+name_ar: تيتش ويب
+tagline:
+  en: "Physics courses, complete and open: syllabus, weekly plan, notes, exams, quizzes and interactive labs, in English and Arabic."
+  ar: "مقررات الفيزياء كاملةً ومفتوحة: المفردات، والخطة الأسبوعية، والمذكرات، والاختبارات، والتقويم الذاتي، والمختبرات التفاعلية، بالعربية والإنجليزية."
+
+# Personal homepage (shown in the header and footer)
+home_url: https://kamelkhelifa.github.io/home/
+home_url_ar: https://kamelkhelifa.github.io/home/ar/
+
+# Public address of this site (used for canonical links and the sitemap)
+base_url: https://kamelkhelifa.github.io/TeachWeb
+last_updated: { en: October 2026, ar: أكتوبر 2026 }
+
+# Subject areas: key → label and colour hue (0–360, OKLCH)
+areas:
+  mechanics:        { en: Mechanics,               ar: الميكانيكا,                 hue: 55 }
+  electromagnetism: { en: Electromagnetism,        ar: الكهرومغناطيسية,            hue: 250 }
+  waves:            { en: Waves & Oscillations,    ar: الاهتزازات والأمواج,        hue: 195 }
+  thermal:          { en: Thermal Physics,         ar: الفيزياء الحرارية,          hue: 30 }
+  quantum:          { en: Quantum Physics,         ar: فيزياء الكم,                hue: 290 }
+  modern:           { en: Modern & Particle,       ar: الفيزياء الحديثة والجسيمات, hue: 335 }
+  mathematical:     { en: Mathematical Physics,    ar: الفيزياء الرياضية,          hue: 150 }
+  computational:    { en: Computational Physics,   ar: الفيزياء الحاسوبية,         hue: 175 }
+  laboratory:       { en: Laboratory,              ar: العمل المخبري,              hue: 110 }
+  skills:           { en: Skills & Practice,       ar: المهارات والممارسة,         hue: 80 }
+
+levels:
+  1: { en: Year 1, ar: السنة الأولى, long: { en: First year (foundation), ar: السنة الأولى (تأسيسية) } }
+  2: { en: Year 2, ar: السنة الثانية, long: { en: Second year, ar: السنة الثانية } }
+  3: { en: Year 3, ar: السنة الثالثة, long: { en: Third year, ar: السنة الثالثة } }
+  4: { en: Year 4, ar: السنة الرابعة, long: { en: Final undergraduate year, ar: السنة الجامعية الأخيرة } }
+  5: { en: Master, ar: الماستر, long: { en: Master's level, ar: مستوى الماستر } }
+
+bloom:
+  remember:   { en: Remember,   ar: التذكّر,  rank: 1 }
+  understand: { en: Understand, ar: الفهم,    rank: 2 }
+  apply:      { en: Apply,      ar: التطبيق,  rank: 3 }
+  analyze:    { en: Analyse,    ar: التحليل,  rank: 4 }
+  evaluate:   { en: Evaluate,   ar: التقويم,  rank: 5 }
+  create:     { en: Create,     ar: الإبداع,  rank: 6 }
+
+domains:
+  knowledge: { en: Knowledge, ar: المعرفة }
+  skills:    { en: Skills,    ar: المهارات }
+  values:    { en: Values & autonomy, ar: القيم والاستقلالية }
+
+assessment_types:
+  quiz:          { en: Quizzes,        ar: اختبارات قصيرة }
+  homework:      { en: Homework,       ar: واجبات }
+  midterm:       { en: Midterm exam,   ar: اختبار فصلي }
+  final:         { en: Final exam,     ar: الاختبار النهائي }
+  lab:           { en: Laboratory,     ar: عمل مخبري }
+  project:       { en: Project,        ar: مشروع }
+  presentation:  { en: Presentation,   ar: عرض شفهي }
+  participation: { en: Participation,  ar: المشاركة }
+  report:        { en: Report,         ar: تقرير }
+  oral:          { en: Oral exam,      ar: اختبار شفهي }
+  portfolio:     { en: Portfolio,      ar: ملف إنجاز }
+
+material_types:
+  notes:     { en: Lecture notes,  ar: مذكرات المحاضرات }
+  slides:    { en: Slides,         ar: شرائح العرض }
+  summary:   { en: Summaries,      ar: ملخصات }
+  problems:  { en: Problem sets,   ar: سلاسل التمارين }
+  solutions: { en: Solutions,      ar: الحلول }
+  video:     { en: Videos,         ar: مقاطع مرئية }
+  sim:       { en: Simulations,    ar: محاكاة }
+  lab:       { en: Lab sheets,     ar: أوراق العمل المخبري }
+  formula:   { en: Formula sheets, ar: جداول القوانين }
+  code:      { en: Code,           ar: شيفرات برمجية }
+  reading:   { en: Readings,       ar: قراءات }
+  link:      { en: Links,          ar: روابط }
+
+milestones:
+  quiz:    { en: Quiz,     ar: اختبار قصير }
+  midterm: { en: Midterm,  ar: اختبار فصلي }
+  final:   { en: Final,    ar: نهائي }
+  project: { en: Project,  ar: مشروع }
+  lab:     { en: Lab,      ar: مختبر }
+  review:  { en: Review,   ar: مراجعة }
+
+languages:
+  en: { en: English, ar: الإنجليزية }
+  ar: { en: Arabic,  ar: العربية }
+  fr: { en: French,  ar: الفرنسية }

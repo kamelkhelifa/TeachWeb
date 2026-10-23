@@ -1,0 +1,1090 @@
+slug: general-physics-1
+order: 10
+codes: [PHYS 101, UEF 112]
+short: { en: 'GP I', ar: 'ف.ع 1' }
+title:
+  en: 'General Physics I: Mechanics'
+  ar: 'الفيزياء العامة 1: الميكانيكا'
+tagline:
+  en: 'From measurement and vectors to Newton''s laws, conservation laws, rotation and gravitation.'
+  ar: 'من القياس والمتجهات إلى قوانين نيوتن وقوانين الحفظ والحركة الدورانية والجاذبية.'
+area: mechanics
+level: 1
+credits: 4
+hours: { lecture: 3, tutorial: 1, lab: 2 }
+weeks: 14
+instruction: [en, ar, fr]
+prerequisites: []
+prerequisite_note:
+  en: 'Secondary-school mathematics and physics (algebra, trigonometry, elementary mechanics). Basic differentiation and integration are used from week 3 and may be studied in parallel.'
+  ar: 'رياضيات وفيزياء المرحلة الثانوية (الجبر، حساب المثلثات، مبادئ الميكانيكا). يُستعمل الاشتقاق والتكامل البسيطان ابتداءً من الأسبوع الثالث، ويمكن دراستهما بالتوازي مع المقرر.'
+sims: [projectile]
+sources:
+  - 'https://khelifak.wordpress.com/studying/teaching-2/iu/general-physics-i/'
+  - 'https://khelifak.wordpress.com/studying/teaching-2/usthb/phys-1-mecanique/'
+notes: >
+  Merged from two first-year mechanics pages: an English calculus-based course (PHYS 101, Serway
+  chapter order, slides + problem sets + solutions + lab manual + three past tests) and a French
+  first-year mechanics course (UEF 112: lecture notes, 4 TD sheets, 5 lab sheets, one test). The
+  "Circular motion" slides were moved from their original position (after momentum) to week 7, next
+  to Newton's-law applications, following Serway ch. 6. The PHYS 101 description mentions fluids and
+  simple harmonic motion, which had no slides; SHM appears briefly in week 14, fluids were dropped.
+  Links to student mark lists were deliberately not kept (personal data). Description, CLOs, assessment
+  weights, weekly readings (Serway 9th ed.), quizzes, worked problems and glossary were written new.
+  Please check: Fundamentals of Physics edition/year (source says 2011) and Halliday-Resnick-Krane year.
+
+description:
+  en: |
+    <p>This is the first semester of the calculus-based introductory physics sequence. It builds the language of physics — units, dimensions, orders of magnitude, uncertainties and vectors — and then develops classical mechanics of a particle and of a rigid body: kinematics in one and two dimensions, Newton's laws and their applications, work and energy, linear momentum and collisions, rotation, angular momentum and universal gravitation.</p>
+    <p>The emphasis is on <strong>modelling</strong>: choosing a system, drawing a free-body diagram, identifying which conservation law applies and checking the answer by dimensions and limiting cases. Weekly tutorial sessions train problem solving, and the laboratory sessions (rectilinear and circular motion, motion in the gravitational field, friction, energy transfer) introduce measurement, graphs and error analysis.</p>
+    <p>Course materials exist in English and French: slides and problem sets with solutions follow the chapter order of Serway &amp; Jewett, while the French lecture notes, tutorial sheets (TD) and lab sheets (TP) cover the same programme in the French tradition (kinematics in several coordinate systems, relative motion, energy and collisions).</p>
+  ar: |
+    <p>هذا المقرر هو الفصل الأول من سلسلة الفيزياء التمهيدية القائمة على التفاضل والتكامل. يبدأ ببناء لغة الفيزياء — الوحدات والأبعاد ورتب المقادير والارتيابات والمتجهات — ثم يتناول الميكانيكا الكلاسيكية للجسيم وللجسم الصلب: الحركة في بعد واحد وفي بعدين، وقوانين نيوتن وتطبيقاتها، والشغل والطاقة، والزخم الخطي والتصادمات، والحركة الدورانية، والزخم الزاوي، والجذب العام.</p>
+    <p>ينصبّ التركيز على <strong>النمذجة</strong>: اختيار النظام، ورسم مخطط الجسم الحر، وتحديد قانون الحفظ المناسب، ثم التحقق من النتيجة بالتحليل البعدي والحالات الحدّية. تُدرِّب حصص التمارين الأسبوعية على حل المسائل، وتُعرِّف حصص المختبر (الحركة المستقيمة والدائرية، الحركة في حقل الثقالة، الاحتكاك، تحويل الطاقة) بالقياس والتمثيل البياني وحساب الأخطاء.</p>
+    <p>تتوفر مواد المقرر بالإنجليزية والفرنسية: تتبع الشرائح وسلاسل المسائل وحلولها ترتيب فصول كتاب Serway &amp; Jewett، في حين تغطي المطبوعة الفرنسية وسلاسل الأعمال الموجهة (TD) والأعمال التطبيقية (TP) البرنامج نفسه وفق التقليد الفرنسي (الحركة في جمل إحداثيات مختلفة، الحركة النسبية، الطاقة والتصادمات).</p>
+
+topics:
+  - { en: 'Units, dimensions & uncertainties', ar: 'الوحدات والأبعاد والارتيابات' }
+  - { en: 'Vectors', ar: 'المتجهات' }
+  - { en: 'Kinematics in 1D & 2D', ar: 'الحركة في بعد وبعدين' }
+  - { en: 'Projectile & circular motion', ar: 'حركة المقذوفات والحركة الدائرية' }
+  - { en: 'Newton''s laws & friction', ar: 'قوانين نيوتن والاحتكاك' }
+  - { en: 'Work & energy conservation', ar: 'الشغل وحفظ الطاقة' }
+  - { en: 'Momentum & collisions', ar: 'الزخم الخطي والتصادمات' }
+  - { en: 'Rigid-body rotation', ar: 'دوران الجسم الصلب' }
+  - { en: 'Angular momentum', ar: 'الزخم الزاوي' }
+  - { en: 'Universal gravitation', ar: 'الجذب العام' }
+
+outcomes:
+  - id: CLO1
+    bloom: understand
+    domain: knowledge
+    text:
+      en: 'Explain the fundamental quantities of mechanics (displacement, velocity, acceleration, force, energy, momentum, angular momentum) and the laws that relate them, using correct SI units and dimensions.'
+      ar: 'يشرح المقادير الأساسية في الميكانيكا (الإزاحة، السرعة، التسارع، القوة، الطاقة، الزخم الخطي، الزخم الزاوي) والقوانين التي تربط بينها، مستعملًا وحدات النظام الدولي والأبعاد الصحيحة.'
+    assessed_by: [quizzes, midterm1, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Use vector algebra and elementary calculus to describe motion in one and two dimensions, including projectile, circular and relative motion.'
+      ar: 'يستعمل جبر المتجهات ومبادئ التفاضل والتكامل لوصف الحركة في بعد واحد وفي بعدين، بما في ذلك حركة المقذوفات والحركة الدائرية والحركة النسبية.'
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO3
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Draw free-body diagrams and apply Newton''s laws to single and connected bodies with friction, tension, normal and centripetal forces.'
+      ar: 'يرسم مخططات الجسم الحر ويطبّق قوانين نيوتن على الأجسام المفردة والمترابطة بوجود الاحتكاك والشد ورد الفعل العمودي والقوة المركزية.'
+    assessed_by: [homework, midterm1, final]
+  - id: CLO4
+    bloom: analyze
+    domain: skills
+    text:
+      en: 'Analyse mechanical systems with the work–energy theorem and the conservation of mechanical energy, and decide when non-conservative forces must be included.'
+      ar: 'يحلل الأنظمة الميكانيكية باستعمال مبرهنة الشغل والطاقة وحفظ الطاقة الميكانيكية، ويقرر متى يجب إدراج القوى غير المحافظة.'
+    assessed_by: [homework, midterm2, final]
+  - id: CLO5
+    bloom: analyze
+    domain: skills
+    text:
+      en: 'Apply conservation of linear momentum to collisions and explosions, and distinguish elastic from inelastic collisions using energy.'
+      ar: 'يطبّق حفظ الزخم الخطي على التصادمات والانفجارات، ويميّز بين التصادم المرن وغير المرن باستعمال الطاقة.'
+    assessed_by: [quizzes, midterm2, final]
+  - id: CLO6
+    bloom: apply
+    domain: skills
+    text:
+      en: 'Solve problems on rigid-body rotation (moment of inertia, torque, rolling, angular momentum) and on circular orbits under universal gravitation.'
+      ar: 'يحل مسائل دوران الجسم الصلب (عزم القصور الذاتي، عزم القوة، التدحرج، الزخم الزاوي) ومسائل المدارات الدائرية تحت تأثير الجذب العام.'
+    assessed_by: [quizzes, homework, final]
+  - id: CLO7
+    bloom: evaluate
+    domain: skills
+    text:
+      en: 'Carry out simple mechanics experiments, represent data graphically, estimate uncertainties and judge whether results agree with a model.'
+      ar: 'يُجري تجارب بسيطة في الميكانيكا، ويمثل البيانات بيانيًا، ويقدّر الارتيابات، ويحكم على مدى توافق النتائج مع النموذج.'
+    assessed_by: [lab]
+  - id: CLO8
+    bloom: apply
+    domain: values
+    text:
+      en: 'Work effectively in a laboratory team and report measurements honestly, completely and on time.'
+      ar: 'يعمل بفاعلية ضمن فريق المختبر، ويعرض القياسات بأمانة وبشكل كامل وفي الآجال المحددة.'
+    assessed_by: [lab, homework]
+
+assessment:
+  - id: quizzes
+    type: quiz
+    weight: 10
+    title: { en: 'Short quizzes', ar: 'اختبارات قصيرة' }
+    detail:
+      en: 'Four 15-minute quizzes (one short problem or 5 MCQs) at the end of a tutorial session; the best three count.'
+      ar: 'أربعة اختبارات قصيرة مدة كل منها 15 دقيقة (مسألة قصيرة أو خمسة أسئلة اختيار من متعدد) في نهاية حصة التمارين، وتُحتسب أفضل ثلاثة منها.'
+    when: { en: 'Weeks 4, 6, 10, 13', ar: 'الأسابيع 4 و6 و10 و13' }
+  - id: homework
+    type: homework
+    weight: 5
+    title: { en: 'Problem sets', ar: 'سلاسل المسائل' }
+    detail:
+      en: 'Weekly problem sets; selected problems are collected and graded for method, units and clarity of presentation.'
+      ar: 'سلاسل مسائل أسبوعية، تُجمع مسائل مختارة منها وتُقيَّم على أساس المنهجية والوحدات ووضوح العرض.'
+    when: { en: 'Weekly', ar: 'أسبوعيًا' }
+  - id: midterm1
+    type: midterm
+    weight: 15
+    title: { en: 'Midterm exam 1', ar: 'الاختبار الدوري الأول' }
+    detail:
+      en: '75-minute written exam on measurement, vectors, kinematics and Newton''s laws (weeks 1–6).'
+      ar: 'اختبار كتابي مدته 75 دقيقة في القياس والمتجهات وعلم الحركة وقوانين نيوتن (الأسابيع 1–6).'
+    when: { en: 'Week 7', ar: 'الأسبوع 7' }
+  - id: midterm2
+    type: midterm
+    weight: 15
+    title: { en: 'Midterm exam 2', ar: 'الاختبار الدوري الثاني' }
+    detail:
+      en: '75-minute written exam on circular motion, work, energy and momentum (weeks 7–10).'
+      ar: 'اختبار كتابي مدته 75 دقيقة في الحركة الدائرية والشغل والطاقة والزخم الخطي (الأسابيع 7–10).'
+    when: { en: 'Week 12', ar: 'الأسبوع 12' }
+  - id: lab
+    type: lab
+    weight: 15
+    title: { en: 'Laboratory work', ar: 'الأعمال التطبيقية (المختبر)' }
+    detail:
+      en: 'Five experiments; for each, a pre-lab preparation and a short report (data table, graph, uncertainty analysis, conclusion). Attendance is compulsory.'
+      ar: 'خمس تجارب، لكل منها تحضير قبلي وتقرير قصير (جدول بيانات، تمثيل بياني، تحليل الارتيابات، خلاصة). الحضور إلزامي.'
+    when: { en: 'Weeks 3–11', ar: 'الأسابيع 3–11' }
+  - id: final
+    type: final
+    weight: 40
+    title: { en: 'Final exam', ar: 'الاختبار النهائي' }
+    detail:
+      en: 'Comprehensive 2-hour written exam: conceptual MCQs and 4–5 multi-step problems covering the whole course.'
+      ar: 'اختبار كتابي شامل مدته ساعتان: أسئلة مفاهيمية من نوع الاختيار من متعدد و4–5 مسائل متعددة الخطوات تغطي المقرر كاملًا.'
+    when: { en: 'After week 14', ar: 'بعد الأسبوع 14' }
+
+schedule:
+  - week: 1
+    title: { en: 'Physics and measurement', ar: 'الفيزياء والقياس' }
+    topics:
+      en:
+        - 'SI units, standards of length, mass and time'
+        - 'Dimensional analysis and dimensional equations'
+        - 'Orders of magnitude, significant figures'
+        - 'Measurement uncertainty and error calculation'
+      ar:
+        - 'وحدات النظام الدولي، معايير الطول والكتلة والزمن'
+        - 'التحليل البعدي ومعادلات الأبعاد'
+        - 'رتب المقادير والأرقام المعنوية'
+        - 'ارتياب القياس وحساب الأخطاء'
+    reading: Serway §1.1–1.6
+    activity: { en: 'Problem set 1 released', ar: 'نشر السلسلة 1' }
+  - week: 2
+    title: { en: 'Vectors', ar: 'المتجهات' }
+    topics:
+      en:
+        - 'Coordinate systems; scalars and vectors'
+        - 'Components and unit vectors'
+        - 'Scalar (dot) product'
+        - 'Vector (cross) product'
+      ar:
+        - 'جمل الإحداثيات؛ الكميات العددية والمتجهة'
+        - 'المركّبات ومتجهات الوحدة'
+        - 'الجداء السلّمي (النقطي)'
+        - 'الجداء المتجهي (الاتجاهي)'
+    reading: Serway ch. 3, §7.3, §11.1
+    activity: { en: 'Problem set 2; TD 1 (vector analysis)', ar: 'السلسلة 2؛ السلسلة الموجهة 1 (التحليل المتجهي)' }
+  - week: 3
+    title: { en: 'Motion in one dimension', ar: 'الحركة في بعد واحد' }
+    topics:
+      en:
+        - 'Position, displacement, average and instantaneous velocity'
+        - 'Acceleration; motion diagrams and graphs'
+        - 'Constant-acceleration kinematics'
+        - 'Free fall; kinematic equations from calculus'
+      ar:
+        - 'الموضع والإزاحة والسرعة المتوسطة واللحظية'
+        - 'التسارع؛ مخططات الحركة والمنحنيات البيانية'
+        - 'الحركة بتسارع ثابت'
+        - 'السقوط الحر؛ استنتاج معادلات الحركة بالتكامل'
+    reading: Serway ch. 2
+    activity: { en: 'Lab (TP 1): rectilinear motion', ar: 'المختبر (TP 1): الحركة المستقيمة' }
+  - week: 4
+    title: { en: 'Motion in two dimensions', ar: 'الحركة في بعدين' }
+    topics:
+      en:
+        - 'Position, velocity and acceleration vectors'
+        - 'Motion with constant acceleration in a plane'
+        - 'Projectile motion: trajectory, range, maximum height'
+      ar:
+        - 'متجهات الموضع والسرعة والتسارع'
+        - 'الحركة بتسارع ثابت في مستوٍ'
+        - 'حركة المقذوفات: المسار والمدى وأقصى ارتفاع'
+    reading: Serway §4.1–4.3
+    activity: { en: 'Quiz 1; Lab (TP 3): motion in the gravitational field; try the projectile simulation', ar: 'الاختبار القصير 1؛ المختبر (TP 3): الحركة في حقل الثقالة؛ جرّب محاكاة المقذوفات' }
+    milestone: quiz
+  - week: 5
+    title: { en: 'Circular and relative motion', ar: 'الحركة الدائرية والحركة النسبية' }
+    topics:
+      en:
+        - 'Uniform circular motion, centripetal acceleration'
+        - 'Tangential and normal (radial) acceleration'
+        - 'Polar coordinates and the intrinsic (Frenet) frame'
+        - 'Relative velocity and Galilean transformation'
+      ar:
+        - 'الحركة الدائرية المنتظمة والتسارع المركزي'
+        - 'التسارع المماسي والتسارع الناظمي (القطري)'
+        - 'الإحداثيات القطبية ومعلم فرينيه الذاتي'
+        - 'السرعة النسبية وتحويل غاليليو'
+    reading: Serway §4.4–4.6
+    activity: { en: 'TD 2–3 (kinematics); Lab (TP 2): circular motion', ar: 'السلسلتان الموجهتان 2–3 (علم الحركة)؛ المختبر (TP 2): الحركة الدائرية' }
+  - week: 6
+    title: { en: 'The laws of motion', ar: 'قوانين الحركة' }
+    topics:
+      en:
+        - 'Force, mass and inertia; inertial frames'
+        - 'Newton''s three laws'
+        - 'Weight, normal force, tension'
+        - 'Particle in equilibrium and under a net force'
+      ar:
+        - 'القوة والكتلة والقصور الذاتي؛ المعالم العطالية'
+        - 'قوانين نيوتن الثلاثة'
+        - 'الثقل ورد الفعل العمودي والشد'
+        - 'جسيم في حالة توازن وجسيم تحت تأثير محصلة قوى'
+    reading: Serway §5.1–5.7
+    activity: { en: 'Quiz 2; TD 4 (dynamics)', ar: 'الاختبار القصير 2؛ السلسلة الموجهة 4 (التحريك)' }
+    milestone: quiz
+  - week: 7
+    title: { en: 'Friction and circular dynamics', ar: 'الاحتكاك وتحريك الحركة الدائرية' }
+    topics:
+      en:
+        - 'Static and kinetic friction'
+        - 'Dynamics of uniform and non-uniform circular motion'
+        - 'Motion in accelerated frames (qualitative)'
+        - 'Motion with resistive forces'
+      ar:
+        - 'الاحتكاك السكوني والاحتكاك الحركي'
+        - 'تحريك الحركة الدائرية المنتظمة وغير المنتظمة'
+        - 'الحركة في المعالم المتسارعة (وصفيًا)'
+        - 'الحركة بوجود قوى المقاومة'
+    reading: Serway §5.8, ch. 6
+    activity: { en: 'Midterm exam 1 (weeks 1–6); Lab (TP 4): friction and contact forces', ar: 'الاختبار الدوري الأول (الأسابيع 1–6)؛ المختبر (TP 4): الاحتكاك وقوة التلامس' }
+    milestone: midterm
+  - week: 8
+    title: { en: 'Energy of a system', ar: 'طاقة نظام' }
+    topics:
+      en:
+        - 'Work done by a constant and a varying force'
+        - 'Spring force and Hooke''s law'
+        - 'Kinetic energy and the work–kinetic energy theorem'
+        - 'Potential energy; conservative forces; energy diagrams'
+      ar:
+        - 'شغل قوة ثابتة وقوة متغيرة'
+        - 'قوة النابض وقانون هوك'
+        - 'الطاقة الحركية ومبرهنة الشغل والطاقة الحركية'
+        - 'طاقة الوضع؛ القوى المحافظة؛ مخططات الطاقة'
+    reading: Serway ch. 7
+  - week: 9
+    title: { en: 'Conservation of energy', ar: 'حفظ الطاقة' }
+    topics:
+      en:
+        - 'Isolated and non-isolated systems'
+        - 'Conservation of mechanical energy'
+        - 'Friction and changes in internal energy'
+        - 'Power'
+      ar:
+        - 'الأنظمة المعزولة وغير المعزولة'
+        - 'حفظ الطاقة الميكانيكية'
+        - 'الاحتكاك وتغير الطاقة الداخلية'
+        - 'القدرة'
+    reading: Serway ch. 8
+    activity: { en: 'Lab (TP 5): study of an energy transfer', ar: 'المختبر (TP 5): دراسة تحويل للطاقة' }
+  - week: 10
+    title: { en: 'Linear momentum and collisions', ar: 'الزخم الخطي والتصادمات' }
+    topics:
+      en:
+        - 'Linear momentum and impulse'
+        - 'Conservation of momentum for an isolated system'
+        - 'Elastic and inelastic collisions in 1D and 2D'
+        - 'Centre of mass and motion of a system of particles'
+      ar:
+        - 'الزخم الخطي والدفع'
+        - 'حفظ الزخم الخطي لنظام معزول'
+        - 'التصادمات المرنة وغير المرنة في بعد وبعدين'
+        - 'مركز الكتلة وحركة نظام من الجسيمات'
+    reading: Serway §9.1–9.7
+    activity: { en: 'Quiz 3', ar: 'الاختبار القصير 3' }
+    milestone: quiz
+  - week: 11
+    title: { en: 'Rotation of a rigid body', ar: 'دوران الجسم الصلب' }
+    topics:
+      en:
+        - 'Angular position, velocity and acceleration'
+        - 'Rotational kinetic energy and moment of inertia'
+        - 'Torque and Newton''s second law for rotation'
+        - 'Parallel-axis theorem'
+      ar:
+        - 'الموضع الزاوي والسرعة الزاوية والتسارع الزاوي'
+        - 'الطاقة الحركية الدورانية وعزم القصور الذاتي'
+        - 'عزم القوة وقانون نيوتن الثاني للدوران'
+        - 'مبرهنة المحاور المتوازية'
+    reading: Serway §10.1–10.8
+  - week: 12
+    title: { en: 'Rolling and angular momentum', ar: 'التدحرج والزخم الزاوي' }
+    topics:
+      en:
+        - 'Rolling without slipping'
+        - 'Angular momentum of a particle and of a rigid body'
+        - 'Conservation of angular momentum'
+      ar:
+        - 'التدحرج دون انزلاق'
+        - 'الزخم الزاوي لجسيم ولجسم صلب'
+        - 'حفظ الزخم الزاوي'
+    reading: Serway §10.9, ch. 11
+    activity: { en: 'Midterm exam 2 (weeks 7–10)', ar: 'الاختبار الدوري الثاني (الأسابيع 7–10)' }
+    milestone: midterm
+  - week: 13
+    title: { en: 'Universal gravitation', ar: 'الجذب العام' }
+    topics:
+      en:
+        - 'Newton''s law of universal gravitation'
+        - 'Gravitational field and free-fall acceleration'
+        - 'Kepler''s laws and circular orbits'
+        - 'Gravitational potential energy; escape speed'
+      ar:
+        - 'قانون نيوتن للجذب العام'
+        - 'حقل الجاذبية وتسارع السقوط الحر'
+        - 'قوانين كبلر والمدارات الدائرية'
+        - 'طاقة الوضع الثقالية؛ سرعة الإفلات'
+    reading: Serway ch. 13
+    activity: { en: 'Quiz 4', ar: 'الاختبار القصير 4' }
+    milestone: quiz
+  - week: 14
+    title: { en: 'Oscillations and course review', ar: 'الاهتزازات ومراجعة المقرر' }
+    topics:
+      en:
+        - 'Simple harmonic motion: mass–spring system'
+        - 'Energy of the simple harmonic oscillator'
+        - 'Review of conservation laws; past-paper practice'
+      ar:
+        - 'الحركة التوافقية البسيطة: نظام الكتلة والنابض'
+        - 'طاقة المهتز التوافقي البسيط'
+        - 'مراجعة قوانين الحفظ؛ التدرّب على اختبارات سابقة'
+    reading: Serway §15.1–15.3
+    activity: { en: 'Review session before the final exam', ar: 'حصة مراجعة قبل الاختبار النهائي' }
+    milestone: review
+
+materials:
+  # Slides (English)
+  - type: slides
+    title: { en: 'Physics and measurement', ar: 'الفيزياء والقياس' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNa0steGdPbU4wdEU
+    week: 1
+    lang: en
+  - type: slides
+    title: { en: 'Vectors', ar: 'المتجهات' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNbkRpNGJacUhzRk0
+    week: 2
+    lang: en
+  - type: slides
+    title: { en: 'Motion in one dimension (part 1)', ar: 'الحركة في بعد واحد (الجزء 1)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNODF0V3cxTXR5RG8
+    week: 3
+    lang: en
+  - type: slides
+    title: { en: 'Motion in one dimension (part 2)', ar: 'الحركة في بعد واحد (الجزء 2)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNdUoyaXZQckdyVk0
+    week: 3
+    lang: en
+  - type: slides
+    title: { en: 'Motion in two dimensions', ar: 'الحركة في بعدين' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNQ2k1Ulg3RmJERm8
+    week: 4
+    lang: en
+  - type: slides
+    title: { en: 'The laws of motion', ar: 'قوانين الحركة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNTGl1ZVhsRTNHd2c
+    week: 6
+    lang: en
+  - type: slides
+    title: { en: 'Circular motion', ar: 'الحركة الدائرية' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNamVKODR2SHZMVXc
+    week: 7
+    lang: en
+  - type: slides
+    title: { en: 'Energy of a system', ar: 'طاقة نظام' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNNzdvdzQ4QTRFU2s
+    week: 8
+    lang: en
+  - type: slides
+    title: { en: 'Conservation of energy', ar: 'حفظ الطاقة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNMWx4UE9ubnZ6bVE
+    week: 9
+    lang: en
+  - type: slides
+    title: { en: 'Linear momentum and collisions (part 1)', ar: 'الزخم الخطي والتصادمات (الجزء 1)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNZmlzb0syWGJjV0E
+    week: 10
+    lang: en
+  - type: slides
+    title: { en: 'Linear momentum and collisions (part 2)', ar: 'الزخم الخطي والتصادمات (الجزء 2)' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNbFNlM0t1NmJydkk
+    week: 10
+    lang: en
+  - type: slides
+    title: { en: 'Rotation of rigid bodies', ar: 'دوران الأجسام الصلبة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNZ3VHTjFPdU5kR28
+    week: 11
+    lang: en
+  - type: slides
+    title: { en: 'Universal gravitation', ar: 'الجذب العام' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNYkxSbWY0NGQzanM
+    week: 13
+    lang: en
+  # Problem sets and solutions (English)
+  - type: problems
+    title: { en: 'Problem set 1 — Physics and measurement', ar: 'السلسلة 1 — الفيزياء والقياس' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNZF94RXNydjBnOEk
+    week: 1
+    lang: en
+  - type: solutions
+    title: { en: 'Solutions 1 — Physics and measurement', ar: 'حلول السلسلة 1 — الفيزياء والقياس' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNSzU5TkdEMmhmRkE
+    week: 1
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 2 — Vectors', ar: 'السلسلة 2 — المتجهات' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNQW12anFmdjNFaXc
+    week: 2
+    lang: en
+  - type: solutions
+    title: { en: 'Solutions 2 — Vectors', ar: 'حلول السلسلة 2 — المتجهات' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNTldZY3Ftb2JGZHM
+    week: 2
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 3 — Motion in 1D', ar: 'السلسلة 3 — الحركة في بعد واحد' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNRlFxZVdyX3pzRXc
+    week: 3
+    lang: en
+  - type: solutions
+    title: { en: 'Solutions 3 — Motion in 1D', ar: 'حلول السلسلة 3 — الحركة في بعد واحد' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNVk1WbFJpYWQ1OWc
+    week: 3
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 4 — Motion in 2D', ar: 'السلسلة 4 — الحركة في بعدين' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNS3ZUUURabTlhNEk
+    week: 4
+    lang: en
+  - type: solutions
+    title: { en: 'Solutions 4 — Motion in 2D', ar: 'حلول السلسلة 4 — الحركة في بعدين' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNNzdVT0ZfUF9IaTQ
+    week: 4
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 5 — Laws of motion', ar: 'السلسلة 5 — قوانين الحركة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNV1h6TXhCUTlKMVE
+    week: 6
+    lang: en
+  - type: solutions
+    title: { en: 'Solutions 5 — Laws of motion', ar: 'حلول السلسلة 5 — قوانين الحركة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNako0WmNreEU0QUk
+    week: 6
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 9 — Circular motion', ar: 'السلسلة 9 — الحركة الدائرية' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNSTdrcTBXbXJHNFU
+    week: 7
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 6 — Energy of a system', ar: 'السلسلة 6 — طاقة نظام' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNRWJwY1VPdGlEbTA
+    week: 8
+    lang: en
+  - type: solutions
+    title: { en: 'Solutions 6 — Energy of a system', ar: 'حلول السلسلة 6 — طاقة نظام' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNczBhODBLZ2k2Y3c
+    week: 8
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 7 — Conservation of energy', ar: 'السلسلة 7 — حفظ الطاقة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNLVBvejJPTmItQm8
+    week: 9
+    lang: en
+  - type: solutions
+    title: { en: 'Solutions 7 — Conservation of energy', ar: 'حلول السلسلة 7 — حفظ الطاقة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNMEJHNDZYQUtfbmc
+    week: 9
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 8 — Linear momentum and collisions', ar: 'السلسلة 8 — الزخم الخطي والتصادمات' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNNmVtcjE0MUVESWM
+    week: 10
+    lang: en
+  - type: solutions
+    title: { en: 'Solutions 8 — Linear momentum and collisions', ar: 'حلول السلسلة 8 — الزخم الخطي والتصادمات' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNNlEzV1F6V05BajA
+    week: 10
+    lang: en
+  - type: problems
+    title: { en: 'Problem set 10 — Rotation of rigid bodies', ar: 'السلسلة 10 — دوران الأجسام الصلبة' }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNLUVxOVdtcG83SmM
+    week: 11
+    lang: en
+  # French material
+  - type: notes
+    title: { en: 'Mechanics lecture notes (French)', ar: 'مطبوعة محاضرات الميكانيكا (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/polycope_mecanique.pdf
+    lang: fr
+  - type: problems
+    title: { en: 'TD 1 — Vector analysis', ar: 'السلسلة الموجهة 1 — التحليل المتجهي' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td1.pdf
+    week: 2
+    lang: fr
+  - type: problems
+    title: { en: 'TD 2 — Kinematics I (rectilinear and curvilinear motion)', ar: 'السلسلة الموجهة 2 — علم الحركة 1 (الحركة المستقيمة والمنحنية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td2.pdf
+    week: 3
+    lang: fr
+  - type: problems
+    title: { en: 'TD 3 — Kinematics II (coordinate systems, relative motion)', ar: 'السلسلة الموجهة 3 — علم الحركة 2 (جمل الإحداثيات، الحركة النسبية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td3.pdf
+    week: 5
+    lang: fr
+  - type: problems
+    title: { en: 'TD 4 — Dynamics of a particle', ar: 'السلسلة الموجهة 4 — تحريك النقطة المادية' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td4.pdf
+    week: 6
+    lang: fr
+  - type: solutions
+    title: { en: 'TD 4 — Solutions', ar: 'السلسلة الموجهة 4 — الحلول' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/01/soln4.pdf
+    week: 6
+    lang: fr
+  # Formula sheets
+  - type: formula
+    title: { en: 'Table of mathematical formulae', ar: 'جدول الصيغ الرياضية' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+    lang: en
+  - type: formula
+    title: { en: 'Mathematical formulae you should know (French)', ar: 'صيغ رياضية ينبغي معرفتها (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
+    lang: fr
+  - type: formula
+    title: { en: 'Essential constants and conversion factors (French)', ar: 'ثوابت ومعاملات تحويل أساسية (بالفرنسية)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
+    lang: fr
+  # Laboratory
+  - type: lab
+    title: { en: 'Mechanics laboratory manual', ar: 'دليل مختبر الميكانيكا' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2017/02/phys101_labmanual.pdf
+    lang: en
+  - type: lab
+    title: { en: 'TP 1 — Kinematics: rectilinear motion', ar: 'العمل التطبيقي 1 — علم الحركة: الحركة المستقيمة' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp_1.pdf
+    week: 3
+    lang: fr
+  - type: lab
+    title: { en: 'TP 3 — Kinematics and dynamics: motion in the gravitational field', ar: 'العمل التطبيقي 3 — علم الحركة والتحريك: الحركة في حقل الثقالة' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp3.pdf
+    week: 4
+    lang: fr
+  - type: lab
+    title: { en: 'TP 2 — Kinematics: circular motion', ar: 'العمل التطبيقي 2 — علم الحركة: الحركة الدائرية' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp2.pdf
+    week: 5
+    lang: fr
+  - type: lab
+    title: { en: 'TP 4 — Dynamics: friction and contact forces', ar: 'العمل التطبيقي 4 — التحريك: الاحتكاك وقوة التلامس' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp4.pdf
+    week: 7
+    lang: fr
+  - type: lab
+    title: { en: 'TP 5 — Study of an energy transfer', ar: 'العمل التطبيقي 5 — دراسة تحويل للطاقة' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp5.pdf
+    week: 9
+    lang: fr
+  # Videos
+  - type: video
+    title: { en: 'Classical mechanics video lectures (W. Lewin, MIT 8.01)', ar: 'محاضرات مصوّرة في الميكانيكا الكلاسيكية (W. Lewin، مقرر MIT 8.01)' }
+    url: https://videolectures.net/mit801f99_physics_classical_mechanics/
+    lang: en
+
+exams:
+  - title: { en: 'Quiz 1', ar: 'الاختبار القصير 1' }
+    session: 2016–2017
+    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNLXc4bllwbDFWSVE
+    solution: https://drive.google.com/open?id=0B-lXQB4vCJCNSlZUODF4a29CVkU
+    lang: en
+  - title: { en: 'Midterm exam 1', ar: 'الاختبار الدوري الأول' }
+    session: 2016–2017
+    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNcGRJZHlOdjJXMGc
+    solution: https://drive.google.com/open?id=0B-lXQB4vCJCNdmdZTktBQUM1R1U
+    lang: en
+  - title: { en: 'Midterm exam 2', ar: 'الاختبار الدوري الثاني' }
+    session: 2016–2017
+    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNbE11MmRUNG51aTA
+    solution: https://drive.google.com/open?id=0B-lXQB4vCJCNVnNGRkwtM0tFY1k
+    lang: en
+  - title: { en: 'Test 1 (kinematics)', ar: 'الفرض 1 (علم الحركة)' }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2013/11/test1.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2013/11/test1_soln1.pdf
+    lang: fr
+
+exam_guide:
+  format:
+    en: 'Midterms last 75 minutes: about five conceptual multiple-choice questions followed by two or three problems. The final exam lasts 2 hours and covers the whole course with 8–10 MCQs and 4–5 multi-step problems; partial credit is given for a correct method, diagram and units.'
+    ar: 'مدة كل اختبار دوري 75 دقيقة: نحو خمسة أسئلة مفاهيمية من نوع الاختيار من متعدد تليها مسألتان أو ثلاث. مدة الاختبار النهائي ساعتان ويغطي المقرر كاملًا بـ 8–10 أسئلة اختيار من متعدد و4–5 مسائل متعددة الخطوات؛ تُمنح علامات جزئية على المنهجية الصحيحة والمخطط والوحدات.'
+  allowed:
+    en: 'A non-programmable scientific calculator. A formula sheet is provided with the paper; personal notes and phones are not allowed. Use \(g = 9.8\ \mathrm{m/s^2}\) unless stated otherwise.'
+    ar: 'آلة حاسبة علمية غير قابلة للبرمجة. تُرفق ورقة صيغ مع ورقة الأسئلة، ولا يُسمح بالملاحظات الشخصية ولا بالهواتف. استعمل \(g = 9.8\ \mathrm{m/s^2}\) ما لم يُذكر خلاف ذلك.'
+  tips:
+    - en: 'Start every dynamics problem with a clear free-body diagram and a chosen sign convention.'
+      ar: 'ابدأ كل مسألة تحريك بمخطط واضح للجسم الحر وباختيار صريح لاتجاه المحاور والإشارات.'
+    - en: 'Before writing equations, ask: is energy conserved? is momentum conserved? This often decides the shortest route.'
+      ar: 'قبل كتابة المعادلات اسأل نفسك: هل الطاقة محفوظة؟ هل الزخم الخطي محفوظ؟ فهذا يحدد غالبًا أقصر طريق للحل.'
+    - en: 'Solve symbolically first and substitute numbers at the end; then check the dimensions and a limiting case.'
+      ar: 'حلّ رمزيًا أولًا وعوّض بالأرقام في النهاية، ثم تحقق من الأبعاد ومن حالة حدّية.'
+    - en: 'Give final answers with units and a sensible number of significant figures.'
+      ar: 'اكتب النتائج النهائية مع وحداتها وبعدد معقول من الأرقام المعنوية.'
+    - en: 'Practise with the past papers below under timed conditions before reading the solutions.'
+      ar: 'تدرّب على الاختبارات السابقة أدناه في زمن محدد قبل الاطلاع على حلولها.'
+
+problems:
+  - title: { en: 'Catching a speeding car', ar: 'اللحاق بسيارة مسرعة' }
+    difficulty: 1
+    statement:
+      en: 'A car travelling at a constant \(25\ \mathrm{m/s}\) passes a police car at rest. At that instant the police car starts with a constant acceleration of \(2.5\ \mathrm{m/s^2}\). (a) When does it catch the car? (b) How far has it travelled? (c) What is its speed at that moment?'
+      ar: 'تمر سيارة تسير بسرعة ثابتة \(25\ \mathrm{m/s}\) بجانب سيارة شرطة متوقفة. في تلك اللحظة تنطلق سيارة الشرطة بتسارع ثابت \(2.5\ \mathrm{m/s^2}\). (أ) متى تلحق بالسيارة؟ (ب) ما المسافة التي قطعتها؟ (ج) ما سرعتها في تلك اللحظة؟'
+    hint:
+      en: 'Take \(x = 0\) and \(t = 0\) at the meeting point and write \(x(t)\) for both vehicles; "catch" means equal positions.'
+      ar: 'اختر \(x = 0\) و\(t = 0\) عند نقطة الالتقاء الأولى، واكتب \(x(t)\) لكلتا السيارتين؛ "اللحاق" يعني تساوي الموضعين.'
+    solution:
+      en: |
+        Positions: \(x_c = v t\) and \(x_p = \tfrac12 a t^2\).
+        \[ v t = \tfrac12 a t^2 \;\Rightarrow\; t = \frac{2v}{a} = \frac{2(25)}{2.5} = 20\ \mathrm{s} \]
+        (the root \(t = 0\) is the initial crossing).
+        (b) \(x = v t = 25 \times 20 = 500\ \mathrm{m}\).
+        (c) \(v_p = a t = 2.5 \times 20 = 50\ \mathrm{m/s}\), exactly twice the car's speed — as expected, since both cover the same distance in the same time, so their <em>average</em> speeds are equal and the police car's average speed is \(v_p/2\).
+      ar: |
+        الموضعان: \(x_c = v t\) و\(x_p = \tfrac12 a t^2\).
+        \[ v t = \tfrac12 a t^2 \;\Rightarrow\; t = \frac{2v}{a} = \frac{2(25)}{2.5} = 20\ \mathrm{s} \]
+        (الجذر \(t = 0\) يوافق لحظة المرور الأولى).
+        (ب) \(x = v t = 25 \times 20 = 500\ \mathrm{m}\).
+        (ج) \(v_p = a t = 2.5 \times 20 = 50\ \mathrm{m/s}\)، أي ضعف سرعة السيارة تمامًا — وهذا متوقع، لأن السيارتين تقطعان المسافة نفسها في الزمن نفسه، فسرعتاهما <em>المتوسطتان</em> متساويتان، والسرعة المتوسطة لسيارة الشرطة هي \(v_p/2\).
+  - title: { en: 'Projectile launched from a cliff', ar: 'مقذوف من أعلى جرف' }
+    difficulty: 2
+    statement:
+      en: 'A ball is thrown from the top of a cliff \(h = 15\ \mathrm{m}\) high with speed \(v_0 = 20\ \mathrm{m/s}\) at \(30^\circ\) above the horizontal. Neglect air resistance and take \(g = 9.8\ \mathrm{m/s^2}\). Find (a) the maximum height above the cliff, (b) the time of flight, (c) the horizontal distance travelled, (d) the impact speed.'
+      ar: 'تُقذف كرة من أعلى جرف ارتفاعه \(h = 15\ \mathrm{m}\) بسرعة \(v_0 = 20\ \mathrm{m/s}\) تصنع زاوية \(30^\circ\) فوق الأفق. أهمل مقاومة الهواء وخذ \(g = 9.8\ \mathrm{m/s^2}\). أوجد (أ) أقصى ارتفاع فوق الجرف، (ب) زمن التحليق، (ج) المسافة الأفقية المقطوعة، (د) سرعة الارتطام.'
+    hint:
+      en: 'Separate the motion: uniform along \(x\), uniformly accelerated along \(y\). For (d), energy conservation is quickest.'
+      ar: 'افصل الحركة: منتظمة على \(x\) ومتغيرة بانتظام على \(y\). في (د) يكون حفظ الطاقة أسرع طريق.'
+    solution:
+      en: |
+        Components: \(v_{0x} = 20\cos 30^\circ = 17.3\ \mathrm{m/s}\), \(v_{0y} = 20\sin 30^\circ = 10.0\ \mathrm{m/s}\). Origin at the launch point, \(y\) upward.
+        (a) At the top \(v_y = 0\): \(\Delta y_{\max} = \dfrac{v_{0y}^2}{2g} = \dfrac{100}{19.6} = 5.10\ \mathrm{m}\).
+        (b) Landing when \(y = -15\ \mathrm{m}\):
+        \[ -15 = 10\,t - 4.9\,t^2 \;\Rightarrow\; 4.9t^2 - 10t - 15 = 0 \;\Rightarrow\; t = \frac{10 + \sqrt{100 + 294}}{9.8} = 3.05\ \mathrm{s} \]
+        (c) \(x = v_{0x} t = 17.3 \times 3.05 = 52.8\ \mathrm{m}\).
+        (d) \(\tfrac12 m v^2 = \tfrac12 m v_0^2 + m g h \Rightarrow v = \sqrt{v_0^2 + 2gh} = \sqrt{400 + 294} = 26.3\ \mathrm{m/s}\).
+        Check with components: \(v_y = 10 - 9.8(3.05) = -19.9\ \mathrm{m/s}\), \(\sqrt{17.3^2 + 19.9^2} = 26.4\ \mathrm{m/s}\) ✓ (rounding).
+      ar: |
+        المركّبتان: \(v_{0x} = 20\cos 30^\circ = 17.3\ \mathrm{m/s}\) و\(v_{0y} = 20\sin 30^\circ = 10.0\ \mathrm{m/s}\). المبدأ عند نقطة القذف والمحور \(y\) نحو الأعلى.
+        (أ) عند القمة \(v_y = 0\): \(\Delta y_{\max} = \dfrac{v_{0y}^2}{2g} = \dfrac{100}{19.6} = 5.10\ \mathrm{m}\).
+        (ب) يصل الأرض عندما \(y = -15\ \mathrm{m}\):
+        \[ -15 = 10\,t - 4.9\,t^2 \;\Rightarrow\; 4.9t^2 - 10t - 15 = 0 \;\Rightarrow\; t = \frac{10 + \sqrt{100 + 294}}{9.8} = 3.05\ \mathrm{s} \]
+        (ج) \(x = v_{0x} t = 17.3 \times 3.05 = 52.8\ \mathrm{m}\).
+        (د) \(\tfrac12 m v^2 = \tfrac12 m v_0^2 + m g h \Rightarrow v = \sqrt{v_0^2 + 2gh} = \sqrt{400 + 294} = 26.3\ \mathrm{m/s}\).
+        تحقق بالمركّبات: \(v_y = 10 - 9.8(3.05) = -19.9\ \mathrm{m/s}\) و\(\sqrt{17.3^2 + 19.9^2} = 26.4\ \mathrm{m/s}\) ✓ (مع التقريب).
+  - title: { en: 'Block on a rough incline pulled by a hanging mass', ar: 'جسم على مستوٍ مائل خشن يسحبه جسم معلّق' }
+    difficulty: 2
+    statement:
+      en: 'A block \(m_1 = 4.0\ \mathrm{kg}\) on a \(30^\circ\) incline (\(\mu_k = 0.20\)) is connected by a light string over a frictionless, massless pulley at the top to a hanging block \(m_2 = 3.0\ \mathrm{kg}\). The system moves with \(m_2\) descending. Find the acceleration and the tension.'
+      ar: 'جسم \(m_1 = 4.0\ \mathrm{kg}\) موضوع على مستوٍ مائل بزاوية \(30^\circ\) (\(\mu_k = 0.20\)) ومربوط بخيط خفيف يمر على بكرة ملساء مهملة الكتلة في أعلى المستوي بجسم معلّق \(m_2 = 3.0\ \mathrm{kg}\). يتحرك النظام بحيث ينزل \(m_2\). أوجد التسارع وشدة الشد.'
+    hint:
+      en: 'Write Newton''s second law for each block along its own direction of motion; the kinetic friction on \(m_1\) points down the slope.'
+      ar: 'اكتب قانون نيوتن الثاني لكل جسم على اتجاه حركته؛ قوة الاحتكاك الحركي على \(m_1\) تتجه نحو أسفل المستوي.'
+    solution:
+      en: |
+        For \(m_1\) (up the slope positive): \(T - m_1 g\sin\theta - \mu_k m_1 g\cos\theta = m_1 a\).
+        For \(m_2\) (downward positive): \(m_2 g - T = m_2 a\).
+        Adding:
+        \[ a = \frac{m_2 g - m_1 g(\sin\theta + \mu_k\cos\theta)}{m_1 + m_2} = \frac{29.4 - 19.6 - 6.79}{7.0} = 0.43\ \mathrm{m/s^2} \]
+        \[ T = m_2(g - a) = 3.0(9.8 - 0.43) = 28.1\ \mathrm{N} \]
+        Check on \(m_1\): \(28.1 - 19.6 - 6.79 = 1.72\ \mathrm{N} = 4.0 \times 0.43\) ✓. As expected, \(T\) lies between \(m_1 g\sin\theta + f_k\) and \(m_2 g\).
+      ar: |
+        للجسم \(m_1\) (الاتجاه الموجب نحو أعلى المستوي): \(T - m_1 g\sin\theta - \mu_k m_1 g\cos\theta = m_1 a\).
+        للجسم \(m_2\) (الاتجاه الموجب نحو الأسفل): \(m_2 g - T = m_2 a\).
+        بالجمع:
+        \[ a = \frac{m_2 g - m_1 g(\sin\theta + \mu_k\cos\theta)}{m_1 + m_2} = \frac{29.4 - 19.6 - 6.79}{7.0} = 0.43\ \mathrm{m/s^2} \]
+        \[ T = m_2(g - a) = 3.0(9.8 - 0.43) = 28.1\ \mathrm{N} \]
+        تحقق على \(m_1\): \(28.1 - 19.6 - 6.79 = 1.72\ \mathrm{N} = 4.0 \times 0.43\) ✓. وكما هو متوقع، تقع \(T\) بين \(m_1 g\sin\theta + f_k\) و\(m_2 g\).
+  - title: { en: 'The ballistic pendulum', ar: 'النواس القذفي' }
+    difficulty: 2
+    statement:
+      en: 'A bullet of mass \(m = 10\ \mathrm{g}\) is fired horizontally into a wooden block of mass \(M = 2.0\ \mathrm{kg}\) hanging from light strings. The bullet stays embedded and the block rises by \(h = 10\ \mathrm{cm}\). Find (a) the speed of the block just after impact, (b) the speed of the bullet, (c) the fraction of kinetic energy lost in the collision.'
+      ar: 'تُطلق رصاصة كتلتها \(m = 10\ \mathrm{g}\) أفقيًا نحو قطعة خشب كتلتها \(M = 2.0\ \mathrm{kg}\) معلقة بخيوط خفيفة. تنغرس الرصاصة في القطعة فترتفع بمقدار \(h = 10\ \mathrm{cm}\). أوجد (أ) سرعة القطعة بعد التصادم مباشرة، (ب) سرعة الرصاصة، (ج) نسبة الطاقة الحركية المفقودة في التصادم.'
+    hint:
+      en: 'Two stages: momentum is conserved during the very short collision; mechanical energy is conserved during the swing.'
+      ar: 'مرحلتان: الزخم الخطي محفوظ خلال التصادم القصير جدًا، والطاقة الميكانيكية محفوظة خلال التأرجح.'
+    solution:
+      en: |
+        (a) Swing: \(\tfrac12 (m+M)V^2 = (m+M) g h \Rightarrow V = \sqrt{2gh} = \sqrt{2(9.8)(0.10)} = 1.40\ \mathrm{m/s}\).
+        (b) Collision (perfectly inelastic): \(m v = (m+M)V\)
+        \[ v = \frac{m+M}{m} V = \frac{2.01}{0.010}(1.40) = 281\ \mathrm{m/s} \]
+        (c) \[ \frac{K_i - K_f}{K_i} = 1 - \frac{(m+M)V^2}{m v^2} = 1 - \frac{m}{m+M} = \frac{M}{m+M} = \frac{2.0}{2.01} = 0.995 \]
+        About 99.5 % of the bullet's kinetic energy becomes internal energy (heat, deformation): energy is <em>not</em> conserved in the collision, which is why the two stages must be treated separately.
+      ar: |
+        (أ) التأرجح: \(\tfrac12 (m+M)V^2 = (m+M) g h \Rightarrow V = \sqrt{2gh} = \sqrt{2(9.8)(0.10)} = 1.40\ \mathrm{m/s}\).
+        (ب) التصادم (عديم المرونة تمامًا): \(m v = (m+M)V\)
+        \[ v = \frac{m+M}{m} V = \frac{2.01}{0.010}(1.40) = 281\ \mathrm{m/s} \]
+        (ج) \[ \frac{K_i - K_f}{K_i} = 1 - \frac{(m+M)V^2}{m v^2} = 1 - \frac{m}{m+M} = \frac{M}{m+M} = \frac{2.0}{2.01} = 0.995 \]
+        يتحول نحو 99.5 % من الطاقة الحركية للرصاصة إلى طاقة داخلية (حرارة وتشوّه): الطاقة الميكانيكية <em>غير</em> محفوظة في التصادم، ولهذا يجب معالجة المرحلتين كلٌّ على حدة.
+  - title: { en: 'Mass hanging from a pulley with inertia', ar: 'جسم معلّق ببكرة ذات عطالة' }
+    difficulty: 3
+    statement:
+      en: 'A light string is wrapped around a pulley that is a uniform disc (\(M = 2.0\ \mathrm{kg}\), \(R = 0.10\ \mathrm{m}\)) free to turn about a fixed horizontal axle. A block \(m = 1.0\ \mathrm{kg}\) hangs from the string and is released from rest. Find (a) the acceleration of the block, (b) the tension, (c) the speed after the block has fallen \(1.0\ \mathrm{m}\), using energy as a check.'
+      ar: 'خيط خفيف ملفوف حول بكرة على شكل قرص متجانس (\(M = 2.0\ \mathrm{kg}\)، \(R = 0.10\ \mathrm{m}\)) تدور بحرية حول محور أفقي ثابت. يتدلى من الخيط جسم \(m = 1.0\ \mathrm{kg}\) يُترك دون سرعة ابتدائية. أوجد (أ) تسارع الجسم، (ب) شدة الشد، (ج) السرعة بعد أن ينزل الجسم \(1.0\ \mathrm{m}\)، مع التحقق بطريقة الطاقة.'
+    hint:
+      en: 'Use \(I = \tfrac12 MR^2\), \(\tau = TR = I\alpha\), and the no-slip condition \(a = \alpha R\).'
+      ar: 'استعمل \(I = \tfrac12 MR^2\) و\(\tau = TR = I\alpha\) وشرط عدم الانزلاق \(a = \alpha R\).'
+    solution:
+      en: |
+        Block: \(mg - T = ma\). Pulley: \(TR = I\alpha = \tfrac12 MR^2 (a/R) \Rightarrow T = \tfrac12 M a\).
+        (a) \[ a = \frac{mg}{m + M/2} = \frac{9.8}{1.0 + 1.0} = 4.9\ \mathrm{m/s^2} \]
+        (b) \(T = \tfrac12 M a = 4.9\ \mathrm{N}\) (less than \(mg = 9.8\ \mathrm{N}\), as it must be).
+        (c) Kinematics: \(v = \sqrt{2ah} = \sqrt{2(4.9)(1.0)} = 3.13\ \mathrm{m/s}\).
+        Energy check: \(mgh = \tfrac12 m v^2 + \tfrac12 I\omega^2 = \tfrac12 v^2\left(m + \tfrac12 M\right)\)
+        \[ v = \sqrt{\frac{2mgh}{m + M/2}} = \sqrt{\frac{2(9.8)}{2.0}} = 3.13\ \mathrm{m/s} \] ✓
+      ar: |
+        الجسم: \(mg - T = ma\). البكرة: \(TR = I\alpha = \tfrac12 MR^2 (a/R) \Rightarrow T = \tfrac12 M a\).
+        (أ) \[ a = \frac{mg}{m + M/2} = \frac{9.8}{1.0 + 1.0} = 4.9\ \mathrm{m/s^2} \]
+        (ب) \(T = \tfrac12 M a = 4.9\ \mathrm{N}\) (أصغر من \(mg = 9.8\ \mathrm{N}\) كما ينبغي).
+        (ج) بعلاقات الحركة: \(v = \sqrt{2ah} = \sqrt{2(4.9)(1.0)} = 3.13\ \mathrm{m/s}\).
+        التحقق بالطاقة: \(mgh = \tfrac12 m v^2 + \tfrac12 I\omega^2 = \tfrac12 v^2\left(m + \tfrac12 M\right)\)
+        \[ v = \sqrt{\frac{2mgh}{m + M/2}} = \sqrt{\frac{2(9.8)}{2.0}} = 3.13\ \mathrm{m/s} \] ✓
+  - title: { en: 'Geostationary orbit', ar: 'المدار الثابت بالنسبة للأرض' }
+    difficulty: 2
+    statement:
+      en: 'A geostationary satellite stays above the same point of the equator: its period equals one sidereal day, \(T = 86\,164\ \mathrm{s}\). Using \(GM_E = 3.986 \times 10^{14}\ \mathrm{m^3/s^2}\) and \(R_E = 6371\ \mathrm{km}\), find the orbital radius, the altitude and the orbital speed.'
+      ar: 'يبقى القمر الصناعي الثابت بالنسبة للأرض فوق النقطة نفسها من خط الاستواء، فدوره يساوي يومًا نجميًا واحدًا \(T = 86\,164\ \mathrm{s}\). باستعمال \(GM_E = 3.986 \times 10^{14}\ \mathrm{m^3/s^2}\) و\(R_E = 6371\ \mathrm{km}\)، أوجد نصف قطر المدار والارتفاع عن سطح الأرض والسرعة المدارية.'
+    hint:
+      en: 'Gravity provides the centripetal force: \(GM_E m/r^2 = m\,(2\pi/T)^2 r\).'
+      ar: 'الجاذبية هي التي توفر القوة المركزية: \(GM_E m/r^2 = m\,(2\pi/T)^2 r\).'
+    solution:
+      en: |
+        \[ \frac{GM_E}{r^2} = \frac{4\pi^2}{T^2}\,r \;\Rightarrow\; r = \left(\frac{GM_E T^2}{4\pi^2}\right)^{1/3} = \left(\frac{3.986\times10^{14}\,(86\,164)^2}{39.48}\right)^{1/3} = 4.22\times10^{7}\ \mathrm{m} \]
+        This is Kepler's third law. Altitude: \(r - R_E = 42\,160 - 6371 \approx 35\,800\ \mathrm{km}\).
+        Speed: \(v = \dfrac{2\pi r}{T} = \dfrac{2\pi(4.216\times10^{7})}{86\,164} = 3.07\ \mathrm{km/s}\), consistent with \(v = \sqrt{GM_E/r}\).
+      ar: |
+        \[ \frac{GM_E}{r^2} = \frac{4\pi^2}{T^2}\,r \;\Rightarrow\; r = \left(\frac{GM_E T^2}{4\pi^2}\right)^{1/3} = \left(\frac{3.986\times10^{14}\,(86\,164)^2}{39.48}\right)^{1/3} = 4.22\times10^{7}\ \mathrm{m} \]
+        وهذا هو قانون كبلر الثالث. الارتفاع: \(r - R_E = 42\,160 - 6371 \approx 35\,800\ \mathrm{km}\).
+        السرعة: \(v = \dfrac{2\pi r}{T} = \dfrac{2\pi(4.216\times10^{7})}{86\,164} = 3.07\ \mathrm{km/s}\)، وهي متوافقة مع \(v = \sqrt{GM_E/r}\).
+
+quizzes:
+  - title: { en: 'Measurement, vectors and kinematics', ar: 'القياس والمتجهات وعلم الحركة' }
+    questions:
+      - q:
+          en: 'Which combination has the dimensions of an acceleration (\(v\): speed, \(x\): length, \(t\): time)?'
+          ar: 'أي التراكيب التالية له أبعاد التسارع (\(v\): سرعة، \(x\): طول، \(t\): زمن)؟'
+        options:
+          - '\(v/x\)'
+          - '\(v^2/x\)'
+          - '\(v\,t\)'
+          - '\(x/t\)'
+        answer: 1
+        explain:
+          en: '\([v^2/x] = (\mathrm{L^2T^{-2}})/\mathrm{L} = \mathrm{L\,T^{-2}}\), the dimensions of acceleration. \(v/x\) is \(\mathrm{T^{-1}}\), \(x/t\) is a speed and \(vt\) a length.'
+          ar: '\([v^2/x] = (\mathrm{L^2T^{-2}})/\mathrm{L} = \mathrm{L\,T^{-2}}\) وهي أبعاد التسارع. أما \(v/x\) فبعده \(\mathrm{T^{-1}}\)، و\(x/t\) سرعة، و\(vt\) طول.'
+      - q:
+          en: 'Given \(\vec A = 3\hat\imath + 4\hat\jmath\) and \(\vec B = 4\hat\imath - 3\hat\jmath\), what is \(\vec A\cdot\vec B\)?'
+          ar: 'إذا كان \(\vec A = 3\hat\imath + 4\hat\jmath\) و\(\vec B = 4\hat\imath - 3\hat\jmath\)، فما قيمة \(\vec A\cdot\vec B\)؟'
+        options:
+          - '0'
+          - '24'
+          - '7'
+          - '25'
+        answer: 0
+        explain:
+          en: '\(\vec A\cdot\vec B = A_xB_x + A_yB_y = 12 - 12 = 0\): the two vectors (both of magnitude 5) are perpendicular.'
+          ar: '\(\vec A\cdot\vec B = A_xB_x + A_yB_y = 12 - 12 = 0\): المتجهان (وطويلة كل منهما 5) متعامدان.'
+      - q:
+          en: 'A car starts from rest with constant acceleration \(2\ \mathrm{m/s^2}\). How far does it travel in the first \(5\ \mathrm{s}\)?'
+          ar: 'تنطلق سيارة من السكون بتسارع ثابت \(2\ \mathrm{m/s^2}\). ما المسافة التي تقطعها في الثواني الخمس الأولى؟'
+        options:
+          - '\(50\ \mathrm{m}\)'
+          - '\(10\ \mathrm{m}\)'
+          - '\(25\ \mathrm{m}\)'
+          - '\(100\ \mathrm{m}\)'
+        answer: 2
+        explain:
+          en: '\(x = \tfrac12 a t^2 = \tfrac12(2)(5)^2 = 25\ \mathrm{m}\). The answer \(50\ \mathrm{m}\) forgets the factor \(\tfrac12\).'
+          ar: '\(x = \tfrac12 a t^2 = \tfrac12(2)(5)^2 = 25\ \mathrm{m}\). الإجابة \(50\ \mathrm{m}\) تنسى المعامل \(\tfrac12\).'
+      - q:
+          en: 'Two projectiles are launched from level ground with the same speed, at \(30^\circ\) and at \(60^\circ\). Without air resistance:'
+          ar: 'يُقذف مقذوفان من أرض مستوية بالسرعة نفسها، أحدهما بزاوية \(30^\circ\) والآخر بزاوية \(60^\circ\). بإهمال مقاومة الهواء:'
+        options:
+          - { en: 'The 30° one has the larger range and the larger height.', ar: 'المقذوف بزاوية 30° له مدى أكبر وارتفاع أكبر.' }
+          - { en: 'They have the same range; the 60° one goes higher.', ar: 'لهما المدى نفسه، ويرتفع المقذوف بزاوية 60° أكثر.' }
+          - { en: 'The 60° one has twice the range.', ar: 'مدى المقذوف بزاوية 60° ضعف مدى الآخر.' }
+          - { en: 'They land at the same time.', ar: 'يصلان إلى الأرض في اللحظة نفسها.' }
+        answer: 1
+        explain:
+          en: '\(R = v_0^2\sin 2\theta/g\) and \(\sin 60^\circ = \sin 120^\circ\), so complementary angles give equal ranges. The height \(v_0^2\sin^2\theta/2g\) and flight time \(2v_0\sin\theta/g\) are larger for \(60^\circ\).'
+          ar: '\(R = v_0^2\sin 2\theta/g\) و\(\sin 60^\circ = \sin 120^\circ\)، فالزاويتان المتتامتان تعطيان المدى نفسه. أما الارتفاع \(v_0^2\sin^2\theta/2g\) وزمن التحليق \(2v_0\sin\theta/g\) فهما أكبر عند \(60^\circ\).'
+      - q:
+          en: 'At the highest point of a projectile''s path (no air resistance):'
+          ar: 'عند أعلى نقطة من مسار مقذوف (بإهمال مقاومة الهواء):'
+        options:
+          - { en: 'the velocity is zero and the acceleration is \(g\) downward', ar: 'السرعة منعدمة والتسارع \(g\) نحو الأسفل' }
+          - { en: 'the velocity and the acceleration are both zero', ar: 'السرعة والتسارع منعدمان كلاهما' }
+          - { en: 'the acceleration is horizontal', ar: 'التسارع أفقي' }
+          - { en: 'the velocity is horizontal and the acceleration is \(g\) downward', ar: 'السرعة أفقية والتسارع \(g\) نحو الأسفل' }
+        answer: 3
+        explain:
+          en: 'Only \(v_y\) vanishes at the top; \(v_x\) is constant throughout. The acceleration is \(\vec g\) at every point of the flight.'
+          ar: 'عند القمة تنعدم المركّبة \(v_y\) فقط، أما \(v_x\) فثابتة طوال الحركة. والتسارع يساوي \(\vec g\) في كل نقطة من المسار.'
+  - title: { en: 'Newton''s laws and circular motion', ar: 'قوانين نيوتن والحركة الدائرية' }
+    questions:
+      - q:
+          en: 'A person of mass \(m\) stands on a scale in a lift accelerating <em>upward</em> with magnitude \(a\). The scale reads:'
+          ar: 'يقف شخص كتلته \(m\) على ميزان داخل مصعد يتسارع <em>نحو الأعلى</em> بتسارع مقداره \(a\). قراءة الميزان هي:'
+        options:
+          - '\(ma\)'
+          - '\(m(g + a)\)'
+          - '\(m(g - a)\)'
+          - '\(mg\)'
+        answer: 1
+        explain:
+          en: 'Newton''s second law upward: \(N - mg = ma\), so \(N = m(g + a)\). The scale shows the normal force, which exceeds the weight.'
+          ar: 'قانون نيوتن الثاني نحو الأعلى: \(N - mg = ma\)، إذن \(N = m(g + a)\). الميزان يقيس رد الفعل العمودي، وهو أكبر من الثقل.'
+      - q:
+          en: 'A box rests on a rough floor (\(\mu_s = 0.5\)). You push horizontally with a force smaller than \(\mu_s mg\) and it does not move. The friction force is:'
+          ar: 'صندوق ساكن على أرضية خشنة (\(\mu_s = 0.5\)). تدفعه أفقيًا بقوة أصغر من \(\mu_s mg\) فلا يتحرك. قوة الاحتكاك تساوي:'
+        options:
+          - '\(\mu_k mg\)'
+          - { en: 'equal in magnitude to your push', ar: 'مقدار قوة دفعك' }
+          - '\(\mu_s mg\)'
+          - { en: 'zero', ar: 'صفرًا' }
+        answer: 1
+        explain:
+          en: 'Static friction adjusts to keep the box in equilibrium: \(f_s = F\). The expression \(\mu_s N\) is only its <em>maximum</em> value.'
+          ar: 'يتكيّف الاحتكاك السكوني ليبقى الصندوق في توازن: \(f_s = F\). أما \(\mu_s N\) فهي قيمته <em>العظمى</em> فقط.'
+      - q:
+          en: 'What is the maximum speed of a car on a flat (unbanked) curve of radius \(r\) if the coefficient of static friction is \(\mu_s\)?'
+          ar: 'ما السرعة القصوى لسيارة في منعطف أفقي (غير مائل) نصف قطره \(r\) إذا كان معامل الاحتكاك السكوني \(\mu_s\)؟'
+        options:
+          - '\(\sqrt{\mu_s g / r}\)'
+          - '\(\sqrt{g r/\mu_s}\)'
+          - '\(\mu_s g r\)'
+          - '\(\sqrt{\mu_s g r}\)'
+        answer: 3
+        explain:
+          en: 'Friction supplies the centripetal force: \(m v^2/r \le \mu_s m g\), hence \(v_{\max} = \sqrt{\mu_s g r}\), independent of the mass.'
+          ar: 'الاحتكاك هو الذي يوفر القوة المركزية: \(m v^2/r \le \mu_s m g\)، إذن \(v_{\max} = \sqrt{\mu_s g r}\)، وهي مستقلة عن الكتلة.'
+      - q:
+          en: 'A book lies on a table. The Newton''s-third-law partner of the Earth''s gravitational pull on the book is:'
+          ar: 'كتاب موضوع على طاولة. القوة المقابلة (حسب قانون نيوتن الثالث) لجذب الأرض للكتاب هي:'
+        options:
+          - { en: 'the weight of the table', ar: 'ثقل الطاولة' }
+          - { en: 'the normal force of the table on the book', ar: 'رد فعل الطاولة العمودي على الكتاب' }
+          - { en: 'the force of the book on the table', ar: 'قوة ضغط الكتاب على الطاولة' }
+          - { en: 'the gravitational pull of the book on the Earth', ar: 'جذب الكتاب للأرض' }
+        answer: 3
+        explain:
+          en: 'Action–reaction pairs involve the same two bodies and the same type of interaction. The normal force acts on the book too, so it cannot be the partner of another force on the book.'
+          ar: 'زوجا الفعل ورد الفعل يتعلقان بالجسمين نفسيهما وبنوع التأثير نفسه. أما رد الفعل العمودي فيؤثر هو أيضًا على الكتاب، فلا يمكن أن يكون مقابلًا لقوة أخرى مؤثرة على الكتاب.'
+      - q:
+          en: 'In uniform circular motion of fixed radius, the speed is doubled. The centripetal acceleration is multiplied by:'
+          ar: 'في حركة دائرية منتظمة بنصف قطر ثابت، تضاعفت السرعة. يُضرب التسارع المركزي في:'
+        options:
+          - '1'
+          - '2'
+          - '4'
+          - '\(\sqrt2\)'
+        answer: 2
+        explain:
+          en: '\(a_c = v^2/r\) is quadratic in \(v\): \((2v)^2/r = 4\,v^2/r\).'
+          ar: '\(a_c = v^2/r\) تتناسب مع مربع السرعة: \((2v)^2/r = 4\,v^2/r\).'
+  - title: { en: 'Work, energy and momentum', ar: 'الشغل والطاقة والزخم الخطي' }
+    questions:
+      - q:
+          en: 'A constant force \(\vec F = (3\hat\imath + 2\hat\jmath)\ \mathrm{N}\) acts during a displacement \(\Delta\vec r = (2\hat\imath - \hat\jmath)\ \mathrm{m}\). The work done is:'
+          ar: 'تؤثر قوة ثابتة \(\vec F = (3\hat\imath + 2\hat\jmath)\ \mathrm{N}\) خلال إزاحة \(\Delta\vec r = (2\hat\imath - \hat\jmath)\ \mathrm{m}\). الشغل المنجز هو:'
+        options:
+          - '\(4\ \mathrm{J}\)'
+          - '\(8\ \mathrm{J}\)'
+          - '\(6\ \mathrm{J}\)'
+          - '\(-2\ \mathrm{J}\)'
+        answer: 0
+        explain:
+          en: '\(W = \vec F\cdot\Delta\vec r = (3)(2) + (2)(-1) = 4\ \mathrm{J}\).'
+          ar: '\(W = \vec F\cdot\Delta\vec r = (3)(2) + (2)(-1) = 4\ \mathrm{J}\).'
+      - q:
+          en: 'A stone is dropped from rest. If the drop height is multiplied by 4, its impact speed (no air resistance) is multiplied by:'
+          ar: 'يُترك حجر يسقط من السكون. إذا ضُرب ارتفاع السقوط في 4، فإن سرعة ارتطامه (بإهمال مقاومة الهواء) تُضرب في:'
+        options:
+          - '16'
+          - '4'
+          - '2'
+          - '\(\sqrt2\)'
+        answer: 2
+        explain:
+          en: 'Energy conservation gives \(v = \sqrt{2gh}\), so \(v \propto \sqrt h\) and \(\sqrt4 = 2\).'
+          ar: 'حفظ الطاقة يعطي \(v = \sqrt{2gh}\)، أي أن \(v \propto \sqrt h\) و\(\sqrt4 = 2\).'
+      - q:
+          en: 'A cart of mass \(m\) moving at \(v\) collides with an identical cart at rest and they stick together. What fraction of the initial kinetic energy is lost?'
+          ar: 'عربة كتلتها \(m\) تتحرك بسرعة \(v\) تصطدم بعربة مماثلة ساكنة فتلتحمان. ما نسبة الطاقة الحركية الابتدائية المفقودة؟'
+        options:
+          - '0'
+          - '\(3/4\)'
+          - '\(1/2\)'
+          - '\(1/4\)'
+        answer: 2
+        explain:
+          en: 'Momentum: \(mv = 2m\,V \Rightarrow V = v/2\). \(K_f = \tfrac12(2m)(v/2)^2 = \tfrac14 mv^2 = K_i/2\), so half is lost.'
+          ar: 'حفظ الزخم: \(mv = 2m\,V \Rightarrow V = v/2\). إذن \(K_f = \tfrac12(2m)(v/2)^2 = \tfrac14 mv^2 = K_i/2\)، فيضيع النصف.'
+      - q:
+          en: 'The compression of a spring (Hooke''s law) is doubled. The elastic potential energy stored is multiplied by:'
+          ar: 'تضاعف انضغاط نابض يخضع لقانون هوك. تُضرب طاقة الوضع المرونية المخزنة في:'
+        options:
+          - '8'
+          - '\(\sqrt2\)'
+          - '2'
+          - '4'
+        answer: 3
+        explain:
+          en: '\(U = \tfrac12 k x^2\) is quadratic in \(x\): doubling \(x\) multiplies \(U\) by 4.'
+          ar: '\(U = \tfrac12 k x^2\) تتناسب مع مربع الانضغاط: مضاعفة \(x\) تضرب \(U\) في 4.'
+      - q:
+          en: 'Which statement characterises a conservative force?'
+          ar: 'أي العبارات التالية تميّز القوة المحافظة؟'
+        options:
+          - { en: 'It is always perpendicular to the velocity.', ar: 'هي دائمًا عمودية على السرعة.' }
+          - { en: 'It always does positive work.', ar: 'شغلها موجب دائمًا.' }
+          - { en: 'Kinetic friction is an example.', ar: 'الاحتكاك الحركي مثال عليها.' }
+          - { en: 'Its work around any closed path is zero.', ar: 'شغلها على أي مسار مغلق منعدم.' }
+        answer: 3
+        explain:
+          en: 'A force is conservative when its work depends only on the end points (equivalently, is zero on any closed path); only then can a potential energy be defined. Kinetic friction always dissipates energy.'
+          ar: 'تكون القوة محافظة إذا كان شغلها متعلقًا بنقطتي البداية والنهاية فقط (أي منعدمًا على أي مسار مغلق)، وعندها فقط يمكن تعريف طاقة وضع. أما الاحتكاك الحركي فيبدّد الطاقة دائمًا.'
+  - title: { en: 'Rotation and gravitation', ar: 'الدوران والجاذبية' }
+    questions:
+      - q:
+          en: 'A solid sphere, a solid disc and a thin hoop are released together and roll without slipping down the same incline. Which reaches the bottom first?'
+          ar: 'تُترك كرة مصمتة وقرص مصمت وحلقة رقيقة في آن واحد فتتدحرج دون انزلاق على المستوي المائل نفسه. أيها يصل إلى الأسفل أولًا؟'
+        options:
+          - { en: 'all at the same time', ar: 'تصل جميعها في الوقت نفسه' }
+          - { en: 'the solid disc', ar: 'القرص المصمت' }
+          - { en: 'the solid sphere', ar: 'الكرة المصمتة' }
+          - { en: 'the hoop', ar: 'الحلقة' }
+        answer: 2
+        explain:
+          en: 'Energy gives \(v^2 = 2gh/(1 + I/MR^2)\) with \(I/MR^2 = 2/5,\ 1/2,\ 1\). The smallest ratio (sphere) gives the largest speed at every height, independent of mass and radius.'
+          ar: 'من حفظ الطاقة: \(v^2 = 2gh/(1 + I/MR^2)\) حيث \(I/MR^2 = 2/5,\ 1/2,\ 1\). أصغر نسبة (الكرة) تعطي أكبر سرعة عند كل ارتفاع، بغض النظر عن الكتلة ونصف القطر.'
+      - q:
+          en: 'A spinning skater pulls in her arms. Her rotational kinetic energy:'
+          ar: 'متزلجة تدور حول نفسها تضم ذراعيها. طاقتها الحركية الدورانية:'
+        options:
+          - { en: 'becomes zero', ar: 'تنعدم' }
+          - { en: 'increases', ar: 'تزداد' }
+          - { en: 'stays the same', ar: 'تبقى ثابتة' }
+          - { en: 'decreases', ar: 'تتناقص' }
+        answer: 1
+        explain:
+          en: 'Angular momentum \(L = I\omega\) is conserved and \(K = L^2/2I\). Since \(I\) decreases, \(K\) increases; the extra energy comes from the work done by her muscles.'
+          ar: 'الزخم الزاوي \(L = I\omega\) محفوظ و\(K = L^2/2I\). وبما أن \(I\) تتناقص فإن \(K\) تزداد؛ والطاقة الإضافية مصدرها شغل عضلاتها.'
+      - q:
+          en: 'A force of \(10\ \mathrm{N}\) is applied at \(0.50\ \mathrm{m}\) from a pivot, making an angle of \(30^\circ\) with the position vector. The magnitude of the torque is:'
+          ar: 'تؤثر قوة شدتها \(10\ \mathrm{N}\) على بعد \(0.50\ \mathrm{m}\) من محور الدوران وتصنع زاوية \(30^\circ\) مع متجه الموضع. مقدار عزم القوة هو:'
+        options:
+          - '\(5.0\ \mathrm{N\,m}\)'
+          - '\(2.5\ \mathrm{N\,m}\)'
+          - '\(4.3\ \mathrm{N\,m}\)'
+          - '\(20\ \mathrm{N\,m}\)'
+        answer: 1
+        explain:
+          en: '\(\tau = rF\sin\theta = (0.50)(10)\sin 30^\circ = 2.5\ \mathrm{N\,m}\). Using \(\cos 30^\circ\) gives the wrong value 4.3.'
+          ar: '\(\tau = rF\sin\theta = (0.50)(10)\sin 30^\circ = 2.5\ \mathrm{N\,m}\). استعمال \(\cos 30^\circ\) يعطي القيمة الخاطئة 4.3.'
+      - q:
+          en: 'A satellite moves to a circular orbit of radius four times larger. Its orbital speed is:'
+          ar: 'انتقل قمر صناعي إلى مدار دائري نصف قطره أكبر بأربع مرات. سرعته المدارية:'
+        options:
+          - { en: 'doubled', ar: 'تتضاعف' }
+          - { en: 'halved', ar: 'تنقص إلى النصف' }
+          - { en: 'divided by 4', ar: 'تُقسم على 4' }
+          - { en: 'unchanged', ar: 'لا تتغير' }
+        answer: 1
+        explain:
+          en: '\(GMm/r^2 = mv^2/r \Rightarrow v = \sqrt{GM/r}\); multiplying \(r\) by 4 divides \(v\) by 2.'
+          ar: '\(GMm/r^2 = mv^2/r \Rightarrow v = \sqrt{GM/r}\)؛ ضرب \(r\) في 4 يقسم \(v\) على 2.'
+      - q:
+          en: 'By Kepler''s third law, if a planet''s orbital radius were 4 times larger, its period would be multiplied by:'
+          ar: 'حسب قانون كبلر الثالث، إذا كان نصف قطر مدار كوكب أكبر بأربع مرات، فإن دوره يُضرب في:'
+        options:
+          - '16'
+          - '2'
+          - '4'
+          - '8'
+        answer: 3
+        explain:
+          en: '\(T^2 \propto r^3\), so \(T \propto r^{3/2}\) and \(4^{3/2} = 8\).'
+          ar: '\(T^2 \propto r^3\)، أي \(T \propto r^{3/2}\) و\(4^{3/2} = 8\).'
+
+textbooks:
+  required:
+    - { authors: 'R. A. Serway & J. W. Jewett', title: 'Physics for Scientists and Engineers', edition: '9th', publisher: 'Cengage Learning', year: 2013 }
+  recommended:
+    - { authors: 'D. Halliday, R. Resnick & J. Walker', title: 'Fundamentals of Physics', edition: '9th', publisher: 'John Wiley & Sons', year: 2011 }
+    - { authors: 'H. D. Young & R. A. Freedman', title: 'Sears and Zemansky''s University Physics', edition: '12th', publisher: 'Pearson Addison-Wesley', year: 2007 }
+    - { authors: 'D. Halliday, R. Resnick & K. S. Krane', title: 'Physics, Volume 1', edition: '5th', publisher: 'John Wiley & Sons' }
+    - { authors: 'J. Caubarrère, M. Djelouah, H. Fourny & F. L. Khelian', title: 'Introduction à la mécanique : cours, exercices et travaux pratiques', publisher: 'OPU, Alger', year: 1981 }
+    - { authors: 'M. Alonso & E. J. Finn (trad. M. Daune & G. Weill)', title: 'Mécanique et thermodynamique', publisher: 'InterEditions', year: 1986 }
+  online:
+    - title: { en: 'MIT OCW 8.01L — Physics I: Classical Mechanics', ar: 'مقرر MIT OCW 8.01L — الفيزياء 1: الميكانيكا الكلاسيكية' }
+      url: https://ocw.mit.edu/courses/physics/8-01l-physics-i-classical-mechanics-fall-2005/
+      note: { en: 'Complete lecture notes, problem sets and exams with solutions.', ar: 'مذكرات محاضرات وسلاسل مسائل واختبارات مع حلولها.' }
+    - title: { en: 'W. Lewin — Classical mechanics video lectures', ar: 'W. Lewin — محاضرات مصوّرة في الميكانيكا الكلاسيكية' }
+      url: https://videolectures.net/mit801f99_physics_classical_mechanics/
+      note: { en: 'Famous MIT 8.01 lectures with spectacular demonstrations.', ar: 'محاضرات MIT 8.01 الشهيرة مع تجارب عرض مذهلة.' }
+    - title: { en: 'OpenStax — University Physics, Volume 1', ar: 'OpenStax — الفيزياء الجامعية، المجلد 1' }
+      url: https://openstax.org/details/books/university-physics-volume-1
+      note: { en: 'Free, peer-reviewed textbook covering the whole course.', ar: 'كتاب مجاني محكَّم يغطي المقرر كاملًا.' }
+    - title: { en: 'PhET — Projectile Motion simulation', ar: 'PhET — محاكاة حركة المقذوفات' }
+      url: https://phet.colorado.edu/en/simulations/projectile-motion
+      note: { en: 'Explore range and height, with and without air resistance.', ar: 'استكشف المدى والارتفاع مع مقاومة الهواء ودونها.' }
+
+glossary:
+  - { en: 'Displacement', ar: 'الإزاحة', fr: 'Déplacement', def: { en: 'Change in position vector, \(\Delta\vec r = \vec r_f - \vec r_i\); independent of the path followed.', ar: 'تغيّر متجه الموضع \(\Delta\vec r = \vec r_f - \vec r_i\)، وهو مستقل عن المسار المتّبع.' } }
+  - { en: 'Velocity', ar: 'السرعة المتجهة', fr: 'Vitesse', def: { en: 'Time derivative of the position vector, \(\vec v = \dd\vec r/\dd t\); tangent to the trajectory.', ar: 'مشتق متجه الموضع بالنسبة للزمن \(\vec v = \dd\vec r/\dd t\)، وهي مماسة للمسار.' } }
+  - { en: 'Acceleration', ar: 'التسارع', fr: 'Accélération', def: { en: 'Rate of change of velocity, \(\vec a = \dd\vec v/\dd t\).', ar: 'معدل تغيّر السرعة بالنسبة للزمن \(\vec a = \dd\vec v/\dd t\).' } }
+  - { en: 'Vector', ar: 'المتجه', fr: 'Vecteur', def: { en: 'Quantity with magnitude and direction that adds by the parallelogram rule.', ar: 'مقدار له طويلة واتجاه، ويُجمع وفق قاعدة متوازي الأضلاع.' } }
+  - { en: 'Scalar', ar: 'الكمية العددية', fr: 'Grandeur scalaire', def: { en: 'Quantity fully described by a number and a unit (mass, energy, time).', ar: 'مقدار يُعرَّف كليًا بعدد ووحدة (الكتلة، الطاقة، الزمن).' } }
+  - { en: 'Dimensional analysis', ar: 'التحليل البعدي', fr: 'Analyse dimensionnelle', def: { en: 'Checking or deriving relations by requiring both sides to have the same dimensions (M, L, T…).', ar: 'التحقق من العلاقات أو استنتاجها باشتراط تساوي أبعاد الطرفين (M وL وT…).' } }
+  - { en: 'Significant figures', ar: 'الأرقام المعنوية', fr: 'Chiffres significatifs', def: { en: 'Digits of a measured value that are known reliably, plus the first uncertain digit.', ar: 'أرقام القيمة المقيسة المعروفة بثقة، مضافًا إليها أول رقم مشكوك فيه.' } }
+  - { en: 'Projectile motion', ar: 'حركة المقذوفات', fr: 'Mouvement d''un projectile', def: { en: 'Motion under gravity alone: uniform horizontally, uniformly accelerated vertically; the path is a parabola.', ar: 'حركة تحت تأثير الثقالة وحدها: منتظمة أفقيًا ومتغيرة بانتظام عموديًا، ومسارها قطع مكافئ.' } }
+  - { en: 'Centripetal acceleration', ar: 'التسارع المركزي', fr: 'Accélération centripète', def: { en: 'Acceleration \(v^2/r\) directed towards the centre of a circular path.', ar: 'تسارع مقداره \(v^2/r\) يتجه نحو مركز المسار الدائري.' } }
+  - { en: 'Relative velocity', ar: 'السرعة النسبية', fr: 'Vitesse relative', def: { en: 'Velocity measured in a moving frame: \(\vec v_{A/B} = \vec v_{A/O} - \vec v_{B/O}\) (Galilean addition).', ar: 'السرعة المقيسة في معلم متحرك: \(\vec v_{A/B} = \vec v_{A/O} - \vec v_{B/O}\) (جمع غاليليو).' } }
+  - { en: 'Inertia', ar: 'القصور الذاتي', fr: 'Inertie', def: { en: 'Tendency of a body to keep its state of rest or uniform motion; measured by its mass.', ar: 'ميل الجسم إلى الحفاظ على حالة السكون أو الحركة المنتظمة، وتقاس بالكتلة.' } }
+  - { en: 'Newton''s second law', ar: 'قانون نيوتن الثاني', fr: 'Principe fondamental de la dynamique', def: { en: '\(\sum\vec F = \dd\vec p/\dd t = m\vec a\) in an inertial frame.', ar: '\(\sum\vec F = \dd\vec p/\dd t = m\vec a\) في معلم عطالي.' } }
+  - { en: 'Normal force', ar: 'رد الفعل العمودي', fr: 'Réaction normale', def: { en: 'Contact force exerted by a surface, perpendicular to it.', ar: 'قوة تلامس يؤثر بها سطح على جسم، وتكون عمودية على السطح.' } }
+  - { en: 'Coefficient of friction', ar: 'معامل الاحتكاك', fr: 'Coefficient de frottement', def: { en: 'Ratio \(\mu = f/N\); static friction obeys \(f_s \le \mu_s N\), kinetic friction \(f_k = \mu_k N\).', ar: 'النسبة \(\mu = f/N\)؛ الاحتكاك السكوني يحقق \(f_s \le \mu_s N\) والحركي \(f_k = \mu_k N\).' } }
+  - { en: 'Free-body diagram', ar: 'مخطط الجسم الحر', fr: 'Bilan des forces', def: { en: 'Sketch of one isolated body showing every external force acting on it.', ar: 'رسم لجسم معزول تظهر عليه جميع القوى الخارجية المؤثرة فيه.' } }
+  - { en: 'Work', ar: 'الشغل', fr: 'Travail', def: { en: 'Energy transferred by a force: \(W = \int \vec F\cdot \dd\vec r\).', ar: 'الطاقة المنقولة بواسطة قوة: \(W = \int \vec F\cdot \dd\vec r\).' } }
+  - { en: 'Kinetic energy', ar: 'الطاقة الحركية', fr: 'Énergie cinétique', def: { en: 'Energy of motion, \(K = \tfrac12 m v^2\); its change equals the net work (work–energy theorem).', ar: 'طاقة الحركة \(K = \tfrac12 m v^2\)، وتغيّرها يساوي الشغل الكلي (مبرهنة الشغل والطاقة).' } }
+  - { en: 'Potential energy', ar: 'طاقة الوضع', fr: 'Énergie potentielle', def: { en: 'Energy of configuration associated with a conservative force, \(F_x = -\dd U/\dd x\).', ar: 'طاقة مرتبطة بالتشكيل وبقوة محافظة، حيث \(F_x = -\dd U/\dd x\).' } }
+  - { en: 'Conservative force', ar: 'القوة المحافظة', fr: 'Force conservative', def: { en: 'Force whose work is path-independent (gravity, spring force).', ar: 'قوة لا يتعلق شغلها بالمسار (الثقالة، قوة النابض).' } }
+  - { en: 'Power', ar: 'القدرة', fr: 'Puissance', def: { en: 'Rate of energy transfer, \(P = \dd W/\dd t = \vec F\cdot\vec v\); unit: watt.', ar: 'معدل نقل الطاقة \(P = \dd W/\dd t = \vec F\cdot\vec v\)، ووحدتها الواط.' } }
+  - { en: 'Linear momentum', ar: 'الزخم الخطي (كمية الحركة)', fr: 'Quantité de mouvement', def: { en: '\(\vec p = m\vec v\); conserved for an isolated system.', ar: '\(\vec p = m\vec v\)، وهو محفوظ في النظام المعزول.' } }
+  - { en: 'Impulse', ar: 'الدفع', fr: 'Impulsion', def: { en: '\(\vec J = \int\vec F\,\dd t = \Delta\vec p\).', ar: '\(\vec J = \int\vec F\,\dd t = \Delta\vec p\).' } }
+  - { en: 'Elastic collision', ar: 'التصادم المرن', fr: 'Choc élastique', def: { en: 'Collision in which total kinetic energy as well as momentum is conserved.', ar: 'تصادم تُحفظ فيه الطاقة الحركية الكلية إضافة إلى الزخم الخطي.' } }
+  - { en: 'Centre of mass', ar: 'مركز الكتلة', fr: 'Centre de masse', def: { en: 'Point \(\vec r_{cm} = \sum m_i\vec r_i/M\) that moves as if all external forces acted on the total mass there.', ar: 'النقطة \(\vec r_{cm} = \sum m_i\vec r_i/M\) التي تتحرك كأن الكتلة الكلية متمركزة فيها وتؤثر عليها كل القوى الخارجية.' } }
+  - { en: 'Torque', ar: 'عزم القوة', fr: 'Moment d''une force', def: { en: '\(\vec\tau = \vec r\times\vec F\); the rotational effect of a force about a point.', ar: '\(\vec\tau = \vec r\times\vec F\)، وهو الأثر الدوراني لقوة حول نقطة.' } }
+  - { en: 'Moment of inertia', ar: 'عزم القصور الذاتي', fr: 'Moment d''inertie', def: { en: '\(I = \sum m_i r_i^2\); resistance of a body to angular acceleration about an axis.', ar: '\(I = \sum m_i r_i^2\)، ويقيس ممانعة الجسم للتسارع الزاوي حول محور.' } }
+  - { en: 'Angular momentum', ar: 'الزخم الزاوي', fr: 'Moment cinétique', def: { en: '\(\vec L = \vec r\times\vec p\); for a rigid body about a fixed axis \(L = I\omega\). Conserved when the net external torque is zero.', ar: '\(\vec L = \vec r\times\vec p\)؛ ولجسم صلب حول محور ثابت \(L = I\omega\). يُحفظ عندما ينعدم العزم الخارجي الكلي.' } }
+  - { en: 'Universal gravitation', ar: 'الجذب العام', fr: 'Gravitation universelle', def: { en: 'Attraction between any two masses, \(F = G m_1 m_2/r^2\).', ar: 'تجاذب بين أي كتلتين \(F = G m_1 m_2/r^2\).' } }
+  - { en: 'Escape speed', ar: 'سرعة الإفلات', fr: 'Vitesse de libération', def: { en: 'Minimum launch speed to escape a planet''s gravity, \(v_{esc} = \sqrt{2GM/R}\) (about 11.2 km/s for Earth).', ar: 'أدنى سرعة إطلاق للإفلات من جاذبية كوكب \(v_{esc} = \sqrt{2GM/R}\) (نحو 11.2 km/s للأرض).' } }
+  - { en: 'Simple harmonic motion', ar: 'الحركة التوافقية البسيطة', fr: 'Mouvement harmonique simple', def: { en: 'Oscillation with \(x(t) = A\cos(\omega t + \phi)\), caused by a restoring force proportional to displacement; \(\omega = \sqrt{k/m}\).', ar: 'اهتزاز وفق \(x(t) = A\cos(\omega t + \phi)\) ناتج عن قوة إرجاع متناسبة مع الإزاحة؛ \(\omega = \sqrt{k/m}\).' } }

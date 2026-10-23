@@ -1,0 +1,860 @@
+slug: numerical-methods
+order: 80
+codes: [UEM 123]
+short: { en: NUM, ar: ط.ع }
+title: { en: Numerical Methods & Programming, ar: الطرق العددية والبرمجة }
+tagline:
+  en: Turning physics into working code — integration, roots, linear systems and differential equations on the computer.
+  ar: من الفيزياء إلى برامج تعمل؛ التكامل والجذور والأنظمة الخطية والمعادلات التفاضلية على الحاسوب.
+area: computational
+level: 2
+credits: 4
+hours: { lecture: 1.5, tutorial: 0, lab: 1.5 }
+weeks: 14
+instruction: [en, ar, fr]
+prerequisites: []
+prerequisite_note:
+  en: First-year calculus (derivatives, integrals, Taylor series) and basic linear algebra (matrices, systems of equations). No prior programming experience is required.
+  ar: التفاضل والتكامل للسنة الأولى (المشتقات، التكاملات، متسلسلة تايلور) وأساسيات الجبر الخطي (المصفوفات، جمل المعادلات). لا تُشترط خبرة سابقة في البرمجة.
+sims: [ode-solver]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/uem123-numerical-methods-and-programming/
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/%d9%88%d8%aa-%d9%86-123-%d8%a7%d9%84%d8%b7%d8%b1%d9%82-%d8%a7%d9%84%d8%b9%d8%af%d8%af%d9%8a%d8%a9-%d9%88-%d8%a7%d9%84%d8%a8%d8%b1%d9%85%d8%ac%d8%a9/
+notes: >
+  Sources are thin. The EN page gives the description, the topic order (integration, nonlinear equations, Gauss and
+  Gauss-Seidel, Euler and Runge-Kutta), the use of Fortran in the computer lab, the textbook list and all links (one
+  summary, five assignments with solutions, three solution codes). The Arabic-taught page has the same structure and no
+  extra links. Reconstructed: the programming and floating-point/error weeks (1-3), interpolation and numerical
+  differentiation (week 11), the 14-week schedule, CLOs, assessment (sources give 10% problem sets + 33% midterm + 67%
+  final, which is inconsistent; replaced with a varied scheme), Burden & Faires and Chapman as main references, exam
+  guide, quizzes, problems and glossary. Credits (4) and hours (1.5 h lecture + 1.5 h lab) should be checked. The week
+  attached to each assignment assumes Assignment n = TP n of the original calendar (A5 assumed to be on ODEs); please
+  verify. Document languages of the Drive files are unknown and left unset. The two "translated books" links on the EN
+  page point to quantum-mechanics books (copy-paste leftover) and were not kept. Fortran is used for the code examples
+  to match the sources; Python/MATLAB are accepted alternatives.
+
+description:
+  en: |
+    <p>Most equations in physics cannot be solved with pen and paper. This course teaches the essential <strong>numerical methods</strong> used in physics and chemistry, and how to implement them in clear, efficient programs. Lectures present each algorithm, why it works and how accurate it is. In the weekly <strong>computer lab</strong> students write, test and debug their own code. The lab uses Fortran; Python or MATLAB are accepted alternatives.</p>
+    <p>After a refresher on programming (variables, loops, conditions, arrays, functions and subroutines) and on floating-point arithmetic and numerical errors, we study numerical integration (trapezoidal and Simpson rules), the solution of nonlinear equations (bisection, Newton–Raphson, secant), linear systems (Gauss elimination with pivoting, Gauss–Seidel iteration), interpolation and numerical differentiation, and initial-value problems for ordinary differential equations (Euler and Runge–Kutta methods).</p>
+    <p>Each method is assessed on three points: <em>accuracy</em> (order of the error), <em>cost</em> (number of operations) and <em>stability</em>. Students learn to check a code against known exact results before trusting it on a real problem — for example, the motion of a nonlinear pendulum.</p>
+  ar: |
+    <p>معظم معادلات الفيزياء لا يمكن حلها بالورقة والقلم. يقدّم هذا المقرر أهم <strong>الطرق العددية</strong> المستعملة في الفيزياء والكيمياء، وكيفية برمجتها في برامج واضحة وفعّالة. تعرض المحاضرات كل خوارزمية وسبب نجاحها ومدى دقتها. وفي <strong>حصة الإعلام الآلي</strong> الأسبوعية يكتب الطلبة برامجهم ويختبرونها ويصحّحون أخطاءها. تُستعمل لغة فورتران، ويُقبل استعمال بايثون أو ماتلاب بديلًا.</p>
+    <p>بعد مراجعة للبرمجة (المتغيرات، حلقات التكرار، الشروط، المصفوفات، الدوال والبرامج الفرعية) ولحساب الفاصلة العائمة والأخطاء العددية، ندرس التكامل العددي (قاعدتا شبه المنحرف وسمبسون)، وحل المعادلات غير الخطية (التنصيف، نيوتن-رافسون، القاطع)، والجمل الخطية (طريقة غاوس للحذف مع الارتكاز، وتكرار غاوس-زايدل)، والاستكمال الداخلي والاشتقاق العددي، ومسائل القيم الابتدائية للمعادلات التفاضلية العادية (طريقتا أويلر ورونغه-كوتا).</p>
+    <p>تُقيَّم كل طريقة من ثلاث جهات: <em>الدقة</em> (رتبة الخطأ)، و<em>الكلفة</em> (عدد العمليات)، و<em>الاستقرار</em>. ويتعلم الطلبة اختبار البرنامج على نتائج مضبوطة معروفة قبل الوثوق به في مسألة حقيقية، مثل حركة النواس غير الخطي.</p>
+
+topics:
+  - { en: Programming basics (Fortran), ar: أساسيات البرمجة (فورتران) }
+  - { en: Floating point & numerical errors, ar: الفاصلة العائمة والأخطاء العددية }
+  - { en: Trapezoidal & Simpson integration, ar: التكامل بقاعدتي شبه المنحرف وسمبسون }
+  - { en: Bisection & Newton–Raphson, ar: طريقتا التنصيف ونيوتن-رافسون }
+  - { en: Gauss elimination & pivoting, ar: طريقة غاوس للحذف والارتكاز }
+  - { en: Gauss–Seidel iteration, ar: تكرار غاوس-زايدل }
+  - { en: Interpolation & finite differences, ar: الاستكمال الداخلي والفروق المنتهية }
+  - { en: Euler & Runge–Kutta methods, ar: طريقتا أويلر ورونغه-كوتا }
+
+outcomes:
+  - id: CLO1
+    bloom: apply
+    domain: skills
+    text:
+      en: Write, compile, test and debug structured programs (loops, conditions, arrays, functions, subroutines, file output) that implement numerical algorithms.
+      ar: يكتب برامج مهيكلة (حلقات تكرار، شروط، مصفوفات، دوال، برامج فرعية، كتابة في ملفات) تنفّذ خوارزميات عددية، ويترجمها ويختبرها ويصحّح أخطاءها.
+    assessed_by: [lab, homework, project]
+  - id: CLO2
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Explain floating-point representation, round-off and truncation errors, and the meaning of the order of a method.
+      ar: يشرح تمثيل الأعداد بالفاصلة العائمة وأخطاء التدوير والبتر ومعنى رتبة الطريقة.
+    assessed_by: [quizzes, midterm, final]
+  - id: CLO3
+    bloom: apply
+    domain: skills
+    text:
+      en: Apply the trapezoidal and Simpson rules and estimate their errors as functions of the step size.
+      ar: يطبّق قاعدتي شبه المنحرف وسمبسون ويقدّر أخطاءهما بدلالة الخطوة.
+    assessed_by: [quizzes, homework, lab, midterm, final]
+  - id: CLO4
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Solve nonlinear equations with bisection and Newton–Raphson, and analyse their convergence (linear vs quadratic, failure cases).
+      ar: يحل المعادلات غير الخطية بطريقتي التنصيف ونيوتن-رافسون، ويحلل تقاربهما (خطي أو تربيعي، وحالات الإخفاق).
+    assessed_by: [quizzes, homework, lab, midterm, final]
+  - id: CLO5
+    bloom: apply
+    domain: skills
+    text:
+      en: Solve linear systems by Gauss elimination with partial pivoting and by Gauss–Seidel iteration, and state when the iteration converges.
+      ar: يحل الجمل الخطية بطريقة غاوس للحذف مع الارتكاز الجزئي وبتكرار غاوس-زايدل، ويحدد شروط تقارب التكرار.
+    assessed_by: [homework, lab, final]
+  - id: CLO6
+    bloom: apply
+    domain: skills
+    text:
+      en: Integrate initial-value problems (including second-order equations rewritten as systems) with Euler and RK4 and compare their accuracy and stability.
+      ar: يكامل مسائل القيم الابتدائية (بما فيها المعادلات من الرتبة الثانية بعد كتابتها كجملة) بطريقتي أويلر ورونغه-كوتا من الرتبة الرابعة، ويقارن دقتيهما واستقرارهما.
+    assessed_by: [quizzes, lab, project, final]
+  - id: CLO7
+    bloom: evaluate
+    domain: skills
+    text:
+      en: Choose a suitable method for a physics problem, validate the code against exact results and justify the choice of step size in a short report.
+      ar: يختار طريقة مناسبة لمسألة فيزيائية، ويتحقق من صحة البرنامج بمقارنته بنتائج مضبوطة، ويبرّر اختيار الخطوة في تقرير قصير.
+    assessed_by: [project]
+  - id: CLO8
+    bloom: apply
+    domain: values
+    text:
+      en: Write their own code and reports honestly, document sources, and work responsibly in pairs during lab sessions.
+      ar: يكتب برامجه وتقاريره بنفسه وبأمانة، ويوثّق مصادره، ويعمل بمسؤولية ضمن ثنائي في حصص الإعلام الآلي.
+    assessed_by: [lab, project]
+
+assessment:
+  - id: lab
+    type: lab
+    weight: 15
+    title: { en: Computer-lab work (TP), ar: الأعمال التطبيقية على الحاسوب }
+    detail:
+      en: 'Each lab session ends with a working, commented program and a short output file or plot. Graded on correctness, code clarity and testing.'
+      ar: 'تنتهي كل حصة تطبيقية ببرنامج يعمل ومشروح بتعليقات، مع ملف نتائج قصير أو منحنى. تُقيَّم على صحة البرنامج ووضوح الكود والاختبار.'
+    when: { en: Weekly, ar: أسبوعيًّا }
+  - id: homework
+    type: homework
+    weight: 10
+    title: { en: Assignments, ar: الواجبات }
+    detail:
+      en: Five assignments mixing hand calculations and short programs, each due one week after release.
+      ar: خمسة واجبات تجمع بين الحساب اليدوي والبرامج القصيرة، يُسلَّم كلٌّ منها بعد أسبوع من نشره.
+    when: { en: 'Weeks 5, 7, 9, 10, 13', ar: الأسابيع 5، 7، 9، 10، 13 }
+  - id: quizzes
+    type: quiz
+    weight: 5
+    title: { en: Short quizzes, ar: اختبارات قصيرة }
+    detail:
+      en: Two 15-minute quizzes on concepts (error orders, convergence, stability).
+      ar: اختباران قصيران مدة كلٍّ منهما 15 دقيقة حول المفاهيم (رتب الأخطاء، التقارب، الاستقرار).
+    when: { en: Weeks 4 and 11, ar: الأسبوعان 4 و11 }
+  - id: midterm
+    type: midterm
+    weight: 20
+    title: { en: Midterm exam, ar: الفرض (الاختبار النصفي) }
+    detail:
+      en: One hour, written. Errors, numerical integration and root finding; includes reading or completing a short code.
+      ar: ساعة واحدة، كتابي. الأخطاء والتكامل العددي وإيجاد الجذور، ويتضمن قراءة برنامج قصير أو إكماله.
+    when: { en: Week 7, ar: الأسبوع 7 }
+  - id: project
+    type: project
+    weight: 10
+    title: { en: Mini-project, ar: مشروع مصغّر }
+    detail:
+      en: 'In pairs: solve a physics problem numerically (e.g. nonlinear pendulum with RK4, projectile with air drag, anharmonic oscillator energy levels by shooting), with code, validation and a 4-page report.'
+      ar: 'ثنائيًّا: حلّ مسألة فيزيائية عدديًّا (مثل النواس غير الخطي بطريقة RK4، أو المقذوف مع مقاومة الهواء، أو مستويات طاقة مهتز غير توافقي بطريقة الرمي)، مع البرنامج والتحقق من صحته وتقرير من 4 صفحات.'
+    when: { en: 'Assigned week 10, presented week 14', ar: يُكلَّف به في الأسبوع 10 ويُعرض في الأسبوع 14 }
+  - id: final
+    type: final
+    weight: 40
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail:
+      en: Two hours, written, comprehensive. Hand application of the algorithms on small cases, error analysis and pseudo-code.
+      ar: ساعتان، كتابي وشامل. تطبيق يدوي للخوارزميات على حالات صغيرة، وتحليل للأخطاء، وكتابة شبه برامج.
+    when: { en: Final exam period, ar: فترة الاختبارات النهائية }
+
+schedule:
+  - week: 1
+    title: { en: Introduction; first programs, ar: مدخل؛ البرامج الأولى }
+    topics:
+      en: ['Why numerical methods? Algorithms and pseudo-code', 'Structure of a Fortran program, compiling and running (gfortran)', 'Variables, types (integer, real, double precision), input/output']
+      ar: ['لماذا الطرق العددية؟ الخوارزميات وشبه البرامج', 'بنية برنامج فورتران، الترجمة والتنفيذ (gfortran)', 'المتغيرات والأنواع (صحيح، حقيقي، مضاعف الدقة)، الإدخال والإخراج']
+    reading: Chapman Ch. 1–2
+    activity: { en: 'Lab: environment set-up, "hello world", unit conversions', ar: 'تطبيق: تهيئة بيئة العمل، برنامج "hello world"، تحويل الوحدات' }
+    milestone: lab
+  - week: 2
+    title: { en: 'Control structures, arrays and subprograms', ar: بنى التحكم والمصفوفات والبرامج الفرعية }
+    topics:
+      en: ['IF blocks and DO loops', 'Arrays and file output for plotting', 'Functions and subroutines; modular programs']
+      ar: ['كتل IF وحلقات DO', 'المصفوفات والكتابة في الملفات لرسم المنحنيات', 'الدوال والبرامج الفرعية؛ البرامج المجزّأة']
+    reading: Chapman Ch. 3–7
+    activity: { en: 'Lab: sums of series, tables of functions', ar: 'تطبيق: مجاميع المتسلسلات وجداول الدوال' }
+    milestone: lab
+  - week: 3
+    title: { en: Floating-point arithmetic and errors, ar: حساب الفاصلة العائمة والأخطاء }
+    topics:
+      en: ['IEEE representation, machine epsilon, overflow/underflow', 'Absolute and relative error, significant digits', 'Round-off vs truncation error; catastrophic cancellation']
+      ar: ['تمثيل IEEE، إبسيلون الآلة، الفيضان والغوص', 'الخطأ المطلق والنسبي، الأرقام المعنوية', 'خطأ التدوير وخطأ البتر؛ الحذف الكارثي']
+    reading: Burden & Faires §1.2–1.3
+    activity: { en: 'Lab: computing machine epsilon; summing series forwards and backwards', ar: 'تطبيق: حساب إبسيلون الآلة؛ جمع متسلسلة تصاعديًّا وتنازليًّا' }
+    milestone: lab
+  - week: 4
+    title: { en: Numerical integration I — trapezoidal rule, ar: التكامل العددي 1 — قاعدة شبه المنحرف }
+    topics:
+      en: ['Newton–Cotes idea: integrate an interpolating polynomial', 'Simple and composite trapezoidal rule', 'Error term \(-\frac{(b-a)h^2}{12}f''''(\xi)\)']
+      ar: ['فكرة نيوتن-كوتس: تكامل كثير حدود استكمالي', 'قاعدة شبه المنحرف البسيطة والمركّبة', 'حد الخطأ \(-\frac{(b-a)h^2}{12}f''''(\xi)\)']
+    reading: Burden & Faires §4.3–4.4; Hoffman Ch. 6
+    activity: { en: Quiz 1, ar: الاختبار القصير 1 }
+    milestone: quiz
+  - week: 5
+    title: { en: Numerical integration II — Simpson's rule, ar: التكامل العددي 2 — قاعدة سمبسون }
+    topics:
+      en: ['Simpson''s 1/3 rule, composite form, error \(\order{h^4}\)', 'Convergence tests: halving the step', 'Fortran code for trapezoidal and Simpson rules']
+      ar: ['قاعدة سمبسون 1/3 وصيغتها المركّبة، والخطأ \(\order{h^4}\)', 'اختبار التقارب بتنصيف الخطوة', 'برنامج فورتران لقاعدتي شبه المنحرف وسمبسون']
+    reading: Burden & Faires §4.3–4.4; Hoffman Ch. 6
+    activity: { en: 'TP 1: integration codes; Assignment 1 released', ar: 'التطبيق 1: برامج التكامل؛ نشر الواجب 1' }
+    milestone: lab
+  - week: 6
+    title: { en: Nonlinear equations I — bisection, ar: المعادلات غير الخطية 1 — التنصيف }
+    topics:
+      en: ['Bracketing a root; intermediate value theorem', 'Bisection algorithm and error bound \((b-a)/2^n\)', 'Stopping criteria']
+      ar: ['حصر الجذر؛ مبرهنة القيم الوسطى', 'خوارزمية التنصيف وحدّ الخطأ \((b-a)/2^n\)', 'معايير التوقف']
+    reading: Burden & Faires §2.1; Hoffman Ch. 3
+  - week: 7
+    title: { en: Nonlinear equations II — Newton–Raphson, ar: المعادلات غير الخطية 2 — نيوتن-رافسون }
+    topics:
+      en: ['Newton–Raphson iteration and its geometric meaning', 'Quadratic convergence; failure cases; secant method', 'Fortran code for Newton and bisection', Midterm exam]
+      ar: ['تكرار نيوتن-رافسون ومعناه الهندسي', 'التقارب التربيعي؛ حالات الإخفاق؛ طريقة القاطع', 'برنامج فورتران لطريقتي نيوتن والتنصيف', الفرض (الاختبار النصفي)]
+    reading: Burden & Faires §2.3–2.4; Hoffman Ch. 3
+    activity: { en: 'TP 2: root-finding codes; Assignment 2', ar: 'التطبيق 2: برامج إيجاد الجذور؛ الواجب 2' }
+    milestone: midterm
+  - week: 8
+    title: { en: Linear systems I — Gauss elimination, ar: الجمل الخطية 1 — طريقة غاوس للحذف }
+    topics:
+      en: ['Matrix form \(A\vb{x}=\vb{b}\); triangular systems and back substitution', 'Gauss elimination without pivoting', 'Operation count \(\sim\tfrac23 n^3\)']
+      ar: ['الصيغة المصفوفية \(A\vb{x}=\vb{b}\)؛ الجمل المثلثية والتعويض التراجعي', 'طريقة غاوس للحذف دون ارتكاز', 'عدد العمليات \(\sim\tfrac23 n^3\)']
+    reading: Burden & Faires §6.1; Hoffman Ch. 1
+  - week: 9
+    title: { en: Linear systems II — pivoting, ar: الجمل الخطية 2 — الارتكاز }
+    topics:
+      en: ['Zero and small pivots; partial and total pivoting', 'LU factorisation (overview)', 'Fortran code for Gauss elimination']
+      ar: ['الارتكازات المعدومة والصغيرة؛ الارتكاز الجزئي والكلي', 'تفكيك LU (نظرة عامة)', 'برنامج فورتران لطريقة غاوس']
+    reading: Burden & Faires §6.2, 6.5; Hoffman Ch. 1
+    activity: { en: 'TP 3: Gauss elimination; Assignment 3', ar: 'التطبيق 3: طريقة غاوس؛ الواجب 3' }
+    milestone: lab
+  - week: 10
+    title: { en: Linear systems III — iterative methods, ar: الجمل الخطية 3 — الطرق التكرارية }
+    topics:
+      en: ['Jacobi and Gauss–Seidel iterations', 'Convergence for strictly diagonally dominant matrices', 'Stopping criteria and residual']
+      ar: ['تكرارا جاكوبي وغاوس-زايدل', 'التقارب في حالة المصفوفات ذات الهيمنة القطرية الصارمة', 'معايير التوقف والباقي']
+    reading: Burden & Faires §7.3; Hoffman Ch. 1
+    activity: { en: 'TP 4: Gauss–Seidel; Assignment 4; mini-project assigned', ar: 'التطبيق 4: غاوس-زايدل؛ الواجب 4؛ تكليف المشروع المصغّر' }
+    milestone: project
+  - week: 11
+    title: { en: Interpolation and numerical differentiation, ar: الاستكمال الداخلي والاشتقاق العددي }
+    topics:
+      en: ['Lagrange polynomial and Newton divided differences', 'Forward, backward and central differences; error orders', 'Optimal step: truncation vs round-off']
+      ar: ['كثير حدود لاغرانج والفروق المقسومة لنيوتن', 'الفروق الأمامية والخلفية والمركزية؛ رتب الأخطاء', 'الخطوة المثلى: خطأ البتر مقابل خطأ التدوير']
+    reading: Burden & Faires §3.1, 3.3, 4.1; Hoffman Ch. 4–5
+    activity: { en: Quiz 2, ar: الاختبار القصير 2 }
+    milestone: quiz
+  - week: 12
+    title: { en: ODEs I — Euler's method, ar: المعادلات التفاضلية 1 — طريقة أويلر }
+    topics:
+      en: ['Initial-value problems \(y''=f(t,y)\)', 'Explicit Euler: local and global errors', 'Stability for \(y''=-\lambda y\)']
+      ar: ['مسائل القيم الابتدائية \(y''=f(t,y)\)', 'طريقة أويلر الصريحة: الخطأ المحلي والكلي', 'الاستقرار في حالة \(y''=-\lambda y\)']
+    reading: Burden & Faires §5.2; Hoffman Ch. 7
+  - week: 13
+    title: { en: ODEs II — Runge–Kutta methods, ar: المعادلات التفاضلية 2 — طرق رونغه-كوتا }
+    topics:
+      en: ['RK2 (midpoint/Heun) and classical RK4', 'Systems and second-order equations: the pendulum', 'Energy drift and step-size choice']
+      ar: ['RK2 (نقطة المنتصف/هيون) وRK4 الكلاسيكية', 'الجمل والمعادلات من الرتبة الثانية: النواس', 'انجراف الطاقة واختيار الخطوة']
+    reading: Burden & Faires §5.4, 5.9; Hoffman Ch. 7
+    activity: { en: 'TP 5: Euler vs RK4 on the pendulum; Assignment 5', ar: 'التطبيق 5: مقارنة أويلر وRK4 على النواس؛ الواجب 5' }
+    milestone: lab
+  - week: 14
+    title: { en: Project presentations and review, ar: عرض المشاريع والمراجعة }
+    topics:
+      en: ['Mini-project presentations', 'Choosing a method: accuracy, cost, stability', 'Review for the final exam']
+      ar: ['عرض المشاريع المصغّرة', 'اختيار الطريقة: الدقة والكلفة والاستقرار', 'مراجعة للاختبار النهائي']
+    milestone: review
+
+materials:
+  - type: summary
+    title: { en: 'Summary 2: Numerical integration (trapezoidal & Simpson rules)', ar: 'الملخص 2: التكامل العددي (قاعدتا شبه المنحرف وسمبسون)' }
+    url: https://drive.google.com/file/d/1BDczjaY9agCGrEJNbMw5DdJpVEcMfI6C/view?usp=sharing
+    week: 4
+  - type: problems
+    title: { en: Assignment 1, ar: الواجب 1 }
+    url: https://drive.google.com/file/d/1j6PQZ2hMdpwqvPTaW2smn5lMzWjE9zjC/view?usp=sharing
+    week: 5
+  - type: solutions
+    title: { en: Assignment 1 — solution, ar: الواجب 1 — الحل }
+    url: https://drive.google.com/file/d/1QRv7rBoFRm8NgOIaNuUOMfyltzw_co8X/view?usp=sharing
+    week: 5
+  - type: code
+    title: { en: Assignment 1 — solution code, ar: الواجب 1 — برنامج الحل }
+    url: https://drive.google.com/file/d/1NEoBJiiSFt1ZX4aKG_H9kdsf7iwI-FfC/view?usp=sharing
+    week: 5
+  - type: problems
+    title: { en: Assignment 2, ar: الواجب 2 }
+    url: https://drive.google.com/file/d/11iPvnr5tnr5uQ6bZOjOj1CJvbaZ-zyWk/view?usp=sharing
+    week: 7
+  - type: solutions
+    title: { en: Assignment 2 — solution, ar: الواجب 2 — الحل }
+    url: https://drive.google.com/file/d/1Qo6TTQH5gFrUeTBckMYcRWsHfLAVr_tF/view?usp=sharing
+    week: 7
+  - type: code
+    title: { en: Assignment 2 — solution code, ar: الواجب 2 — برنامج الحل }
+    url: https://docs.google.com/document/d/1yg-LYFtf8E0SJ9jYf0jlT-KyF_-7wyL0/edit?usp=sharing&ouid=110192670445752213059&rtpof=true&sd=true
+    week: 7
+  - type: problems
+    title: { en: Assignment 3, ar: الواجب 3 }
+    url: https://drive.google.com/file/d/11jZeMn-6t9lIrQnKrJ1SKSV1FUIohJ_-/view?usp=sharing
+    week: 9
+  - type: solutions
+    title: { en: Assignment 3 — solution, ar: الواجب 3 — الحل }
+    url: https://drive.google.com/file/d/1uvGcazQIaVDt3G3vRVW8Wji8u8CMcQDx/view?usp=sharing
+    week: 9
+  - type: problems
+    title: { en: Assignment 4, ar: الواجب 4 }
+    url: https://drive.google.com/file/d/19CTGXSBXq48V3Qbiu_7WIib8mGj-fF_b/view?usp=sharing
+    week: 10
+  - type: solutions
+    title: { en: Assignment 4 — solution, ar: الواجب 4 — الحل }
+    url: https://drive.google.com/file/d/1uZ5PUku8T2bMfbA7Almh66DLz0Hdk5MD/view?usp=sharing
+    week: 10
+  - type: problems
+    title: { en: Assignment 5, ar: الواجب 5 }
+    url: https://drive.google.com/file/d/1RqLywPEfTFqpLJ6GyWYG63IBNCeBV4or/view?usp=sharing
+    week: 13
+  - type: solutions
+    title: { en: Assignment 5 — solution, ar: الواجب 5 — الحل }
+    url: https://drive.google.com/file/d/1bE_6u_HQUoagHoesxtaE0X4uu3mpWwNk/view?usp=sharing
+    week: 13
+  - type: code
+    title: { en: Assignment 5 — solution code, ar: الواجب 5 — برنامج الحل }
+    url: https://drive.google.com/file/d/1KeXX_Z5j0rCWK17pxEnJ4tILzjFKWIDF/view?usp=sharing
+    week: 13
+
+exams: []
+
+exam_guide:
+  format:
+    en: 'The midterm (1 hour) and the final (2 hours) are written exams without a computer. Typical questions: apply an algorithm by hand for 2–3 steps on a small case, estimate or compare errors, explain convergence or stability, and read, correct or complete a short program or pseudo-code.'
+    ar: 'الفرض (ساعة واحدة) والاختبار النهائي (ساعتان) اختباران كتابيان دون حاسوب. أسئلة نموذجية: تطبيق خوارزمية يدويًّا لخطوتين أو ثلاث على حالة صغيرة، وتقدير الأخطاء أو مقارنتها، وشرح التقارب أو الاستقرار، وقراءة برنامج قصير أو شبه برنامج وتصحيحه أو إكماله.'
+  allowed:
+    en: A non-programmable scientific calculator. No notes; the formulas of the methods must be known.
+    ar: آلة حاسبة علمية غير قابلة للبرمجة. لا يُسمح بالمذكرات، ويجب حفظ صيغ الطرق.
+  tips:
+    - en: Organise hand computations in a table (iteration, \(x_n\), \(f(x_n)\), error) and keep 6 significant digits.
+      ar: 'نظّم الحسابات اليدوية في جدول (رقم التكرار، \(x_n\)، \(f(x_n)\)، الخطأ) واحتفظ بستة أرقام معنوية.'
+    - en: Know the error orders by heart — trapezoid \(\order{h^2}\), Simpson \(\order{h^4}\), Euler \(\order{h}\), RK4 \(\order{h^4}\), Newton quadratic, bisection linear.
+      ar: 'احفظ رتب الأخطاء: شبه المنحرف \(\order{h^2}\)، سمبسون \(\order{h^4}\)، أويلر \(\order{h}\)، RK4 \(\order{h^4}\)، نيوتن تربيعي، التنصيف خطي.'
+    - en: Before Gauss–Seidel, check diagonal dominance; before Newton, check that \(f'(x_0)\neq0\) and that the starting point is reasonable.
+      ar: 'قبل تطبيق غاوس-زايدل تحقق من الهيمنة القطرية، وقبل تطبيق نيوتن تحقق من أن \(f''(x_0)\neq0\) وأن نقطة البداية معقولة.'
+    - en: Practise the lab programs until you can write the core loop of each method from memory.
+      ar: تدرّب على برامج الحصص التطبيقية حتى تستطيع كتابة الحلقة الأساسية لكل طريقة من الذاكرة.
+
+problems:
+  - title: { en: Trapezoid vs Simpson for \(\pi\), ar: 'مقارنة شبه المنحرف وسمبسون لحساب \(\pi\)' }
+    difficulty: 1
+    statement:
+      en: |
+        Since \(\int_0^1\frac{\dd x}{1+x^2}=\frac\pi4\), approximate this integral with \(n=4\) sub-intervals (\(h=0.25\)) using (a) the composite trapezoidal rule and (b) the composite Simpson rule. Deduce two approximations of \(\pi\) and compare the errors.
+      ar: |
+        بما أن \(\int_0^1\frac{\dd x}{1+x^2}=\frac\pi4\)، قرّب هذا التكامل باستعمال \(n=4\) مجالات جزئية (\(h=0.25\)) بـ (أ) قاعدة شبه المنحرف المركّبة و(ب) قاعدة سمبسون المركّبة. استنتج تقريبين لـ \(\pi\) وقارن الخطأين.
+    hint:
+      en: '\(T=h\left[\tfrac12(f_0+f_4)+f_1+f_2+f_3\right]\); \(S=\tfrac h3\left[f_0+4f_1+2f_2+4f_3+f_4\right]\).'
+      ar: '\(T=h\left[\tfrac12(f_0+f_4)+f_1+f_2+f_3\right]\)؛ \(S=\tfrac h3\left[f_0+4f_1+2f_2+4f_3+f_4\right]\).'
+    solution:
+      en: |
+        Nodes \(x_i=0,0.25,0.5,0.75,1\): \(f_i=1,\ 0.941176,\ 0.8,\ 0.64,\ 0.5\).
+        (a) \(T=0.25\,[0.75+0.941176+0.8+0.64]=0.782794\), so \(\pi\approx4T=3.131176\) (error \(\approx1.0\times10^{-2}\)).
+        (b) \(S=\frac{0.25}{3}[1+3.764706+1.6+2.56+0.5]=0.785392\), so \(\pi\approx4S=3.141569\) (error \(\approx2.4\times10^{-5}\)).
+        Simpson is about 400 times more accurate for the same 5 function evaluations, as expected from its \(\order{h^4}\) error against \(\order{h^2}\) for the trapezoid. Halving \(h\) would divide the trapezoid error by about 4 and the Simpson error by about 16.
+      ar: |
+        العُقد \(x_i=0,0.25,0.5,0.75,1\): \(f_i=1,\ 0.941176,\ 0.8,\ 0.64,\ 0.5\).
+        (أ) \(T=0.25\,[0.75+0.941176+0.8+0.64]=0.782794\)، إذن \(\pi\approx4T=3.131176\) (الخطأ \(\approx1.0\times10^{-2}\)).
+        (ب) \(S=\frac{0.25}{3}[1+3.764706+1.6+2.56+0.5]=0.785392\)، إذن \(\pi\approx4S=3.141569\) (الخطأ \(\approx2.4\times10^{-5}\)).
+        قاعدة سمبسون أدق بنحو 400 مرة بالعدد نفسه من حسابات الدالة (5 قيم)، كما هو متوقع من خطئها \(\order{h^4}\) مقابل \(\order{h^2}\) لشبه المنحرف. وتنصيف \(h\) يقسم خطأ شبه المنحرف على نحو 4 وخطأ سمبسون على نحو 16.
+  - title: { en: Newton's classic cubic, ar: المعادلة التكعيبية الشهيرة لنيوتن }
+    difficulty: 2
+    statement:
+      en: |
+        Consider \(f(x)=x^3-2x-5\), which has a root in \([2,3]\).
+        (a) How many bisection steps guarantee an error below \(10^{-6}\)?
+        (b) Perform three Newton–Raphson iterations from \(x_0=2\).
+        (c) Complete the Fortran loop below.
+        <pre><code>x = 2.0d0
+        do k = 1, 50
+           dx = ______________
+           x  = x - dx
+           if (abs(dx) &lt; 1.0d-12) exit
+        end do</code></pre>
+      ar: |
+        لتكن \(f(x)=x^3-2x-5\) التي لها جذر في \([2,3]\).
+        (أ) كم خطوة تنصيف تضمن خطأً أقل من \(10^{-6}\)؟
+        (ب) نفّذ ثلاثة تكرارات لنيوتن-رافسون انطلاقًا من \(x_0=2\).
+        (ج) أكمل حلقة فورتران التالية.
+        <pre><code>x = 2.0d0
+        do k = 1, 50
+           dx = ______________
+           x  = x - dx
+           if (abs(dx) &lt; 1.0d-12) exit
+        end do</code></pre>
+    hint:
+      en: 'Bisection: error \(\le (b-a)/2^n\). Newton: \(x_{n+1}=x_n-f(x_n)/f''(x_n)\) with \(f''(x)=3x^2-2\).'
+      ar: 'التنصيف: الخطأ \(\le (b-a)/2^n\). نيوتن: \(x_{n+1}=x_n-f(x_n)/f''(x_n)\) حيث \(f''(x)=3x^2-2\).'
+    solution:
+      en: |
+        (a) \(1/2^n<10^{-6}\Rightarrow n>6\log_2 10\approx19.9\), so \(n=20\) steps.
+        (b)
+        \(x_1=2-\frac{-1}{10}=2.1\);
+        \(x_2=2.1-\frac{0.061}{11.23}=2.094568\);
+        \(x_3=2.094568-\frac{1.86\times10^{-4}}{11.1615}=2.0945515\).
+        The exact root is \(2.0945514815\dots\). The number of correct digits roughly doubles at each step (1, 3, 7): quadratic convergence. Newton reaches in 3 steps what bisection needs 20 steps for.
+        (c) <code>dx = (x**3 - 2.0d0*x - 5.0d0) / (3.0d0*x**2 - 2.0d0)</code>. The test on <code>abs(dx)</code> stops the loop once the correction is negligible.
+      ar: |
+        (أ) \(1/2^n<10^{-6}\Rightarrow n>6\log_2 10\approx19.9\)، إذن \(n=20\) خطوة.
+        (ب)
+        \(x_1=2-\frac{-1}{10}=2.1\)؛
+        \(x_2=2.1-\frac{0.061}{11.23}=2.094568\)؛
+        \(x_3=2.094568-\frac{1.86\times10^{-4}}{11.1615}=2.0945515\).
+        الجذر المضبوط \(2.0945514815\dots\). يتضاعف عدد الأرقام الصحيحة تقريبًا في كل خطوة (1، 3، 7)، وهذا هو التقارب التربيعي. فطريقة نيوتن تبلغ في 3 خطوات ما يحتاج التنصيف إلى 20 خطوة لبلوغه.
+        (ج) <code>dx = (x**3 - 2.0d0*x - 5.0d0) / (3.0d0*x**2 - 2.0d0)</code>. ويوقف الاختبار على <code>abs(dx)</code> الحلقة حين يصبح التصحيح مهملًا.
+  - title: { en: Gauss elimination with partial pivoting, ar: طريقة غاوس للحذف مع الارتكاز الجزئي }
+    difficulty: 2
+    statement:
+      en: |
+        Solve by Gauss elimination with partial pivoting:
+        \[\begin{cases}2x+y-z=8\\-3x-y+2z=-11\\-2x+y+2z=-3\end{cases}\]
+      ar: |
+        حُلّ الجملة التالية بطريقة غاوس للحذف مع الارتكاز الجزئي:
+        \[\begin{cases}2x+y-z=8\\-3x-y+2z=-11\\-2x+y+2z=-3\end{cases}\]
+    hint:
+      en: At each step, swap rows so that the pivot is the entry of largest absolute value in its column (on or below the diagonal).
+      ar: في كل خطوة بدّل الأسطر بحيث يكون الارتكاز هو العنصر ذا القيمة المطلقة الكبرى في عموده (على القطر أو تحته).
+    solution:
+      en: |
+        <strong>Step 1.</strong> Largest \(|a_{i1}|\) is \(3\): swap \(R_1\leftrightarrow R_2\). With \(m_{21}=-\tfrac23\), \(m_{31}=\tfrac23\):
+        \[\left(\begin{array}{ccc|c}-3&-1&2&-11\\0&\tfrac13&\tfrac13&\tfrac23\\0&\tfrac53&\tfrac23&\tfrac{13}{3}\end{array}\right)\]
+        <strong>Step 2.</strong> In column 2, \(\tfrac53>\tfrac13\): swap \(R_2\leftrightarrow R_3\), then \(R_3\leftarrow R_3-\tfrac15R_2\):
+        \[\left(\begin{array}{ccc|c}-3&-1&2&-11\\0&\tfrac53&\tfrac23&\tfrac{13}{3}\\0&0&\tfrac15&-\tfrac15\end{array}\right)\]
+        <strong>Back substitution:</strong> \(z=-1\); \(\tfrac53y+\tfrac23(-1)=\tfrac{13}3\Rightarrow y=3\); \(-3x-3-2=-11\Rightarrow x=2\).
+        Solution \((x,y,z)=(2,3,-1)\). Check in the first equation: \(4+3+1=8\) ✓. Pivoting keeps the multipliers \(|m_{ij}|\le1\), which limits the growth of round-off errors.
+      ar: |
+        <strong>الخطوة 1.</strong> أكبر \(|a_{i1}|\) هو \(3\): نبدّل \(R_1\leftrightarrow R_2\). ومع \(m_{21}=-\tfrac23\) و\(m_{31}=\tfrac23\):
+        \[\left(\begin{array}{ccc|c}-3&-1&2&-11\\0&\tfrac13&\tfrac13&\tfrac23\\0&\tfrac53&\tfrac23&\tfrac{13}{3}\end{array}\right)\]
+        <strong>الخطوة 2.</strong> في العمود 2 لدينا \(\tfrac53>\tfrac13\): نبدّل \(R_2\leftrightarrow R_3\) ثم \(R_3\leftarrow R_3-\tfrac15R_2\):
+        \[\left(\begin{array}{ccc|c}-3&-1&2&-11\\0&\tfrac53&\tfrac23&\tfrac{13}{3}\\0&0&\tfrac15&-\tfrac15\end{array}\right)\]
+        <strong>التعويض التراجعي:</strong> \(z=-1\)؛ \(\tfrac53y+\tfrac23(-1)=\tfrac{13}3\Rightarrow y=3\)؛ \(-3x-3-2=-11\Rightarrow x=2\).
+        الحل \((x,y,z)=(2,3,-1)\). تحقق في المعادلة الأولى: \(4+3+1=8\) ✓. يُبقي الارتكاز المضاريب \(|m_{ij}|\le1\)، مما يحدّ من تضخّم أخطاء التدوير.
+  - title: { en: Gauss–Seidel iterations, ar: تكرارات غاوس-زايدل }
+    difficulty: 2
+    statement:
+      en: |
+        \[\begin{cases}4x-y+z=7\\4x-8y+z=-21\\-2x+y+5z=15\end{cases}\]
+        (a) Show that the Gauss–Seidel method converges for this system. (b) Starting from \((x,y,z)=(1,2,2)\), perform two iterations. The exact solution is \((2,4,3)\).
+      ar: |
+        \[\begin{cases}4x-y+z=7\\4x-8y+z=-21\\-2x+y+5z=15\end{cases}\]
+        (أ) بيّن أن طريقة غاوس-زايدل تتقارب من أجل هذه الجملة. (ب) انطلاقًا من \((x,y,z)=(1,2,2)\) نفّذ تكرارين. الحل المضبوط هو \((2,4,3)\).
+    hint:
+      en: Solve equation \(i\) for the \(i\)-th unknown and always use the most recent values.
+      ar: 'استخرج المجهول رقم \(i\) من المعادلة رقم \(i\)، واستعمل دائمًا أحدث القيم المحسوبة.'
+    solution:
+      en: |
+        (a) The matrix is strictly diagonally dominant: \(|4|>|-1|+|1|\), \(|-8|>|4|+|1|\), \(|5|>|-2|+|1|\). Gauss–Seidel therefore converges from any starting point.
+        (b) Iteration formulas:
+        \[x=\frac{7+y-z}{4},\quad y=\frac{21+4x+z}{8},\quad z=\frac{15+2x-y}{5}.\]
+        Iteration 1: \(x=1.75\), \(y=\frac{21+7+2}{8}=3.75\), \(z=\frac{15+3.5-3.75}{5}=2.95\).
+        Iteration 2: \(x=\frac{7+3.75-2.95}{4}=1.95\), \(y=\frac{21+7.8+2.95}{8}=3.96875\), \(z=\frac{15+3.9-3.96875}{5}=2.98625\).
+        The error drops from about \(1\) to \(0.05\): fast convergence towards \((2,4,3)\).
+      ar: |
+        (أ) المصفوفة ذات هيمنة قطرية صارمة: \(|4|>|-1|+|1|\)، \(|-8|>|4|+|1|\)، \(|5|>|-2|+|1|\)، لذا تتقارب طريقة غاوس-زايدل من أي نقطة بداية.
+        (ب) صيغ التكرار:
+        \[x=\frac{7+y-z}{4},\quad y=\frac{21+4x+z}{8},\quad z=\frac{15+2x-y}{5}.\]
+        التكرار 1: \(x=1.75\)، \(y=\frac{21+7+2}{8}=3.75\)، \(z=\frac{15+3.5-3.75}{5}=2.95\).
+        التكرار 2: \(x=\frac{7+3.75-2.95}{4}=1.95\)، \(y=\frac{21+7.8+2.95}{8}=3.96875\)، \(z=\frac{15+3.9-3.96875}{5}=2.98625\).
+        ينخفض الخطأ من نحو \(1\) إلى \(0.05\)، أي تقارب سريع نحو \((2,4,3)\).
+  - title: { en: One step of Euler vs RK4, ar: خطوة واحدة بأويلر مقابل RK4 }
+    difficulty: 3
+    statement:
+      en: |
+        For \(y'=y-t^2+1\), \(y(0)=0.5\), whose exact solution is \(y=(t+1)^2-0.5e^{t}\), compute \(y(0.2)\) with one step \(h=0.2\) of (a) Euler's method and (b) classical RK4. Compare with the exact value. (c) Write the RK4 step as a Fortran subroutine.
+      ar: |
+        من أجل \(y'=y-t^2+1\) و\(y(0)=0.5\)، وحلها المضبوط \(y=(t+1)^2-0.5e^{t}\)، احسب \(y(0.2)\) بخطوة واحدة \(h=0.2\) بـ (أ) طريقة أويلر و(ب) طريقة RK4 الكلاسيكية. قارن بالقيمة المضبوطة. (ج) اكتب خطوة RK4 في شكل برنامج فرعي بلغة فورتران.
+    hint:
+      en: '\(k_1=f(t,y)\), \(k_2=f(t+\tfrac h2,y+\tfrac h2k_1)\), \(k_3=f(t+\tfrac h2,y+\tfrac h2k_2)\), \(k_4=f(t+h,y+hk_3)\), \(y_{1}=y+\tfrac h6(k_1+2k_2+2k_3+k_4)\).'
+      ar: '\(k_1=f(t,y)\)، \(k_2=f(t+\tfrac h2,y+\tfrac h2k_1)\)، \(k_3=f(t+\tfrac h2,y+\tfrac h2k_2)\)، \(k_4=f(t+h,y+hk_3)\)، \(y_{1}=y+\tfrac h6(k_1+2k_2+2k_3+k_4)\).'
+    solution:
+      en: |
+        Exact: \(y(0.2)=1.44-0.5e^{0.2}=0.8292986\).
+        (a) Euler: \(y_1=0.5+0.2\times1.5=0.8\); error \(2.9\times10^{-2}\).
+        (b) RK4: \(k_1=1.5\); \(k_2=f(0.1,0.65)=1.64\); \(k_3=f(0.1,0.664)=1.654\); \(k_4=f(0.2,0.8308)=1.7908\).
+        \[y_1=0.5+\frac{0.2}{6}(1.5+3.28+3.308+1.7908)=0.8292933,\]
+        error \(5.3\times10^{-6}\), about 5000 times smaller than Euler's for 4 function evaluations instead of 1.
+        (c)
+        <pre><code>subroutine rk4_step(f, t, y, h)
+          implicit none
+          double precision, intent(in)    :: t, h
+          double precision, intent(inout) :: y
+          double precision :: k1, k2, k3, k4
+          interface
+             double precision function f(t, y)
+               double precision, intent(in) :: t, y
+             end function f
+          end interface
+          k1 = f(t, y)
+          k2 = f(t + h/2, y + h*k1/2)
+          k3 = f(t + h/2, y + h*k2/2)
+          k4 = f(t + h,   y + h*k3)
+          y  = y + h*(k1 + 2*k2 + 2*k3 + k4)/6
+        end subroutine rk4_step</code></pre>
+        Compare both methods on the pendulum in the ODE-solver lab.
+      ar: |
+        القيمة المضبوطة: \(y(0.2)=1.44-0.5e^{0.2}=0.8292986\).
+        (أ) أويلر: \(y_1=0.5+0.2\times1.5=0.8\)؛ الخطأ \(2.9\times10^{-2}\).
+        (ب) RK4: \(k_1=1.5\)؛ \(k_2=f(0.1,0.65)=1.64\)؛ \(k_3=f(0.1,0.664)=1.654\)؛ \(k_4=f(0.2,0.8308)=1.7908\).
+        \[y_1=0.5+\frac{0.2}{6}(1.5+3.28+3.308+1.7908)=0.8292933,\]
+        والخطأ \(5.3\times10^{-6}\)، أي أصغر بنحو 5000 مرة من خطأ أويلر مقابل 4 حسابات للدالة بدل حساب واحد.
+        (ج)
+        <pre><code>subroutine rk4_step(f, t, y, h)
+          implicit none
+          double precision, intent(in)    :: t, h
+          double precision, intent(inout) :: y
+          double precision :: k1, k2, k3, k4
+          interface
+             double precision function f(t, y)
+               double precision, intent(in) :: t, y
+             end function f
+          end interface
+          k1 = f(t, y)
+          k2 = f(t + h/2, y + h*k1/2)
+          k3 = f(t + h/2, y + h*k2/2)
+          k4 = f(t + h,   y + h*k3)
+          y  = y + h*(k1 + 2*k2 + 2*k3 + k4)/6
+        end subroutine rk4_step</code></pre>
+        قارن الطريقتين على النواس في مختبر حل المعادلات التفاضلية.
+  - title: { en: The optimal step for a numerical derivative, ar: الخطوة المثلى للمشتقة العددية }
+    difficulty: 3
+    statement:
+      en: |
+        The forward difference \(D_h=\frac{f(x+h)-f(x)}{h}\) is computed in double precision (\(\varepsilon\approx2.2\times10^{-16}\)).
+        (a) Show that the total error is roughly \(E(h)\approx\frac{M}{2}h+\frac{2\varepsilon|f|}{h}\), where \(M=|f''|\).
+        (b) Find the optimal \(h\) and the minimal error for \(f=e^x\) at \(x=0\).
+        (c) What changes with the central difference?
+      ar: |
+        تُحسب الفروق الأمامية \(D_h=\frac{f(x+h)-f(x)}{h}\) بالدقة المضاعفة (\(\varepsilon\approx2.2\times10^{-16}\)).
+        (أ) بيّن أن الخطأ الكلي تقريبًا \(E(h)\approx\frac{M}{2}h+\frac{2\varepsilon|f|}{h}\) حيث \(M=|f''''|\).
+        (ب) أوجد \(h\) الأمثل والخطأ الأدنى من أجل \(f=e^x\) عند \(x=0\).
+        (ج) ما الذي يتغير مع الفروق المركزية؟
+    hint:
+      en: Taylor-expand \(f(x+h)\) for the truncation error. Each stored value of \(f\) carries a relative error up to \(\varepsilon\).
+      ar: 'انشر \(f(x+h)\) بمتسلسلة تايلور لإيجاد خطأ البتر. وكل قيمة مخزّنة لـ \(f\) تحمل خطأً نسبيًّا قد يبلغ \(\varepsilon\).'
+    solution:
+      en: |
+        (a) \(f(x+h)=f+hf'+\tfrac{h^2}{2}f''+\dots\), so \(D_h-f'=\tfrac h2f''+\dots\): truncation \(\approx Mh/2\). Each of the two values of \(f\) has an error up to \(\varepsilon|f|\); their difference, divided by \(h\), gives a round-off error up to \(2\varepsilon|f|/h\).
+        (b) \(E'(h)=0\Rightarrow h_\text{opt}=2\sqrt{\varepsilon|f|/M}\) and \(E_\text{min}=2\sqrt{\varepsilon|f|M}\). For \(e^x\) at 0, \(|f|=M=1\):
+        \[h_\text{opt}\approx2\sqrt{2.2\times10^{-16}}\approx3\times10^{-8},\qquad E_\text{min}\approx3\times10^{-8}.\]
+        Taking \(h\) smaller makes the result <em>worse</em>, because round-off then dominates.
+        (c) The central difference \(\frac{f(x+h)-f(x-h)}{2h}\) has truncation error \(\frac{h^2}{6}|f'''|\). Balancing it against \(\varepsilon|f|/h\) gives \(h_\text{opt}\sim(3\varepsilon)^{1/3}\approx10^{-5}\) and a minimal error \(\sim10^{-11}\), much better.
+      ar: |
+        (أ) \(f(x+h)=f+hf'+\tfrac{h^2}{2}f''+\dots\)، إذن \(D_h-f'=\tfrac h2f''+\dots\): خطأ البتر \(\approx Mh/2\). وتحمل كل من قيمتي \(f\) خطأً قد يبلغ \(\varepsilon|f|\)، فيعطي فرقهما مقسومًا على \(h\) خطأ تدوير قد يبلغ \(2\varepsilon|f|/h\).
+        (ب) \(E'(h)=0\Rightarrow h_\text{opt}=2\sqrt{\varepsilon|f|/M}\) و\(E_\text{min}=2\sqrt{\varepsilon|f|M}\). ومن أجل \(e^x\) عند 0 لدينا \(|f|=M=1\):
+        \[h_\text{opt}\approx2\sqrt{2.2\times10^{-16}}\approx3\times10^{-8},\qquad E_\text{min}\approx3\times10^{-8}.\]
+        وتصغير \(h\) أكثر يجعل النتيجة <em>أسوأ</em>، لأن خطأ التدوير يصبح هو المهيمن.
+        (ج) خطأ البتر للفروق المركزية \(\frac{f(x+h)-f(x-h)}{2h}\) هو \(\frac{h^2}{6}|f'''|\). وبموازنته مع \(\varepsilon|f|/h\) نجد \(h_\text{opt}\sim(3\varepsilon)^{1/3}\approx10^{-5}\) وخطأً أدنى \(\sim10^{-11}\)، وهو أفضل بكثير.
+
+quizzes:
+  - title: { en: 'Programming and numerical errors', ar: 'البرمجة والأخطاء العددية' }
+    questions:
+      - q:
+          en: 'Which Fortran declaration creates a double-precision real variable?'
+          ar: 'أيّ تصريح في فورتران يُنشئ متغيرًا حقيقيًّا مضاعف الدقة؟'
+        options:
+          - '<code>real :: x</code>'
+          - '<code>logical :: x</code>'
+          - '<code>double precision :: x</code>'
+          - '<code>integer :: x</code>'
+        answer: 2
+        explain:
+          en: '<code>double precision</code> (or <code>real(kind=8)</code> with most compilers) gives about 15–16 significant digits; default <code>real</code> is single precision (about 7 digits).'
+          ar: 'يعطي <code>double precision</code> (أو <code>real(kind=8)</code> في معظم المترجمات) نحو 15 إلى 16 رقمًا معنويًّا، أما <code>real</code> الافتراضي فدقته بسيطة (نحو 7 أرقام).'
+      - q:
+          en: 'What is the order of magnitude of machine epsilon for IEEE double precision?'
+          ar: 'ما رتبة مقدار إبسيلون الآلة في الدقة المضاعفة وفق معيار IEEE؟'
+        options:
+          - '\(2.2\times10^{-16}\)'
+          - '\(1.2\times10^{-7}\)'
+          - '\(10^{-308}\)'
+          - '\(10^{-32}\)'
+        answer: 0
+        explain:
+          en: 'With a 52-bit mantissa, \(\varepsilon=2^{-52}\approx2.2\times10^{-16}\). \(1.2\times10^{-7}=2^{-23}\) is single precision, and \(10^{-308}\) is the smallest normal number, not the relative precision.'
+          ar: 'بجزء عشري من 52 بتًا يكون \(\varepsilon=2^{-52}\approx2.2\times10^{-16}\). أما \(1.2\times10^{-7}=2^{-23}\) فهي للدقة البسيطة، و\(10^{-308}\) أصغر عدد عادي وليست الدقة النسبية.'
+      - q:
+          en: 'In Fortran, what is the value of the integer expression <code>7/2</code>?'
+          ar: 'في فورتران، ما قيمة العبارة الصحيحة <code>7/2</code>؟'
+        options:
+          - '3.5'
+          - '4'
+          - '2'
+          - '3'
+        answer: 3
+        explain:
+          en: 'Division of two integers is an integer division truncated towards zero: \(7/2=3\). Write <code>7.0d0/2</code> to get 3.5 — a classic bug in numerical codes.'
+          ar: 'قسمة عددين صحيحين قسمة صحيحة مبتورة نحو الصفر: \(7/2=3\). اكتب <code>7.0d0/2</code> لتحصل على 3.5؛ وهذا خطأ شائع في البرامج العددية.'
+      - q:
+          en: 'Computing \(1-\cos x\) directly for \(x=10^{-8}\) in double precision gives a poor result because of'
+          ar: 'حساب \(1-\cos x\) مباشرةً من أجل \(x=10^{-8}\) بالدقة المضاعفة يعطي نتيجة سيئة بسبب'
+        options:
+          - { en: 'integer division', ar: 'القسمة الصحيحة' }
+          - { en: 'catastrophic cancellation', ar: 'الحذف الكارثي' }
+          - { en: 'overflow', ar: 'الفيضان' }
+          - { en: 'truncation error of the cosine series', ar: 'خطأ بتر متسلسلة جيب التمام' }
+        answer: 1
+        explain:
+          en: '\(\cos x\) rounds to exactly 1, so the difference is 0 instead of \(5\times10^{-17}\). Use the equivalent form \(2\sin^2(x/2)\).'
+          ar: 'تُدوَّر قيمة \(\cos x\) إلى 1 تمامًا فيكون الفرق 0 بدل \(5\times10^{-17}\). استعمل الصيغة المكافئة \(2\sin^2(x/2)\).'
+      - q:
+          en: 'As the step \(h\) of a finite-difference derivative is decreased, the total error'
+          ar: 'عند تصغير الخطوة \(h\) في مشتقة بالفروق المنتهية، فإن الخطأ الكلي'
+        options:
+          - { en: 'stays constant', ar: 'يبقى ثابتًا' }
+          - { en: 'first decreases, then increases', ar: 'يتناقص أولًا ثم يتزايد' }
+          - { en: 'always decreases', ar: 'يتناقص دائمًا' }
+          - { en: 'always increases', ar: 'يتزايد دائمًا' }
+        answer: 1
+        explain:
+          en: 'Truncation error decreases (\(\propto h\) or \(h^2\)) but round-off grows as \(\varepsilon/h\). An optimal \(h\) minimises the sum.'
+          ar: 'يتناقص خطأ البتر (\(\propto h\) أو \(h^2\)) لكن خطأ التدوير يتزايد مثل \(\varepsilon/h\)، فتوجد خطوة مثلى تجعل المجموع أصغريًّا.'
+  - title: { en: 'Integration and root finding', ar: 'التكامل وإيجاد الجذور' }
+    questions:
+      - q:
+          en: 'What is the global error of the composite trapezoidal rule with step \(h\)?'
+          ar: 'ما الخطأ الكلي لقاعدة شبه المنحرف المركّبة بخطوة \(h\)؟'
+        options:
+          - '\(\order{h}\)'
+          - '\(\order{h^3}\)'
+          - '\(\order{h^4}\)'
+          - '\(\order{h^2}\)'
+        answer: 3
+        explain:
+          en: 'Each panel has an error \(\order{h^3}\) and there are \((b-a)/h\) panels, giving \(-\frac{(b-a)h^2}{12}f''''(\xi)\).'
+          ar: 'لكل مجال جزئي خطأ \(\order{h^3}\) وعدد المجالات \((b-a)/h\)، فيكون الخطأ \(-\frac{(b-a)h^2}{12}f''''(\xi)\).'
+      - q:
+          en: 'Simpson''s 1/3 rule integrates exactly all polynomials of degree up to'
+          ar: 'تكامل قاعدة سمبسون 1/3 بشكل مضبوط كل كثيرات الحدود حتى الدرجة'
+        options:
+          - '3'
+          - '2'
+          - '1'
+          - '4'
+        answer: 0
+        explain:
+          en: 'Although built on a parabola, its error involves \(f^{(4)}\), which vanishes for cubics — a bonus degree due to symmetry.'
+          ar: 'رغم أنها مبنية على قطع مكافئ، فإن خطأها يتضمن \(f^{(4)}\) التي تنعدم في كثيرات الحدود التكعيبية؛ وهي درجة إضافية بفضل التناظر.'
+      - q:
+          en: 'How many bisection steps are needed to reduce an initial interval of length 1 below \(10^{-3}\)?'
+          ar: 'كم خطوة تنصيف نحتاج لتصغير مجال ابتدائي طوله 1 إلى أقل من \(10^{-3}\)؟'
+        options:
+          - '100'
+          - '1000'
+          - '10'
+          - '3'
+        answer: 2
+        explain:
+          en: 'After \(n\) steps the length is \(2^{-n}\), and \(2^{10}=1024>10^3\).'
+          ar: 'بعد \(n\) خطوة يصبح الطول \(2^{-n}\)، و\(2^{10}=1024>10^3\).'
+      - q:
+          en: 'Which is the Newton–Raphson iteration?'
+          ar: 'ما صيغة تكرار نيوتن-رافسون؟'
+        options:
+          - '\(x_{n+1}=x_n-f''(x_n)/f(x_n)\)'
+          - '\(x_{n+1}=(a_n+b_n)/2\)'
+          - '\(x_{n+1}=f(x_n)\)'
+          - '\(x_{n+1}=x_n-f(x_n)/f''(x_n)\)'
+        answer: 3
+        explain:
+          en: 'It is the zero of the tangent line at \(x_n\). The midpoint formula is bisection; \(x_{n+1}=f(x_n)\) is a fixed-point iteration.'
+          ar: 'هي نقطة انعدام المماس عند \(x_n\). أما صيغة المنتصف فهي للتنصيف، و\(x_{n+1}=f(x_n)\) تكرار النقطة الثابتة.'
+      - q:
+          en: 'Near a simple root, Newton''s method converges'
+          ar: 'بالقرب من جذر بسيط تتقارب طريقة نيوتن'
+        options:
+          - { en: 'never', ar: 'لا تتقارب أبدًا' }
+          - { en: 'quadratically', ar: 'تقاربًا تربيعيًّا' }
+          - { en: 'linearly with ratio 1/2', ar: 'تقاربًا خطيًّا بنسبة 1/2' }
+          - { en: 'cubically', ar: 'تقاربًا تكعيبيًّا' }
+        answer: 1
+        explain:
+          en: '\(e_{n+1}\approx\frac{f''''}{2f''}e_n^2\): the number of correct digits roughly doubles each step. Ratio 1/2 is bisection.'
+          ar: '\(e_{n+1}\approx\frac{f''''}{2f''}e_n^2\): يتضاعف عدد الأرقام الصحيحة تقريبًا في كل خطوة. أما النسبة 1/2 فهي للتنصيف.'
+  - title: { en: 'Linear systems and interpolation', ar: 'الجمل الخطية والاستكمال الداخلي' }
+    questions:
+      - q:
+          en: 'How does the cost of Gauss elimination for an \(n\times n\) system grow?'
+          ar: 'كيف تتزايد كلفة طريقة غاوس للحذف من أجل جملة \(n\times n\)؟'
+        options:
+          - '\(\sim n\)'
+          - '\(\sim n!\)'
+          - '\(\sim\tfrac23n^3\)'
+          - '\(\sim n^2\)'
+        answer: 2
+        explain:
+          en: 'Elimination needs about \(\tfrac23n^3\) floating-point operations; back substitution only \(\sim n^2\). (\(n!\) is Cramer''s rule with cofactor expansion — never use it.)'
+          ar: 'يتطلب الحذف نحو \(\tfrac23n^3\) عملية، أما التعويض التراجعي فيتطلب \(\sim n^2\) فقط. (و\(n!\) هي كلفة قاعدة كرامر بالنشر بالمحددات الصغرى، فلا تستعملها أبدًا.)'
+      - q:
+          en: 'What is the main purpose of partial pivoting?'
+          ar: 'ما الغرض الأساسي من الارتكاز الجزئي؟'
+        options:
+          - { en: 'Avoid zero or tiny pivots and limit round-off growth', ar: 'تجنّب الارتكازات المعدومة أو الصغيرة جدًّا والحدّ من تضخّم أخطاء التدوير' }
+          - { en: 'Reduce the operation count to \(n^2\)', ar: 'تخفيض عدد العمليات إلى \(n^2\)' }
+          - { en: 'Make the matrix symmetric', ar: 'جعل المصفوفة متناظرة' }
+          - { en: 'Guarantee convergence of Gauss–Seidel', ar: 'ضمان تقارب غاوس-زايدل' }
+        answer: 0
+        explain:
+          en: 'Choosing the largest pivot keeps the multipliers \(|m|\le1\), so errors are not amplified. The cost is unchanged.'
+          ar: 'اختيار أكبر ارتكاز يُبقي المضاريب \(|m|\le1\) فلا تتضخم الأخطاء، ولا تتغير الكلفة.'
+      - q:
+          en: 'The Gauss–Seidel iteration is guaranteed to converge if the matrix is'
+          ar: 'يُضمن تقارب تكرار غاوس-زايدل إذا كانت المصفوفة'
+        options:
+          - { en: 'strictly diagonally dominant', ar: 'ذات هيمنة قطرية صارمة' }
+          - { en: 'square', ar: 'مربعة' }
+          - { en: 'upper triangular with zeros on the diagonal', ar: 'مثلثية علوية وعناصر قطرها معدومة' }
+          - { en: 'of size at most 3', ar: 'من حجم 3 على الأكثر' }
+        answer: 0
+        explain:
+          en: 'Strict diagonal dominance (\(|a_{ii}|>\sum_{j\ne i}|a_{ij}|\)) is a simple sufficient condition (symmetric positive-definite is another).'
+          ar: 'الهيمنة القطرية الصارمة (\(|a_{ii}|>\sum_{j\ne i}|a_{ij}|\)) شرط كافٍ بسيط (وكون المصفوفة متناظرة موجبة التعريف شرط آخر).'
+      - q:
+          en: 'Through \(n+1\) points with distinct abscissas there passes a unique interpolating polynomial of degree at most'
+          ar: 'يمر بـ \(n+1\) نقطة ذات فواصل مختلفة كثير حدود استكمالي وحيد درجته على الأكثر'
+        options:
+          - '\(2n\)'
+          - '\(n-1\)'
+          - '\(n\)'
+          - '\(n+1\)'
+        answer: 2
+        explain:
+          en: 'A polynomial of degree \(n\) has \(n+1\) coefficients, fixed by the \(n+1\) conditions (Vandermonde system, Lagrange form).'
+          ar: 'لكثير الحدود من الدرجة \(n\) عدد \(n+1\) من المعاملات، تحددها الشروط \(n+1\) (جملة فاندرموند، صيغة لاغرانج).'
+      - q:
+          en: 'What is the truncation error of the central difference \(\frac{f(x+h)-f(x-h)}{2h}\)?'
+          ar: 'ما خطأ البتر للفروق المركزية \(\frac{f(x+h)-f(x-h)}{2h}\)؟'
+        options:
+          - '\(\order{h^4}\)'
+          - '\(\order{h^2}\)'
+          - '\(\order{h}\)'
+          - '\(\order{h^3}\)'
+        answer: 1
+        explain:
+          en: 'In the Taylor expansions the even terms cancel, leaving \(\frac{h^2}{6}f''''''\). The forward difference is only \(\order{h}\).'
+          ar: 'تُختزل الحدود الزوجية في نشر تايلور فيبقى \(\frac{h^2}{6}f''''''\). أما الفروق الأمامية فخطؤها \(\order{h}\) فقط.'
+  - title: { en: 'Ordinary differential equations', ar: 'المعادلات التفاضلية العادية' }
+    questions:
+      - q:
+          en: 'What is the global error of the explicit Euler method?'
+          ar: 'ما الخطأ الكلي لطريقة أويلر الصريحة؟'
+        options:
+          - '\(\order{h^2}\)'
+          - '\(\order{h^4}\)'
+          - '\(\order{1}\)'
+          - '\(\order{h}\)'
+        answer: 3
+        explain:
+          en: 'Local error \(\order{h^2}\) per step, accumulated over \(\sim1/h\) steps, gives \(\order{h}\): halving \(h\) only halves the error.'
+          ar: 'الخطأ المحلي \(\order{h^2}\) في كل خطوة، ويتراكم عبر \(\sim1/h\) خطوة فيصبح \(\order{h}\)؛ فتنصيف \(h\) لا ينصّف الخطأ إلا مرة واحدة.'
+      - q:
+          en: 'With RK4, halving the step size divides the global error by about'
+          ar: 'مع RK4، يؤدي تنصيف الخطوة إلى قسمة الخطأ الكلي على نحو'
+        options:
+          - '8'
+          - '16'
+          - '2'
+          - '4'
+        answer: 1
+        explain:
+          en: 'RK4 is fourth order: error \(\propto h^4\), and \(2^4=16\).'
+          ar: 'RK4 من الرتبة الرابعة: الخطأ \(\propto h^4\)، و\(2^4=16\).'
+      - q:
+          en: 'Explicit Euler applied to \(y''=-\lambda y\) (\(\lambda>0\)) is stable only if'
+          ar: 'تكون طريقة أويلر الصريحة المطبقة على \(y''=-\lambda y\) (\(\lambda>0\)) مستقرة فقط إذا كان'
+        options:
+          - '\(h<\lambda\)'
+          - '\(h>2/\lambda\)'
+          - { en: 'for every \(h\)', ar: 'من أجل كل \(h\)' }
+          - '\(h<2/\lambda\)'
+        answer: 3
+        explain:
+          en: '\(y_{n+1}=(1-h\lambda)y_n\) decays only if \(|1-h\lambda|<1\), i.e. \(0<h<2/\lambda\). Stiff problems (large \(\lambda\)) therefore force tiny steps.'
+          ar: '\(y_{n+1}=(1-h\lambda)y_n\) يتناقص فقط إذا كان \(|1-h\lambda|<1\)، أي \(0<h<2/\lambda\)؛ ولذلك تفرض المسائل الصلبة (\(\lambda\) كبيرة) خطوات صغيرة جدًّا.'
+      - q:
+          en: 'To integrate the pendulum equation \(\ddot\theta=-(g/L)\sin\theta\) with RK4, one'
+          ar: 'لمكاملة معادلة النواس \(\ddot\theta=-(g/L)\sin\theta\) بطريقة RK4، نقوم بـ'
+        options:
+          - { en: 'cannot use RK4 for second-order equations', ar: 'لا يمكن استعمال RK4 للمعادلات من الرتبة الثانية' }
+          - { en: 'integrates twice with the trapezoidal rule', ar: 'المكاملة مرتين بقاعدة شبه المنحرف' }
+          - { en: 'rewrites it as a system of two first-order equations for \(\theta\) and \(\omega=\dot\theta\)', ar: 'كتابتها كجملة من معادلتين من الرتبة الأولى في \(\theta\) و\(\omega=\dot\theta\)' }
+          - { en: 'must first linearise \(\sin\theta\approx\theta\)', ar: 'تخطيط \(\sin\theta\approx\theta\) أولًا بالضرورة' }
+        answer: 2
+        explain:
+          en: '\(\dot\theta=\omega\), \(\dot\omega=-(g/L)\sin\theta\). RK4 is applied to the vector \((\theta,\omega)\); no linearisation is needed — try it in the ODE-solver lab.'
+          ar: '\(\dot\theta=\omega\) و\(\dot\omega=-(g/L)\sin\theta\). تُطبَّق RK4 على الشعاع \((\theta,\omega)\) دون حاجة إلى التخطيط؛ جرّب ذلك في مختبر حل المعادلات التفاضلية.'
+      - q:
+          en: 'How many evaluations of \(f(t,y)\) does one classical RK4 step need?'
+          ar: 'كم مرة تُحسب \(f(t,y)\) في خطوة واحدة من RK4 الكلاسيكية؟'
+        options:
+          - '4'
+          - '1'
+          - '2'
+          - '6'
+        answer: 0
+        explain:
+          en: 'Four slopes \(k_1,\dots,k_4\) per step. For the same accuracy RK4 is still far cheaper than Euler, which would need a much smaller \(h\).'
+          ar: 'أربعة ميول \(k_1,\dots,k_4\) في كل خطوة. ومع ذلك تبقى RK4 أرخص بكثير من أويلر لبلوغ الدقة نفسها، إذ يحتاج أويلر إلى \(h\) أصغر بكثير.'
+
+textbooks:
+  required:
+    - { authors: 'R. L. Burden, J. D. Faires & A. M. Burden', title: Numerical Analysis, edition: 10th, publisher: Cengage Learning, year: 2016 }
+    - { authors: J. D. Hoffman, title: Numerical Methods for Engineers and Scientists, edition: 2nd, publisher: Marcel Dekker, year: 2001 }
+  recommended:
+    - { authors: S. J. Chapman, title: Fortran for Scientists and Engineers, edition: 4th, publisher: McGraw-Hill, year: 2018 }
+    - { authors: F. Jedrzejewski, title: Introduction aux méthodes numériques, edition: 2e, publisher: Springer-Verlag France, year: 2005 }
+    - { authors: E. Hairer, title: Introduction à l'analyse numérique (lecture notes), publisher: Université de Genève, year: 2001 }
+    - { authors: 'A. Quarteroni, R. Sacco & F. Saleri', title: 'Méthodes numériques : algorithmes, analyse et applications', publisher: Springer-Verlag Italia, year: 2007 }
+    - { authors: C. Woodford & C. Phillips, title: 'Numerical Methods with Worked Examples: MATLAB Edition', edition: 2nd, publisher: Springer, year: 2012 }
+    - { authors: B. H. Hahn & D. T. Valentine, title: Essential MATLAB for Engineers and Scientists, edition: 3rd, publisher: Elsevier, year: 2007 }
+    - { authors: M. Djebli & H. Djelouah, title: Initiation à MATLAB, publisher: Office des Publications Universitaires, year: 2013 }
+    - { authors: R. Dukkipati, title: 'MATLAB: An Introduction with Applications', publisher: New Age International, year: 2010 }
+    - { authors: B. Hahn, title: Introduction to Fortran 90 for Scientists and Engineers, year: 1993 }
+    - { authors: P. Corde & A. Fouilloux, title: 'Langage Fortran (support de cours)', publisher: IDRIS, year: 2010 }
+    - { authors: "P. D'Anfray", title: Fortran 77, year: 1998 }
+    - { authors: C. Delannoy, title: C++ pour les programmeurs C, edition: 6e, publisher: Eyrolles, year: 2004 }
+    - { authors: C. Casteyde, title: Cours de C/C++, year: 2005 }
+  online:
+    - title: { en: 'fortran-lang.org — Learn Fortran', ar: 'fortran-lang.org — تعلّم فورتران' }
+      url: https://fortran-lang.org/learn/
+      note: { en: Official modern-Fortran tutorials and a quick-start guide for the lab sessions., ar: دروس رسمية في فورتران الحديثة ودليل بدء سريع لحصص الإعلام الآلي. }
+
+glossary:
+  - { en: Algorithm, ar: الخوارزمية, fr: Algorithme, def: { en: 'A finite, unambiguous sequence of steps that solves a problem.', ar: متتالية منتهية وواضحة من الخطوات تحل مسألة ما. } }
+  - { en: Compiler, ar: المترجم (المُصرِّف), fr: Compilateur, def: { en: Program that translates source code (e.g. Fortran) into machine code., ar: برنامج يحوّل الشفرة المصدرية (مثل فورتران) إلى لغة الآلة. } }
+  - { en: Loop, ar: حلقة التكرار, fr: Boucle, def: { en: 'A block of instructions executed repeatedly (Fortran <code>do ... end do</code>).', ar: 'كتلة تعليمات تُنفَّذ بشكل متكرر (في فورتران <code>do ... end do</code>).' } }
+  - { en: Subroutine, ar: البرنامج الفرعي, fr: Sous-programme, def: { en: 'A named, reusable block of code called with arguments.', ar: كتلة شفرة مسمّاة قابلة لإعادة الاستعمال تُستدعى بوسائط. } }
+  - { en: Floating-point number, ar: العدد ذو الفاصلة العائمة, fr: Nombre à virgule flottante, def: { en: 'Representation \(\pm m\times2^e\) with a finite mantissa and exponent.', ar: 'تمثيل من الشكل \(\pm m\times2^e\) بجزء عشري وأس منتهيين.' } }
+  - { en: Machine epsilon, ar: إبسيلون الآلة, fr: Epsilon machine, def: { en: 'Smallest \(\varepsilon\) such that \(1+\varepsilon\neq1\) in the machine (\(\approx2.2\times10^{-16}\) in double precision).', ar: 'أصغر \(\varepsilon\) يحقق \(1+\varepsilon\neq1\) في الآلة (\(\approx2.2\times10^{-16}\) في الدقة المضاعفة).' } }
+  - { en: Round-off error, ar: خطأ التدوير, fr: Erreur d'arrondi, def: { en: Error due to storing numbers with a finite number of digits., ar: خطأ ناتج عن تخزين الأعداد بعدد منتهٍ من الأرقام. } }
+  - { en: Truncation error, ar: خطأ البتر, fr: Erreur de troncature, def: { en: Error due to replacing an exact mathematical process by a finite approximation (e.g. a truncated Taylor series)., ar: خطأ ناتج عن استبدال عملية رياضية مضبوطة بتقريب منتهٍ (مثل بتر متسلسلة تايلور). } }
+  - { en: Relative error, ar: الخطأ النسبي, fr: Erreur relative, def: { en: '\(|x-\tilde x|/|x|\); it measures the number of correct significant digits.', ar: '\(|x-\tilde x|/|x|\)، ويقيس عدد الأرقام المعنوية الصحيحة.' } }
+  - { en: Catastrophic cancellation, ar: الحذف الكارثي, fr: Élimination catastrophique, def: { en: Loss of significant digits when subtracting two nearly equal numbers., ar: ضياع الأرقام المعنوية عند طرح عددين متقاربين جدًّا. } }
+  - { en: Order of a method, ar: رتبة الطريقة, fr: Ordre d'une méthode, def: { en: 'The power \(p\) in an error \(\order{h^p}\).', ar: 'القوة \(p\) في خطأ من الشكل \(\order{h^p}\).' } }
+  - { en: Convergence, ar: التقارب, fr: Convergence, def: { en: Approach of the iterates or approximations to the exact solution as iterations increase or \(h\to0\)., ar: 'اقتراب التكرارات أو التقريبات من الحل المضبوط بزيادة عدد التكرارات أو عندما \(h\to0\).' } }
+  - { en: Bisection method, ar: طريقة التنصيف, fr: Méthode de dichotomie, def: { en: Root finding by repeatedly halving an interval where the function changes sign., ar: إيجاد الجذر بتنصيف متكرر لمجال تغيّر فيه الدالة إشارتها. } }
+  - { en: Newton–Raphson method, ar: طريقة نيوتن-رافسون, fr: Méthode de Newton-Raphson, def: { en: 'Iteration \(x_{n+1}=x_n-f(x_n)/f''(x_n)\); quadratic convergence near a simple root.', ar: 'التكرار \(x_{n+1}=x_n-f(x_n)/f''(x_n)\)، وتقاربه تربيعي قرب الجذر البسيط.' } }
+  - { en: Secant method, ar: طريقة القاطع, fr: Méthode de la sécante, def: { en: Newton-like method in which the derivative is replaced by the slope through the last two iterates., ar: طريقة شبيهة بطريقة نيوتن تُستبدل فيها المشتقة بميل المستقيم المار بآخر تكرارين. } }
+  - { en: Trapezoidal rule, ar: قاعدة شبه المنحرف, fr: Méthode des trapèzes, def: { en: 'Integration by linear interpolation on each sub-interval; error \(\order{h^2}\).', ar: 'تكامل باستكمال خطي على كل مجال جزئي، وخطؤها \(\order{h^2}\).' } }
+  - { en: Simpson's rule, ar: قاعدة سمبسون, fr: Méthode de Simpson, def: { en: 'Integration by quadratic interpolation on pairs of sub-intervals; error \(\order{h^4}\).', ar: 'تكامل باستكمال تربيعي على كل زوج من المجالات الجزئية، وخطؤها \(\order{h^4}\).' } }
+  - { en: Interpolation, ar: الاستكمال الداخلي, fr: Interpolation, def: { en: Construction of a function (often a polynomial) passing exactly through given data points., ar: إنشاء دالة (غالبًا كثير حدود) تمر تمامًا بنقاط معطاة. } }
+  - { en: Lagrange polynomial, ar: كثير حدود لاغرانج, fr: Polynôme de Lagrange, def: { en: 'Interpolating polynomial written as \(\sum_i y_i\,\ell_i(x)\) with \(\ell_i(x_j)=\delta_{ij}\).', ar: 'كثير الحدود الاستكمالي المكتوب على الشكل \(\sum_i y_i\,\ell_i(x)\) حيث \(\ell_i(x_j)=\delta_{ij}\).' } }
+  - { en: Finite difference, ar: الفروق المنتهية, fr: Différences finies, def: { en: Approximation of derivatives by differences of function values at nearby points., ar: تقريب المشتقات بفروق بين قيم الدالة عند نقاط متجاورة. } }
+  - { en: Gauss elimination, ar: طريقة غاوس للحذف, fr: Méthode d'élimination de Gauss, def: { en: Reduction of a linear system to upper-triangular form followed by back substitution., ar: تحويل جملة خطية إلى شكل مثلثي علوي ثم حلها بالتعويض التراجعي. } }
+  - { en: Pivoting, ar: الارتكاز, fr: Pivotage, def: { en: Row (and column) exchanges choosing a large pivot to avoid division by small numbers., ar: تبديل الأسطر (والأعمدة) لاختيار ارتكاز كبير وتجنّب القسمة على أعداد صغيرة. } }
+  - { en: LU decomposition, ar: تفكيك LU, fr: Décomposition LU, def: { en: 'Factorisation \(A=LU\) into lower- and upper-triangular matrices.', ar: 'تحليل \(A=LU\) إلى جداء مصفوفة مثلثية سفلية ومصفوفة مثلثية علوية.' } }
+  - { en: Gauss–Seidel method, ar: طريقة غاوس-زايدل, fr: Méthode de Gauss-Seidel, def: { en: Iterative solver that updates each unknown using the most recent values of the others., ar: طريقة تكرارية تحدّث كل مجهول باستعمال أحدث قيم المجاهيل الأخرى. } }
+  - { en: Diagonal dominance, ar: الهيمنة القطرية, fr: Dominance diagonale, def: { en: '\(|a_{ii}|>\sum_{j\neq i}|a_{ij}|\) for every row; a sufficient condition for Jacobi/Gauss–Seidel convergence.', ar: '\(|a_{ii}|>\sum_{j\neq i}|a_{ij}|\) في كل سطر، وهو شرط كافٍ لتقارب جاكوبي وغاوس-زايدل.' } }
+  - { en: Euler method, ar: طريقة أويلر, fr: Méthode d'Euler, def: { en: '\(y_{n+1}=y_n+hf(t_n,y_n)\); first-order ODE integrator.', ar: '\(y_{n+1}=y_n+hf(t_n,y_n)\)، طريقة مكاملة من الرتبة الأولى.' } }
+  - { en: Runge–Kutta method, ar: طريقة رونغه-كوتا, fr: Méthode de Runge-Kutta, def: { en: One-step method combining several slope evaluations per step; RK4 is fourth order., ar: طريقة ذات خطوة واحدة تجمع عدة حسابات للميل في كل خطوة، وRK4 من الرتبة الرابعة. } }
+  - { en: Step size, ar: الخطوة, fr: Pas, def: { en: 'The increment \(h\) of the discretisation; it controls both accuracy and cost.', ar: 'مقدار \(h\) في التقطيع، وهو يتحكم في الدقة والكلفة معًا.' } }
+  - { en: Stability, ar: الاستقرار, fr: Stabilité, def: { en: Property of a method whose errors do not grow without bound from step to step., ar: خاصية طريقة لا تتضخم أخطاؤها بلا حدود من خطوة إلى أخرى. } }
+  - { en: Residual, ar: الباقي, fr: Résidu, def: { en: '\(\vb r=\vb b-A\tilde{\vb x}\); it measures how well an approximate solution satisfies the system.', ar: '\(\vb r=\vb b-A\tilde{\vb x}\)، ويقيس مدى تحقيق الحل التقريبي للجملة.' } }

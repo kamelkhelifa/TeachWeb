@@ -1,0 +1,809 @@
+slug: particle-physics
+order: 150
+codes: [PHYS 7001]
+short: { en: PP, ar: ف.ج }
+title: { en: Particle Physics, ar: فيزياء الجسيمات }
+tagline:
+  en: Quarks, leptons and the forces between them — the Standard Model from Dirac to Higgs.
+  ar: الكواركات واللبتونات والقوى بينها — النموذج القياسي من ديراك إلى هيغز.
+area: modern
+level: 5
+credits: 3
+hours: { lecture: 3, tutorial: 1, lab: 0 }
+weeks: 14
+instruction: [en]
+prerequisites: [quantum-mechanics-2]
+prerequisite_note:
+  en: 'Quantum mechanics (angular momentum, spin, perturbation theory, Fermi''s golden rule), special relativity with four-vectors, and classical electromagnetism (Maxwell''s equations, potentials).'
+  ar: 'ميكانيكا الكم (الزخم الزاوي، السبين، نظرية الاضطراب، قاعدة فيرمي الذهبية)، والنسبية الخاصة بالمتجهات الرباعية، والكهرومغناطيسية الكلاسيكية (معادلات ماكسويل، الكمونات).'
+sims: [particles]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/usthb/particle-physics/
+notes: >
+  The source page is very thin: a one-session-per-week, mostly qualitative introduction (introduction,
+  interactions, conservation laws; partly an English/LaTeX course) with a 100% final exam. Only the
+  final and resit papers + solutions (2013-2014) are real material and are preserved; the two marks
+  files (student grades, .xls/.pdf) were not linked, nor the internal 'Physicist's Toolkit' post.
+  Everything else - description, 14-week Master-level syllabus (Thomson 'Modern Particle Physics' /
+  Griffiths 'Elementary Particles'), hours, CLOs, assessment, quizzes, worked problems, glossary,
+  online resources (PDG, CERN Open Data, Particle Adventure: well-known URLs, not from the source) -
+  is reconstructed. Note the preserved exams match the older qualitative version, so they are easier
+  than the reconstructed syllabus.
+
+description:
+  en: |
+    <p>This Master-level course is an introduction to the Standard Model of particle physics, the theory that describes all known elementary particles — six quarks, six leptons, the gauge bosons and the Higgs boson — and three of the four fundamental interactions. It combines a clear qualitative picture of the subatomic world (particles, forces, conservation laws, the quark model) with the quantitative tools used in modern research: relativistic kinematics, decay rates and cross-sections, the Dirac equation and Feynman diagrams.</p>
+    <p>After the foundations, the course develops quantum electrodynamics through the calculation of \(e^+e^-\to\mu^+\mu^-\), probes the structure of the proton with elastic and deep-inelastic scattering, and introduces quantum chromodynamics, colour confinement and asymptotic freedom. The second half is devoted to the weak interaction (parity violation, the V−A structure, the CKM matrix), neutrino oscillations, electroweak unification and the Higgs mechanism, ending with the experimental tests of the Standard Model and the open questions beyond it.</p>
+    <p>Lectures are complemented by tutorials, problem sets based on real data from the Particle Data Group, and a small project on a landmark measurement. The interactive Standard Model table on this page can be used throughout to explore particle properties.</p>
+  ar: |
+    <p>هذا المقرر، على مستوى الماستر، مدخل إلى النموذج القياسي لفيزياء الجسيمات، وهو النظرية التي تصف كل الجسيمات الأولية المعروفة — الكواركات الستة، واللبتونات الستة، والبوزونات المعيارية، وبوزون هيغز — وثلاثًا من التفاعلات الأساسية الأربعة. ويجمع المقرر بين صورة نوعية واضحة للعالم دون الذري (الجسيمات، القوى، قوانين الانحفاظ، نموذج الكواركات) والأدوات الكمية المستعملة في البحث الحديث: الحركيات النسبية، ومعدلات الاضمحلال والمقاطع العرضية، ومعادلة ديراك، ومخططات فاينمان.</p>
+    <p>بعد الأسس، يطوّر المقرر الكهروديناميكا الكمومية من خلال حساب \(e^+e^-\to\mu^+\mu^-\)، ويستكشف بنية البروتون بالاستطارة المرنة والاستطارة العميقة غير المرنة، ويقدّم الكروموديناميكا الكمومية والحصر اللوني والحرية التقاربية. ويُخصَّص النصف الثاني للتفاعل الضعيف (انتهاك الزوجية، بنية V−A، مصفوفة CKM)، وتذبذبات النيوترينو، والتوحيد الكهروضعيف وآلية هيغز، لينتهي بالاختبارات التجريبية للنموذج القياسي والأسئلة المفتوحة فيما وراءه.</p>
+    <p>تُستكمل المحاضرات بحصص أعمال موجهة، وسلاسل تمارين مبنية على بيانات حقيقية من مجموعة بيانات الجسيمات (PDG)، ومشروع صغير حول قياس تاريخي. ويمكن استعمال جدول النموذج القياسي التفاعلي في هذه الصفحة طوال المقرر لاستكشاف خصائص الجسيمات.</p>
+
+topics:
+  - { en: Relativistic kinematics, ar: الحركيات النسبية }
+  - { en: Symmetries & conservation laws, ar: التناظرات وقوانين الانحفاظ }
+  - { en: The quark model, ar: نموذج الكواركات }
+  - { en: Dirac equation, ar: معادلة ديراك }
+  - { en: QED & Feynman rules, ar: الكهروديناميكا الكمومية وقواعد فاينمان }
+  - { en: QCD & deep inelastic scattering, ar: الكروموديناميكا الكمومية والاستطارة العميقة غير المرنة }
+  - { en: Weak interaction & CKM, ar: التفاعل الضعيف ومصفوفة CKM }
+  - { en: Neutrino oscillations, ar: تذبذبات النيوترينو }
+  - { en: Electroweak unification & Higgs, ar: التوحيد الكهروضعيف وبوزون هيغز }
+
+outcomes:
+  - id: CLO1
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Describe the particle content and interactions of the Standard Model and use conservation laws (energy–momentum, charge, baryon and lepton numbers, strangeness, parity) to decide whether a process is allowed and by which interaction.
+      ar: يصف محتوى النموذج القياسي من الجسيمات وتفاعلاتها، ويستعمل قوانين الانحفاظ (الطاقة-الزخم، الشحنة، العددين الباريوني واللبتوني، الغرابة، الزوجية) للحكم على إمكان حدوث عملية ما وتحديد التفاعل المسؤول عنها.
+    assessed_by: [homework, midterm, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: Apply relativistic kinematics (four-vectors, invariant mass, thresholds, two-body decays) and Fermi's golden rule to compute decay rates and cross-sections.
+      ar: يطبّق الحركيات النسبية (المتجهات الرباعية، الكتلة اللامتغيرة، العتبات، الاضمحلال إلى جسيمين) وقاعدة فيرمي الذهبية لحساب معدلات الاضمحلال والمقاطع العرضية.
+    assessed_by: [homework, midterm, final]
+  - id: CLO3
+    bloom: apply
+    domain: knowledge
+    text:
+      en: Construct meson and baryon multiplets in the quark model and explain the role of colour.
+      ar: يبني متعددات الميزونات والباريونات في نموذج الكواركات، ويشرح دور الشحنة اللونية.
+    assessed_by: [homework, midterm, final]
+  - id: CLO4
+    bloom: apply
+    domain: skills
+    text:
+      en: Solve the free Dirac equation, apply Feynman rules to lowest-order QED processes and compute spin-averaged matrix elements such as that of \(e^+e^-\to\mu^+\mu^-\).
+      ar: يحل معادلة ديراك الحرة، ويطبّق قواعد فاينمان على عمليات الكهروديناميكا الكمومية في أدنى رتبة، ويحسب العناصر المصفوفية المتوسطة على السبين مثل عنصر \(e^+e^-\to\mu^+\mu^-\).
+    assessed_by: [homework, midterm, final]
+  - id: CLO5
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Analyse experimental evidence for quarks and gluons (deep inelastic scattering, R-ratio, jets) and explain asymptotic freedom and confinement in QCD.
+      ar: يحلّل الأدلة التجريبية على الكواركات والغلوونات (الاستطارة العميقة غير المرنة، النسبة R، النفاثات)، ويشرح الحرية التقاربية والحصر في الكروموديناميكا الكمومية.
+    assessed_by: [homework, project, final]
+  - id: CLO6
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Explain the V−A structure of the weak interaction, quark mixing, neutrino oscillations and the Higgs mechanism of electroweak symmetry breaking, and relate them to measured masses and mixing parameters.
+      ar: يشرح بنية V−A للتفاعل الضعيف، وخلط الكواركات، وتذبذبات النيوترينو، وآلية هيغز لكسر التناظر الكهروضعيف، ويربطها بالكتل ومعاملات الخلط المقيسة.
+    assessed_by: [homework, presentation, final]
+  - id: CLO7
+    bloom: evaluate
+    domain: values
+    text:
+      en: Critically read, summarise and present a landmark particle-physics measurement using primary sources and PDG data, with correct attribution.
+      ar: يقرأ قياسًا تاريخيًا في فيزياء الجسيمات قراءة نقدية، ويلخّصه ويعرضه مستعينًا بالمصادر الأصلية وبيانات PDG، مع نسبة الأعمال إلى أصحابها بشكل صحيح.
+    assessed_by: [project, presentation, participation]
+
+assessment:
+  - id: homework
+    type: homework
+    weight: 15
+    title: { en: Problem sets, ar: سلاسل التمارين }
+    detail:
+      en: Six fortnightly problem sets combining analytic calculations with look-ups and estimates from PDG data. Discussed in tutorials.
+      ar: ست سلاسل تمارين كل أسبوعين تجمع بين الحسابات التحليلية واستخراج المعطيات والتقديرات من بيانات PDG. تُناقش في حصص الأعمال الموجهة.
+    when: { en: Weeks 2–13, ar: الأسابيع 2–13 }
+  - id: midterm
+    type: midterm
+    weight: 20
+    title: { en: Mid-term exam, ar: الاختبار النصفي }
+    detail:
+      en: 'Ninety minutes: kinematics, conservation laws, quark model, Dirac equation.'
+      ar: 'تسعون دقيقة: الحركيات، قوانين الانحفاظ، نموذج الكواركات، معادلة ديراك.'
+    when: { en: Week 7, ar: الأسبوع 7 }
+  - id: project
+    type: project
+    weight: 10
+    title: { en: Mini-project, ar: مشروع مصغّر }
+    detail:
+      en: 'A short written study (4–6 pages) of a key measurement — e.g. the discovery of the W and Z, the R-ratio, the top quark, neutrino oscillations or the Higgs boson — or a simple analysis of a public dataset (invariant-mass peak).'
+      ar: 'دراسة مكتوبة قصيرة (4–6 صفحات) لقياس محوري — مثل اكتشاف W وZ، أو النسبة R، أو كوارك القمة، أو تذبذبات النيوترينو، أو بوزون هيغز — أو تحليل بسيط لمجموعة بيانات عامة (قمة الكتلة اللامتغيرة).'
+    when: { en: Due week 12, ar: يُسلَّم في الأسبوع 12 }
+  - id: presentation
+    type: presentation
+    weight: 10
+    title: { en: Seminar presentation, ar: عرض في حلقة نقاش }
+    detail:
+      en: A 15-minute presentation of the mini-project followed by questions.
+      ar: عرض مدته 15 دقيقة للمشروع المصغّر تليه أسئلة.
+    when: { en: Weeks 13–14, ar: الأسبوعان 13–14 }
+  - id: participation
+    type: participation
+    weight: 5
+    title: { en: Tutorial participation, ar: المشاركة في الأعمال الموجهة }
+    detail:
+      en: Preparation and discussion of tutorial problems.
+      ar: تحضير مسائل الأعمال الموجهة ومناقشتها.
+    when: { en: Throughout, ar: طوال الفصل }
+  - id: final
+    type: final
+    weight: 40
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail:
+      en: Two-hour written exam with a short conceptual section and four or five problems covering the whole course.
+      ar: اختبار كتابي مدته ساعتان، فيه قسم مفاهيمي قصير وأربع أو خمس مسائل تغطي المقرر كله.
+    when: { en: Final exam period, ar: فترة الاختبارات النهائية }
+
+schedule:
+  - week: 1
+    title: { en: Introduction to the Standard Model, ar: مدخل إلى النموذج القياسي }
+    topics:
+      en:
+        - Quarks, leptons and gauge bosons
+        - The four fundamental interactions; Feynman diagrams (qualitative)
+        - Natural units; experimental methods (accelerators and detectors)
+      ar:
+        - الكواركات واللبتونات والبوزونات المعيارية
+        - التفاعلات الأساسية الأربعة؛ مخططات فاينمان (وصفيًا)
+        - الوحدات الطبيعية؛ الطرق التجريبية (المسرّعات والكواشف)
+    reading: Thomson ch. 1; Griffiths ch. 1–2
+  - week: 2
+    title: { en: Relativistic kinematics, ar: الحركيات النسبية }
+    topics:
+      en:
+        - Four-vectors and Lorentz invariants
+        - Invariant mass; production thresholds
+        - Two-body decays; Mandelstam variables
+      ar:
+        - المتجهات الرباعية واللامتغيرات اللورنتزية
+        - الكتلة اللامتغيرة؛ عتبات الإنتاج
+        - الاضمحلال إلى جسيمين؛ متغيرات ماندلستام
+    reading: Thomson §2.1–2.3; Griffiths ch. 3
+    activity: { en: Problem set 1, ar: السلسلة 1 }
+  - week: 3
+    title: { en: Decay rates and cross-sections, ar: معدلات الاضمحلال والمقاطع العرضية }
+    topics:
+      en:
+        - Fermi's golden rule; Lorentz-invariant phase space
+        - Decay widths, lifetimes and branching ratios
+        - Cross-sections and luminosity
+      ar:
+        - قاعدة فيرمي الذهبية؛ فضاء الطور اللامتغير لورنتزيًا
+        - عروض الاضمحلال والأعمار ونسب التفرّع
+        - المقاطع العرضية واللمعان
+    reading: Thomson ch. 3; Griffiths §6.1–6.2
+  - week: 4
+    title: { en: Symmetries and conservation laws, ar: التناظرات وقوانين الانحفاظ }
+    topics:
+      en:
+        - Symmetries and conserved quantities (Noether)
+        - Baryon and lepton numbers; strangeness
+        - 'Parity, charge conjugation and time reversal'
+        - Isospin
+      ar:
+        - التناظرات والمقادير المنحفظة (نوثر)
+        - العددان الباريوني واللبتوني؛ الغرابة
+        - 'الزوجية، ومرافقة الشحنة، وانعكاس الزمن'
+        - اللف النظائري (الإيزوسبين)
+    reading: Griffiths ch. 4; Thomson §9.1
+    activity: { en: Problem set 2, ar: السلسلة 2 }
+  - week: 5
+    title: { en: The quark model, ar: نموذج الكواركات }
+    topics:
+      en:
+        - SU(3) flavour symmetry; the eightfold way
+        - Meson nonets and baryon octet/decuplet
+        - Colour; hadron wavefunctions and magnetic moments
+      ar:
+        - تناظر النكهة SU(3)؛ الطريق الثماني
+        - تساعيات الميزونات وثمانيات/عشاريات الباريونات
+        - اللون؛ الدوال الموجية للهادرونات وعزومها المغناطيسية
+    reading: Thomson ch. 9; Griffiths §5.5–5.6
+  - week: 6
+    title: { en: The Dirac equation, ar: معادلة ديراك }
+    topics:
+      en:
+        - Klein–Gordon equation and its problems
+        - Dirac equation; gamma matrices
+        - Free-particle spinors; antiparticles
+        - Helicity and chirality
+      ar:
+        - معادلة كلاين-غوردون ومشكلاتها
+        - معادلة ديراك؛ مصفوفات غاما
+        - سبينورات الجسيم الحر؛ الجسيمات المضادة
+        - الهيليسية والكيرالية
+    reading: Thomson ch. 4; Griffiths §7.1–7.4
+    activity: { en: Problem set 3, ar: السلسلة 3 }
+  - week: 7
+    title: { en: Interaction by particle exchange, ar: التفاعل بتبادل الجسيمات }
+    topics:
+      en:
+        - Propagators and virtual particles
+        - Feynman rules for QED
+        - Mid-term exam
+      ar:
+        - المنتشرات والجسيمات الافتراضية
+        - قواعد فاينمان للكهروديناميكا الكمومية
+        - الاختبار النصفي
+    reading: Thomson ch. 5; Griffiths §6.3, §7.5
+    milestone: midterm
+  - week: 8
+    title: { en: Quantum electrodynamics, ar: الكهروديناميكا الكمومية }
+    topics:
+      en:
+        - 'Electron–positron annihilation \(e^+e^-\to\mu^+\mu^-\)'
+        - Spin sums and trace techniques
+        - Angular distribution and total cross-section
+      ar:
+        - 'فناء الإلكترون-البوزيترون \(e^+e^-\to\mu^+\mu^-\)'
+        - مجاميع السبين وتقنيات الأثر
+        - التوزيع الزاوي والمقطع العرضي الكلي
+    reading: Thomson ch. 6; Griffiths §7.6–7.8
+    activity: { en: Problem set 4, ar: السلسلة 4 }
+  - week: 9
+    title: { en: Probing the proton, ar: سبر البروتون }
+    topics:
+      en:
+        - Elastic electron–proton scattering; form factors
+        - Deep inelastic scattering; Bjorken scaling
+        - Parton model and parton distribution functions
+      ar:
+        - الاستطارة المرنة إلكترون-بروتون؛ عوامل الشكل
+        - الاستطارة العميقة غير المرنة؛ تدرّج بيوركن
+        - النموذج البارتوني ودوال توزيع البارتونات
+    reading: Thomson ch. 7–8
+  - week: 10
+    title: { en: Quantum chromodynamics, ar: الكروموديناميكا الكمومية }
+    topics:
+      en:
+        - Colour SU(3) and gluons
+        - Running coupling; asymptotic freedom; confinement
+        - 'Jets and the R-ratio in \(e^+e^-\) annihilation'
+      ar:
+        - الزمرة اللونية SU(3) والغلوونات
+        - ثابت الاقتران الجاري؛ الحرية التقاربية؛ الحصر
+        - 'النفاثات والنسبة R في فناء \(e^+e^-\)'
+    reading: Thomson ch. 10; Griffiths ch. 8
+    activity: { en: Problem set 5, ar: السلسلة 5 }
+  - week: 11
+    title: { en: The weak interaction, ar: التفاعل الضعيف }
+    topics:
+      en:
+        - Parity violation; the V−A structure
+        - Muon decay and pion decay; helicity suppression
+        - Quark mixing; the CKM matrix and CP violation
+      ar:
+        - انتهاك الزوجية؛ بنية V−A
+        - اضمحلال الميون واضمحلال البيون؛ الكبت الهيليسي
+        - خلط الكواركات؛ مصفوفة CKM وانتهاك CP
+    reading: Thomson ch. 11–12, 14; Griffiths ch. 9
+  - week: 12
+    title: { en: Neutrino physics, ar: فيزياء النيوترينو }
+    topics:
+      en:
+        - Neutrino flavours and mass states; the PMNS matrix
+        - Two-flavour oscillation formula
+        - Solar, atmospheric and reactor experiments
+      ar:
+        - نكهات النيوترينو وحالاته الكتلية؛ مصفوفة PMNS
+        - صيغة التذبذب لنكهتين
+        - التجارب الشمسية والجوية والمفاعلات
+    reading: Thomson ch. 13; Griffiths ch. 11
+    activity: { en: Problem set 6; mini-project due, ar: السلسلة 6؛ تسليم المشروع المصغّر }
+    milestone: project
+  - week: 13
+    title: { en: Electroweak unification and the Higgs boson, ar: التوحيد الكهروضعيف وبوزون هيغز }
+    topics:
+      en:
+        - 'SU(2)\(_L\)×U(1)\(_Y\); W and Z bosons; the weak mixing angle'
+        - Gauge invariance and the Higgs mechanism
+        - Discovery and properties of the Higgs boson
+        - Seminar presentations
+      ar:
+        - 'SU(2)\(_L\)×U(1)\(_Y\)؛ البوزونان W وZ؛ زاوية الخلط الضعيفة'
+        - اللاتغير المعياري وآلية هيغز
+        - اكتشاف بوزون هيغز وخصائصه
+        - عروض حلقات النقاش
+    reading: Thomson ch. 15, 17; Griffiths ch. 10
+  - week: 14
+    title: { en: Testing the Standard Model and beyond, ar: اختبار النموذج القياسي وما وراءه }
+    topics:
+      en:
+        - Precision tests at the Z pole; number of light neutrinos
+        - Open questions — neutrino masses, dark matter, matter–antimatter asymmetry
+        - Seminar presentations; course review
+      ar:
+        - الاختبارات الدقيقة عند قطب Z؛ عدد النيوترينوات الخفيفة
+        - 'أسئلة مفتوحة: كتل النيوترينوات، المادة المظلمة، اللاتناظر بين المادة والمادة المضادة'
+        - عروض حلقات النقاش؛ مراجعة المقرر
+    reading: Thomson ch. 16, 18
+    milestone: review
+
+materials: []
+
+exams:
+  - title: { en: Final exam, ar: الاختبار النهائي }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/01/exam_s7.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/01/exam_soln_s71.pdf
+    lang: en
+  - title: { en: Resit exam, ar: الاختبار الاستدراكي }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/02/exam_resit.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/02/exam_resit_soln.pdf
+    lang: en
+
+exam_guide:
+  format:
+    en: A 90-minute mid-term and a two-hour final. Each paper opens with short conceptual questions (allowed or forbidden processes, quark content, Feynman diagrams) followed by multi-part problems on kinematics, cross-sections and decay rates, and the weak and electroweak sectors.
+    ar: اختبار نصفي مدته 90 دقيقة واختبار نهائي مدته ساعتان. تبدأ كل ورقة بأسئلة مفاهيمية قصيرة (عمليات مسموحة أو ممنوعة، المحتوى الكواركي، مخططات فاينمان) تليها مسائل متعددة الأجزاء حول الحركيات، والمقاطع العرضية ومعدلات الاضمحلال، والقطاعين الضعيف والكهروضعيف.
+  allowed:
+    en: A scientific calculator. A data sheet with particle masses, lifetimes, coupling constants and the main Feynman rules is provided.
+    ar: آلة حاسبة علمية. تُوفَّر ورقة معطيات فيها كتل الجسيمات وأعمارها وثوابت الاقتران وأهم قواعد فاينمان.
+  tips:
+    - en: 'For kinematics, write everything with four-vectors and evaluate the invariant \(s = (p_1+p_2)^2\) in the most convenient frame.'
+      ar: 'في مسائل الحركيات، اكتب كل شيء بالمتجهات الرباعية واحسب اللامتغير \(s = (p_1+p_2)^2\) في أنسب إطار مرجعي.'
+    - en: 'To decide whether a process is allowed, check in order: energy, charge, baryon number, each lepton number, then the quantities conserved only by strong/EM interactions (strangeness, parity).'
+      ar: 'للحكم على إمكان حدوث عملية، تحقّق بالترتيب من: الطاقة، الشحنة، العدد الباريوني، كل عدد لبتوني، ثم المقادير التي لا تنحفظ إلا في التفاعلين القوي والكهرومغناطيسي (الغرابة، الزوجية).'
+    - en: 'Use \(\hbar c = 197.3\) MeV·fm and \((\hbar c)^2 = 0.3894\) mb·GeV² to convert natural units to lengths and cross-sections.'
+      ar: 'استعمل \(\hbar c = 197.3\) MeV·fm و\((\hbar c)^2 = 0.3894\) mb·GeV² للتحويل من الوحدات الطبيعية إلى الأطوال والمقاطع العرضية.'
+    - en: Draw the Feynman diagram first; counting vertices tells you immediately how a rate scales with the coupling constants.
+      ar: ارسم مخطط فاينمان أولًا؛ فعدّ الرؤوس يخبرك مباشرة كيف يتغير المعدل مع ثوابت الاقتران.
+
+problems:
+  - title: { en: Conservation laws, ar: قوانين الانحفاظ }
+    difficulty: 1
+    statement:
+      en: |
+        For each process, state whether it is allowed. If it is forbidden, name a conservation law it violates; if it is allowed, name the interaction responsible.
+        (a) \(p \to e^+ + \pi^0\)  (b) \(\mu^- \to e^- + \gamma\)  (c) \(\Lambda \to p + \pi^-\)  (d) \(\pi^0 \to \gamma + \gamma\)  (e) \(n \to p + e^- + \nu_e\)  (f) \(\pi^- + p \to K^0 + \Lambda\)
+      ar: |
+        حدِّد لكل عملية ما إذا كانت مسموحة. إذا كانت ممنوعة فاذكر قانون انحفاظ تنتهكه، وإذا كانت مسموحة فاذكر التفاعل المسؤول عنها.
+        (أ) \(p \to e^+ + \pi^0\)  (ب) \(\mu^- \to e^- + \gamma\)  (ج) \(\Lambda \to p + \pi^-\)  (د) \(\pi^0 \to \gamma + \gamma\)  (هـ) \(n \to p + e^- + \nu_e\)  (و) \(\pi^- + p \to K^0 + \Lambda\)
+    hint:
+      en: 'Λ = uds and K⁰ = d s̄. Strangeness is conserved by strong and EM interactions only.'
+      ar: 'Λ = uds وK⁰ = d s̄. لا تنحفظ الغرابة إلا في التفاعلين القوي والكهرومغناطيسي.'
+    solution:
+      en: |
+        (a) Forbidden: baryon number \(1 \to 0\) (the proton is stable, \(\tau > 10^{34}\) y).
+        (b) Forbidden: electron and muon lepton numbers are separately violated (\(L_\mu: 1\to0\), \(L_e: 0\to1\)); never observed.
+        (c) Allowed, <strong>weak</strong>: strangeness changes by one unit (\(S=-1 \to 0\)); hence the long lifetime \(2.6\times10^{-10}\) s.
+        (d) Allowed, <strong>electromagnetic</strong> (\(\tau \approx 8.5\times10^{-17}\) s).
+        (e) Forbidden: lepton number \(0 \to 2\). The correct decay emits an antineutrino, \(n\to p\,e^-\bar\nu_e\).
+        (f) Allowed, <strong>strong</strong>: \(S\): \(0+0 \to (+1)+(-1) = 0\), charge \(-1+1 = 0\), baryon number \(1 \to 1\). This "associated production" of strange particles was a key clue to strangeness.
+      ar: |
+        (أ) ممنوعة: العدد الباريوني \(1 \to 0\) (البروتون مستقر، \(\tau > 10^{34}\) سنة).
+        (ب) ممنوعة: ينتهك العددين اللبتونيين الإلكتروني والميوني كلًّا على حدة (\(L_\mu: 1\to0\)، \(L_e: 0\to1\))؛ ولم تُرصد قط.
+        (ج) مسموحة، بالتفاعل <strong>الضعيف</strong>: تتغير الغرابة بوحدة واحدة (\(S=-1 \to 0\))؛ ومن هنا العمر الطويل \(2.6\times10^{-10}\) s.
+        (د) مسموحة، بالتفاعل <strong>الكهرومغناطيسي</strong> (\(\tau \approx 8.5\times10^{-17}\) s).
+        (هـ) ممنوعة: العدد اللبتوني \(0 \to 2\). والاضمحلال الصحيح يُطلق ضديد نيوترينو: \(n\to p\,e^-\bar\nu_e\).
+        (و) مسموحة، بالتفاعل <strong>القوي</strong>: \(S\): \(0+0 \to (+1)+(-1) = 0\)، والشحنة \(-1+1 = 0\)، والعدد الباريوني \(1 \to 1\). وكان هذا «الإنتاج المترافق» للجسيمات الغريبة مفتاحًا لاكتشاف الغرابة.
+  - title: { en: Antiproton production threshold, ar: عتبة إنتاج البروتون المضاد }
+    difficulty: 1
+    statement:
+      en: |
+        Antiprotons are produced in the reaction \(p + p \to p + p + p + \bar p\), with a proton beam striking protons at rest. Find the minimum (threshold) kinetic energy of the beam proton (\(m_pc^2 = 938.3\) MeV).
+      ar: |
+        تُنتَج البروتونات المضادة في التفاعل \(p + p \to p + p + p + \bar p\)، بقذف بروتونات ساكنة بحزمة من البروتونات. أوجد الطاقة الحركية الدنيا (العتبة) لبروتون الحزمة (\(m_pc^2 = 938.3\) MeV).
+    hint:
+      en: 'Compute the invariant \(s\) in the lab frame and in the centre-of-mass frame at threshold, where all final particles are at rest.'
+      ar: 'احسب اللامتغير \(s\) في إطار المختبر وفي إطار مركز الكتلة عند العتبة، حيث تكون كل الجسيمات النهائية ساكنة.'
+    solution:
+      en: |
+        In natural units, lab frame: \(s = (E+m)^2 - p^2 = 2m^2 + 2mE\). At threshold in the CM frame the four final particles are at rest: \(s = (4m)^2 = 16m^2\). Hence
+        \[ 2m^2 + 2mE = 16m^2 \Rightarrow E = 7m, \qquad T = E - m = 6\,m_pc^2 = 5.63\ \text{GeV}. \]
+        Only \(2m_pc^2\) of new mass is created, yet the beam needs \(6m_pc^2\) of kinetic energy, because most of it goes into the motion of the centre of mass. The Bevatron was designed for this energy, and the antiproton was discovered there in 1955. Colliders avoid this penalty.
+      ar: |
+        في الوحدات الطبيعية وفي إطار المختبر: \(s = (E+m)^2 - p^2 = 2m^2 + 2mE\). وعند العتبة في إطار مركز الكتلة تكون الجسيمات النهائية الأربعة ساكنة: \(s = (4m)^2 = 16m^2\). إذن
+        \[ 2m^2 + 2mE = 16m^2 \Rightarrow E = 7m, \qquad T = E - m = 6\,m_pc^2 = 5.63\ \text{GeV}. \]
+        لا تُنشأ إلا كتلة جديدة قدرها \(2m_pc^2\)، ومع ذلك تحتاج الحزمة إلى طاقة حركية قدرها \(6m_pc^2\)، لأن معظمها يذهب في حركة مركز الكتلة. وقد صُمّم مسرّع البيفاترون لهذه الطاقة، واكتُشف فيه البروتون المضاد سنة 1955. أما المصادمات فتتجنّب هذا الهدر.
+  - title: { en: Charged-pion decay and helicity suppression, ar: اضمحلال البيون المشحون والكبت الهيليسي }
+    difficulty: 3
+    statement:
+      en: |
+        (a) A \(\pi^+\) at rest decays to \(\mu^+\nu_\mu\). Find the muon momentum and kinetic energy (\(m_\pi = 139.57\), \(m_\mu = 105.66\) MeV; neglect the neutrino mass).
+        (b) The V−A theory predicts
+        \[ \frac{\Gamma(\pi^+\to e^+\nu_e)}{\Gamma(\pi^+\to\mu^+\nu_\mu)} = \left(\frac{m_e}{m_\mu}\right)^2\left(\frac{m_\pi^2-m_e^2}{m_\pi^2-m_\mu^2}\right)^2. \]
+        Evaluate it and explain physically why the decay to the lighter electron is so strongly suppressed.
+      ar: |
+        (أ) يضمحل \(\pi^+\) ساكن إلى \(\mu^+\nu_\mu\). أوجد زخم الميون وطاقته الحركية (\(m_\pi = 139.57\) و\(m_\mu = 105.66\) MeV؛ أهمل كتلة النيوترينو).
+        (ب) تتنبأ نظرية V−A بأن
+        \[ \frac{\Gamma(\pi^+\to e^+\nu_e)}{\Gamma(\pi^+\to\mu^+\nu_\mu)} = \left(\frac{m_e}{m_\mu}\right)^2\left(\frac{m_\pi^2-m_e^2}{m_\pi^2-m_\mu^2}\right)^2. \]
+        احسب هذه النسبة، وفسّر فيزيائيًا لماذا يُكبت الاضمحلال إلى الإلكترون الأخف بهذه الشدة.
+    hint:
+      en: 'Two-body decay at rest: \(p^* = (m_\pi^2-m_\mu^2)/2m_\pi\). For (b), think about the spin of the pion and the helicities that the weak current imposes.'
+      ar: 'الاضمحلال إلى جسيمين في السكون: \(p^* = (m_\pi^2-m_\mu^2)/2m_\pi\). وفي (ب) فكّر في سبين البيون وفي الهيليسيات التي يفرضها التيار الضعيف.'
+    solution:
+      en: |
+        (a) Energy–momentum conservation gives
+        \[ p^* = \frac{m_\pi^2-m_\mu^2}{2m_\pi} = \frac{19479.8-11164.0}{279.14} = 29.8\ \text{MeV}/c, \qquad E_\mu = \frac{m_\pi^2+m_\mu^2}{2m_\pi} = 109.8\ \text{MeV}, \]
+        so \(T_\mu = E_\mu - m_\mu = 4.1\) MeV: a monoenergetic muon, the signature of a two-body decay.
+        (b) \((m_e/m_\mu)^2 = (0.511/105.66)^2 = 2.34\times10^{-5}\) and \(\left(\frac{19479.8}{8315.7}\right)^2 = 5.49\), so the ratio is \(1.28\times10^{-4}\) (measured: \(1.23\times10^{-4}\), the difference being radiative corrections).
+        Physics: the pion has spin 0, so the back-to-back leptons must have opposite spin projections along their common axis, i.e. the <em>same</em> helicity. The V−A current produces the neutrino left-handed, which forces the charged antilepton into a left-handed helicity state, whereas the current wants it right-handed. The amplitude for this "wrong" helicity is proportional to \(m_\ell/E_\ell\) — tiny for the electron. Phase space alone would favour the electron, yet the decay goes almost entirely to muons.
+      ar: |
+        (أ) يعطي انحفاظ الطاقة-الزخم
+        \[ p^* = \frac{m_\pi^2-m_\mu^2}{2m_\pi} = \frac{19479.8-11164.0}{279.14} = 29.8\ \text{MeV}/c, \qquad E_\mu = \frac{m_\pi^2+m_\mu^2}{2m_\pi} = 109.8\ \text{MeV}, \]
+        إذن \(T_\mu = E_\mu - m_\mu = 4.1\) MeV: ميون أحادي الطاقة، وهذه علامة الاضمحلال إلى جسيمين.
+        (ب) \((m_e/m_\mu)^2 = (0.511/105.66)^2 = 2.34\times10^{-5}\) و\(\left(\frac{19479.8}{8315.7}\right)^2 = 5.49\)، فالنسبة \(1.28\times10^{-4}\) (والقيمة المقيسة \(1.23\times10^{-4}\)، ويعود الفرق إلى التصحيحات الإشعاعية).
+        التفسير الفيزيائي: سبين البيون صفر، لذا يجب أن يكون للبتونين المنطلقين في اتجاهين متعاكسين إسقاطا سبين متعاكسان على محورهما المشترك، أي الهيليسية <em>نفسها</em>. ينتج تيار V−A النيوترينو يساري الهيليسية، فيُجبَر ضديد اللبتون المشحون على حالة هيليسية يسارية، بينما يفضّله التيار يمينيًا. وسعة هذه الهيليسية «الخاطئة» تتناسب مع \(m_\ell/E_\ell\)، وهي ضئيلة جدًا للإلكترون. ففضاء الطور وحده يفضّل الإلكترون، ومع ذلك يتم الاضمحلال كله تقريبًا إلى ميونات.
+  - title: { en: 'Muon pairs and the R-ratio', ar: 'أزواج الميونات والنسبة R' }
+    difficulty: 2
+    statement:
+      en: |
+        At lowest order in QED, and for \(\sqrt s \gg m_\mu\),
+        \[ \frac{d\sigma}{d\Omega}(e^+e^-\to\mu^+\mu^-) = \frac{\alpha^2}{4s}\left(1+\cos^2\theta\right). \]
+        (a) Derive the total cross-section and evaluate it in nb at \(\sqrt s = 10\) GeV.
+        (b) In the quark–parton picture, predict \(R = \sigma(e^+e^-\to\text{hadrons})/\sigma(e^+e^-\to\mu^+\mu^-)\) at this energy. What does the measured value \(R\approx 3.6\) tell us?
+      ar: |
+        في أدنى رتبة من الكهروديناميكا الكمومية، ومن أجل \(\sqrt s \gg m_\mu\):
+        \[ \frac{d\sigma}{d\Omega}(e^+e^-\to\mu^+\mu^-) = \frac{\alpha^2}{4s}\left(1+\cos^2\theta\right). \]
+        (أ) استنتج المقطع العرضي الكلي واحسبه بالنانوبارن عند \(\sqrt s = 10\) GeV.
+        (ب) في صورة الكواركات-البارتونات، تنبّأ بقيمة \(R = \sigma(e^+e^-\to\text{hadrons})/\sigma(e^+e^-\to\mu^+\mu^-)\) عند هذه الطاقة. ماذا تخبرنا القيمة المقيسة \(R\approx 3.6\)؟
+    hint:
+      en: '\(\int(1+\cos^2\theta)\,d\Omega = 16\pi/3\); \((\hbar c)^2 = 0.3894\ \text{mb·GeV}^2\). Quark pairs are produced like muon pairs, weighted by \(Q_q^2\) and by the number of colours.'
+      ar: '\(\int(1+\cos^2\theta)\,d\Omega = 16\pi/3\)؛ و\((\hbar c)^2 = 0.3894\ \text{mb·GeV}^2\). تُنتَج أزواج الكواركات كأزواج الميونات، مع ترجيح بـ \(Q_q^2\) وبعدد الألوان.'
+    solution:
+      en: |
+        (a)
+        \[ \sigma = \frac{\alpha^2}{4s}\cdot\frac{16\pi}{3} = \frac{4\pi\alpha^2}{3s} = \frac{86.8\ \text{nb·GeV}^2}{s}. \]
+        At \(s = 100\ \text{GeV}^2\): \(\sigma \approx 0.87\) nb.
+        (b) Above the \(b\bar b\) threshold and below \(t\bar t\), five quark flavours are accessible:
+        \[ R = N_c\sum_q Q_q^2 = 3\left(\tfrac49+\tfrac19+\tfrac19+\tfrac49+\tfrac19\right) = 3\times\frac{11}{9} = \frac{11}{3} \approx 3.67. \]
+        Without colour one would expect \(11/9 \approx 1.2\). The data (\(R\approx3.6\), slightly above \(11/3\) because of QCD corrections \(\propto 1+\alpha_s/\pi\)) is direct evidence that quarks come in three colours and have fractional charges.
+      ar: |
+        (أ)
+        \[ \sigma = \frac{\alpha^2}{4s}\cdot\frac{16\pi}{3} = \frac{4\pi\alpha^2}{3s} = \frac{86.8\ \text{nb·GeV}^2}{s}. \]
+        عند \(s = 100\ \text{GeV}^2\): \(\sigma \approx 0.87\) nb.
+        (ب) فوق عتبة \(b\bar b\) ودون عتبة \(t\bar t\) تكون خمس نكهات من الكواركات متاحة:
+        \[ R = N_c\sum_q Q_q^2 = 3\left(\tfrac49+\tfrac19+\tfrac19+\tfrac49+\tfrac19\right) = 3\times\frac{11}{9} = \frac{11}{3} \approx 3.67. \]
+        لولا اللون لتوقّعنا \(11/9 \approx 1.2\). والمعطيات التجريبية (\(R\approx3.6\)، أعلى قليلًا من \(11/3\) بسبب تصحيحات الكروموديناميكا الكمومية \(\propto 1+\alpha_s/\pi\)) دليل مباشر على أن للكواركات ثلاثة ألوان وشحنات كسرية.
+  - title: { en: Designing a neutrino-oscillation experiment, ar: تصميم تجربة لتذبذب النيوترينو }
+    difficulty: 2
+    statement:
+      en: |
+        In the two-flavour approximation,
+        \[ P(\nu_\mu\to\nu_\tau) = \sin^22\theta\,\sin^2\!\left(\frac{1.27\,\Delta m^2[\text{eV}^2]\,L[\text{km}]}{E[\text{GeV}]}\right). \]
+        (a) Show where the factor 1.27 comes from, starting from the phase \(\Delta m^2c^4L/(4\hbar cE)\).
+        (b) With \(\Delta m^2 = 2.5\times10^{-3}\ \text{eV}^2\), \(\sin^22\theta \approx 1\) and \(E = 1\) GeV, at what baseline is the first oscillation maximum?
+        (c) Explain why atmospheric \(\nu_\mu\) coming from below (through the Earth) are depleted while those from above are not.
+      ar: |
+        في تقريب النكهتين:
+        \[ P(\nu_\mu\to\nu_\tau) = \sin^22\theta\,\sin^2\!\left(\frac{1.27\,\Delta m^2[\text{eV}^2]\,L[\text{km}]}{E[\text{GeV}]}\right). \]
+        (أ) بيّن من أين يأتي العامل 1.27 انطلاقًا من الطور \(\Delta m^2c^4L/(4\hbar cE)\).
+        (ب) مع \(\Delta m^2 = 2.5\times10^{-3}\ \text{eV}^2\) و\(\sin^22\theta \approx 1\) و\(E = 1\) GeV، عند أي مسافة يقع أول حدّ أعظمي للتذبذب؟
+        (ج) فسّر لماذا تنقص نيوترينوات \(\nu_\mu\) الجوية الآتية من الأسفل (عبر الأرض) بينما لا تنقص الآتية من الأعلى.
+    hint:
+      en: '\(\hbar c = 1.973\times10^{-7}\ \text{eV·m}\). The first maximum is where the argument of the sine equals \(\pi/2\).'
+      ar: '\(\hbar c = 1.973\times10^{-7}\ \text{eV·m}\). يقع أول حدّ أعظمي حيث يساوي متغير الجيب \(\pi/2\).'
+    solution:
+      en: |
+        (a) With \(\Delta m^2c^4\) in eV², \(L\) in km and \(E\) in GeV:
+        \[ \frac{\Delta m^2c^4\,L}{4\hbar c\,E} = \frac{(\text{eV}^2)(10^3\ \text{m})}{4(1.973\times10^{-7}\ \text{eV·m})(10^9\ \text{eV})} = \frac{10^3}{789.3} = 1.267. \]
+        (b) \(1.27\,\Delta m^2L/E = \pi/2 \Rightarrow L = \dfrac{1.571}{1.27\times2.5\times10^{-3}}\ \text{km} \approx 495\ \text{km}\). Long-baseline experiments (a few hundred km for GeV beams) are built around this condition.
+        (c) Downward-going neutrinos travel \(L\sim 15\) km, so the phase is \(\ll 1\) and no oscillation occurs. Upward-going ones cross the Earth (\(L\sim 10^4\) km): the phase is large, the oscillations average out to \(P \approx \frac12\sin^22\theta \approx 0.5\), and about half of the \(\nu_\mu\) have turned into \(\nu_\tau\). This up–down asymmetry was the 1998 discovery of neutrino oscillations, proving that neutrinos have mass.
+      ar: |
+        (أ) مع \(\Delta m^2c^4\) بـ eV² و\(L\) بالكيلومتر و\(E\) بـ GeV:
+        \[ \frac{\Delta m^2c^4\,L}{4\hbar c\,E} = \frac{(\text{eV}^2)(10^3\ \text{m})}{4(1.973\times10^{-7}\ \text{eV·m})(10^9\ \text{eV})} = \frac{10^3}{789.3} = 1.267. \]
+        (ب) \(1.27\,\Delta m^2L/E = \pi/2 \Rightarrow L = \dfrac{1.571}{1.27\times2.5\times10^{-3}}\ \text{km} \approx 495\ \text{km}\). وعلى هذا الشرط تُبنى تجارب المسافة الطويلة (بضع مئات من الكيلومترات لحزم من رتبة GeV).
+        (ج) تقطع النيوترينوات النازلة \(L\sim 15\) km، فيكون الطور \(\ll 1\) ولا يحدث تذبذب. أما الصاعدة فتعبر الأرض (\(L\sim 10^4\) km): الطور كبير، ومتوسط التذبذبات \(P \approx \frac12\sin^22\theta \approx 0.5\)، فيتحول نحو نصف \(\nu_\mu\) إلى \(\nu_\tau\). وكان هذا اللاتناظر بين الأعلى والأسفل هو اكتشاف تذبذب النيوترينو سنة 1998، الذي أثبت أن للنيوترينوات كتلة.
+  - title: { en: Predicting the W and Z masses, ar: التنبؤ بكتلتي W وZ }
+    difficulty: 3
+    statement:
+      en: |
+        In the electroweak theory at tree level,
+        \[ \frac{G_F}{\sqrt2} = \frac{g_W^2}{8m_W^2}, \qquad e = g_W\sin\theta_W, \qquad m_Z = \frac{m_W}{\cos\theta_W}. \]
+        (a) Show that \(m_W = \left(\dfrac{\pi\alpha}{\sqrt2\,G_F}\right)^{1/2}\dfrac{1}{\sin\theta_W}\).
+        (b) Evaluate \(m_W\) and \(m_Z\) with \(G_F = 1.166\times10^{-5}\ \text{GeV}^{-2}\), \(\sin^2\theta_W = 0.231\), first with \(\alpha = 1/137\) and then with \(\alpha(m_Z) = 1/128\). Compare with the measured \(m_W = 80.4\) GeV and \(m_Z = 91.2\) GeV.
+      ar: |
+        في النظرية الكهروضعيفة وفي أدنى رتبة:
+        \[ \frac{G_F}{\sqrt2} = \frac{g_W^2}{8m_W^2}, \qquad e = g_W\sin\theta_W, \qquad m_Z = \frac{m_W}{\cos\theta_W}. \]
+        (أ) بيّن أن \(m_W = \left(\dfrac{\pi\alpha}{\sqrt2\,G_F}\right)^{1/2}\dfrac{1}{\sin\theta_W}\).
+        (ب) احسب \(m_W\) و\(m_Z\) مع \(G_F = 1.166\times10^{-5}\ \text{GeV}^{-2}\) و\(\sin^2\theta_W = 0.231\)، أولًا باستعمال \(\alpha = 1/137\) ثم باستعمال \(\alpha(m_Z) = 1/128\). قارن بالقيمتين المقيستين \(m_W = 80.4\) GeV و\(m_Z = 91.2\) GeV.
+    hint:
+      en: 'In natural (Heaviside–Lorentz) units \(e^2 = 4\pi\alpha\).'
+      ar: 'في الوحدات الطبيعية (هيفيسايد-لورنتز) \(e^2 = 4\pi\alpha\).'
+    solution:
+      en: |
+        (a) \(g_W^2 = e^2/\sin^2\theta_W = 4\pi\alpha/\sin^2\theta_W\), so
+        \[ m_W^2 = \frac{\sqrt2\,g_W^2}{8G_F} = \frac{\sqrt2\cdot4\pi\alpha}{8G_F\sin^2\theta_W} = \frac{\pi\alpha}{\sqrt2\,G_F\sin^2\theta_W}. \]
+        (b) With \(\alpha = 1/137\): \(\left(\pi\alpha/\sqrt2G_F\right)^{1/2} = (1390\ \text{GeV}^2)^{1/2} = 37.3\) GeV, so \(m_W = 37.3/0.4806 = 77.6\) GeV and \(m_Z = 77.6/0.877 = 88.5\) GeV.
+        With \(\alpha(m_Z) = 1/128\): \((1488\ \text{GeV}^2)^{1/2} = 38.6\) GeV, giving \(m_W \approx 80.3\) GeV and \(m_Z \approx 91.5\) GeV, in good agreement with experiment.
+        The theory predicted these masses before the W and Z were discovered (1983); the remaining small differences come from loop corrections, which are sensitive to the top-quark and Higgs masses.
+      ar: |
+        (أ) \(g_W^2 = e^2/\sin^2\theta_W = 4\pi\alpha/\sin^2\theta_W\)، إذن
+        \[ m_W^2 = \frac{\sqrt2\,g_W^2}{8G_F} = \frac{\sqrt2\cdot4\pi\alpha}{8G_F\sin^2\theta_W} = \frac{\pi\alpha}{\sqrt2\,G_F\sin^2\theta_W}. \]
+        (ب) مع \(\alpha = 1/137\): \(\left(\pi\alpha/\sqrt2G_F\right)^{1/2} = (1390\ \text{GeV}^2)^{1/2} = 37.3\) GeV، إذن \(m_W = 37.3/0.4806 = 77.6\) GeV و\(m_Z = 77.6/0.877 = 88.5\) GeV.
+        ومع \(\alpha(m_Z) = 1/128\): \((1488\ \text{GeV}^2)^{1/2} = 38.6\) GeV، فنحصل على \(m_W \approx 80.3\) GeV و\(m_Z \approx 91.5\) GeV، في توافق جيد مع التجربة.
+        لقد تنبأت النظرية بهاتين الكتلتين قبل اكتشاف W وZ (1983)؛ وتعود الفروق الصغيرة المتبقية إلى تصحيحات الحلقات، وهي حساسة لكتلتي كوارك القمة وبوزون هيغز.
+
+quizzes:
+  - title: { en: 'Kinematics, interactions and conservation laws', ar: 'الحركيات والتفاعلات وقوانين الانحفاظ' }
+    questions:
+      - q:
+          en: 'Which quantity has the same value in every inertial frame?'
+          ar: 'أي مقدار له القيمة نفسها في كل الأطر العطالية؟'
+        options:
+          - { en: The energy E, ar: الطاقة E }
+          - { en: The momentum p, ar: الزخم p }
+          - '\(E^2 - p^2c^2\)'
+          - { en: The speed v, ar: السرعة v }
+        answer: 2
+        explain:
+          en: '\(E^2 - p^2c^2 = m^2c^4\) is the square of the four-momentum, a Lorentz invariant. For a system of particles it defines the invariant mass \(\sqrt s\).'
+          ar: '\(E^2 - p^2c^2 = m^2c^4\) هو مربع الزخم الرباعي، وهو لامتغير لورنتزي. وبالنسبة لجملة جسيمات يعرّف الكتلة اللامتغيرة \(\sqrt s\).'
+      - q:
+          en: 'What is the value of \(\hbar c\), the key conversion factor of natural units?'
+          ar: 'ما قيمة \(\hbar c\)، عامل التحويل الأساسي في الوحدات الطبيعية؟'
+        options: ['197.3 MeV·fm', '931.5 MeV·fm', '0.511 MeV·fm', '1240 MeV·fm']
+        answer: 0
+        explain:
+          en: '\(\hbar c = 197.3\) MeV·fm, so \(1\ \text{GeV}^{-1} = 0.197\) fm. (1240 is \(hc\) in eV·nm; 931.5 MeV is the atomic mass unit.)'
+          ar: '\(\hbar c = 197.3\) MeV·fm، إذن \(1\ \text{GeV}^{-1} = 0.197\) fm. (أما 1240 فهي \(hc\) بوحدة eV·nm، و931.5 MeV هي وحدة الكتلة الذرية.)'
+      - q:
+          en: 'Which quantity is conserved by the strong and electromagnetic interactions but not by the weak interaction?'
+          ar: 'أي مقدار ينحفظ في التفاعلين القوي والكهرومغناطيسي ولا ينحفظ في التفاعل الضعيف؟'
+        options:
+          - { en: Electric charge, ar: الشحنة الكهربائية }
+          - { en: Baryon number, ar: العدد الباريوني }
+          - { en: Total energy, ar: الطاقة الكلية }
+          - { en: Strangeness, ar: الغرابة }
+        answer: 3
+        explain:
+          en: 'Only the charged weak current changes quark flavour (e.g. \(s\to u\)). Charge, baryon number and energy are conserved by all interactions.'
+          ar: 'التيار الضعيف المشحون وحده يغيّر نكهة الكوارك (مثل \(s\to u\)). أما الشحنة والعدد الباريوني والطاقة فتنحفظ في كل التفاعلات.'
+      - q:
+          en: 'The charged pion lives \(2.6\times10^{-8}\) s, the \(\pi^0\) about \(10^{-16}\) s and the \(\Delta\) resonance about \(10^{-23}\) s. These lifetimes indicate decays by, respectively:'
+          ar: 'يعيش البيون المشحون \(2.6\times10^{-8}\) s، و\(\pi^0\) نحو \(10^{-16}\) s، والطنين \(\Delta\) نحو \(10^{-23}\) s. تدل هذه الأعمار على اضمحلالات بالتفاعلات، على الترتيب:'
+        options:
+          - { en: 'Strong, EM, weak', ar: 'القوي، الكهرومغناطيسي، الضعيف' }
+          - { en: 'Weak, EM, strong', ar: 'الضعيف، الكهرومغناطيسي، القوي' }
+          - { en: 'EM, weak, strong', ar: 'الكهرومغناطيسي، الضعيف، القوي' }
+          - { en: 'Weak, strong, EM', ar: 'الضعيف، القوي، الكهرومغناطيسي' }
+        answer: 1
+        explain:
+          en: 'The stronger the interaction, the shorter the lifetime: \(\pi^\pm\to\mu\nu\) is weak, \(\pi^0\to\gamma\gamma\) is electromagnetic and \(\Delta\to N\pi\) is strong.'
+          ar: 'كلما كان التفاعل أقوى كان العمر أقصر: \(\pi^\pm\to\mu\nu\) ضعيف، و\(\pi^0\to\gamma\gamma\) كهرومغناطيسي، و\(\Delta\to N\pi\) قوي.'
+      - q:
+          en: 'What is the intrinsic parity of a quark–antiquark meson with orbital angular momentum \(L = 0\) (e.g. the pion)?'
+          ar: 'ما الزوجية الذاتية لميزون مكوّن من كوارك وكوارك مضاد بزخم زاوي مداري \(L = 0\) (مثل البيون)؟'
+        options: ['\(+1\)', '\(-1\)', '\(0\)', '\(\pm i\)']
+        answer: 1
+        explain:
+          en: 'A fermion and its antifermion have opposite intrinsic parities, so \(P = (-1)^{L+1} = -1\) for \(L = 0\): pseudoscalar (\(J^P = 0^-\)) and vector (\(1^-\)) mesons.'
+          ar: 'للفرميون ولضديده زوجيتان ذاتيتان متعاكستان، إذن \(P = (-1)^{L+1} = -1\) من أجل \(L = 0\): ميزونات شبه سلّمية (\(J^P = 0^-\)) ومتجهة (\(1^-\)).'
+  - title: { en: Quark model and QCD, ar: نموذج الكواركات والكروموديناميكا الكمومية }
+    questions:
+      - q:
+          en: 'Which hadron has the quark content \(uds\)?'
+          ar: 'أي هادرون محتواه الكواركي \(uds\)؟'
+        options:
+          - '\(p\)'
+          - '\(\Lambda^0\)'
+          - '\(K^+\)'
+          - '\(\Omega^-\)'
+        answer: 1
+        explain:
+          en: '\(\Lambda^0 = uds\) (as is \(\Sigma^0\), with a different isospin). The proton is \(uud\), \(K^+ = u\bar s\) and \(\Omega^- = sss\).'
+          ar: '\(\Lambda^0 = uds\) (وكذلك \(\Sigma^0\) بإيزوسبين مختلف). البروتون \(uud\)، و\(K^+ = u\bar s\)، و\(\Omega^- = sss\).'
+      - q:
+          en: 'Why was colour originally introduced?'
+          ar: 'لماذا أُدخل اللون في الأصل؟'
+        options:
+          - { en: To explain the masses of quarks, ar: لتفسير كتل الكواركات }
+          - { en: To explain the electric charge of hadrons, ar: لتفسير الشحنة الكهربائية للهادرونات }
+          - { en: To explain beta decay, ar: لتفسير اضمحلال بيتا }
+          - { en: 'To reconcile states such as Δ⁺⁺ (uuu, all spins aligned) with the Pauli principle', ar: 'للتوفيق بين حالات مثل Δ⁺⁺ (uuu، بسبينات متوازية) ومبدأ باولي' }
+        answer: 3
+        explain:
+          en: 'The Δ⁺⁺ flavour–spin–space wavefunction is symmetric, which is forbidden for fermions. An antisymmetric colour wavefunction (a colour singlet) restores overall antisymmetry; colour later became the charge of QCD.'
+          ar: 'الدالة الموجية لـ Δ⁺⁺ في النكهة والسبين والمكان متناظرة، وهذا ممنوع للفرميونات. ودالة موجية لونية ضد متناظرة (أحادية لونية) تعيد ضد التناظر الكلي؛ ثم أصبح اللون شحنة الكروموديناميكا الكمومية.'
+      - q:
+          en: 'How many gluons are there in QCD?'
+          ar: 'كم عدد الغلوونات في الكروموديناميكا الكمومية؟'
+        options: ['1', '3', '8', '9']
+        answer: 2
+        explain:
+          en: 'Gluons belong to the adjoint representation of SU(3), of dimension \(3^2-1 = 8\). The ninth, colour-singlet combination does not exist.'
+          ar: 'تنتمي الغلوونات إلى التمثيل المرافق للزمرة SU(3)، وبعده \(3^2-1 = 8\). أما التركيبة التاسعة الأحادية اللون فغير موجودة.'
+      - q:
+          en: 'Asymptotic freedom means that the strong coupling \(\alpha_s(Q^2)\):'
+          ar: 'تعني الحرية التقاربية أن ثابت الاقتران القوي \(\alpha_s(Q^2)\):'
+        options:
+          - { en: Decreases at high momentum transfer (short distances), ar: يتناقص عند انتقال الزخم الكبير (المسافات القصيرة) }
+          - { en: Increases at high momentum transfer, ar: يزداد عند انتقال الزخم الكبير }
+          - { en: Is constant, ar: ثابت }
+          - { en: Vanishes for heavy quarks, ar: ينعدم للكواركات الثقيلة }
+        answer: 0
+        explain:
+          en: 'Gluon self-interaction makes \(\alpha_s\) fall logarithmically with \(Q^2\) (about 0.12 at \(m_Z\)). Quarks behave as nearly free at short distances, while at long distances the coupling grows and confines them.'
+          ar: 'يجعل التفاعل الذاتي للغلوونات \(\alpha_s\) يتناقص لوغاريتميًا مع \(Q^2\) (نحو 0.12 عند \(m_Z\)). فتتصرف الكواركات كأنها شبه حرة على المسافات القصيرة، بينما يزداد الاقتران على المسافات الطويلة فيحصرها.'
+      - q:
+          en: 'In deep inelastic electron–proton scattering, Bjorken scaling (structure functions nearly independent of \(Q^2\)) shows that:'
+          ar: 'في الاستطارة العميقة غير المرنة إلكترون-بروتون، يُظهر تدرّج بيوركن (عدم تعلّق دوال البنية تقريبًا بـ \(Q^2\)) أن:'
+        options:
+          - { en: The proton is a uniform sphere of charge, ar: البروتون كرة مشحونة منتظمة }
+          - { en: The electron has internal structure, ar: للإلكترون بنية داخلية }
+          - { en: The proton contains point-like constituents, ar: البروتون يحتوي على مكوّنات نقطية }
+          - { en: The photon is massive, ar: للفوتون كتلة }
+        answer: 2
+        explain:
+          en: 'Scattering off point-like partons introduces no length scale, so the structure functions depend only on the dimensionless \(x\). This was the first dynamical evidence for quarks (SLAC, late 1960s).'
+          ar: 'الاستطارة على بارتونات نقطية لا تُدخل أي سلّم طولي، فلا تتعلق دوال البنية إلا بالمتغير اللابعدي \(x\). وكان هذا أول دليل ديناميكي على وجود الكواركات (SLAC، أواخر ستينيات القرن العشرين).'
+  - title: { en: Dirac equation and QED, ar: معادلة ديراك والكهروديناميكا الكمومية }
+    questions:
+      - q:
+          en: 'In four space-time dimensions, the smallest matrices satisfying \(\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}\) are:'
+          ar: 'في زمكان رباعي الأبعاد، أصغر مصفوفات تحقق \(\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}\) هي:'
+        options: ['2×2', '3×3', '4×4', '8×8']
+        answer: 2
+        explain:
+          en: 'Four mutually anticommuting matrices cannot be found in 2×2 (only three Pauli matrices anticommute). Hence Dirac spinors have four components: two spin states each for particle and antiparticle.'
+          ar: 'لا يمكن إيجاد أربع مصفوفات متضادة التبادل مثنى مثنى بأبعاد 2×2 (فمصفوفات باولي الثلاث وحدها متضادة التبادل). ولذلك لسبينورات ديراك أربع مركّبات: حالتا سبين لكل من الجسيم والجسيم المضاد.'
+      - q:
+          en: 'In the Feynman–Stückelberg interpretation, negative-energy solutions of the Dirac equation describe:'
+          ar: 'في تفسير فاينمان-شتوكلبرغ، تصف حلول معادلة ديراك ذات الطاقة السالبة:'
+        options:
+          - { en: Unphysical states to be discarded, ar: حالات غير فيزيائية ينبغي إهمالها }
+          - { en: Tachyons, ar: تاكيونات (جسيمات أسرع من الضوء) }
+          - { en: Bound states, ar: حالات مقيّدة }
+          - { en: Positive-energy antiparticles propagating forward in time, ar: جسيمات مضادة ذات طاقة موجبة تنتشر إلى الأمام في الزمن }
+        answer: 3
+        explain:
+          en: 'A negative-energy particle travelling backwards in time is equivalent to a positive-energy antiparticle travelling forwards. This removes the need for the Dirac sea and underlies the Feynman diagrams.'
+          ar: 'جسيم ذو طاقة سالبة يسير إلى الخلف في الزمن يكافئ جسيمًا مضادًا ذا طاقة موجبة يسير إلى الأمام. وهذا يغني عن بحر ديراك، وعليه تقوم مخططات فاينمان.'
+      - q:
+          en: 'The lowest-order cross-section for \(e^+e^-\to\mu^+\mu^-\) scales with the fine-structure constant as:'
+          ar: 'يتناسب المقطع العرضي في أدنى رتبة لـ \(e^+e^-\to\mu^+\mu^-\) مع ثابت البنية الدقيقة كـ:'
+        options: ['\(\alpha\)', '\(\alpha^2\)', '\(\alpha^4\)', '\(\sqrt\alpha\)']
+        answer: 1
+        explain:
+          en: 'The diagram has two vertices, each with factor \(e \propto \sqrt\alpha\); the amplitude is \(\propto \alpha\) and the cross-section, its square, \(\propto \alpha^2\).'
+          ar: 'للمخطط رأسان، لكل منهما العامل \(e \propto \sqrt\alpha\)؛ فالسعة \(\propto \alpha\)، والمقطع العرضي، وهو مربعها، \(\propto \alpha^2\).'
+      - q:
+          en: 'The angular distribution of \(e^+e^-\to\mu^+\mu^-\) via a single photon at high energy is proportional to:'
+          ar: 'يتناسب التوزيع الزاوي لـ \(e^+e^-\to\mu^+\mu^-\) عبر فوتون واحد عند الطاقات العالية مع:'
+        options: ['\(1\)', '\(\sin^2\theta\)', '\(1+\cos^2\theta\)', '\(1/\sin^4(\theta/2)\)']
+        answer: 2
+        explain:
+          en: 'Helicity conservation at the vector vertices allows only two spin configurations, with amplitudes \(\propto (1\pm\cos\theta)\); adding their squares gives \(1+\cos^2\theta\). (\(1/\sin^4(\theta/2)\) is Rutherford scattering.)'
+          ar: 'انحفاظ الهيليسية عند الرؤوس المتجهة لا يسمح إلا بتشكيلتين للسبين، سعتاهما \(\propto (1\pm\cos\theta)\)؛ وجمع مربعيهما يعطي \(1+\cos^2\theta\). (أما \(1/\sin^4(\theta/2)\) فهي استطارة رذرفورد.)'
+      - q:
+          en: 'For which particles are helicity and chirality eigenstates the same?'
+          ar: 'بالنسبة لأي جسيمات تتطابق الحالات الذاتية للهيليسية والكيرالية؟'
+        options:
+          - { en: For massless (or ultra-relativistic) particles, ar: للجسيمات عديمة الكتلة (أو فائقة النسبية) }
+          - { en: For particles at rest, ar: للجسيمات الساكنة }
+          - { en: For all particles, ar: لكل الجسيمات }
+          - { en: Only for bosons, ar: للبوزونات فقط }
+        answer: 0
+        explain:
+          en: 'Helicity is frame-dependent for massive particles, while chirality is Lorentz invariant. They coincide only when \(E \gg m\); the mismatch is of order \(m/E\), as in pion-decay helicity suppression.'
+          ar: 'الهيليسية تتعلق بالإطار المرجعي للجسيمات ذات الكتلة، بينما الكيرالية لامتغيرة لورنتزيًا. ولا تتطابقان إلا عندما \(E \gg m\)؛ والفرق من رتبة \(m/E\)، كما في الكبت الهيليسي لاضمحلال البيون.'
+  - title: { en: 'Weak, electroweak and neutrino physics', ar: 'الفيزياء الضعيفة والكهروضعيفة وفيزياء النيوترينو' }
+    questions:
+      - q:
+          en: 'The charged-current weak interaction couples to:'
+          ar: 'يقترن التفاعل الضعيف ذو التيار المشحون بـ:'
+        options:
+          - { en: Left-handed chiral particles and right-handed chiral antiparticles only, ar: الجسيمات ذات الكيرالية اليسارية والجسيمات المضادة ذات الكيرالية اليمينية فقط }
+          - { en: Right-handed particles only, ar: الجسيمات اليمينية فقط }
+          - { en: Both chiralities equally, ar: الكيراليتين بالتساوي }
+          - { en: Neutral particles only, ar: الجسيمات المتعادلة فقط }
+        answer: 0
+        explain:
+          en: 'The V−A vertex contains the projector \(\frac12(1-\gamma^5)\), so parity is maximally violated (Wu experiment, 1957).'
+          ar: 'يحتوي الرأس V−A على المسقِط \(\frac12(1-\gamma^5)\)، ولذلك تُنتهك الزوجية انتهاكًا أعظميًا (تجربة وو، 1957).'
+      - q:
+          en: 'What are the approximate masses of the W and Z bosons?'
+          ar: 'ما القيمتان التقريبيتان لكتلتي البوزونين W وZ؟'
+        options: ['80.4 and 91.2 GeV', '91.2 and 80.4 GeV', '125 and 173 GeV', '0 and 91.2 GeV']
+        answer: 0
+        explain:
+          en: '\(m_W = 80.4\) GeV and \(m_Z = 91.2\) GeV, with \(m_W/m_Z = \cos\theta_W\). The Higgs (125 GeV) and the top quark (173 GeV) are heavier.'
+          ar: '\(m_W = 80.4\) GeV و\(m_Z = 91.2\) GeV، مع \(m_W/m_Z = \cos\theta_W\). أما هيغز (125 GeV) وكوارك القمة (173 GeV) فأثقل منهما.'
+      - q:
+          en: 'The CKM matrix describes:'
+          ar: 'تصف مصفوفة CKM:'
+        options:
+          - { en: Neutrino mixing, ar: خلط النيوترينوات }
+          - { en: The mixing of quark flavours in charged-current weak interactions, ar: خلط نكهات الكواركات في التفاعلات الضعيفة ذات التيار المشحون }
+          - { en: The colour charges of gluons, ar: الشحنات اللونية للغلوونات }
+          - { en: The masses of the W and Z, ar: كتلتي W وZ }
+        answer: 1
+        explain:
+          en: 'The weak eigenstates \(d'',s'',b''\) are unitary combinations of the mass eigenstates. The complex phase of this 3×3 matrix is the Standard-Model source of CP violation in quarks. Neutrino mixing is described by the PMNS matrix.'
+          ar: 'الحالات الذاتية الضعيفة \(d'',s'',b''\) تراكيب أحادية (واحدية) لحالات الكتلة الذاتية. والطور المركّب لهذه المصفوفة 3×3 هو مصدر انتهاك CP في قطاع الكواركات ضمن النموذج القياسي. أما خلط النيوترينوات فتصفه مصفوفة PMNS.'
+      - q:
+          en: 'Neutrino oscillations require that:'
+          ar: 'تتطلب تذبذبات النيوترينو أن:'
+        options:
+          - { en: Neutrinos are massless, ar: تكون النيوترينوات عديمة الكتلة }
+          - { en: Lepton number is violated by two units, ar: يُنتهك العدد اللبتوني بوحدتين }
+          - { en: Neutrinos are their own antiparticles, ar: تكون النيوترينوات مضادات لنفسها }
+          - { en: 'The flavour states differ from the mass states, which have different masses', ar: 'تختلف حالات النكهة عن حالات الكتلة، وأن تكون لهذه الأخيرة كتل مختلفة' }
+        answer: 3
+        explain:
+          en: 'The oscillation phase is proportional to \(\Delta m^2L/E\): without mixing (\(\theta\neq0\)) and non-zero mass differences there is no oscillation. Whether neutrinos are Majorana particles is a separate, still open question.'
+          ar: 'طور التذبذب يتناسب مع \(\Delta m^2L/E\): فلا تذبذب دون خلط (\(\theta\neq0\)) ودون فروق كتلية غير معدومة. أما كون النيوترينوات جسيمات مايورانا فسؤال مستقل لا يزال مفتوحًا.'
+      - q:
+          en: 'In the Standard Model, the Higgs mechanism:'
+          ar: 'في النموذج القياسي، آلية هيغز:'
+        options:
+          - { en: Gives mass to the photon, ar: تمنح الفوتون كتلة }
+          - { en: Explains the mass of the proton, ar: تفسّر كتلة البروتون }
+          - { en: 'Gives mass to the W and Z bosons and, through Yukawa couplings, to the charged fermions', ar: 'تمنح البوزونين W وZ كتلة، وتمنح الفرميونات المشحونة كتلتها عبر اقترانات يوكاوا' }
+          - { en: Explains dark matter, ar: تفسّر المادة المظلمة }
+        answer: 2
+        explain:
+          en: 'Spontaneous breaking of SU(2)×U(1) gives mass to W and Z while the photon stays massless. Most of the proton mass, however, comes from QCD binding energy, not from the Higgs. The Higgs boson was discovered at the LHC in 2012 (125 GeV).'
+          ar: 'يمنح الكسر التلقائي للتناظر SU(2)×U(1) البوزونين W وZ كتلة بينما يبقى الفوتون عديم الكتلة. أما معظم كتلة البروتون فمصدره طاقة الربط في الكروموديناميكا الكمومية لا آلية هيغز. واكتُشف بوزون هيغز في مصادم LHC سنة 2012 (125 GeV).'
+
+textbooks:
+  required:
+    - { authors: M. Thomson, title: Modern Particle Physics, publisher: Cambridge University Press, year: 2013 }
+  recommended:
+    - { authors: D. Griffiths, title: Introduction to Elementary Particles, edition: 2nd revised, publisher: Wiley-VCH, year: 2008 }
+    - { authors: F. Halzen & A. D. Martin, title: 'Quarks and Leptons: An Introductory Course in Modern Particle Physics', publisher: John Wiley & Sons, year: 1984 }
+    - { authors: B. R. Martin & G. Shaw, title: Particle Physics, edition: 4th, publisher: John Wiley & Sons, year: 2017 }
+    - { authors: D. H. Perkins, title: Introduction to High Energy Physics, edition: 4th, publisher: Cambridge University Press, year: 2000 }
+    - { authors: A. Bettini, title: Introduction to Elementary Particle Physics, edition: 2nd, publisher: Cambridge University Press, year: 2014 }
+  online:
+    - title: { en: Particle Data Group (PDG), ar: مجموعة بيانات الجسيمات (PDG) }
+      url: https://pdg.lbl.gov/
+      note: { en: 'The reference for particle masses, lifetimes, branching ratios and review articles; used in the problem sets.', ar: 'المرجع المعتمد لكتل الجسيمات وأعمارها ونسب تفرّعها ومقالاتها المرجعية؛ ويُستعمل في سلاسل التمارين.' }
+    - title: { en: CERN Open Data portal, ar: بوابة البيانات المفتوحة لـ CERN }
+      url: https://opendata.cern.ch/
+      note: { en: Real LHC collision data and tutorials — a natural source for the mini-project., ar: معطيات تصادمات حقيقية من LHC ودروس تطبيقية — مصدر طبيعي للمشروع المصغّر. }
+    - title: { en: The Particle Adventure, ar: مغامرة الجسيمات }
+      url: https://particleadventure.org/
+      note: { en: Accessible illustrated tour of the Standard Model for revision., ar: جولة مصوّرة ميسّرة في النموذج القياسي للمراجعة. }
+
+glossary:
+  - { en: Standard Model, ar: النموذج القياسي, fr: Modèle standard, def: { en: 'Gauge theory SU(3)×SU(2)×U(1) of the strong, weak and electromagnetic interactions of quarks and leptons.', ar: 'نظرية معيارية SU(3)×SU(2)×U(1) للتفاعلات القوية والضعيفة والكهرومغناطيسية بين الكواركات واللبتونات.' } }
+  - { en: Quark, ar: الكوارك, fr: Quark, def: { en: 'Fractionally charged, coloured fermion; six flavours u, d, s, c, b, t.', ar: 'فرميون ذو شحنة كسرية ولون؛ له ست نكهات u وd وs وc وb وt.' } }
+  - { en: Lepton, ar: اللبتون, fr: Lepton, def: { en: 'Fermion without colour: e, μ, τ and their neutrinos.', ar: 'فرميون بلا لون: e وμ وτ ونيوترينواتها.' } }
+  - { en: Hadron, ar: الهادرون, fr: Hadron, def: { en: Colour-neutral bound state of quarks — a baryon (qqq) or a meson (qq̄)., ar: حالة مقيّدة متعادلة لونيًا من الكواركات — باريون (qqq) أو ميزون (qq̄). } }
+  - { en: Gauge boson, ar: البوزون المعياري, fr: Boson de jauge, def: { en: 'Spin-1 carrier of an interaction: photon, W±, Z, gluons.', ar: 'حامل التفاعل ذو السبين 1: الفوتون، W±، Z، الغلوونات.' } }
+  - { en: Four-momentum, ar: الزخم الرباعي, fr: Quadri-impulsion, def: { en: '\(p^\mu = (E/c, \vb{p})\), whose square \(p^2 = m^2c^2\) is invariant.', ar: '\(p^\mu = (E/c, \vb{p})\)، ومربعه \(p^2 = m^2c^2\) لامتغير.' } }
+  - { en: Invariant mass, ar: الكتلة اللامتغيرة, fr: Masse invariante, def: { en: '\(\sqrt s\), total energy in the centre-of-mass frame of a system of particles.', ar: '\(\sqrt s\)، الطاقة الكلية لجملة جسيمات في إطار مركز كتلتها.' } }
+  - { en: Cross-section, ar: المقطع العرضي, fr: Section efficace, def: { en: Effective target area measuring the probability of an interaction; unit the barn (10⁻²⁸ m²)., ar: مساحة هدف فعّالة تقيس احتمال حدوث التفاعل؛ ووحدتها البارن (10⁻²⁸ m²). } }
+  - { en: Decay width, ar: عرض الاضمحلال, fr: Largeur de désintégration, def: { en: 'Decay rate expressed as an energy, \(\Gamma = \hbar/\tau\).', ar: 'معدل الاضمحلال معبّرًا عنه بالطاقة: \(\Gamma = \hbar/\tau\).' } }
+  - { en: Branching ratio, ar: نسبة التفرّع, fr: Rapport d'embranchement, def: { en: Fraction of decays that proceed through a given channel., ar: نسبة الاضمحلالات التي تتم عبر قناة معيّنة. } }
+  - { en: Baryon number, ar: العدد الباريوني, fr: Nombre baryonique, def: { en: '+1/3 for each quark and −1/3 for each antiquark; conserved in all observed processes.', ar: '+1/3 لكل كوارك و−1/3 لكل كوارك مضاد؛ وهو منحفظ في كل العمليات المرصودة.' } }
+  - { en: Lepton number, ar: العدد اللبتوني, fr: Nombre leptonique, def: { en: 'Number of leptons minus antileptons, conserved separately for each family in the Standard Model (except via neutrino oscillations).', ar: 'عدد اللبتونات ناقص عدد اللبتونات المضادة، وينحفظ لكل عائلة على حدة في النموذج القياسي (باستثناء تذبذبات النيوترينو).' } }
+  - { en: Strangeness, ar: الغرابة, fr: Étrangeté, def: { en: Quantum number counting strange antiquarks minus strange quarks; violated only by the weak interaction., ar: عدد كمومي يساوي عدد الكواركات الغريبة المضادة ناقص الكواركات الغريبة؛ ولا ينتهكه إلا التفاعل الضعيف. } }
+  - { en: Parity, ar: الزوجية (التماثل المكاني), fr: Parité, def: { en: 'Symmetry under spatial inversion \(\vb{r}\to-\vb{r}\); conserved by strong and EM interactions, maximally violated by the weak one.', ar: 'التناظر بالنسبة للانعكاس المكاني \(\vb{r}\to-\vb{r}\)؛ ينحفظ في التفاعلين القوي والكهرومغناطيسي ويُنتهك انتهاكًا أعظميًا في الضعيف.' } }
+  - { en: Isospin, ar: اللف النظائري (الإيزوسبين), fr: Isospin, def: { en: SU(2) symmetry treating u and d quarks (or proton and neutron) as two states of one particle., ar: تناظر SU(2) يعامل الكواركين u وd (أو البروتون والنيوترون) كحالتين لجسيم واحد. } }
+  - { en: Colour, ar: الشحنة اللونية, fr: Couleur, def: { en: 'Three-valued charge of quarks and gluons, the source of the strong interaction.', ar: 'شحنة ثلاثية القيم للكواركات والغلوونات، وهي مصدر التفاعل القوي.' } }
+  - { en: Gluon, ar: الغلوون, fr: Gluon, def: { en: Massless coloured gauge boson of QCD; there are eight., ar: بوزون معياري عديم الكتلة ملوّن في الكروموديناميكا الكمومية؛ وعددها ثمانية. } }
+  - { en: Asymptotic freedom, ar: الحرية التقاربية, fr: Liberté asymptotique, def: { en: Decrease of the strong coupling at high energies (short distances)., ar: تناقص ثابت الاقتران القوي عند الطاقات العالية (المسافات القصيرة). } }
+  - { en: Confinement, ar: الحصر (اللوني), fr: Confinement, def: { en: Impossibility of isolating colour-charged quarks or gluons; only colour singlets are observed., ar: استحالة عزل الكواركات أو الغلوونات المشحونة لونيًا؛ ولا تُرصد إلا الحالات الأحادية اللون. } }
+  - { en: Dirac equation, ar: معادلة ديراك, fr: Équation de Dirac, def: { en: 'Relativistic wave equation \((i\gamma^\mu\partial_\mu - m)\psi = 0\) for spin-½ particles.', ar: 'معادلة موجية نسبية \((i\gamma^\mu\partial_\mu - m)\psi = 0\) للجسيمات ذات السبين ½.' } }
+  - { en: Helicity, ar: الهيليسية, fr: Hélicité, def: { en: Projection of the spin on the direction of motion., ar: إسقاط السبين على اتجاه الحركة. } }
+  - { en: Chirality, ar: الكيرالية, fr: Chiralité, def: { en: 'Lorentz-invariant handedness defined by \(\gamma^5\); equals helicity for massless particles.', ar: 'اليدوية اللامتغيرة لورنتزيًا والمعرّفة بـ \(\gamma^5\)؛ وتساوي الهيليسية للجسيمات عديمة الكتلة.' } }
+  - { en: Feynman diagram, ar: مخطط فاينمان, fr: Diagramme de Feynman, def: { en: Pictorial representation of a term in the perturbative expansion of a scattering amplitude., ar: تمثيل تصويري لحدّ في النشر الاضطرابي لسعة الاستطارة. } }
+  - { en: Propagator, ar: المنتشر, fr: Propagateur, def: { en: 'Factor \(\propto 1/(q^2 - m^2)\) associated with a virtual exchanged particle.', ar: 'العامل \(\propto 1/(q^2 - m^2)\) المرتبط بجسيم افتراضي متبادل.' } }
+  - { en: Deep inelastic scattering, ar: الاستطارة العميقة غير المرنة, fr: Diffusion profondément inélastique, def: { en: High-momentum-transfer lepton–nucleon scattering that resolves the partons inside the nucleon., ar: استطارة لبتون-نوكليون بانتقال زخم كبير تكشف البارتونات داخل النوكليون. } }
+  - { en: CKM matrix, ar: مصفوفة CKM, fr: Matrice CKM, def: { en: Unitary 3×3 matrix of quark-flavour mixing in charged weak currents., ar: مصفوفة أحادية 3×3 لخلط نكهات الكواركات في التيارات الضعيفة المشحونة. } }
+  - { en: Neutrino oscillation, ar: تذبذب النيوترينو, fr: Oscillation des neutrinos, def: { en: Periodic change of neutrino flavour during propagation due to mixing and mass differences., ar: تغيّر دوري لنكهة النيوترينو أثناء انتشاره بسبب الخلط والفروق الكتلية. } }
+  - { en: Weak mixing angle, ar: زاوية الخلط الضعيفة (زاوية واينبرغ), fr: Angle de mélange faible, def: { en: 'Angle \(\theta_W\) relating the electromagnetic and weak couplings, \(\sin^2\theta_W \approx 0.23\).', ar: 'الزاوية \(\theta_W\) التي تربط الاقترانين الكهرومغناطيسي والضعيف، \(\sin^2\theta_W \approx 0.23\).' } }
+  - { en: Higgs mechanism, ar: آلية هيغز, fr: Mécanisme de Higgs, def: { en: Spontaneous breaking of gauge symmetry by a scalar field that gives mass to the W and Z bosons and to fermions., ar: كسر تلقائي للتناظر المعياري بحقل سلّمي يمنح الكتلة للبوزونين W وZ وللفرميونات. } }
+  - { en: Higgs boson, ar: بوزون هيغز, fr: Boson de Higgs, def: { en: 'Spin-0 particle of the Higgs field, discovered in 2012 with mass about 125 GeV.', ar: 'جسيم الحقل الهيغزي ذو السبين 0، اكتُشف سنة 2012 بكتلة تقارب 125 GeV.' } }

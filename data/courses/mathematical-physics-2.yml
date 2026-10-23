@@ -1,0 +1,843 @@
+slug: mathematical-physics-2
+order: 70
+codes: [PHYS 352]
+short: { en: MathP II, ar: ف.ر 2 }
+title: { en: Mathematical Physics II, ar: الفيزياء الرياضية 2 }
+tagline:
+  en: Special functions, series solutions, Fourier analysis and integral transforms — the mathematical toolbox of core physics.
+  ar: الدوال الخاصة والحلول بالمتسلسلات وتحليل فورييه والتحويلات التكاملية؛ العُدّة الرياضية لمقررات الفيزياء الأساسية.
+area: mathematical
+level: 2
+credits: 3
+hours: { lecture: 3, tutorial: 1, lab: 0 }
+weeks: 14
+instruction: [en, ar]
+prerequisites: []
+prerequisite_note:
+  en: Calculus (series, multiple integrals), linear algebra and first-order/second-order ODEs with constant coefficients, as covered in Mathematical Physics I.
+  ar: التفاضل والتكامل (المتسلسلات، التكاملات المتعددة)، والجبر الخطي، والمعادلات التفاضلية من الرتبتين الأولى والثانية ذات المعاملات الثابتة، كما تُدرَّس في مقرر الفيزياء الرياضية 1.
+sims: [fourier]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/phys352-mathematical-physics-ii/
+notes: >
+  Weekly calendar (15 weeks merged into 14: review folded into week 14), Arfken & Weber section readings, evaluation
+  (10/25/25/40) and all links come from the PHYS 352 page. The source had only two learning outcomes and a one-line
+  description: reconstructed the full description, CLOs, the varied assessment split (homework/quizzes/presentation
+  added), applications of special functions to separable PDEs (Laplace, Helmholtz, Schrodinger) inside weeks 5-9, the
+  exam guide, all quizzes, problems and glossary. Textbook data corrected: the Arfken & Weber edition whose chapter
+  numbers match the readings is the 6th (2005), not 1995; Boas listed in its current 3rd edition; Riley-Hobson-Bence
+  added. Past exams 1437 (S1/S2) mapped to 2015-2016, 1438 (S1/S2) to 2016-2017; first periodic exam to 2019-2020.
+  A stray navigation link to a quantum-mechanics page and the course questionnaire were not kept. DLMF added to online
+  resources.
+
+description:
+  en: |
+    <p>Most of the core physics curriculum — quantum mechanics, electromagnetism, waves and statistical physics — relies on a common set of mathematical tools. This course provides them. It starts with the Gamma and Beta functions and Stirling's formula. It then develops the theory of second-order linear differential equations: singular points, power-series solutions, the Frobenius method and second solutions.</p>
+    <p>These methods produce the <strong>special functions</strong> of mathematical physics. Bessel functions (and their Neumann, Hankel, modified and spherical forms) appear in cylindrical and spherical problems. Legendre polynomials appear in potentials with spherical symmetry, Hermite polynomials in the quantum oscillator, and Laguerre polynomials in the hydrogen atom. For each family we study generating functions, recurrence relations and orthogonality, and we use them in separable partial differential equations.</p>
+    <p>The second part covers <strong>Fourier series</strong> (convergence, Gibbs phenomenon, Parseval), the <strong>Fourier and Laplace transforms</strong> with their use in solving differential equations, an introduction to <strong>probability and statistics</strong>, and a first look at <strong>group theory</strong>.</p>
+  ar: |
+    <p>يعتمد معظم المنهج الأساسي للفيزياء (ميكانيكا الكم، والكهرومغناطيسية، والموجات، والفيزياء الإحصائية) على مجموعة مشتركة من الأدوات الرياضية، وهذا المقرر يقدّمها. يبدأ بدالتي غاما وبيتا وصيغة ستيرلنغ. ثم يطوّر نظرية المعادلات التفاضلية الخطية من الرتبة الثانية: النقاط الشاذة، والحلول بمتسلسلات القوى، وطريقة فروبينيوس، والحل الثاني.</p>
+    <p>تُنتج هذه الطرق <strong>الدوال الخاصة</strong> في الفيزياء الرياضية. فدوال بسل (وصيغها: نويمان وهانكل والمعدّلة والكروية) تظهر في المسائل الأسطوانية والكروية. وتظهر كثيرات حدود لوجندر في الكمونات ذات التناظر الكروي، وكثيرات حدود هيرميت في المهتز التوافقي الكمومي، وكثيرات حدود لاغير في ذرة الهيدروجين. وندرس لكل عائلة دالتها المولّدة وعلاقاتها التراجعية وتعامدها، ونستعملها في المعادلات التفاضلية الجزئية القابلة لفصل المتغيرات.</p>
+    <p>ويتناول الجزء الثاني <strong>متسلسلات فورييه</strong> (التقارب، ظاهرة غيبس، مبرهنة بارسفال)، و<strong>تحويلي فورييه ولابلاس</strong> واستعمالهما في حل المعادلات التفاضلية، ومدخلًا إلى <strong>الاحتمالات والإحصاء</strong>، ونظرة أولى في <strong>نظرية الزمر</strong>.</p>
+
+topics:
+  - { en: Gamma & Beta functions, ar: دالتا غاما وبيتا }
+  - { en: Frobenius series solutions, ar: الحلول بمتسلسلات فروبينيوس }
+  - { en: Bessel functions, ar: دوال بسل }
+  - { en: Legendre polynomials, ar: كثيرات حدود لوجندر }
+  - { en: Hermite & Laguerre polynomials, ar: كثيرات حدود هيرميت ولاغير }
+  - { en: Fourier series, ar: متسلسلات فورييه }
+  - { en: Fourier & Laplace transforms, ar: تحويلا فورييه ولابلاس }
+  - { en: Probability & statistics, ar: الاحتمالات والإحصاء }
+  - { en: Introduction to group theory, ar: مدخل إلى نظرية الزمر }
+
+outcomes:
+  - id: CLO1
+    bloom: apply
+    domain: knowledge
+    text:
+      en: Use the Gamma and Beta functions, their properties and Stirling's formula to evaluate integrals and factorial-type expressions.
+      ar: يستعمل دالتي غاما وبيتا وخصائصهما وصيغة ستيرلنغ لحساب تكاملات وعبارات من نوع المضروب.
+    assessed_by: [quizzes, homework, midterm1, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: Classify the singular points of a second-order linear ODE and construct power-series and Frobenius solutions, including a second solution.
+      ar: يصنّف النقاط الشاذة لمعادلة تفاضلية خطية من الرتبة الثانية ويبني حلولها بمتسلسلات القوى وبطريقة فروبينيوس، بما في ذلك الحل الثاني.
+    assessed_by: [homework, midterm1, final]
+  - id: CLO3
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Derive and use generating functions, recurrence relations and orthogonality of Bessel, Legendre, Hermite and Laguerre functions.
+      ar: يستنتج الدوال المولّدة والعلاقات التراجعية وخواص التعامد لدوال بسل ولوجندر وهيرميت ولاغير، ويستعملها.
+    assessed_by: [quizzes, homework, midterm1, midterm2, final]
+  - id: CLO4
+    bloom: apply
+    domain: skills
+    text:
+      en: Separate variables in the Laplace, Helmholtz and Schrödinger equations and identify the special functions that arise in physical problems.
+      ar: يفصل المتغيرات في معادلات لابلاس وهلمهولتز وشرودنغر، ويتعرّف على الدوال الخاصة التي تظهر في المسائل الفيزيائية.
+    assessed_by: [homework, presentation, final]
+  - id: CLO5
+    bloom: apply
+    domain: skills
+    text:
+      en: Expand functions in Fourier series, discuss convergence and the Gibbs phenomenon, and apply Parseval's theorem.
+      ar: ينشر الدوال في متسلسلات فورييه، ويناقش تقاربها وظاهرة غيبس، ويطبّق مبرهنة بارسفال.
+    assessed_by: [quizzes, homework, midterm2, final]
+  - id: CLO6
+    bloom: apply
+    domain: skills
+    text:
+      en: Compute Fourier and Laplace transforms and use them, with the convolution theorem, to solve differential equations and initial-value problems.
+      ar: يحسب تحويلي فورييه ولابلاس ويستعملهما، مع مبرهنة الالتفاف، في حل المعادلات التفاضلية ومسائل القيم الابتدائية.
+    assessed_by: [homework, midterm2, final]
+  - id: CLO7
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Describe random variables and the binomial, Poisson and Gaussian distributions, and explain the basic notions of a group and its representations.
+      ar: يصف المتغيرات العشوائية والتوزيعات ذات الحدين وبواسون والغاوسي، ويشرح المفاهيم الأساسية للزمرة وتمثيلاتها.
+    assessed_by: [quizzes, final]
+  - id: CLO8
+    bloom: create
+    domain: values
+    text:
+      en: Prepare and present, honestly and clearly, a short self-contained account of a physical application of a mathematical method.
+      ar: يُعدّ ويعرض بأمانة ووضوح عرضًا قصيرًا متكاملًا لتطبيق فيزيائي لإحدى الطرق الرياضية.
+    assessed_by: [presentation]
+
+assessment:
+  - id: homework
+    type: homework
+    weight: 10
+    title: { en: Weekly problem sets, ar: أوراق المسائل الأسبوعية }
+    detail:
+      en: Eleven problem sets, each due one week later in class. Graded on correctness, rigour and presentation. Work them out yourself and ask for help on unclear points.
+      ar: إحدى عشرة ورقة مسائل، تُسلَّم كلٌّ منها بعد أسبوع داخل القاعة. تُقيَّم على صحة الحل ودقته وحسن عرضه. حُلّها بنفسك واطلب المساعدة في النقاط غير الواضحة.
+    when: { en: Weeks 2–14, ar: الأسابيع 2–14 }
+  - id: quizzes
+    type: quiz
+    weight: 5
+    title: { en: Short quizzes, ar: اختبارات قصيرة }
+    detail:
+      en: Three 15-minute quizzes testing definitions, key formulas and one quick computation.
+      ar: ثلاثة اختبارات قصيرة مدة كلٍّ منها 15 دقيقة، تختبر التعاريف والصيغ الأساسية وحسابًا سريعًا.
+    when: { en: 'Weeks 4, 10, 13', ar: الأسابيع 4، 10، 13 }
+  - id: midterm1
+    type: midterm
+    weight: 20
+    title: { en: First periodic exam, ar: الاختبار الدوري الأول }
+    detail:
+      en: One hour, in class. Gamma/Beta functions, series solutions, Bessel functions.
+      ar: ساعة واحدة داخل القاعة. دالتا غاما وبيتا، الحلول بالمتسلسلات، دوال بسل.
+    when: { en: Week 7, ar: الأسبوع 7 }
+  - id: midterm2
+    type: midterm
+    weight: 20
+    title: { en: Second periodic exam, ar: الاختبار الدوري الثاني }
+    detail:
+      en: One hour, in class. Legendre, Hermite and Laguerre functions; Fourier series; Fourier transform.
+      ar: ساعة واحدة داخل القاعة. دوال لوجندر وهيرميت ولاغير؛ متسلسلات فورييه؛ تحويل فورييه.
+    when: { en: Week 12, ar: الأسبوع 12 }
+  - id: presentation
+    type: presentation
+    weight: 5
+    title: { en: Short presentation, ar: عرض قصير }
+    detail:
+      en: 'A 10-minute presentation (in pairs) on a physical application: e.g. vibrating drum (Bessel), hydrogen atom (Laguerre), spectrum analysis (Fourier). Graded on correctness, clarity and answers to questions.'
+      ar: 'عرض مدته 10 دقائق (ثنائيًّا) عن تطبيق فيزيائي، مثل: اهتزاز الطبلة (بسل)، ذرة الهيدروجين (لاغير)، التحليل الطيفي (فورييه). يُقيَّم على صحة المحتوى ووضوحه والإجابة عن الأسئلة.'
+    when: { en: Week 14, ar: الأسبوع 14 }
+  - id: final
+    type: final
+    weight: 40
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail:
+      en: Two hours, comprehensive.
+      ar: ساعتان، شامل لكل المقرر.
+    when: { en: Final exam period, ar: فترة الاختبارات النهائية }
+
+schedule:
+  - week: 1
+    title: { en: The Gamma function, ar: دالة غاما }
+    topics:
+      en: [Overview of the course, 'Definition \(\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}\dd t\), recurrence \(\Gamma(z+1)=z\Gamma(z)\)', 'Reflection formula, \(\Gamma(1/2)=\sqrt\pi\), digamma function, Stirling''s series']
+      ar: [نظرة عامة على المقرر, 'التعريف \(\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}\dd t\) والعلاقة التراجعية \(\Gamma(z+1)=z\Gamma(z)\)', 'صيغة الانعكاس، \(\Gamma(1/2)=\sqrt\pi\)، دالة ديغاما، متسلسلة ستيرلنغ']
+    reading: Arfken & Weber §8.1–8.3
+  - week: 2
+    title: { en: Beta and incomplete Gamma functions, ar: دالة بيتا ودالة غاما الناقصة }
+    topics:
+      en: ['Beta function \(B(p,q)=\Gamma(p)\Gamma(q)/\Gamma(p+q)\) and trigonometric integrals', 'Incomplete Gamma function and the error function']
+      ar: ['دالة بيتا \(B(p,q)=\Gamma(p)\Gamma(q)/\Gamma(p+q)\) والتكاملات المثلثية', 'دالة غاما الناقصة ودالة الخطأ']
+    reading: Arfken & Weber §8.4–8.5
+    activity: { en: Problem set 1, ar: ورقة المسائل 1 }
+  - week: 3
+    title: { en: Series solutions of second-order ODEs, ar: الحلول بالمتسلسلات للمعادلات من الرتبة الثانية }
+    topics:
+      en: ['Ordinary, regular singular and irregular singular points', 'Frobenius method and the indicial equation']
+      ar: ['النقاط العادية والشاذة المنتظمة والشاذة غير المنتظمة', 'طريقة فروبينيوس والمعادلة الدليلية']
+    reading: Arfken & Weber §9.4–9.5
+    activity: { en: Problem set 2, ar: ورقة المسائل 2 }
+  - week: 4
+    title: { en: A second solution; applications, ar: الحل الثاني؛ تطبيقات }
+    topics:
+      en: ['Wronskian and linear independence', 'Second solution when indicial roots coincide or differ by an integer (logarithmic terms)', 'Separation of variables in PDEs; non-homogeneous equations']
+      ar: ['الرونسكيان والاستقلال الخطي', 'الحل الثاني عندما تتساوى جذور المعادلة الدليلية أو تختلف بعدد صحيح (حدود لوغاريتمية)', 'فصل المتغيرات في المعادلات التفاضلية الجزئية؛ المعادلات غير المتجانسة']
+    reading: Arfken & Weber §9.6–9.8
+    activity: { en: Problem set 3; Quiz 1, ar: ورقة المسائل 3؛ الاختبار القصير 1 }
+    milestone: quiz
+  - week: 5
+    title: { en: Bessel functions, ar: دوال بسل }
+    topics:
+      en: ['\(J_\nu(x)\): series, generating function, recurrence relations', 'Orthogonality on \([0,a]\); vibrating circular membrane', 'Neumann functions \(Y_\nu\) and Hankel functions \(H^{(1,2)}_\nu\)']
+      ar: ['\(J_\nu(x)\): المتسلسلة والدالة المولّدة والعلاقات التراجعية', 'التعامد على \([0,a]\)؛ الغشاء الدائري المهتز', 'دوال نويمان \(Y_\nu\) ودوال هانكل \(H^{(1,2)}_\nu\)']
+    reading: Arfken & Weber §11.1–11.4
+    activity: { en: Problem set 4, ar: ورقة المسائل 4 }
+  - week: 6
+    title: { en: Modified and spherical Bessel functions, ar: دوال بسل المعدّلة والكروية }
+    topics:
+      en: ['Modified Bessel functions \(I_\nu, K_\nu\)', 'Spherical Bessel functions \(j_\ell, n_\ell\); Helmholtz equation in spherical coordinates', 'Review for the first exam']
+      ar: ['دوال بسل المعدّلة \(I_\nu, K_\nu\)', 'دوال بسل الكروية \(j_\ell, n_\ell\)؛ معادلة هلمهولتز في الإحداثيات الكروية', 'مراجعة للاختبار الأول']
+    reading: Arfken & Weber §11.5–11.7
+    milestone: review
+  - week: 7
+    title: { en: Legendre functions, ar: دوال لوجندر }
+    topics:
+      en: ['Generating function, Rodrigues'' formula and recurrence relations of \(P_\ell(x)\)', 'Orthogonality; Laplace''s equation with azimuthal symmetry', First periodic exam]
+      ar: ['الدالة المولّدة وصيغة رودريغز والعلاقات التراجعية لـ \(P_\ell(x)\)', 'التعامد؛ معادلة لابلاس في حالة التناظر السمتي', الاختبار الدوري الأول]
+    reading: Arfken & Weber §12.1–12.4
+    activity: { en: Problem set 5, ar: ورقة المسائل 5 }
+    milestone: midterm
+  - week: 8
+    title: { en: Hermite functions, ar: دوال هيرميت }
+    topics:
+      en: ['Hermite polynomials: generating function, recurrences, orthogonality with weight \(e^{-x^2}\)', 'Quantum harmonic oscillator wavefunctions']
+      ar: ['كثيرات حدود هيرميت: الدالة المولّدة والعلاقات التراجعية والتعامد بدالة الوزن \(e^{-x^2}\)', 'الدوال الموجية للمهتز التوافقي الكمومي']
+    reading: Arfken & Weber §13.1
+    activity: { en: Problem set 6, ar: ورقة المسائل 6 }
+  - week: 9
+    title: { en: Laguerre functions, ar: دوال لاغير }
+    topics:
+      en: ['Laguerre and associated Laguerre polynomials', 'Radial wavefunctions of the hydrogen atom']
+      ar: ['كثيرات حدود لاغير ولاغير المرافقة', 'الدوال الموجية القطرية لذرة الهيدروجين']
+    reading: Arfken & Weber §13.2
+    activity: { en: Problem set 7, ar: ورقة المسائل 7 }
+  - week: 10
+    title: { en: Fourier series, ar: متسلسلات فورييه }
+    topics:
+      en: ['Fourier coefficients, even/odd functions, complex form', 'Dirichlet conditions, convergence at discontinuities, Gibbs phenomenon', 'Parseval''s identity; applications (square and sawtooth waves)']
+      ar: ['معاملات فورييه، الدوال الزوجية والفردية، الصيغة المركبة', 'شروط ديريكليه، التقارب عند نقاط الانقطاع، ظاهرة غيبس', 'متطابقة بارسفال؛ تطبيقات (الموجة المربعة والموجة سنّ المنشار)']
+    reading: Arfken & Weber §14.1–14.4, 14.6
+    activity: { en: Problem set 8; Quiz 2; Fourier-series lab, ar: ورقة المسائل 8؛ الاختبار القصير 2؛ مختبر متسلسلات فورييه }
+    milestone: quiz
+  - week: 11
+    title: { en: Integral transforms; the Fourier transform, ar: التحويلات التكاملية؛ تحويل فورييه }
+    topics:
+      en: ['Fourier integral and the Fourier transform pair', 'Transform of derivatives; convolution theorem; Parseval''s relation', 'Applications: Gaussian wave packet, uncertainty relation']
+      ar: ['تكامل فورييه وزوج تحويل فورييه', 'تحويل المشتقات؛ مبرهنة الالتفاف؛ علاقة بارسفال', 'تطبيقات: الحزمة الموجية الغاوسية، علاقة الارتياب']
+    reading: Arfken & Weber §15.1–15.5
+  - week: 12
+    title: { en: The Laplace transform, ar: تحويل لابلاس }
+    topics:
+      en: ['Definition, elementary transforms, shifting theorems', 'Transform of derivatives; solving initial-value problems; inverse by partial fractions', Second periodic exam]
+      ar: ['التعريف والتحويلات الأولية ومبرهنتا الإزاحة', 'تحويل المشتقات؛ حل مسائل القيم الابتدائية؛ التحويل العكسي بالكسور الجزئية', الاختبار الدوري الثاني]
+    reading: Arfken & Weber §15.8–15.12
+    activity: { en: Problem set 9, ar: ورقة المسائل 9 }
+    milestone: midterm
+  - week: 13
+    title: { en: Probability and random variables, ar: الاحتمالات والمتغيرات العشوائية }
+    topics:
+      en: ['Probability axioms, conditional probability', 'Random variables, mean, variance, moments', 'Binomial, Poisson and Gaussian distributions']
+      ar: ['مسلّمات الاحتمال، الاحتمال الشرطي', 'المتغيرات العشوائية، المتوسط، التباين، العزوم', 'التوزيعات ذات الحدين وبواسون والغاوسي']
+    reading: Arfken & Weber §19.2–19.5
+    activity: { en: Problem set 10; Quiz 3, ar: ورقة المسائل 10؛ الاختبار القصير 3 }
+    milestone: quiz
+  - week: 14
+    title: { en: Statistics and group theory; review, ar: الإحصاء ونظرية الزمر؛ مراجعة }
+    topics:
+      en: ['Statistics: estimators, error propagation, least squares', 'Groups: definitions, examples, subgroups, representations', 'Student presentations and course review']
+      ar: ['الإحصاء: المقدِّرات، انتشار الأخطاء، المربعات الصغرى', 'الزمر: التعاريف، أمثلة، الزمر الجزئية، التمثيلات', 'عروض الطلبة ومراجعة المقرر']
+    reading: Arfken & Weber §19.6, 4.1–4.2
+    activity: { en: Problem set 11; presentations, ar: ورقة المسائل 11؛ العروض }
+    milestone: review
+
+materials:
+  - type: notes
+    title: { en: 1. The Gamma function (with Beta and incomplete Gamma functions), ar: 1. دالة غاما (مع دالة بيتا ودالة غاما الناقصة) }
+    url: https://drive.google.com/open?id=1lrZICIeokriQIiBkr0tevypywfgrqq_s
+    week: 1
+    lang: en
+  - type: notes
+    title: { en: 2. Second-order differential equations, ar: 2. المعادلات التفاضلية من الرتبة الثانية }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNVnktdG95Wjh4Q1U
+    week: 3
+    lang: en
+  - type: notes
+    title: { en: 3. Bessel functions, ar: 3. دوال بسل }
+    url: https://drive.google.com/open?id=1bDI4rEINmyuTFe25zX8yzmmkI0zD0Sne
+    week: 5
+    lang: en
+  - type: notes
+    title: { en: 4. Legendre polynomials, ar: 4. كثيرات حدود لوجندر }
+    url: https://drive.google.com/open?id=1l4qxJMds6sQoXIRsXJ_IlX_Oo5tLKiRU
+    week: 7
+    lang: en
+  - type: notes
+    title: { en: 5.1 Hermite polynomials, ar: 5.1 كثيرات حدود هيرميت }
+    url: https://drive.google.com/open?id=1fhGfwDmWMR2xsTTvILh5-zFoc1xIFljR
+    week: 8
+    lang: en
+  - type: notes
+    title: { en: 5.2 Laguerre polynomials, ar: 5.2 كثيرات حدود لاغير }
+    url: https://drive.google.com/open?id=1jXDFpN8cGcHW8X1FWuoXMjT4k36p20yB
+    week: 9
+    lang: en
+  - type: notes
+    title: { en: 6. Fourier series, ar: 6. متسلسلات فورييه }
+    url: https://drive.google.com/open?id=1l0XhTK_7Siv9KkX2lezVsLJ8VlyWfidS
+    week: 10
+    lang: en
+  - type: notes
+    title: { en: 7.1 The Fourier transform, ar: 7.1 تحويل فورييه }
+    url: https://drive.google.com/open?id=1t4NAsovzBth0k49XcechYkAcbcxaMfy6
+    week: 11
+    lang: en
+  - type: notes
+    title: { en: 7.2 The Laplace transform, ar: 7.2 تحويل لابلاس }
+    url: https://drive.google.com/open?id=1lcYtzMckcgsINv4RT4pNRO4Leuw_Pa30
+    week: 12
+    lang: en
+  - type: problems
+    title: { en: Problem set 1, ar: ورقة المسائل 1 }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNU3h2T3FmdGNwMjg
+    week: 2
+    lang: en
+  - type: solutions
+    title: { en: Solutions to problem set 1, ar: حلول ورقة المسائل 1 }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNUlNhM2hNamliQ0k
+    week: 2
+    lang: en
+  - type: problems
+    title: { en: Problem set 2, ar: ورقة المسائل 2 }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNT0szZGg4dHFlOFU
+    week: 3
+    lang: en
+  - type: problems
+    title: { en: Problem set 3, ar: ورقة المسائل 3 }
+    url: https://drive.google.com/open?id=0B-lXQB4vCJCNTFJ1MTFGRWRTMnM
+    week: 4
+    lang: en
+  - type: formula
+    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+    lang: en
+  - type: reading
+    title: { en: 'Mathematical physics lecture notes (from lecture 22 onward: special functions, Fourier methods)', ar: 'مذكرات في الفيزياء الرياضية (من المحاضرة 22 فما بعد: الدوال الخاصة وطرق فورييه)' }
+    url: https://www.dms.uaf.edu/~rybkin/lecture%20notes/MathPhysicsLectureNotes.pdf
+    lang: en
+
+exams:
+  - title: { en: First periodic exam, ar: الاختبار الدوري الأول }
+    session: 2019–2020
+    paper: https://drive.google.com/open?id=1vgkpLQMiv4vn2mDajwrHrjf0rICkMVH2
+    solution: https://drive.google.com/open?id=13hnQFiW1sjhSBZFYr_NMVr9B8PAMZDdW
+    lang: en
+  - title: { en: Past exam (paper I), ar: اختبار سابق (النموذج الأول) }
+    session: 2015–2016
+    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNVWJ6NUNjUGlPQ1E
+    lang: en
+  - title: { en: Past exam (paper II), ar: اختبار سابق (النموذج الثاني) }
+    session: 2015–2016
+    paper: https://drive.google.com/open?id=1NDs8g_qwtgbHQUDIvQxUdMAgjbhJnOT_
+    lang: en
+  - title: { en: Past exam (paper I), ar: اختبار سابق (النموذج الأول) }
+    session: 2016–2017
+    paper: https://drive.google.com/open?id=1IT_k5uV4mL-ARSdpUuBzs_6PlzdiwO7Z
+    lang: en
+  - title: { en: Past exam (paper II), ar: اختبار سابق (النموذج الثاني) }
+    session: 2016–2017
+    paper: https://drive.google.com/open?id=1g_xjJX6ZrNr_Nod9JTrvIx40N3q7KiQc
+    lang: en
+
+exam_guide:
+  format:
+    en: Periodic exams last 60 minutes with 3–4 problems (e.g. evaluate an integral with Gamma/Beta functions, a Frobenius solution, a property of a special function). The final exam lasts 2 hours and contains 5–6 problems covering the whole course, including transforms and probability.
+    ar: تدوم الاختبارات الدورية 60 دقيقة وتتضمن 3 إلى 4 مسائل (مثل حساب تكامل بدالتي غاما وبيتا، أو حل بطريقة فروبينيوس، أو خاصية لإحدى الدوال الخاصة). ويدوم الاختبار النهائي ساعتين ويتضمن 5 إلى 6 مسائل تغطي المقرر كله، بما فيه التحويلات والاحتمالات.
+  allowed:
+    en: A non-programmable calculator. A formula sheet (generating functions, Rodrigues' formulas, table of Laplace transforms) is attached to the paper when needed; personal notes are not allowed.
+    ar: آلة حاسبة غير قابلة للبرمجة. تُرفق بورقة الاختبار عند الحاجة ورقة صيغ (الدوال المولّدة، صيغ رودريغز، جدول تحويلات لابلاس)؛ ولا يُسمح بالمذكرات الشخصية.
+  tips:
+    - en: Learn the defining properties (ODE, generating function, recurrence, orthogonality) of each special function — most questions use one of them.
+      ar: احفظ الخصائص المعرِّفة لكل دالة خاصة (المعادلة التفاضلية، الدالة المولّدة، العلاقة التراجعية، التعامد)؛ فمعظم الأسئلة تعتمد على إحداها.
+    - en: In Frobenius problems, write the indicial equation first and check whether the roots differ by an integer; this decides the form of the second solution.
+      ar: في مسائل فروبينيوس اكتب المعادلة الدليلية أولًا وتحقق هل يختلف الجذران بعدد صحيح؛ فهذا يحدد شكل الحل الثاني.
+    - en: For Fourier series, check the parity of the function first — half of the coefficients often vanish.
+      ar: في متسلسلات فورييه تحقق من زوجية الدالة أو فرديتها أولًا؛ فكثيرًا ما ينعدم نصف المعاملات.
+    - en: Verify results on simple special cases (\(n=0,1\), \(x=0\), a known integral) before moving on.
+      ar: 'تحقق من نتائجك على حالات خاصة بسيطة (\(n=0,1\) أو \(x=0\) أو تكامل معروف) قبل المتابعة.'
+
+problems:
+  - title: { en: Integrals with the Beta function, ar: تكاملات بدالة بيتا }
+    difficulty: 1
+    statement:
+      en: |
+        Using the Beta function, evaluate
+        \[I_1 = \int_0^1 x^4(1-x)^3\,\dd x, \qquad I_2 = \int_0^{\pi/2}\sin^3\theta\,\cos^5\theta\,\dd\theta .\]
+      ar: |
+        باستعمال دالة بيتا، احسب
+        \[I_1 = \int_0^1 x^4(1-x)^3\,\dd x, \qquad I_2 = \int_0^{\pi/2}\sin^3\theta\,\cos^5\theta\,\dd\theta .\]
+    hint:
+      en: '\(B(p,q)=\int_0^1 t^{p-1}(1-t)^{q-1}\dd t = 2\int_0^{\pi/2}\sin^{2p-1}\theta\cos^{2q-1}\theta\,\dd\theta = \dfrac{\Gamma(p)\Gamma(q)}{\Gamma(p+q)}\).'
+      ar: '\(B(p,q)=\int_0^1 t^{p-1}(1-t)^{q-1}\dd t = 2\int_0^{\pi/2}\sin^{2p-1}\theta\cos^{2q-1}\theta\,\dd\theta = \dfrac{\Gamma(p)\Gamma(q)}{\Gamma(p+q)}\).'
+    solution:
+      en: |
+        \(I_1 = B(5,4) = \dfrac{\Gamma(5)\Gamma(4)}{\Gamma(9)} = \dfrac{4!\,3!}{8!} = \dfrac{144}{40320} = \dfrac{1}{280}.\)
+        For \(I_2\): \(2p-1=3\Rightarrow p=2\) and \(2q-1=5\Rightarrow q=3\), so
+        \[I_2 = \tfrac12 B(2,3) = \frac12\,\frac{1!\,2!}{4!} = \frac{1}{24}.\]
+        Check: with \(u=\cos\theta\), \(I_2=\int_0^1(1-u^2)u^5\,\dd u = \tfrac16-\tfrac18 = \tfrac1{24}\). ✓
+      ar: |
+        \(I_1 = B(5,4) = \dfrac{\Gamma(5)\Gamma(4)}{\Gamma(9)} = \dfrac{4!\,3!}{8!} = \dfrac{144}{40320} = \dfrac{1}{280}.\)
+        ومن أجل \(I_2\): \(2p-1=3\Rightarrow p=2\) و\(2q-1=5\Rightarrow q=3\)، إذن
+        \[I_2 = \tfrac12 B(2,3) = \frac12\,\frac{1!\,2!}{4!} = \frac{1}{24}.\]
+        تحقق: بوضع \(u=\cos\theta\) نجد \(I_2=\int_0^1(1-u^2)u^5\,\dd u = \tfrac16-\tfrac18 = \tfrac1{24}\). ✓
+  - title: { en: 'Frobenius solution of \(4xy''''+2y''+y=0\)', ar: 'حل المعادلة \(4xy''''+2y''+y=0\) بطريقة فروبينيوس' }
+    difficulty: 2
+    statement:
+      en: |
+        Consider \(4x\,y'' + 2y' + y = 0\).
+        (a) Show that \(x=0\) is a regular singular point. (b) Find the indicial equation and its roots. (c) Derive the recurrence relation and identify the two solutions in closed form.
+      ar: |
+        لتكن المعادلة \(4x\,y'' + 2y' + y = 0\).
+        (أ) بيّن أن \(x=0\) نقطة شاذة منتظمة. (ب) أوجد المعادلة الدليلية وجذريها. (ج) استنتج العلاقة التراجعية وتعرّف على الحلين بصيغة مغلقة.
+    hint:
+      en: 'Substitute \(y=\sum_{n\ge0}a_n x^{n+r}\) with \(a_0\neq0\) and equate the coefficients of \(x^{n+r}\).'
+      ar: 'عوّض \(y=\sum_{n\ge0}a_n x^{n+r}\) حيث \(a_0\neq0\)، وساوِ معاملات \(x^{n+r}\).'
+    solution:
+      en: |
+        (a) In standard form \(y''+\frac{1}{2x}y'+\frac{1}{4x}y=0\): \(xP=\tfrac12\) and \(x^2Q=\tfrac{x}{4}\) are analytic at 0, so \(x=0\) is a regular singular point.
+        (b) The lowest power \(x^{r-1}\) gives \(a_0[4r(r-1)+2r]=0\Rightarrow 2r(2r-1)=0\), so \(r=0\) or \(r=\tfrac12\). The roots do not differ by an integer, so there are two independent Frobenius series.
+        (c) The coefficient of \(x^{n+r}\) gives
+        \[a_{n+1} = -\frac{a_n}{2(n+r+1)(2n+2r+1)}.\]
+        \(r=0\): \(a_{n+1}=-a_n/[(2n+2)(2n+1)]\Rightarrow a_n=(-1)^n/(2n)!\), so
+        \[y_1=\sum_{n\ge0}\frac{(-1)^n x^n}{(2n)!}=\cos\sqrt{x}.\]
+        \(r=\tfrac12\): \(a_{n+1}=-a_n/[(2n+3)(2n+2)]\Rightarrow a_n=(-1)^n/(2n+1)!\), so
+        \[y_2=\sum_{n\ge0}\frac{(-1)^n x^{n+1/2}}{(2n+1)!}=\sin\sqrt{x}.\]
+        General solution: \(y = A\cos\sqrt x + B\sin\sqrt x\) (easily checked by direct substitution).
+      ar: |
+        (أ) بالصيغة المعيارية \(y''+\frac{1}{2x}y'+\frac{1}{4x}y=0\): الدالتان \(xP=\tfrac12\) و\(x^2Q=\tfrac{x}{4}\) تحليليتان عند 0، إذن \(x=0\) نقطة شاذة منتظمة.
+        (ب) تعطي أدنى قوة \(x^{r-1}\): \(a_0[4r(r-1)+2r]=0\Rightarrow 2r(2r-1)=0\)، أي \(r=0\) أو \(r=\tfrac12\). ولا يختلف الجذران بعدد صحيح، فنحصل على متسلسلتي فروبينيوس مستقلتين.
+        (ج) يعطي معامل \(x^{n+r}\):
+        \[a_{n+1} = -\frac{a_n}{2(n+r+1)(2n+2r+1)}.\]
+        \(r=0\): \(a_{n+1}=-a_n/[(2n+2)(2n+1)]\Rightarrow a_n=(-1)^n/(2n)!\)، إذن
+        \[y_1=\sum_{n\ge0}\frac{(-1)^n x^n}{(2n)!}=\cos\sqrt{x}.\]
+        \(r=\tfrac12\): \(a_{n+1}=-a_n/[(2n+3)(2n+2)]\Rightarrow a_n=(-1)^n/(2n+1)!\)، إذن
+        \[y_2=\sum_{n\ge0}\frac{(-1)^n x^{n+1/2}}{(2n+1)!}=\sin\sqrt{x}.\]
+        الحل العام: \(y = A\cos\sqrt x + B\sin\sqrt x\) (ويمكن التحقق منه بسهولة بالتعويض المباشر).
+  - title: { en: Potential of a sphere with prescribed surface potential, ar: كمون كرة ذات كمون سطحي معلوم }
+    difficulty: 2
+    statement:
+      en: |
+        The surface of a sphere of radius \(R\) (no charge inside or outside) is held at the potential \(V(R,\theta)=V_0\cos^2\theta\).
+        Using Legendre polynomials, find the potential \(V(r,\theta)\) inside and outside the sphere.
+      ar: |
+        يُثبَّت سطح كرة نصف قطرها \(R\) (لا شحنات داخلها ولا خارجها) عند الكمون \(V(R,\theta)=V_0\cos^2\theta\).
+        باستعمال كثيرات حدود لوجندر، أوجد الكمون \(V(r,\theta)\) داخل الكرة وخارجها.
+    hint:
+      en: 'General axisymmetric solution: \(V=\sum_\ell (A_\ell r^\ell + B_\ell r^{-\ell-1})P_\ell(\cos\theta)\). Write \(\cos^2\theta\) in terms of \(P_0\) and \(P_2\).'
+      ar: 'الحل العام في حالة التناظر السمتي: \(V=\sum_\ell (A_\ell r^\ell + B_\ell r^{-\ell-1})P_\ell(\cos\theta)\). اكتب \(\cos^2\theta\) بدلالة \(P_0\) و\(P_2\).'
+    solution:
+      en: |
+        Since \(P_2(x)=\tfrac12(3x^2-1)\), we have \(x^2 = \tfrac13 P_0 + \tfrac23 P_2\). Hence \(V(R,\theta)=V_0\left[\tfrac13 P_0+\tfrac23P_2(\cos\theta)\right]\), and by orthogonality only \(\ell=0,2\) appear.
+        Inside (\(r<R\)), regular at the origin, so \(B_\ell=0\):
+        \[V_\text{in}=V_0\left[\frac13+\frac23\left(\frac{r}{R}\right)^2P_2(\cos\theta)\right].\]
+        Outside (\(r>R\)), vanishing at infinity, so \(A_\ell=0\):
+        \[V_\text{out}=V_0\left[\frac13\,\frac{R}{r}+\frac23\left(\frac{R}{r}\right)^3P_2(\cos\theta)\right].\]
+        Both match \(V_0\cos^2\theta\) at \(r=R\). The \(1/r\) term is the potential of a net charge \(Q = 4\pi\varepsilon_0 R V_0/3\); the \(1/r^3\) term is a quadrupole.
+      ar: |
+        بما أن \(P_2(x)=\tfrac12(3x^2-1)\) فإن \(x^2 = \tfrac13 P_0 + \tfrac23 P_2\)، ومنه \(V(R,\theta)=V_0\left[\tfrac13 P_0+\tfrac23P_2(\cos\theta)\right]\)، وبفضل التعامد لا يظهر إلا \(\ell=0,2\).
+        في الداخل (\(r<R\)) يجب أن يكون الكمون منتظمًا عند المركز فإن \(B_\ell=0\):
+        \[V_\text{in}=V_0\left[\frac13+\frac23\left(\frac{r}{R}\right)^2P_2(\cos\theta)\right].\]
+        في الخارج (\(r>R\)) يجب أن ينعدم الكمون في اللانهاية فإن \(A_\ell=0\):
+        \[V_\text{out}=V_0\left[\frac13\,\frac{R}{r}+\frac23\left(\frac{R}{r}\right)^3P_2(\cos\theta)\right].\]
+        يتطابق الحلّان مع \(V_0\cos^2\theta\) عند \(r=R\). والحد \(1/r\) هو كمون شحنة كلية \(Q = 4\pi\varepsilon_0 R V_0/3\)، أما الحد \(1/r^3\) فهو رباعي أقطاب.
+  - title: { en: Fourier series of a square wave and two famous sums, ar: متسلسلة فورييه لموجة مربعة ومجموعان شهيران }
+    difficulty: 2
+    statement:
+      en: |
+        Let \(f(x)=-1\) for \(-\pi<x<0\) and \(f(x)=+1\) for \(0<x<\pi\), extended with period \(2\pi\).
+        (a) Find its Fourier series. (b) Evaluate it at \(x=\pi/2\) to obtain a series for \(\pi\). (c) Use Parseval's identity to find \(\sum_{k\ge0}\frac{1}{(2k+1)^2}\). (d) What does the series give at \(x=0\)?
+      ar: |
+        لتكن \(f(x)=-1\) من أجل \(-\pi<x<0\) و\(f(x)=+1\) من أجل \(0<x<\pi\)، ممدَّدة بدور \(2\pi\).
+        (أ) أوجد متسلسلة فورييه لها. (ب) احسبها عند \(x=\pi/2\) لتحصل على متسلسلة لـ \(\pi\). (ج) استعمل متطابقة بارسفال لإيجاد \(\sum_{k\ge0}\frac{1}{(2k+1)^2}\). (د) ماذا تعطي المتسلسلة عند \(x=0\)؟
+    hint:
+      en: '\(f\) is odd, so \(a_n=0\). Parseval: \(\frac1\pi\int_{-\pi}^{\pi}f^2\,\dd x = \frac{a_0^2}{2}+\sum_n(a_n^2+b_n^2)\).'
+      ar: '\(f\) فردية فإن \(a_n=0\). متطابقة بارسفال: \(\frac1\pi\int_{-\pi}^{\pi}f^2\,\dd x = \frac{a_0^2}{2}+\sum_n(a_n^2+b_n^2)\).'
+    solution:
+      en: |
+        (a) \(b_n=\frac{2}{\pi}\int_0^\pi\sin nx\,\dd x=\frac{2}{n\pi}(1-\cos n\pi)\), i.e. \(4/(n\pi)\) for odd \(n\) and 0 for even \(n\):
+        \[f(x)=\frac4\pi\left(\sin x+\frac{\sin3x}{3}+\frac{\sin5x}{5}+\cdots\right).\]
+        (b) At \(x=\pi/2\), \(f=1\) and \(\sin(n\pi/2) = 1,-1,1,\dots\) for \(n=1,3,5,\dots\):
+        \[1=\frac4\pi\left(1-\frac13+\frac15-\cdots\right)\;\Rightarrow\;\frac\pi4=\sum_{k\ge0}\frac{(-1)^k}{2k+1}.\]
+        (c) \(\frac1\pi\int_{-\pi}^{\pi}1\,\dd x=2=\frac{16}{\pi^2}\sum_{k\ge0}\frac1{(2k+1)^2}\Rightarrow\sum_{k\ge0}\frac{1}{(2k+1)^2}=\frac{\pi^2}{8}.\)
+        (d) Every term vanishes at \(x=0\): the series converges to 0, the average of the one-sided limits \(-1\) and \(+1\). Near the jump, partial sums overshoot by about 9% of the jump (Gibbs phenomenon) — explore it with the Fourier lab.
+      ar: |
+        (أ) \(b_n=\frac{2}{\pi}\int_0^\pi\sin nx\,\dd x=\frac{2}{n\pi}(1-\cos n\pi)\)، أي \(4/(n\pi)\) من أجل \(n\) الفردي و0 من أجل \(n\) الزوجي:
+        \[f(x)=\frac4\pi\left(\sin x+\frac{\sin3x}{3}+\frac{\sin5x}{5}+\cdots\right).\]
+        (ب) عند \(x=\pi/2\) تكون \(f=1\) و\(\sin(n\pi/2) = 1,-1,1,\dots\) من أجل \(n=1,3,5,\dots\):
+        \[1=\frac4\pi\left(1-\frac13+\frac15-\cdots\right)\;\Rightarrow\;\frac\pi4=\sum_{k\ge0}\frac{(-1)^k}{2k+1}.\]
+        (ج) \(\frac1\pi\int_{-\pi}^{\pi}1\,\dd x=2=\frac{16}{\pi^2}\sum_{k\ge0}\frac1{(2k+1)^2}\Rightarrow\sum_{k\ge0}\frac{1}{(2k+1)^2}=\frac{\pi^2}{8}.\)
+        (د) تنعدم كل الحدود عند \(x=0\)، فتتقارب المتسلسلة إلى 0، وهو متوسط النهايتين الجانبيتين \(-1\) و\(+1\). وبالقرب من نقطة القفز تتجاوز المجاميع الجزئية القيمة بنحو 9% من القفزة (ظاهرة غيبس)؛ استكشفها في مختبر فورييه.
+  - title: { en: Solving an initial-value problem with the Laplace transform, ar: حل مسألة قيم ابتدائية بتحويل لابلاس }
+    difficulty: 2
+    statement:
+      en: |
+        Solve \(y''+3y'+2y=2\) with \(y(0)=0\), \(y'(0)=1\) using the Laplace transform, and check the result.
+      ar: |
+        حُلّ المعادلة \(y''+3y'+2y=2\) مع \(y(0)=0\) و\(y'(0)=1\) باستعمال تحويل لابلاس، ثم تحقق من النتيجة.
+    hint:
+      en: '\(\mathcal L\{y''\}=sY-y(0)\), \(\mathcal L\{y''''\}=s^2Y-sy(0)-y''(0)\), \(\mathcal L\{1\}=1/s\), \(\mathcal L\{e^{-at}\}=1/(s+a)\).'
+      ar: '\(\mathcal L\{y''\}=sY-y(0)\)، \(\mathcal L\{y''''\}=s^2Y-sy(0)-y''(0)\)، \(\mathcal L\{1\}=1/s\)، \(\mathcal L\{e^{-at}\}=1/(s+a)\).'
+    solution:
+      en: |
+        Transforming: \((s^2Y-1)+3sY+2Y=\dfrac2s\), so
+        \[Y(s)=\frac{1+2/s}{s^2+3s+2}=\frac{s+2}{s(s+1)(s+2)}=\frac{1}{s(s+1)}=\frac1s-\frac1{s+1}.\]
+        Inverting: \(y(t)=1-e^{-t}\).
+        Check: \(y'=e^{-t}\), \(y''=-e^{-t}\); \(-e^{-t}+3e^{-t}+2-2e^{-t}=2\) ✓, \(y(0)=0\) ✓, \(y'(0)=1\) ✓.
+        Note that the factor \((s+2)\) cancelled: the initial conditions are such that the \(e^{-2t}\) mode is never excited.
+      ar: |
+        بأخذ التحويل: \((s^2Y-1)+3sY+2Y=\dfrac2s\)، إذن
+        \[Y(s)=\frac{1+2/s}{s^2+3s+2}=\frac{s+2}{s(s+1)(s+2)}=\frac{1}{s(s+1)}=\frac1s-\frac1{s+1}.\]
+        وبالتحويل العكسي: \(y(t)=1-e^{-t}\).
+        تحقق: \(y'=e^{-t}\) و\(y''=-e^{-t}\)؛ \(-e^{-t}+3e^{-t}+2-2e^{-t}=2\) ✓، \(y(0)=0\) ✓، \(y'(0)=1\) ✓.
+        لاحظ أن العامل \((s+2)\) قد اختُزل: فالشروط الابتدائية لا تُثير النمط \(e^{-2t}\) إطلاقًا.
+  - title: { en: 'Fourier transform of \(e^{-a|x|}\) and Parseval', ar: 'تحويل فورييه لـ \(e^{-a|x|}\) ومبرهنة بارسفال' }
+    difficulty: 3
+    statement:
+      en: |
+        With the convention \(F(k)=\int_{-\infty}^{\infty}f(x)e^{-ikx}\dd x\):
+        (a) compute the Fourier transform of \(f(x)=e^{-a|x|}\), \(a>0\);
+        (b) use Parseval's theorem \(\int|f|^2\dd x=\frac1{2\pi}\int|F|^2\dd k\) to evaluate \(\displaystyle\int_{-\infty}^{\infty}\frac{\dd k}{(k^2+a^2)^2}\).
+      ar: |
+        باعتماد الاصطلاح \(F(k)=\int_{-\infty}^{\infty}f(x)e^{-ikx}\dd x\):
+        (أ) احسب تحويل فورييه للدالة \(f(x)=e^{-a|x|}\) حيث \(a>0\)؛
+        (ب) استعمل مبرهنة بارسفال \(\int|f|^2\dd x=\frac1{2\pi}\int|F|^2\dd k\) لحساب \(\displaystyle\int_{-\infty}^{\infty}\frac{\dd k}{(k^2+a^2)^2}\).
+    hint:
+      en: Split the integral at \(x=0\); each half is an elementary exponential integral.
+      ar: 'جزّئ التكامل عند \(x=0\)؛ فكل نصف تكامل أسي بسيط.'
+    solution:
+      en: |
+        (a)
+        \[F(k)=\int_{-\infty}^{0}e^{(a-ik)x}\dd x+\int_0^{\infty}e^{-(a+ik)x}\dd x=\frac1{a-ik}+\frac1{a+ik}=\frac{2a}{a^2+k^2}.\]
+        A sharp cusp at \(x=0\) gives a slowly decaying (Lorentzian) spectrum.
+        (b) \(\int_{-\infty}^{\infty}e^{-2a|x|}\dd x=\dfrac1a\). Parseval gives
+        \[\frac1a=\frac1{2\pi}\int_{-\infty}^{\infty}\frac{4a^2}{(a^2+k^2)^2}\dd k\;\Rightarrow\;\int_{-\infty}^{\infty}\frac{\dd k}{(k^2+a^2)^2}=\frac{\pi}{2a^3}.\]
+        (A residue calculation or the substitution \(k=a\tan\phi\) gives the same result.)
+      ar: |
+        (أ)
+        \[F(k)=\int_{-\infty}^{0}e^{(a-ik)x}\dd x+\int_0^{\infty}e^{-(a+ik)x}\dd x=\frac1{a-ik}+\frac1{a+ik}=\frac{2a}{a^2+k^2}.\]
+        فالنتوء الحاد عند \(x=0\) يعطي طيفًا يتناقص ببطء (لورنتزي).
+        (ب) \(\int_{-\infty}^{\infty}e^{-2a|x|}\dd x=\dfrac1a\). وتعطي مبرهنة بارسفال
+        \[\frac1a=\frac1{2\pi}\int_{-\infty}^{\infty}\frac{4a^2}{(a^2+k^2)^2}\dd k\;\Rightarrow\;\int_{-\infty}^{\infty}\frac{\dd k}{(k^2+a^2)^2}=\frac{\pi}{2a^3}.\]
+        (ويعطي حساب الرواسب أو التعويض \(k=a\tan\phi\) النتيجة نفسها.)
+
+quizzes:
+  - title: { en: 'Gamma and Beta functions', ar: 'دالتا غاما وبيتا' }
+    questions:
+      - q:
+          en: 'What is \(\Gamma(5)\)?'
+          ar: 'ما قيمة \(\Gamma(5)\)؟'
+        options:
+          - '5'
+          - '4'
+          - '24'
+          - '120'
+        answer: 2
+        explain:
+          en: '\(\Gamma(n)=(n-1)!\) for positive integers, so \(\Gamma(5)=4!=24\).'
+          ar: '\(\Gamma(n)=(n-1)!\) من أجل الأعداد الصحيحة الموجبة، إذن \(\Gamma(5)=4!=24\).'
+      - q:
+          en: 'What is \(\Gamma(1/2)\)?'
+          ar: 'ما قيمة \(\Gamma(1/2)\)؟'
+        options:
+          - '\(\sqrt\pi\)'
+          - '\(\pi\)'
+          - '\(1/2\)'
+          - '\(\sqrt{\pi}/2\)'
+        answer: 0
+        explain:
+          en: '\(\Gamma(\tfrac12)=\int_0^\infty t^{-1/2}e^{-t}\dd t = 2\int_0^\infty e^{-u^2}\dd u=\sqrt\pi\). The value \(\sqrt\pi/2\) is \(\Gamma(3/2)\).'
+          ar: '\(\Gamma(\tfrac12)=\int_0^\infty t^{-1/2}e^{-t}\dd t = 2\int_0^\infty e^{-u^2}\dd u=\sqrt\pi\). أما \(\sqrt\pi/2\) فهي \(\Gamma(3/2)\).'
+      - q:
+          en: 'What is \(B(2,3)\)?'
+          ar: 'ما قيمة \(B(2,3)\)؟'
+        options:
+          - '\(1/6\)'
+          - '\(1/24\)'
+          - '\(2/3\)'
+          - '\(1/12\)'
+        answer: 3
+        explain:
+          en: '\(B(2,3)=\Gamma(2)\Gamma(3)/\Gamma(5)=1\cdot2/24=1/12\).'
+          ar: '\(B(2,3)=\Gamma(2)\Gamma(3)/\Gamma(5)=1\cdot2/24=1/12\).'
+      - q:
+          en: 'Evaluate \(\int_0^\infty x^2e^{-x^2}\dd x\).'
+          ar: 'احسب \(\int_0^\infty x^2e^{-x^2}\dd x\).'
+        options:
+          - '\(1/2\)'
+          - '\(\sqrt\pi/4\)'
+          - '\(\sqrt\pi/2\)'
+          - '\(\sqrt\pi\)'
+        answer: 1
+        explain:
+          en: 'With \(t=x^2\): \(\int_0^\infty x^2e^{-x^2}\dd x=\tfrac12\int_0^\infty t^{1/2}e^{-t}\dd t=\tfrac12\Gamma(\tfrac32)=\tfrac12\cdot\tfrac{\sqrt\pi}{2}=\tfrac{\sqrt\pi}{4}\).'
+          ar: 'بوضع \(t=x^2\): \(\int_0^\infty x^2e^{-x^2}\dd x=\tfrac12\int_0^\infty t^{1/2}e^{-t}\dd t=\tfrac12\Gamma(\tfrac32)=\tfrac12\cdot\tfrac{\sqrt\pi}{2}=\tfrac{\sqrt\pi}{4}\).'
+      - q:
+          en: 'For large \(n\), Stirling''s formula gives \(\ln n!\approx\)'
+          ar: 'من أجل \(n\) كبير، تعطي صيغة ستيرلنغ \(\ln n!\approx\)'
+        options:
+          - '\(\ln n - n\)'
+          - '\(n\ln n-n\)'
+          - '\(n\ln n\)'
+          - '\(n^2/2\)'
+        answer: 1
+        explain:
+          en: '\(n!\approx\sqrt{2\pi n}\,(n/e)^n\), so \(\ln n!=n\ln n-n+\tfrac12\ln(2\pi n)+\dots\); the leading terms are \(n\ln n-n\).'
+          ar: '\(n!\approx\sqrt{2\pi n}\,(n/e)^n\)، إذن \(\ln n!=n\ln n-n+\tfrac12\ln(2\pi n)+\dots\)، والحدان الرئيسيان هما \(n\ln n-n\).'
+  - title: { en: 'Series solutions and special functions', ar: 'الحلول بالمتسلسلات والدوال الخاصة' }
+    questions:
+      - q:
+          en: 'For Bessel''s equation \(x^2y''''+xy''+(x^2-\nu^2)y=0\), the point \(x=0\) is'
+          ar: 'من أجل معادلة بسل \(x^2y''''+xy''+(x^2-\nu^2)y=0\)، النقطة \(x=0\) هي'
+        options:
+          - { en: 'an ordinary point', ar: 'نقطة عادية' }
+          - { en: 'an irregular singular point', ar: 'نقطة شاذة غير منتظمة' }
+          - { en: 'a branch point of every solution', ar: 'نقطة تفرّع لكل الحلول' }
+          - { en: 'a regular singular point', ar: 'نقطة شاذة منتظمة' }
+        answer: 3
+        explain:
+          en: '\(P=1/x\) and \(Q=1-\nu^2/x^2\) are singular, but \(xP=1\) and \(x^2Q=x^2-\nu^2\) are analytic: regular singular point, so the Frobenius method applies.'
+          ar: 'الدالتان \(P=1/x\) و\(Q=1-\nu^2/x^2\) شاذتان، لكن \(xP=1\) و\(x^2Q=x^2-\nu^2\) تحليليتان، فهي نقطة شاذة منتظمة وتنطبق طريقة فروبينيوس.'
+      - q:
+          en: 'What are the roots of the indicial equation of Bessel''s equation of order \(\nu\)?'
+          ar: 'ما جذرا المعادلة الدليلية لمعادلة بسل من الرتبة \(\nu\)؟'
+        options:
+          - '\(r=\pm\nu\)'
+          - '\(r=0,1\)'
+          - '\(r=\nu,\nu+1\)'
+          - '\(r=\pm\nu^2\)'
+        answer: 0
+        explain:
+          en: 'The lowest power gives \(r(r-1)+r-\nu^2=r^2-\nu^2=0\). When \(2\nu\) is an integer the second solution may need care (e.g. \(Y_n\) has a logarithm).'
+          ar: 'تعطي أدنى قوة \(r(r-1)+r-\nu^2=r^2-\nu^2=0\). وعندما يكون \(2\nu\) عددًا صحيحًا قد يتطلب الحل الثاني عناية خاصة (فمثلًا \(Y_n\) يحتوي على لوغاريتم).'
+      - q:
+          en: 'Which is the Legendre polynomial \(P_2(x)\)?'
+          ar: 'ما كثير حدود لوجندر \(P_2(x)\)؟'
+        options:
+          - '\(\tfrac12(5x^3-3x)\)'
+          - '\(x^2\)'
+          - '\(\tfrac12(3x^2-1)\)'
+          - '\(3x^2-1\)'
+        answer: 2
+        explain:
+          en: 'From Rodrigues'' formula \(P_\ell=\frac1{2^\ell\ell!}\frac{\dd^\ell}{\dd x^\ell}(x^2-1)^\ell\) with \(\ell=2\); it is normalised so that \(P_2(1)=1\). \(\tfrac12(5x^3-3x)\) is \(P_3\).'
+          ar: 'من صيغة رودريغز \(P_\ell=\frac1{2^\ell\ell!}\frac{\dd^\ell}{\dd x^\ell}(x^2-1)^\ell\) مع \(\ell=2\)، وهو مقيَّس بحيث \(P_2(1)=1\). أما \(\tfrac12(5x^3-3x)\) فهو \(P_3\).'
+      - q:
+          en: 'What is \(\int_{-1}^{1}[P_2(x)]^2\dd x\)?'
+          ar: 'ما قيمة \(\int_{-1}^{1}[P_2(x)]^2\dd x\)؟'
+        options:
+          - '\(1\)'
+          - '\(0\)'
+          - '\(2/3\)'
+          - '\(2/5\)'
+        answer: 3
+        explain:
+          en: '\(\int_{-1}^1P_\ell P_m\dd x=\frac{2}{2\ell+1}\delta_{\ell m}\); with \(\ell=2\) this is \(2/5\).'
+          ar: '\(\int_{-1}^1P_\ell P_m\dd x=\frac{2}{2\ell+1}\delta_{\ell m}\)، ومن أجل \(\ell=2\) نجد \(2/5\).'
+      - q:
+          en: 'Which special functions appear in the radial wavefunctions of the hydrogen atom?'
+          ar: 'ما الدوال الخاصة التي تظهر في الدوال الموجية القطرية لذرة الهيدروجين؟'
+        options:
+          - { en: 'Chebyshev polynomials', ar: 'كثيرات حدود تشيبيشيف' }
+          - { en: 'Associated Laguerre polynomials', ar: 'كثيرات حدود لاغير المرافقة' }
+          - { en: 'Hermite polynomials', ar: 'كثيرات حدود هيرميت' }
+          - { en: 'Bessel functions of the first kind', ar: 'دوال بسل من النوع الأول' }
+        answer: 1
+        explain:
+          en: '\(R_{n\ell}(r)\propto\rho^\ell e^{-\rho/2}L^{2\ell+1}_{n-\ell-1}(\rho)\). Hermite polynomials belong to the harmonic oscillator; the angular part involves Legendre functions.'
+          ar: '\(R_{n\ell}(r)\propto\rho^\ell e^{-\rho/2}L^{2\ell+1}_{n-\ell-1}(\rho)\). أما كثيرات حدود هيرميت فتخص المهتز التوافقي، ويتضمن الجزء الزاوي دوال لوجندر.'
+  - title: { en: 'Fourier series and integral transforms', ar: 'متسلسلات فورييه والتحويلات التكاملية' }
+    questions:
+      - q:
+          en: 'The Fourier series on \((-\pi,\pi)\) of an odd function contains'
+          ar: 'تحتوي متسلسلة فورييه على المجال \((-\pi,\pi)\) لدالة فردية على'
+        options:
+          - { en: 'both sines and cosines', ar: 'حدود جيبية وجيب تمام معًا' }
+          - { en: 'only a constant term', ar: 'حدًّا ثابتًا فقط' }
+          - { en: 'only sine terms', ar: 'حدود جيبية فقط' }
+          - { en: 'only cosine terms and a constant', ar: 'حدود جيب تمام وحد ثابت فقط' }
+        answer: 2
+        explain:
+          en: '\(a_n=\frac1\pi\int f\cos nx\,\dd x\) integrates an odd function over a symmetric interval, so \(a_n=0\) (and \(a_0=0\)).'
+          ar: '\(a_n=\frac1\pi\int f\cos nx\,\dd x\) تكامل لدالة فردية على مجال متناظر، إذن \(a_n=0\) (و\(a_0=0\)).'
+      - q:
+          en: 'At a jump discontinuity of a piecewise smooth function, its Fourier series converges to'
+          ar: 'عند نقطة انقطاع بقفزة لدالة ملساء قطعيًّا، تتقارب متسلسلة فورييه إلى'
+        options:
+          - { en: 'the average of the left and right limits', ar: 'متوسط النهايتين اليسرى واليمنى' }
+          - { en: 'the left limit', ar: 'النهاية اليسرى' }
+          - { en: 'the right limit', ar: 'النهاية اليمنى' }
+          - { en: 'it diverges there', ar: 'لا تتقارب عندها' }
+        answer: 0
+        explain:
+          en: 'Dirichlet''s theorem: the series converges to \(\tfrac12[f(x^-)+f(x^+)]\).'
+          ar: 'وفق مبرهنة ديريكليه تتقارب المتسلسلة إلى \(\tfrac12[f(x^-)+f(x^+)]\).'
+      - q:
+          en: 'The Gibbs phenomenon is an overshoot of the partial sums near a jump of about'
+          ar: 'ظاهرة غيبس تجاوزٌ للمجاميع الجزئية قرب القفزة بمقدار يقارب'
+        options:
+          - { en: '9% of the jump, which does not vanish as more terms are added', ar: '9% من القفزة، ولا يزول بزيادة عدد الحدود' }
+          - { en: '9% of the jump, which tends to zero with more terms', ar: '9% من القفزة، ويؤول إلى الصفر بزيادة عدد الحدود' }
+          - { en: '50% of the jump', ar: '50% من القفزة' }
+          - { en: 'zero for smooth functions and jumps alike', ar: 'صفر سواء في الدوال الملساء أو عند القفزات' }
+        answer: 0
+        explain:
+          en: 'The overshoot tends to about 0.0895 of the jump. Adding terms narrows the overshoot region but does not reduce its height. Try it in the Fourier lab.'
+          ar: 'يؤول التجاوز إلى نحو 0.0895 من القفزة. وزيادة عدد الحدود تضيّق منطقة التجاوز لكنها لا تُنقص ارتفاعه. جرّب ذلك في مختبر فورييه.'
+      - q:
+          en: 'The Fourier transform of a Gaussian \(e^{-x^2/2\sigma^2}\) is'
+          ar: 'تحويل فورييه لدالة غاوسية \(e^{-x^2/2\sigma^2}\) هو'
+        options:
+          - { en: 'a Lorentzian', ar: 'دالة لورنتزية' }
+          - { en: 'a sinc function', ar: 'دالة sinc' }
+          - { en: 'a Gaussian whose width is proportional to \(1/\sigma\)', ar: 'دالة غاوسية عرضها يتناسب مع \(1/\sigma\)' }
+          - { en: 'a Gaussian with the same width \(\sigma\)', ar: 'دالة غاوسية بالعرض نفسه \(\sigma\)' }
+        answer: 2
+        explain:
+          en: '\(\int e^{-x^2/2\sigma^2}e^{-ikx}\dd x=\sqrt{2\pi}\,\sigma\,e^{-\sigma^2k^2/2}\). A narrow pulse has a broad spectrum — the origin of the uncertainty relation.'
+          ar: '\(\int e^{-x^2/2\sigma^2}e^{-ikx}\dd x=\sqrt{2\pi}\,\sigma\,e^{-\sigma^2k^2/2}\). فالنبضة الضيقة ذات طيف عريض، وهذا أصل علاقة الارتياب.'
+      - q:
+          en: 'If \(\mathcal L\{f(t)\}=F(s)\), what is \(\mathcal L\{f''(t)\}\)?'
+          ar: 'إذا كان \(\mathcal L\{f(t)\}=F(s)\)، فما \(\mathcal L\{f''(t)\}\)؟'
+        options:
+          - '\(F''(s)\)'
+          - '\(sF(s)-f(0)\)'
+          - '\(sF(s)\)'
+          - '\(F(s)/s\)'
+        answer: 1
+        explain:
+          en: 'Integrating by parts: \(\int_0^\infty f''e^{-st}\dd t=[fe^{-st}]_0^\infty+s\int_0^\infty fe^{-st}\dd t=sF(s)-f(0)\). This turns ODEs into algebraic equations that include the initial conditions.'
+          ar: 'بالتكامل بالتجزئة: \(\int_0^\infty f''e^{-st}\dd t=[fe^{-st}]_0^\infty+s\int_0^\infty fe^{-st}\dd t=sF(s)-f(0)\)؛ وبذلك تتحول المعادلات التفاضلية إلى معادلات جبرية تتضمن الشروط الابتدائية.'
+  - title: { en: 'Probability, statistics and groups', ar: 'الاحتمالات والإحصاء والزمر' }
+    questions:
+      - q:
+          en: 'A Poisson distribution with mean \(\lambda\) has variance'
+          ar: 'تباين توزيع بواسون ذي المتوسط \(\lambda\) يساوي'
+        options:
+          - '\(\lambda^2\)'
+          - '\(\sqrt\lambda\)'
+          - '\(1/\lambda\)'
+          - '\(\lambda\)'
+        answer: 3
+        explain:
+          en: 'For \(P(n)=\lambda^ne^{-\lambda}/n!\), both the mean and the variance equal \(\lambda\); the standard deviation is \(\sqrt\lambda\).'
+          ar: 'من أجل \(P(n)=\lambda^ne^{-\lambda}/n!\) يساوي كلٌّ من المتوسط والتباين \(\lambda\)، أما الانحراف المعياري فهو \(\sqrt\lambda\).'
+      - q:
+          en: 'What is the variance of the number of heads in 100 tosses of a fair coin?'
+          ar: 'ما تباين عدد مرات ظهور الوجه في 100 رمية لقطعة نقود متوازنة؟'
+        options:
+          - '10'
+          - '25'
+          - '50'
+          - '5'
+        answer: 1
+        explain:
+          en: 'Binomial: \(\sigma^2=np(1-p)=100\times\tfrac12\times\tfrac12=25\) (standard deviation 5).'
+          ar: 'التوزيع ذو الحدين: \(\sigma^2=np(1-p)=100\times\tfrac12\times\tfrac12=25\) (والانحراف المعياري 5).'
+      - q:
+          en: 'For a Gaussian distribution, what is the probability of falling within one standard deviation of the mean?'
+          ar: 'ما احتمال وقوع قيمة ضمن انحراف معياري واحد حول المتوسط في التوزيع الغاوسي؟'
+        options:
+          - { en: 'about 95%', ar: 'نحو 95%' }
+          - { en: 'about 50%', ar: 'نحو 50%' }
+          - { en: 'about 99.7%', ar: 'نحو 99.7%' }
+          - { en: 'about 68%', ar: 'نحو 68%' }
+        answer: 3
+        explain:
+          en: '\(\operatorname{erf}(1/\sqrt2)\approx0.683\). About 95% lies within \(2\sigma\) and 99.7% within \(3\sigma\).'
+          ar: '\(\operatorname{erf}(1/\sqrt2)\approx0.683\). ويقع نحو 95% ضمن \(2\sigma\) و99.7% ضمن \(3\sigma\).'
+      - q:
+          en: 'Which of the following is NOT one of the group axioms?'
+          ar: 'أيّ مما يلي ليس من مسلّمات الزمرة؟'
+        options:
+          - { en: 'Associativity', ar: 'التجميع' }
+          - { en: 'Existence of an identity and of inverses', ar: 'وجود العنصر المحايد والنظائر' }
+          - { en: 'Commutativity', ar: 'التبديل' }
+          - { en: 'Closure', ar: 'الانغلاق' }
+        answer: 2
+        explain:
+          en: 'A group needs closure, associativity, an identity and inverses. Commutativity defines the special case of an abelian group (rotations in 3D, for example, do not commute).'
+          ar: 'تتطلب الزمرة الانغلاق والتجميع ووجود المحايد والنظائر. أما التبديل فيعرّف الحالة الخاصة للزمرة الأبيلية (فالدورانات في ثلاثة أبعاد مثلًا غير تبديلية).'
+      - q:
+          en: 'Under multiplication, the set \(\{1,-1,i,-i\}\)'
+          ar: 'المجموعة \(\{1,-1,i,-i\}\) مع عملية الضرب'
+        options:
+          - { en: 'is a cyclic group of order 4', ar: 'زمرة دورية من الرتبة 4' }
+          - { en: 'is not a group (some inverses are missing)', ar: 'ليست زمرة (بعض النظائر غير موجود)' }
+          - { en: 'is a non-abelian group', ar: 'زمرة غير أبيلية' }
+          - { en: 'is a group of order 2', ar: 'زمرة من الرتبة 2' }
+        answer: 0
+        explain:
+          en: 'All elements are powers of \(i\) (\(i^0, i^1, i^2, i^3\)). The set is closed, \(1\) is the identity, \(i^{-1}=-i\), so it is the cyclic group \(C_4\), which is abelian.'
+          ar: 'كل العناصر قوى للعدد \(i\) (\(i^0, i^1, i^2, i^3\))، والمجموعة مغلقة، و\(1\) هو المحايد، و\(i^{-1}=-i\)؛ فهي الزمرة الدورية \(C_4\)، وهي أبيلية.'
+
+textbooks:
+  required:
+    - { authors: G. B. Arfken & H. J. Weber, title: Mathematical Methods for Physicists, edition: 6th, publisher: Elsevier Academic Press, year: 2005 }
+  recommended:
+    - { authors: M. L. Boas, title: Mathematical Methods in the Physical Sciences, edition: 3rd, publisher: Wiley, year: 2006 }
+    - { authors: 'K. F. Riley, M. P. Hobson & S. J. Bence', title: Mathematical Methods for Physics and Engineering, edition: 3rd, publisher: Cambridge University Press, year: 2006 }
+    - { authors: C. Harper, title: Introduction to Mathematical Physics, publisher: Prentice-Hall, year: 1976 }
+  online:
+    - title: { en: 'NIST Digital Library of Mathematical Functions (DLMF)', ar: 'المكتبة الرقمية للدوال الرياضية (DLMF) من NIST' }
+      url: https://dlmf.nist.gov/
+      note: { en: 'The authoritative reference for Gamma, Bessel, Legendre, Hermite and Laguerre functions.', ar: المرجع المعتمد لدوال غاما وبسل ولوجندر وهيرميت ولاغير. }
+    - title: { en: 'UCI Open — Physics 50: Mathematical Methods', ar: 'UCI Open — الفيزياء 50: الطرق الرياضية' }
+      url: https://ocw.uci.edu/courses/physics_50_math_methods.html
+      note: { en: Free video lectures at the same level., ar: محاضرات مرئية مجانية في المستوى نفسه. }
+    - title: { en: 'Illinois PHYS 508 — Mathematical Methods in Physics I', ar: 'إلينوي PHYS 508 — الطرق الرياضية في الفيزياء 1' }
+      url: https://courses.physics.illinois.edu/phys508/
+      note: { en: Graduate-level notes for students who want to go further., ar: مذكرات بمستوى الدراسات العليا لمن يرغب في التعمق. }
+
+glossary:
+  - { en: Gamma function, ar: دالة غاما, fr: Fonction gamma, def: { en: '\(\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}\dd t\); extends the factorial: \(\Gamma(n+1)=n!\).', ar: '\(\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}\dd t\)، وهي تعميم للمضروب: \(\Gamma(n+1)=n!\).' } }
+  - { en: Beta function, ar: دالة بيتا, fr: Fonction bêta, def: { en: '\(B(p,q)=\int_0^1t^{p-1}(1-t)^{q-1}\dd t=\Gamma(p)\Gamma(q)/\Gamma(p+q)\).', ar: '\(B(p,q)=\int_0^1t^{p-1}(1-t)^{q-1}\dd t=\Gamma(p)\Gamma(q)/\Gamma(p+q)\).' } }
+  - { en: Stirling's formula, ar: صيغة ستيرلنغ, fr: Formule de Stirling, def: { en: 'Asymptotic form \(n!\approx\sqrt{2\pi n}\,(n/e)^n\) for large \(n\).', ar: 'الصيغة التقاربية \(n!\approx\sqrt{2\pi n}\,(n/e)^n\) من أجل \(n\) كبير.' } }
+  - { en: Error function, ar: دالة الخطأ, fr: Fonction d'erreur, def: { en: '\(\operatorname{erf}x=\frac{2}{\sqrt\pi}\int_0^xe^{-t^2}\dd t\), related to the incomplete Gamma function.', ar: '\(\operatorname{erf}x=\frac{2}{\sqrt\pi}\int_0^xe^{-t^2}\dd t\)، وترتبط بدالة غاما الناقصة.' } }
+  - { en: Ordinary point, ar: نقطة عادية, fr: Point ordinaire, def: { en: 'A point where the coefficients \(P, Q\) of \(y''''+Py''+Qy=0\) are analytic; two power-series solutions exist there.', ar: 'نقطة تكون عندها المعاملات \(P, Q\) في \(y''''+Py''+Qy=0\) تحليلية، ويوجد عندها حلّان بمتسلسلات القوى.' } }
+  - { en: Regular singular point, ar: نقطة شاذة منتظمة, fr: Point singulier régulier, def: { en: 'A singular point \(x_0\) where \((x-x_0)P\) and \((x-x_0)^2Q\) are analytic; the Frobenius method applies there.', ar: 'نقطة شاذة \(x_0\) تكون عندها \((x-x_0)P\) و\((x-x_0)^2Q\) تحليليتين، وتنطبق عندها طريقة فروبينيوس.' } }
+  - { en: Frobenius method, ar: طريقة فروبينيوس, fr: Méthode de Frobenius, def: { en: 'Series solution \(y=\sum a_nx^{n+r}\) about a regular singular point.', ar: 'حل بالمتسلسلة \(y=\sum a_nx^{n+r}\) حول نقطة شاذة منتظمة.' } }
+  - { en: Indicial equation, ar: المعادلة الدليلية, fr: Équation indicielle, def: { en: 'The equation for the exponent \(r\) obtained from the lowest power in the Frobenius method.', ar: 'المعادلة التي تحدد الأس \(r\)، وتُستخرج من أدنى قوة في طريقة فروبينيوس.' } }
+  - { en: Wronskian, ar: الرونسكيان, fr: Wronskien, def: { en: '\(W=y_1y_2''-y_1''y_2\); non-zero if and only if the two solutions are linearly independent.', ar: '\(W=y_1y_2''-y_1''y_2\)، ولا ينعدم إلا إذا كان الحلّان مرتبطين خطيًّا.' } }
+  - { en: Bessel function, ar: دالة بسل, fr: Fonction de Bessel, def: { en: '\(J_\nu(x)\), the solution of Bessel''s equation that is regular at the origin; it appears in problems with cylindrical symmetry.', ar: '\(J_\nu(x)\)، حل معادلة بسل المنتظم عند المبدأ، ويظهر في المسائل ذات التناظر الأسطواني.' } }
+  - { en: Neumann function, ar: دالة نويمان, fr: Fonction de Neumann, def: { en: '\(Y_\nu(x)\), the second solution of Bessel''s equation; it is singular at \(x=0\).', ar: '\(Y_\nu(x)\)، الحل الثاني لمعادلة بسل، وهو شاذ عند \(x=0\).' } }
+  - { en: Hankel functions, ar: دوال هانكل, fr: Fonctions de Hankel, def: { en: '\(H^{(1,2)}_\nu=J_\nu\pm iY_\nu\); they describe outgoing and incoming cylindrical waves.', ar: '\(H^{(1,2)}_\nu=J_\nu\pm iY_\nu\)، وتصف الموجات الأسطوانية الصادرة والواردة.' } }
+  - { en: Modified Bessel functions, ar: دوال بسل المعدّلة, fr: Fonctions de Bessel modifiées, def: { en: '\(I_\nu, K_\nu\): solutions of \(x^2y''''+xy''-(x^2+\nu^2)y=0\), growing or decaying exponentially.', ar: '\(I_\nu, K_\nu\): حلول \(x^2y''''+xy''-(x^2+\nu^2)y=0\)، وتتزايد أو تتناقص أسيًّا.' } }
+  - { en: Spherical Bessel functions, ar: دوال بسل الكروية, fr: Fonctions de Bessel sphériques, def: { en: '\(j_\ell(x)=\sqrt{\pi/2x}\,J_{\ell+1/2}(x)\); radial solutions of the Helmholtz equation in spherical coordinates.', ar: '\(j_\ell(x)=\sqrt{\pi/2x}\,J_{\ell+1/2}(x)\)، وهي الحلول القطرية لمعادلة هلمهولتز في الإحداثيات الكروية.' } }
+  - { en: Legendre polynomial, ar: كثير حدود لوجندر, fr: Polynôme de Legendre, def: { en: '\(P_\ell(x)\), polynomial solution of Legendre''s equation; orthogonal on \([-1,1]\).', ar: '\(P_\ell(x)\)، الحل كثير الحدود لمعادلة لوجندر، وهو متعامد على \([-1,1]\).' } }
+  - { en: Rodrigues' formula, ar: صيغة رودريغز, fr: Formule de Rodrigues, def: { en: 'Expression of an orthogonal polynomial as a repeated derivative, e.g. \(P_\ell=\frac{1}{2^\ell\ell!}\frac{\dd^\ell}{\dd x^\ell}(x^2-1)^\ell\).', ar: 'تعبير عن كثير حدود متعامد بمشتقة متكررة، مثل \(P_\ell=\frac{1}{2^\ell\ell!}\frac{\dd^\ell}{\dd x^\ell}(x^2-1)^\ell\).' } }
+  - { en: Generating function, ar: الدالة المولّدة, fr: Fonction génératrice, def: { en: 'A function whose power-series coefficients are a family of functions, e.g. \((1-2xt+t^2)^{-1/2}=\sum P_\ell(x)t^\ell\).', ar: 'دالة معاملات نشرها في متسلسلة قوى هي عائلة من الدوال، مثل \((1-2xt+t^2)^{-1/2}=\sum P_\ell(x)t^\ell\).' } }
+  - { en: Orthogonality, ar: التعامد, fr: Orthogonalité, def: { en: 'Vanishing of \(\int f_nf_m\,w\,\dd x\) for \(n\ne m\) with a weight function \(w\); it allows expansions in series of special functions.', ar: 'انعدام \(\int f_nf_m\,w\,\dd x\) من أجل \(n\ne m\) بدالة وزن \(w\)، وهو ما يسمح بالنشر في متسلسلات من الدوال الخاصة.' } }
+  - { en: Hermite polynomial, ar: كثير حدود هيرميت, fr: Polynôme d'Hermite, def: { en: '\(H_n(x)\), orthogonal with weight \(e^{-x^2}\); it appears in the quantum harmonic oscillator.', ar: '\(H_n(x)\)، متعامد بدالة الوزن \(e^{-x^2}\)، ويظهر في المهتز التوافقي الكمومي.' } }
+  - { en: Laguerre polynomial, ar: كثير حدود لاغير, fr: Polynôme de Laguerre, def: { en: '\(L_n(x)\), orthogonal on \([0,\infty)\) with weight \(e^{-x}\); its associated forms appear in the hydrogen atom.', ar: '\(L_n(x)\)، متعامد على \([0,\infty)\) بدالة الوزن \(e^{-x}\)، وتظهر صيغه المرافقة في ذرة الهيدروجين.' } }
+  - { en: Fourier series, ar: متسلسلة فورييه, fr: Série de Fourier, def: { en: Expansion of a periodic function in sines and cosines (or complex exponentials)., ar: نشر دالة دورية بدلالة الجيوب وجيوب التمام (أو الأسيات المركبة). } }
+  - { en: Gibbs phenomenon, ar: ظاهرة غيبس, fr: Phénomène de Gibbs, def: { en: Persistent overshoot (about 9% of the jump) of Fourier partial sums near a discontinuity., ar: تجاوز دائم (نحو 9% من القفزة) للمجاميع الجزئية لمتسلسلة فورييه قرب نقطة انقطاع. } }
+  - { en: Parseval's theorem, ar: مبرهنة بارسفال, fr: Théorème de Parseval, def: { en: 'The integral of \(|f|^2\) equals the corresponding sum or integral of the squared Fourier coefficients (energy conservation).', ar: 'تكامل \(|f|^2\) يساوي المجموع أو التكامل المقابل لمربعات معاملات فورييه (انحفاظ الطاقة).' } }
+  - { en: Fourier transform, ar: تحويل فورييه, fr: Transformée de Fourier, def: { en: '\(F(k)=\int f(x)e^{-ikx}\dd x\); it decomposes a non-periodic function into plane waves.', ar: '\(F(k)=\int f(x)e^{-ikx}\dd x\)، ويحلّل دالة غير دورية إلى موجات مستوية.' } }
+  - { en: Convolution, ar: الالتفاف, fr: Produit de convolution, def: { en: '\((f*g)(x)=\int f(y)g(x-y)\dd y\); its Fourier transform is the product \(FG\).', ar: '\((f*g)(x)=\int f(y)g(x-y)\dd y\)، وتحويل فورييه له هو الجداء \(FG\).' } }
+  - { en: Laplace transform, ar: تحويل لابلاس, fr: Transformée de Laplace, def: { en: '\(F(s)=\int_0^\infty f(t)e^{-st}\dd t\); it converts linear initial-value problems into algebra.', ar: '\(F(s)=\int_0^\infty f(t)e^{-st}\dd t\)، ويحوّل مسائل القيم الابتدائية الخطية إلى مسائل جبرية.' } }
+  - { en: Random variable, ar: المتغير العشوائي, fr: Variable aléatoire, def: { en: A quantity whose value is determined by the outcome of a random experiment., ar: مقدار تتحدد قيمته بنتيجة تجربة عشوائية. } }
+  - { en: Poisson distribution, ar: توزيع بواسون, fr: Loi de Poisson, def: { en: '\(P(n)=\lambda^ne^{-\lambda}/n!\); it counts rare independent events (e.g. radioactive decays).', ar: '\(P(n)=\lambda^ne^{-\lambda}/n!\)، ويصف عدد الأحداث النادرة المستقلة (مثل الانحلالات الإشعاعية).' } }
+  - { en: Gaussian (normal) distribution, ar: التوزيع الغاوسي (الطبيعي), fr: Loi normale (gaussienne), def: { en: 'Probability density \(\propto e^{-(x-\mu)^2/2\sigma^2}\); the limit of sums of many independent variables.', ar: 'كثافة احتمال \(\propto e^{-(x-\mu)^2/2\sigma^2}\)، وهو نهاية مجموع عدد كبير من المتغيرات المستقلة.' } }
+  - { en: Group, ar: الزمرة, fr: Groupe, def: { en: 'A set with an associative, closed operation that has an identity and inverses; the language of symmetry.', ar: مجموعة مزوّدة بعملية تجميعية مغلقة لها عنصر محايد ونظائر، وهي لغة التناظر. } }

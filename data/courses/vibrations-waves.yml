@@ -1,0 +1,1296 @@
+slug: vibrations-waves
+order: 50
+codes: [UEF 123, و ت أ 321]
+short: { en: V&W, ar: ا.أ }
+title: { en: Vibrations & Waves, ar: الاهتزازات والأمواج }
+tagline:
+  en: From the mass on a spring to sound in a pipe — one language for everything that oscillates.
+  ar: من الكتلة المعلّقة بنابض إلى الصوت في أنبوب — لغة واحدة لكل ما يهتز.
+area: waves
+level: 2
+credits: 4
+hours: { lecture: 1.5, tutorial: 1.5, lab: 1.5 }
+weeks: 14
+instruction: [en, ar, fr]
+prerequisites: [general-physics-1]
+prerequisite_note:
+  en: Newtonian mechanics of a particle, work and energy; differential and integral calculus; complex numbers; basic electric circuits (R, L, C).
+  ar: ميكانيكا نيوتن للنقطة المادية والعمل والطاقة؛ حساب التفاضل والتكامل؛ الأعداد المركبة؛ أساسيات الدارات الكهربائية (R، L، C).
+sims: [oscillator, waves]
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/uhbc/vibrations-waves/
+  - https://khelifak.wordpress.com/studying/teaching-2/uhbc/vibrations-et-ondes/
+  - https://khelifak.wordpress.com/studying/teaching-2/uhbc/%d8%a7%d9%84%d8%a7%d9%87%d8%aa%d8%b2%d8%a7%d8%b2%d8%a7%d8%aa-%d9%88-%d8%a7%d9%84%d8%a3%d9%85%d9%88%d8%a7%d8%ac/
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/uef123-vibrations-waves/
+notes: >
+  Merged four pages (English, French, Arabic-taught and the later UEF123 page with lab). Syllabus follows the
+  French chapter plan (Lagrange, SHO, damped, forced, electrical analogues, coupled, travelling and standing
+  waves) fitted onto the 14-week calendar of the UEF123 page; readings in King were blank in the source and were
+  filled in at chapter level (King 2009 chapter numbers, to be checked). Assessment rebuilt: the source split was 33%
+  continuous (tutorial attendance 13.2, midterm 8.25, behaviour 3.3, problem sets 8.25) + 67% final exam; the lab
+  component and weights below are a proposal. Credits (4) are assumed. Language of the Google-Drive problem sets
+  and exams is not stated (lang left empty). The e-learning (Moodle) link and the marks portal were not kept. The 2014 past paper and resit are labelled only "2014" in the source.
+  Description, CLOs, quizzes, worked problems and glossary are new. Two PhET links added to the online list.
+
+description:
+  en: |
+    <p>Oscillations and waves are everywhere in physics: a pendulum, an RLC circuit, the atoms of a crystal, a guitar string, the air in an organ pipe. This course builds a single mathematical language for all of them. Starting from the Lagrangian description of a system with one degree of freedom, it treats free, damped and driven oscillations, resonance and the quality factor, and the deep analogy between mechanical and electrical oscillators.</p>
+    <p>The second part moves from one oscillator to many: coupled systems with two or more degrees of freedom, normal modes and beats, and then the limit of a continuous medium, where the wave equation appears. Travelling and standing waves on strings, acoustic waves in fluids, characteristic impedance, energy transport, reflection and transmission at a boundary, dispersion and the Doppler effect complete the picture.</p>
+    <p>Weekly tutorials train problem solving, and laboratory sessions (vibrating strings, RLC resonance, coupled oscillators, Kundt tube, the loudspeaker) connect the theory to measurement. The course prepares directly for electromagnetism, optics and quantum mechanics, where the same equations return.</p>
+  ar: |
+    <p>الاهتزازات والأمواج حاضرة في كل فروع الفيزياء: النواس، ودارة RLC، وذرات البلّورة، ووتر القيثارة، والهواء داخل أنبوب الأرغن. يبني هذا المقرر لغة رياضية واحدة لوصفها جميعًا. فانطلاقًا من وصف لاغرانج لجملة ذات درجة حرية واحدة، يدرس الاهتزازات الحرة والمتخامدة والقسرية، وظاهرة التجاوب (الرنين) ومعامل الجودة، والتماثل العميق بين الهزازات الميكانيكية والكهربائية.</p>
+    <p>وينتقل الجزء الثاني من هزاز واحد إلى عدة هزازات: الجمل المتقارنة ذات درجتين أو أكثر من درجات الحرية، والأنماط الذاتية والضربات، ثم إلى نهاية الوسط المستمر حيث تظهر معادلة الموجة. وتكتمل الصورة بدراسة الأمواج المتنقلة والمستقرة على الأوتار، والأمواج الصوتية في الموائع، والممانعة المميزة، ونقل الطاقة، والانعكاس والنفاذ عند الحدود، والتبدد، وظاهرة دوبلر.</p>
+    <p>تُدرّب الأعمال الموجهة الأسبوعية على حل المسائل، وتربط الأعمال التطبيقية (الأوتار المهتزة، تجاوب دارة RLC، الهزازات المتقارنة، أنبوب كونت، مكبر الصوت) النظريةَ بالقياس. ويُعدّ المقرر تمهيدًا مباشرًا للكهرومغناطيسية والبصريات وميكانيكا الكم، حيث تعود المعادلات نفسها.</p>
+
+topics:
+  - { en: Lagrange's equations, ar: معادلات لاغرانج }
+  - { en: Simple harmonic motion, ar: الحركة التوافقية البسيطة }
+  - { en: Damping & quality factor, ar: التخامد ومعامل الجودة }
+  - { en: Forced oscillations & resonance, ar: الاهتزازات القسرية والتجاوب }
+  - { en: Electromechanical analogies, ar: التماثلات الكهروميكانيكية }
+  - { en: Coupled oscillators & normal modes, ar: الهزازات المتقارنة والأنماط الذاتية }
+  - { en: The wave equation, ar: معادلة الموجة }
+  - { en: Waves on strings, ar: الأمواج على الأوتار }
+  - { en: Acoustic waves & impedance, ar: الأمواج الصوتية والممانعة }
+  - { en: Dispersion & Doppler effect, ar: التبدد وظاهرة دوبلر }
+
+outcomes:
+  - id: CLO1
+    bloom: understand
+    domain: knowledge
+    text:
+      en: Describe periodic and simple harmonic motion and explain the exchange between kinetic and potential energy in a vibrating system.
+      ar: يصف الحركة الدورية والحركة التوافقية البسيطة ويشرح تبادل الطاقة الحركية والطاقة الكامنة في جملة مهتزة.
+    assessed_by: [quizzes, homework, midterm, final]
+  - id: CLO2
+    bloom: apply
+    domain: skills
+    text:
+      en: Write the Lagrangian of a mechanical system with one or two degrees of freedom, derive its equations of motion and linearise them for small oscillations about a stable equilibrium.
+      ar: يكتب دالة لاغرانج لجملة ميكانيكية ذات درجة حرية واحدة أو درجتين، ويستنتج معادلات حركتها ويحوّلها إلى معادلات خطية في حالة الاهتزازات الصغيرة حول وضع توازن مستقر.
+    assessed_by: [homework, midterm, final]
+  - id: CLO3
+    bloom: analyze
+    domain: knowledge
+    text:
+      en: Analyse damped and driven oscillators — damping regimes, logarithmic decrement, resonance, phase lag, bandwidth, quality factor and absorbed power.
+      ar: يحلّل الهزازات المتخامدة والقسرية — أنظمة التخامد، والتناقص اللوغاريتمي، والتجاوب، وفرق الطور، وعرض المجال، ومعامل الجودة، والاستطاعة الممتصة.
+    assessed_by: [quizzes, homework, midterm, final]
+  - id: CLO4
+    bloom: apply
+    domain: skills
+    text:
+      en: Use mechanical–electrical analogies and the concept of impedance to model RLC circuits and electromechanical transducers.
+      ar: يستعمل التماثلات الميكانيكية–الكهربائية ومفهوم الممانعة لنمذجة دارات RLC والمحوّلات الكهروميكانيكية.
+    assessed_by: [homework, lab, final]
+  - id: CLO5
+    bloom: analyze
+    domain: skills
+    text:
+      en: Determine the natural frequencies, mode shapes and normal coordinates of coupled systems and interpret beats as a superposition of normal modes.
+      ar: يحدّد التواترات الذاتية وأشكال الأنماط والإحداثيات الطبيعية للجمل المتقارنة، ويفسّر الضربات على أنها تراكب لأنماط ذاتية.
+    assessed_by: [midterm, lab, final]
+  - id: CLO6
+    bloom: apply
+    domain: knowledge
+    text:
+      en: Derive and solve the one-dimensional wave equation for strings and fluids, and distinguish phase velocity, group velocity and dispersion.
+      ar: يستنتج معادلة الموجة أحادية البعد للأوتار والموائع ويحلّها، ويميّز بين سرعة الطور وسرعة المجموعة والتبدد.
+    assessed_by: [quizzes, homework, final]
+  - id: CLO7
+    bloom: analyze
+    domain: skills
+    text:
+      en: Calculate characteristic impedances, reflection and transmission coefficients, energy flux, standing-wave modes and Doppler shifts in concrete situations.
+      ar: يحسب الممانعات المميزة ومعاملات الانعكاس والنفاذ وتدفق الطاقة وأنماط الأمواج المستقرة وانزياح دوبلر في حالات ملموسة.
+    assessed_by: [homework, lab, final]
+  - id: CLO8
+    bloom: evaluate
+    domain: values
+    text:
+      en: Carry out vibration and wave experiments safely, evaluate measurements and uncertainties honestly, and report them clearly and with academic integrity.
+      ar: يُجري تجارب الاهتزازات والأمواج بأمان، ويقيّم القياسات وارتياباتها بنزاهة، ويعرضها في تقرير واضح يحترم الأمانة العلمية.
+    assessed_by: [lab, participation]
+
+assessment:
+  - id: quizzes
+    type: quiz
+    weight: 5
+    title: { en: Tutorial quizzes, ar: اختبارات قصيرة في الأعمال الموجهة }
+    detail:
+      en: Four 15-minute quizzes at the start of a tutorial session, one per chapter block; one short problem or 3–4 conceptual questions each. The best three count.
+      ar: أربعة اختبارات قصيرة مدة كل منها 15 دقيقة في بداية حصة الأعمال الموجهة، اختبار لكل مجموعة فصول؛ يتضمن كل منها مسألة قصيرة أو 3–4 أسئلة مفاهيمية. تُحتسب أفضل ثلاث علامات.
+    when: { en: 'Weeks 4, 7, 10, 13', ar: 'الأسابيع 4، 7، 10، 13' }
+  - id: homework
+    type: homework
+    weight: 7
+    title: { en: Problem sets, ar: سلاسل التمارين }
+    detail:
+      en: One problem set per chapter, due one week later. Two problems per set are marked in detail (method, physics, units, final answer); the rest are checked for completion. Solutions must be written individually.
+      ar: سلسلة تمارين لكل فصل تُسلَّم بعد أسبوع. تُصحَّح مسألتان من كل سلسلة بالتفصيل (المنهجية، الفيزياء، الوحدات، النتيجة النهائية) ويُتحقَّق من إنجاز البقية. يجب أن يكتب كل طالب حلوله بنفسه.
+    when: { en: Weeks 2–13, ar: الأسابيع 2–13 }
+  - id: midterm
+    type: midterm
+    weight: 12
+    title: { en: Midterm exam, ar: الاختبار النصفي }
+    detail:
+      en: 'Written, 1 h. Covers one-degree-of-freedom systems: Lagrange''s equations, free, damped and forced oscillations, electrical analogues.'
+      ar: 'كتابي، مدته ساعة واحدة. يشمل الجمل ذات درجة الحرية الواحدة: معادلات لاغرانج، والاهتزازات الحرة والمتخامدة والقسرية، والتماثلات الكهربائية.'
+    when: { en: Week 8, ar: الأسبوع 8 }
+  - id: lab
+    type: lab
+    weight: 12
+    title: { en: Laboratory work and reports, ar: الأعمال التطبيقية والتقارير }
+    detail:
+      en: Six experiments (vibrating string, RLC resonance, loudspeaker, coupled oscillators — beats and natural frequencies, Kundt tube). Each is graded on preparation, data quality and a short report with uncertainty analysis; a practical test closes the series.
+      ar: ست تجارب (الوتر المهتز، تجاوب دارة RLC، مكبر الصوت، الهزازات المتقارنة — الضربات والتواترات الذاتية، أنبوب كونت). تُقيَّم كل تجربة على التحضير وجودة المعطيات وتقرير قصير يتضمن تحليل الارتيابات؛ وتُختتم السلسلة باختبار تطبيقي.
+    when: { en: Weeks 3–13 (alternate weeks), ar: الأسابيع 3–13 (أسبوع بعد أسبوع) }
+  - id: participation
+    type: participation
+    weight: 4
+    title: { en: Attendance and participation, ar: الحضور والمشاركة }
+    detail:
+      en: Attendance at tutorials and active participation (presenting a solution at the board at least once).
+      ar: حضور حصص الأعمال الموجهة والمشاركة الفعّالة (عرض حل على السبورة مرة واحدة على الأقل).
+    when: { en: Throughout, ar: طوال الفصل }
+  - id: final
+    type: final
+    weight: 60
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail:
+      en: Written, 1 h 30 min, comprehensive, typically three exercises (one-degree-of-freedom system, coupled system, waves).
+      ar: كتابي، مدته ساعة ونصف، شامل لكل المقرر، يتضمن عادة ثلاثة تمارين (جملة ذات درجة حرية واحدة، جملة متقارنة، أمواج).
+    when: { en: Exam period, ar: فترة الاختبارات }
+
+schedule:
+  - week: 1
+    title: { en: Introduction and mathematical toolkit, ar: مدخل وأدوات رياضية }
+    topics:
+      en:
+        - Periodic, harmonic and vibratory motion; examples
+        - 'Complex representation \(x = \mathrm{Re}\,(A e^{i\omega t})\)'
+        - Second-order linear ODEs with constant coefficients (homogeneous and with a source term)
+      ar:
+        - الحركة الدورية والتوافقية والاهتزازية؛ أمثلة
+        - 'التمثيل المركب \(x = \mathrm{Re}\,(A e^{i\omega t})\)'
+        - المعادلات التفاضلية الخطية من الرتبة الثانية ذات المعاملات الثابتة (المتجانسة وذات الطرف الثاني)
+    reading: King Ch. 1; French Ch. 1–2
+    activity: { en: Problem set 0 (revision) released, ar: نشر السلسلة 0 (مراجعة) }
+  - week: 2
+    title: { en: Lagrange's equations, ar: معادلات لاغرانج }
+    topics:
+      en:
+        - Degrees of freedom and generalised coordinates
+        - 'Kinetic and potential energy; the Lagrangian \(L = T - U\)'
+        - Lagrange's equation for a conservative system
+        - Equilibrium, stability and small oscillations
+      ar:
+        - درجات الحرية والإحداثيات المعممة
+        - 'الطاقة الحركية والطاقة الكامنة؛ دالة لاغرانج \(L = T - U\)'
+        - معادلة لاغرانج لجملة محافظة
+        - التوازن والاستقرار والاهتزازات الصغيرة
+    reading: Lecture notes Ch. 1; Becherrawy Vol. 1
+    activity: { en: Problem set 1 (Lagrange) released, ar: نشر السلسلة 1 (لاغرانج) }
+  - week: 3
+    title: { en: Free undamped oscillations, ar: الاهتزازات الحرة غير المتخامدة }
+    topics:
+      en:
+        - Mass–spring, simple and compound pendulums, torsion pendulum
+        - 'Natural angular frequency \(\omega_0\), period, amplitude and phase'
+        - Energy of a harmonic oscillator; equivalent springs
+      ar:
+        - كتلة–نابض، النواس البسيط والنواس المركب، نواس الفتل
+        - 'النبض الذاتي \(\omega_0\) والدور والسعة والطور'
+        - طاقة الهزاز التوافقي؛ النوابض المكافئة
+    reading: King Ch. 1; French Ch. 3
+    activity: { en: Lab 1 — transverse vibrations of a string, ar: التجربة 1 — الاهتزازات العرضية لوتر }
+    milestone: lab
+  - week: 4
+    title: { en: Free damped oscillations, ar: الاهتزازات الحرة المتخامدة }
+    topics:
+      en:
+        - 'Viscous friction and the dissipation function \(D = \tfrac12\alpha\dot q^2\)'
+        - Overdamped, critically damped and underdamped regimes
+        - Logarithmic decrement, energy decay and quality factor
+      ar:
+        - 'الاحتكاك اللزج ودالة التبديد \(D = \tfrac12\alpha\dot q^2\)'
+        - الأنظمة فوق الحرجة والحرجة وتحت الحرجة (شبه الدورية)
+        - التناقص اللوغاريتمي وتناقص الطاقة ومعامل الجودة
+    reading: King Ch. 2; French Ch. 3
+    activity: { en: Quiz 1 (free oscillations), ar: الاختبار القصير 1 (الاهتزازات الحرة) }
+    milestone: quiz
+  - week: 5
+    title: { en: Forced oscillations (I), ar: الاهتزازات القسرية (1) }
+    topics:
+      en:
+        - Sinusoidal driving force; transient and steady-state solutions
+        - Amplitude and phase response curves; displacement resonance
+        - Complex method for the steady state
+      ar:
+        - قوة إثارة جيبية؛ النظام الانتقالي والنظام الدائم
+        - منحنيات استجابة السعة والطور؛ تجاوب الانتقال
+        - الطريقة المركبة لحساب النظام الدائم
+    reading: King Ch. 3; French Ch. 4
+    activity: { en: Lab 2 — RLC circuit in free and forced oscillations, ar: التجربة 2 — دارة RLC في الاهتزازات الحرة والقسرية }
+    milestone: lab
+  - week: 6
+    title: { en: Forced oscillations (II), ar: الاهتزازات القسرية (2) }
+    topics:
+      en:
+        - Velocity resonance, absorbed power, bandwidth and Q
+        - Mechanical impedance
+        - Arbitrary periodic driving force (Fourier series)
+      ar:
+        - تجاوب السرعة، والاستطاعة الممتصة، وعرض المجال، ومعامل الجودة
+        - الممانعة الميكانيكية
+        - قوة إثارة دورية كيفية (سلاسل فورييه)
+    reading: King Ch. 3; French Ch. 4
+  - week: 7
+    title: { en: Electrical and electromechanical oscillators, ar: الهزازات الكهربائية والكهروميكانيكية }
+    topics:
+      en:
+        - LC and RLC circuits; force–voltage analogy
+        - Electrical impedance and resonance in series RLC
+        - 'Electromechanical systems: the electrodynamic loudspeaker'
+      ar:
+        - 'دارتا LC وRLC؛ التماثل قوة–توتر'
+        - الممانعة الكهربائية والتجاوب في دارة RLC على التسلسل
+        - 'الجمل الكهروميكانيكية: مكبر الصوت الكهروديناميكي'
+    reading: King Ch. 2–3; Bekefi & Barrett Ch. 1
+    activity: { en: Quiz 2 (damped and forced); Lab 3 — loudspeaker, ar: الاختبار القصير 2 (التخامد والإثارة)؛ التجربة 3 — مكبر الصوت }
+    milestone: quiz
+  - week: 8
+    title: { en: Coupled oscillators — two degrees of freedom, ar: الهزازات المتقارنة — درجتا حرية }
+    topics:
+      en:
+        - Two masses and three springs; the secular determinant
+        - Natural frequencies, mode shapes and normal coordinates
+        - General motion as a superposition of normal modes
+      ar:
+        - كتلتان وثلاثة نوابض؛ المحدد المميز
+        - التواترات الذاتية وأشكال الأنماط والإحداثيات الطبيعية
+        - الحركة العامة كتراكب للأنماط الذاتية
+    reading: King Ch. 4; French Ch. 5
+    activity: { en: Midterm exam, ar: الاختبار النصفي }
+    milestone: midterm
+  - week: 9
+    title: { en: 'Coupled oscillators — beats, forcing, N degrees of freedom', ar: الهزازات المتقارنة — الضربات والإثارة وN درجة حرية }
+    topics:
+      en:
+        - Coupled pendulums; weak coupling and beats
+        - Damped and driven two-degree-of-freedom systems; dynamic absorber
+        - Systems with N degrees of freedom (general behaviour)
+      ar:
+        - النواسات المتقارنة؛ التقارن الضعيف والضربات
+        - الجمل ذات درجتي الحرية المتخامدة والقسرية؛ الماصّ الديناميكي
+        - الجمل ذات N درجة حرية (السلوك العام)
+    reading: King Ch. 4; French Ch. 5
+    activity: { en: 'Lab 4 — coupled oscillations, beats and natural frequencies', ar: التجربة 4 — الاهتزازات المتقارنة، الضربات والتواترات الذاتية }
+    milestone: lab
+  - week: 10
+    title: { en: From oscillators to waves, ar: من الهزازات إلى الأمواج }
+    topics:
+      en:
+        - 'Linear chain of masses and springs; dispersion relation \(\omega(k)\)'
+        - 'Continuum limit and the wave equation \(\partial_t^2 y = v^2 \partial_x^2 y\)'
+        - 'D''Alembert''s general solution; harmonic travelling waves'
+        - Classification of waves; phase velocity and group velocity
+      ar:
+        - 'السلسلة الخطية من الكتل والنوابض؛ علاقة التبدد \(\omega(k)\)'
+        - 'نهاية الوسط المستمر ومعادلة الموجة \(\partial_t^2 y = v^2 \partial_x^2 y\)'
+        - الحل العام لدالمبير؛ الأمواج المتنقلة التوافقية
+        - تصنيف الأمواج؛ سرعة الطور وسرعة المجموعة
+    reading: King Ch. 5, Ch. 8; French Ch. 6–7
+    activity: { en: Quiz 3 (coupled oscillators), ar: الاختبار القصير 3 (الهزازات المتقارنة) }
+    milestone: quiz
+  - week: 11
+    title: { en: Transverse waves on a string, ar: الأمواج العرضية على وتر }
+    topics:
+      en:
+        - Equation of motion of a stretched string
+        - Characteristic impedance; energy and power of a travelling wave
+        - Reflection and transmission at a junction of two strings
+      ar:
+        - معادلة حركة وتر مشدود
+        - الممانعة المميزة؛ طاقة واستطاعة الموجة المتنقلة
+        - الانعكاس والنفاذ عند نقطة اتصال وترين
+    reading: King Ch. 5; French Ch. 7–8
+  - week: 12
+    title: { en: Standing waves and waves in 2D and 3D, ar: الأمواج المستقرة والأمواج في بعدين وثلاثة أبعاد }
+    topics:
+      en:
+        - Free vibrations of a string fixed at both ends; normal modes and harmonics
+        - Forced vibrations of a string
+        - Wavefronts; plane and spherical waves; the wave equation in 3D
+      ar:
+        - الاهتزازات الحرة لوتر مثبت الطرفين؛ الأنماط الذاتية والتوافقيات
+        - الاهتزازات القسرية لوتر
+        - صدر الموجة؛ الأمواج المستوية والكروية؛ معادلة الموجة في ثلاثة أبعاد
+    reading: King Ch. 6–7; French Ch. 6
+    activity: { en: Lab 5 — Kundt tube, ar: التجربة 5 — أنبوب كونت }
+    milestone: lab
+  - week: 13
+    title: { en: Acoustic waves in fluids, ar: الأمواج الصوتية في الموائع }
+    topics:
+      en:
+        - Plane waves in a pipe; wave equation in a gas and in a liquid; speed of sound
+        - Acoustic impedance, intensity and decibels
+        - Reflection and transmission at an interface; standing waves in pipes
+        - The Doppler effect
+      ar:
+        - الأمواج المستوية في أنبوب؛ معادلة الموجة في غاز وفي سائل؛ سرعة الصوت
+        - الممانعة الصوتية والشدة والديسيبل
+        - الانعكاس والنفاذ عند سطح فاصل؛ الأمواج المستقرة في الأنابيب
+        - ظاهرة دوبلر
+    reading: King Ch. 5–6; French Ch. 7–8
+    activity: { en: Quiz 4 (waves); Lab 6 — longitudinal waves in a fluid, ar: الاختبار القصير 4 (الأمواج)؛ التجربة 6 — الأمواج الطولية في مائع }
+    milestone: quiz
+  - week: 14
+    title: { en: Elastic waves in solids and review, ar: الأمواج المرنة في الأجسام الصلبة ومراجعة }
+    topics:
+      en:
+        - Longitudinal waves in a bar; Young's modulus and wave speed
+        - Synthesis of the course; analogy table (strings, fluids, circuits)
+        - Review of past exam problems
+      ar:
+        - الأمواج الطولية في قضيب؛ معامل يونغ وسرعة الموجة
+        - تركيب المقرر؛ جدول التماثلات (أوتار، موائع، دارات)
+        - مراجعة مسائل الاختبارات السابقة
+    reading: French Ch. 6; Lecture notes Ch. 8
+    milestone: review
+
+materials:
+  # Lecture notes (scanned handwritten chapters, French)
+  - type: notes
+    title: { en: 'Chapter 1 — Introduction to Lagrange''s equations (scanned notes)', ar: 'الفصل 1 — مدخل إلى معادلات لاغرانج (محاضرة ممسوحة)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_chap1_scan.pdf
+    week: 2
+    lang: fr
+  - type: notes
+    title: { en: Chapter 2 — Simple harmonic oscillator (scanned notes), ar: الفصل 2 — الهزاز التوافقي البسيط (محاضرة ممسوحة) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_chap2_scan.pdf
+    week: 3
+    lang: fr
+  - type: notes
+    title: { en: Chapter 3 — Damped harmonic oscillator (scanned notes), ar: الفصل 3 — الهزاز التوافقي المتخامد (محاضرة ممسوحة) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_chap3_scan.pdf
+    week: 4
+    lang: fr
+  - type: notes
+    title: { en: Chapter 4 — Forced harmonic oscillator (scanned notes), ar: الفصل 4 — الهزاز التوافقي القسري (محاضرة ممسوحة) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_chap4_scan1.pdf
+    week: 5
+    lang: fr
+  - type: notes
+    title: { en: Chapter 5 — Electrical oscillations (scanned notes), ar: الفصل 5 — الاهتزازات الكهربائية (محاضرة ممسوحة) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_chap5_scan1.pdf
+    week: 7
+    lang: fr
+  - type: notes
+    title: { en: Chapter 6 — Coupled oscillations (scanned notes), ar: الفصل 6 — الاهتزازات المتقارنة (محاضرة ممسوحة) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_chap6_scan.pdf
+    week: 8
+    lang: fr
+  - type: notes
+    title: { en: Chapter 7 — Travelling waves (scanned notes), ar: الفصل 7 — الأمواج المتنقلة (محاضرة ممسوحة) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/vo_chap7_scan1.pdf
+    week: 10
+    lang: fr
+  - type: notes
+    title: { en: Chapter 8 — Standing waves (scanned notes), ar: الفصل 8 — الأمواج المستقرة (محاضرة ممسوحة) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/vo_chap8_scan.pdf
+    week: 12
+    lang: fr
+  # Chapter summaries (French)
+  - type: summary
+    title: { en: Summary 0 — Review of mathematics and dynamics, ar: الملخص 0 — مراجعة الرياضيات والتحريك }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume0.pdf
+    week: 1
+    lang: fr
+  - type: summary
+    title: { en: 'Summary 1 — Lagrange''s equations', ar: الملخص 1 — معادلات لاغرانج }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume1.pdf
+    week: 2
+    lang: fr
+  - type: summary
+    title: { en: Summary 2 — Simple harmonic oscillator, ar: الملخص 2 — الهزاز التوافقي البسيط }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume2.pdf
+    week: 3
+    lang: fr
+  - type: summary
+    title: { en: Summary 3 — Damped harmonic oscillator, ar: الملخص 3 — الهزاز التوافقي المتخامد }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume3.pdf
+    week: 4
+    lang: fr
+  - type: summary
+    title: { en: Summary 4 — Forced harmonic oscillator, ar: الملخص 4 — الهزاز التوافقي القسري }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume4.pdf
+    week: 5
+    lang: fr
+  - type: summary
+    title: { en: Summary 5 — Electrical oscillations, ar: الملخص 5 — الاهتزازات الكهربائية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_resume5.pdf
+    week: 7
+    lang: fr
+  - type: summary
+    title: { en: Summary 6 — Coupled oscillations, ar: الملخص 6 — الاهتزازات المتقارنة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_resume6.pdf
+    week: 8
+    lang: fr
+  # Tutorial problem sheets (French series)
+  - type: problems
+    title: { en: Tutorial sheet 0 — Review of mathematics and dynamics, ar: سلسلة الأعمال الموجهة 0 — مراجعة الرياضيات والتحريك }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie0.pdf
+    week: 1
+    lang: fr
+  - type: problems
+    title: { en: 'Tutorial sheet 1 — Lagrange''s equations', ar: سلسلة الأعمال الموجهة 1 — معادلات لاغرانج }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie11.pdf
+    week: 2
+    lang: fr
+  - type: problems
+    title: { en: Tutorial sheet 2 — Simple harmonic oscillator, ar: سلسلة الأعمال الموجهة 2 — الهزاز التوافقي البسيط }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie21.pdf
+    week: 3
+    lang: fr
+  - type: problems
+    title: { en: Tutorial sheet 3 — Damped harmonic oscillator, ar: سلسلة الأعمال الموجهة 3 — الهزاز التوافقي المتخامد }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie3.pdf
+    week: 4
+    lang: fr
+  - type: problems
+    title: { en: Tutorial sheet 4 — Forced harmonic oscillator, ar: سلسلة الأعمال الموجهة 4 — الهزاز التوافقي القسري }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie4.pdf
+    week: 5
+    lang: fr
+  - type: problems
+    title: { en: Tutorial sheet 5 — Electrical oscillations, ar: سلسلة الأعمال الموجهة 5 — الاهتزازات الكهربائية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_serie5.pdf
+    week: 7
+    lang: fr
+  - type: problems
+    title: { en: Tutorial sheet 6 — Coupled oscillations, ar: سلسلة الأعمال الموجهة 6 — الاهتزازات المتقارنة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_serie6.pdf
+    week: 8
+    lang: fr
+  - type: problems
+    title: { en: Tutorial sheet 7 — Travelling waves, ar: سلسلة الأعمال الموجهة 7 — الأمواج المتنقلة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/vo_serie71.pdf
+    week: 10
+    lang: fr
+  - type: problems
+    title: { en: Tutorial sheet 8 — Standing waves, ar: سلسلة الأعمال الموجهة 8 — الأمواج المستقرة }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/vo_serie8.pdf
+    week: 12
+    lang: fr
+  # Problem sets with solutions (later edition of the course)
+  - type: problems
+    title: { en: Problem set 1 — Free undamped oscillations, ar: سلسلة المسائل 1 — الاهتزازات الحرة غير المتخامدة }
+    url: https://drive.google.com/file/d/1v9ftIYAJby8lUxSN_Jb7hR_MP_wYmETi/view?usp=sharing
+    week: 3
+  - type: solutions
+    title: { en: Problem set 1 — Solutions, ar: سلسلة المسائل 1 — الحلول }
+    url: https://drive.google.com/file/d/1kgM-3BEvs96Tgm2ywJfyBICpFbtSDVPn/view?usp=sharing
+    week: 3
+  - type: problems
+    title: { en: Problem set 2 — Damped oscillations, ar: سلسلة المسائل 2 — الاهتزازات المتخامدة }
+    url: https://drive.google.com/file/d/1TyXxiII51qpxRS9gW0-Vb_fSKmv2fY8Y/view?usp=sharing
+    week: 4
+  - type: solutions
+    title: { en: Problem set 2 — Solutions, ar: سلسلة المسائل 2 — الحلول }
+    url: https://drive.google.com/file/d/1L8G1drQfeEhJ1DA3CkT2aPCdjC-4UuQE/view?usp=sharing
+    week: 4
+  - type: problems
+    title: { en: Problem set 3 — Forced oscillations of a mass–spring system, ar: سلسلة المسائل 3 — الاهتزازات القسرية لجملة كتلة–نابض }
+    url: https://drive.google.com/file/d/1UWW8sGvdY0CUvyY_kkch0khL3vy3bJ7y/view?usp=drive_link
+    week: 5
+  - type: solutions
+    title: { en: Problem set 3 — Solutions, ar: سلسلة المسائل 3 — الحلول }
+    url: https://drive.google.com/file/d/1HXNPJlLBA4hHIXoD-ZrXkPgjBkT6JqpE/view?usp=drive_link
+    week: 5
+  - type: problems
+    title: { en: 'Problem set 4 — Forced oscillations, special cases', ar: سلسلة المسائل 4 — الاهتزازات القسرية، حالات خاصة }
+    url: https://drive.google.com/file/d/1LZzYC9_QOrAJOL70lLOEFgM19ec1r-ue/view?usp=drive_link
+    week: 6
+  - type: solutions
+    title: { en: Problem set 4 — Solutions, ar: سلسلة المسائل 4 — الحلول }
+    url: https://drive.google.com/file/d/1w0k1nbTDXZjhLKYWpbXxojqJH9pwFa9u/view?usp=sharing
+    week: 6
+  - type: problems
+    title: { en: Problem set 5 — Two-degree-of-freedom systems, ar: سلسلة المسائل 5 — الجمل ذات درجتي حرية }
+    url: https://drive.google.com/file/d/18KVhi8GYxaqvaeSzJOcw_ROHi2Nwq1OV/view?usp=drive_link
+    week: 8
+  - type: solutions
+    title: { en: Problem set 5 — Solutions, ar: سلسلة المسائل 5 — الحلول }
+    url: https://drive.google.com/file/d/1o4lUfy2-Ck683Oda-Cvjvr9gLgO-dvJn/view?usp=drive_link
+    week: 8
+  - type: problems
+    title: { en: Problem set 6 — Wave propagation in one dimension, ar: سلسلة المسائل 6 — انتشار الأمواج في بعد واحد }
+    url: https://drive.google.com/file/d/1sPBDwbWvfMsLn63HmJY3oaQyjzqNbofI/view?usp=drive_link
+    week: 10
+  - type: solutions
+    title: { en: Problem set 6 — Solutions, ar: سلسلة المسائل 6 — الحلول }
+    url: https://drive.google.com/file/d/14evPnmi7QerPwfB5okT2l5n2gllQ1Zuu/view?usp=drive_link
+    week: 10
+  - type: problems
+    title: { en: Problem set 7 — The linear chain model, ar: سلسلة المسائل 7 — نموذج السلسلة الخطية }
+    url: https://drive.google.com/file/d/1YwmKZC3yH9RLwwxdKa2djhHG2G8zL5Ux/view?usp=drive_link
+    week: 10
+  - type: solutions
+    title: { en: Problem set 7 — Solutions, ar: سلسلة المسائل 7 — الحلول }
+    url: https://drive.google.com/file/d/1RFUzQCPbyh0eGmI7Gl1lBkIRRA9rtqEF/view?usp=drive_link
+    week: 10
+  # Formula sheets
+  - type: formula
+    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+    lang: en
+  - type: formula
+    title: { en: Mathematical formulae (French), ar: صيغ رياضية (بالفرنسية) }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
+    lang: fr
+  - type: formula
+    title: { en: Physical constants and conversion factors, ar: الثوابت الفيزيائية ومعاملات التحويل }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
+    lang: fr
+  # Supplementary reading (French)
+  - type: reading
+    title: { en: 'Mechanical vibrations and waves — Vol. 1: Vibrations (lecture notes)', ar: 'الاهتزازات والأمواج الميكانيكية — الجزء 1: الاهتزازات (مطبوعة)' }
+    url: https://www.univ-chlef.dz/fgca/images/tome-1_vibrations.pdf
+    lang: fr
+  - type: reading
+    title: { en: 'Mechanical vibrations and waves — Vol. 2: Mechanical waves (lecture notes)', ar: 'الاهتزازات والأمواج الميكانيكية — الجزء 2: الأمواج الميكانيكية (مطبوعة)' }
+    url: https://www.univ-chlef.dz/fgca/images/tome-2_ondes%20mecaniques.pdf
+    lang: fr
+  - type: reading
+    title: { en: Waves and vibrations — introductory course notes (J.-M. Richard), ar: الأمواج والاهتزازات — مطبوعة تمهيدية (J.-M. Richard) }
+    url: https://www.ipnl.in2p3.fr/perso/richard/ENSEIGN/VO/CoursIUT.pdf
+    lang: fr
+  # Animations
+  - type: video
+    title: { en: 'Animation — SHO: mass–spring (longitudinal)', ar: 'رسم متحرك — هزاز توافقي: كتلة–نابض (اهتزاز طولي)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohs7.gif
+    week: 3
+  - type: video
+    title: { en: 'Animation — SHO: simple pendulum', ar: 'رسم متحرك — هزاز توافقي: النواس البسيط' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohs_pend.gif
+    week: 3
+  - type: video
+    title: { en: 'Animation — SHO: mass between two springs (transverse)', ar: 'رسم متحرك — هزاز توافقي: كتلة بين نابضين (اهتزاز عرضي)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/ohs_vert.gif
+    week: 3
+  - type: video
+    title: { en: 'Animation — damped mass–spring oscillator', ar: 'رسم متحرك — هزاز كتلة–نابض متخامد' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oha3.gif
+    week: 4
+  - type: video
+    title: { en: 'Animation — forced mass–spring oscillator', ar: 'رسم متحرك — هزاز كتلة–نابض قسري' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohf.gif
+    week: 5
+  - type: video
+    title: { en: 'Animation — 2 masses + 3 springs (horizontal): normal mode 1', ar: 'رسم متحرك — كتلتان + 3 نوابض (أفقي): النمط الذاتي 1' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_mp1.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — 2 masses + 3 springs (horizontal): normal mode 2', ar: 'رسم متحرك — كتلتان + 3 نوابض (أفقي): النمط الذاتي 2' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_mp2.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — 2 masses + 3 springs (horizontal): mixed motion', ar: 'رسم متحرك — كتلتان + 3 نوابض (أفقي): حركة مختلطة' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_sp.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — 2 masses + 2 springs (vertical): normal mode 1', ar: 'رسم متحرك — كتلتان + نابضان (شاقولي): النمط الذاتي 1' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_mp1.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — 2 masses + 2 springs (vertical): normal mode 2', ar: 'رسم متحرك — كتلتان + نابضان (شاقولي): النمط الذاتي 2' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_mp2.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — 2 masses + 2 springs (vertical): mixed motion', ar: 'رسم متحرك — كتلتان + نابضان (شاقولي): حركة مختلطة' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_sp.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — two coupled pendulums: normal mode 1', ar: 'رسم متحرك — نواسان متقارنان: النمط الذاتي 1' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_mp1.gif
+    week: 9
+  - type: video
+    title: { en: 'Animation — two coupled pendulums: normal mode 2', ar: 'رسم متحرك — نواسان متقارنان: النمط الذاتي 2' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_mp2.gif
+    week: 9
+  - type: video
+    title: { en: 'Animation — two coupled pendulums: mixed motion', ar: 'رسم متحرك — نواسان متقارنان: حركة مختلطة' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_sp.gif
+    week: 9
+  - type: video
+    title: { en: 'Animation — two pendulums + one spring: normal mode 1', ar: 'رسم متحرك — نواسان + نابض: النمط الذاتي 1' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_mp1.gif
+    week: 9
+  - type: video
+    title: { en: 'Animation — two pendulums + one spring: normal mode 2', ar: 'رسم متحرك — نواسان + نابض: النمط الذاتي 2' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_mp2.gif
+    week: 9
+  - type: video
+    title: { en: 'Animation — two pendulums + one spring: mixed motion (beats)', ar: 'رسم متحرك — نواسان + نابض: حركة مختلطة (ضربات)' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_sp1.gif
+    week: 9
+  - type: video
+    title: { en: 'Animation — two pendulums + one spring: mixed motion, version 2', ar: 'رسم متحرك — نواسان + نابض: حركة مختلطة، النسخة 2' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_sp2.gif
+    week: 9
+  - type: video
+    title: { en: 'Animation — 2 masses + 3 springs (transverse): normal mode 1', ar: 'رسم متحرك — كتلتان + 3 نوابض (عرضي): النمط الذاتي 1' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_mp1.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — 2 masses + 3 springs (transverse): normal mode 2', ar: 'رسم متحرك — كتلتان + 3 نوابض (عرضي): النمط الذاتي 2' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_mp2.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — 2 masses + 3 springs (transverse): mixed motion', ar: 'رسم متحرك — كتلتان + 3 نوابض (عرضي): حركة مختلطة' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_sp.gif
+    week: 8
+  - type: video
+    title: { en: 'Animation — 2 masses + 3 springs (transverse): mixed motion, version 2', ar: 'رسم متحرك — كتلتان + 3 نوابض (عرضي): حركة مختلطة، النسخة 2' }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_sp2.gif
+    week: 8
+
+exams:
+  - title: { en: Midterm exam, ar: الاختبار النصفي }
+    session: 2024–2025
+    paper: https://drive.google.com/file/d/1udTS4Tv2QV1aSbX0qGPZsoQwbJyx46-z/view?usp=sharing
+    solution: https://drive.google.com/file/d/17LtoXZcHPDv6QvvEkqOTL86FRq8Mq0ud/view?usp=sharing
+  - title: { en: Final exam, ar: الاختبار النهائي }
+    session: 2024–2025
+    paper: https://drive.google.com/file/d/187XfnTXKZaQ7pkVzXhDJ5HOutkAeLsrE/view?usp=drive_link
+    solution: https://drive.google.com/file/d/1mbppjtPV5hMIKWe1N6tqUBoGiUz_7eLM/view?usp=drive_link
+  - title: { en: Final exam, ar: الاختبار النهائي }
+    session: 2023–2024
+    paper: https://drive.google.com/file/d/1_CoFC-feutMlU_C5zoikHblkEJt4pzFw/view?usp=sharing
+  - title: { en: Laboratory (practical) exam, ar: الاختبار التطبيقي (الأعمال التطبيقية) }
+    session: 2023–2024
+    paper: https://drive.google.com/file/d/1STlvc7KJr7qvA_KBX4CS2oaoNxnEt98B/view?usp=sharing
+  - title: { en: Final exam, ar: الاختبار النهائي }
+    session: 2015–2016
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2016/01/vo_exam1.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2016/01/vo_exam_s.pdf
+    lang: fr
+  - title: { en: Final exam, ar: الاختبار النهائي }
+    session: '2014'
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2015/02/vo_exam1.pdf
+    lang: fr
+  - title: { en: Resit exam, ar: الاختبار الاستدراكي }
+    session: '2014'
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2015/05/vo_exam_ratt.pdf
+    lang: fr
+
+exam_guide:
+  format:
+    en: The final exam is a 1 h 30 min written paper with three independent exercises of roughly equal weight — typically one on a one-degree-of-freedom system (Lagrangian, damping, forcing), one on a coupled two-degree-of-freedom system, and one on waves (strings or acoustics). The midterm (1 h) covers weeks 1–7.
+    ar: الاختبار النهائي ورقة كتابية مدتها ساعة ونصف تتضمن ثلاثة تمارين مستقلة متقاربة الوزن — عادةً تمرين حول جملة ذات درجة حرية واحدة (دالة لاغرانج، التخامد، الإثارة)، وتمرين حول جملة متقارنة ذات درجتي حرية، وتمرين حول الأمواج (الأوتار أو الصوتيات). ويشمل الاختبار النصفي (ساعة واحدة) الأسابيع 1–7.
+  allowed:
+    en: A non-programmable scientific calculator. No notes or books; a short formula sheet (trigonometric identities, useful integrals) is printed with the paper when needed.
+    ar: آلة حاسبة علمية غير قابلة للبرمجة. لا يُسمح بالمذكرات أو الكتب؛ وتُرفق بالورقة عند الحاجة قائمة صيغ مختصرة (متطابقات مثلثية وتكاملات مفيدة).
+  tips:
+    - en: For every mechanical system, start by choosing the generalised coordinate, then write T, U (and D) before anything else — most marks come from a correct Lagrangian.
+      ar: في كل جملة ميكانيكية ابدأ باختيار الإحداثية المعممة، ثم اكتب T وU (وD) قبل أي شيء آخر — فمعظم العلامة تأتي من دالة لاغرانج صحيحة.
+    - en: 'Linearise only at the end: expand \(\cos\theta \approx 1-\theta^2/2\) and \(\sin\theta\approx\theta\) in the energies, and keep terms of second order.'
+      ar: 'لا تجعل المعادلة خطية إلا في النهاية: انشر \(\cos\theta \approx 1-\theta^2/2\) و\(\sin\theta\approx\theta\) في عبارات الطاقة واحتفظ بحدود الرتبة الثانية.'
+    - en: Check dimensions and limiting cases (zero damping, zero coupling, equal impedances) — they catch most algebra slips.
+      ar: تحقّق من الأبعاد ومن الحالات الحدّية (تخامد معدوم، تقارن معدوم، ممانعات متساوية) — فهي تكشف معظم الأخطاء الجبرية.
+    - en: In wave problems, write the boundary conditions explicitly (continuity of displacement and of force or pressure) before solving for r and t.
+      ar: في مسائل الأمواج، اكتب الشروط الحدية صراحةً (استمرار الانتقال واستمرار القوة أو الضغط) قبل حساب r وt.
+    - en: Give numerical results with units and a sensible number of significant figures.
+      ar: أعطِ النتائج العددية مع وحداتها وبعدد معقول من الأرقام المعنوية.
+
+problems:
+  - title: { en: Pendulum stiffened by a spring, ar: نواس مدعوم بنابض }
+    difficulty: 1
+    statement:
+      en: |
+        A point mass \(m\) hangs at the end of a massless rigid rod of length \(l\) that pivots freely about a horizontal axis O. A horizontal spring of stiffness \(k\) is attached to the rod at a distance \(a\) below O; its other end is fixed, and the spring is unstretched when the rod is vertical. Let \(\theta\) be the angle of the rod with the vertical.
+
+        (a) Write the kinetic and potential energies and the Lagrangian.
+        (b) Derive the equation of motion for small oscillations and the natural angular frequency \(\omega_0\).
+        (c) Compute \(\omega_0\) and the period for \(m = 0.5\ \text{kg}\), \(l = 0.4\ \text{m}\), \(a = 0.2\ \text{m}\), \(k = 20\ \text{N/m}\), \(g = 9.8\ \text{m/s}^2\).
+      ar: |
+        كتلة نقطية \(m\) معلّقة في طرف قضيب صلب مهمل الكتلة طوله \(l\) يدور بحرية حول محور أفقي O. يُثبَّت في القضيب نابض أفقي ثابت مرونته \(k\) على بعد \(a\) أسفل O، وطرفه الآخر مثبت، ويكون النابض غير مشوَّه عندما يكون القضيب شاقوليًا. لتكن \(\theta\) زاوية القضيب مع الشاقول.
+
+        (أ) اكتب الطاقة الحركية والطاقة الكامنة ودالة لاغرانج.
+        (ب) استنتج معادلة الحركة في حالة الاهتزازات الصغيرة والنبض الذاتي \(\omega_0\).
+        (ج) احسب \(\omega_0\) والدور من أجل \(m = 0.5\ \text{kg}\)، \(l = 0.4\ \text{m}\)، \(a = 0.2\ \text{m}\)، \(k = 20\ \text{N/m}\)، \(g = 9.8\ \text{m/s}^2\).
+    hint:
+      en: 'The horizontal stretch of the spring is \(a\sin\theta\). Expand both potential energies to second order in \(\theta\).'
+      ar: 'استطالة النابض الأفقية هي \(a\sin\theta\). انشر عبارتي الطاقة الكامنة حتى الرتبة الثانية في \(\theta\).'
+    solution:
+      en: |
+        (a) The mass moves on a circle of radius \(l\): \(T = \tfrac12 m l^2\dot\theta^2\). Taking the lowest position as reference for gravity,
+        \[ U = mgl(1-\cos\theta) + \tfrac12 k a^2\sin^2\theta, \qquad L = T - U. \]
+
+        (b) For small angles \(1-\cos\theta\approx \theta^2/2\) and \(\sin^2\theta\approx\theta^2\), so
+        \[ U \approx \tfrac12\left(mgl + k a^2\right)\theta^2 . \]
+        Lagrange's equation \(\dv{}{t}\pdv{L}{\dot\theta} - \pdv{L}{\theta} = 0\) gives
+        \[ m l^2\ddot\theta + \left(mgl + k a^2\right)\theta = 0, \qquad \omega_0^2 = \frac{g}{l} + \frac{k a^2}{m l^2}. \]
+        The spring simply adds its stiffness to the gravitational restoring torque.
+
+        (c) \(g/l = 24.5\ \text{s}^{-2}\) and \(k a^2/(m l^2) = 0.8/0.08 = 10\ \text{s}^{-2}\), so \(\omega_0^2 = 34.5\ \text{s}^{-2}\),
+        \[ \omega_0 \approx 5.87\ \text{rad/s}, \qquad T_0 = \frac{2\pi}{\omega_0} \approx 1.07\ \text{s}. \]
+      ar: |
+        (أ) تتحرك الكتلة على دائرة نصف قطرها \(l\): \(T = \tfrac12 m l^2\dot\theta^2\). وباعتبار الوضع الأدنى مرجعًا للثقالة:
+        \[ U = mgl(1-\cos\theta) + \tfrac12 k a^2\sin^2\theta, \qquad L = T - U. \]
+
+        (ب) من أجل الزوايا الصغيرة \(1-\cos\theta\approx \theta^2/2\) و\(\sin^2\theta\approx\theta^2\)، ومنه
+        \[ U \approx \tfrac12\left(mgl + k a^2\right)\theta^2 . \]
+        تعطي معادلة لاغرانج \(\dv{}{t}\pdv{L}{\dot\theta} - \pdv{L}{\theta} = 0\):
+        \[ m l^2\ddot\theta + \left(mgl + k a^2\right)\theta = 0, \qquad \omega_0^2 = \frac{g}{l} + \frac{k a^2}{m l^2}. \]
+        أي أن النابض يضيف صلابته إلى عزم الإرجاع الناتج عن الثقالة.
+
+        (ج) \(g/l = 24.5\ \text{s}^{-2}\) و\(k a^2/(m l^2) = 0.8/0.08 = 10\ \text{s}^{-2}\)، إذن \(\omega_0^2 = 34.5\ \text{s}^{-2}\)،
+        \[ \omega_0 \approx 5.87\ \text{rad/s}, \qquad T_0 = \frac{2\pi}{\omega_0} \approx 1.07\ \text{s}. \]
+  - title: { en: Measuring damping from a decay record, ar: قياس التخامد من منحنى التناقص }
+    difficulty: 2
+    statement:
+      en: |
+        A mass \(m = 0.20\ \text{kg}\) attached to a spring \(k = 80\ \text{N/m}\) moves in a viscous medium (friction force \(-\alpha\dot x\)). The amplitude of the oscillations is observed to halve after exactly 10 oscillations.
+
+        (a) Find the logarithmic decrement \(\delta\).
+        (b) Find the damping constant \(\lambda = \alpha/2m\) and the friction coefficient \(\alpha\).
+        (c) Find the quality factor \(Q\). By what factor has the mechanical energy decreased after the 10 oscillations?
+      ar: |
+        كتلة \(m = 0.20\ \text{kg}\) مثبتة بنابض \(k = 80\ \text{N/m}\) تتحرك في وسط لزج (قوة احتكاك \(-\alpha\dot x\)). نلاحظ أن سعة الاهتزازات تنقص إلى النصف بعد 10 اهتزازات بالضبط.
+
+        (أ) أوجد التناقص اللوغاريتمي \(\delta\).
+        (ب) أوجد ثابت التخامد \(\lambda = \alpha/2m\) ومعامل الاحتكاك \(\alpha\).
+        (ج) أوجد معامل الجودة \(Q\). بأي معامل نقصت الطاقة الميكانيكية بعد الاهتزازات العشر؟
+    hint:
+      en: 'In the underdamped regime \(x(t) = A e^{-\lambda t}\cos(\omega_d t+\varphi)\), so the ratio of successive maxima is \(e^{\lambda T_d}\).'
+      ar: 'في النظام شبه الدوري \(x(t) = A e^{-\lambda t}\cos(\omega_d t+\varphi)\)، لذا فإن نسبة قيمتين عظميين متتاليتين هي \(e^{\lambda T_d}\).'
+    solution:
+      en: |
+        (a) After \(n\) pseudo-periods the amplitude ratio is \(e^{n\lambda T_d} = e^{n\delta}\). With \(n = 10\) and ratio 2:
+        \[ \delta = \frac{\ln 2}{10} \approx 0.0693 . \]
+
+        (b) \(\omega_0 = \sqrt{k/m} = 20\ \text{rad/s}\). The damping is weak (\(\lambda\ll\omega_0\), checked below), so \(T_d\approx 2\pi/\omega_0 = 0.314\ \text{s}\) and
+        \[ \lambda = \frac{\delta}{T_d} \approx 0.221\ \text{s}^{-1}, \qquad \alpha = 2m\lambda \approx 0.088\ \text{kg/s}. \]
+        Indeed \(\omega_d = \sqrt{\omega_0^2-\lambda^2}\) differs from \(\omega_0\) by about one part in \(10^4\).
+
+        (c) \[ Q = \frac{\omega_0}{2\lambda} \approx 45 \qquad (\text{equivalently } Q\approx \pi/\delta). \]
+        The energy is proportional to the square of the amplitude, so after 10 oscillations it has decreased by a factor \(2^2 = 4\).
+      ar: |
+        (أ) بعد \(n\) من أشباه الأدوار تكون نسبة السعتين \(e^{n\lambda T_d} = e^{n\delta}\). ومع \(n = 10\) والنسبة 2:
+        \[ \delta = \frac{\ln 2}{10} \approx 0.0693 . \]
+
+        (ب) \(\omega_0 = \sqrt{k/m} = 20\ \text{rad/s}\). التخامد ضعيف (\(\lambda\ll\omega_0\)، كما نتحقق أدناه)، لذا \(T_d\approx 2\pi/\omega_0 = 0.314\ \text{s}\) و
+        \[ \lambda = \frac{\delta}{T_d} \approx 0.221\ \text{s}^{-1}, \qquad \alpha = 2m\lambda \approx 0.088\ \text{kg/s}. \]
+        وفعلًا يختلف \(\omega_d = \sqrt{\omega_0^2-\lambda^2}\) عن \(\omega_0\) بجزء واحد تقريبًا من \(10^4\).
+
+        (ج) \[ Q = \frac{\omega_0}{2\lambda} \approx 45, \]
+        وهو ما يوافق أيضًا \(Q\approx \pi/\delta\).
+        الطاقة متناسبة مع مربع السعة، لذا فإنها تنقص بعد 10 اهتزازات بمعامل \(2^2 = 4\).
+  - title: { en: Resonance curve of a driven oscillator, ar: منحنى التجاوب لهزاز قسري }
+    difficulty: 2
+    statement:
+      en: |
+        A mass \(m = 1\ \text{kg}\), spring \(k = 100\ \text{N/m}\) and damper \(\alpha = 2\ \text{kg/s}\) are driven by \(F(t) = F_0\cos\Omega t\) with \(F_0 = 1\ \text{N}\).
+
+        (a) Using complex notation, find the steady-state amplitude \(X(\Omega)\) and phase lag \(\varphi(\Omega)\).
+        (b) Find the frequency of displacement resonance and the maximum amplitude.
+        (c) Find the bandwidth \(\Delta\omega\), the quality factor, and the average power absorbed at \(\Omega = \omega_0\).
+      ar: |
+        كتلة \(m = 1\ \text{kg}\) ونابض \(k = 100\ \text{N/m}\) ومخمِّد \(\alpha = 2\ \text{kg/s}\) تخضع لقوة إثارة \(F(t) = F_0\cos\Omega t\) حيث \(F_0 = 1\ \text{N}\).
+
+        (أ) باستعمال الترميز المركب، أوجد سعة النظام الدائم \(X(\Omega)\) وتأخر الطور \(\varphi(\Omega)\).
+        (ب) أوجد تواتر تجاوب الانتقال والسعة العظمى.
+        (ج) أوجد عرض المجال \(\Delta\omega\) ومعامل الجودة ومتوسط الاستطاعة الممتصة عند \(\Omega = \omega_0\).
+    hint:
+      en: 'Set \(x = \mathrm{Re}(\underline{X}e^{i\Omega t})\); the amplitude is maximal where the denominator \((\omega_0^2-\Omega^2)^2 + 4\lambda^2\Omega^2\) is minimal.'
+      ar: 'ضع \(x = \mathrm{Re}(\underline{X}e^{i\Omega t})\)؛ تكون السعة عظمى حين يكون المقام \((\omega_0^2-\Omega^2)^2 + 4\lambda^2\Omega^2\) أصغريًا.'
+    solution:
+      en: |
+        (a) With \(\omega_0^2 = k/m = 100\ \text{s}^{-2}\) and \(2\lambda = \alpha/m = 2\ \text{s}^{-1}\), the equation \(\ddot x + 2\lambda\dot x + \omega_0^2 x = (F_0/m)\cos\Omega t\) gives \(\underline{X} = \dfrac{F_0/m}{\omega_0^2-\Omega^2+2i\lambda\Omega}\), hence
+        \[ X(\Omega) = \frac{F_0/m}{\sqrt{(\omega_0^2-\Omega^2)^2+4\lambda^2\Omega^2}}, \qquad \tan\varphi = \frac{2\lambda\Omega}{\omega_0^2-\Omega^2}, \]
+        with \(x = X\cos(\Omega t-\varphi)\): the displacement lags the force by \(\varphi\in[0,\pi]\).
+
+        (b) Minimising the denominator with respect to \(\Omega^2\) gives \(\Omega_r^2 = \omega_0^2 - 2\lambda^2\):
+        \[ \Omega_r = \sqrt{98} \approx 9.90\ \text{rad/s}, \qquad X_{\max} = \frac{F_0/m}{2\lambda\sqrt{\omega_0^2-\lambda^2}} = \frac{1}{2\sqrt{99}} \approx 5.03\ \text{cm}. \]
+
+        (c) The power resonance occurs at \(\omega_0\) and the half-power bandwidth is \(\Delta\omega = 2\lambda = 2\ \text{rad/s}\), so \(Q = \omega_0/\Delta\omega = 5\). At \(\Omega=\omega_0\) the velocity amplitude is \(F_0/\alpha\) and is in phase with the force:
+        \[ \langle P\rangle = \frac{F_0^2}{2\alpha} = 0.25\ \text{W}. \]
+        Check: \(X(\omega_0) = F_0/(2m\lambda\omega_0) = 5\ \text{cm} = Q\times(F_0/k)\).
+      ar: |
+        (أ) مع \(\omega_0^2 = k/m = 100\ \text{s}^{-2}\) و\(2\lambda = \alpha/m = 2\ \text{s}^{-1}\)، تعطي المعادلة \(\ddot x + 2\lambda\dot x + \omega_0^2 x = (F_0/m)\cos\Omega t\) السعة المركبة \(\underline{X} = \dfrac{F_0/m}{\omega_0^2-\Omega^2+2i\lambda\Omega}\)، ومنه
+        \[ X(\Omega) = \frac{F_0/m}{\sqrt{(\omega_0^2-\Omega^2)^2+4\lambda^2\Omega^2}}, \qquad \tan\varphi = \frac{2\lambda\Omega}{\omega_0^2-\Omega^2}, \]
+        مع \(x = X\cos(\Omega t-\varphi)\): أي أن الانتقال يتأخر عن القوة بـ \(\varphi\in[0,\pi]\).
+
+        (ب) بجعل المقام أصغريًا بالنسبة إلى \(\Omega^2\) نجد \(\Omega_r^2 = \omega_0^2 - 2\lambda^2\):
+        \[ \Omega_r = \sqrt{98} \approx 9.90\ \text{rad/s}, \qquad X_{\max} = \frac{F_0/m}{2\lambda\sqrt{\omega_0^2-\lambda^2}} = \frac{1}{2\sqrt{99}} \approx 5.03\ \text{cm}. \]
+
+        (ج) يحدث تجاوب الاستطاعة عند \(\omega_0\)، وعرض المجال عند نصف الاستطاعة هو \(\Delta\omega = 2\lambda = 2\ \text{rad/s}\)، إذن \(Q = \omega_0/\Delta\omega = 5\). عند \(\Omega=\omega_0\) تكون سعة السرعة \(F_0/\alpha\) وهي على توافق في الطور مع القوة:
+        \[ \langle P\rangle = \frac{F_0^2}{2\alpha} = 0.25\ \text{W}. \]
+        تحقق: \(X(\omega_0) = F_0/(2m\lambda\omega_0) = 5\ \text{cm} = Q\times(F_0/k)\).
+  - title: { en: Two coupled masses and beats, ar: كتلتان متقارنتان والضربات }
+    difficulty: 3
+    statement:
+      en: |
+        Two identical masses \(m\) slide without friction on a horizontal line. Each is attached to a fixed wall by a spring \(k\), and they are joined to each other by a coupling spring \(K\). Let \(x_1, x_2\) be the displacements from equilibrium.
+
+        (a) Write the Lagrangian and the equations of motion.
+        (b) Find the two natural angular frequencies and the corresponding mode shapes; define the normal coordinates.
+        (c) At \(t = 0\), \(x_1 = A\), \(x_2 = 0\), both at rest. Find \(x_1(t)\) and \(x_2(t)\).
+        (d) For \(m = 0.1\ \text{kg}\), \(k = 10\ \text{N/m}\), \(K = 0.5\ \text{N/m}\), how long does it take for the energy to pass completely from mass 1 to mass 2?
+      ar: |
+        كتلتان متماثلتان \(m\) تنزلقان دون احتكاك على مستقيم أفقي. كل منهما مربوطة بجدار ثابت بنابض \(k\)، وتربط بينهما نابض تقارن \(K\). ليكن \(x_1, x_2\) انتقالَيهما عن وضع التوازن.
+
+        (أ) اكتب دالة لاغرانج ومعادلات الحركة.
+        (ب) أوجد النبضين الذاتيين وأشكال الأنماط الموافقة، وعرّف الإحداثيات الطبيعية.
+        (ج) عند \(t = 0\): \(x_1 = A\)، \(x_2 = 0\)، والكتلتان ساكنتان. أوجد \(x_1(t)\) و\(x_2(t)\).
+        (د) من أجل \(m = 0.1\ \text{kg}\)، \(k = 10\ \text{N/m}\)، \(K = 0.5\ \text{N/m}\)، ما المدة اللازمة لانتقال الطاقة كليًا من الكتلة 1 إلى الكتلة 2؟
+    hint:
+      en: 'Look for solutions \(x_j = A_j\cos\omega t\) and set the determinant of the linear system to zero. Use \(\cos a + \cos b = 2\cos\frac{a+b}{2}\cos\frac{a-b}{2}\).'
+      ar: 'ابحث عن حلول من الشكل \(x_j = A_j\cos\omega t\) واجعل محدد الجملة الخطية معدومًا. استعمل \(\cos a + \cos b = 2\cos\frac{a+b}{2}\cos\frac{a-b}{2}\).'
+    solution:
+      en: |
+        (a) \[ L = \tfrac12 m(\dot x_1^2+\dot x_2^2) - \tfrac12 k x_1^2 - \tfrac12 k x_2^2 - \tfrac12 K (x_2-x_1)^2 , \]
+        \[ m\ddot x_1 + (k+K)x_1 - K x_2 = 0, \qquad m\ddot x_2 + (k+K)x_2 - K x_1 = 0. \]
+
+        (b) With \(x_j = A_j\cos\omega t\): \(\left(k+K-m\omega^2\right)^2 - K^2 = 0\), so \(k+K-m\omega^2 = \pm K\):
+        \[ \omega_1 = \sqrt{\frac{k}{m}}\ \ (A_1 = A_2,\ \text{in phase}), \qquad \omega_2 = \sqrt{\frac{k+2K}{m}}\ \ (A_1 = -A_2,\ \text{antiphase}). \]
+        The normal coordinates \(q_1 = (x_1+x_2)/\sqrt2\) and \(q_2 = (x_1-x_2)/\sqrt2\) obey uncoupled equations \(\ddot q_i + \omega_i^2 q_i = 0\).
+
+        (c) The initial conditions give \(q_1(0) = q_2(0) = A/\sqrt2\) and zero velocities, so \(x_{1,2} = \tfrac{A}{2}(\cos\omega_1 t \pm \cos\omega_2 t)\):
+        \[ x_1 = A\cos\!\Big(\frac{\omega_2-\omega_1}{2}t\Big)\cos\!\Big(\frac{\omega_2+\omega_1}{2}t\Big), \qquad x_2 = A\sin\!\Big(\frac{\omega_2-\omega_1}{2}t\Big)\sin\!\Big(\frac{\omega_2+\omega_1}{2}t\Big). \]
+        Each mass oscillates at the mean frequency with a slowly modulated envelope: beats.
+
+        (d) \(\omega_1 = 10\ \text{rad/s}\), \(\omega_2 = \sqrt{110}\approx 10.49\ \text{rad/s}\). Mass 1 is at rest (all energy in mass 2) when \(\tfrac12(\omega_2-\omega_1)t = \pi/2\):
+        \[ \tau = \frac{\pi}{\omega_2-\omega_1} \approx \frac{3.142}{0.488} \approx 6.4\ \text{s}. \]
+      ar: |
+        (أ) \[ L = \tfrac12 m(\dot x_1^2+\dot x_2^2) - \tfrac12 k x_1^2 - \tfrac12 k x_2^2 - \tfrac12 K (x_2-x_1)^2 , \]
+        \[ m\ddot x_1 + (k+K)x_1 - K x_2 = 0, \qquad m\ddot x_2 + (k+K)x_2 - K x_1 = 0. \]
+
+        (ب) بوضع \(x_j = A_j\cos\omega t\): \(\left(k+K-m\omega^2\right)^2 - K^2 = 0\)، أي \(k+K-m\omega^2 = \pm K\):
+        \[ \omega_1 = \sqrt{\frac{k}{m}}\ \ (A_1 = A_2), \qquad \omega_2 = \sqrt{\frac{k+2K}{m}}\ \ (A_1 = -A_2). \]
+        النمط الأول تهتز فيه الكتلتان على توافق في الطور، والثاني على تعاكس في الطور.
+        وتحقق الإحداثيات الطبيعية \(q_1 = (x_1+x_2)/\sqrt2\) و\(q_2 = (x_1-x_2)/\sqrt2\) معادلتين مستقلتين \(\ddot q_i + \omega_i^2 q_i = 0\).
+
+        (ج) تعطي الشروط الابتدائية \(q_1(0) = q_2(0) = A/\sqrt2\) وسرعتين معدومتين، ومنه \(x_{1,2} = \tfrac{A}{2}(\cos\omega_1 t \pm \cos\omega_2 t)\):
+        \[ x_1 = A\cos\!\Big(\frac{\omega_2-\omega_1}{2}t\Big)\cos\!\Big(\frac{\omega_2+\omega_1}{2}t\Big), \qquad x_2 = A\sin\!\Big(\frac{\omega_2-\omega_1}{2}t\Big)\sin\!\Big(\frac{\omega_2+\omega_1}{2}t\Big). \]
+        تهتز كل كتلة بالتواتر المتوسط مع غلاف يتغير ببطء: إنها ظاهرة الضربات.
+
+        (د) \(\omega_1 = 10\ \text{rad/s}\)، \(\omega_2 = \sqrt{110}\approx 10.49\ \text{rad/s}\). تتوقف الكتلة 1 (وتصبح الطاقة كلها في الكتلة 2) عندما \(\tfrac12(\omega_2-\omega_1)t = \pi/2\):
+        \[ \tau = \frac{\pi}{\omega_2-\omega_1} \approx \frac{3.142}{0.488} \approx 6.4\ \text{s}. \]
+  - title: { en: Junction of two strings, ar: نقطة اتصال وترين }
+    difficulty: 2
+    statement:
+      en: |
+        Two long strings with linear densities \(\mu_1\) and \(\mu_2 = 4\mu_1\) are joined at \(x = 0\) and stretched with the same tension \(T\). A harmonic wave \(y_i = A\cos(\omega t - k_1 x)\) arrives from \(x<0\).
+
+        (a) Write the boundary conditions at the junction and derive the amplitude reflection and transmission coefficients \(r\) and \(t\) in terms of the impedances \(Z_j = \sqrt{T\mu_j}\).
+        (b) Evaluate \(r\), \(t\) and the fractions of power reflected and transmitted; check energy conservation.
+        (c) Find the wave speeds for \(T = 40\ \text{N}\), \(\mu_1 = 0.01\ \text{kg/m}\).
+      ar: |
+        وتران طويلان كثافتاهما الخطيتان \(\mu_1\) و\(\mu_2 = 4\mu_1\) متصلان عند \(x = 0\) ومشدودان بالتوتر نفسه \(T\). تصل موجة توافقية \(y_i = A\cos(\omega t - k_1 x)\) من الجهة \(x<0\).
+
+        (أ) اكتب الشروط الحدية عند نقطة الاتصال واستنتج معاملَي الانعكاس والنفاذ للسعة \(r\) و\(t\) بدلالة الممانعتين \(Z_j = \sqrt{T\mu_j}\).
+        (ب) احسب \(r\) و\(t\) ونسبتي الاستطاعة المنعكسة والنافذة، وتحقق من انحفاظ الطاقة.
+        (ج) أوجد سرعتي الانتشار من أجل \(T = 40\ \text{N}\)، \(\mu_1 = 0.01\ \text{kg/m}\).
+    hint:
+      en: 'The string is continuous (\(y\) continuous) and the massless junction has no net transverse force (\(\partial y/\partial x\) continuous). For a travelling wave \(T\,\partial_x y = \mp Z\,\partial_t y\).'
+      ar: 'الوتر متصل (\(y\) مستمرة)، ونقطة الاتصال مهملة الكتلة فلا تخضع لقوة عرضية محصلة (\(\partial y/\partial x\) مستمرة). وفي الموجة المتنقلة \(T\,\partial_x y = \mp Z\,\partial_t y\).'
+    solution:
+      en: |
+        (a) Write \(y_1 = A\cos(\omega t-k_1x) + rA\cos(\omega t+k_1x)\) for \(x<0\) and \(y_2 = tA\cos(\omega t-k_2x)\) for \(x>0\), with \(k_j = \omega/v_j\), \(v_j = \sqrt{T/\mu_j}\). Continuity of \(y\) at \(x=0\): \(1 + r = t\). Continuity of \(T\,\partial_x y\): \(k_1(1-r) = k_2 t\). Since \(Tk_j = \omega Z_j\),
+        \[ r = \frac{Z_1-Z_2}{Z_1+Z_2}, \qquad t = \frac{2Z_1}{Z_1+Z_2}. \]
+
+        (b) \(Z_2 = \sqrt{4}\,Z_1 = 2Z_1\), so \(r = -\tfrac13\) (reflected wave inverted) and \(t = \tfrac23\). The power of a wave is \(\tfrac12 Z\omega^2A^2\), so
+        \[ R = r^2 = \frac19, \qquad \mathcal{T} = \frac{Z_2}{Z_1}t^2 = 2\cdot\frac49 = \frac89, \qquad R+\mathcal{T} = 1. \]
+
+        (c) \(v_1 = \sqrt{40/0.01} \approx 63.2\ \text{m/s}\) and \(v_2 = v_1/2 \approx 31.6\ \text{m/s}\).
+      ar: |
+        (أ) نكتب \(y_1 = A\cos(\omega t-k_1x) + rA\cos(\omega t+k_1x)\) من أجل \(x<0\) و\(y_2 = tA\cos(\omega t-k_2x)\) من أجل \(x>0\)، حيث \(k_j = \omega/v_j\) و\(v_j = \sqrt{T/\mu_j}\). استمرار \(y\) عند \(x=0\): \(1 + r = t\). استمرار \(T\,\partial_x y\): \(k_1(1-r) = k_2 t\). وبما أن \(Tk_j = \omega Z_j\):
+        \[ r = \frac{Z_1-Z_2}{Z_1+Z_2}, \qquad t = \frac{2Z_1}{Z_1+Z_2}. \]
+
+        (ب) \(Z_2 = \sqrt{4}\,Z_1 = 2Z_1\)، إذن \(r = -\tfrac13\) (الموجة المنعكسة مقلوبة) و\(t = \tfrac23\). استطاعة الموجة هي \(\tfrac12 Z\omega^2A^2\)، ومنه
+        \[ R = r^2 = \frac19, \qquad \mathcal{T} = \frac{Z_2}{Z_1}t^2 = 2\cdot\frac49 = \frac89, \qquad R+\mathcal{T} = 1. \]
+
+        (ج) \(v_1 = \sqrt{40/0.01} \approx 63.2\ \text{m/s}\) و\(v_2 = v_1/2 \approx 31.6\ \text{m/s}\).
+  - title: { en: Sound at an air–water interface and in a closed pipe, ar: الصوت عند السطح الفاصل هواء–ماء وفي أنبوب مغلق }
+    difficulty: 3
+    statement:
+      en: |
+        (a) A plane sound wave in air (\(\rho_1 = 1.2\ \text{kg/m}^3\), \(c_1 = 340\ \text{m/s}\)) hits the flat surface of water (\(\rho_2 = 1000\ \text{kg/m}^3\), \(c_2 = 1480\ \text{m/s}\)) at normal incidence. Compute the specific acoustic impedances, the fraction of the incident intensity transmitted into the water, and express it in decibels.
+        (b) A pipe of length \(L = 0.85\ \text{m}\) is closed at one end and open at the other. Find the three lowest resonance frequencies in air.
+        (c) The pipe, sounding its fundamental, moves towards a stationary listener at \(20\ \text{m/s}\). What frequency does the listener hear?
+      ar: |
+        (أ) موجة صوتية مستوية في الهواء (\(\rho_1 = 1.2\ \text{kg/m}^3\)، \(c_1 = 340\ \text{m/s}\)) تسقط ناظميًا على سطح ماء مستوٍ (\(\rho_2 = 1000\ \text{kg/m}^3\)، \(c_2 = 1480\ \text{m/s}\)). احسب الممانعتين الصوتيتين النوعيتين، ونسبة الشدة الواردة التي تنفذ إلى الماء، وعبّر عنها بالديسيبل.
+        (ب) أنبوب طوله \(L = 0.85\ \text{m}\) مغلق من طرف ومفتوح من الطرف الآخر. أوجد أدنى ثلاثة تواترات تجاوب في الهواء.
+        (ج) يتحرك الأنبوب وهو يُصدر صوته الأساسي نحو مستمع ساكن بسرعة \(20\ \text{m/s}\). ما التواتر الذي يسمعه المستمع؟
+    hint:
+      en: 'Intensity transmission coefficient \(\mathcal{T} = 4Z_1Z_2/(Z_1+Z_2)^2\). A closed end is a displacement node (pressure antinode), an open end a displacement antinode.'
+      ar: 'معامل نفاذ الشدة \(\mathcal{T} = 4Z_1Z_2/(Z_1+Z_2)^2\). الطرف المغلق عقدة انتقال (بطن ضغط)، والطرف المفتوح بطن انتقال.'
+    solution:
+      en: |
+        (a) \(Z = \rho c\): \(Z_1 = 408\ \text{kg\,m}^{-2}\text{s}^{-1}\) and \(Z_2 = 1.48\times10^{6}\ \text{kg\,m}^{-2}\text{s}^{-1}\). Pressure and normal particle velocity are continuous, which gives
+        \[ \mathcal{T} = \frac{4Z_1Z_2}{(Z_1+Z_2)^2} \approx \frac{4Z_1}{Z_2} \approx 1.1\times10^{-3}, \qquad 10\log_{10}\mathcal{T}\approx -29.6\ \text{dB}. \]
+        Only about 0.1 % of the sound energy enters the water: the impedance mismatch is huge.
+
+        (b) The pipe length must hold an odd number of quarter wavelengths, \(L = (2n-1)\lambda/4\):
+        \[ f_n = \frac{(2n-1)c}{4L} = 100,\ 300,\ 500\ \text{Hz}. \]
+        Only odd harmonics are present.
+
+        (c) For a source moving towards a stationary observer, the wavelength ahead of the source is shortened:
+        \[ f' = f\,\frac{c}{c - v_s} = 100\times\frac{340}{320} \approx 106\ \text{Hz}. \]
+      ar: |
+        (أ) \(Z = \rho c\): \(Z_1 = 408\ \text{kg\,m}^{-2}\text{s}^{-1}\) و\(Z_2 = 1.48\times10^{6}\ \text{kg\,m}^{-2}\text{s}^{-1}\). استمرار الضغط والسرعة الناظمية للجسيمات يعطي
+        \[ \mathcal{T} = \frac{4Z_1Z_2}{(Z_1+Z_2)^2} \approx \frac{4Z_1}{Z_2} \approx 1.1\times10^{-3}, \qquad 10\log_{10}\mathcal{T}\approx -29.6\ \text{dB}. \]
+        أي أن نحو 0.1 % فقط من الطاقة الصوتية يدخل الماء: عدم توافق الممانعتين كبير جدًا.
+
+        (ب) يجب أن يحتوي طول الأنبوب عددًا فرديًا من أرباع طول الموجة، \(L = (2n-1)\lambda/4\):
+        \[ f_n = \frac{(2n-1)c}{4L} = 100,\ 300,\ 500\ \text{Hz}. \]
+        فلا توجد إلا التوافقيات الفردية.
+
+        (ج) من أجل منبع يقترب من مستمع ساكن، يقصر طول الموجة أمام المنبع:
+        \[ f' = f\,\frac{c}{c - v_s} = 100\times\frac{340}{320} \approx 106\ \text{Hz}. \]
+
+quizzes:
+  - title: { en: Free oscillations and Lagrange's equations, ar: الاهتزازات الحرة ومعادلات لاغرانج }
+    questions:
+      - q:
+          en: What is the period of a mass \(m\) on a spring of stiffness \(k\)?
+          ar: ما دور كتلة \(m\) مثبتة بنابض ثابت مرونته \(k\)؟
+        options:
+          - '\(2\pi\sqrt{k/m}\)'
+          - '\(2\pi\sqrt{m/k}\)'
+          - '\(\sqrt{k/m}\)'
+          - '\(\frac{1}{2\pi}\sqrt{m/k}\)'
+        answer: 1
+        explain:
+          en: '\(\omega_0 = \sqrt{k/m}\) and \(T_0 = 2\pi/\omega_0 = 2\pi\sqrt{m/k}\): a heavier mass oscillates more slowly, a stiffer spring faster.'
+          ar: '\(\omega_0 = \sqrt{k/m}\) و\(T_0 = 2\pi/\omega_0 = 2\pi\sqrt{m/k}\): الكتلة الأثقل تهتز أبطأ، والنابض الأصلب يجعلها أسرع.'
+      - q:
+          en: 'A mass–spring oscillator has amplitude \(A\). Its total mechanical energy is:'
+          ar: 'هزاز كتلة–نابض سعته \(A\). طاقته الميكانيكية الكلية هي:'
+        options:
+          - '\(\tfrac12 kA^2\)'
+          - '\(\tfrac12 mA^2\)'
+          - '\(kA^2\)'
+          - '\(\tfrac12 kA\)'
+        answer: 0
+        explain:
+          en: At maximum displacement the velocity is zero, so all the energy is elastic potential energy \(\tfrac12 kA^2\); it is constant in time.
+          ar: عند أقصى انتقال تنعدم السرعة، فتكون الطاقة كلها طاقة كامنة مرونية \(\tfrac12 kA^2\)، وهي ثابتة مع الزمن.
+      - q:
+          en: 'Two springs \(k_1\) and \(k_2\) are connected in series. The equivalent stiffness is:'
+          ar: 'نابضان \(k_1\) و\(k_2\) موصولان على التسلسل. ثابت المرونة المكافئ هو:'
+        options:
+          - '\(k_1+k_2\)'
+          - '\(\sqrt{k_1k_2}\)'
+          - '\(\dfrac{k_1k_2}{k_1+k_2}\)'
+          - '\(\dfrac{k_1+k_2}{2}\)'
+        answer: 2
+        explain:
+          en: In series both springs carry the same force and their extensions add, so \(1/k = 1/k_1 + 1/k_2\). The series combination is softer than either spring.
+          ar: في التسلسل يخضع النابضان للقوة نفسها وتُجمع استطالتاهما، لذا \(1/k = 1/k_1 + 1/k_2\). فالتركيب على التسلسل أقل صلابة من كل نابض على حدة.
+      - q:
+          en: 'For \(L = \tfrac12 ml^2\dot\theta^2 - mgl(1-\cos\theta)\), Lagrange''s equation gives:'
+          ar: 'من أجل \(L = \tfrac12 ml^2\dot\theta^2 - mgl(1-\cos\theta)\)، تعطي معادلة لاغرانج:'
+        options:
+          - '\(ml^2\ddot\theta - mgl\sin\theta = 0\)'
+          - '\(ml\ddot\theta + mg\cos\theta = 0\)'
+          - '\(ml^2\ddot\theta + mgl\dot\theta = 0\)'
+          - '\(ml^2\ddot\theta + mgl\sin\theta = 0\)'
+        answer: 3
+        explain:
+          en: '\(\partial L/\partial\dot\theta = ml^2\dot\theta\), whose time derivative is \(ml^2\ddot\theta\); \(\partial L/\partial\theta = -mgl\sin\theta\). Subtracting gives \(ml^2\ddot\theta + mgl\sin\theta = 0\), the pendulum equation.'
+          ar: '\(\partial L/\partial\dot\theta = ml^2\dot\theta\) ومشتقها الزمني \(ml^2\ddot\theta\)؛ و\(\partial L/\partial\theta = -mgl\sin\theta\). بالطرح نحصل على \(ml^2\ddot\theta + mgl\sin\theta = 0\)، وهي معادلة النواس.'
+      - q:
+          en: 'A system has \(T = \tfrac12 a\dot q^2\) (\(a>0\) constant) and potential \(U(q)\) with a minimum at \(q_0\). The angular frequency of small oscillations is:'
+          ar: 'جملة طاقتها الحركية \(T = \tfrac12 a\dot q^2\) (\(a>0\) ثابت) وطاقتها الكامنة \(U(q)\) لها قيمة صغرى عند \(q_0\). النبض الذاتي للاهتزازات الصغيرة هو:'
+        options:
+          - '\(\sqrt{U''''(q_0)/a}\)'
+          - '\(\sqrt{U''(q_0)/a}\)'
+          - '\(\sqrt{a/U''''(q_0)}\)'
+          - '\(\sqrt{U(q_0)/a}\)'
+        answer: 0
+        explain:
+          en: 'Near the minimum \(U \approx U(q_0) + \tfrac12 U''''(q_0)(q-q_0)^2\) (the first derivative vanishes at equilibrium), so the effective stiffness is \(U''''(q_0)\) and the effective mass is \(a\).'
+          ar: 'قرب القيمة الصغرى \(U \approx U(q_0) + \tfrac12 U''''(q_0)(q-q_0)^2\) (المشتق الأول منعدم عند التوازن)، فالصلابة الفعلية هي \(U''''(q_0)\) والكتلة الفعلية هي \(a\).'
+  - title: { en: Damped and forced oscillations, ar: الاهتزازات المتخامدة والقسرية }
+    questions:
+      - q:
+          en: 'The oscillator \(\ddot x + 2\lambda\dot x + \omega_0^2x = 0\) oscillates (pseudo-periodic regime) when:'
+          ar: 'يهتز الهزاز \(\ddot x + 2\lambda\dot x + \omega_0^2x = 0\) (نظام شبه دوري) عندما:'
+        options:
+          - '\(\lambda > \omega_0\)'
+          - '\(\lambda = \omega_0\)'
+          - '\(\lambda < \omega_0\)'
+          - en: '\(\lambda = 0\) only'
+            ar: '\(\lambda = 0\) فقط'
+        answer: 2
+        explain:
+          en: 'The characteristic roots are \(-\lambda \pm\sqrt{\lambda^2-\omega_0^2}\). They are complex — giving oscillations at \(\omega_d = \sqrt{\omega_0^2-\lambda^2}\) — only if \(\lambda<\omega_0\). \(\lambda = \omega_0\) is critical damping.'
+          ar: 'جذرا المعادلة المميزة هما \(-\lambda \pm\sqrt{\lambda^2-\omega_0^2}\). ولا يكونان مركبين — فتظهر اهتزازات بنبض \(\omega_d = \sqrt{\omega_0^2-\lambda^2}\) — إلا إذا كان \(\lambda<\omega_0\). أما \(\lambda = \omega_0\) فهو التخامد الحرج.'
+      - q:
+          en: The logarithmic decrement \(\delta = \ln[x(t)/x(t+T_d)]\) equals
+          ar: التناقص اللوغاريتمي \(\delta = \ln[x(t)/x(t+T_d)]\) يساوي
+        options:
+          - '\(\lambda/T_d\)'
+          - '\(\lambda T_d\)'
+          - '\(\omega_0T_d\)'
+          - '\(2\pi\lambda\)'
+        answer: 1
+        explain:
+          en: Successive maxima are separated by one pseudo-period and the envelope is \(e^{-\lambda t}\), so their ratio is \(e^{\lambda T_d}\) and \(\delta = \lambda T_d\).
+          ar: تفصل بين قيمتين عظميين متتاليتين مدة شبه دور واحد، والغلاف هو \(e^{-\lambda t}\)، فنسبتهما \(e^{\lambda T_d}\) ومنه \(\delta = \lambda T_d\).
+      - q:
+          en: For a weakly damped driven oscillator, the quality factor is related to the half-power bandwidth \(\Delta\omega\) by
+          ar: في هزاز قسري ضعيف التخامد، يرتبط معامل الجودة بعرض المجال عند نصف الاستطاعة \(\Delta\omega\) بالعلاقة
+        options:
+          - '\(Q = \Delta\omega/\omega_0\)'
+          - '\(Q = \omega_0\Delta\omega\)'
+          - '\(Q = 1/(\omega_0\Delta\omega)\)'
+          - '\(Q = \omega_0/\Delta\omega\)'
+        answer: 3
+        explain:
+          en: 'The power curve has width \(\Delta\omega = 2\lambda\) and \(Q = \omega_0/2\lambda\), hence \(Q = \omega_0/\Delta\omega\): a sharp resonance means a high Q.'
+          ar: 'عرض منحنى الاستطاعة هو \(\Delta\omega = 2\lambda\) و\(Q = \omega_0/2\lambda\)، ومنه \(Q = \omega_0/\Delta\omega\): التجاوب الحاد يعني معامل جودة كبيرًا.'
+      - q:
+          en: When the driving frequency equals \(\omega_0\), the steady-state displacement relative to the driving force is
+          ar: عندما يساوي تواتر الإثارة \(\omega_0\)، يكون الانتقال في النظام الدائم بالنسبة إلى قوة الإثارة
+        options:
+          - en: 'in phase'
+            ar: 'على توافق في الطور'
+          - en: 'lagging by π/2'
+            ar: 'متأخرًا بـ π/2'
+          - en: 'lagging by π'
+            ar: 'متأخرًا بـ π'
+          - en: 'leading by π/2'
+            ar: 'متقدمًا بـ π/2'
+        answer: 1
+        explain:
+          en: '\(\tan\varphi = 2\lambda\Omega/(\omega_0^2-\Omega^2)\) diverges at \(\Omega=\omega_0\), so \(\varphi = \pi/2\): the displacement lags by a quarter period while the velocity is in phase with the force — power transfer is maximal.'
+          ar: '\(\tan\varphi = 2\lambda\Omega/(\omega_0^2-\Omega^2)\) تؤول إلى اللانهاية عند \(\Omega=\omega_0\)، فيكون \(\varphi = \pi/2\): يتأخر الانتقال بربع دور بينما تكون السرعة على توافق مع القوة — فيكون نقل الاستطاعة أعظميًا.'
+      - q:
+          en: 'In the force–voltage analogy between a mass–spring–damper and a series RLC circuit, the mass \(m\) corresponds to:'
+          ar: 'في التماثل قوة–توتر بين جملة كتلة–نابض–مخمِّد ودارة RLC على التسلسل، تقابل الكتلة \(m\):'
+        options:
+          - en: 'the inductance L'
+            ar: 'الذاتية L'
+          - en: 'the capacitance C'
+            ar: 'السعة C'
+          - en: 'the resistance R'
+            ar: 'المقاومة R'
+          - en: 'the inverse capacitance 1/C'
+            ar: 'مقلوب السعة 1/C'
+        answer: 0
+        explain:
+          en: 'Compare \(m\ddot x + \alpha\dot x + kx = F\) with \(L\ddot q + R\dot q + q/C = u\): \(m\leftrightarrow L\) (inertia), \(\alpha\leftrightarrow R\), \(k\leftrightarrow 1/C\), \(x\leftrightarrow q\).'
+          ar: 'بمقارنة \(m\ddot x + \alpha\dot x + kx = F\) مع \(L\ddot q + R\dot q + q/C = u\): \(m\leftrightarrow L\) (العطالة)، \(\alpha\leftrightarrow R\)، \(k\leftrightarrow 1/C\)، \(x\leftrightarrow q\).'
+  - title: { en: Coupled oscillations, ar: الاهتزازات المتقارنة }
+    questions:
+      - q:
+          en: How many normal modes does a linear system with \(N\) degrees of freedom have?
+          ar: كم عدد الأنماط الذاتية لجملة خطية ذات \(N\) درجة حرية؟
+        options:
+          - 'N'
+          - '2N'
+          - 'N − 1'
+          - '1'
+        answer: 0
+        explain:
+          en: The secular determinant is a polynomial of degree \(N\) in \(\omega^2\), giving \(N\) normal frequencies and \(N\) independent mode shapes.
+          ar: المحدد المميز كثير حدود من الدرجة \(N\) في \(\omega^2\)، فيعطي \(N\) نبضًا ذاتيًا و\(N\) شكل نمط مستقل.
+      - q:
+          en: Two identical simple pendulums (length \(l\)) are coupled by a light spring. In the in-phase mode the angular frequency is
+          ar: نواسان بسيطان متماثلان (طول كل منهما \(l\)) متقارنان بنابض خفيف. في النمط المتوافق يكون النبض
+        options:
+          - '\(\sqrt{K/m}\)'
+          - '\(\sqrt{g/l + 2K/m}\)'
+          - '\(\sqrt{g/l}\)'
+          - en: 'zero'
+            ar: 'معدومًا'
+        answer: 2
+        explain:
+          en: When both pendulums swing together the spring is never stretched, so it plays no role and each swings at its own frequency \(\sqrt{g/l}\).
+          ar: عندما يتأرجح النواسان معًا لا يستطيل النابض أبدًا، فلا دور له، ويهتز كل نواس بنبضه الخاص \(\sqrt{g/l}\).
+      - q:
+          en: 'Two masses \(m\), each tied to a wall by a spring \(k\) and to each other by \(K\). The antiphase mode has angular frequency:'
+          ar: 'كتلتان \(m\)، كل منهما مربوطة بجدار بنابض \(k\) وبينهما نابض \(K\). نبض النمط المتعاكس هو:'
+        options:
+          - '\(\sqrt{(k+K)/m}\)'
+          - '\(\sqrt{(k+2K)/m}\)'
+          - '\(\sqrt{k/m}\)'
+          - '\(\sqrt{2K/m}\)'
+        answer: 1
+        explain:
+          en: 'In antiphase the middle of the coupling spring stays fixed, so each mass feels \(k\) plus half of the spring \(K\), whose stiffness is \(2K\): \(\omega^2 = (k+2K)/m\).'
+          ar: 'في النمط المتعاكس يبقى منتصف نابض التقارن ثابتًا، فتخضع كل كتلة للنابض \(k\) ولنصف النابض \(K\) الذي صلابته \(2K\): \(\omega^2 = (k+2K)/m\).'
+      - q:
+          en: With weak coupling, one pendulum is released while the other is at rest. The time for the energy to pass completely to the second pendulum is
+          ar: في تقارن ضعيف، نحرّر أحد النواسين بينما الآخر ساكن. المدة اللازمة لانتقال الطاقة كليًا إلى النواس الثاني هي
+        options:
+          - '\(2\pi/(\omega_1+\omega_2)\)'
+          - '\(\pi/(\omega_1+\omega_2)\)'
+          - '\(2\pi/\omega_1\)'
+          - '\(\pi/(\omega_2-\omega_1)\)'
+        answer: 3
+        explain:
+          en: 'The amplitude of pendulum 1 is \(A\cos[(\omega_2-\omega_1)t/2]\); it first vanishes when \((\omega_2-\omega_1)t/2 = \pi/2\).'
+          ar: 'سعة النواس 1 هي \(A\cos[(\omega_2-\omega_1)t/2]\)، وتنعدم لأول مرة عندما \((\omega_2-\omega_1)t/2 = \pi/2\).'
+      - q:
+          en: Written in normal coordinates, the equations of motion of an undamped coupled system are
+          ar: عند كتابتها بالإحداثيات الطبيعية، تكون معادلات حركة جملة متقارنة غير متخامدة
+        options:
+          - en: 'independent harmonic-oscillator equations'
+            ar: 'معادلات هزازات توافقية مستقلة'
+          - en: 'still coupled but with equal frequencies'
+            ar: 'لا تزال متقارنة لكن بنبضات متساوية'
+          - en: 'first-order equations'
+            ar: 'معادلات من الرتبة الأولى'
+          - en: 'nonlinear equations'
+            ar: 'معادلات غير خطية'
+        answer: 0
+        explain:
+          en: Normal coordinates diagonalise both the kinetic and potential energies simultaneously, so each obeys \(\ddot q_i + \omega_i^2q_i = 0\) independently of the others.
+          ar: تجعل الإحداثيات الطبيعية الطاقتين الحركية والكامنة قطريتين في آن واحد، فتحقق كل منها \(\ddot q_i + \omega_i^2q_i = 0\) باستقلال عن الأخرى.
+  - title: { en: Waves, ar: الأمواج }
+    questions:
+      - q:
+          en: The speed of transverse waves on a string with tension \(T\) and linear density \(\mu\) is
+          ar: سرعة الأمواج العرضية على وتر توتره \(T\) وكثافته الخطية \(\mu\) هي
+        options:
+          - '\(\sqrt{\mu/T}\)'
+          - '\(T/\mu\)'
+          - '\(\sqrt{T/\mu}\)'
+          - '\(T\mu\)'
+        answer: 2
+        explain:
+          en: 'Newton''s law on a string element gives \(\mu\,\partial_t^2y = T\,\partial_x^2y\), a wave equation with \(v^2 = T/\mu\). Check units: N/(kg/m) = m²/s².'
+          ar: 'يعطي قانون نيوتن لعنصر من الوتر \(\mu\,\partial_t^2y = T\,\partial_x^2y\)، وهي معادلة موجة حيث \(v^2 = T/\mu\). تحقق من الوحدات: N/(kg/m) = m²/s².'
+      - q:
+          en: The wave \(y(x,t) = A\sin(kx-\omega t)\) travels
+          ar: الموجة \(y(x,t) = A\sin(kx-\omega t)\) تنتشر
+        options:
+          - en: 'towards +x with speed ω/k'
+            ar: 'نحو +x بسرعة ω/k'
+          - en: 'towards −x with speed ω/k'
+            ar: 'نحو −x بسرعة ω/k'
+          - en: 'towards +x with speed k/ω'
+            ar: 'نحو +x بسرعة k/ω'
+          - en: 'nowhere — it is a standing wave'
+            ar: 'لا تنتشر — إنها موجة مستقرة'
+        answer: 0
+        explain:
+          en: A point of constant phase satisfies \(kx-\omega t = \text{const}\), i.e. \(x = (\omega/k)t + \text{const}\), which moves towards +x at the phase velocity \(\omega/k\).
+          ar: النقطة ذات الطور الثابت تحقق \(kx-\omega t = \text{const}\)، أي \(x = (\omega/k)t + \text{const}\)، فهي تتحرك نحو +x بسرعة الطور \(\omega/k\).
+      - q:
+          en: A pulse on a string reaches a rigidly fixed end. The reflected pulse is
+          ar: نبضة على وتر تصل إلى طرف مثبت بإحكام. النبضة المنعكسة تكون
+        options:
+          - en: 'upright, with the same amplitude'
+            ar: 'في نفس الاتجاه وبنفس السعة'
+          - en: 'inverted, with the same amplitude'
+            ar: 'مقلوبة وبنفس السعة'
+          - en: 'absent — all energy is absorbed'
+            ar: 'غائبة — تُمتص الطاقة كلها'
+          - en: 'upright, with double amplitude'
+            ar: 'في نفس الاتجاه وبضعف السعة'
+        answer: 1
+        explain:
+          en: 'A fixed end has infinite impedance, so \(r = (Z_1-Z_2)/(Z_1+Z_2)\to -1\): the displacement must vanish there, which forces an inverted reflection.'
+          ar: 'للطرف المثبت ممانعة لانهائية، لذا \(r = (Z_1-Z_2)/(Z_1+Z_2)\to -1\): يجب أن ينعدم الانتقال هناك، ما يفرض انعكاسًا مقلوبًا.'
+      - q:
+          en: The allowed wavelengths of standing waves on a string of length \(L\) fixed at both ends are
+          ar: أطوال الموجة المسموح بها للأمواج المستقرة على وتر طوله \(L\) مثبت الطرفين هي
+        options:
+          - '\(\lambda_n = 4L/(2n-1)\)'
+          - '\(\lambda_n = L/n\)'
+          - '\(\lambda_n = nL\)'
+          - '\(\lambda_n = 2L/n\)'
+        answer: 3
+        explain:
+          en: Both ends must be nodes, so the string holds a whole number of half wavelengths, \(L = n\lambda/2\). The form \(4L/(2n-1)\) applies to a pipe closed at one end.
+          ar: يجب أن يكون الطرفان عقدتين، فيحتوي الوتر عددًا صحيحًا من أنصاف طول الموجة، \(L = n\lambda/2\). أما الشكل \(4L/(2n-1)\) فيخص أنبوبًا مغلقًا من طرف واحد.
+      - q:
+          en: Deep-water gravity waves obey \(\omega = \sqrt{gk}\). Their group velocity is
+          ar: تحقق الأمواج الثقالية في المياه العميقة \(\omega = \sqrt{gk}\). سرعة مجموعتها هي
+        options:
+          - en: 'equal to the phase velocity'
+            ar: 'مساوية لسرعة الطور'
+          - en: 'twice the phase velocity'
+            ar: 'ضعف سرعة الطور'
+          - en: 'half the phase velocity'
+            ar: 'نصف سرعة الطور'
+          - en: 'zero'
+            ar: 'معدومة'
+        answer: 2
+        explain:
+          en: '\(v_g = \dv{\omega}{k} = \tfrac12\sqrt{g/k} = \tfrac12\,\omega/k = v_\varphi/2\). The medium is dispersive, so energy travels more slowly than the crests.'
+          ar: '\(v_g = \dv{\omega}{k} = \tfrac12\sqrt{g/k} = \tfrac12\,\omega/k = v_\varphi/2\). الوسط مبدِّد، فتنتقل الطاقة أبطأ من القمم.'
+
+textbooks:
+  required:
+    - { authors: G. C. King, title: Vibrations and Waves, edition: 1st, publisher: John Wiley & Sons (Manchester Physics Series), year: 2009 }
+  recommended:
+    - { authors: A. P. French, title: Vibrations and Waves, edition: 1st, publisher: W. W. Norton (MIT Introductory Physics Series), year: 1971 }
+    - { authors: H. J. Pain, title: The Physics of Vibrations and Waves, edition: 6th, publisher: John Wiley & Sons, year: 2005 }
+    - { authors: G. Bekefi & A. H. Barrett, title: 'Electromagnetic Vibrations, Waves, and Radiation', publisher: MIT Press, year: 1977 }
+    - { authors: S. Graham Kelly, title: 'Schaum''s Outline of Theory and Problems of Mechanical Vibrations', publisher: McGraw-Hill, year: 1996 }
+    - { authors: S. S. Rao, title: Mechanical Vibrations, edition: 5th, publisher: Prentice Hall, year: 2011 }
+    - { authors: T. Becherrawy, title: Vibrations et ondes (4 tomes), publisher: Hermes-Lavoisier, year: 2010 }
+    - { authors: H. Djelouah, title: 'Vibrations et ondes — Cours et exercices corrigés', publisher: Pages Bleues, year: 2017 }
+    - { authors: J. Bruneaux, title: Vibrations et ondes, publisher: Ellipses, year: 2010 }
+    - { authors: خ. الصوصو, title: الاهتزازات والأمواج, publisher: منشورات جامعة دمشق, year: 1988 }
+    - { authors: ح. ف. سكيك, title: الاهتزازات والأمواج الميكانيكية, publisher: المركز العلمي للترجمة, year: 2008 }
+    - { authors: ع. ماجود, title: دراسة في النظرية الاهتزازية, publisher: ديوان المطبوعات الجامعية, year: 1985 }
+  online:
+    - title: { en: MIT OCW 8.03 — Vibrations and Waves, ar: مقرر MIT OCW 8.03 — الاهتزازات والأمواج }
+      url: https://ocw.mit.edu/courses/physics/8-03-physics-iii-vibrations-and-waves-fall-2004/syllabus/
+      note: { en: 'Full MIT course with lecture notes, problem sets and exams.', ar: مقرر كامل من MIT مع مذكرات المحاضرات وسلاسل المسائل والاختبارات. }
+    - title: { en: Mechanical vibrations and waves — slides and solved exercises (H. Djelouah), ar: الاهتزازات والأمواج الميكانيكية — شرائح وتمارين محلولة (H. Djelouah) }
+      url: https://www.usthb.dz/fphy/hdjelouah/Diapos.html
+      note: { en: Classic French-language course following the same LMD syllabus., ar: مقرر مرجعي بالفرنسية يتبع مفردات نظام LMD نفسها. }
+    - title: { en: G. C. King — Vibrations and Waves (online preview), ar: G. C. King — الاهتزازات والأمواج (معاينة على الخط) }
+      url: https://www.slideshare.net/StefanyCuadros/vibrations-and-waves-28179530
+      note: { en: Preview of the required textbook., ar: معاينة للكتاب المقرر. }
+    - title: { en: A. P. French — Vibrations and Waves (Google Books), ar: A. P. French — الاهتزازات والأمواج (كتب Google) }
+      url: https://books.google.dz/books?id=RqE26vDmd5wC&redir_esc=y
+      note: { en: Searchable preview of the classic MIT text., ar: معاينة قابلة للبحث لهذا المرجع الكلاسيكي من MIT. }
+    - title: { en: PhET — Wave on a String, ar: PhET — موجة على وتر }
+      url: https://phet.colorado.edu/en/simulations/wave-on-a-string
+      note: { en: 'Interactive simulation of travelling and standing waves with fixed, loose and absorbing ends.', ar: محاكاة تفاعلية للأمواج المتنقلة والمستقرة مع أطراف مثبتة أو حرة أو ماصّة. }
+    - title: { en: PhET — Normal Modes, ar: PhET — الأنماط الذاتية }
+      url: https://phet.colorado.edu/en/simulations/normal-modes
+      note: { en: Normal modes of a chain of coupled masses in one and two dimensions., ar: الأنماط الذاتية لسلسلة من الكتل المتقارنة في بعد واحد وفي بعدين. }
+
+glossary:
+  - { en: Degree of freedom, ar: درجة الحرية, fr: Degré de liberté, def: { en: An independent coordinate needed to specify the configuration of a system., ar: إحداثية مستقلة لازمة لتحديد هيئة الجملة. } }
+  - { en: Generalised coordinate, ar: الإحداثية المعممة, fr: Coordonnée généralisée, def: { en: Any set of independent variables (lengths or angles) that fixes the configuration., ar: أي مجموعة من المتغيرات المستقلة (أطوال أو زوايا) تحدد هيئة الجملة. } }
+  - { en: Lagrangian, ar: دالة لاغرانج (اللاغرانجي), fr: Lagrangien, def: { en: 'The function \(L = T - U\) from which the equations of motion follow.', ar: 'الدالة \(L = T - U\) التي تُستنتج منها معادلات الحركة.' } }
+  - { en: Simple harmonic motion, ar: الحركة التوافقية البسيطة, fr: Mouvement harmonique simple, def: { en: 'Motion obeying \(\ddot x + \omega_0^2x = 0\), i.e. sinusoidal in time.', ar: 'حركة تحقق \(\ddot x + \omega_0^2x = 0\)، أي جيبية بالنسبة إلى الزمن.' } }
+  - { en: Natural angular frequency, ar: النبض الذاتي, fr: Pulsation propre, def: { en: The angular frequency at which an undamped system oscillates freely., ar: النبض الذي تهتز به الجملة حرةً في غياب التخامد. } }
+  - { en: Amplitude, ar: السعة, fr: Amplitude, def: { en: The maximum displacement from equilibrium., ar: أقصى انتقال عن وضع التوازن. } }
+  - { en: Phase, ar: الطور, fr: Phase, def: { en: 'The argument \(\omega t+\varphi\) of the sinusoid; it fixes the state within a cycle.', ar: 'وسيط الدالة الجيبية \(\omega t+\varphi\)؛ يحدد حالة الجملة خلال الدورة.' } }
+  - { en: Damping, ar: التخامد, fr: Amortissement, def: { en: 'Loss of mechanical energy by friction, which makes free oscillations decay.', ar: ضياع الطاقة الميكانيكية بالاحتكاك ما يجعل الاهتزازات الحرة تتناقص. } }
+  - { en: Critical damping, ar: التخامد الحرج, fr: Amortissement critique, def: { en: 'The case \(\lambda = \omega_0\): fastest return to equilibrium without oscillation.', ar: 'الحالة \(\lambda = \omega_0\): أسرع عودة إلى التوازن دون اهتزاز.' } }
+  - { en: Logarithmic decrement, ar: التناقص اللوغاريتمي, fr: Décrément logarithmique, def: { en: 'Natural log of the ratio of two successive maxima, \(\delta = \lambda T_d\).', ar: 'اللوغاريتم الطبيعي لنسبة قيمتين عظميين متتاليتين، \(\delta = \lambda T_d\).' } }
+  - { en: Quality factor, ar: معامل الجودة, fr: Facteur de qualité, def: { en: '\(Q = \omega_0/2\lambda\); \(2\pi\) times the energy stored divided by the energy lost per cycle.', ar: '\(Q = \omega_0/2\lambda\)؛ يساوي \(2\pi\) مضروبًا في نسبة الطاقة المخزنة إلى الطاقة الضائعة في كل دورة.' } }
+  - { en: Forced oscillation, ar: الاهتزاز القسري, fr: Oscillation forcée, def: { en: Oscillation maintained by an external periodic force; in steady state it follows the driving frequency., ar: اهتزاز تحافظ عليه قوة خارجية دورية؛ وفي النظام الدائم يتبع تواتر الإثارة. } }
+  - { en: Transient regime, ar: النظام الانتقالي, fr: Régime transitoire, def: { en: The decaying free part of the motion of a driven oscillator., ar: الجزء الحر المتناقص من حركة هزاز قسري. } }
+  - { en: Resonance, ar: التجاوب (الرنين), fr: Résonance, def: { en: Large response of a driven system when the driving frequency is close to a natural frequency., ar: استجابة كبيرة لجملة قسرية عندما يقترب تواتر الإثارة من تواتر ذاتي. } }
+  - { en: Bandwidth, ar: عرض المجال (عرض النطاق), fr: Bande passante, def: { en: Width of the power-resonance curve between its half-maximum points., ar: عرض منحنى تجاوب الاستطاعة بين نقطتي نصف القيمة العظمى. } }
+  - { en: Mechanical impedance, ar: الممانعة الميكانيكية, fr: Impédance mécanique, def: { en: Ratio of complex force amplitude to complex velocity amplitude., ar: نسبة السعة المركبة للقوة إلى السعة المركبة للسرعة. } }
+  - { en: Coupling, ar: التقارن, fr: Couplage, def: { en: 'An interaction (spring, mass, resistor…) through which oscillators exchange energy.', ar: تفاعل (نابض، كتلة، مقاومة…) تتبادل الهزازات الطاقة عبره. } }
+  - { en: Normal mode, ar: النمط الذاتي, fr: Mode propre, def: { en: A motion in which all parts oscillate at the same frequency with fixed amplitude ratios., ar: حركة تهتز فيها كل أجزاء الجملة بالتواتر نفسه وبنسب سعات ثابتة. } }
+  - { en: Normal coordinates, ar: الإحداثيات الطبيعية, fr: Coordonnées normales, def: { en: Combinations of the coordinates in which the equations of motion decouple., ar: تركيبات من الإحداثيات تصبح فيها معادلات الحركة مستقلة. } }
+  - { en: Beats, ar: الضربات (الخفقان), fr: Battements, def: { en: Slow periodic modulation of amplitude produced by two close frequencies., ar: تغيّر دوري بطيء للسعة ينتج عن تراكب تواترين متقاربين. } }
+  - { en: Wave equation, ar: معادلة الموجة (معادلة الانتشار), fr: Équation de d'Alembert, def: { en: '\(\partial_t^2 y = v^2\nabla^2 y\); its solutions propagate at speed \(v\) without change of shape.', ar: '\(\partial_t^2 y = v^2\nabla^2 y\)؛ تنتشر حلولها بالسرعة \(v\) دون تغيير شكلها.' } }
+  - { en: Travelling wave, ar: الموجة المتنقلة, fr: Onde progressive, def: { en: 'A disturbance \(f(x \mp vt)\) that carries energy along the medium.', ar: 'اضطراب من الشكل \(f(x \mp vt)\) ينقل الطاقة عبر الوسط.' } }
+  - { en: Standing wave, ar: الموجة المستقرة, fr: Onde stationnaire, def: { en: Superposition of two opposite travelling waves with fixed nodes and antinodes., ar: تراكب موجتين متنقلتين متعاكستين له عقد وبطون ثابتة. } }
+  - { en: Node / antinode, ar: العقدة / البطن, fr: Nœud / ventre, def: { en: Points of zero / maximum amplitude in a standing wave., ar: نقاط السعة المنعدمة / العظمى في موجة مستقرة. } }
+  - { en: Characteristic impedance, ar: الممانعة المميزة, fr: Impédance caractéristique, def: { en: 'Ratio of driving force (or pressure) to velocity for a travelling wave, e.g. \(Z = \sqrt{T\mu}\) or \(Z = \rho c\).', ar: 'نسبة القوة (أو الضغط) إلى السرعة في موجة متنقلة، مثل \(Z = \sqrt{T\mu}\) أو \(Z = \rho c\).' } }
+  - { en: Reflection coefficient, ar: معامل الانعكاس, fr: Coefficient de réflexion, def: { en: Ratio of reflected to incident amplitude at a boundary., ar: نسبة السعة المنعكسة إلى السعة الواردة عند الحد الفاصل. } }
+  - { en: Transmission coefficient, ar: معامل النفاذ, fr: Coefficient de transmission, def: { en: Ratio of transmitted to incident amplitude at a boundary., ar: نسبة السعة النافذة إلى السعة الواردة عند الحد الفاصل. } }
+  - { en: Dispersion, ar: التبدد, fr: Dispersion, def: { en: Dependence of phase velocity on frequency; wave packets then change shape as they travel., ar: تعلّق سرعة الطور بالتواتر؛ فتتغير أشكال الحزم الموجية أثناء انتشارها. } }
+  - { en: Group velocity, ar: سرعة المجموعة, fr: Vitesse de groupe, def: { en: '\(v_g = \dv{\omega}{k}\): the speed of a wave packet and of the energy it carries.', ar: '\(v_g = \dv{\omega}{k}\): سرعة الحزمة الموجية والطاقة التي تحملها.' } }
+  - { en: Doppler effect, ar: ظاهرة دوبلر, fr: Effet Doppler, def: { en: Change of the observed frequency due to motion of the source or the observer., ar: تغيّر التواتر المرصود بسبب حركة المنبع أو الراصد. } }

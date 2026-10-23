@@ -1,0 +1,48 @@
+{% from "_macros.html" import icon %}
+<div class="gloss" data-gloss>
+  <div class="gloss-tools">
+    <label class="mat-search">{{ icon('search', 'ic xs') }}<input type="search" placeholder="{{ ui('glossary_search') }}" data-gloss-search></label>
+    {% if gloss_courses is defined %}
+    <select class="gloss-select" data-gloss-course aria-label="{{ ui('in_course') }}">
+      <option value="">{{ ui('all_courses') }}</option>
+      {% for gc in gloss_courses %}<option value="{{ gc.slug }}">{{ t(gc.title) }}</option>{% endfor %}
+    </select>
+    {% endif %}
+    <div class="seg-toggle" role="group">
+      <button type="button" class="is-on" data-gloss-view="table">{{ icon('summary', 'ic xs') }} {{ ui('table_view') }}</button>
+      <button type="button" data-gloss-view="cards">{{ icon('cards', 'ic xs') }} {{ ui('flashcards') }}</button>
+    </div>
+    <span class="gloss-count"><b data-gloss-count>{{ terms | length }}</b> {{ ui('term_count') }}</span>
+  </div>
+  <div class="table-wrap gloss-table" data-gloss-pane="table">
+    <table>
+      <thead><tr><th scope="col">{{ ui('english') }}</th><th scope="col">{{ ui('arabic') }}</th><th scope="col">{{ ui('french') }}</th><th scope="col">{{ ui('definition') }}</th></tr></thead>
+      <tbody>
+      {% for g in terms %}
+        <tr data-term data-en="{{ g.en | e }}" data-ar="{{ g.ar | e }}" data-fr="{{ (g.fr or '') | e }}" data-courses="{{ (g.courses or []) | join(' ') }}">
+          <td class="g-en" lang="en"><button type="button" class="speak" data-speak="{{ g.en | e }}" aria-label="{{ ui('listen') }}: {{ g.en | e }}">{{ icon('volume', 'ic xs') }}</button>{{ g.en }}</td>
+          <td class="g-ar" lang="ar" dir="rtl">{{ g.ar }}</td>
+          <td class="g-fr" lang="fr">{{ g.fr or '' }}</td>
+          <td class="g-def">{% if g.def %}{{ t(g.def) }}{% endif %}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="flash" data-gloss-pane="cards" hidden>
+    <button class="flash-card" type="button" data-flash-card aria-live="polite">
+      <span class="flash-inner">
+        <span class="flash-face front"><small data-flash-lang-front></small><strong data-flash-front></strong></span>
+        <span class="flash-face back"><small data-flash-lang-back></small><strong data-flash-back></strong><span class="flash-def" data-flash-def></span></span>
+      </span>
+    </button>
+    <p class="muted small center">{{ ui('flip') }}</p>
+    <div class="flash-nav">
+      <button class="btn btn-ghost" type="button" data-flash-prev>{{ icon('arrow', 'ic flip rev') }} {{ ui('prev') }}</button>
+      <span class="flash-pos" data-flash-pos></span>
+      <button class="btn btn-ghost" type="button" data-flash-speak>{{ icon('volume') }} {{ ui('listen') }}</button>
+      <button class="btn btn-ghost" type="button" data-flash-shuffle>{{ icon('shuffle') }} {{ ui('shuffle') }}</button>
+      <button class="btn btn-primary" type="button" data-flash-next>{{ ui('next') }} {{ icon('arrow', 'ic flip') }}</button>
+    </div>
+  </div>
+</div>
