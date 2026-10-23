@@ -6,37 +6,50 @@ Open physics courseware in **English and Arabic**. Every course is a complete, q
 - **العربية:** `https://kamelkhelifa.github.io/TeachWeb/ar/`
 - Personal homepage: [kamelkhelifa.github.io/home](https://kamelkhelifa.github.io/home/)
 
-TeachWeb is about the **courses**, not the universities. The same subject taught under several codes (e.g. Quantum Mechanics I = PHYS 354 / PHYS 401 / UEF 223) is merged into one page. The other codes are listed as "Also offered as" and you can search for them.
+The site has **two parts**, each with its own look:
+
+| | Part 1 · Courses taught (`/taught/`) | Part 2 · Open courses (`/open/`) |
+|---|---|---|
+| What | Every course as taught at each university, with **that university's syllabus** and the language of instruction. The current university comes first. | Polished courses that do not depend on any university: full syllabus, quizzes, worked problems, interactive labs, glossary. |
+| Files | `data/taught/<university>/<course>.yml` → [TAUGHT_SCHEMA.md](TAUGHT_SCHEMA.md) | `data/open/<course>.yml` → [COURSE_SCHEMA.md](COURSE_SCHEMA.md) |
+| Languages | English + Arabic; **also French** for courses taught in Algeria | English + Arabic |
+| Look | Warm "syllabus on paper" theme, tinted per university | Vivid modern theme, tinted per subject |
+
+Universities (order, names, colours, French on/off) are in `data/universities.yml`.
+
+### Part 1 rules
+- **Exact syllabus, no guessing.** If the syllabus doesn't give something, leave the field out and the page shows a "to be added" placeholder.
+- **Only your own materials.** Official university documents, department manuals, other people's files and anything with a university logo that you didn't prepare yourself are not published. Doubtful items sit in each file's `pending:` list, which is never displayed. Move an item from `pending:` to `materials:` or `exams:` to publish it.
+- No rooms, timetables, office hours, contact details or student data.
+
+### Part 2: publishing an open course
+The 15 polished drafts are in `data/open/`, all unpublished. To publish one, set `published: true` at the top of its file.
+To preview every draft locally, run `python build.py --drafts --serve`.
 
 ## What every course page contains
 
 | # | Section | What's in it |
 |---|---------|--------------|
-| 1 | Overview | Description, topics at a glance, prerequisites (linked), what it leads to, weekly workload |
-| 2 | Learning outcomes | 6–8 CLOs with Bloom level and domain, each mapped to assessments, plus an alignment matrix |
-| 3 | Weekly plan | 14 weeks: topics, readings, activities, milestones, and that week's materials. Students tick off weeks to track progress |
-| 4 | Assessment | Varied scheme (quizzes, homework, exams, projects, labs…), interactive donut chart, grade calculator (/100 and /20) |
-| 5 | Materials | Every note, slide, problem set, solution and video, filterable by type |
-| 6 | Exams | Exam format, what's allowed, tips, past papers and solutions |
-| 7 | Worked problems | Exam-style problems with hidden hints and full step-by-step solutions |
-| 8 | Self-check quizzes | Multiple-choice quizzes with instant feedback and explanations. Best scores are saved |
-| 9 | Interactive lab | Canvas simulations (projectile, fields, oscillators, particle in a box, Fourier, ODE solvers…) |
-| 10 | Textbooks & resources | Required and recommended books, free online resources |
-| 11 | Glossary | English / Arabic / French terms with definitions, flashcards and spoken pronunciation |
+| 1 | Overview | Description, objectives, prerequisites, workload, teaching methods (and lab safety) |
+| 2 | Learning outcomes | Part 1: the outcomes as stated, with how each is assessed. Part 2: CLOs with Bloom level, plus an alignment matrix |
+| 3 | Weekly plan | Topics, readings, activities and milestones, with that week's materials. Students tick off weeks to track progress |
+| 4 | Assessment | Components and weights, a donut chart and grade calculator (/100 and /20) when weights total 100% |
+| 5 | Materials | Notes, slides, problem sets, solutions and videos, filterable by type |
+| 6 | Exams | Past papers and solutions (and, in Part 2, an exam guide) |
+| 7–9 | Worked problems · Self-check quizzes · Interactive lab | Part 2 |
+| 10 | Textbooks & resources | Required, recommended and free online resources |
+| 11 | Glossary | Part 2: EN/AR/FR terms with flashcards and pronunciation |
 
-The site also has a search palette (press `/`), a learning-path map of prerequisites, a global glossary, a "How it works" guide, light and dark themes, full right-to-left Arabic, print-ready syllabi, and phone layouts.
+The site also has search (press `/`), light and dark themes, full right-to-left Arabic, print-ready syllabi and phone layouts.
 There are no accounts and no tracking. Progress is stored only in the student's own browser.
 
 ## Editing content (no coding needed)
 
-Each course is **one file**: `data/courses/<slug>.yml`. The format is documented in **[COURSE_SCHEMA.md](COURSE_SCHEMA.md)**.
-
-- Every text is bilingual: `{ en: …, ar: … }`.
+- Every text is bilingual: `{ en: …, ar: … }`, plus `fr:` for Algerian Part 1 courses.
 - Maths is LaTeX between `\( … \)` or `\[ … \]`. Put such text in single quotes or a `|` block.
-- **Add a PDF:** upload it to `static/files/<course>/` (or use a Drive link), then add an entry under `materials:`. Use `week:` to show it inside that week of the plan.
-- **Add a past exam:** add an entry under `exams:` with `paper:` and/or `solution:` links.
-- **Add a course:** copy an existing course file, change `slug` (= file name), and edit.
-- Interface words are in `data/i18n.yml`, site settings (areas, colours, levels, homepage link) in `data/site.yml`, and the guide page in `data/guide.yml`.
+- **Add a PDF:** upload it to `static/files/<course>/` (or use a Drive link) and add an entry under `materials:`. Use `week:` to show it inside that week of the plan.
+- **Add a course:** copy a course file next to it, change `slug` (= file name), and edit.
+- Interface words are in `data/i18n.yml`, site settings in `data/site.yml`, and the guide page in `data/guide.yml`.
 
 Commit on GitHub (✏️ → *Commit changes*). The site validates, rebuilds and redeploys automatically in about a minute.
 
@@ -46,6 +59,7 @@ Commit on GitHub (✏️ → *Commit changes*). The site validates, rebuilds and
 pip install -r requirements.txt
 python tools/validate.py         # checks every course: bilingual fields, weights sum to 100, quiz answers, LaTeX quoting…
 python build.py --serve          # builds to _site/ and serves http://localhost:8000
+python build.py --drafts --serve # also shows the unpublished Part 2 drafts (never deploy this)
 ```
 
 ## Publishing (one-time setup)

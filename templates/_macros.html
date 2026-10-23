@@ -2,7 +2,7 @@
 
 {% macro course_card(c, t, ui, url, site) %}
 <article class="course-card" style="--hue: {{ c.hue }}" data-area="{{ c.area }}" data-level="{{ c.level }}" data-slug="{{ c.slug }}">
-  <a class="card-link" href="{{ url('courses/' ~ c.slug ~ '/') }}">
+  <a class="card-link" href="{{ url(c.path) }}">
     <div class="card-top">
       <span class="card-badge">{{ t(c.short) }}</span>
       <span class="card-ring" data-progress-ring="{{ c.slug }}" data-weeks="{{ c.weeks }}" aria-hidden="true">
@@ -23,13 +23,20 @@
 </article>
 {% endmacro %}
 
-{% macro section_head(id, ico, ui, num) %}
+{% macro section_head(id, ico, ui, num, dp='sec_') %}
 <header class="sec-head">
   <span class="sec-icon">{{ icon(ico) }}</span>
   <div>
     <p class="sec-num">{{ '%02d' % num }}</p>
     <h2 id="{{ id }}-title">{{ ui('sec_' ~ id) }}</h2>
-    <p class="sec-lead">{{ ui('sec_' ~ id ~ '_d') }}</p>
+    <p class="sec-lead">{{ ui(dp ~ id ~ '_d') }}</p>
   </div>
 </header>
+{% endmacro %}
+
+{% macro placeholder(ui, icon, key='placeholder_text') %}
+<div class="placeholder" role="note">
+  <span class="ph-icon">{{ icon('clock', 'ic xs') }}</span>
+  <div><strong>{{ ui('placeholder') }}</strong><span>{{ ui(key) }}</span></div>
+</div>
 {% endmacro %}

@@ -1,0 +1,400 @@
+slug: uef223
+order: 10
+codes: [UEF223, وت أ 223]
+title: { en: Quantum Mechanics I, ar: ميكانيكا الكم 1, fr: Mécanique quantique I }
+level:
+  en: "Licence 3 (L3) · Semester 4"
+  ar: "ليسانس (ل3) · الفصل 4"
+  fr: "Licence 3 (L3) · Semestre 4"
+area: quantum
+kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة, fr: Cours et travaux dirigés }
+taught:
+  - { years: 2020–2024, code: UEF223, lang: ar }
+hours: { lecture: 1.5, tutorial: 1.5 }
+prerequisites: { en: Classical mechanics, ar: الميكانيكا الكلاسيكية, fr: Mécanique classique }
+
+description:
+  en: |
+    <p>This course presents and explains the fundamental principles of quantum mechanics.</p>
+    <p>The lectures are organised in five chapters:</p>
+    <ol>
+      <li><strong>Introduction to quantum phenomena</strong>: black-body radiation and Planck's theory; the photoelectric effect; the Compton effect; the de Broglie hypothesis and wave–particle duality; the Franck–Hertz experiment and the quantisation of energy.</li>
+      <li><strong>Describing particles in quantum mechanics</strong>: the wave function and the probabilistic description of physical systems; probability density; expectation value and root mean square; uncertainty; Heisenberg's uncertainty principle.</li>
+      <li><strong>The Schrödinger equation in one dimension</strong>: stationary states; the infinite square well; the finite square well.</li>
+      <li><strong>The mathematics of quantum mechanics</strong>: Hilbert space; observables and Hermitian operators; Dirac notation; the tensor product of spaces and operators.</li>
+      <li><strong>The postulates of quantum mechanics</strong>: description of a state and of physical quantities; measurement of physical quantities; time evolution of the expectation value; the energy–time uncertainty principle.</li>
+    </ol>
+  ar: |
+    <p>هذا المقرر يعرض ويشرح المبادئ الأساسية لميكانيكا الكم.</p>
+    <p>تنتظم المحاضرات في خمسة فصول:</p>
+    <ol>
+      <li><strong>مقدمة في الظواهر الكمومية</strong>: إشعاع الجسم الأسود ونظرية بلانك؛ التأثير الكهروضوئي؛ تأثير كومبتون؛ فرضية دي برولي والازدواجية جسيم-موجة؛ تجربة فرانك-هيرتز وتكميم الطاقة.</li>
+      <li><strong>وصف الجسيمات في ميكانيكا الكم</strong>: الدالة الموجية والوصف الاحتمالي للجمل الفيزيائية؛ الكثافة الاحتمالية؛ القيمة المتوقعة والجذر التربيعي المتوسط؛ الارتياب؛ مبدأ الارتياب لهايزنبرغ.</li>
+      <li><strong>معادلة شرودنغر في بعد واحد</strong>: الحالات المستقرة؛ البئر المربع اللانهائي؛ البئر المربع المتناهي.</li>
+      <li><strong>رياضيات ميكانيكا الكم</strong>: فضاء هيلبرت؛ الملحوظات والمؤثرات الهرميتية؛ ترميز ديراك؛ الجداء التنسوري للفضاءات والمؤثرات.</li>
+      <li><strong>مسلمات ميكانيكا الكم</strong>: وصف الحالة والمقادير الفيزيائية؛ قياس المقادير الفيزيائية؛ تطور القيمة المتوقعة مع الزمن؛ مبدأ ارتياب الزمن-الطاقة.</li>
+    </ol>
+  fr: |
+    <p>Ce cours présente et explique les principes fondamentaux de la mécanique quantique.</p>
+    <p>Le cours est organisé en cinq chapitres :</p>
+    <ol>
+      <li><strong>Introduction aux phénomènes quantiques</strong> : rayonnement du corps noir et théorie de Planck ; effet photoélectrique ; effet Compton ; hypothèse de de Broglie et dualité onde–corpuscule ; expérience de Franck–Hertz et quantification de l'énergie.</li>
+      <li><strong>Description des particules en mécanique quantique</strong> : fonction d'onde et description probabiliste des systèmes physiques ; densité de probabilité ; valeur moyenne et écart quadratique moyen ; incertitude ; principe d'incertitude de Heisenberg.</li>
+      <li><strong>L'équation de Schrödinger à une dimension</strong> : états stationnaires ; puits carré infini ; puits carré fini.</li>
+      <li><strong>Outils mathématiques de la mécanique quantique</strong> : espace de Hilbert ; observables et opérateurs hermitiques ; notation de Dirac ; produit tensoriel d'espaces et d'opérateurs.</li>
+      <li><strong>Les postulats de la mécanique quantique</strong> : description d'un état et des grandeurs physiques ; mesure des grandeurs physiques ; évolution temporelle de la valeur moyenne ; relation d'incertitude temps–énergie.</li>
+    </ol>
+
+outcomes:
+  - id: LO1
+    text:
+      en: Recognise some of the fundamental ideas and concepts of quantum mechanics.
+      ar: التعرف على بعض الأفكار والمفاهيم الأساسية في ميكانيكا الكم.
+      fr: Reconnaître quelques idées et concepts fondamentaux de la mécanique quantique.
+  - id: LO2
+    text:
+      en: Become familiar with the mathematical tools used in quantum mechanics.
+      ar: التعرف على الأدوات الرياضية المستعملة في ميكانيكا الكم.
+      fr: Se familiariser avec les outils mathématiques utilisés en mécanique quantique.
+  - id: LO3
+    text:
+      en: Apply the skills acquired to solve a number of one-dimensional quantum problems.
+      ar: تطبيق المهارات المكتسبة في حل بعض المسائل الكمومية في بعد واحد.
+      fr: Appliquer les compétences acquises à la résolution de problèmes quantiques à une dimension.
+  - id: LO4
+    text:
+      en: Understand the postulates of quantum mechanics.
+      ar: التعرف على مسلمات ميكانيكا الكم.
+      fr: Comprendre les postulats de la mécanique quantique.
+
+assessment:
+  - type: participation
+    weight: 13.2
+    title: { en: Tutorial attendance, ar: حضور الأعمال الموجهة, fr: Assiduité aux travaux dirigés }
+    detail:
+      en: 8 of the 20 points of the continuous assessment.
+      ar: 8 من 20 نقطة في التقويم المستمر.
+      fr: 8 des 20 points du contrôle continu.
+  - type: homework
+    weight: 8.25
+    title: { en: Lecture attendance and assignments, ar: حضور المحاضرات والواجبات, fr: Assiduité aux cours et devoirs }
+    detail:
+      en: |
+        5 of the 20 points of the continuous assessment. There is one problem and exercise sheet every week; solving problems is the only way to understand the material presented in the lectures.
+        (a) Do it yourself: sit down and work out the route to the solution through the questions.
+        (b) Identify any concepts and/or equations that are unclear, and ask the lecturer or tutor for help.
+        (c) Try to develop the technical skills required (mathematics, computing, etc.) while solving the problems.
+        (d) If you run into difficulty, ask the lecturer or tutor, consult the textbooks, search online, or discuss it with your classmates.
+        (e) Write up the solutions yourself, avoid all forms of cheating (breaches of academic integrity), and check that your final solutions are sensible, clear and complete.
+        Solutions are handed in at the start of the tutorial session.
+      ar: |
+        5 من 20 نقطة في التقويم المستمر. هناك ورقة مسائل وتمارين واحدة كل أسبوع، وحل المسائل هو الطريقة الوحيدة لفهم المحتوى المقدم أثناء المحاضرات.
+        أ/ افعلها بنفسك: اجلس وناقش طريق الحل من خلال الأسئلة.
+        ب/ حدد المفاهيم و/أو المعادلات غير الواضحة واطلب مساعدة الأستاذ أو الموجه.
+        ج/ حاول تطوير المهارات التقنية المطلوبة (رياضيات، إعلام آلي، إلخ) أثناء حل المسائل.
+        د/ إذا واجهتك صعوبة فاطلب المساعدة من الأستاذ أو الموجه، أو راجع الكتب المدرسية، أو ابحث في الإنترنت، أو ناقش زملاءك في الفصل.
+        هـ/ اكتب الحلول بنفسك، وتجنب كل أنواع الغش (خرق النزاهة الأكاديمية)، وتحقق من أن الحلول النهائية منطقية وواضحة وكاملة.
+        تُسلَّم حلول الواجبات في بداية حصة الأعمال الموجهة.
+      fr: |
+        5 des 20 points du contrôle continu. Une série d'exercices et de problèmes est donnée chaque semaine ; résoudre des problèmes est le seul moyen de comprendre la matière présentée en cours.
+        (a) Faites-le vous-même : asseyez-vous et construisez le chemin vers la solution à travers les questions.
+        (b) Repérez les notions et/ou équations qui ne sont pas claires et demandez l'aide de l'enseignant ou du chargé de TD.
+        (c) Efforcez-vous de développer les compétences techniques nécessaires (mathématiques, informatique, etc.) en résolvant les problèmes.
+        (d) En cas de difficulté, demandez l'aide de l'enseignant ou du chargé de TD, consultez les manuels, cherchez en ligne ou discutez avec vos camarades.
+        (e) Rédigez vous-même vos solutions, évitez toute forme de fraude (atteinte à l'intégrité académique) et vérifiez que vos solutions finales sont cohérentes, claires et complètes.
+        Les solutions sont remises au début de la séance de TD.
+  - type: participation
+    weight: 3.3
+    title: { en: Participation and conduct, ar: المشاركة والسلوك, fr: Participation et comportement }
+    detail:
+      en: 2 of the 20 points of the continuous assessment.
+      ar: 2 من 20 نقطة في التقويم المستمر.
+      fr: 2 des 20 points du contrôle continu.
+  - type: midterm
+    weight: 8.25
+    title: { en: Written test, ar: الفرض, fr: Interrogation écrite }
+    detail:
+      en: 5 of the 20 points of the continuous assessment.
+      ar: 5 من 20 نقطة في التقويم المستمر.
+      fr: 5 des 20 points du contrôle continu.
+    when: { en: Week 7, ar: الأسبوع 7, fr: Semaine 7 }
+  - type: final
+    weight: 67
+    title: { en: Final exam, ar: الاختبار النهائي, fr: Examen final }
+    detail:
+      en: One and a half hours.
+      ar: ساعة ونصف.
+      fr: Une heure et demie.
+    when: { en: Final examination period, ar: فترة الاختبارات النهائية, fr: Période des examens finaux }
+assessment_note:
+  en: "Continuous assessment counts for 33% and is marked out of 20: 8 (tutorial attendance) + 5 (lecture attendance and assignments) + 2 (participation and conduct) + 5 (written test). The percentages above are these points scaled to 33%."
+  ar: "يمثل التقويم المستمر 33% ويُنقط على 20: 8 (حضور الأعمال الموجهة) + 5 (حضور المحاضرات والواجبات) + 2 (المشاركة والسلوك) + 5 (الفرض). النسب المذكورة أعلاه هي هذه النقاط محوّلة إلى 33%."
+  fr: "Le contrôle continu compte pour 33 % et est noté sur 20 : 8 (assiduité aux TD) + 5 (assiduité aux cours et devoirs) + 2 (participation et comportement) + 5 (interrogation écrite). Les pourcentages ci-dessus correspondent à ces points ramenés à 33 %."
+
+schedule:
+  - week: 1
+    title: { en: Introduction to quantum phenomena, ar: مقدمة في الظواهر الكمومية, fr: Introduction aux phénomènes quantiques }
+    topics:
+      en: [Introductory session, Introduction to quantum phenomena]
+      ar: [حصة تعريفية, مقدمة في الظواهر الكمومية]
+      fr: [Séance d'introduction, Introduction aux phénomènes quantiques]
+    reading: Lecture notes (chapter 1)
+    activity: { en: Set 1, ar: سلسلة 1, fr: Série 1 }
+  - week: 2
+    title: { en: The wave function, ar: الدالة الموجية, fr: La fonction d'onde }
+    topics:
+      en: ['Introduction to quantum phenomena (continued)', 'The wave function, the Schrödinger equation, the statistical interpretation']
+      ar: ['مقدمة في الظواهر الكمومية (تتمة)', 'الدالة الموجية، معادلة شرودنغر، التفسير الاحتمالي']
+      fr: ['Introduction aux phénomènes quantiques (suite)', "La fonction d'onde, l'équation de Schrödinger, l'interprétation statistique"]
+    reading: Griffiths §1.1–1.2
+    activity: { en: Set 2, ar: سلسلة 2, fr: Série 2 }
+  - week: 3
+    title: { en: Probability and normalisation, ar: الاحتمالات والاستنظام, fr: Probabilités et normalisation }
+    topics:
+      en: [Probability, Normalisation, Momentum]
+      ar: [الاحتمالات, الاستنظام, الزخم]
+      fr: [Probabilités, Normalisation, Quantité de mouvement]
+    reading: Griffiths §1.3–1.5
+    activity: { en: Set 3, ar: سلسلة 3, fr: Série 3 }
+  - week: 4
+    title: { en: Uncertainty principle and stationary states, ar: مبدأ الارتياب والحالات المستقرة, fr: Principe d'incertitude et états stationnaires }
+    topics:
+      en: [The uncertainty principle, Stationary states]
+      ar: [مبدأ الارتياب, الحالات المستقرة]
+      fr: [Le principe d'incertitude, États stationnaires]
+    reading: Griffiths §1.5, 2.1
+    activity: { en: Set 4, ar: سلسلة 4, fr: Série 4 }
+  - week: 5
+    title: { en: The infinite square well, ar: البئر المربع اللانهائي, fr: Le puits carré infini }
+    reading: Griffiths §2.2
+    activity: { en: Set 5, ar: سلسلة 5, fr: Série 5 }
+  - week: 6
+    title: { en: The finite square well, ar: البئر المربع المتناهي, fr: Le puits carré fini }
+    reading: Griffiths §2.6
+    activity: { en: Set 6, ar: سلسلة 6, fr: Série 6 }
+  - week: 7
+    title: { en: First test · Hilbert space, ar: الفرض الأول · فضاء هيلبرت, fr: Première interrogation · Espace de Hilbert }
+    topics:
+      en: [First test, Hilbert space]
+      ar: [الفرض الأول, فضاء هيلبرت]
+      fr: [Première interrogation, Espace de Hilbert]
+    reading: Griffiths §3.1
+    activity: { en: Set 7, ar: سلسلة 7, fr: Série 7 }
+    milestone: midterm
+  - week: 8
+    title: { en: Observables and Hermitian operators, ar: الملحوظات والمؤثرات الهرميتية, fr: Observables et opérateurs hermitiques }
+    reading: Griffiths §3.2–3.3
+    activity: { en: Set 8, ar: سلسلة 8, fr: Série 8 }
+  - week: 9
+    title: { en: Eigenfunctions of Hermitian operators, ar: الدوال الذاتية للمؤثرات الهرميتية, fr: Fonctions propres des opérateurs hermitiques }
+    topics:
+      en: [Eigenfunctions of Hermitian operators, The generalised statistical interpretation]
+      ar: [الدوال الذاتية للمؤثرات الهرميتية, التفسير الإحصائي المعمم]
+      fr: [Fonctions propres des opérateurs hermitiques, L'interprétation statistique généralisée]
+    reading: Griffiths §3.4
+    activity: { en: Set 9, ar: سلسلة 9, fr: Série 9 }
+  - week: 10
+    title: { en: States and measurement, ar: الحالات والقياس, fr: États et mesure }
+    topics:
+      en: [Description of a state and of physical quantities, Measurement of physical quantities]
+      ar: [وصف الحالة والمقادير الفيزيائية, قياس المقادير الفيزيائية]
+      fr: [Description d'un état et des grandeurs physiques, Mesure des grandeurs physiques]
+    reading: Griffiths §3.5
+    activity: { en: Set 10, ar: سلسلة 10, fr: Série 10 }
+  - week: 11
+    title: { en: Time evolution and energy–time uncertainty, ar: التطور الزمني وارتياب الزمن-الطاقة, fr: Évolution temporelle et incertitude temps–énergie }
+    topics:
+      en: [Time evolution of the expectation value, The energy–time uncertainty principle]
+      ar: [تطور القيمة المتوقعة مع الزمن, مبدأ ارتياب الزمن-الطاقة]
+      fr: [Évolution temporelle de la valeur moyenne, La relation d'incertitude temps–énergie]
+    reading: Griffiths §3.5
+    activity: { en: Set 11, ar: سلسلة 11, fr: Série 11 }
+  - week: 12
+    title: { en: Dirac notation and the tensor product, ar: ترميز ديراك والجداء التنسوري, fr: Notation de Dirac et produit tensoriel }
+    topics:
+      en: [Dirac notation, The tensor product]
+      ar: [ترميز ديراك, الجداء التنسوري]
+      fr: [Notation de Dirac, Le produit tensoriel]
+    reading: Griffiths §3.6 and lecture notes
+    activity: { en: Set 12, ar: سلسلة 12, fr: Série 12 }
+
+textbooks:
+  required:
+    - { authors: D. J. Griffiths, title: "مقدمة في ميكانيكا الكم (Arabic translation of Introduction to Quantum Mechanics)", edition: 3rd, publisher: Cambridge University Press, year: 2018 }
+  recommended:
+    - { authors: D. J. Griffiths, title: Introduction to Quantum Mechanics, edition: 3rd, publisher: Cambridge University Press, year: 2018 }
+    - { authors: R. P. Feynman, title: "The Feynman Lectures on Physics, Vol. 3", publisher: Paperback, year: 2003 }
+    - { authors: P. A. M. Dirac, title: The Principles of Quantum Mechanics, publisher: Oxford University Press, year: 1947 }
+    - { authors: "C. Cohen-Tannoudji, B. Diu, F. Laloë", title: Mécanique quantique, publisher: Hermann, year: 1997 }
+    - { authors: C. Piron, title: "Mécanique quantique : bases et applications", publisher: Presses Polytechniques et Universitaires Romandes, year: 1998 }
+    - { authors: "L. Landau, E. Lifchitz", title: "Physique théorique, tome 3 : Mécanique quantique", publisher: "Éditions MIR, Moscou", year: 1975 }
+    - { authors: A. Tellez-Arenas, title: "Mécanique quantique : travaux dirigés", publisher: Masson, year: 1976 }
+    - { authors: R. Omnès, title: Les indispensables de la mécanique quantique, publisher: "Odile Jacob (Collection Sciences)", year: 2006 }
+  online:
+    - title: { en: "The Feynman Lectures on Physics, Vol. III", ar: محاضرات فاينمان في الفيزياء – المجلد الثالث, fr: Le cours de physique de Feynman – volume III }
+      url: https://www.feynmanlectures.caltech.edu/III_toc.html
+      note: { en: Free online edition (Caltech), ar: نسخة مجانية على الإنترنت (معهد كالتك), fr: Édition en ligne gratuite (Caltech) }
+    - title: { en: Quantum Mechanics (University of Oxford podcasts), ar: ميكانيكا الكم (تسجيلات جامعة أكسفورد), fr: Mécanique quantique (podcasts de l'Université d'Oxford) }
+      url: https://podcasts.ox.ac.uk/series/quantum-mechanics
+      note: { en: Recorded lectures in English, ar: محاضرات مسجلة بالإنجليزية, fr: Cours enregistrés en anglais }
+    - title: { en: Quantum Mechanics for Scientists and Engineers (Stanford on edX), ar: ميكانيكا الكم للعلميين والمهندسين (جامعة ستانفورد على منصة edX), fr: Mécanique quantique pour scientifiques et ingénieurs (Stanford sur edX) }
+      url: https://www.edx.org/course/quantum-mechanics-for-scientists-and-engineers-1
+      note: { en: Online course; a certificate is available for a small fee, ar: مقرر على الإنترنت ويمكن الحصول على شهادة مقابل مبلغ رمزي, fr: Cours en ligne ; certificat disponible pour une somme modique }
+    - title: { en: "Understanding Modern Physics II: Quantum Mechanics and Atoms (HKUST on Coursera)", ar: "فهم الفيزياء الحديثة 2: ميكانيكا الكم والذرات (جامعة هونغ كونغ للعلوم والتكنولوجيا على منصة Coursera)", fr: "Understanding Modern Physics II : mécanique quantique et atomes (HKUST sur Coursera)" }
+      url: https://www.coursera.org/learn/understanding-modern-physics-2-quantum-mechanics-and-atoms
+      note: { en: Online course; a certificate is available for a small fee, ar: مقرر على الإنترنت ويمكن الحصول على شهادة مقابل مبلغ رمزي, fr: Cours en ligne ; certificat disponible pour une somme modique }
+    - title: { en: "Quantum Mechanics, The Theoretical Minimum (L. Susskind)", ar: "ميكانيكا الكم، الحد الأدنى النظري (ل. ساسكيند)", fr: "Mécanique quantique, The Theoretical Minimum (L. Susskind)" }
+      url: https://theoreticalminimum.com/courses/quantum-mechanics/2012/winter
+      note: { en: Video lectures in English, ar: محاضرات مصورة بالإنجليزية, fr: Cours filmés en anglais }
+    - title: { en: Quantum mechanics lectures (Tikrit University), ar: محاضرات مادة ميكانيك الكم (جامعة تكريت – العراق), fr: Cours de mécanique quantique (Université de Tikrit) }
+      url: https://ceps.tu.edu.iq/pd/electronic-lectures1/316-%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D9%85%D8%A7%D8%AF%D8%A9-%D9%85%D9%8A%D9%83%D8%A7%D9%86%D9%8A%D9%83-%D8%A7%D9%84%D9%83%D9%85-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA-%D8%B9%D9%84%D9%8A%D8%A7-%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A7%D9%87.html
+      note: { en: Online lectures in Arabic, ar: محاضرات على الإنترنت بالعربية, fr: Cours en ligne en arabe }
+
+materials:
+  # ---- Lecture notes and slides ----
+  - type: notes
+    title: { en: "Chapter 1: Introduction to quantum phenomena (notes)", ar: "الفصل 1: مقدمة في الظواهر الكمومية (مذكرة)", fr: "Chapitre 1 : Introduction aux phénomènes quantiques (polycopié)" }
+    url: https://drive.google.com/file/d/1m0mO-LtWl0oZeL6IR1E7nSYegYywfl93/view?usp=sharing
+    week: 1
+    lang: ar
+  - type: slides
+    title: { en: "Chapter 1: Introduction to quantum phenomena (slides)", ar: "الفصل 1: مقدمة في الظواهر الكمومية (شرائح العرض)", fr: "Chapitre 1 : Introduction aux phénomènes quantiques (diapositives)" }
+    url: https://docs.google.com/presentation/d/126wDL268evfx-mc7Jm75DlH1eRT7ZLwi8a1EaUw-_XU/edit?usp=share_link
+    week: 1
+    lang: ar
+  - type: formula
+    title: { en: Table of common mathematical formulae, ar: قائمة العبارات الرياضية الشائعة, fr: Table des formules mathématiques usuelles }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+  # ---- Video lectures ----
+  - type: video
+    title: { en: "Lecture 01: Introduction to quantum phenomena", ar: "المحاضرة 01: مقدمة في الظواهر الكمومية", fr: "Cours 01 : Introduction aux phénomènes quantiques" }
+    url: https://www.youtube.com/watch?v=JE8Qr9_NPio
+    week: 1
+    lang: ar
+  - type: video
+    title: { en: "Lecture 02: Describing particles in quantum mechanics", ar: "المحاضرة 02: وصف الجسيمات في ميكانيكا الكم", fr: "Cours 02 : Description des particules en mécanique quantique" }
+    url: https://youtu.be/WpEWW6GV35M
+    lang: ar
+  - type: video
+    title: { en: "Lecture 03: Describing particles in quantum mechanics", ar: "المحاضرة 03: وصف الجسيمات في ميكانيكا الكم", fr: "Cours 03 : Description des particules en mécanique quantique" }
+    url: https://youtu.be/uq2KzDG07fo
+    lang: ar
+  - type: video
+    title: { en: "Lecture 04: Describing particles in quantum mechanics", ar: "المحاضرة 04: وصف الجسيمات في ميكانيكا الكم", fr: "Cours 04 : Description des particules en mécanique quantique" }
+    url: https://youtu.be/bKaEvG4jB8M
+    lang: ar
+  - type: video
+    title: { en: "Lecture 05: Describing particles in quantum mechanics", ar: "المحاضرة 05: وصف الجسيمات في ميكانيكا الكم", fr: "Cours 05 : Description des particules en mécanique quantique" }
+    url: https://youtu.be/zBXDylm8M5U
+    lang: ar
+  - type: video
+    title: { en: "Lecture 06: Describing particles in quantum mechanics", ar: "المحاضرة 06: وصف الجسيمات في ميكانيكا الكم", fr: "Cours 06 : Description des particules en mécanique quantique" }
+    url: https://youtu.be/Y2SntywJabU
+    lang: ar
+  - type: video
+    title: { en: "Lecture 07: Describing particles in quantum mechanics", ar: "المحاضرة 07: وصف الجسيمات في ميكانيكا الكم", fr: "Cours 07 : Description des particules en mécanique quantique" }
+    url: https://youtu.be/VFQBjDcm55w
+    lang: ar
+  - type: video
+    title: { en: "Lecture 08: The Schrödinger equation in one dimension", ar: "المحاضرة 08: معادلة شرودنغر في بعد واحد", fr: "Cours 08 : L'équation de Schrödinger à une dimension" }
+    url: https://youtu.be/LNqNJDoYUEA
+    lang: ar
+  - type: video
+    title: { en: "Lecture 09: The Schrödinger equation in one dimension", ar: "المحاضرة 09: معادلة شرودنغر في بعد واحد", fr: "Cours 09 : L'équation de Schrödinger à une dimension" }
+    url: https://youtu.be/pLk7z0ErSWo
+    lang: ar
+  - type: video
+    title: { en: "Lecture 10: The Schrödinger equation in one dimension", ar: "المحاضرة 10: معادلة شرودنغر في بعد واحد", fr: "Cours 10 : L'équation de Schrödinger à une dimension" }
+    url: https://youtu.be/uS0cXEP6UKs
+    lang: ar
+  - type: video
+    title: { en: "Lecture 14: The mathematics of quantum mechanics", ar: "المحاضرة 14: رياضيات ميكانيكا الكم", fr: "Cours 14 : Outils mathématiques de la mécanique quantique" }
+    url: https://youtu.be/n5Ag3HlJhO0
+    lang: ar
+  - type: video
+    title: { en: "Lecture 15 (part 1): The mathematics of quantum mechanics", ar: "المحاضرة 15 (الجزء 1): رياضيات ميكانيكا الكم", fr: "Cours 15 (partie 1) : Outils mathématiques de la mécanique quantique" }
+    url: https://www.youtube.com/watch?v=3FrV2BhihMM&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=11
+    lang: ar
+  - type: video
+    title: { en: "Lecture 15 (part 2): The mathematics of quantum mechanics", ar: "المحاضرة 15 (الجزء 2): رياضيات ميكانيكا الكم", fr: "Cours 15 (partie 2) : Outils mathématiques de la mécanique quantique" }
+    url: https://www.youtube.com/watch?v=Ocf4ejiE1Dg&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=10
+    lang: ar
+  - type: video
+    title: { en: "Lecture 16 (part 1): The mathematics of quantum mechanics", ar: "المحاضرة 16 (الجزء 1): رياضيات ميكانيكا الكم", fr: "Cours 16 (partie 1) : Outils mathématiques de la mécanique quantique" }
+    url: https://www.youtube.com/watch?v=PDe_DuFcqGY&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=9
+    lang: ar
+  - type: video
+    title: { en: "Lecture 16 (part 2): The mathematics of quantum mechanics", ar: "المحاضرة 16 (الجزء 2): رياضيات ميكانيكا الكم", fr: "Cours 16 (partie 2) : Outils mathématiques de la mécanique quantique" }
+    url: https://www.youtube.com/watch?v=ph3zbqL7RMo&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=8
+    lang: ar
+  - type: video
+    title: { en: "Lecture 17: The mathematics of quantum mechanics", ar: "المحاضرة 17: رياضيات ميكانيكا الكم", fr: "Cours 17 : Outils mathématiques de la mécanique quantique" }
+    url: https://www.youtube.com/watch?v=qzqEcWN85Ro&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=7
+    lang: ar
+  - type: video
+    title: { en: "Lecture 18: The mathematics of quantum mechanics", ar: "المحاضرة 18: رياضيات ميكانيكا الكم", fr: "Cours 18 : Outils mathématiques de la mécanique quantique" }
+    url: https://www.youtube.com/watch?v=jfHTTLUuR1M&list=PLDCj_x_0LsfxlLoxlm3T-GTn4ocImBjax&index=6
+    lang: ar
+  # ---- Problem sets and solutions ----
+  - { type: problems, title: { en: Problem set 0, ar: سلسلة 0, fr: Série 0 }, url: "https://drive.google.com/file/d/1gVOQY93n9zmSJgpDc9JzJ82PyXnJkbW8/view?usp=share_link", lang: ar }
+  - { type: solutions, title: { en: Solution 0, ar: حل 0, fr: Corrigé 0 }, url: "https://drive.google.com/file/d/1FSO0z5ZzDIWYsrE7_2eFEa6uGeru0XBL/view?usp=sharing", lang: ar }
+  - { type: problems, title: { en: Problem set 1, ar: سلسلة 1, fr: Série 1 }, url: "https://drive.google.com/file/d/1pkKZZrwwCi6Id8FLUPxiYdJ827cRfNQm/view?usp=share_link", week: 1, lang: ar }
+  - { type: solutions, title: { en: Solution 1, ar: حل 1, fr: Corrigé 1 }, url: "https://drive.google.com/file/d/1dHqj1f1UDawwDFm3IFeWXgcylpZ8u2wK/view?usp=sharing", week: 1, lang: ar }
+  - { type: problems, title: { en: Problem set 2, ar: سلسلة 2, fr: Série 2 }, url: "https://drive.google.com/file/d/1MSR5_iJwmu_o_hSznaF5BBKmWyP2bf6-/view?usp=share_link", week: 2, lang: ar }
+  - { type: solutions, title: { en: Solution 2, ar: حل 2, fr: Corrigé 2 }, url: "https://drive.google.com/file/d/1i5tvDjQ1_sdEV04rWf8HNyumgDLfIySG/view?usp=sharing", week: 2, lang: ar }
+  - { type: problems, title: { en: Problem set 3, ar: سلسلة 3, fr: Série 3 }, url: "https://drive.google.com/file/d/1TCdlApOhB5BMtNe9AYgGvyV-QijWAYGr/view?usp=share_link", week: 3, lang: ar }
+  - { type: solutions, title: { en: Solution 3, ar: حل 3, fr: Corrigé 3 }, url: "https://drive.google.com/file/d/1klhB9AtR4yFZdl-oKxJFT5NOU4wuHFAf/view?usp=sharing", week: 3, lang: ar }
+  - { type: problems, title: { en: Problem set 4, ar: سلسلة 4, fr: Série 4 }, url: "https://drive.google.com/file/d/15Xf3f5CDqmuxnSIyCu-C_CqsgJWKlb88/view?usp=share_link", week: 4, lang: ar }
+  - { type: solutions, title: { en: Solution 4, ar: حل 4, fr: Corrigé 4 }, url: "https://drive.google.com/file/d/1t6WMF0xynYGI-RlySbPVewYyiErwUb8-/view?usp=sharing", week: 4, lang: ar }
+  - { type: video, title: { en: Solution 4 (video), ar: حل 4 (فيديو), fr: Corrigé 4 (vidéo) }, url: "https://youtu.be/DlC5SGU1Uzg", week: 4, lang: ar }
+  - { type: problems, title: { en: Problem set 5, ar: سلسلة 5, fr: Série 5 }, url: "https://drive.google.com/file/d/1URBxR3TC9woOZbp1YVIeNMKEFmERhUYw/view?usp=share_link", week: 5, lang: ar }
+  - { type: solutions, title: { en: Solution 5, ar: حل 5, fr: Corrigé 5 }, url: "https://drive.google.com/file/d/1aksmvTFWVOBy99ZFZQ3p1bGaMHdQWsZ8/view?usp=sharing", week: 5, lang: ar }
+  - { type: problems, title: { en: Problem set 6, ar: سلسلة 6, fr: Série 6 }, url: "https://drive.google.com/file/d/1Kh27yKpEN4HSAL87_6ogj1apo7M476Mr/view?usp=share_link", week: 6, lang: ar }
+  - { type: solutions, title: { en: Solution 6, ar: حل 6, fr: Corrigé 6 }, url: "https://drive.google.com/file/d/1GGAS0jMySjTUEVDklzHnbzdcJOWt8DZN/view?usp=drive_link", week: 6, lang: ar }
+  - { type: problems, title: { en: Problem set 7, ar: سلسلة 7, fr: Série 7 }, url: "https://drive.google.com/file/d/1kYqlcoRo8IXtYC-1zqO-tXIwX2P4Bwzw/view?usp=share_link", week: 7, lang: ar }
+  - { type: solutions, title: { en: Solution 7, ar: حل 7, fr: Corrigé 7 }, url: "https://drive.google.com/file/d/1pfLeyuOTdUy88s8yL8SSrr2EUlu6yHf6/view?usp=sharing", week: 7, lang: ar }
+  - { type: problems, title: { en: Problem set 8, ar: سلسلة 8, fr: Série 8 }, url: "https://drive.google.com/file/d/1Al11pDggsjo2ZhID4nAhQ8n-562699Ow/view?usp=share_link", week: 8, lang: ar }
+  - { type: solutions, title: { en: Solution 8, ar: حل 8, fr: Corrigé 8 }, url: "https://drive.google.com/file/d/1jOCMmWJeLEBsz8PuNIQP6fIuzdq4JLu2/view?usp=drive_link", week: 8, lang: ar }
+  - { type: problems, title: { en: Problem set 9, ar: سلسلة 9, fr: Série 9 }, url: "https://drive.google.com/file/d/1zy_BF0gtwM0tXlCOs8p5sMFc8V_9r0Gb/view?usp=share_link", week: 9, lang: ar }
+  - { type: solutions, title: { en: Solution 9, ar: حل 9, fr: Corrigé 9 }, url: "https://drive.google.com/file/d/1vxxDQsW5s5XP1JU91brIJPjK4L_sgS-Y/view?usp=drive_link", week: 9, lang: ar }
+  - { type: problems, title: { en: Problem set 10, ar: سلسلة 10, fr: Série 10 }, url: "https://drive.google.com/file/d/1lPv5Q0XYhg2A9TESpyT9tbCcArAAcS06/view?usp=share_link", week: 10, lang: ar }
+  - { type: solutions, title: { en: Solution 10, ar: حل 10, fr: Corrigé 10 }, url: "https://drive.google.com/file/d/1ncwlJ5uLo6kgbmSnITr6HPQVbyYy5TbU/view?usp=drive_link", week: 10, lang: ar }
+
+exams:
+  - { title: { en: Past exam, ar: اختبار سابق, fr: Examen antérieur }, session: '2022', paper: "https://drive.google.com/file/d/1J4LunajNmnICR8EAoX8fAyvA4PSSvgxu/view?usp=sharing", lang: ar }
+  - { title: { en: Past exam, ar: اختبار سابق, fr: Examen antérieur }, session: '2023', paper: "https://drive.google.com/file/d/1etTrZMi2lYdxY0zTQoyk-26xQJx-zgGC/view?usp=sharing", lang: ar }
+  - { title: { en: Past exam, ar: اختبار سابق, fr: Examen antérieur }, session: '2024', paper: "https://drive.google.com/file/d/1mJxz_MxiuN0TL8QfwJ3W5TG8rH-QUgNk/view?usp=sharing", lang: ar }
+
+pending:
+  - what: "Arabic translation of Griffiths, Introduction to Quantum Mechanics (3rd ed.), PDF"
+    url: https://drive.google.com/file/d/1PJIUZnoNkGPogNrcQpQAwptzGFkOU3U5/view?usp=sharing
+    why: "translated textbook (copyright of the publisher/translator); the book is still cited as the required text"
+  - what: "الميكانيك الكمي (University of Batna 1), PDF"
+    url: https://delenda.files.wordpress.com/2015/01/qm1.pdf
+    why: "lecture notes written by another author, hosted on a third-party blog"
+  - what: "Collections of translated quantum-mechanics books (link 1)"
+    url: https://www.alfreed-ph.com/2017/10/Books-in-quantum-mechanics-pdf.html
+    why: "third-party site distributing translated books; copyright status unclear"
+  - what: "Collections of translated quantum-mechanics books (link 2)"
+    url: https://zoom-teach.blogspot.com/2018/07/Quantum-mechanics-for-beginners-pdf.html
+    why: "third-party site distributing translated books; copyright status unclear"
+  - what: "Quantum mechanics from MIT (goo.gl short link)"
+    url: https://goo.gl/Ghwz81
+    why: "goo.gl short links no longer resolve; target unknown (probably MIT OpenCourseWare). Replace with the full URL if wanted"
+
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/uef223-%d9%85%d9%8a%d9%83%d8%a7%d9%86%d9%8a%d9%83%d8%a7-%d8%a7%d9%84%d9%83%d9%85-1/
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/uef223-quantum-mechanics-1/
+notes: >
+  Source: the Arabic UEF223 page (the English WordPress page only links to it); the cleaned en/ar files are
+  its translation and original. Course information, description, the four learning outcomes, the 12-week calendar,
+  the evaluation (33% continuous assessment marked 8+5+2+5 out of 20, final exam 67%) and the textbook list are
+  as on the page; the five-chapter outline in the description comes from the lecture-notes table. Continuous-assessment
+  points were converted to percentages of the total (same split as the UEF131 and UEF123 pages). Years: teaching.yml
+  says 2020-2023, the page lists past exams 2020-2024 (2022-2024 uploaded); 2020-2024 used, to be confirmed.
+  Level "L3, semester 4" is as written on the page (semester 4 is normally L2). Kind set to lecture & tutorials
+  because the page gives both. The video lectures (01-18) are listed in the page's own lecture-notes table; only
+  lecture 01 carries the KamelKhelifa channel tag, the others are assumed to be from the same channel/playlist.
+  Video-solution links 0-3 were duplicates of the PDF solutions and were dropped. Summaries 1-5, solutions 5-10
+  videos, and the current-year midterm/final/resit PDFs were never uploaded. Not kept: room and timetable, office
+  hours, student-portal marks link, course questionnaire.

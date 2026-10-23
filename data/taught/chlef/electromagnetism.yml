@@ -1,0 +1,189 @@
+slug: electromagnetism
+order: 20
+codes: [UEF224]
+title: { en: Electromagnetism, ar: الكهرومغناطيسية, fr: Électromagnétisme }
+level:
+  en: "Semester 4 · Matter Sciences (SM) · Phys4"
+  ar: "الفصل الرابع · علوم المادة (SM) · Phys4"
+  fr: "Semestre 4 · Sciences de la Matière (SM) · Phys4"
+area: electromagnetism
+kind: { en: Lectures & tutorials, ar: محاضرات وأعمال موجهة, fr: Cours et travaux dirigés }
+taught:
+  - { years: 2015–2016, code: UEF224, lang: fr }
+  - { years: 2016–2017, code: UEF224, lang: en }
+hours: { lecture: 1.5, tutorial: 1.5, lab: 0 }
+prerequisites:
+  en: "UEF112 (Math3), UEF113 (Phys2)"
+  ar: "UEF112 (Math3)، UEF113 (Phys2)"
+  fr: "UEF112 (Math3), UEF113 (Phys2)"
+
+objectives:
+  - en: To introduce Maxwell's equations and use them to derive the properties of electromagnetic waves, and to introduce simple models for the interaction of electromagnetic fields with matter.
+    ar: تقديم معادلات ماكسويل واستخدامها لاستنتاج خصائص الأمواج الكهرومغناطيسية، وتقديم نماذج بسيطة لتفاعل الحقول الكهرومغناطيسية مع المادة.
+    fr: Introduire les équations de Maxwell et les utiliser pour dériver les propriétés des ondes électromagnétiques ; introduire des modèles simples pour l’interaction des champs électromagnétiques avec la matière.
+  - en: Students will encounter wave equations of the same form as those they met in UEF123 (Vibrations and Waves).
+    ar: يصادف الطالب معادلات انتشار لها الشكل نفسه الذي عرفه في المقرر UEF123 (الاهتزازات والأمواج).
+    fr: L’étudiant retrouve des équations de propagation de la même forme que celles qu’il a rencontrées en UEF123 (Vibrations et Ondes).
+
+# "By the end of the course, successful students will be able to:"
+outcomes:
+  - id: CLO1
+    text:
+      en: describe the electric field and potential, and related concepts, for stationary charges.
+      ar: وصف الحقل الكهربائي والكمون، والمفاهيم المرتبطة بهما، للشحنات الساكنة.
+      fr: décrire le champ électrique et le potentiel, et les concepts connexes, des charges stationnaires.
+  - id: CLO2
+    text:
+      en: calculate the electrostatic properties of simple charge distributions using Coulomb's law, Gauss's law and the electric potential.
+      ar: حساب الخصائص الكهروساكنة لتوزيعات شحنية بسيطة باستخدام قانون كولوم وقانون غاوس والكمون الكهربائي.
+      fr: calculer les propriétés électrostatiques des distributions de charge simples en utilisant la loi de Coulomb, la loi de Gauss et le potentiel électrique.
+  - id: CLO3
+    text:
+      en: describe the magnetic field for steady currents and moving charges.
+      ar: وصف الحقل المغناطيسي للتيارات المستقرة والشحنات المتحركة.
+      fr: décrire le champ magnétique pour des courants « stables » et des charges en mouvement.
+  - id: CLO4
+    text:
+      en: calculate the magnetic properties of simple current distributions using the Biot–Savart law and Ampère's law.
+      ar: حساب الخصائص المغناطيسية لتوزيعات تيار بسيطة باستخدام قانوني بيو-سافار وأمبير.
+      fr: calculer les propriétés magnétiques des distributions de courants simples à l’aide des lois de Biot-Savart et d’Ampère.
+  - id: CLO5
+    text:
+      en: describe electromagnetic induction and related concepts, and carry out calculations using Faraday's and Lenz's laws.
+      ar: وصف التحريض الكهرومغناطيسي والمفاهيم المرتبطة به، وإجراء الحسابات باستخدام قانوني فاراداي ولنز.
+      fr: décrire l’induction électromagnétique et les concepts connexes, et effectuer des calculs à l’aide des lois de Faraday et de Lenz.
+  - id: CLO6
+    text:
+      en: state Maxwell's equations and demonstrate an understanding of them and of their derivation from the empirical laws of electromagnetism.
+      ar: معرفة معادلات ماكسويل وإظهار فهمها وفهم كيفية استنتاجها من القوانين التجريبية للكهرومغناطيسية.
+      fr: connaître et démontrer une compréhension des équations de Maxwell et de leur dérivation à partir des lois empiriques de l’électromagnétisme.
+  - id: CLO7
+    text:
+      en: apply the fundamental laws of electromagnetism to solve simple problems in electrostatics, magnetostatics and electromagnetic induction in vacuum.
+      ar: استخدام القوانين الأساسية للكهرومغناطيسية لحل مسائل بسيطة في الكهروساكنة والمغناطيسية الساكنة والتحريض الكهرومغناطيسي في الفراغ.
+      fr: utiliser les lois fondamentales de l’électromagnétisme pour résoudre des problèmes simples d’électrostatique, de magnétostatique et d’induction électromagnétique dans le vide.
+  - id: CLO8
+    text:
+      en: demonstrate an understanding of the properties of electromagnetic plane waves in vacuum and be able to derive these properties from Maxwell's equations.
+      ar: إظهار فهم لخصائص الأمواج الكهرومغناطيسية المستوية في الفراغ، والقدرة على استنتاج هذه الخصائص من معادلات ماكسويل.
+      fr: démontrer une compréhension des propriétés des ondes planes électromagnétiques dans le vide et être en mesure de tirer ces propriétés des équations de Maxwell.
+
+assessment:
+  - type: quiz
+    weight: 33
+    title: { en: Continuous assessment, ar: التقييم المستمر, fr: Contrôle continu }
+  - type: final
+    weight: 67
+    title: { en: Exam, ar: الاختبار, fr: Examen }
+
+# Course plan (chapters; the source gives no week-by-week calendar)
+schedule:
+  - week: Ch. 1
+    title: { en: Mathematical tools, ar: الأدوات الرياضية, fr: Outils mathématiques }
+    topics:
+      en: ["Vector analysis (gradient, divergence, curl and Laplacian)", "The Dirac delta distribution and point particles", "Poisson's and Laplace's equations"]
+      ar: ["التحليل الشعاعي (التدرج والتباعد والدوار واللابلاسي)", "توزيع ديراك دلتا والجسيمات النقطية", "معادلتا بواسون ولابلاس"]
+      fr: ["Analyse vectorielle (gradient, divergence, rotationnel et laplacien)", "La distribution delta de Dirac et les particules ponctuelles", "Les équations de Poisson et de Laplace"]
+  - week: Ch. 2
+    title: { en: Electrostatics, ar: الكهروساكنة, fr: Électrostatique }
+    topics:
+      en: ["Coulomb's law", "The electric field", "Continuous charge distributions and Gauss's law", "The electrostatic potential", "Poisson's and Laplace's equations", "Work done by an electrostatic force", "Multipole expansion"]
+      ar: ["قانون كولوم", "الحقل الكهربائي", "التوزيع المستمر للشحنة وقانون غاوس", "الكمون الكهروساكن", "معادلتا بواسون ولابلاس", "عمل القوة الكهروساكنة", "النشر متعدد الأقطاب"]
+      fr: ["Loi de Coulomb", "Le champ électrique", "Distribution continue de charge et loi de Gauss", "Potentiel électrostatique", "Les équations de Poisson et de Laplace", "Travail d’une force électrostatique", "Développement multipolaire"]
+  - week: Ch. 3
+    title: { en: Magnetostatics, ar: المغناطيسية الساكنة, fr: Magnétostatique }
+    topics:
+      en: ["The magnetic field", "The Lorentz force", "The Biot–Savart law and Ampère's law", "The magnetic vector potential", "Magnetic dipoles", "Multipole expansion"]
+      ar: ["الحقل المغناطيسي", "قوة لورنتز", "قانون بيو-سافار وقانون أمبير", "الكمون الشعاعي المغناطيسي", "ثنائيات الأقطاب المغناطيسية", "النشر متعدد الأقطاب"]
+      fr: ["Champ magnétique", "Force de Lorentz", "Loi de Biot-Savart et loi d’Ampère", "Potentiel vecteur magnétique", "Dipôles magnétiques", "Développement multipolaire"]
+  - week: Ch. 4
+    title: { en: "Electrodynamics and Maxwell's equations", ar: الكهروديناميكا ومعادلات ماكسويل, fr: Électrodynamique et équations de Maxwell }
+    topics:
+      en: ["Electromotive force (emf)", "Electromagnetic induction", "Faraday's and Lenz's laws", "Inductance", "Energy in magnetic fields", "The integral and differential forms of Maxwell's equations", "The potential formulation"]
+      ar: ["القوة المحركة الكهربائية", "التحريض الكهرومغناطيسي", "قانونا فاراداي ولنز", "الذاتية (المحاثة)", "الطاقة في الحقول المغناطيسية", "الصيغتان التكاملية والتفاضلية لمعادلات ماكسويل", "الصياغة بدلالة الكمونات"]
+      fr: ["Force électromotrice (fém)", "L’induction électromagnétique", "Lois de Faraday et de Lenz", "L’inductance", "L’énergie dans les champs magnétiques", "Les formes intégrale et différentielle des équations de Maxwell", "Formulation en potentiels"]
+  - week: Ch. 5
+    title: { en: Propagation of electromagnetic waves, ar: انتشار الأمواج الكهرومغناطيسية, fr: Propagation des ondes électromagnétiques }
+    topics:
+      en: ["Propagation of electromagnetic plane waves in vacuum", "Reflection and refraction: the laws of reflection and refraction", "The Fresnel equations", "Guided waves: propagation along a straight line, coaxial lines, rectangular and hollow waveguides"]
+      ar: ["انتشار الأمواج الكهرومغناطيسية المستوية في الفراغ", "الانعكاس والانكسار: قانونا الانعكاس والانكسار", "معادلات فرينل", "الأمواج الموجهة: الانتشار على خط مستقيم، الخط المحوري، الدلائل الموجية المستطيلة والمجوفة"]
+      fr: ["Propagation des ondes planes électromagnétiques dans le vide", "Réflexion et réfraction : lois de la réflexion et de la réfraction", "Les équations de Fresnel", "Ondes guidées : propagation en ligne droite, ligne coaxiale, guides d’ondes rectangulaires et creux"]
+  - week: Ch. 6
+    title: { en: Electromagnetism in materials, ar: الكهرومغناطيسية في المواد, fr: L’électromagnétisme dans les milieux matériels }
+    topics:
+      en: ["Electrostatics in materials", "Magnetostatics in materials", "Maxwell's equations and electromagnetic waves in materials"]
+      ar: ["الكهروساكنة في المواد", "المغناطيسية الساكنة في المواد", "معادلات ماكسويل والأمواج الكهرومغناطيسية في المواد"]
+      fr: ["Électrostatique dans les matériaux", "Magnétostatique dans les matériaux", "Les équations de Maxwell et les ondes électromagnétiques dans les matériaux"]
+
+textbooks:
+  recommended:
+    - { authors: D. J. Griffiths, title: Introduction to Electrodynamics, publisher: Prentice Hall of India, year: 1998 }
+    - { authors: E. M. Purcell and D. J. Morin, title: Electricity and Magnetism, publisher: Cambridge University Press, year: 2013 }
+    - { authors: J. D. Jackson, title: Classical Electrodynamics, publisher: Wiley, year: 1998 }
+    - { authors: A. Zangwill, title: Modern Electrodynamics, publisher: Cambridge University Press, year: 2013 }
+    - { authors: "R. P. Feynman, R. B. Leighton and M. Sands", title: "The Feynman Lectures on Physics, Volume II", publisher: Addison-Wesley, year: 1965 }
+    - { authors: "J.-P. Pérez, R. Carles and R. Fleckinger", title: "Électromagnétisme : fondements et applications", publisher: Dunod, year: 2011 }
+  online:
+    - title: { en: Lectures on Electromagnetism — D. Tong (Cambridge), ar: Lectures on Electromagnetism — D. Tong (كامبريدج), fr: Lectures on Electromagnetism — D. Tong (Cambridge) }
+      url: https://www.damtp.cam.ac.uk/user/tong/em.html
+      note: { en: Lecture notes (in English)., ar: مذكرات محاضرات (بالإنجليزية)., fr: Notes de cours (en anglais). }
+    - title: { en: "The Feynman Lectures on Physics, Volume II", ar: "محاضرات فاينمان في الفيزياء، المجلد الثاني", fr: "The Feynman Lectures on Physics, volume II" }
+      url: https://www.feynmanlectures.caltech.edu/II_toc.html
+      note: { en: Free online edition., ar: نسخة مجانية على الإنترنت., fr: Édition gratuite en ligne. }
+    - title: { en: Electromagnetism — A. Macfarlane (Cambridge lecture notes 2004), ar: Electromagnetism — A. Macfarlane (مذكرات محاضرات كامبريدج 2004), fr: Electromagnetism — A. Macfarlane (notes de cours de Cambridge 2004) }
+      url: https://www.damtp.cam.ac.uk/user/tong/em/macfarlane.pdf
+      note: { en: Lecture notes (in English)., ar: مذكرات محاضرات (بالإنجليزية)., fr: Notes de cours (en anglais). }
+    - title: { en: Classical Electrodynamics — K. Likharev (Stony Brook), ar: Classical Electrodynamics — K. Likharev (Stony Brook), fr: Classical Electrodynamics — K. Likharev (Stony Brook) }
+      url: https://mysbfiles.stonybrook.edu/%7Eklikharev/EGP/
+      note: { en: Lecture notes and problems (in English)., ar: مذكرات محاضرات ومسائل (بالإنجليزية)., fr: Notes de cours et problèmes (en anglais). }
+    - title: { en: Classical Electromagnetism — R. Fitzpatrick (Texas), ar: Classical Electromagnetism — R. Fitzpatrick (تكساس), fr: Classical Electromagnetism — R. Fitzpatrick (Texas) }
+      url: https://farside.ph.utexas.edu/teaching/jk1/jk1.html
+      note: { en: Online textbook (in English)., ar: كتاب على الإنترنت (بالإنجليزية)., fr: Manuel en ligne (en anglais). }
+    - title: { en: Classical Electrodynamics — E. Poisson (Guelph), ar: Classical Electrodynamics — E. Poisson (Guelph), fr: Classical Electrodynamics — E. Poisson (Guelph) }
+      url: https://www.physics.uoguelph.ca/poisson/research/notes.html
+      note: { en: Lecture notes (in English)., ar: مذكرات محاضرات (بالإنجليزية)., fr: Notes de cours (en anglais). }
+    - title: { en: Électromagnétisme — H. Djelouah (USTHB), ar: Électromagnétisme — H. Djelouah (جامعة باب الزوار), fr: Électromagnétisme — H. Djelouah (USTHB) }
+      url: https://www.usthb.dz/fphy/hdjelouah/electromagnetisme.html
+      note: { en: Lectures and exercises (in French)., ar: دروس وتمارين (بالفرنسية)., fr: Cours et exercices. }
+
+materials:
+  # Lecture notes (French polycopié)
+  - { type: notes, title: { en: "Lecture notes — all chapters", ar: "مذكرات المحاضرات — جميع الفصول", fr: "Polycopié de cours — tous les chapitres" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours.pdf, lang: fr }
+  - { type: notes, title: { en: "Chapter 1 — Mathematical tools", ar: "الفصل 1 — الأدوات الرياضية", fr: "Chapitre 1 — Outils mathématiques" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap11.pdf, lang: fr }
+  - { type: notes, title: { en: "Chapter 2 — Electrostatics", ar: "الفصل 2 — الكهروساكنة", fr: "Chapitre 2 — Électrostatique" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap21.pdf, lang: fr }
+  - { type: notes, title: { en: "Chapter 3 — Magnetostatics", ar: "الفصل 3 — المغناطيسية الساكنة", fr: "Chapitre 3 — Magnétostatique" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap31.pdf, lang: fr }
+  - { type: notes, title: { en: "Chapter 4 — Electrodynamics and Maxwell's equations", ar: "الفصل 4 — الكهروديناميكا ومعادلات ماكسويل", fr: "Chapitre 4 — Électrodynamique et équations de Maxwell" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap41.pdf, lang: fr }
+  - { type: notes, title: { en: "Chapter 5 — Propagation of electromagnetic waves", ar: "الفصل 5 — انتشار الأمواج الكهرومغناطيسية", fr: "Chapitre 5 — Propagation des ondes électromagnétiques" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_cours_chap51.pdf, lang: fr }
+  - { type: notes, title: { en: "Chapter 6 — Electromagnetism in materials (part 1)", ar: "الفصل 6 — الكهرومغناطيسية في المواد (الجزء 1)", fr: "Chapitre 6 — L’électromagnétisme dans les matériaux (partie 1)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_chap6a.pdf, lang: fr }
+  - { type: notes, title: { en: "Chapter 6 — Electromagnetism in materials (part 2)", ar: "الفصل 6 — الكهرومغناطيسية في المواد (الجزء 2)", fr: "Chapitre 6 — L’électromagnétisme dans les matériaux (partie 2)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_chap6b.pdf, lang: fr }
+  - { type: notes, title: { en: "Chapter 6 — Electromagnetism in materials (part 3)", ar: "الفصل 6 — الكهرومغناطيسية في المواد (الجزء 3)", fr: "Chapitre 6 — L’électromagnétisme dans les matériaux (partie 3)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_chap6c.pdf, lang: fr }
+  # Tutorials
+  - { type: summary, title: { en: "Summary 1 — Mathematical tools", ar: "الملخص 1 — الأدوات الرياضية", fr: "Résumé 1 — Outils mathématiques" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_resume1.pdf, lang: fr }
+  - { type: problems, title: { en: "Problem set 1 — Mathematical tools", ar: "السلسلة 1 — الأدوات الرياضية", fr: "Série 1 — Outils mathématiques" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/01/em_serie1.pdf, lang: fr }
+  - { type: problems, title: { en: "Problem set 2 — Electrostatics", ar: "السلسلة 2 — الكهروساكنة", fr: "Série 2 — Électrostatique" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/02/em_serie2.pdf, lang: fr }
+  - { type: problems, title: { en: "Problem set 3 — Magnetostatics", ar: "السلسلة 3 — المغناطيسية الساكنة", fr: "Série 3 — Magnétostatique" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/02/em_serie3.pdf, lang: fr }
+  - { type: problems, title: { en: "Problem set 4 — Maxwell's equations", ar: "السلسلة 4 — معادلات ماكسويل", fr: "Série 4 — Équations de Maxwell" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/03/em_serie4.pdf, lang: fr }
+  - { type: problems, title: { en: "Problem set 5 — Propagation of electromagnetic waves", ar: "السلسلة 5 — انتشار الأمواج الكهرومغناطيسية", fr: "Série 5 — Propagation des ondes électromagnétiques" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_serie5.pdf, lang: fr }
+  - { type: problems, title: { en: "Problem set 6 — Electromagnetism in materials", ar: "السلسلة 6 — الكهرومغناطيسية في المواد", fr: "Série 6 — L’électromagnétisme dans les matériaux" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/05/em_serie6.pdf, lang: fr }
+  - { type: solutions, title: { en: "Solutions to problem set 6 — Electromagnetism in materials", ar: "حل السلسلة 6 — الكهرومغناطيسية في المواد", fr: "Solution de la série 6 — L’électromagnétisme dans les matériaux" }, url: https://khelifak.wordpress.com/wp-content/uploads/2016/05/em_serie6_s.pdf, lang: fr }
+
+exams:
+  - { title: { en: Exam, ar: الاختبار, fr: Examen }, session: "2014", paper: https://khelifak.wordpress.com/wp-content/uploads/2016/04/em_exam.pdf, lang: fr }
+
+pending:
+  - { what: "Landau & Lifshitz, The Classical Theory of Fields — full book on archive.org", url: https://archive.org/details/TheClassicalTheoryOfFields, why: "copyrighted textbook uploaded by a third party; link only if you are comfortable with it" }
+
+sources:
+  - teaching/chlef-electromagnetisme   # https://khelifak.wordpress.com/studying/teaching-2/uhbc/electromagnetisme/ (French, 2015–2016, richest)
+  - teaching/chlef-electromagnetism    # https://khelifak.wordpress.com/studying/teaching-2/uhbc/electromagnetism/ (English, 2016–2017)
+
+notes: >
+  Everything from the French page (2015–2016). The English page (2016–2017) is an unfinished copy of the same syllabus
+  (same code, hours, prerequisites, chapters and textbooks, minus the French book; objectives and outcomes truncated with "..."),
+  with evaluation written "Other (33%) + Exam (67%)" — same weights; it links no files of its own, only the same external resources.
+  So the two offerings do not differ in substance and all materials/exams are French (lang fr).
+  Light fixes: "Electrodynamique est les équations" → "et"; "Géostatistique dans les matériaux" → "Magnétostatique".
+  The 33 % continuous assessment is typed "quiz" (the page lists Tests 1–2, but does not say how the 33 % is made up).
+  The only linked exam is labelled "2014" on the page (file uploaded April 2016): for a semester-4 course this may be
+  spring 2014 (before the Chlef appointment) or 2014–2015 — authorship/year to confirm. Test, exam and resit papers of
+  2015–2016 were listed but never linked. Marks (groups G1–4) dropped.

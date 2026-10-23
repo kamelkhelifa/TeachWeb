@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% from "_macros.html" import icon %}
+{% block title %}{{ ui('nav_taught') }} · {{ {'en': site.name, 'ar': site.name_ar, 'fr': site.name_fr}[lang] }}{% endblock %}
+{% block description %}{{ ui('taught_lead') | plain }}{% endblock %}
+{% block main %}
+<section class="page-hero taught-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ icon('library', 'ic xs') }} {{ ui('part1') }}</p>
+    <h1>{{ ui('nav_taught') }}</h1>
+    <p class="lead">{{ ui('taught_lead') }}</p>
+    {% if lang == 'fr' %}<p class="note fr-note">{{ ui('fr_only_note') }} <a href="{{ alts[0][1] }}" lang="en">{{ ui('fr_other_unis') }} (EN)</a> · <a href="{{ alts[1][1] }}" lang="ar">العربية</a></p>{% endif %}
+    <nav class="uni-jump" aria-label="{{ ui('university') }}">
+      {% for u in unis %}<a href="#{{ u.id }}" style="--hue: {{ u.hue }}"><i></i>{{ t(u.name) }}{% if u.current %}<span class="badge-current">{{ ui('current') }}</span>{% endif %}</a>{% endfor %}
+    </nav>
+    <div class="filter-row" role="group" aria-label="{{ ui('filter_taught_in') }}" data-lang-filter>
+      <span class="filter-label">{{ ui('filter_taught_in') }}</span>
+      <button class="chip is-on" type="button" data-taught-lang="">{{ ui('filter_all') }}</button>
+      {% for l in ['en', 'ar', 'fr'] %}<button class="chip" type="button" data-taught-lang="{{ l }}"><span class="lang-tag">{{ l | upper }}</span>{{ ui('lang_' ~ l) }}</button>{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% for u in unis %}
+<section class="uni-section{% if u.current %} is-current{% endif %}" id="{{ u.id }}" style="--hue: {{ u.hue }}" aria-labelledby="uni-{{ u.id }}">
+  <div class="wrap">
+    <header class="uni-head reveal">
+      <div class="uni-mark" aria-hidden="true">{{ loop.index }}</div>
+      <div class="uni-id">
+        <p class="uni-meta">{{ t(u.country) }} · {{ t(u.years) | ltr }}{% if u.current %} · <span class="badge-current">{{ ui('current') }}{% if u.term %} · {{ t(u.term) }}{% endif %}</span>{% endif %}</p>
+        <h2 id="uni-{{ u.id }}">{{ t(u.name) }}</h2>
+      </div>
+      <p class="uni-count"><strong>{{ u.courses | length }}</strong> {{ ui('n_courses') }}</p>
+    </header>
+    <div class="taught-grid">
+      {% for c in u.courses %}
+      <a class="taught-card reveal" href="{{ url(c.path) }}" data-langs="{{ c.taught_langs | join(' ') }}">
+        <span class="tc-codes">{% for code in c.codes %}<code>{{ code }}</code>{% else %}<code>—</code>{% endfor %}</span>
+        <h3>{{ t(c.title) }}</h3>
+        {% if c.kind or c.level %}<p class="tc-kind">{% if c.level %}{{ t(c.level) }}{% endif %}{% if c.kind and c.level %} · {% endif %}{% if c.kind %}{{ t(c.kind) }}{% endif %}</p>{% endif %}
+        <ul class="tc-taught">
+          {% for o in c.taught %}<li><span class="lang-tag l-{{ o.lang }}">{{ o.lang | upper }}</span>{{ o.years | ltr }}</li>{% endfor %}
+        </ul>
+        <span class="tc-foot">
+          {% if c.n_materials %}<span>{{ icon('materials', 'ic xs') }} {{ c.n_materials }}</span>{% endif %}
+          {% if c.schedule %}<span>{{ icon('schedule', 'ic xs') }} {{ c.schedule | length }}</span>{% endif %}
+          <span class="tc-go">{{ icon('arrow', 'ic xs flip') }}</span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

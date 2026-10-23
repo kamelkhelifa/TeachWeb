@@ -1,0 +1,33 @@
+slug: phys390
+order: 100
+codes: [PHYS 390]
+title: { en: Training, ar: التدريب الميداني }
+level: { en: "Undergraduate · Level 7 or 8", ar: "مرحلة البكالوريوس · المستوى السابع أو الثامن" }
+area: skills
+kind: { en: Supervised training, ar: تدريب مُشرَف عليه }
+taught:
+  - { years: 2018–2019, code: PHYS 390, lang: en }
+prerequisites: { en: Department approval, ar: موافقة القسم }
+
+objectives:
+  - en: Train students in conducting laboratory and research work and provide an opportunity to acquire skills through practical work.
+    ar: تدريب الطلاب على إنجاز الأعمال المخبرية والبحثية، وإتاحة الفرصة لهم لاكتساب المهارات من خلال العمل التطبيقي.
+
+description:
+  en: |
+    Students undertake laboratory or research work in a government or private institution or company in a specific field of physics: they collect data, perform the analysis, write a report and give a presentation about it.
+  ar: |
+    إنجاز عمل مخبري أو بحثي لدى مؤسسة أو شركة حكومية أو خاصة في مجال محدد من مجالات الفيزياء، يشمل جمع البيانات وتحليلها، ثم كتابة تقرير عنه وتقديم عرض حوله.
+
+sources:
+  - teaching/phys390 (en, ar)
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/phys390-training/
+notes: >
+  Thin page: level "L7 or L8", semester "7 or 8 - 1439/40 - 2018/19" (→ 2018–2019), lectures, tutorials and time/venue
+  all "--", prerequisite "Department approval". Assessment left out on purpose: the page's evaluation block (problem
+  sets 20%, two periodic exams 20% each, final exam 40%, with the weekly problem-sheet advice) is word for word the
+  lecture template of his 2018–2019 course pages and cannot apply to a training placement (no lectures, problem sheets
+  or exams); the real scheme is presumably report + presentation (see description) but no weights are given. The
+  learning-outcomes list contained a single unfinished item ("compute"), so outcomes are left out. The "Forms" and
+  "Passed experience" sections were empty. Dropped: office-hours link, questionnaire (Quest-1439-S2). The page's
+  Arabic-version link pointed to the PHYS 402 Arabic page (copy artefact). No materials, schedule or textbooks.

@@ -1,16 +1,19 @@
 {% from "_macros.html" import icon %}
+{% set site_name = {'en': site.name, 'ar': site.name_ar, 'fr': site.name_fr}[lang] %}
+{% set lang_label = {'en': 'English', 'ar': 'العربية', 'fr': 'Français'} %}
+{% set lang_short = {'en': 'EN', 'ar': 'ع', 'fr': 'FR'} %}
+{% set home_url = site.home_url_ar if lang == 'ar' else site.home_url %}
 <!doctype html>
 <html lang="{{ lang }}" dir="{{ dir }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}{{ site.name if lang == 'en' else site.name_ar }}{% endblock %}</title>
+  <title>{% block title %}{{ site_name }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ t(site.tagline) | plain }}{% endblock %}">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0c0e14" media="(prefers-color-scheme: dark)">
-  <link rel="canonical" href="{{ site.base_url }}/{{ page_path | replace('index.html', '') }}">
-  <link rel="alternate" hreflang="{{ 'ar' if lang == 'en' else 'en' }}" href="{{ other_url }}">
+  <link rel="canonical" href="{{ site.base_url }}/{{ page_path }}">
+  {% for l, href, cur in alts if not cur %}<link rel="alternate" hreflang="{{ l }}" href="{{ href }}">
+  {% endfor %}
   <link rel="icon" href="{{ asset('static/img/favicon.svg') }}" type="image/svg+xml">
   <meta property="og:title" content="{{ self.title() | plain }}">
   <meta property="og:description" content="{{ self.description() | plain }}">
@@ -23,45 +26,53 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('static/vendor/katex/katex.min.css') }}">
   <link rel="stylesheet" href="{{ asset('static/css/teachweb.css') }}">
 </head>
-<body class="page-{{ page }}">
+<body class="page-{{ page }} branch-{{ branch }}">
 {% include "_icons.html" %}
 <a class="skip" href="#main">{{ ui('skip') }}</a>
 <div class="progress-bar" aria-hidden="true"><span></span></div>
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="{{ url() }}" aria-label="{{ site.name if lang == 'en' else site.name_ar }}">
+    <a class="brand" href="{{ url() }}" aria-label="{{ site_name }}">
       <span class="brand-mark">{{ icon('logo') }}</span>
       {% if lang == 'ar' %}<span class="brand-name brand-ar">الموقع <b>التعليمي</b></span>{% else %}<span class="brand-name">Teach<b>Web</b></span>{% endif %}
     </a>
     <nav class="main-nav" aria-label="{{ ui('menu') }}">
-      <a href="{{ url() }}#courses" {% if page == 'course' %}aria-current="true"{% endif %}>{{ ui('nav_courses') }}</a>
-      <a href="{{ url() }}#path">{{ ui('nav_path') }}</a>
-      <a href="{{ url('glossary/') }}" {% if page == 'glossary' %}aria-current="page"{% endif %}>{{ ui('nav_glossary') }}</a>
+      <a class="nav-taught" href="{{ url('taught/') }}" {% if branch == 'taught' %}aria-current="true"{% endif %}><i class="nav-dot"></i>{{ ui('nav_taught') }}</a>
+      <a class="nav-open" href="{{ url('open/') }}" {% if branch == 'open' %}aria-current="true"{% endif %}><i class="nav-dot"></i>{{ ui('nav_open') }}</a>
+      {% if has_glossary %}<a href="{{ url('glossary/') }}" {% if page == 'glossary' %}aria-current="page"{% endif %}>{{ ui('nav_glossary') }}</a>{% endif %}
       <a href="{{ url('guide/') }}" {% if page == 'guide' %}aria-current="page"{% endif %}>{{ ui('nav_guide') }}</a>
     </nav>
     <div class="header-tools">
       <button class="tool search-open" type="button" data-search-open aria-label="{{ ui('search') }}">
         {{ icon('search') }}<span class="search-label">{{ ui('search') }}</span><kbd>/</kbd>
       </button>
-      <a class="tool lang-switch" href="{{ other_url }}" hreflang="{{ 'ar' if lang == 'en' else 'en' }}" lang="{{ 'ar' if lang == 'en' else 'en' }}" aria-label="{{ ui('switch_lang_aria') }}">{{ ui('switch_lang') }}</a>
+      {% if alts | length > 1 %}
+      <div class="lang-seg" role="group" aria-label="Language · اللغة · Langue">
+        {% for l, href, cur in alts %}
+        {% if cur %}<span class="is-on" lang="{{ l }}" title="{{ lang_label[l] }}">{{ lang_short[l] }}</span>{% else %}<a href="{{ href }}" hreflang="{{ l }}" lang="{{ l }}" title="{{ lang_label[l] }}">{{ lang_short[l] }}</a>{% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
       <button class="tool theme-toggle" type="button" aria-label="{{ ui('theme_toggle') }}">{{ icon('sun', 'ic only-dark') }}{{ icon('moon', 'ic only-light') }}</button>
-      <a class="tool home-link" href="{{ site.home_url if lang == 'en' else site.home_url_ar }}" title="{{ ui('home_site') }}">{{ icon('home') }}<span>{{ ui('home_site') }}</span></a>
+      <a class="tool home-link" href="{{ home_url }}" title="{{ ui('home_site') }}">{{ icon('home') }}<span>{{ ui('home_site') }}</span></a>
       <button class="tool menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="{{ ui('menu') }}">{{ icon('menu') }}</button>
     </div>
   </div>
   <nav class="mobile-nav" id="mobile-nav" hidden>
-    <a href="{{ url() }}#courses">{{ ui('nav_courses') }}</a>
-    <a href="{{ url() }}#path">{{ ui('nav_path') }}</a>
-    <a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a>
+    <a href="{{ url('taught/') }}">{{ ui('nav_taught') }}</a>
+    <a href="{{ url('open/') }}">{{ ui('nav_open') }}</a>
+    {% if has_glossary %}<a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a>{% endif %}
     <a href="{{ url('guide/') }}">{{ ui('nav_guide') }}</a>
-    <a href="{{ site.home_url if lang == 'en' else site.home_url_ar }}">{{ ui('home_site') }} {{ icon('external') }}</a>
+    <a href="{{ home_url }}">{{ ui('home_site') }} {{ icon('external') }}</a>
   </nav>
 </header>
+
+{% if drafts %}<div class="draft-banner">{{ ui('drafts_banner') }}</div>{% endif %}
 
 <main id="main" tabindex="-1">
 {% block main %}{% endblock %}
@@ -76,19 +87,18 @@
     </div>
     <div class="footer-cols">
       <div>
-        <h2>{{ ui('nav_courses') }}</h2>
+        <h2>{{ ui('part1') }} · {{ ui('nav_taught') }}</h2>
         <ul>
-          {% for c in courses %}<li><a href="{{ url('courses/' ~ c.slug ~ '/') }}">{{ t(c.title) }}</a></li>{% endfor %}
+          {% for u in all_unis %}<li><a href="{{ url('taught/') }}#{{ u.id }}">{{ t(u.name) }}</a></li>{% endfor %}
         </ul>
       </div>
       <div>
-        <h2>{{ site.name if lang == 'en' else site.name_ar }}</h2>
+        <h2>{{ site_name }}</h2>
         <ul>
-          <li><a href="{{ url() }}#path">{{ ui('nav_path') }}</a></li>
-          <li><a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a></li>
+          <li><a href="{{ url('open/') }}">{{ ui('part2') }} · {{ ui('nav_open') }}</a></li>
+          {% if has_glossary %}<li><a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a></li>{% endif %}
           <li><a href="{{ url('guide/') }}">{{ ui('nav_guide') }}</a></li>
-          <li><a href="{{ other_url }}" lang="{{ 'ar' if lang == 'en' else 'en' }}">{{ ui('switch_lang') }}</a></li>
-          <li><a href="{{ site.home_url if lang == 'en' else site.home_url_ar }}">{{ ui('home_site') }} {{ icon('external', 'ic xs') }}</a></li>
+          <li><a href="{{ home_url }}">{{ ui('home_site') }} {{ icon('external', 'ic xs') }}</a></li>
         </ul>
       </div>
     </div>
@@ -117,7 +127,7 @@
 <script>
   window.TW = {
     lang: "{{ lang }}",
-    root: "{{ url() }}",
+    root: "{{ asset('') }}{{ {'en': '', 'ar': 'ar/', 'fr': 'fr/'}[lang] }}",
     ui: {{ {
       'search_empty': ui('search_empty'), 'kind_course': ui('kind_course'), 'kind_term': ui('kind_term'),
       'kind_week': ui('kind_week'), 'kind_topic': ui('kind_topic'), 'correct': ui('correct'), 'incorrect': ui('incorrect'),

@@ -194,6 +194,19 @@
     $$('[data-filter-level]').forEach(function (b) { b.addEventListener('click', function () { fLevel = b.dataset.filterLevel; $$('[data-filter-level]').forEach(function (x) { x.classList.toggle('is-on', x === b); }); apply(); }); });
   }
 
+  // ---------- Part 1 index: filter by language of instruction ----------
+  var tf = $('[data-lang-filter]');
+  if (tf) {
+    $$('[data-taught-lang]', tf).forEach(function (b) {
+      b.addEventListener('click', function () {
+        var l = b.dataset.taughtLang;
+        $$('[data-taught-lang]', tf).forEach(function (x) { x.classList.toggle('is-on', x === b); });
+        $$('.taught-card').forEach(function (c) { c.classList.toggle('is-hidden', !!l && (' ' + c.dataset.langs + ' ').indexOf(' ' + l + ' ') < 0); });
+        $$('.uni-section').forEach(function (sec) { sec.hidden = !$$('.taught-card:not(.is-hidden)', sec).length; });
+      });
+    });
+  }
+
   // ---------- home: learning path ----------
   var map = $('[data-path-map]');
   if (map) {
@@ -245,7 +258,8 @@
   if (course) initCourse(course);
 
   function initCourse(root) {
-    var slug = root.dataset.course, nWeeks = +root.dataset.weeks || 1;
+    var slug = root.dataset.course;
+    function boxes0() { return $$('[data-week-done]'); }
 
     // print
     $$('[data-print]').forEach(function (b) { b.addEventListener('click', function () { print(); }); });
@@ -262,10 +276,11 @@
     addEventListener('scroll', spy, { passive: true }); spy();
 
     // weeks
-    var done = store.get('weeks:' + slug, []);
-    var boxes = $$('[data-week-done]');
+    var done = store.get('weeks:' + slug, []).map(String);
+    var nWeeks = boxes0().filter(function (b) { return !b.disabled; }).length || 1;
+    var boxes = boxes0();
     function syncWeeks() {
-      boxes.forEach(function (b) { var w = +b.dataset.weekDone; b.checked = done.indexOf(w) >= 0; b.closest('.week').classList.toggle('done', b.checked); });
+      boxes.forEach(function (b) { var w = b.dataset.weekDone; b.checked = done.indexOf(w) >= 0; b.closest('.week').classList.toggle('done', b.checked); });
       var pct = 100 * done.length / nWeeks;
       setRing($('[data-week-progress] svg'), pct);
       var c = $('[data-week-count]'); if (c) c.textContent = done.length + ' / ' + nWeeks;
@@ -273,7 +288,7 @@
     }
     boxes.forEach(function (b) {
       b.addEventListener('change', function () {
-        var w = +b.dataset.weekDone;
+        var w = b.dataset.weekDone;
         done = done.filter(function (x) { return x !== w; }); if (b.checked) done.push(w);
         store.set('weeks:' + slug, done); syncWeeks();
       });
@@ -283,19 +298,21 @@
     if (reset) reset.addEventListener('click', function () { done = []; store.del('weeks:' + slug); syncWeeks(); });
 
     function setWeek(btn, open) {
+      var panel = btn && document.getElementById(btn.getAttribute('aria-controls'));
+      if (!panel) return;
       btn.setAttribute('aria-expanded', String(open));
-      document.getElementById(btn.getAttribute('aria-controls')).hidden = !open;
+      panel.hidden = !open;
     }
     $$('.week-toggle').forEach(function (btn) { btn.addEventListener('click', function () { setWeek(btn, btn.getAttribute('aria-expanded') !== 'true'); }); });
     $$('[data-weeks-toggle]').forEach(function (b) { b.addEventListener('click', function () { var o = b.dataset.weeksToggle === 'open'; $$('.week-toggle').forEach(function (x) { setWeek(x, o); }); }); });
     function openHash() {
-      var m = /^#week-(\d+)$/.exec(location.hash); if (!m) return;
+      var m = /^#week-(.+)$/.exec(location.hash); if (!m) return;
       var w = document.getElementById('week-' + m[1]); if (w) { setWeek($('.week-toggle', w), true); }
     }
     addEventListener('hashchange', openHash); openHash();
     // open the first not-yet-studied week by default
     if (!location.hash) {
-      var first = $$('.week').filter(function (w) { return !w.classList.contains('done'); })[0];
+      var first = $$('.week').filter(function (w) { return !w.classList.contains('done') && $('.week-panel', w); })[0];
       if (first) setWeek($('.week-toggle', first), true);
     }
 

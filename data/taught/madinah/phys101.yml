@@ -1,0 +1,112 @@
+slug: phys101
+order: 10
+codes: [PHYS 101]
+title: { en: General Physics I, ar: الفيزياء العامة 1 }
+level: { en: Semester 1, ar: الفصل الدراسي الأول }
+area: mechanics
+kind: { en: Lecture, ar: محاضرات }
+taught:
+  - { years: 2016–2017, code: PHYS 101, lang: en }
+hours: { lecture: 3, tutorial: 0 }
+prerequisites: { en: PHYS 100, ar: PHYS 100 }
+
+description:
+  en: |
+    Particle kinematics and dynamics, conservation of energy and linear momentum, rotational kinematics, rigid-body dynamics,
+    conservation of angular momentum, simple harmonic motion, gravitation, statics and dynamics of fluids.
+  ar: |
+    علم الحركة (الكينماتيكا) والتحريك (الديناميكا) للجسيم، حفظ الطاقة والزخم الخطي، كينماتيكا الحركة الدورانية، ديناميكا الجسم الصلب،
+    حفظ الزخم الزاوي، الحركة التوافقية البسيطة، الجاذبية، سكون الموائع وحركتها.
+
+objectives:
+  - { en: The course provides a general introduction to the fundamental concepts of mechanics and fluids., ar: يقدّم هذا المقرر مدخلًا عامًا إلى المفاهيم الأساسية في الميكانيكا وميكانيكا الموائع. }
+
+# The source lists the chapters in teaching order, without week numbers.
+schedule:
+  - title: { en: Physics and measurement, ar: الفيزياء والقياس }
+  - title: { en: Vectors, ar: المتجهات }
+  - title: { en: Motion in one dimension, ar: الحركة في بعد واحد }
+  - title: { en: Motion in two dimensions, ar: الحركة في بعدين }
+  - title: { en: The laws of motion, ar: قوانين الحركة }
+  - title: { en: Energy of a system, ar: طاقة نظام }
+  - title: { en: Conservation of energy, ar: حفظ الطاقة }
+  - title: { en: Linear momentum and collisions, ar: الزخم الخطي والتصادمات }
+  - title: { en: Circular motion, ar: الحركة الدائرية }
+  - title: { en: Rotation of rigid bodies, ar: دوران الأجسام الصلبة }
+  - title: { en: Universal gravitation, ar: الجاذبية الكونية }
+
+textbooks:
+  recommended:
+    - { authors: R. A. Serway and J. W. Jewett, title: Physics for Scientists and Engineers, edition: 9th, publisher: Cengage Learning, year: 2013 }
+    - { authors: "D. Halliday, R. Resnick and J. Walker", title: Fundamentals of Physics, publisher: John Wiley & Sons, year: 2011 }
+    - { authors: "F. W. Sears, M. W. Zemansky and H. D. Young", title: University Physics, year: 2007 }
+    - { authors: "D. Halliday, R. Resnick and K. S. Krane", title: Physics, publisher: John Wiley & Sons, year: 2008 }
+  online:
+    - title: { en: "MIT OCW 8.01L: Physics I, Classical Mechanics", ar: "MIT OCW 8.01L: الفيزياء 1، الميكانيكا الكلاسيكية" }
+      url: https://ocw.mit.edu/courses/physics/8-01l-physics-i-classical-mechanics-fall-2005/
+      note: { en: Complete course (MIT OpenCourseWare)., ar: مقرر كامل (MIT OpenCourseWare). }
+    - title: { en: Classical mechanics video lectures by W. Lewin, ar: محاضرات مصوّرة في الميكانيكا الكلاسيكية لـ W. Lewin }
+      url: https://videolectures.net/mit801f99_physics_classical_mechanics/
+      note: { en: Video lectures (MIT 8.01)., ar: محاضرات مصوّرة (MIT 8.01). }
+
+materials:
+  # Lecture slides (one per chapter of the syllabus)
+  - { type: slides, title: { en: "Ch. 1 — Physics and measurement", ar: "الفصل 1 — الفيزياء والقياس" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNa0steGdPbU4wdEU", lang: en }
+  - { type: slides, title: { en: "Ch. 2 — Vectors", ar: "الفصل 2 — المتجهات" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNbkRpNGJacUhzRk0", lang: en }
+  - { type: slides, title: { en: "Ch. 3 — Motion in one dimension (part 1)", ar: "الفصل 3 — الحركة في بعد واحد (الجزء 1)" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNODF0V3cxTXR5RG8", lang: en }
+  - { type: slides, title: { en: "Ch. 3 — Motion in one dimension (part 2)", ar: "الفصل 3 — الحركة في بعد واحد (الجزء 2)" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNdUoyaXZQckdyVk0", lang: en }
+  - { type: slides, title: { en: "Ch. 4 — Motion in two dimensions", ar: "الفصل 4 — الحركة في بعدين" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNQ2k1Ulg3RmJERm8", lang: en }
+  - { type: slides, title: { en: "Ch. 5 — The laws of motion", ar: "الفصل 5 — قوانين الحركة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNTGl1ZVhsRTNHd2c", lang: en }
+  - { type: slides, title: { en: "Ch. 6 — Energy of a system", ar: "الفصل 6 — طاقة نظام" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNNzdvdzQ4QTRFU2s", lang: en }
+  - { type: slides, title: { en: "Ch. 7 — Conservation of energy", ar: "الفصل 7 — حفظ الطاقة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNMWx4UE9ubnZ6bVE", lang: en }
+  - { type: slides, title: { en: "Ch. 8 — Linear momentum and collisions (part 1)", ar: "الفصل 8 — الزخم الخطي والتصادمات (الجزء 1)" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNZmlzb0syWGJjV0E", lang: en }
+  - { type: slides, title: { en: "Ch. 8 — Linear momentum and collisions (part 2)", ar: "الفصل 8 — الزخم الخطي والتصادمات (الجزء 2)" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNbFNlM0t1NmJydkk", lang: en }
+  - { type: slides, title: { en: "Ch. 9 — Circular motion", ar: "الفصل 9 — الحركة الدائرية" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNamVKODR2SHZMVXc", lang: en }
+  - { type: slides, title: { en: "Ch. 10 — Rotation of rigid bodies", ar: "الفصل 10 — دوران الأجسام الصلبة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNZ3VHTjFPdU5kR28", lang: en }
+  - { type: slides, title: { en: "Ch. 11 — Universal gravitation", ar: "الفصل 11 — الجاذبية الكونية" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNYkxSbWY0NGQzanM", lang: en }
+  # Tutorials: problem sets and solutions
+  - { type: problems, title: { en: "Problem set 1 — Physics and measurement", ar: "سلسلة المسائل 1 — الفيزياء والقياس" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNZF94RXNydjBnOEk", lang: en }
+  - { type: solutions, title: { en: "Solutions 1 — Physics and measurement", ar: "حلول السلسلة 1 — الفيزياء والقياس" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNSzU5TkdEMmhmRkE", lang: en }
+  - { type: problems, title: { en: "Problem set 2 — Vectors", ar: "سلسلة المسائل 2 — المتجهات" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNQW12anFmdjNFaXc", lang: en }
+  - { type: solutions, title: { en: "Solutions 2 — Vectors", ar: "حلول السلسلة 2 — المتجهات" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNTldZY3Ftb2JGZHM", lang: en }
+  - { type: problems, title: { en: "Problem set 3 — Motion in 1D", ar: "سلسلة المسائل 3 — الحركة في بعد واحد" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNRlFxZVdyX3pzRXc", lang: en }
+  - { type: solutions, title: { en: "Solutions 3 — Motion in 1D", ar: "حلول السلسلة 3 — الحركة في بعد واحد" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNVk1WbFJpYWQ1OWc", lang: en }
+  - { type: problems, title: { en: "Problem set 4 — Motion in 2D", ar: "سلسلة المسائل 4 — الحركة في بعدين" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNS3ZUUURabTlhNEk", lang: en }
+  - { type: solutions, title: { en: "Solutions 4 — Motion in 2D", ar: "حلول السلسلة 4 — الحركة في بعدين" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNNzdVT0ZfUF9IaTQ", lang: en }
+  - { type: problems, title: { en: "Problem set 5 — Laws of motion", ar: "سلسلة المسائل 5 — قوانين الحركة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNV1h6TXhCUTlKMVE", lang: en }
+  - { type: solutions, title: { en: "Solutions 5 — Laws of motion", ar: "حلول السلسلة 5 — قوانين الحركة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNako0WmNreEU0QUk", lang: en }
+  - { type: problems, title: { en: "Problem set 6 — Energy", ar: "سلسلة المسائل 6 — الطاقة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNRWJwY1VPdGlEbTA", lang: en }
+  - { type: solutions, title: { en: "Solutions 6 — Energy", ar: "حلول السلسلة 6 — الطاقة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNczBhODBLZ2k2Y3c", lang: en }
+  - { type: problems, title: { en: "Problem set 7 — Conservation of energy", ar: "سلسلة المسائل 7 — حفظ الطاقة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNLVBvejJPTmItQm8", lang: en }
+  - { type: solutions, title: { en: "Solutions 7 — Conservation of energy", ar: "حلول السلسلة 7 — حفظ الطاقة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNMEJHNDZYQUtfbmc", lang: en }
+  - { type: problems, title: { en: "Problem set 8 — Linear momentum and collisions", ar: "سلسلة المسائل 8 — الزخم الخطي والتصادمات" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNNmVtcjE0MUVESWM", lang: en }
+  - { type: solutions, title: { en: "Solutions 8 — Linear momentum and collisions", ar: "حلول السلسلة 8 — الزخم الخطي والتصادمات" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNNlEzV1F6V05BajA", lang: en }
+  - { type: problems, title: { en: "Problem set 9 — Circular motion", ar: "سلسلة المسائل 9 — الحركة الدائرية" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNSTdrcTBXbXJHNFU", lang: en }
+  - { type: problems, title: { en: "Problem set 10 — Rotation of rigid bodies", ar: "سلسلة المسائل 10 — دوران الأجسام الصلبة" }, url: "https://drive.google.com/open?id=0B-lXQB4vCJCNLUVxOVdtcG83SmM", lang: en }
+  # Formula sheet
+  - { type: formula, title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }, url: "https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf", lang: en }
+
+exams:
+  - { title: { en: Midterm test 1, ar: الاختبار النصفي 1 }, session: 2016–2017, paper: "https://drive.google.com/open?id=0B-lXQB4vCJCNcGRJZHlOdjJXMGc", solution: "https://drive.google.com/open?id=0B-lXQB4vCJCNdmdZTktBQUM1R1U", lang: en }
+  - { title: { en: Quiz 1, ar: الاختبار القصير 1 }, session: 2016–2017, paper: "https://drive.google.com/open?id=0B-lXQB4vCJCNLXc4bllwbDFWSVE", solution: "https://drive.google.com/open?id=0B-lXQB4vCJCNSlZUODF4a29CVkU", lang: en }
+  - { title: { en: Midterm test 2, ar: الاختبار النصفي 2 }, session: 2016–2017, paper: "https://drive.google.com/open?id=0B-lXQB4vCJCNbE11MmRUNG51aTA", solution: "https://drive.google.com/open?id=0B-lXQB4vCJCNVnNGRkwtM0tFY1k", lang: en }
+
+pending:
+  - what: "PHYS 101 laboratory manual"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2017/02/phys101_labmanual.pdf
+    why: "Department lab manual (not the professor's own document); publish only if he wrote it."
+
+sources:
+  - teaching/phys101 (https://khelifak.wordpress.com/studying/teaching-2/iu/general-physics-i/)
+  - pages.json "PHYS101: General Physics I"
+
+notes: >
+  Scholar year "1438 - 2016/2017" → taught 2016–2017; the page is in English (slides, problem sets and tests in English).
+  General information kept: semester 1, 3 lecture sessions/week (50 min), no tutorials, prerequisite PHYS 100. The page gives
+  one objective sentence (kept as the objective) and a catalogue description (kept as the description); no learning outcomes,
+  no weekly calendar and no evaluation weights (left as placeholders). The syllabus is an ordered list of 11 chapters
+  without week numbers, so the schedule entries have no `week`. The four books are listed as "Recommended reading" (no
+  required text designated); "Fundamental of Physics" corrected to "Fundamentals of Physics". Not linked in the source
+  (left out): summaries Sum1–11, PS11, Soln9–11, final exam paper and solution, the "Passed exams 1438(S1)" label.
+  Dropped silently: the three marks links (student grades). The formula table is assumed to be the professor's own
+  (please confirm).

@@ -1,0 +1,250 @@
+slug: phys321
+order: 40
+codes: [PHYS 321, فيز 321]
+title: { en: Thermal & Statistical Physics, ar: الفيزياء الحرارية والإحصائية }
+level: { en: "Undergraduate · Level 5", ar: "مرحلة البكالوريوس · المستوى الخامس" }
+area: thermal
+kind: { en: Lecture, ar: محاضرات }
+taught:
+  - { years: 2019–2020, code: PHYS 321, lang: en }
+  - { years: 2018–2019, code: فيز 321, lang: ar }
+  - { years: 2017–2018, code: PHYS 321, lang: en }
+hours: { lecture: 3, tutorial: 1 }
+weeks: 15
+prerequisites: { en: Modern Physics I (PHYS 241), ar: الفيزياء الحديثة 1 (PHYS 241) }
+
+description:
+  en: |
+    This course integrates both thermal and statistical perspectives to discuss the general features and properties of
+    equilibrium and simple models of gases, liquids and solids.
+  ar: |
+    يجمع هذا المقرر بين المنظورين الحراري والإحصائي لدراسة السمات والخصائص العامة للتوازن، وللنماذج البسيطة للغازات والسوائل والأجسام الصلبة.
+
+outcomes:
+  - id: CLO1
+    text: { en: Demonstrate the ability to derive and discuss the three laws of thermodynamics., ar: إثبات القدرة على استنتاج قوانين الديناميكا الحرارية الثلاثة ومناقشتها. }
+  - id: CLO2
+    text: { en: Demonstrate the ability to use thermodynamic laws and relations to compute various thermodynamic quantities., ar: إثبات القدرة على توظيف قوانين الديناميكا الحرارية وعلاقاتها لحساب مختلف المقادير الترموديناميكية. }
+  - id: CLO3
+    text: { en: Derive the partition function for various ensembles and use it to compute thermodynamic quantities., ar: استنتاج دالة التجزئة لمختلف المجموعات الإحصائية واستعمالها في حساب المقادير الترموديناميكية. }
+  - id: CLO4
+    text: { en: Study thermal properties of the ideal gas and other classical gases., ar: دراسة الخصائص الحرارية للغاز المثالي وغيره من الغازات الكلاسيكية. }
+  - id: CLO5
+    text: { en: Demonstrate an understanding of thermodynamic properties of gases beyond the ideal gas., ar: إظهار فهم للخصائص الترموديناميكية للغازات فيما يتجاوز الغاز المثالي. }
+  - id: CLO6
+    text: { en: Compute thermodynamic quantities and properties of various thermal systems., ar: حساب المقادير والخصائص الترموديناميكية لمختلف الأنظمة الحرارية. }
+
+assessment:
+  - type: homework
+    weight: 20
+    title: { en: Problem sets, ar: أوراق المسائل }
+    detail:
+      en: >
+        One problem sheet each week, due one week after it is handed out. Solving problems is the only way to understand the
+        material presented during lectures: (i) do them yourself, sit down and reason your way through the questions;
+        (ii) identify the concepts and/or equations that are not clear and seek the instructor's help; (iii) develop the
+        technical skills needed (mathematics, computing, etc.) while going through the problems; (iv) if you get stuck, seek
+        the instructor's help, consult the textbooks, search the web or discuss with classmates; (v) write up the solutions
+        yourself, avoid any kind of cheating (breach of academic integrity) and check that your final solutions are logical,
+        clear and complete.
+      ar: >
+        ورقة مسائل واحدة كل أسبوع، تُسلَّم بعد أسبوع واحد من توزيعها. حل المسائل هو السبيل الوحيد لفهم المادة المقدمة في المحاضرات:
+        (1) حُلّها بنفسك؛ اجلس وتدرّج في الأسئلة بالاستدلال والتفكير؛ (2) حدّد المفاهيم و/أو المعادلات غير الواضحة واطلب مساعدة الأستاذ؛
+        (3) احرص على تنمية المهارات التقنية اللازمة (الرياضيات، الإعلام الآلي... إلخ) أثناء حل المسائل؛ (4) إذا تعثّرت فاطلب مساعدة الأستاذ،
+        أو راجع الكتب المقررة، أو ابحث في الإنترنت، أو ناقش زملاءك؛ (5) اكتب الحلول بنفسك، وتجنّب كل أشكال الغش (خرق النزاهة الأكاديمية)،
+        وتحقّق من أن حلولك النهائية منطقية وواضحة وكاملة.
+  - type: midterm
+    weight: 20
+    title: { en: First periodic exam, ar: الاختبار الدوري الأول }
+    detail: { en: 1 hour during normal lecture time, ar: ساعة واحدة خلال أوقات المحاضرات المعتادة }
+    when: { en: Week 7, ar: الأسبوع 7 }
+  - type: midterm
+    weight: 20
+    title: { en: Second periodic exam, ar: الاختبار الدوري الثاني }
+    detail: { en: 1 hour during normal lecture time, ar: ساعة واحدة خلال أوقات المحاضرات المعتادة }
+    when: { en: Week 12, ar: الأسبوع 12 }
+  - type: final
+    weight: 40
+    title: { en: Final exam, ar: الاختبار النهائي }
+    detail: { en: 2 hours during the final exam period, ar: ساعتان خلال فترة الاختبارات النهائية }
+
+schedule:
+  - week: 1
+    title: { en: Overview and basic concepts, ar: نظرة عامة ومفاهيم أساسية }
+    topics: { en: [Overview of the course, Basic concepts], ar: [نظرة عامة على المقرر, مفاهيم أساسية] }
+    reading: Blundell & Blundell Ch. 1–2
+  - week: 2
+    title: { en: Probability and temperature, ar: الاحتمالات ودرجة الحرارة }
+    topics: { en: [Basic concepts (cont.), Probability, Temperature and the Boltzmann distribution], ar: [مفاهيم أساسية (تتمة), الاحتمالات, درجة الحرارة وتوزيع بولتزمان] }
+    reading: Blundell & Blundell Ch. 3–4
+    activity: { en: Assignment 1, ar: الواجب 1 }
+  - week: 3
+    title: { en: The first law, ar: القانون الأول }
+    reading: Blundell & Blundell Ch. 11–12
+    activity: { en: Assignment 2, ar: الواجب 2 }
+  - week: 4
+    title: { en: Second law and entropy, ar: القانون الثاني والإنتروبيا }
+    topics: { en: [Second law and heat engines, Entropy, Information theory*], ar: [القانون الثاني والآلات الحرارية, الإنتروبيا, نظرية المعلومات*] }
+    reading: Blundell & Blundell Ch. 13–15
+    activity: { en: Assignment 3, ar: الواجب 3 }
+  - week: 5
+    title: { en: Thermodynamic potentials, ar: الكمونات الترموديناميكية }
+    reading: Blundell & Blundell Ch. 16
+    activity: { en: Assignment 4, ar: الواجب 4 }
+  - week: 6
+    title: { en: "Rods, bubbles and magnets; the third law", ar: "القضبان والفقاعات والمغانط؛ القانون الثالث" }
+    topics: { en: ["Rods, bubbles and magnets", Third law], ar: [القضبان والفقاعات والمغانط, القانون الثالث] }
+    reading: Blundell & Blundell Ch. 17–18
+  - week: 7
+    title: { en: Equipartition of energy, ar: تساوي توزيع الطاقة }
+    topics: { en: [Equipartition of energy, First periodic exam], ar: [تساوي توزيع الطاقة, الاختبار الدوري الأول] }
+    reading: Blundell & Blundell Ch. 19
+    activity: { en: Assignment 5, ar: الواجب 5 }
+    milestone: midterm
+  - week: 8
+    title: { en: The partition function, ar: دالة التجزئة }
+    reading: Blundell & Blundell Ch. 20
+    activity: { en: Assignment 6, ar: الواجب 6 }
+  - week: 9
+    title: { en: Statistical mechanics of an ideal gas, ar: الميكانيكا الإحصائية للغاز المثالي }
+    reading: Blundell & Blundell Ch. 21
+    activity: { en: Assignment 7, ar: الواجب 7 }
+  - week: 10
+    title: { en: Chemical potential and the grand partition function, ar: الكمون الكيميائي ودالة التجزئة الكبرى }
+    reading: Blundell & Blundell Ch. 22
+    activity: { en: Assignment 8, ar: الواجب 8 }
+  - week: 11
+    title: { en: Photons and phonons, ar: الفوتونات والفونونات }
+    topics:
+      en: ["Photons (EM radiation, black-body radiation)", "Phonons (Einstein model, Debye model)"]
+      ar: ["الفوتونات (الإشعاع الكهرومغناطيسي، إشعاع الجسم الأسود)", "الفونونات (نموذج أينشتاين، نموذج ديباي)"]
+    reading: Blundell & Blundell Ch. 23–24
+  - week: 12
+    title: { en: Relativistic and real gases, ar: الغازات النسبوية والحقيقية }
+    topics: { en: [Relativistic gases, Real gases, Second periodic exam], ar: [الغازات النسبوية, الغازات الحقيقية, الاختبار الدوري الثاني] }
+    reading: Blundell & Blundell Ch. 25–26
+    activity: { en: Assignment 9, ar: الواجب 9 }
+    milestone: midterm
+  - week: 13
+    title: { en: "Bose–Einstein and Fermi–Dirac distributions", ar: توزيعا بوز-أينشتاين وفيرمي-ديراك }
+    reading: Blundell & Blundell Ch. 29
+    activity: { en: Assignment 10, ar: الواجب 10 }
+  - week: 14
+    title: { en: Quantum gases and condensates, ar: الغازات الكمومية والتكاثفات }
+    reading: Blundell & Blundell Ch. 30
+    activity: { en: Assignment 11, ar: الواجب 11 }
+  - week: 15
+    title: { en: Exam review, ar: مراجعة للاختبار }
+    milestone: review
+
+textbooks:
+  required:
+    - { authors: S. J. Blundell and K. M. Blundell, title: Concepts in Thermal Physics, publisher: Oxford University Press, year: 2010 }
+  recommended:
+    - { authors: F. Reif, title: Fundamentals of Statistical and Thermal Physics, publisher: Waveland Press, year: 2008 }
+    - { authors: F. Mandl, title: Statistical Physics, publisher: Wiley, year: 1987 }
+    - { authors: T. L. Hill, title: An Introduction to Statistical Thermodynamics, publisher: Dover Publications, year: 1987 }
+    - { authors: M. Scott Shell, title: "Thermodynamics and Statistical Mechanics: An Integrated Approach", publisher: Cambridge University Press, year: 2015 }
+    - { authors: D. A. McQuarrie, title: Statistical Mechanics, edition: 2nd, publisher: University Science Books, year: 2000 }
+    - { authors: M. Kardar, title: Statistical Physics of Particles, publisher: Cambridge University Press, year: 2007 }
+  online:
+    - title: { en: "MIT OCW 5.60: Thermodynamics and Kinetics", ar: "MIT OCW 5.60: الديناميكا الحرارية والحركية الكيميائية" }
+      url: https://ocw.mit.edu/courses/chemistry/5-60-thermodynamics-kinetics-spring-2008/
+      note: { en: Complete course (MIT OpenCourseWare)., ar: مقرر كامل (MIT OpenCourseWare). }
+    - title: { en: "MIT OCW 8.044: Statistical Physics I", ar: "MIT OCW 8.044: الفيزياء الإحصائية 1" }
+      url: https://ocw.mit.edu/courses/physics/8-044-statistical-physics-i-spring-2013/
+      note: { en: Complete course (MIT OpenCourseWare)., ar: مقرر كامل (MIT OpenCourseWare). }
+    - title: { en: "MIT OCW 8.08: Statistical Physics II", ar: "MIT OCW 8.08: الفيزياء الإحصائية 2" }
+      url: https://ocw.mit.edu/courses/physics/8-08-statistical-physics-ii-spring-2005/
+      note: { en: Complete course (MIT OpenCourseWare)., ar: مقرر كامل (MIT OpenCourseWare). }
+    - title: { en: Statistical physics (Oxford), ar: الفيزياء الإحصائية (جامعة أكسفورد) }
+      url: https://www-thphys.physics.ox.ac.uk/people/AlexanderSchekochihin/A1/
+      note: { en: Lecture notes by A. Schekochihin., ar: مذكرات محاضرات A. Schekochihin. }
+    - title: { en: "Statistical physics, Ph 127 (Caltech)", ar: "الفيزياء الإحصائية، Ph 127 (معهد كاليفورنيا للتقنية)" }
+      url: https://www.pmaweb.caltech.edu/~mcc/Ph127/index.html
+      note: { en: Course page and lecture notes., ar: صفحة المقرر ومذكرات المحاضرات. }
+    - title: { en: Statistical physics (Cambridge), ar: الفيزياء الإحصائية (جامعة كامبريدج) }
+      url: https://www.damtp.cam.ac.uk/user/tong/statphys.html
+      note: { en: Lecture notes by D. Tong., ar: مذكرات محاضرات D. Tong. }
+    - title: { en: Thermal and statistical physics (Clark University), ar: الفيزياء الحرارية والإحصائية (جامعة كلارك) }
+      url: https://stp.clarku.edu/notes/
+      note: { en: Online textbook (Gould and Tobochnik)., ar: كتاب إلكتروني (Gould وTobochnik). }
+    - title: { en: Statistical mechanics (KFUPM), ar: الميكانيكا الإحصائية (جامعة الملك فهد للبترول والمعادن) }
+      url: https://faculty.kfupm.edu.sa/PHYS/imnasser/SM_Chapter_All.pdf
+      note: { en: Lecture notes in Arabic., ar: مذكرات محاضرات باللغة العربية. }
+
+materials:
+  # Lecture notes (weeks follow the course calendar)
+  - { type: notes, title: { en: Basic concepts (part 1), ar: مفاهيم أساسية (الجزء 1) }, url: "https://drive.google.com/open?id=15ryXnWJpLxnj-ZqpLXROeIQ4rPA1WAlc", week: 1, lang: en }
+  - { type: notes, title: { en: Basic concepts (part 2), ar: مفاهيم أساسية (الجزء 2) }, url: "https://drive.google.com/open?id=1Z6vf3Ug2ZgI4ktFsFc1nuzq1qcDSDku2", week: 1, lang: en }
+  - { type: notes, title: { en: Probability, ar: الاحتمالات }, url: "https://drive.google.com/open?id=1UrWQyAyKn5q4KhqDK4m8fvPBSnvHlqlM", week: 2, lang: en }
+  - { type: notes, title: { en: Temperature and the Boltzmann distribution (part 1), ar: درجة الحرارة وتوزيع بولتزمان (الجزء 1) }, url: "https://drive.google.com/open?id=1kfSRW-zzMogzlk75IomfllI9u3jhb2cW", week: 2, lang: en }
+  - { type: notes, title: { en: Temperature and the Boltzmann distribution (part 2), ar: درجة الحرارة وتوزيع بولتزمان (الجزء 2) }, url: "https://drive.google.com/open?id=1ZqzEUI1Shg-jPq_27ZwCsSGT5rSGs7Bl", week: 2, lang: en }
+  - { type: notes, title: { en: Temperature and the Boltzmann distribution (part 3), ar: درجة الحرارة وتوزيع بولتزمان (الجزء 3) }, url: "https://drive.google.com/open?id=178Klgk8rpb3ysayxtpuLs1OX7IBiS4HX", week: 2, lang: en }
+  - { type: notes, title: { en: The first law, ar: القانون الأول }, url: "https://drive.google.com/open?id=1CDkSLobR4_5U5BCbpjSIatqiUM7B1BxY", week: 3, lang: en }
+  - { type: notes, title: { en: Isothermal and adiabatic processes, ar: التحولات متساوية الحرارة والكظومة }, url: "https://drive.google.com/open?id=1cqJ0ABmDlBO32xqI_0wdQzVybwo49N4L", week: 3, lang: en }
+  - { type: notes, title: { en: The second law, ar: القانون الثاني }, url: "https://drive.google.com/open?id=1GPUSrk6przRQXgPXDCRfgZM5IlO9MtL3", week: 4, lang: en }
+  - { type: notes, title: { en: Entropy (part 1), ar: الإنتروبيا (الجزء 1) }, url: "https://drive.google.com/open?id=1UGMjm_j0WwV7acSHsQ38MBjlZ5Wgd7Xh", week: 4, lang: en }
+  - { type: notes, title: { en: Entropy (part 2), ar: الإنتروبيا (الجزء 2) }, url: "https://drive.google.com/open?id=1UPF0Q3UGKvMiKKB8JUHKoEONDX4ig9OS", week: 4, lang: en }
+  - { type: notes, title: { en: Thermodynamic potentials, ar: الكمونات الترموديناميكية }, url: "https://drive.google.com/open?id=1eHwIZVXA1v3dwlsiwWNQBcX0MZikOccK", week: 5, lang: en }
+  - { type: notes, title: { en: The third law, ar: القانون الثالث }, url: "https://drive.google.com/open?id=1FORdkWZugIrJlFPwXmIW-XiSs8x-F7vZ", week: 6, lang: en }
+  - { type: notes, title: { en: Equipartition of energy, ar: تساوي توزيع الطاقة }, url: "https://drive.google.com/open?id=1aB6uj6v0HyBnuleQjx_O2ZEmabCD7cmu", week: 7, lang: en }
+  - { type: notes, title: { en: The partition function, ar: دالة التجزئة }, url: "https://drive.google.com/open?id=1M7yNPZp7cxJDA16I5ZrYhN3maV1rCzI8", week: 8, lang: en }
+  - { type: notes, title: { en: Statistical mechanics of an ideal gas, ar: الميكانيكا الإحصائية للغاز المثالي }, url: "https://drive.google.com/open?id=1g5v30ri81n6NKrfJLrkl1VZ-wpYzIE65", week: 9, lang: en }
+  # Assignments (week = calendar week in which the set is handed out)
+  - { type: problems, title: { en: Problem set 1, ar: سلسلة المسائل 1 }, url: "https://drive.google.com/open?id=1ewQEDbQWQ3JSCg1zdxF0wRVEw5wlVWhA", week: 2, lang: en }
+  - { type: solutions, title: { en: Solutions 1, ar: حلول السلسلة 1 }, url: "https://drive.google.com/open?id=1pZ0BrsrWELgIt3989rMe2JmVg3OGiV29", week: 2, lang: en }
+  - { type: problems, title: { en: Problem set 2, ar: سلسلة المسائل 2 }, url: "https://drive.google.com/open?id=1wskkxAz6N9Q18wyN1v3NhFZm4Pfz_62x", week: 3, lang: en }
+  - { type: problems, title: { en: Problem set 3, ar: سلسلة المسائل 3 }, url: "https://drive.google.com/open?id=1ohpLgEMbvCjilZzVu3w_AFbzWuWgAqR0", week: 4, lang: en }
+  - { type: problems, title: { en: Problem set 4, ar: سلسلة المسائل 4 }, url: "https://drive.google.com/open?id=1I3PqNlCbcD95UBaVWlKcDAxKSWYi0n7U", week: 5, lang: en }
+  - { type: problems, title: { en: Problem set 5, ar: سلسلة المسائل 5 }, url: "https://drive.google.com/open?id=13NiUFHZhuAi5n772yDdU0fufbQKfgZ_x", week: 7, lang: en }
+  - { type: problems, title: { en: Problem set 6, ar: سلسلة المسائل 6 }, url: "https://drive.google.com/open?id=1-5U3SKWfSb2jXPVk3OdYDal87Xae5J6Q", week: 8, lang: en }
+  - { type: problems, title: { en: Problem set 7, ar: سلسلة المسائل 7 }, url: "https://drive.google.com/open?id=1nbR-PWXavyk3gSCI4eKeHBBglNCZaKOs", week: 9, lang: en }
+  - { type: problems, title: { en: Problem set 8, ar: سلسلة المسائل 8 }, url: "https://drive.google.com/open?id=1OGVq3XamEf6wNHbFdmd-y5gW68eyq3JU", week: 10, lang: en }
+  # Formula sheet
+  - { type: formula, title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }, url: "https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf", lang: en }
+
+exams:
+  - { title: { en: First periodic exam, ar: الاختبار الدوري الأول }, session: 2019–2020, paper: "https://drive.google.com/open?id=1QGz2xqX31OkYxwsotok-LrgM90XHG4YH", solution: "https://drive.google.com/open?id=1RXT3n9Kk92nTDW5s9VGvkTp8P4WK9pq6", lang: en }
+  - { title: { en: Second periodic exam, ar: الاختبار الدوري الثاني }, session: 2019–2020, paper: "https://drive.google.com/open?id=1a1bM8SZ0s_UxseaqZ7HqqiFTUuLJ5o9l", solution: "https://drive.google.com/open?id=1qF0d1I--b8cW9OfrJJEPED2NkgiXy6mj", lang: en }
+  - { title: { en: Final exam, ar: الاختبار النهائي }, session: 2019–2020, paper: "https://drive.google.com/open?id=1z8kSx6Yzf6Vx8Ixr3wdz8h0d3fYbInyy", solution: "https://drive.google.com/open?id=1rTL9ZHB9i4h7hOPvESysmpNtt49TX9rt", lang: en }
+  - { title: { en: "Past exam (semester 1)", ar: "اختبار سابق (الفصل الأول)" }, session: 2017–2018, paper: "https://drive.google.com/open?id=1xiSI1fkwDCua0hrdjYan0PXjAs7nABov", lang: en }
+  - { title: { en: "Past exam (semester 2)", ar: "اختبار سابق (الفصل الثاني)" }, session: 2017–2018, paper: "https://drive.google.com/open?id=15tdcWdgSFrWg3tz6VMDv6EM0zGIScmsW", lang: en }
+
+pending:
+  - what: "Rüchardt's experiment (measuring the adiabatic index γ = Cp/Cv)"
+    url: "https://drive.google.com/open?id=129Q5W93xEBYnnghvPHeTwdguKCA7PhVr"
+    why: "Listed under 'Experiments/Real applications'; authorship unknown (may be a third-party video or animation)."
+  - what: "Hero engine (an old toy heat engine)"
+    url: "https://drive.google.com/open?id=1x9G2d0qOzRWNEr59oFIAKm8CjlppNw-u"
+    why: "Listed under 'Experiments/Real applications'; authorship unknown (may be a third-party video or animation)."
+  - what: "Carnot cycle simulation (gas-piston system)"
+    url: "https://drive.google.com/open?id=1buWtNO6LDETJfwdlUvdi6yRDhqRdr7BQ"
+    why: "Simulation file of unknown origin; publish only if he made it."
+  - what: "Thermodynamics notes in Arabic (University of Babylon, .doc)"
+    url: "http://www.uobabylon.edu.iq/eprints/pubdoc_3_14399_1405.doc"
+    why: "File written by someone else, linked on the page through a Google redirect; not a well-known open resource."
+  - what: "Collection of translated thermodynamics books (alfreed-ph.com)"
+    url: "https://www.alfreed-ph.com/2017/09/Books-thermodynamics-pdf.html"
+    why: "Translated textbooks offered for download; copyright status unclear."
+
+sources:
+  - teaching/phys321 (en, ar) (https://khelifak.wordpress.com/studying/teaching-2/iu/phys321-thermal-and-statistical-physics/)
+  - pages.json "PHYS321: Thermal and Statistical Physics"
+  - pages.json "فيز 321: الفيزياء الحرارية و الإحصائية" (https://khelifak.wordpress.com/studying/teaching-2/iu/فيز-321-الفيزياء-الحرارية-و-الإحصائية/)
+
+notes: >
+  Offerings: the English page gives "Semester 5 - 1440/41 - 2019/20" → 2019–2020 (English). The Arabic page "فيز 321"
+  gives "1439/40 - 2018/19" → 2018–2019 in Arabic (its course number reads "فيز 402", an obvious copy-paste slip; the
+  page title says فيز 321); it only holds course information and evaluation, identical to the English page, and links back
+  to it. The 2017–2018 offering is inferred from the course questionnaire "1439-S1" and the past exams "1439 (S1)" and
+  "1439 (S2)" on the English page (1439 = academic year 1438/39); its language is assumed to be English — please confirm.
+  Tutorials: the English page says "1 session/week, 1 hr/session ?" (with a question mark) and that lectures and tutorials
+  share the three weekly slots; the Arabic page says 1 tutorial session/week without the question mark. Evaluation
+  20/20/20/40 exactly as on the page, with the problem-set advice kept as the detail. Calendar (15 weeks), outcomes,
+  description and readings ([BB] = Blundell & Blundell) from the page. Textbook list: Blundell authors de-duplicated
+  ("S. Blundell, S. J. Blundell and K. M. Blundell") and "I. Terrell, An Introduction to Statistical Thermodynamics
+  (Dover)" corrected to T. L. Hill — please confirm. Lecture-note weeks follow the calendar topics. Not linked in the
+  source (left out): summaries Sum. 1–4, exercise solutions Sol. 1–4, problem sets 9–11, solutions 2–11, formula sheets
+  for the exams, the QM-gases notes (weeks 11–14). Dropped silently: time/venue, office hours, marks (BlackBoard) and the
+  questionnaires (Google Forms).

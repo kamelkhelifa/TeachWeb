@@ -1,29 +1,26 @@
 {% extends "base.html" %}
 {% from "_macros.html" import icon, course_card %}
+{% block title %}{{ ui('nav_open') }} · {{ site.name if lang == 'en' else site.name_ar }}{% endblock %}
+{% block description %}{{ ui('open_lead') | plain }}{% endblock %}
 {% block main %}
-<section class="hero">
-  <canvas class="hero-canvas" aria-hidden="true"></canvas>
-  <div class="wrap hero-inner">
-    <p class="kicker reveal">{{ icon('sparkle', 'ic xs') }} {{ ui('hero_kicker') }}</p>
-    <h1 class="hero-title reveal">{{ ui('hero_title') }}</h1>
-    <p class="hero-lead reveal">{{ t(site.tagline) }}</p>
-    <button class="hero-search reveal" type="button" data-search-open>
-      {{ icon('search') }}<span>{{ ui('search_placeholder') }}</span><kbd>/</kbd>
-    </button>
-    <div class="hero-ctas reveal">
-      <a class="btn btn-primary" href="#courses">{{ ui('hero_cta') }} {{ icon('arrow', 'ic flip') }}</a>
-      <a class="btn btn-ghost" href="#path">{{ icon('path') }} {{ ui('hero_cta2') }}</a>
-    </div>
-    <dl class="stats reveal">
-      <div><dt data-count="{{ stats.courses }}">{{ stats.courses }}</dt><dd>{{ ui('stat_courses') }}</dd></div>
-      <div><dt data-count="{{ stats.weeks }}">{{ stats.weeks }}</dt><dd>{{ ui('stat_weeks') }}</dd></div>
-      <div><dt data-count="{{ stats.materials }}">{{ stats.materials }}</dt><dd>{{ ui('stat_materials') }}</dd></div>
-      <div><dt data-count="{{ stats.questions }}">{{ stats.questions }}</dt><dd>{{ ui('stat_questions') }}</dd></div>
-      <div><dt data-count="{{ stats.terms }}">{{ stats.terms }}</dt><dd>{{ ui('stat_terms') }}</dd></div>
+<section class="page-hero open-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ icon('sparkle', 'ic xs') }} {{ ui('part2') }}</p>
+    <h1>{{ ui('nav_open') }}</h1>
+    <p class="lead">{{ ui('open_lead') }}</p>
+    {% if open_courses %}
+    <dl class="stats compact">
+      <div><dt>{{ stats.open }}</dt><dd>{{ ui('stat_courses') }}</dd></div>
+      <div><dt>{{ stats.weeks }}</dt><dd>{{ ui('stat_weeks') }}</dd></div>
+      <div><dt>{{ stats.materials }}</dt><dd>{{ ui('stat_materials') }}</dd></div>
+      <div><dt>{{ stats.questions }}</dt><dd>{{ ui('stat_questions') }}</dd></div>
+      <div><dt>{{ stats.terms }}</dt><dd>{{ ui('stat_terms') }}</dd></div>
     </dl>
+    {% endif %}
   </div>
 </section>
 
+{% if open_courses %}
 <section class="section path-section" id="path" aria-labelledby="path-title">
   <div class="wrap">
     <header class="section-head reveal">
@@ -34,12 +31,12 @@
     <div class="path-map reveal" data-path-map>
       <svg class="path-lines" aria-hidden="true"></svg>
       {% for lvl in [1, 2, 3, 4, 5] %}
-      {% set group = courses | selectattr('level', 'equalto', lvl) | list %}
+      {% set group = open_courses | selectattr('level', 'equalto', lvl) | list %}
       {% if group %}
       <div class="path-col">
         <h3 class="path-level">{{ t(site.levels[lvl]) }}</h3>
         {% for c in group %}
-        <a class="path-node" href="{{ url('courses/' ~ c.slug ~ '/') }}" style="--hue: {{ c.hue }}"
+        <a class="path-node" href="{{ url(c.path) }}" style="--hue: {{ c.hue }}"
            data-node="{{ c.slug }}" data-prereqs="{{ c.prerequisites | join(' ') }}">
           <span class="node-dot"></span>
           <span class="node-short">{{ t(c.short) }}</span>
@@ -64,41 +61,42 @@
       <div class="filter-row" role="group" aria-label="{{ ui('filter_area') }}">
         <span class="filter-label">{{ ui('filter_area') }}</span>
         <button class="chip is-on" type="button" data-filter-area="">{{ ui('filter_all') }}</button>
-        {% for key, a in site.areas.items() if courses | selectattr('area', 'equalto', key) | list %}
+        {% for key, a in site.areas.items() if open_courses | selectattr('area', 'equalto', key) | list %}
         <button class="chip" type="button" data-filter-area="{{ key }}" style="--hue: {{ a.hue }}"><i class="dot"></i>{{ t(a) }}</button>
         {% endfor %}
       </div>
       <div class="filter-row" role="group" aria-label="{{ ui('filter_level') }}">
         <span class="filter-label">{{ ui('filter_level') }}</span>
         <button class="chip is-on" type="button" data-filter-level="">{{ ui('filter_all') }}</button>
-        {% for lvl, l in site.levels.items() if courses | selectattr('level', 'equalto', lvl) | list %}
+        {% for lvl, l in site.levels.items() if open_courses | selectattr('level', 'equalto', lvl) | list %}
         <button class="chip" type="button" data-filter-level="{{ lvl }}">{{ t(l) }}</button>
         {% endfor %}
       </div>
     </div>
     <div class="course-grid" data-course-grid>
-      {% for c in courses %}{{ course_card(c, t, ui, url, site) }}{% endfor %}
+      {% for c in open_courses %}{{ course_card(c, t, ui, url, site) }}{% endfor %}
     </div>
     <p class="empty-note" data-filter-empty hidden>{{ ui('filter_none') }}</p>
   </div>
 </section>
 
-<section class="section structure" aria-labelledby="structure-title">
+{% else %}
+<section class="section tight">
   <div class="wrap">
-    <header class="section-head reveal">
-      <p class="eyebrow">{{ icon('layers', 'ic xs') }} {{ ui('nav_guide') }}</p>
-      <h2 id="structure-title">{{ ui('structure_title') }}</h2>
-      <p class="lead">{{ ui('structure_lead') }}</p>
-    </header>
-    <ol class="structure-list reveal">
+    <div class="empty-state reveal">
+      <div class="es-orbit" aria-hidden="true"><span></span><span></span><span></span>{{ icon('sparkle') }}</div>
+      <p class="bc-soon"><span class="pulse"></span>{{ ui('open_soon') }}</p>
+      <h2>{{ ui('open_empty_title') }}</h2>
+      <p class="lead">{{ ui('open_empty_text') }}</p>
+      <a class="btn btn-primary" href="{{ url('taught/') }}">{{ ui('browse_taught') }} {{ icon('arrow', 'ic flip') }}</a>
+    </div>
+    <h2 class="guide-h center">{{ ui('open_will_have') }}</h2>
+    <ol class="structure-list">
       {% for id, ico in [('overview','overview'),('outcomes','outcomes'),('schedule','schedule'),('assessment','assessment'),('materials','materials'),('exams','exams'),('problems','problems'),('quizzes','quizzes'),('lab','lab'),('library','library'),('glossary','glossary')] %}
       <li><span class="sl-icon">{{ icon(ico) }}</span><div><h3>{{ ui('sec_' ~ id) }}</h3><p>{{ ui('sec_' ~ id ~ '_d') }}</p></div></li>
       {% endfor %}
     </ol>
-    <div class="audience reveal">
-      <div class="aud-card"><span class="sl-icon">{{ icon('cap') }}</span><h3>{{ ui('for_students') }}</h3><p>{{ ui('for_students_text') }}</p></div>
-      <div class="aud-card"><span class="sl-icon">{{ icon('users') }}</span><h3>{{ ui('for_teachers') }}</h3><p>{{ ui('for_teachers_text') }}</p></div>
-    </div>
   </div>
 </section>
+{% endif %}
 {% endblock %}

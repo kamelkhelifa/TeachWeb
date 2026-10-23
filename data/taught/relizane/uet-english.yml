@@ -1,0 +1,203 @@
+slug: uet-english
+order: 50
+codes: [UET221, UET131, UET231]
+title: { en: English for Physicists, ar: الإنجليزية للفيزيائيين, fr: Anglais pour physiciens }
+level:
+  en: "Licence 2, Licence 3 and Master 1 (L2, L3, M1)"
+  ar: "ليسانس 2 وليسانس 3 وماستر 1 (ل2، ل3، م1)"
+  fr: "Licence 2, Licence 3 et Master 1 (L2, L3, M1)"
+area: skills
+kind: { en: Lecture, ar: محاضرات, fr: Cours magistral }
+taught:
+  - { years: 2021–2024, code: UET, lang: en }
+credits: 1
+hours: { lecture: 1.5, tutorial: 0 }
+weeks: 18
+prerequisites:
+  en: "Notions, terminology, grammar and writing skills acquired in the English courses of previous years."
+  ar: "المفاهيم والمصطلحات والقواعد ومهارات الكتابة المكتسبة في مقررات الإنجليزية في السنوات السابقة."
+  fr: "Notions, terminologie, grammaire et compétences rédactionnelles acquises dans les cours d'anglais des années précédentes."
+
+description:
+  en: |
+    <p>This is a continuation of previous courses on English for scientists. It focuses on improving both oral and written skills.</p>
+    <p>Credits: 1 · Coefficient: 1. Each week is built around a physics topic, studied through a text in the lecture notes.</p>
+    <h4>Detailed learning outcomes</h4>
+    <ul>
+      <li><strong>Oral comprehension</strong>: 1.1 understand a simple technical conversation or presentation; 1.2 understand technical instructions; 1.3 understand simple mathematical expressions.</li>
+      <li><strong>Written comprehension</strong>: 2.1 read an elementary technical text; 2.2 recall information in a simple technical document; 2.3 understand simple technical instructions.</li>
+      <li><strong>Oral expression</strong>: 3.1 give a simple technical presentation; 3.2 convey scientific and technical information; 3.3 summarise or rephrase orally an elementary technical document.</li>
+      <li><strong>Written expression</strong>: 4.1 write a simple report on a technical document; 4.2 describe a simple technical object; 4.3 write a simple technical manual.</li>
+    </ul>
+  ar: |
+    <p>هذا المقرر تتمة للمقررات السابقة في اللغة الإنجليزية الموجهة للعلميين، ويركز على تحسين المهارات الشفهية والكتابية معًا.</p>
+    <p>الأرصدة: 1 · المعامل: 1. يُبنى كل أسبوع حول موضوع فيزيائي يُدرَس من خلال نص في مذكرة المحاضرات.</p>
+    <h4>مخرجات التعلم التفصيلية</h4>
+    <ul>
+      <li><strong>الفهم الشفهي</strong>: 1.1 فهم محادثة أو عرض تقني بسيط؛ 1.2 فهم التعليمات التقنية؛ 1.3 فهم العبارات الرياضية البسيطة.</li>
+      <li><strong>الفهم الكتابي</strong>: 2.1 قراءة نص تقني أولي؛ 2.2 استرجاع المعلومات الواردة في وثيقة تقنية بسيطة؛ 2.3 فهم التعليمات التقنية البسيطة.</li>
+      <li><strong>التعبير الشفهي</strong>: 3.1 تقديم عرض تقني بسيط؛ 3.2 نقل المعلومات العلمية والتقنية؛ 3.3 تلخيص وثيقة تقنية أولية أو إعادة صياغتها شفهيًا.</li>
+      <li><strong>التعبير الكتابي</strong>: 4.1 كتابة تقرير بسيط عن وثيقة تقنية؛ 4.2 وصف شيء تقني بسيط؛ 4.3 كتابة دليل استعمال تقني بسيط.</li>
+    </ul>
+  fr: |
+    <p>Ce cours fait suite aux cours d'anglais pour scientifiques des années précédentes. Il vise à améliorer les compétences orales et écrites.</p>
+    <p>Crédits : 1 · Coefficient : 1. Chaque semaine s'articule autour d'un thème de physique, étudié à travers un texte du polycopié.</p>
+    <h4>Acquis d'apprentissage détaillés</h4>
+    <ul>
+      <li><strong>Compréhension orale</strong> : 1.1 comprendre une conversation ou une présentation technique simple ; 1.2 comprendre des consignes techniques ; 1.3 comprendre des expressions mathématiques simples.</li>
+      <li><strong>Compréhension écrite</strong> : 2.1 lire un texte technique élémentaire ; 2.2 restituer les informations d'un document technique simple ; 2.3 comprendre des consignes techniques simples.</li>
+      <li><strong>Expression orale</strong> : 3.1 faire une présentation technique simple ; 3.2 transmettre une information scientifique et technique ; 3.3 résumer ou reformuler oralement un document technique élémentaire.</li>
+      <li><strong>Expression écrite</strong> : 4.1 rédiger un compte rendu simple d'un document technique ; 4.2 décrire un objet technique simple ; 4.3 rédiger un mode d'emploi technique simple.</li>
+    </ul>
+
+outcomes:
+  - id: LO1
+    text:
+      en: Deliver an oral presentation about a scientific topic to colleagues, in meetings, conferences, etc.
+      ar: تقديم عرض شفهي حول موضوع علمي أمام الزملاء، في الاجتماعات والمؤتمرات ونحوها.
+      fr: Faire une présentation orale sur un sujet scientifique devant des collègues, en réunion, en conférence, etc.
+  - id: LO2
+    text:
+      en: Present a scientific product orally.
+      ar: تقديم منتج علمي شفهيًا.
+      fr: Présenter oralement un produit scientifique.
+  - id: LO3
+    text:
+      en: Translate a simple technical document.
+      ar: ترجمة وثيقة تقنية بسيطة.
+      fr: Traduire un document technique simple.
+  - id: LO4
+    text:
+      en: Understand lectures and conferences given in English.
+      ar: فهم المحاضرات والمؤتمرات الملقاة باللغة الإنجليزية.
+      fr: Comprendre des cours et des conférences donnés en anglais.
+  - id: LO5
+    text:
+      en: Understand and write a short scientific article.
+      ar: فهم مقال علمي قصير وكتابته.
+      fr: Comprendre et rédiger un court article scientifique.
+
+assessment:
+  - type: homework
+    weight: 50
+    title: { en: Weekly assignments, ar: الواجبات الأسبوعية, fr: Devoirs hebdomadaires }
+    detail:
+      en: "Assignments are given in the lecture notes and are due one week later. L2 and L3: read the text, answer all the questions and prepare the written expression. M1: prepare a whole lecture, i.e. a full text with all questions and answers, including the written-expression task."
+      ar: "ترد الواجبات في مذكرة المحاضرات وتُسلَّم بعد أسبوع واحد. ل2 ول3: اقرأ النص، وأجب عن جميع الأسئلة، وحضّر التعبير الكتابي. م1: حضّر محاضرة كاملة، أي نصًا كاملًا مع جميع الأسئلة والأجوبة، بما في ذلك مهمة التعبير الكتابي."
+      fr: "Les devoirs figurent dans le polycopié et sont à rendre une semaine plus tard. L2 et L3 : lire le texte, répondre à toutes les questions et préparer l'expression écrite. M1 : préparer une leçon complète, c'est-à-dire un texte complet avec toutes les questions et réponses, y compris l'exercice d'expression écrite."
+  - type: final
+    weight: 50
+    title: { en: Final exam, ar: الاختبار النهائي, fr: Examen final }
+    detail: { en: 1 hour, ar: ساعة واحدة, fr: 1 heure }
+    when: { en: Final exam period, ar: فترة الاختبارات النهائية, fr: Période des examens finaux }
+
+schedule:
+  - week: 1
+    title: { en: Introductory session, ar: حصة تعريفية, fr: Séance d'introduction }
+  - week: 2
+    title: { en: "Classical physics: Forces & motion", ar: "الفيزياء الكلاسيكية: القوى والحركة", fr: "Physique classique : forces et mouvement" }
+    activity: { en: Assignment 1, ar: الواجب 1, fr: Devoir 1 }
+  - week: 3
+    title: { en: "Classical physics: Energy & its sources", ar: "الفيزياء الكلاسيكية: الطاقة ومصادرها", fr: "Physique classique : l'énergie et ses sources" }
+    activity: { en: Assignment 2, ar: الواجب 2, fr: Devoir 2 }
+  - week: 4
+    title: { en: "Classical physics: Gravity", ar: "الفيزياء الكلاسيكية: الجاذبية", fr: "Physique classique : la gravitation" }
+    activity: { en: Assignment 3, ar: الواجب 3, fr: Devoir 3 }
+  - week: 5
+    title: { en: "Oscillations and waves: Sound waves", ar: "الاهتزازات والأمواج: الأمواج الصوتية", fr: "Oscillations et ondes : les ondes sonores" }
+    activity: { en: Assignment 4, ar: الواجب 4, fr: Devoir 4 }
+  - week: 6
+    title: { en: "Oscillations and waves: Pitch, echoes and ultrasound", ar: "الاهتزازات والأمواج: حدة الصوت والصدى والموجات فوق الصوتية", fr: "Oscillations et ondes : hauteur, échos et ultrasons" }
+    activity: { en: Assignment 5, ar: الواجب 5, fr: Devoir 5 }
+  - week: 7
+    title: { en: "Thermodynamics: The arrow of time", ar: "الديناميكا الحرارية: سهم الزمن", fr: "Thermodynamique : la flèche du temps" }
+    activity: { en: Assignment 6, ar: الواجب 6, fr: Devoir 6 }
+  - week: 8
+    title: { en: "Electricity & magnetism: Electricity of things", ar: "الكهرباء والمغناطيسية: كهرباء الأشياء", fr: "Électricité et magnétisme : l'électricité des choses" }
+    activity: { en: Assignment 7, ar: الواجب 7, fr: Devoir 7 }
+  - week: 9
+    title: { en: "Electricity & magnetism: Our own giant magnet", ar: "الكهرباء والمغناطيسية: مغناطيسنا العملاق (الأرض)", fr: "Électricité et magnétisme : notre aimant géant (la Terre)" }
+    activity: { en: Assignment 8, ar: الواجب 8, fr: Devoir 8 }
+  - week: 10
+    title: { en: "Light and optics: Lasers", ar: "الضوء والبصريات: الليزر", fr: "Lumière et optique : les lasers" }
+    activity: { en: Assignment 9, ar: الواجب 9, fr: Devoir 9 }
+  - week: 11
+    title: { en: "Light and optics: The power of light", ar: "الضوء والبصريات: قوة الضوء", fr: "Lumière et optique : la puissance de la lumière" }
+    activity: { en: Assignment 10, ar: الواجب 10, fr: Devoir 10 }
+  - week: 12
+    title: { en: "Modern physics: Relativity", ar: "الفيزياء الحديثة: النسبية", fr: "Physique moderne : la relativité" }
+    activity: { en: Assignment 11, ar: الواجب 11, fr: Devoir 11 }
+  - week: 13
+    title: { en: "Modern physics: Quantum mechanics", ar: "الفيزياء الحديثة: ميكانيكا الكم", fr: "Physique moderne : la mécanique quantique" }
+    activity: { en: Assignment 12, ar: الواجب 12, fr: Devoir 12 }
+  - week: 14
+    title: { en: "Modern physics: Atomic physics", ar: "الفيزياء الحديثة: الفيزياء الذرية", fr: "Physique moderne : la physique atomique" }
+    activity: { en: Assignment 13, ar: الواجب 13, fr: Devoir 13 }
+  - week: 15
+    title: { en: "Modern physics: Nuclear physics", ar: "الفيزياء الحديثة: الفيزياء النووية", fr: "Physique moderne : la physique nucléaire" }
+    activity: { en: Assignment 14, ar: الواجب 14, fr: Devoir 14 }
+  - week: 16
+    title: { en: "Modern physics: The Standard Model of particle physics", ar: "الفيزياء الحديثة: النموذج القياسي لفيزياء الجسيمات", fr: "Physique moderne : le modèle standard de la physique des particules" }
+    activity: { en: Assignment 15, ar: الواجب 15, fr: Devoir 15 }
+  - week: 17
+    title: { en: "Astronomy: The life cycles of stars", ar: "علم الفلك: دورات حياة النجوم", fr: "Astronomie : le cycle de vie des étoiles" }
+    activity: { en: Assignment 16, ar: الواجب 16, fr: Devoir 16 }
+  - week: 18
+    title: { en: "Astronomy: The Moon", ar: "علم الفلك: القمر", fr: "Astronomie : la Lune" }
+    activity: { en: Assignment 17, ar: الواجب 17, fr: Devoir 17 }
+
+textbooks:
+  required:
+    - { title: "English for Physicists (lecture notes, see Materials)" }
+  recommended:
+    - { authors: "S. Bosworth, B. Marinier", title: Lire l'anglais scientifique et technique, year: 1990 }
+    - { authors: "S. Bosworth, C. Ingrand, R. Marret", title: Comprendre l'anglais scientifique & technique, year: 1992 }
+    - { authors: A. Eisenberg, title: Reading Technical Books, publisher: Prentice-Hall, year: 1978 }
+    - { authors: "F. Drobnic, S. Abrams, M. Morray", title: Sci-Tech, publisher: ELS Publications, year: 1981 }
+  online:
+    - title: { en: BBC Learning English, ar: BBC لتعلّم الإنجليزية, fr: BBC Learning English }
+      url: https://www.bbc.co.uk/learningenglish
+      note: { en: Free English lessons and exercises, ar: دروس وتمارين مجانية في اللغة الإنجليزية, fr: Leçons et exercices d'anglais gratuits }
+    - title: { en: British Council LearnEnglish, ar: LearnEnglish من المجلس الثقافي البريطاني, fr: LearnEnglish du British Council }
+      url: https://learnenglish.britishcouncil.org
+      note: { en: Free English lessons and exercises, ar: دروس وتمارين مجانية في اللغة الإنجليزية, fr: Leçons et exercices d'anglais gratuits }
+
+materials:
+  - type: notes
+    title: { en: "English for Physicists: lecture notes (texts and assignments)", ar: "الإنجليزية للفيزيائيين: مذكرة المحاضرات (النصوص والواجبات)", fr: "Anglais pour physiciens : polycopié (textes et devoirs)" }
+    url: https://drive.google.com/file/d/14QBXlq69X3jb3dZemc1mJhjzdf4lEIDB/view?usp=sharing
+    lang: en
+
+exams:
+  - title: { en: "Final exam, L2 (semesters 3, 5, 7)", ar: "الاختبار النهائي، ل2 (الفصول 3 و5 و7)", fr: "Examen final, L2 (semestres 3, 5, 7)" }
+    paper: https://drive.google.com/file/d/1YPzxdFxeP09qEdA3VDSQTCCai_oAXsOx/view?usp=drive_link
+    solution: https://drive.google.com/file/d/1C0Zs_KqOQN2ulIxTpvZdCHPQk1wOv9j4/view?usp=drive_link
+    lang: en
+  - title: { en: "Final exam, L3 (semesters 3, 5, 7)", ar: "الاختبار النهائي، ل3 (الفصول 3 و5 و7)", fr: "Examen final, L3 (semestres 3, 5, 7)" }
+    paper: https://drive.google.com/file/d/1E6d1JCw8ZV-WsC7z3-AIw2Y700IgU_tb/view?usp=drive_link
+    solution: https://drive.google.com/file/d/1uKj79gw4dV214tgkmc9nMiLbmqy2qWmq/view?usp=drive_link
+    lang: en
+  - title: { en: "Past exam, L2", ar: "اختبار سابق، ل2", fr: "Examen antérieur, L2" }
+    session: '2022'
+    paper: https://drive.google.com/file/d/1D12s1ZxiX1iM-cfOcWvxrBdjnDgEWEpZ/view?usp=sharing
+    lang: en
+  - title: { en: "Past exam, L3", ar: "اختبار سابق، ل3", fr: "Examen antérieur, L3" }
+    session: '2022'
+    paper: https://drive.google.com/file/d/1Qp3IguGzWL4oI4iVKtHxEOYdH7WLeRiT/view?usp=sharing
+    lang: en
+
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/english/
+notes: >
+  Single original page (English); the cleaned ar file is its translation. Course information, description,
+  the 5 learning outcomes, the detailed outcomes (put in the description), the 18-week thematic calendar,
+  assessment (assignments 50%, final 50%), the lecture notes and the textbook list are as on the page.
+  The course code is written "UET/221/131/231" (semesters 4/5/6) on the page, while the exam tables are headed
+  "Semesters 3 & 5 & 7" and "Semesters 4 & 6 & 8"; levels L2, L3 and M1 all followed the same course.
+  The lecture notes are listed as the required "textbook" and are assumed to be the professor's own (please confirm;
+  no author shown, per the no-names rule). Years are not given: 2021-2024 inferred from the past-exam years (2022, 2023, 2024)
+  and the Relizane period; the session of the current L2/L3 final papers is not stated. The two supplementary
+  links were misspelled and not hyperlinked (www.bbc.co.uk/learningenglis, www.learnigenglish.org.uk); corrected
+  to BBC Learning English and British Council LearnEnglish. "Einsenberg" corrected to Eisenberg.
+  Not kept: online timetable, office hours, assignment-submission Google Forms (L2/L3/M1), student-portal marks
+  links, course-evaluation questionnaire. M1 papers, resit papers and the 2023-2024 past papers were never uploaded.

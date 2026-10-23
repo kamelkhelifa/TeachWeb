@@ -1,39 +1,65 @@
 {% extends "base.html" %}
-{% from "_macros.html" import icon, section_head %}
-{% block title %}{{ t(c.title) | plain }} · {{ site.name if lang == 'en' else site.name_ar }}{% endblock %}
-{% block description %}{{ t(c.tagline) | plain }}{% endblock %}
+{% from "_macros.html" import icon, section_head, placeholder %}
+{% set T = c.branch == 'taught' %}
+{% set site_name = {'en': site.name, 'ar': site.name_ar, 'fr': site.name_fr}[lang] %}
+{% block title %}{% if T %}{{ c.codes | join(' / ') }} {% endif %}{{ t(c.title) | plain }} · {{ site_name }}{% endblock %}
+{% block description %}{% if c.tagline %}{{ t(c.tagline) | plain }}{% elif T %}{{ t(c.title) | plain }} · {{ t(c.uni.name) | plain }}{% endif %}{% endblock %}
 {% set type_icon = {'notes':'notes','slides':'slides','summary':'summary','problems':'problems','solutions':'solutions','video':'video','sim':'lab','lab':'lab','formula':'formula','code':'code','reading':'library','link':'link'} %}
 {% set a_icon = {'quiz':'quizzes','homework':'problems','midterm':'exams','final':'exams','lab':'lab','project':'layers','presentation':'users','participation':'users','report':'notes','oral':'users','portfolio':'materials'} %}
-{% set sections = [('overview','overview')] + [('outcomes','outcomes'), ('schedule','schedule'), ('assessment','assessment'), ('materials','materials'), ('exams','exams')]
+{% set sections = [('overview','overview'), ('outcomes','outcomes'), ('schedule','schedule'), ('assessment','assessment'), ('materials','materials'), ('exams','exams')]
    + ([('problems','problems')] if c.problems else []) + ([('quizzes','quizzes')] if c.quizzes else [])
    + ([('lab','lab')] if c.sims else []) + [('library','library')] + ([('glossary','glossary')] if c.glossary else []) %}
+{% set dp = 'tsec_' if T else 'sec_' %}
 {% block main %}
-<div class="course" style="--hue: {{ c.hue }}" data-course="{{ c.slug }}" data-weeks="{{ c.schedule | length }}">
+<div class="course {{ 'course-taught' if T else 'course-open' }}" style="--hue: {{ c.hue }}" data-course="{{ c.key }}" data-weeks="{{ (c.schedule or []) | length }}">
 
 <section class="course-hero">
   <div class="course-hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <nav class="crumbs" aria-label="breadcrumb">
-      <a href="{{ url() }}">{{ site.name if lang == 'en' else site.name_ar }}</a><span>/</span><a href="{{ url() }}#courses">{{ ui('all_courses') }}</a><span>/</span><span aria-current="page">{{ t(c.short) }}</span>
+      <a href="{{ url() }}">{{ site_name }}</a><span>/</span>
+      {% if T %}
+      <a href="{{ url('taught/') }}">{{ ui('nav_taught') }}</a><span>/</span><a href="{{ url('taught/') }}#{{ c.uni.id }}">{{ t(c.uni.name) }}</a><span>/</span><span aria-current="page">{{ c.codes | join(' / ') or t(c.title) }}</span>
+      {% else %}
+      <a href="{{ url('open/') }}">{{ ui('nav_open') }}</a><span>/</span><span aria-current="page">{{ t(c.short) }}</span>
+      {% endif %}
     </nav>
     <div class="course-hero-grid">
       <div>
+        {% if T %}
+        <p class="course-kicker"><span class="uni-chip"><i></i>{{ t(c.uni.name) }}</span>{% if c.uni.current %}<span class="badge-current">{{ ui('current') }}</span>{% endif %}</p>
+        <p class="course-codes">{% for code in c.codes %}<code>{{ code }}</code>{% endfor %}</p>
+        {% else %}
         <p class="course-kicker"><span class="course-badge">{{ t(c.short) }}</span>{{ t(site.areas[c.area]) }}</p>
+        {% endif %}
         <h1 class="course-title">{{ t(c.title) }}</h1>
-        <p class="course-tagline">{{ t(c.tagline) }}</p>
+        {% if c.tagline %}<p class="course-tagline">{{ t(c.tagline) }}</p>{% endif %}
         <div class="course-actions">
-          <a class="btn btn-primary" href="#schedule">{{ icon('play') }} {{ ui('start_learning') }}</a>
+          {% if c.schedule %}<a class="btn btn-primary" href="#schedule">{{ icon('play') }} {{ ui('start_learning') }}</a>{% endif %}
           {% if c.quizzes %}<a class="btn btn-ghost" href="#quizzes">{{ icon('quizzes') }} {{ ui('take_quiz') }}</a>{% endif %}
+          {% if c.n_materials %}<a class="btn btn-ghost" href="#materials">{{ icon('materials') }} {{ ui('sec_materials') }}</a>{% endif %}
           <button class="btn btn-ghost" type="button" data-print>{{ icon('print') }} {{ ui('print_syllabus') }}</button>
         </div>
       </div>
       <dl class="facts">
+        {% if T %}
+        <div class="wide"><dt>{{ ui('taught_in') }}</dt><dd class="offerings">{% for o in c.taught %}<span class="offering"><span class="lang-tag l-{{ o.lang }}">{{ o.lang | upper }}</span>{{ ui('lang_' ~ o.lang) }}<small>{{ o.years | ltr }}{% if o.code and c.codes | length > 1 %} · {{ o.code }}{% endif %}</small></span>{% else %}<span class="muted">{{ ui('placeholder') }}</span>{% endfor %}</dd></div>
+        {% if c.level %}<div class="wide"><dt>{{ ui('level') }}</dt><dd>{{ t(c.level) }}</dd></div>{% endif %}
+        {% if c.kind %}<div class="wide"><dt>{{ ui('format') }}</dt><dd>{{ t(c.kind) }}</dd></div>{% endif %}
+        {% if c.credits or c.contact_hours or c.weeks %}
+        <div><dt>{{ ui('credits') }}</dt><dd>{{ c.credits or '—' }}</dd></div>
+        <div><dt>{{ ui('weekly_hours') }}</dt><dd>{{ c.contact_hours or '—' }}</dd></div>
+        <div><dt>{{ ui('weeks') }}</dt><dd>{{ c.weeks or '—' }}</dd></div>
+        <div><dt>{{ ui('sec_materials') }}</dt><dd>{{ c.n_materials }}</dd></div>
+        {% endif %}
+        {% else %}
         <div><dt>{{ ui('level') }}</dt><dd>{{ t(site.levels[c.level]) }}</dd></div>
         <div><dt>{{ ui('credits') }}</dt><dd>{{ c.credits }}</dd></div>
         <div><dt>{{ ui('weekly_hours') }}</dt><dd>{{ c.contact_hours }}</dd></div>
         <div><dt>{{ ui('weeks') }}</dt><dd>{{ c.weeks }}</dd></div>
         <div class="wide"><dt>{{ ui('languages') }}</dt><dd>{% for l in c.instruction %}<span class="pill">{{ t(site.languages[l]) }}</span>{% endfor %}</dd></div>
         {% if c.codes %}<div class="wide"><dt>{{ ui('also_coded') }}</dt><dd class="codes">{% for code in c.codes %}<code>{{ code }}</code>{% endfor %}</dd></div>{% endif %}
+        {% endif %}
       </dl>
     </div>
   </div>
@@ -42,10 +68,12 @@
 <div class="wrap course-layout">
   <aside class="course-toc" aria-label="{{ ui('on_this_page') }}">
     <div class="toc-inner">
+      {% if c.schedule %}
       <div class="toc-progress" data-week-progress>
         <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15.5"/><circle class="ring-val" cx="18" cy="18" r="15.5" pathLength="100" stroke-dasharray="0 100"/></svg>
         <div><strong data-week-count>0 / {{ c.schedule | length }}</strong><span>{{ ui('completed_weeks') }}</span></div>
       </div>
+      {% endif %}
       <p class="toc-title">{{ ui('on_this_page') }}</p>
       <ol class="toc-list">
         {% for id, ico in sections %}<li><a href="#{{ id }}" data-toc="{{ id }}">{{ icon(ico, 'ic xs') }}<span>{{ ui('sec_' ~ id) }}</span></a></li>{% endfor %}
@@ -57,47 +85,82 @@
 
   {# ───────── 1. Overview ───────── #}
   <section class="sec" id="overview" aria-labelledby="overview-title">
-    {{ section_head('overview', 'overview', ui, 1) }}
-    <div class="prose">{{ t(c.description) | para }}</div>
+    {{ section_head('overview', 'overview', ui, 1, dp) }}
+    {% if c.description %}<div class="prose">{{ t(c.description) | para }}</div>{% else %}{{ placeholder(ui, icon) }}{% endif %}
+    {% if c.topics %}
     <h3 class="sub">{{ ui('topics_glance') }}</h3>
     <ul class="topic-chips">{% for tp in c.topics %}<li>{{ t(tp) }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if c.objectives %}
+    <h3 class="sub">{{ ui('objectives') }}</h3>
+    <ol class="obj-list">{% for o in c.objectives %}<li>{{ t(o) }}</li>{% endfor %}</ol>
+    {% endif %}
 
     <div class="overview-grid">
       <div class="panel">
         <h3 class="panel-title">{{ icon('path', 'ic xs') }} {{ ui('prerequisites') }}</h3>
-        {% if c.prerequisites %}
-        <ul class="mini-courses">
-          {% for s in c.prerequisites %}{% set p = by_slug[s] %}
-          <li><a href="{{ url('courses/' ~ s ~ '/') }}" style="--hue: {{ p.hue }}"><span class="mini-badge">{{ t(p.short) }}</span>{{ t(p.title) }}</a></li>
-          {% endfor %}
-        </ul>
-        {% else %}<p class="muted">{{ ui('no_prereq') }}</p>{% endif %}
-        {% if c.prerequisite_note %}<p class="note">{{ t(c.prerequisite_note) }}</p>{% endif %}
-        {% if c.leads_to %}
-        <h3 class="panel-title mt">{{ icon('arrow', 'ic xs flip') }} {{ ui('leads_to') }}</h3>
-        <ul class="mini-courses">
-          {% for s in c.leads_to %}{% set p = by_slug[s] %}
-          <li><a href="{{ url('courses/' ~ s ~ '/') }}" style="--hue: {{ p.hue }}"><span class="mini-badge">{{ t(p.short) }}</span>{{ t(p.title) }}</a></li>
-          {% endfor %}
-        </ul>
+        {% if T %}
+          {% if c.prerequisites_text %}<p>{{ t(c.prerequisites_text) }}</p>{% else %}<p class="muted">—</p>{% endif %}
+          {% if c.corequisites %}<h3 class="panel-title mt">{{ icon('layers', 'ic xs') }} {{ ui('corequisites') }}</h3><p>{{ t(c.corequisites) }}</p>{% endif %}
+        {% else %}
+          {% if c.prerequisites %}
+          <ul class="mini-courses">
+            {% for s in c.prerequisites %}{% set p = by_slug[s] %}
+            <li><a href="{{ url(p.path) }}" style="--hue: {{ p.hue }}"><span class="mini-badge">{{ t(p.short) }}</span>{{ t(p.title) }}</a></li>
+            {% endfor %}
+          </ul>
+          {% else %}<p class="muted">{{ ui('no_prereq') }}</p>{% endif %}
+          {% if c.prerequisite_note %}<p class="note">{{ t(c.prerequisite_note) }}</p>{% endif %}
+          {% if c.leads_to %}
+          <h3 class="panel-title mt">{{ icon('arrow', 'ic xs flip') }} {{ ui('leads_to') }}</h3>
+          <ul class="mini-courses">
+            {% for s in c.leads_to %}{% set p = by_slug[s] %}
+            <li><a href="{{ url(p.path) }}" style="--hue: {{ p.hue }}"><span class="mini-badge">{{ t(p.short) }}</span>{{ t(p.title) }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
         {% endif %}
       </div>
+      {% if c.contact_hours %}
       <div class="panel">
         <h3 class="panel-title">{{ icon('clock', 'ic xs') }} {{ ui('workload') }}</h3>
         {% set self_study = c.contact_hours * 2 %}
-        {% set maxh = [c.hours.lecture, c.hours.tutorial, c.hours.lab, self_study] | max %}
+        {% set maxh = [c.hours.lecture or 0, c.hours.tutorial or 0, c.hours.lab or 0, self_study] | max %}
         <ul class="bars">
           {% for key, val in [('lecture', c.hours.lecture), ('tutorial', c.hours.tutorial), ('lab', c.hours.lab), ('self_study', self_study)] if val %}
           <li><span class="bar-label">{{ ui(key) }}</span><span class="bar"><i style="--w: {{ (val / maxh * 100) | round(1) }}%"></i></span><span class="bar-val">{{ val }} {{ ui('hours_short') }}</span></li>
           {% endfor %}
         </ul>
       </div>
+      {% elif c.methods %}
+      <div class="panel"><h3 class="panel-title">{{ icon('users', 'ic xs') }} {{ ui('methods') }}</h3><ul class="tips">{% for m in c.methods %}<li>{{ t(m) }}</li>{% endfor %}</ul></div>
+      {% endif %}
     </div>
+    {% if c.methods and c.contact_hours %}
+    <div class="panel mt-panel"><h3 class="panel-title">{{ icon('users', 'ic xs') }} {{ ui('methods') }}</h3><ul class="tips">{% for m in c.methods %}<li>{{ t(m) }}</li>{% endfor %}</ul></div>
+    {% endif %}
+    {% if c.safety %}
+    <div class="panel mt-panel safety"><h3 class="panel-title">{{ icon('lab', 'ic xs') }} {{ ui('safety') }}</h3><ul class="tips">{% for m in c.safety %}<li>{{ t(m) }}</li>{% endfor %}</ul></div>
+    {% endif %}
   </section>
 
   {# ───────── 2. Outcomes ───────── #}
   <section class="sec" id="outcomes" aria-labelledby="outcomes-title">
-    {{ section_head('outcomes', 'outcomes', ui, 2) }}
+    {{ section_head('outcomes', 'outcomes', ui, 2, dp) }}
+    {% if not c.outcomes %}{{ placeholder(ui, icon) }}
+    {% elif T %}
+    <ol class="clo-list">
+      {% for o in c.outcomes %}
+      <li class="clo">
+        <div class="clo-id">{{ o.id or ('CLO' ~ loop.index) }}</div>
+        <div class="clo-body">
+          <p class="clo-text">{{ t(o.text) }}</p>
+          {% if o.assessed_by %}<div class="clo-tags"><span class="assessed">{{ ui('assessed_by') }}: {{ t(o.assessed_by) }}</span></div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
     {% set amap = {} %}{% for a in c.assessment %}{% set _ = amap.update({a.id: a}) %}{% endfor %}
     <ol class="clo-list">
       {% for o in c.outcomes %}
@@ -128,11 +191,13 @@
         </table>
       </div>
     </details>
+    {% endif %}
   </section>
 
   {# ───────── 3. Weekly plan ───────── #}
   <section class="sec" id="schedule" aria-labelledby="schedule-title">
-    {{ section_head('schedule', 'schedule', ui, 3) }}
+    {{ section_head('schedule', 'schedule', ui, 3, dp) }}
+    {% if not c.schedule %}{{ placeholder(ui, icon) }}{% else %}
     <div class="week-tools">
       <div class="week-meter" aria-hidden="true"><i data-week-bar></i></div>
       <button class="link-btn" type="button" data-weeks-toggle="open">{{ ui('expand_all') }}</button>
@@ -141,27 +206,33 @@
     </div>
     <ol class="weeks">
       {% for w in c.schedule %}
+      {% set wid = (w.week | string) | replace('–', '-') | replace(' ', '') | replace('.', '') %}
+      {% set numeric = (w.week | string)[:1] in '0123456789' %}
       {% set wm = c.materials | selectattr('week', 'defined') | selectattr('week', 'equalto', w.week) | list %}
-      <li class="week" id="week-{{ w.week }}" data-week="{{ w.week }}">
+      {% set has_body = w.topics or w.reading or w.activity or wm %}
+      <li class="week{% if w.milestone == 'break' %} is-break{% endif %}" id="week-{{ wid }}" data-week="{{ wid }}">
         <div class="week-head">
           <label class="week-check" title="{{ ui('mark_done') }}">
-            <input type="checkbox" data-week-done="{{ w.week }}" aria-label="{{ ui('mark_done') }}: {{ ui('week') }} {{ w.week }}">
+            <input type="checkbox" data-week-done="{{ wid }}" aria-label="{{ ui('mark_done') }}: {{ ui('week') }} {{ w.week }}"{% if w.milestone == 'break' %} disabled{% endif %}>
             <span class="box">{{ icon('check', 'ic xs') }}</span>
           </label>
-          <button class="week-toggle" type="button" aria-expanded="false" aria-controls="week-panel-{{ w.week }}">
-            <span class="week-num"><small>{{ ui('week') }}</small>{{ w.week }}</span>
+          <button class="week-toggle" type="button" aria-expanded="false" aria-controls="week-panel-{{ wid }}"{% if not has_body %} disabled{% endif %}>
+            <span class="week-num{% if not numeric %} is-label{% endif %}">{% if numeric %}<small>{{ ui('week') }}</small>{% endif %}{{ w.week }}</span>
             <span class="week-title">{{ t(w.title) }}</span>
             {% if w.milestone %}<span class="milestone m-{{ w.milestone }}">{{ t(site.milestones[w.milestone]) }}</span>{% endif %}
             {% if wm %}<span class="week-mcount" title="{{ ui('week_materials') }}">{{ icon('materials', 'ic xs') }}{{ wm | length }}</span>{% endif %}
-            {{ icon('chevron', 'ic chev') }}
+            {% if has_body %}{{ icon('chevron', 'ic chev') }}{% endif %}
           </button>
         </div>
-        <div class="week-panel" id="week-panel-{{ w.week }}" hidden>
-          <ul class="week-topics">{% for tp in w.topics[lang] %}<li>{{ tp }}</li>{% endfor %}</ul>
+        {% if has_body %}
+        <div class="week-panel" id="week-panel-{{ wid }}" hidden>
+          {% if w.topics %}<ul class="week-topics">{% for tp in (w.topics[lang] or w.topics.en) %}<li>{{ tp }}</li>{% endfor %}</ul>{% endif %}
+          {% if w.reading or w.activity %}
           <dl class="week-meta">
             {% if w.reading %}<div><dt>{{ icon('library', 'ic xs') }} {{ ui('reading') }}</dt><dd>{{ w.reading }}</dd></div>{% endif %}
             {% if w.activity %}<div><dt>{{ icon('problems', 'ic xs') }} {{ ui('activity') }}</dt><dd>{{ t(w.activity) }}</dd></div>{% endif %}
           </dl>
+          {% endif %}
           {% if wm %}
           <div class="week-mats">
             <p class="mini-title">{{ ui('week_materials') }}</p>
@@ -169,15 +240,21 @@
           </div>
           {% endif %}
         </div>
+        {% endif %}
       </li>
       {% endfor %}
     </ol>
+    {% endif %}
   </section>
 
   {# ───────── 4. Assessment ───────── #}
   <section class="sec" id="assessment" aria-labelledby="assessment-title">
-    {{ section_head('assessment', 'assessment', ui, 4) }}
-    <div class="assess-grid">
+    {{ section_head('assessment', 'assessment', ui, 4, dp) }}
+    {% if not c.assessment %}
+      {% if c.assessment_note %}<div class="panel"><div class="prose">{{ t(c.assessment_note) | para }}</div></div>{% else %}{{ placeholder(ui, icon) }}{% endif %}
+    {% else %}
+    <div class="assess-grid{% if not c.weights_ok %} no-donut{% endif %}">
+      {% if c.weights_ok %}
       <figure class="donut" aria-hidden="true">
         <svg viewBox="0 0 42 42">
           {% set ns = namespace(off=25) %}
@@ -190,6 +267,7 @@
         </svg>
         <figcaption><strong>100%</strong><span>{{ c.assessment | length }} {{ ui('components') }}</span></figcaption>
       </figure>
+      {% endif %}
       <ul class="assess-list">
         {% for a in c.assessment %}
         <li class="assess" data-seg-hover="{{ loop.index0 }}" style="--i: {{ loop.index0 }}; --n: {{ c.assessment | length }}">
@@ -197,15 +275,17 @@
           <div class="assess-body">
             <div class="assess-top">
               <h3>{{ icon(a_icon[a.type], 'ic xs') }} {{ t(a.title) }}</h3>
-              <span class="assess-weight">{{ a.weight }}%</span>
+              {% if a.weight is not none %}<span class="assess-weight">{{ a.weight }}%</span>{% endif %}
             </div>
-            <p>{{ t(a.detail) }}</p>
+            {% if a.detail %}<p>{{ t(a.detail) }}</p>{% endif %}
             {% if a.when %}<p class="assess-when">{{ icon('clock', 'ic xs') }} {{ t(a.when) }}</p>{% endif %}
           </div>
         </li>
         {% endfor %}
       </ul>
     </div>
+    {% if c.assessment_note %}<p class="note">{{ t(c.assessment_note) }}</p>{% endif %}
+    {% if c.weights_ok %}
     <div class="calc panel" data-calc>
       <h3 class="panel-title">{{ icon('calc', 'ic xs') }} {{ ui('calculator') }}</h3>
       <p class="muted small">{{ ui('calculator_lead') }}</p>
@@ -220,11 +300,13 @@
         <div><span>{{ ui('out_of_20') }}</span><strong data-calc-20>—</strong><small>/ 20</small></div>
       </div>
     </div>
+    {% endif %}
+    {% endif %}
   </section>
 
   {# ───────── 5. Materials ───────── #}
   <section class="sec" id="materials" aria-labelledby="materials-title">
-    {{ section_head('materials', 'materials', ui, 5) }}
+    {{ section_head('materials', 'materials', ui, 5, dp) }}
     {% if c.materials %}
     {% set types = [] %}{% for m in c.materials %}{% if m.type not in types %}{% set _ = types.append(m.type) %}{% endif %}{% endfor %}
     <div class="mat-tools">
@@ -251,13 +333,14 @@
       {% endfor %}
     </ul>
     {% else %}
-    <p class="empty-note">{{ ui('no_materials') }}</p>
+    {{ placeholder(ui, icon, 'placeholder_materials') }}
     {% endif %}
   </section>
 
   {# ───────── 6. Exams ───────── #}
   <section class="sec" id="exams" aria-labelledby="exams-title">
-    {{ section_head('exams', 'exams', ui, 6) }}
+    {{ section_head('exams', 'exams', ui, 6, dp) }}
+    {% if c.exam_guide %}
     <div class="exam-guide">
       <div class="panel"><h3 class="panel-title">{{ icon('clock', 'ic xs') }} {{ ui('exam_format') }}</h3><div class="prose">{{ t(c.exam_guide.format) | para }}</div></div>
       <div class="panel"><h3 class="panel-title">{{ icon('calc', 'ic xs') }} {{ ui('exam_allowed') }}</h3><div class="prose">{{ t(c.exam_guide.allowed) | para }}</div></div>
@@ -265,13 +348,14 @@
         <ul class="tips">{% for tip in c.exam_guide.tips %}<li>{{ t(tip) }}</li>{% endfor %}</ul></div>
     </div>
     <h3 class="sub">{{ ui('past_papers') }}</h3>
+    {% endif %}
     {% if c.exams %}
     <div class="table-wrap">
       <table class="papers">
         <tbody>
         {% for e in c.exams %}
           <tr>
-            <th scope="row">{{ t(e.title) }}{% if e.session %} <span class="muted">· {{ e.session }}</span>{% endif %}{% if e.lang %} <span class="lang-tag">{{ e.lang | upper }}</span>{% endif %}</th>
+            <th scope="row">{{ t(e.title) }}{% if e.session %} <span class="muted">· {{ e.session | ltr }}</span>{% endif %}{% if e.lang %} <span class="lang-tag">{{ e.lang | upper }}</span>{% endif %}</th>
             <td>{% if e.paper %}<a class="btn-sm" href="{{ e.paper }}" target="_blank" rel="noopener">{{ icon('exams', 'ic xs') }} {{ ui('paper') }}</a>{% endif %}</td>
             <td>{% if e.solution %}<a class="btn-sm" href="{{ e.solution }}" target="_blank" rel="noopener">{{ icon('solutions', 'ic xs') }} {{ ui('solution') }}</a>{% endif %}</td>
           </tr>
@@ -280,7 +364,7 @@
       </table>
     </div>
     {% else %}
-    <p class="empty-note">{{ ui('no_papers') }}</p>
+    {{ placeholder(ui, icon, 'placeholder_exams' if T else 'no_papers') }}
     {% endif %}
   </section>
 
@@ -330,7 +414,7 @@
         <legend class="q-text">{{ t(q.q) }}</legend>
         <div class="q-options">
           {% for o in q.options %}
-          <button type="button" class="opt" data-opt="{{ loop.index0 }}"><span class="opt-key">{{ 'ABCD'[loop.index0] if lang == 'en' else 'أبجد'[loop.index0] }}</span><span class="opt-text">{{ t(o) }}</span></button>
+          <button type="button" class="opt" data-opt="{{ loop.index0 }}"><span class="opt-key">{{ 'ABCD'[loop.index0] if lang != 'ar' else 'أبجد'[loop.index0] }}</span><span class="opt-text">{{ t(o) }}</span></button>
           {% endfor %}
         </div>
         <div class="q-feedback" hidden><p class="q-verdict"></p><div class="q-explain">{{ t(q.explain) | para }}</div></div>
@@ -359,29 +443,33 @@
 
   {# ───────── 10. Library ───────── #}
   {% set n.i = n.i + 1 %}
+  {% set tb = c.textbooks or {} %}
   <section class="sec" id="library" aria-labelledby="library-title">
-    {{ section_head('library', 'library', ui, n.i) }}
+    {{ section_head('library', 'library', ui, n.i, dp) }}
+    {% if not (tb.required or tb.recommended or tb.online) %}{{ placeholder(ui, icon) }}{% endif %}
+    {% if tb.required %}
     <h3 class="sub">{{ ui('required') }}</h3>
     <ul class="books">
-      {% for b in c.textbooks.required %}
+      {% for b in tb.required %}
       <li class="book main-book">
-        <span class="spine" aria-hidden="true"><i>{{ (b.authors.split(',')[0].split('&')[0].split(' and ')[0]) | trim }}</i></span>
-        <div><p class="book-title">{{ b.title }}</p><p class="book-meta">{{ b.authors }}{% if b.edition %} · {{ b.edition }} {{ ui('edition') }}{% endif %}{% if b.publisher %} · {{ b.publisher }}{% endif %}{% if b.year %} · {{ b.year }}{% endif %}</p>{% if b.url %}<a class="book-link" href="{{ b.url }}" target="_blank" rel="noopener">{{ icon('external', 'ic xs') }}</a>{% endif %}</div>
+        <span class="spine" aria-hidden="true"><i>{{ ((b.authors or b.title).split(',')[0].split('&')[0].split(' and ')[0]) | trim }}</i></span>
+        <div><p class="book-title">{{ b.title }}</p><p class="book-meta">{{ b.authors or '' }}{% if b.edition %} · {{ b.edition }} {{ ui('edition') }}{% endif %}{% if b.publisher %} · {{ b.publisher }}{% endif %}{% if b.year %} · {{ b.year }}{% endif %}</p>{% if b.url %}<a class="book-link" href="{{ b.url }}" target="_blank" rel="noopener">{{ icon('external', 'ic xs') }}</a>{% endif %}</div>
       </li>
       {% endfor %}
     </ul>
-    {% if c.textbooks.recommended %}
+    {% endif %}
+    {% if tb.recommended %}
     <h3 class="sub">{{ ui('recommended') }}</h3>
     <ul class="books compact">
-      {% for b in c.textbooks.recommended %}
-      <li class="book"><div><p class="book-title">{{ b.title }}</p><p class="book-meta">{{ b.authors }}{% if b.edition %} · {{ b.edition }} {{ ui('edition') }}{% endif %}{% if b.publisher %} · {{ b.publisher }}{% endif %}{% if b.year %} · {{ b.year }}{% endif %}</p></div></li>
+      {% for b in tb.recommended %}
+      <li class="book"><div><p class="book-title">{{ b.title }}</p><p class="book-meta">{{ b.authors or '' }}{% if b.edition %} · {{ b.edition }} {{ ui('edition') }}{% endif %}{% if b.publisher %} · {{ b.publisher }}{% endif %}{% if b.year %} · {{ b.year }}{% endif %}</p></div></li>
       {% endfor %}
     </ul>
     {% endif %}
-    {% if c.textbooks.online %}
+    {% if tb.online %}
     <h3 class="sub">{{ ui('online') }}</h3>
     <ul class="online">
-      {% for o in c.textbooks.online %}
+      {% for o in tb.online %}
       <li><a href="{{ o.url }}" target="_blank" rel="noopener"><span class="online-title">{{ t(o.title) }} {{ icon('external', 'ic xs') }}</span>{% if o.note %}<span class="online-note">{{ t(o.note) }}</span>{% endif %}</a></li>
       {% endfor %}
     </ul>
@@ -401,4 +489,4 @@
 </div>
 </div>
 {% endblock %}
-{% block scripts %}<script defer src="{{ asset('static/js/sims.js') }}"></script>{% endblock %}
+{% block scripts %}{% if c.sims %}<script defer src="{{ asset('static/js/sims.js') }}"></script>{% endif %}{% endblock %}

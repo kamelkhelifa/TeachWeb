@@ -1,0 +1,171 @@
+slug: electricity-lab
+order: 20
+codes: [UEF212, Phys2]
+title: { en: Electricity, ar: الكهرباء, fr: Électricité }
+level:
+  en: "Year 1 · Semester S2 · MI stream (UEF 21)"
+  ar: "السنة الأولى · الفصل الدراسي S2 · ميدان MI (UEF 21)"
+  fr: "1re année · Semestre S2 · Domaine MI (UEF 21)"
+area: laboratory
+kind:
+  en: "Lab sessions (TP) and tutorials (TD)"
+  ar: "أعمال تطبيقية وأعمال موجهة"
+  fr: "Travaux pratiques (TP) et travaux dirigés (TD)"
+taught:
+  - { years: 2013–2014, code: UEF212, lang: fr }
+prerequisites:
+  en: "Phys1 (mechanics), mathematics and electricity as taught at secondary school"
+  ar: "Phys1 (الميكانيكا)، والرياضيات والكهرباء المدرّسة في التعليم الثانوي"
+  fr: "Phys1 (mécanique), mathématiques et électricité enseignées au secondaire"
+
+description:
+  en: |
+    Weekly format: one lecture session and one tutorial (TD) session per week; one lab (TP) session every two weeks.
+
+    Course outline:
+
+    <ol>
+    <li><strong>Electric interaction</strong>: electrification, conservation of charge, conductors and insulators, Coulomb's law.</li>
+    <li><strong>Electrostatics</strong>:
+    <ul>
+    <li>field and potential produced by a charge, the superposition principle, charge distributions, field-line topography;</li>
+    <li>electric dipoles: the potential and field produced by a dipole, torque exerted on a dipole by a field, energy of a dipole;</li>
+    <li>the notion of flux, Gauss's theorem (without proof), applications;</li>
+    <li>conductors in equilibrium, total influence;</li>
+    <li>capacitors: capacitance, electrical energy, combinations of capacitors.</li>
+    </ul></li>
+    </ol>
+
+    Lab sessions (TP): introduction; characteristics of two-terminal components; the oscilloscope; transient behaviour of RC and RL circuits; the electrolytic (rheographic) tank.
+  ar: |
+    التنظيم الأسبوعي: حصة محاضرة وحصة أعمال موجهة كل أسبوع، وحصة أعمال تطبيقية كل 15 يومًا.
+
+    مفردات المقرر:
+
+    <ol>
+    <li><strong>التفاعل الكهربائي</strong>: التكهرب، انحفاظ الشحنة، النواقل والعوازل، قانون كولوم.</li>
+    <li><strong>الكهروساكنة</strong>:
+    <ul>
+    <li>الحقل والكمون الناتجان عن شحنة، مبدأ التراكب، توزيعات الشحن، طوبوغرافيا الحقل؛</li>
+    <li>ثنائيات الأقطاب الكهربائية: الكمون والحقل الناتجان عن ثنائي قطب، المزدوجة التي يؤثر بها حقل على ثنائي قطب، طاقة ثنائي القطب؛</li>
+    <li>مفهوم التدفق، نظرية غاوس (دون برهان)، تطبيقات؛</li>
+    <li>النواقل في حالة التوازن، التأثير الكلي؛</li>
+    <li>المكثفات: السعة، الطاقة الكهربائية، تجميع المكثفات.</li>
+    </ul></li>
+    </ol>
+
+    الأعمال التطبيقية: مقدمة؛ مميزات ثنائيات الأقطاب؛ راسم الاهتزاز المهبطي؛ دراسة الدارتين RC وRL في النظام الانتقالي؛ الحوض الريوغرافي (الإلكتروليتي).
+  fr: |
+    Organisation : une séance de cours et une séance de travaux dirigés (TD) par semaine ; une séance de travaux pratiques (TP) tous les quinze jours.
+
+    Plan du cours :
+
+    <ol>
+    <li><strong>Interaction électrique</strong> : électrisation, conservation de la charge, conducteurs et isolants, loi de Coulomb.</li>
+    <li><strong>Électrostatique</strong> :
+    <ul>
+    <li>champ et potentiel créés par une charge, principe de superposition, distributions de charges, topographie d'un champ ;</li>
+    <li>dipôles électriques : potentiel et champ créés par un dipôle, couple exercé sur un dipôle par un champ, énergie d'un dipôle ;</li>
+    <li>notion de flux, théorème de Gauss (sans démonstration), applications ;</li>
+    <li>conducteurs en équilibre, influence totale ;</li>
+    <li>condensateurs : capacité, énergie électrique, groupements de condensateurs.</li>
+    </ul></li>
+    </ol>
+
+    Travaux pratiques : introduction ; caractéristiques de dipôles ; l'oscilloscope ; étude des circuits RC et RL en régime transitoire ; la cuve rhéographique.
+
+assessment_note:
+  en: "Tutorials: two tests (interrogations) and a final exam. Labs: lab reports (characteristics of two-terminal components; the electrolytic tank) and a lab exam. The weights are not given on the course page."
+  ar: "الأعمال الموجهة: فرضان (استجوابان) واختبار نهائي. الأعمال التطبيقية: تقارير (مميزات ثنائيات الأقطاب؛ الحوض الريوغرافي) واختبار تطبيقي. ولم تُذكر الأوزان في صفحة المقرر."
+  fr: "TD : deux interrogations et un examen final. TP : comptes rendus (caractéristiques de dipôles ; cuve rhéographique) et un examen de TP. Les pondérations ne sont pas indiquées sur la page du cours."
+
+textbooks:
+  recommended:
+    - { authors: "M. Alonso, E. J. Finn", title: "Physique générale, Tome 2 : Champs et ondes. Cours et exercices corrigés", year: 2005 }
+  online:
+    - title: { en: "MIT OpenCourseWare 8.02SC — Electricity and Magnetism", ar: "مقرر MIT المفتوح 8.02SC — الكهرباء والمغناطيسية", fr: "MIT OpenCourseWare 8.02SC — Électricité et magnétisme" }
+      url: https://ocw.mit.edu/courses/physics/8-02sc-physics-ii-electricity-and-magnetism-fall-2010/
+      note: { en: "Recommended on the course page (in English)", ar: "موصى به في صفحة المقرر (بالإنجليزية)", fr: "Conseillé sur la page du cours (en anglais)" }
+
+materials:
+  - type: summary
+    title: { en: "Electrostatics — summary", ar: "الكهروساكنة — ملخص", fr: "Électrostatique — résumé" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/05/phys2_res1.pdf
+    lang: fr
+  - type: solutions
+    title: { en: "TD 1 — Electrostatics: solutions", ar: "السلسلة الموجهة 1 — الكهروساكنة: الحلول", fr: "TD 1 — Électrostatique : solutions" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/05/s2_phys2_td1_soln.pdf
+    lang: fr
+
+exams:
+  - title: { en: "Test 1 (group G2)", ar: "الفرض 1 (الفوج G2)", fr: "Interrogation 1 (groupe G2)" }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/04/test1_g21.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/04/test1_g2_soln.pdf
+    lang: fr
+  - title: { en: "Test 1 (group G4)", ar: "الفرض 1 (الفوج G4)", fr: "Interrogation 1 (groupe G4)" }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/04/test1_g41.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/04/test1_g4_soln.pdf
+    lang: fr
+  - title: { en: "Test 2 (group G2)", ar: "الفرض 2 (الفوج G2)", fr: "Interrogation 2 (groupe G2)" }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g2.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g2_soln.pdf
+    lang: fr
+  - title: { en: "Test 2 (group G4)", ar: "الفرض 2 (الفوج G4)", fr: "Interrogation 2 (groupe G4)" }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g4.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g4_soln.pdf
+    lang: fr
+
+pending:
+  - what: "Electricity lecture notes (polycopié) by L. Ait-Gougam et al., 2012 (SM stream)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/electricite_poly.pdf
+    why: "written by other authors (department lecture notes)"
+  - what: "Mathematical formulae you should know (French)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
+    why: "the page says it was typeset by Y. Delenda; authorship unclear"
+  - what: "Essential constants and conversion factors (French)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
+    why: "the page says it was typeset by Y. Delenda; authorship unclear"
+  - what: "TD 1 — Electrostatics (problem set)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/04/s2_phys2_td1.pdf
+    why: "probably a common TD series for all MI sections; not clearly his own (his summary and solutions are published)"
+  - what: "TP 1 — Introduction (lab sheet)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/03/tp1.pdf
+    why: "first-year TP handouts are normally the department's lab manual"
+  - what: "TP 2 — Characteristics of two-terminal components (lab sheet)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp2.pdf
+    why: "probably part of the department's lab manual"
+  - what: "TP 3 — The oscilloscope (lab sheet)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp3.pdf
+    why: "probably part of the department's lab manual"
+  - what: "TP 4 — Transient behaviour of RC and RL circuits (lab sheet)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp4.pdf
+    why: "probably part of the department's lab manual"
+  - what: "TP 5 — The electrolytic (rheographic) tank (lab sheet)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp5.pdf
+    why: "probably part of the department's lab manual"
+  - what: "Final exam, MI stream, S2 2013/2014"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/06/mi_a1314_s2_phys2.pdf
+    why: "common exam for the whole MI stream, probably set by the course coordinator, not by him"
+  - what: "Lab (TP) exam, ST stream, S2 2013/2014, with marking scheme"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/05/st_s2_tp_phys2.pdf
+    why: "generic file name and an official marking scheme suggest a common lab exam for all ST groups; confirm he wrote it"
+  - what: "Marking scheme (barème) of the lab exam"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/05/st_s2_tp_phys2_barem.pdf
+    why: "goes with the lab exam above"
+
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/usthb/tp-phys-2-electricite/
+  - content/en/teaching/usthb-electricite.html
+  - content/ar/teaching/usthb-electricite.html
+  - content/fr/teaching/usthb-electricite.html
+notes: >
+  The page lists lectures by C. Benchouk and tutorials by K. Khelifa (2013/2014): he taught tutorials to MI
+  groups G2 and G4 and lab sessions to ST groups B and E, so both the TD and the TP material are kept here.
+  The "Objectives" ("Introduire :") and "Course description" sections of the page are empty. Session counts
+  are sessions, not hours, so `hours` is left out. The textbook entry on the page names "Decitre" (a bookshop)
+  as publisher; the publisher was left out (Dunod?). TP solutions, the final-exam solution and lab-report
+  sheets had no links. Student marks dropped.

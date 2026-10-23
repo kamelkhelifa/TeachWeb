@@ -1,0 +1,53 @@
+slug: english
+order: 30
+codes: [UET121, UET511]
+title: { en: English for Physicists, ar: الإنجليزية للفيزيائيين, fr: Anglais pour physiciens }
+level:
+  en: "Licence · 2nd and 3rd year (S3: English 3 · S5: English 5) · Matter Sciences / Physics"
+  ar: "ليسانس · السنتان الثانية والثالثة (S3: الإنجليزية 3 · S5: الإنجليزية 5) · علوم المادة / فيزياء"
+  fr: "Licence · 2e et 3e années (S3 : Anglais 3 · S5 : Anglais 5) · Sciences de la Matière / Physique"
+area: skills
+kind: { en: "Lectures (1 session/week, no tutorials)", ar: "محاضرات (حصة واحدة في الأسبوع، دون أعمال موجهة)", fr: "Cours (1 séance/semaine, sans TD)" }
+taught:
+  - { years: 2015–2016, code: UET121, lang: en }
+  - { years: 2015–2016, code: UET511, lang: en }
+
+description:
+  en: |
+    This is formally an English language course for physicists, but there is no detailed programme to comply with.
+    The course was therefore designed as a "general physics" course that revises, in English, the physics courses
+    the students took from semester 1 to semester 5. The revision is mostly descriptive, since the students have
+    already seen the quantitative material. The courses covered are: classical mechanics (S1), electricity and
+    magnetism (S2), vibrations and waves (S3), electromagnetism (S4) and quantum mechanics (S4).
+  ar: |
+    هذا المقرر رسميًا مقرر في اللغة الإنجليزية موجّه للفيزيائيين، غير أنه لا يوجد برنامج تفصيلي يتعيّن الالتزام به.
+    لذا صُمّم المقرر ليكون أشبه بمقرر في "الفيزياء العامة" تُراجَع فيه بالإنجليزية مقررات الفيزياء التي درسها الطلبة
+    من الفصل الأول حتى الفصل الخامس. وتغلب على هذه المراجعة الصبغة الوصفية، نظرًا إلى أن الطلبة قد درسوا الجانب الكمي
+    من قبل. والمقررات المشمولة هي: الميكانيكا الكلاسيكية (S1)، والكهرباء والمغناطيسية (S2)، والاهتزازات والأمواج (S3)،
+    والكهرومغناطيسية (S4)، وميكانيكا الكم (S4).
+  fr: |
+    Il s’agit formellement d’un cours d’anglais destiné aux physiciens, mais il n’existe pas de programme détaillé à respecter.
+    Le cours a donc été conçu comme un cours de « physique générale » qui révise, en anglais, les cours de physique suivis
+    par les étudiants du semestre 1 au semestre 5. La révision est surtout descriptive, les étudiants ayant déjà vu l’aspect
+    quantitatif. Les cours couverts sont : mécanique classique (S1), électricité et magnétisme (S2), vibrations et ondes (S3),
+    électromagnétisme (S4) et mécanique quantique (S4).
+
+assessment_note:
+  en: "A written end-of-semester exam (with a resit exam). No lecture notes were handed out and no assignments were given."
+  ar: "اختبار كتابي في نهاية الفصل (مع اختبار استدراكي). لم تُوزَّع مذكرات محاضرات ولم تُقدَّم واجبات."
+  fr: "Un examen écrit de fin de semestre (avec examen de rattrapage). Aucun polycopié n’a été distribué et aucun devoir n’a été donné."
+
+exams:
+  - { title: { en: Exam, ar: الاختبار, fr: Examen }, session: "2014", paper: https://khelifak.wordpress.com/wp-content/uploads/2015/02/ang_exam.pdf, solution: https://khelifak.wordpress.com/wp-content/uploads/2015/02/ang_exam_s.pdf, lang: en }
+
+sources:
+  - teaching/chlef-english   # WordPress page https://khelifak.wordpress.com/studying/teaching-2/usthb/anglais-2/ ("UET121: Anglais"; filed under USTHB but its content says UHBC 2015/2016)
+
+notes: >
+  Source page is filed under the USTHB branch of the old WordPress site but states "University: UHBC, Academic Year 2015/2016"
+  (the page filed under /uhbc/anglais/ is in fact the 2012–2013 USTHB course): the two were swapped on the old site.
+  The page covers two codes taught together in 2015–2016: UET121 (LANG3, S3, "Anglais 3", 2nd year) and UET511 (LANG5, S5,
+  "Anglais 5", 3rd year); both are listed in codes/taught. No session length is given, so hours are left out.
+  The 2015–2016 exam and resit papers (S3, S5) and solutions were listed but never linked. Exam date/time and the two
+  marks PDFs (ang_s3_marks1, ang_s5_marks1) dropped. The only linked paper is the past exam labelled "2014" with its solution
+  (uploaded Feb 2015, so probably the 2014–2015 exam): to confirm it is yours and whether the course was also taught in 2014–2015.

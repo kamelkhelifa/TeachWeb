@@ -1,0 +1,162 @@
+slug: phys102
+order: 20
+codes: [PHYS 102]
+title: { en: General Physics II, ar: الفيزياء العامة 2 }
+level: { en: Semester 2, ar: الفصل الدراسي الثاني }
+area: electromagnetism
+kind: { en: Lecture, ar: محاضرات }
+taught:
+  - { years: 2017–2018, code: PHYS 102, lang: en }
+hours: { lecture: 3, tutorial: 0 }
+prerequisites: { en: PHYS 101, ar: PHYS 101 }
+
+description:
+  en: |
+    Wave motion and sound, temperature, first and second laws of thermodynamics, kinetic theory of gases, Coulomb's law,
+    the electric field, Gauss's law, electric potential, capacitors and dielectrics, D.C. circuits, the magnetic field,
+    Ampère's and Faraday's laws.
+  ar: |
+    الحركة الموجية والصوت، ودرجة الحرارة، والقانونان الأول والثاني للديناميكا الحرارية، والنظرية الحركية للغازات، وقانون كولوم،
+    والحقل الكهربائي، وقانون غاوس، والكمون الكهربائي، والمكثفات والعوازل، ودارات التيار المستمر، والحقل المغناطيسي، وقانونا أمبير وفاراداي.
+
+objectives:
+  - en: This course is the continuation of General Physics I. In this course students learn the fundamental concepts of waves, thermodynamics, electricity and magnetism.
+    ar: هذا المقرر امتداد لمقرر الفيزياء العامة 1، ويتعلم فيه الطلاب المفاهيم الأساسية للأمواج والديناميكا الحرارية والكهرباء والمغناطيسية.
+
+outcomes:
+  - id: CLO1
+    text: { en: Define the characteristics of a wave., ar: تعريف خصائص الموجة. }
+  - id: CLO2
+    text: { en: Define physical quantities in thermodynamics., ar: تعريف المقادير الفيزيائية في الديناميكا الحرارية. }
+  - id: CLO3
+    text: { en: Understand the kinetic theory of gases., ar: فهم النظرية الحركية للغازات. }
+  - id: CLO4
+    text: { en: Understand and apply the first and second laws of thermodynamics., ar: فهم القانونين الأول والثاني للديناميكا الحرارية وتطبيقهما. }
+  - id: CLO5
+    text: { en: "Write down Coulomb's law and the properties of the electrostatic field.", ar: كتابة قانون كولوم وخواص الحقل الكهروساكن. }
+  - id: CLO6
+    text: { en: "Understand Gauss's law and use it to find electrostatic fields.", ar: فهم قانون غاوس واستعماله في إيجاد الحقول الكهروساكنة. }
+  - id: CLO7
+    text: { en: Define the electrostatic potential and its relation to electrostatic fields., ar: تعريف الكمون الكهروساكن وعلاقته بالحقول الكهروساكنة. }
+  - id: CLO8
+    text: { en: Appreciate the properties of capacitors and compute the equivalent capacitance of capacitors in series and in parallel., ar: إدراك خواص المكثفات وحساب السعة المكافئة لمكثفات موصولة على التسلسل وعلى التفرع. }
+  - id: CLO9
+    text:
+      en: Identify the properties of current and resistance in circuits, and compute the equivalent resistance of resistors in series and in parallel.
+      ar: تحديد خواص التيار والمقاومة في الدارات، وحساب المقاومة المكافئة لمقاومات موصولة على التسلسل وعلى التفرع.
+  - id: CLO10
+    text: { en: "Understand the junction rule and the loop rule (Kirchhoff's laws) for single and multiple circuits.", ar: فهم قاعدة العقد وقاعدة الحلقات (قانونا كيرشوف) في الدارات البسيطة والمتعددة. }
+  - id: CLO11
+    text: { en: Know the properties of magnetic fields and how they may arise from currents in circuits., ar: معرفة خواص الحقول المغناطيسية وكيفية نشوئها عن التيارات في الدارات. }
+  - id: CLO12
+    text: { en: Understand induction and compute inductance., ar: فهم التحريض وحساب الذاتية. }
+
+assessment:
+  - type: quiz
+    weight: 5
+    title: { en: Quizzes (2), ar: اختباران قصيران }
+  - type: midterm
+    weight: 30
+    title: { en: Periodic exams (2), ar: اختباران دوريان }
+  - type: lab
+    weight: 25
+    title: { en: Lab work and lab exam, ar: الأعمال التطبيقية واختبارها }
+  - type: final
+    weight: 40
+    title: { en: Final exam, ar: الاختبار النهائي }
+
+# The source lists the chapters in teaching order (with Halliday chapter numbers), without week numbers.
+schedule:
+  - title: { en: Waves I and II, ar: الأمواج 1 والأمواج 2 }
+    reading: Halliday Ch. 16–17
+  - title: { en: "Temperature, heat and the first law of thermodynamics", ar: درجة الحرارة والحرارة والقانون الأول للديناميكا الحرارية }
+    reading: Halliday Ch. 18
+  - title: { en: The kinetic theory of gases, ar: النظرية الحركية للغازات }
+    reading: Halliday Ch. 19
+  - title: { en: Entropy and the second law of thermodynamics, ar: الإنتروبيا والقانون الثاني للديناميكا الحرارية }
+    reading: Halliday Ch. 20
+  - title: { en: "Coulomb's law", ar: قانون كولوم }
+    reading: Halliday Ch. 21
+  - title: { en: Electric fields, ar: الحقول الكهربائية }
+    reading: Halliday Ch. 22
+  - title: { en: "Gauss's law", ar: قانون غاوس }
+    reading: Halliday Ch. 23
+  - title: { en: Electric potential, ar: الكمون الكهربائي }
+    reading: Halliday Ch. 24
+  - title: { en: Capacitance, ar: السعة }
+    reading: Halliday Ch. 25
+  - title: { en: Current and resistance, ar: التيار والمقاومة }
+    reading: Halliday Ch. 26
+  - title: { en: Circuits, ar: الدارات }
+    reading: Halliday Ch. 27
+  - title: { en: Magnetic fields, ar: الحقول المغناطيسية }
+    reading: Halliday Ch. 28
+  - title: { en: Magnetic fields due to currents, ar: الحقول المغناطيسية الناشئة عن التيارات }
+    reading: Halliday Ch. 29
+  - title: { en: Induction and inductance, ar: التحريض والذاتية }
+    reading: Halliday Ch. 30
+
+textbooks:
+  required:
+    - { authors: "D. Halliday, R. Resnick and J. Walker", title: Fundamentals of Physics, edition: 10th, publisher: John Wiley & Sons, year: 2011 }
+  recommended:
+    - { authors: R. A. Serway and J. W. Jewett, title: Physics for Scientists and Engineers, edition: 9th, publisher: Cengage Learning, year: 2013 }
+    - { authors: "F. W. Sears, M. W. Zemansky and H. D. Young", title: University Physics, year: 2007 }
+    - { authors: "D. Halliday, R. Resnick and K. S. Krane", title: Physics, publisher: John Wiley & Sons, year: 2008 }
+  online:
+    - title: { en: "MIT OCW 5.60: Thermodynamics and Kinetics", ar: "MIT OCW 5.60: الديناميكا الحرارية والحركية الكيميائية" }
+      url: https://ocw.mit.edu/courses/chemistry/5-60-thermodynamics-kinetics-spring-2008/
+      note: { en: Complete course (MIT OpenCourseWare)., ar: مقرر كامل (MIT OpenCourseWare). }
+    - title: { en: Classical mechanics video lectures by W. Lewin, ar: محاضرات مصوّرة في الميكانيكا الكلاسيكية لـ W. Lewin }
+      url: https://videolectures.net/mit801f99_physics_classical_mechanics/
+      note: { en: Video lectures (MIT 8.01)., ar: محاضرات مصوّرة (MIT 8.01). }
+    - title: { en: "Open Yale PHYS 200: Fundamentals of Physics I", ar: "Open Yale PHYS 200: أسس الفيزياء 1" }
+      url: https://oyc.yale.edu/physics/phys-200/lecture-21
+      note: { en: Video lecture (Open Yale Courses)., ar: محاضرة مصوّرة (Open Yale Courses). }
+
+materials:
+  # Lecture slides (one per chapter of the syllabus)
+  - { type: slides, title: { en: "Waves I and II (Ch. 16–17)", ar: "الأمواج 1 والأمواج 2 (الفصلان 16–17)" }, url: "https://drive.google.com/open?id=15JQ2TIWm7ErOiR5cvIiIJCHNE6IUaOY3", lang: en }
+  - { type: slides, title: { en: "Temperature, heat and the first law of thermodynamics (Ch. 18, part 1)", ar: "درجة الحرارة والحرارة والقانون الأول للديناميكا الحرارية (الفصل 18، الجزء 1)" }, url: "https://drive.google.com/open?id=1CwP-lSBhoxwug0r4aR2R-XxGkiYsfJWL", lang: en }
+  - { type: slides, title: { en: "Temperature, heat and the first law of thermodynamics (Ch. 18, part 2)", ar: "درجة الحرارة والحرارة والقانون الأول للديناميكا الحرارية (الفصل 18، الجزء 2)" }, url: "https://drive.google.com/open?id=1pWjSy2wcPmZEU6hdzuuw3TKbZdZI61I8", lang: en }
+  - { type: slides, title: { en: "The kinetic theory of gases (Ch. 19)", ar: "النظرية الحركية للغازات (الفصل 19)" }, url: "https://drive.google.com/open?id=1YLSMqs2BR2bjbbfE-IBeIYjyzxZVGjD6", lang: en }
+  - { type: slides, title: { en: "Entropy and the second law of thermodynamics (Ch. 20)", ar: "الإنتروبيا والقانون الثاني للديناميكا الحرارية (الفصل 20)" }, url: "https://drive.google.com/open?id=1xCo_liBH5SCKSI1Ba78atSOU3Jz-uKwr", lang: en }
+  - { type: slides, title: { en: "Coulomb's law (Ch. 21)", ar: "قانون كولوم (الفصل 21)" }, url: "https://drive.google.com/open?id=1GrnDzUzuHuQXCeqpMIfmeWZ-p1yrjJCU", lang: en }
+  - { type: slides, title: { en: "Electric fields (Ch. 22)", ar: "الحقول الكهربائية (الفصل 22)" }, url: "https://drive.google.com/open?id=1aa3AhBvRKxxCis9l2DGM_iuAB5KhCz0k", lang: en }
+  - { type: slides, title: { en: "Gauss's law (Ch. 23)", ar: "قانون غاوس (الفصل 23)" }, url: "https://drive.google.com/open?id=14Ks_4HgEAc7JCur7MOVWTh2VSXVLo6dd", lang: en }
+  - { type: slides, title: { en: "Electric potential (Ch. 24)", ar: "الكمون الكهربائي (الفصل 24)" }, url: "https://drive.google.com/open?id=1sgHTfNTkaVwd4fZucWdCGpADrePTnGkw", lang: en }
+  - { type: slides, title: { en: "Capacitance (Ch. 25)", ar: "السعة (الفصل 25)" }, url: "https://drive.google.com/open?id=1ImOKWUhWmN-F-zIvRUK-utV2evg7QPij", lang: en }
+  - { type: slides, title: { en: "Current and resistance (Ch. 26)", ar: "التيار والمقاومة (الفصل 26)" }, url: "https://drive.google.com/open?id=1v82mBpx9mrkR3kUXpMGlM8Fjd7TKGbw3", lang: en }
+  - { type: slides, title: { en: "Circuits (Ch. 27)", ar: "الدارات (الفصل 27)" }, url: "https://drive.google.com/open?id=1BTNuxOznGgfopi_4-YKW7PdZKKtO9rll", lang: en }
+  - { type: slides, title: { en: "Magnetic fields (Ch. 28)", ar: "الحقول المغناطيسية (الفصل 28)" }, url: "https://drive.google.com/open?id=1m8sogqzq3vPspNIr2TzGe-ImcSWEQSXX", lang: en }
+  - { type: slides, title: { en: "Magnetic fields due to currents (Ch. 29)", ar: "الحقول المغناطيسية الناشئة عن التيارات (الفصل 29)" }, url: "https://drive.google.com/open?id=1gyH2emtchpznI6L3mJYgEiZZuC774OAE", lang: en }
+  - { type: slides, title: { en: "Induction and inductance (Ch. 30)", ar: "التحريض والذاتية (الفصل 30)" }, url: "https://drive.google.com/open?id=1rRp6VWa7bqdW3SPuI5YIjP95j9pu23hU", lang: en }
+  # Tutorials: problem sheets
+  - { type: problems, title: { en: "Problem sheet 1 — Wave motion and sound", ar: "ورقة المسائل 1 — الحركة الموجية والصوت" }, url: "https://drive.google.com/open?id=1x6ROyrj0NCKTFWJghlpeWYZaBOo8mXfz", lang: en }
+  - { type: problems, title: { en: "Problem sheet 2 — Temperature, heat and the first law of thermodynamics", ar: "ورقة المسائل 2 — درجة الحرارة والحرارة والقانون الأول للديناميكا الحرارية" }, url: "https://drive.google.com/open?id=15b_UNDyJyp0N2BhpuDFKkJWQL2DQft9v", lang: en }
+  - { type: problems, title: { en: "Problem sheet 3 — The kinetic theory of gases", ar: "ورقة المسائل 3 — النظرية الحركية للغازات" }, url: "https://drive.google.com/open?id=1AWa1DSCB0Bh-FQYoTgfWTCfebRYUEE8j", lang: en }
+  - { type: problems, title: { en: "Problem sheet 4 — Entropy and the second law of thermodynamics", ar: "ورقة المسائل 4 — الإنتروبيا والقانون الثاني للديناميكا الحرارية" }, url: "https://drive.google.com/open?id=1R6-gmvzeJnRGznDQLjbTzlbl_X3WBt30", lang: en }
+  # Formula sheet
+  - { type: formula, title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }, url: "https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf", lang: en }
+
+exams:
+  - { title: { en: Quiz 1, ar: الاختبار القصير 1 }, session: 2017–2018, paper: "https://drive.google.com/open?id=1jW5ifGCleFTGYT_XYdOZldZ3Pka79jqm", solution: "https://drive.google.com/open?id=1D8ANf5uO1owtl27hLN20sjJxbTQ62Qcy", lang: en }
+  - { title: { en: Midterm exam 1, ar: الاختبار النصفي 1 }, session: 2017–2018, paper: "https://drive.google.com/open?id=1NRzs2DOCetojyWCcI-mbmU30mGEub0SF", solution: "https://drive.google.com/open?id=1XaQxThoORQOLUm9o2pZdupksLkk2rtI8", lang: en }
+  - { title: { en: Quiz 2, ar: الاختبار القصير 2 }, session: 2017–2018, paper: "https://drive.google.com/open?id=1YJIjbLqlarHUjNmB1bCzMcat_ROk2nvd", solution: "https://drive.google.com/open?id=1p76pAhXONiAR3qcp7_oVgjSHiAbvOn72", lang: en }
+  - { title: { en: Midterm exam 2, ar: الاختبار النصفي 2 }, session: 2017–2018, paper: "https://drive.google.com/open?id=1p19LyP1tvP1tH4A2di4Isix6-5pggTj8", solution: "https://drive.google.com/open?id=1EdhWSdS2nbdwyuU635nb5Rc4vUC68Qqv", lang: en }
+  - { title: { en: Final exam, ar: الاختبار النهائي }, session: 2017–2018, paper: "https://drive.google.com/open?id=1zBPU5ctOQ4uqkjs-Mwuo-z1uPb4SpXL9", solution: "https://drive.google.com/open?id=1NIHHZHKw6hnmeOF566tqlUUshZ_FgASC", lang: en }
+
+sources:
+  - teaching/phys102 (https://khelifak.wordpress.com/studying/teaching-2/iu/phys102-general-physicsii/)
+  - pages.json "PHYS102: General Physics II"
+
+notes: >
+  Scholar year "1438/39 - 2017/18" → taught 2017–2018 (page, slides and exams in English). General information kept:
+  semester 2, 3 lecture sessions/week (50 min), no tutorials, prerequisite PHYS 101. Evaluation exactly as on the page:
+  2 quizzes (5%), 2 periodic exams (30%), lab work + exam (25%), final exam (40%) — the percentages are read as the share
+  of each group (they add up to 100). Objective, description and the 12 learning outcomes are from the page (light
+  editing only). The syllabus is an ordered list of 14 chapters with Halliday 10th-ed. chapter numbers and no week
+  numbers, so schedule entries have no `week`. Area is electromagnetism, but this offering also covered waves and
+  thermodynamics (Halliday Ch. 16–20). Not linked in the source (left out): summaries, problem sheets 5–14, all
+  solutions of the problem sheets, the laboratory manual ("pdf" without link), the "Passed exams 1438(S1)" label.
+  Dropped silently: the marks links (student grades). The formula table is assumed to be the professor's own.

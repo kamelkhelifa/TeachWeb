@@ -5,6 +5,7 @@
 
 name: TeachWeb
 name_ar: الموقع التعليمي
+name_fr: TeachWeb
 tagline:
   en: "Physics courses, complete and open: syllabus, weekly plan, notes, exams, quizzes and interactive labs, in English and Arabic."
   ar: "مقررات الفيزياء كاملةً ومفتوحة: المفردات، والخطة الأسبوعية، والمذكرات، والاختبارات، والتقويم الذاتي، والمختبرات التفاعلية، بالعربية والإنجليزية."
@@ -30,12 +31,12 @@ areas:
   laboratory:       { en: Laboratory,              ar: العمل المخبري,              hue: 110 }
   skills:           { en: Skills & Practice,       ar: المهارات والممارسة,         hue: 80 }
 
-levels:
-  1: { en: Year 1, ar: السنة الأولى, long: { en: First year (foundation), ar: السنة الأولى (تأسيسية) } }
-  2: { en: Year 2, ar: السنة الثانية, long: { en: Second year, ar: السنة الثانية } }
-  3: { en: Year 3, ar: السنة الثالثة, long: { en: Third year, ar: السنة الثالثة } }
-  4: { en: Year 4, ar: السنة الرابعة, long: { en: Final undergraduate year, ar: السنة الجامعية الأخيرة } }
-  5: { en: Master, ar: الماستر, long: { en: Master's level, ar: مستوى الماستر } }
+levels:   # Part 2 (open courses) uses LMD levels
+  1: { en: L1, ar: ليسانس 1, fr: L1, long: { en: Licence · year 1, ar: السنة الأولى ليسانس } }
+  2: { en: L2, ar: ليسانس 2, fr: L2, long: { en: Licence · year 2, ar: السنة الثانية ليسانس } }
+  3: { en: L3, ar: ليسانس 3, fr: L3, long: { en: Licence · year 3, ar: السنة الثالثة ليسانس } }
+  4: { en: M1, ar: ماستر 1, fr: M1, long: { en: Master · year 1, ar: السنة الأولى ماستر } }
+  5: { en: M2, ar: ماستر 2, fr: M2, long: { en: Master · year 2, ar: السنة الثانية ماستر } }
 
 bloom:
   remember:   { en: Remember,   ar: التذكّر,  rank: 1 }
@@ -78,14 +79,15 @@ material_types:
   link:      { en: Links,          ar: روابط }
 
 milestones:
-  quiz:    { en: Quiz,     ar: اختبار قصير }
-  midterm: { en: Midterm,  ar: اختبار فصلي }
-  final:   { en: Final,    ar: نهائي }
-  project: { en: Project,  ar: مشروع }
-  lab:     { en: Lab,      ar: مختبر }
-  review:  { en: Review,   ar: مراجعة }
+  quiz:    { en: Quiz,     ar: اختبار قصير, fr: Interrogation }
+  midterm: { en: Midterm,  ar: اختبار فصلي, fr: Examen partiel }
+  final:   { en: Final,    ar: نهائي, fr: Examen final }
+  project: { en: Project,  ar: مشروع, fr: Projet }
+  lab:     { en: Lab,      ar: مختبر, fr: TP }
+  review:  { en: Review,   ar: مراجعة, fr: Révision }
+  break:   { en: Break,    ar: عطلة, fr: Vacances }
 
 languages:
-  en: { en: English, ar: الإنجليزية }
-  ar: { en: Arabic,  ar: العربية }
-  fr: { en: French,  ar: الفرنسية }
+  en: { en: English, ar: الإنجليزية, fr: Anglais }
+  ar: { en: Arabic,  ar: العربية, fr: Arabe }
+  fr: { en: French,  ar: الفرنسية, fr: Français }
