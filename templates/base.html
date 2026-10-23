@@ -34,9 +34,9 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="{{ url() }}" aria-label="{{ site.name }}">
+    <a class="brand" href="{{ url() }}" aria-label="{{ site.name if lang == 'en' else site.name_ar }}">
       <span class="brand-mark">{{ icon('logo') }}</span>
-      <span class="brand-name">Teach<b>Web</b></span>
+      {% if lang == 'ar' %}<span class="brand-name brand-ar">الموقع <b>التعليمي</b></span>{% else %}<span class="brand-name">Teach<b>Web</b></span>{% endif %}
     </a>
     <nav class="main-nav" aria-label="{{ ui('menu') }}">
       <a href="{{ url() }}#courses" {% if page == 'course' %}aria-current="true"{% endif %}>{{ ui('nav_courses') }}</a>
@@ -70,7 +70,7 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <a class="brand" href="{{ url() }}"><span class="brand-mark">{{ icon('logo') }}</span><span class="brand-name">Teach<b>Web</b></span></a>
+      <a class="brand" href="{{ url() }}"><span class="brand-mark">{{ icon('logo') }}</span>{% if lang == 'ar' %}<span class="brand-name brand-ar">الموقع <b>التعليمي</b></span>{% else %}<span class="brand-name">Teach<b>Web</b></span>{% endif %}</a>
       <p>{{ ui('footer_text') }}</p>
       <p class="muted small">{{ ui('privacy_note') }}</p>
     </div>
@@ -82,7 +82,7 @@
         </ul>
       </div>
       <div>
-        <h2>TeachWeb</h2>
+        <h2>{{ site.name if lang == 'en' else site.name_ar }}</h2>
         <ul>
           <li><a href="{{ url() }}#path">{{ ui('nav_path') }}</a></li>
           <li><a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a></li>

@@ -14,7 +14,7 @@
   <div class="course-hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <nav class="crumbs" aria-label="breadcrumb">
-      <a href="{{ url() }}">TeachWeb</a><span>/</span><a href="{{ url() }}#courses">{{ ui('all_courses') }}</a><span>/</span><span aria-current="page">{{ t(c.short) }}</span>
+      <a href="{{ url() }}">{{ site.name if lang == 'en' else site.name_ar }}</a><span>/</span><a href="{{ url() }}#courses">{{ ui('all_courses') }}</a><span>/</span><span aria-current="page">{{ t(c.short) }}</span>
     </nav>
     <div class="course-hero-grid">
       <div>

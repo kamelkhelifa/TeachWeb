@@ -224,6 +224,8 @@ pre { font: 0.86rem/1.6 var(--mono); background: var(--surface-2); border: 1px s
 .brand-mark .ic { width: 26px; height: 26px; stroke-width: 2.2; }
 .brand-name { font: 500 1.28rem/1 var(--serif); letter-spacing: -0.02em; direction: ltr; }
 .brand-name b { font-weight: 700; font-style: italic; color: var(--accent); }
+.brand-name.brand-ar { direction: rtl; font: 600 1.12rem/1.2 "Noto Kufi Arabic", "IBM Plex Sans Arabic", sans-serif; letter-spacing: 0; }
+.brand-name.brand-ar b { font-style: normal; }
 .main-nav { display: flex; gap: 4px; margin-inline-start: 12px; }
 .main-nav a { color: var(--ink-2); font-weight: 500; font-size: 0.94rem; padding: 8px 12px; border-radius: 10px; text-decoration: none; }
 .main-nav a:hover, .main-nav a[aria-current] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }

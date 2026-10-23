@@ -181,7 +181,7 @@ glossary_title:   { en: "Physics glossary", ar: "معجم الفيزياء" }
 glossary_lead:    { en: "Every key term from every course, in English, Arabic and French. Search it, filter it by course, or revise it as flashcards.", ar: "كل المصطلحات الأساسية في جميع المقررات بالإنجليزية والعربية والفرنسية. ابحث فيها أو صفِّها حسب المقرر أو راجعها على شكل بطاقات." }
 
 # Guide page
-guide_title:      { en: "How TeachWeb works", ar: "كيف يعمل تيتش ويب" }
+guide_title:      { en: "How TeachWeb works", ar: "كيف يعمل الموقع التعليمي" }
 guide_lead:       { en: "A short guide for students and teachers: how each course page is organised, the quality framework behind it, and how to study with it.", ar: "دليل موجز للطلبة والأساتذة: كيف تُنظَّم صفحة المقرر، وإطار الجودة الذي تقوم عليه، وكيف تدرس بها." }
 
 # Footer

@@ -1,4 +1,4 @@
-# TeachWeb · تيتش ويب
+# TeachWeb · الموقع التعليمي
 
 Open physics courseware in **English and Arabic**. Every course is a complete, quality-assured syllabus with the same structure and the same interactive tools.
 
