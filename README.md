@@ -4,7 +4,7 @@ Open physics courseware in **English and Arabic**. Every course is a complete, q
 
 - **English:** `https://kamelkhelifa.github.io/TeachWeb/`
 - **العربية:** `https://kamelkhelifa.github.io/TeachWeb/ar/`
-- Personal homepage: [kamelkhelifa.github.io/home](https://kamelkhelifa.github.io/home/)
+- Personal homepage: [kamelkhelifa.github.io/Home](https://kamelkhelifa.github.io/Home/)
 
 The site has **two parts**, each with its own look:
 
@@ -67,6 +67,12 @@ python build.py --drafts --serve # also shows the unpublished Part 2 drafts (nev
 1. In the repository: **Settings → Pages → Build and deployment → Source → GitHub Actions**.
 2. Push to `main`. The workflow `.github/workflows/pages.yml` validates, builds and deploys.
 3. For a custom domain, add a `CNAME` file and update `base_url` in `data/site.yml`.
+
+## Launch switch
+
+`launched: false` in `data/site.yml` keeps the site out of search engines: every page carries
+`<meta name="robots" content="noindex, nofollow">` and `robots.txt` disallows all crawlers.
+At launch, set it to `true`. The noindex tag is then removed, and `robots.txt` allows crawling and points to the sitemap.
 
 ## Files from the old WordPress site
 

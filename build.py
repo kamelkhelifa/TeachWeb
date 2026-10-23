@@ -327,7 +327,10 @@ def build(drafts=False):
     urls = "".join(f"  <url><loc>{base}/{p}</loc></url>\n" for p in written)
     (OUT / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
-    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")
+    if SITE.get("launched"):
+        (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")
+    else:  # not launched yet: keep the site out of search engines
+        (OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
     print(f"Built {len(written)} pages · {stats}" + (" · DRAFTS INCLUDED" if drafts else ""))
 
 

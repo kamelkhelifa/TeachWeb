@@ -11,8 +11,12 @@ tagline:
   ar: "مقررات الفيزياء كاملةً ومفتوحة: المفردات، والخطة الأسبوعية، والمذكرات، والاختبارات، والتقويم الذاتي، والمختبرات التفاعلية، بالعربية والإنجليزية."
 
 # Personal homepage (shown in the header and footer)
-home_url: https://kamelkhelifa.github.io/home/
-home_url_ar: https://kamelkhelifa.github.io/home/ar/
+home_url: https://kamelkhelifa.github.io/Home/
+home_url_ar: https://kamelkhelifa.github.io/Home/ar/
+
+# Launch switch: while false, search engines are asked not to index the site
+# (noindex on every page, robots.txt disallows everything). Set to true at launch.
+launched: false
 
 # Public address of this site (used for canonical links and the sitemap)
 base_url: https://kamelkhelifa.github.io/TeachWeb

@@ -11,6 +11,7 @@
   <title>{% block title %}{{ site_name }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ t(site.tagline) | plain }}{% endblock %}">
   <meta name="color-scheme" content="light dark">
+  {% if not site.launched %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <link rel="canonical" href="{{ site.base_url }}/{{ page_path }}">
   {% for l, href, cur in alts if not cur %}<link rel="alternate" hreflang="{{ l }}" href="{{ href }}">
   {% endfor %}
