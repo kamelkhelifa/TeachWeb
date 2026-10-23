@@ -4,6 +4,7 @@ codes: [PHYS 302]
 title: { en: Classical Mechanics II, ar: الميكانيكا الكلاسيكية 2 }
 level: { en: Semester 4, ar: الفصل الدراسي الرابع }
 area: mechanics
+companion: classical-mechanics-2   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture & lab, ar: محاضرات ومختبر }
 taught:
   - { years: 2017–2018, code: PHYS 302, lang: en }

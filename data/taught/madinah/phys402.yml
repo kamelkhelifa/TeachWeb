@@ -4,6 +4,7 @@ codes: [PHYS 402]
 title: { en: Quantum Mechanics II, ar: ميكانيكا الكم 2 }
 level: { en: "Undergraduate · Level 6", ar: "مرحلة البكالوريوس · المستوى السادس" }
 area: quantum
+companion: quantum-mechanics-2   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة }
 taught:
   - { years: 2019–2020, code: PHYS 402, lang: en }

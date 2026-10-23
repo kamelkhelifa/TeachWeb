@@ -7,6 +7,7 @@ level:
   ar: "ليسانس (ل3) · الفصل 4"
   fr: "Licence 3 (L3) · Semestre 4"
 area: quantum
+companion: quantum-mechanics-1   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة, fr: Cours et travaux dirigés }
 taught:
   - { years: 2020–2024, code: UEF223, lang: ar }

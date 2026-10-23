@@ -468,7 +468,7 @@
         paint();
       });
     });
-    var front = TW.lang === 'ar' ? 'ar' : 'en', back = TW.lang === 'ar' ? 'en' : 'ar';
+    var front = TW.lang === 'ar' ? 'ar' : TW.lang === 'fr' ? 'fr' : 'en', back = TW.lang === 'ar' ? 'en' : 'ar';
     var LBL = { en: 'English', ar: 'العربية', fr: 'Français' };
     function paint() {
       if (!card) return;
@@ -476,10 +476,12 @@
       var r = deck[idx];
       if (!r) { $('[data-flash-front]', g).textContent = '—'; $('[data-flash-pos]', g).textContent = '0 / 0'; return; }
       var f = $('[data-flash-front]', g), bk = $('[data-flash-back]', g);
-      f.textContent = r.dataset[front]; f.lang = front;
-      bk.textContent = r.dataset[back] + (r.dataset.fr ? '  ·  ' + r.dataset.fr : ''); bk.lang = back;
-      $('[data-flash-lang-front]', g).textContent = LBL[front];
-      $('[data-flash-lang-back]', g).textContent = LBL[back] + (r.dataset.fr ? ' · ' + LBL.fr : '');
+      var fl = r.dataset[front] ? front : 'en';
+      f.textContent = r.dataset[fl]; f.lang = fl;
+      var extra = fl === 'fr' ? r.dataset.en : r.dataset.fr;
+      bk.textContent = r.dataset[back] + (extra ? '  ·  ' + extra : ''); bk.lang = back;
+      $('[data-flash-lang-front]', g).textContent = LBL[fl];
+      $('[data-flash-lang-back]', g).textContent = LBL[back] + (extra ? ' · ' + LBL[fl === 'fr' ? 'en' : 'fr'] : '');
       var def = $('.g-def', r); $('[data-flash-def]', g).innerHTML = def ? def.innerHTML : '';
       $('[data-flash-pos]', g).textContent = (idx + 1) + ' / ' + deck.length;
     }

@@ -7,6 +7,7 @@ level:
   ar: "ماستر الفيزياء النووية · السنة الأولى (M1) · الفصل الدراسي S7"
   fr: "Master Physique nucléaire · 1re année (M1) · Semestre S7"
 area: modern
+companion: particle-physics   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture, ar: محاضرات, fr: Cours }
 taught:
   - { years: 2013–2014, code: PHYS7001, lang: en }

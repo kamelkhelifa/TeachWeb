@@ -7,6 +7,7 @@ level:
   ar: "السنة الأولى · الفصل الدراسي S1 · ميدان MI (UEF 11)"
   fr: "1re année · Semestre S1 · Domaine MI (UEF 11)"
 area: mechanics
+companion: general-physics-1   # Part 2 course whose interactive lab and glossary this page shows
 kind:
   en: "Lecture, tutorials & lab"
   ar: "محاضرات وأعمال موجهة وتطبيقية"

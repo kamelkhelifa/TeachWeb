@@ -7,6 +7,7 @@ level:
   ar: "الفصل الرابع · علوم المادة (SM) · Phys4"
   fr: "Semestre 4 · Sciences de la Matière (SM) · Phys4"
 area: electromagnetism
+companion: electromagnetism   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lectures & tutorials, ar: محاضرات وأعمال موجهة, fr: Cours et travaux dirigés }
 taught:
   - { years: 2015–2016, code: UEF224, lang: fr }

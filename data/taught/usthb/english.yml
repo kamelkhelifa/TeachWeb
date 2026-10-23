@@ -7,6 +7,7 @@ level:
   ar: "ليسانس فيزياء (كهرباء) · السنة الثانية · الفصل الدراسي S4"
   fr: "Licence de physique (électricité) · 2e année · Semestre S4"
 area: skills
+companion: english-for-physicists   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture, ar: محاضرات, fr: Cours }
 taught:
   - { years: 2012–2013, lang: en }

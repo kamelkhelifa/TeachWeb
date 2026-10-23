@@ -6,6 +6,7 @@ tagline:
   en: "The laboratory companion of PHYS 193: measuring fields, circuits and induction, and reporting results with their uncertainties."
   ar: المختبر المرافق للمقرر PHYS 193، لقياس المجالات والدارات والحث، وعرض النتائج مع ارتياباتها.
 area: laboratory
+companion: electricity-lab   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: "Laboratory", ar: "مختبر" }
 taught:
   - { years: Fall 2026, code: PHYS 194, lang: en }

@@ -4,6 +4,7 @@ codes: [PHYS 352]
 title: { en: Mathematical Physics II, ar: الفيزياء الرياضية 2 }
 level: { en: "Undergraduate · Level 5", ar: "مرحلة البكالوريوس · المستوى الخامس" }
 area: mathematical
+companion: mathematical-physics-2   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة }
 taught:
   - { years: 2019–2020, code: PHYS 352, lang: en }

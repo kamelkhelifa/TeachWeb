@@ -111,7 +111,7 @@ def load_open(drafts):
 ROMAN = "I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX".split()
 
 
-def load_taught():
+def load_taught(companions):
     unis = []
     for u in UNIS:
         u = dict(u)
@@ -121,6 +121,11 @@ def load_taught():
             c = load_yaml_course(p)
             if c is None:
                 continue
+            # the interactive lab and the glossary come from the companion Part 2 course (published or not)
+            comp = companions.get(c.get("companion"))
+            if comp:
+                c.setdefault("sims", list(comp.get("sims") or []))
+                c.setdefault("glossary", comp.get("glossary") or [])
             common(c)
             c["branch"] = "taught"
             c["uni"] = u
@@ -256,7 +261,7 @@ def glossary_all(courses):
 
 def build(drafts=False):
     open_courses, by_slug = load_open(drafts)
-    unis = load_taught()
+    unis = load_taught({c["slug"]: c for c in load_open(True)[0]})
     taught_courses = [c for u in unis for c in u["courses"]]
     gloss = glossary_all(open_courses)
 

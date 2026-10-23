@@ -7,6 +7,7 @@ level:
   ar: "السنة الأولى · الفصل الدراسي S2 · ميدان MI (UEF 21)"
   fr: "1re année · Semestre S2 · Domaine MI (UEF 21)"
 area: laboratory
+companion: electricity-lab   # Part 2 course whose interactive lab and glossary this page shows
 kind:
   en: "Lab sessions (TP) and tutorials (TD)"
   ar: "أعمال تطبيقية وأعمال موجهة"

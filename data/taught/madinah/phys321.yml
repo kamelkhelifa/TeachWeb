@@ -4,6 +4,7 @@ codes: [PHYS 321, فيز 321]
 title: { en: Thermal & Statistical Physics, ar: الفيزياء الحرارية والإحصائية }
 level: { en: "Undergraduate · Level 5", ar: "مرحلة البكالوريوس · المستوى الخامس" }
 area: thermal
+companion: thermal-statistical-physics   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture, ar: محاضرات }
 taught:
   - { years: 2019–2020, code: PHYS 321, lang: en }

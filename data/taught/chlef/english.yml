@@ -7,6 +7,7 @@ level:
   ar: "ليسانس · السنتان الثانية والثالثة (S3: الإنجليزية 3 · S5: الإنجليزية 5) · علوم المادة / فيزياء"
   fr: "Licence · 2e et 3e années (S3 : Anglais 3 · S5 : Anglais 5) · Sciences de la Matière / Physique"
 area: skills
+companion: english-for-physicists   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: "Lectures (1 session/week, no tutorials)", ar: "محاضرات (حصة واحدة في الأسبوع، دون أعمال موجهة)", fr: "Cours (1 séance/semaine, sans TD)" }
 taught:
   - { years: 2015–2016, code: UET121, lang: en }

@@ -4,6 +4,7 @@ codes: [PHYS 102]
 title: { en: General Physics II, ar: الفيزياء العامة 2 }
 level: { en: Semester 2, ar: الفصل الدراسي الثاني }
 area: electromagnetism
+companion: general-physics-2   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture, ar: محاضرات }
 taught:
   - { years: 2017–2018, code: PHYS 102, lang: en }

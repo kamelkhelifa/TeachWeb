@@ -214,3 +214,7 @@ lang_ar:               { en: "Arabic", ar: "العربية", fr: "Arabe" }
 lang_fr:               { en: "French", ar: "الفرنسية", fr: "Français" }
 break:                 { en: "Break", ar: "عطلة", fr: "Vacances" }
 drafts_banner:         { en: "Draft preview: this course is not published.", ar: "معاينة مسودة: هذا المقرر غير منشور.", fr: "Aperçu de brouillon : ce cours n'est pas publié." }
+placeholder_problems:  { en: "Worked problems for this course have not been published yet.", ar: "لم تُنشر بعد مسائل محلولة لهذا المقرر.", fr: "Les problèmes corrigés de ce cours ne sont pas encore publiés." }
+placeholder_quizzes:   { en: "Self-check quizzes for this course have not been published yet.", ar: "لم تُنشر بعد أسئلة تقويم ذاتي لهذا المقرر.", fr: "Les quiz d'auto-évaluation de ce cours ne sont pas encore publiés." }
+placeholder_lab:       { en: "No interactive lab has been published for this course yet.", ar: "لم يُنشر بعد مختبر تفاعلي لهذا المقرر.", fr: "Aucun laboratoire interactif n'est encore publié pour ce cours." }
+placeholder_glossary:  { en: "The glossary for this course has not been published yet.", ar: "لم يُنشر بعد معجم هذا المقرر.", fr: "Le glossaire de ce cours n'est pas encore publié." }

@@ -4,6 +4,7 @@ codes: [PHYS 101]
 title: { en: General Physics I, ar: الفيزياء العامة 1 }
 level: { en: Semester 1, ar: الفصل الدراسي الأول }
 area: mechanics
+companion: general-physics-1   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture, ar: محاضرات }
 taught:
   - { years: 2016–2017, code: PHYS 101, lang: en }

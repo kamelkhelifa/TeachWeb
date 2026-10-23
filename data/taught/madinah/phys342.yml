@@ -4,6 +4,7 @@ codes: [PHYS 342]
 title: { en: Modern Physics II, ar: الفيزياء الحديثة 2 }
 level: { en: Semester 3, ar: الفصل الدراسي الثالث }
 area: modern
+companion: modern-physics-2   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture, ar: محاضرات }
 taught:
   - { years: 2017–2018, code: PHYS 342, lang: en }

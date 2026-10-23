@@ -6,6 +6,7 @@ tagline:
   en: "Calculus-based electricity and magnetism for engineers: from Coulomb's law to electromagnetic waves."
   ar: الكهرباء والمغناطيسية المعتمدة على التفاضل والتكامل لطلبة الهندسة، من قانون كولوم إلى الأمواج الكهرومغناطيسية.
 area: electromagnetism
+companion: general-physics-2   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: "Lecture & recitation", ar: "محاضرات وحصص تطبيقية" }
 taught:
   - { years: Fall 2026, code: PHYS 193, lang: en }

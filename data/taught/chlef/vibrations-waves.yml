@@ -7,6 +7,7 @@ level:
   ar: "الفصل الثالث · علوم المادة (SM)"
   fr: "Semestre 3 · Sciences de la Matière (SM)"
 area: waves
+companion: vibrations-waves   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lectures & tutorials, ar: محاضرات وأعمال موجهة, fr: Cours et travaux dirigés }
 taught:
   - { years: 2015–2016, code: UEF123, lang: fr }

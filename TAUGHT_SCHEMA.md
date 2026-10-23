@@ -29,6 +29,7 @@ title: { en: Quantum Mechanics I, ar: ميكانيكا الكم 1 }          # +
 tagline: { en: …, ar: … }             # optional, one sentence
 level: { en: "Level 7 · 4th year", ar: "المستوى السابع · السنة الرابعة" }   # as defined by that university; optional
 area: quantum                         # same keys as Part 2 (mechanics, electromagnetism, waves, thermal, quantum, modern, mathematical, computational, laboratory, skills)
+companion: quantum-mechanics-1        # Part 2 course (data/open/) whose interactive lab and glossary are shown here
 kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة }       # optional
 taught:                               # every time it was taught here (language of instruction!)
   - { years: 2019–2020, code: PHYS 401, lang: en }

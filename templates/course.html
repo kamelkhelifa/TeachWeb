@@ -6,9 +6,8 @@
 {% block description %}{% if c.tagline %}{{ t(c.tagline) | plain }}{% elif T %}{{ t(c.title) | plain }} · {{ t(c.uni.name) | plain }}{% endif %}{% endblock %}
 {% set type_icon = {'notes':'notes','slides':'slides','summary':'summary','problems':'problems','solutions':'solutions','video':'video','sim':'lab','lab':'lab','formula':'formula','code':'code','reading':'library','link':'link'} %}
 {% set a_icon = {'quiz':'quizzes','homework':'problems','midterm':'exams','final':'exams','lab':'lab','project':'layers','presentation':'users','participation':'users','report':'notes','oral':'users','portfolio':'materials'} %}
-{% set sections = [('overview','overview'), ('outcomes','outcomes'), ('schedule','schedule'), ('assessment','assessment'), ('materials','materials'), ('exams','exams')]
-   + ([('problems','problems')] if c.problems else []) + ([('quizzes','quizzes')] if c.quizzes else [])
-   + ([('lab','lab')] if c.sims else []) + [('library','library')] + ([('glossary','glossary')] if c.glossary else []) %}
+{% set sections = [('overview','overview'), ('outcomes','outcomes'), ('schedule','schedule'), ('assessment','assessment'), ('materials','materials'), ('exams','exams'),
+   ('problems','problems'), ('quizzes','quizzes'), ('lab','lab'), ('library','library'), ('glossary','glossary')] %}
 {% set dp = 'tsec_' if T else 'sec_' %}
 {% block main %}
 <div class="course {{ 'course-taught' if T else 'course-open' }}" style="--hue: {{ c.hue }}" data-course="{{ c.key }}" data-weeks="{{ (c.schedule or []) | length }}">
@@ -368,11 +367,10 @@
     {% endif %}
   </section>
 
-  {% set n = namespace(i=6) %}
   {# ───────── 7. Worked problems ───────── #}
-  {% if c.problems %}{% set n.i = n.i + 1 %}
   <section class="sec" id="problems" aria-labelledby="problems-title">
-    {{ section_head('problems', 'problems', ui, n.i) }}
+    {{ section_head('problems', 'problems', ui, 7) }}
+    {% if not c.problems %}{{ placeholder(ui, icon, 'placeholder_problems') }}{% else %}
     <ol class="problems">
       {% for p in c.problems %}
       <li class="problem" data-problem>
@@ -391,13 +389,13 @@
       </li>
       {% endfor %}
     </ol>
+    {% endif %}
   </section>
-  {% endif %}
 
   {# ───────── 8. Quizzes ───────── #}
-  {% if c.quizzes %}{% set n.i = n.i + 1 %}
   <section class="sec" id="quizzes" aria-labelledby="quizzes-title">
-    {{ section_head('quizzes', 'quizzes', ui, n.i) }}
+    {{ section_head('quizzes', 'quizzes', ui, 8) }}
+    {% if not c.quizzes %}{{ placeholder(ui, icon, 'placeholder_quizzes') }}{% else %}
     <div class="quiz-tabs" role="tablist">
       {% for qz in c.quizzes %}
       <button role="tab" type="button" class="quiz-tab{% if loop.first %} is-on{% endif %}" aria-selected="{{ 'true' if loop.first else 'false' }}" data-quiz-tab="{{ loop.index0 }}">
@@ -430,22 +428,19 @@
       </div>
     </div>
     {% endfor %}
+    {% endif %}
   </section>
-  {% endif %}
 
   {# ───────── 9. Interactive lab ───────── #}
-  {% if c.sims %}{% set n.i = n.i + 1 %}
   <section class="sec" id="lab" aria-labelledby="lab-title">
-    {{ section_head('lab', 'lab', ui, n.i) }}
-    {% for s in c.sims %}<div class="sim" data-sim="{{ s }}"></div>{% endfor %}
+    {{ section_head('lab', 'lab', ui, 9) }}
+    {% for s in c.sims %}<div class="sim" data-sim="{{ s }}"></div>{% else %}{{ placeholder(ui, icon, 'placeholder_lab') }}{% endfor %}
   </section>
-  {% endif %}
 
   {# ───────── 10. Library ───────── #}
-  {% set n.i = n.i + 1 %}
   {% set tb = c.textbooks or {} %}
   <section class="sec" id="library" aria-labelledby="library-title">
-    {{ section_head('library', 'library', ui, n.i, dp) }}
+    {{ section_head('library', 'library', ui, 10, dp) }}
     {% if not (tb.required or tb.recommended or tb.online) %}{{ placeholder(ui, icon) }}{% endif %}
     {% if tb.required %}
     <h3 class="sub">{{ ui('required') }}</h3>
@@ -477,13 +472,13 @@
   </section>
 
   {# ───────── 11. Glossary ───────── #}
-  {% if c.glossary %}{% set n.i = n.i + 1 %}
   <section class="sec" id="glossary" aria-labelledby="glossary-title">
-    {{ section_head('glossary', 'glossary', ui, n.i) }}
+    {{ section_head('glossary', 'glossary', ui, 11) }}
+    {% if c.glossary %}
     {% set terms = c.glossary %}
     {% include "_glossary.html" %}
+    {% else %}{{ placeholder(ui, icon, 'placeholder_glossary') }}{% endif %}
   </section>
-  {% endif %}
 
   </div>
 </div>

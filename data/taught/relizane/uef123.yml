@@ -7,6 +7,7 @@ level:
   ar: "ليسانس 2 (ل2) · الفصل 3 · علوم المادة / فيزياء"
   fr: "Licence 2 (L2) · Semestre 3 · Sciences de la matière / Physique"
 area: waves
+companion: vibrations-waves   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: "Lecture, tutorials & lab", ar: محاضرات وأعمال موجهة وتطبيقية, fr: "Cours, travaux dirigés et travaux pratiques" }
 taught:
   - { years: 2023–2025, code: UEF123, lang: en }

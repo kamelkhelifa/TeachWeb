@@ -4,6 +4,7 @@ codes: [PHYS 390]
 title: { en: Training, ar: التدريب الميداني }
 level: { en: "Undergraduate · Level 7 or 8", ar: "مرحلة البكالوريوس · المستوى السابع أو الثامن" }
 area: skills
+companion: physics-training   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Supervised training, ar: تدريب مُشرَف عليه }
 taught:
   - { years: 2018–2019, code: PHYS 390, lang: en }

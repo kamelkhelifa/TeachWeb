@@ -5,6 +5,7 @@ title: { en: Quantum Mechanics II (MIT-based), ar: ميكانيكا الكم 2 (
 tagline: { en: A version of PHYS 402 built on MIT's 8.05 Quantum Physics II., ar: نسخة من المقرر PHYS 402 مبنية على مقرر MIT 8.05 فيزياء الكم 2. }
 level: { en: "Undergraduate · Level 6", ar: "مرحلة البكالوريوس · المستوى السادس" }
 area: quantum
+companion: quantum-mechanics-2   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة }
 taught:
   - { years: 2018–2019, code: PHYS 402, lang: en }

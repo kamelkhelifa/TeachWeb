@@ -7,6 +7,7 @@ level:
   ar: "ليسانس (ل2) · الفصل 3"
   fr: "Licence 2 (L2) · Semestre 3"
 area: computational
+companion: numerical-methods   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture & computer lab, ar: محاضرات وأعمال تطبيقية, fr: Cours et travaux pratiques sur ordinateur }
 taught:
   - { years: 2020–2021, code: وت ن 123, lang: ar }

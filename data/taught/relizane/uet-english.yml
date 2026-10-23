@@ -7,6 +7,7 @@ level:
   ar: "ليسانس 2 وليسانس 3 وماستر 1 (ل2، ل3، م1)"
   fr: "Licence 2, Licence 3 et Master 1 (L2, L3, M1)"
 area: skills
+companion: english-for-physicists   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture, ar: محاضرات, fr: Cours magistral }
 taught:
   - { years: 2021–2024, code: UET, lang: en }

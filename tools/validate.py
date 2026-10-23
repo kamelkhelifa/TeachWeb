@@ -316,6 +316,8 @@ def validate_taught(path, unis):
             r.err(k, "required field missing")
     if c.get("area") not in AREAS:
         r.err("area", f"must be one of {sorted(AREAS)}")
+    if c.get("companion") and not (COURSES / f"{c['companion']}.yml").exists():
+        r.err("companion", f"no Part 2 course data/open/{c['companion']}.yml")
     for p, s in walk_strings(c):
         if CONTROL.search(s):
             r.err(p, "control character found: a LaTeX backslash inside double quotes?")

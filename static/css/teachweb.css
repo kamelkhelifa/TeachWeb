@@ -1048,3 +1048,7 @@ code { white-space: nowrap; }
 .table-wrap { contain: paint; }
 .brand-name { white-space: nowrap; }
 @media (max-width: 420px) { .brand-name.brand-ar { font-size: 0.95rem; } .lang-seg a, .lang-seg span { min-width: 28px; padding: 0 5px; } }
+.sim-body { grid-template-columns: minmax(0, 1fr) minmax(0, 270px); }
+.sim-controls { min-width: 0; }
+.ctl select { width: 100%; min-width: 0; }
+@media (max-width: 860px) { .sim-body { grid-template-columns: minmax(0, 1fr); } }
