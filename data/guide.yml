@@ -2,21 +2,13 @@
 
 intro:
   en: |
-    TeachWeb has two parts.
+    TeachWeb hosts polished, university-independent physics courses. Every course page has the same eleven sections, in the same order, so that once you know one course you know them all: a complete syllabus with outcomes mapped to assessment, a week-by-week plan, notes, worked problems, self-check quizzes, interactive labs and a glossary. Courses are added one by one.
 
-    <strong>Part 1 · Courses taught</strong> is the record of every course as it was taught at each university, with that university's own syllabus, weekly plan, assessment scheme, language of instruction and the materials prepared for it. The current university comes first. Courses taught in Algeria are also available in French. Where a syllabus did not specify something, the page says so instead of guessing.
-
-    <strong>Part 2 · Open courses</strong> holds polished courses that do not depend on any university: a complete syllabus with outcomes mapped to assessment, a week-by-week plan, notes, worked problems, self-check quizzes, interactive labs and a glossary. Courses are added one by one.
-
-    Both parts use the same course structure, so once you know one course page you know them all. Everything is available in English and in Arabic.
+    Everything is available in English and in Arabic; switch at any time with the language button at the top of the page. The courses as taught at each university, with their own syllabi, are on the personal homepage.
   ar: |
-    يتكوّن الموقع التعليمي من قسمين.
+    يستضيف الموقع التعليمي مقررات فيزياء منقّحة مستقلة عن أي جامعة. لكل صفحة مقرر الأقسام الأحد عشر نفسها وبالترتيب نفسه، فإذا عرفت مقررًا واحدًا عرفتها كلها: مفردات كاملة بمخرجات مرتبطة بالتقويم، وخطة أسبوعية، ومذكرات، ومسائل محلولة، وتقويم ذاتي، ومختبرات تفاعلية، ومعجم. تُضاف المقررات تباعًا.
 
-    <strong>القسم الأول · المقررات المدرَّسة</strong>: سجلّ كل مقرر كما دُرِّس في كل جامعة، بمفرداتها الخاصة وخطتها الأسبوعية ونظام تقويمها ولغة تدريسها والمواد المعدّة لها. تأتي الجامعة الحالية أولًا. والمقررات المدرَّسة في الجزائر متاحة بالفرنسية أيضًا. وحيث لم تحدّد المفردات أمرًا ما، تشير الصفحة إلى ذلك بدل التخمين.
-
-    <strong>القسم الثاني · المقررات المفتوحة</strong>: مقررات منقّحة مستقلة عن أي جامعة، فيها مفردات كاملة بمخرجات مرتبطة بالتقويم، وخطة أسبوعية، ومذكرات، ومسائل محلولة، وتقويم ذاتي، ومختبرات تفاعلية، ومعجم. تُضاف المقررات تباعًا.
-
-    يعتمد القسمان بنية المقرر نفسها، فإذا عرفت صفحة مقرر واحدة عرفتها كلها. وكل المحتوى متاح بالعربية والإنجليزية.
+    كل المحتوى متاح بالعربية والإنجليزية، ويمكنك التبديل بينهما في أي لحظة بزرّ اللغة أعلى الصفحة. أما المقررات كما دُرِّست في كل جامعة بمفرداتها الخاصة، فهي على الصفحة الشخصية.
 
 quality_title: { en: The quality framework, ar: إطار الجودة }
 quality:

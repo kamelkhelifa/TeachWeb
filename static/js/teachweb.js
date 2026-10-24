@@ -194,19 +194,6 @@
     $$('[data-filter-level]').forEach(function (b) { b.addEventListener('click', function () { fLevel = b.dataset.filterLevel; $$('[data-filter-level]').forEach(function (x) { x.classList.toggle('is-on', x === b); }); apply(); }); });
   }
 
-  // ---------- Part 1 index: filter by language of instruction ----------
-  var tf = $('[data-lang-filter]');
-  if (tf) {
-    $$('[data-taught-lang]', tf).forEach(function (b) {
-      b.addEventListener('click', function () {
-        var l = b.dataset.taughtLang;
-        $$('[data-taught-lang]', tf).forEach(function (x) { x.classList.toggle('is-on', x === b); });
-        $$('.taught-card').forEach(function (c) { c.classList.toggle('is-hidden', !!l && (' ' + c.dataset.langs + ' ').indexOf(' ' + l + ' ') < 0); });
-        $$('.uni-section').forEach(function (sec) { sec.hidden = !$$('.taught-card:not(.is-hidden)', sec).length; });
-      });
-    });
-  }
-
   // ---------- home: learning path ----------
   var map = $('[data-path-map]');
   if (map) {

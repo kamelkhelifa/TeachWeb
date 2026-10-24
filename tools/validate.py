@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
-"""Check every course file.
+"""Check every course file in data/open/ against COURSE_SCHEMA.md.
 
-Part 2 (open courses):  data/open/<slug>.yml            → COURSE_SCHEMA.md
-Part 1 (courses taught): data/taught/<university>/<slug>.yml → TAUGHT_SCHEMA.md
-
-Usage:  python tools/validate.py                 # everything
-        python tools/validate.py slug ...        # selected Part 2 courses
-        python tools/validate.py madinah/phys101 # selected Part 1 courses
+Usage:  python tools/validate.py            # all courses
+        python tools/validate.py slug ...   # selected courses
 Exit code 1 if any error was found. Warnings never fail.
 """
 import re
@@ -17,7 +13,6 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 COURSES = ROOT / "data" / "open"
-TAUGHT = ROOT / "data" / "taught"
 
 AREAS = {"mechanics", "electromagnetism", "waves", "thermal", "quantum", "modern",
          "mathematical", "computational", "laboratory", "skills"}
@@ -280,115 +275,16 @@ def validate(path, slugs):
     return r
 
 
-def check_t(r, where, v, fr, required=True):
-    """Text field of a Part 1 course: en + ar, and fr for courses taught in Algeria."""
-    if v is None:
-        if required:
-            r.err(where, "missing")
-        return
-    if not isinstance(v, dict) or "en" not in v or "ar" not in v:
-        r.err(where, "must be { en: …, ar: … }" + (" + fr" if fr else ""))
-        return
-    extra = set(v) - {"en", "ar", "fr"}
-    if extra:
-        r.err(where, f"unexpected keys {sorted(map(str, extra))}: an unquoted comma or colon? Quote the text")
-    for lang in ("en", "ar") + (("fr",) if fr else ()):
-        if v.get(lang) in (None, "", []):
-            r.err(f"{where}.{lang}", "missing or empty")
-
-
-def validate_taught(path, unis):
-    r = Report(f"{path.parent.name}/{path.name}")
-    try:
-        c = yaml.safe_load(path.read_text(encoding="utf-8"))
-    except yaml.YAMLError as e:
-        r.err("yaml", str(e).replace("\n", " "))
-        return r
-    uni = unis.get(path.parent.name)
-    if uni is None:
-        r.err("folder", f"{path.parent.name!r} is not an id in data/universities.yml")
-        return r
-    fr = bool(uni.get("french"))
-    if c.get("slug") != path.stem:
-        r.err("slug", f"must equal file name ({path.stem})")
-    for k in ("order", "codes", "title", "taught", "area"):
-        if k not in c:
-            r.err(k, "required field missing")
-    if c.get("area") not in AREAS:
-        r.err("area", f"must be one of {sorted(AREAS)}")
-    if c.get("companion") and not (COURSES / f"{c['companion']}.yml").exists():
-        r.err("companion", f"no Part 2 course data/open/{c['companion']}.yml")
-    for p, s in walk_strings(c):
-        if CONTROL.search(s):
-            r.err(p, "control character found: a LaTeX backslash inside double quotes?")
-    check_t(r, "title", c.get("title"), fr)
-    for k in ("tagline", "level", "kind", "prerequisites", "corequisites", "description", "assessment_note"):
-        check_t(r, k, c.get(k), fr, required=False)
-    for i, t in enumerate(c.get("taught") or []):
-        if t.get("lang") not in LANGS:
-            r.err(f"taught[{i}]", "lang must be en, ar or fr")
-        if not t.get("years"):
-            r.err(f"taught[{i}]", "years missing")
-    for k in ("objectives", "methods", "safety"):
-        for i, o in enumerate(c.get(k) or []):
-            check_t(r, f"{k}[{i}]", o, fr)
-    for i, o in enumerate(c.get("outcomes") or []):
-        check_t(r, f"outcomes[{i}].text", o.get("text"), fr)
-        check_t(r, f"outcomes[{i}].assessed_by", o.get("assessed_by"), fr, required=False)
-    total = 0
-    for i, a in enumerate(c.get("assessment") or []):
-        if a.get("type") not in ASSESS:
-            r.err(f"assessment[{i}]", f"type must be one of {sorted(ASSESS)}")
-        check_t(r, f"assessment[{i}].title", a.get("title"), fr)
-        for k in ("detail", "when"):
-            check_t(r, f"assessment[{i}].{k}", a.get(k), fr, required=False)
-        if isinstance(a.get("weight"), (int, float)):
-            total += a["weight"]
-    if c.get("assessment") and abs(total - 100) > 1e-6:
-        r.warn("assessment", f"weights sum to {total}, not 100 (fine if that is what the syllabus says)")
-    for i, w in enumerate(c.get("schedule") or []):
-        check_t(r, f"schedule[{i}].title", w.get("title"), fr)
-        t = w.get("topics")
-        if t is not None:
-            check_t(r, f"schedule[{i}].topics", t, fr)
-            if isinstance(t, dict) and not all(isinstance(t.get(l), list) for l in t):
-                r.err(f"schedule[{i}].topics", "each language must be a list")
-        check_t(r, f"schedule[{i}].activity", w.get("activity"), fr, required=False)
-        if w.get("milestone") and w["milestone"] not in MILESTONES | {"break"}:
-            r.err(f"schedule[{i}]", "bad milestone")
-    for i, m in enumerate(c.get("materials") or []):
-        if m.get("type") not in MATERIALS:
-            r.err(f"materials[{i}]", "bad type")
-        if not str(m.get("url", "")).startswith("http"):
-            r.err(f"materials[{i}]", "url missing")
-        check_t(r, f"materials[{i}].title", m.get("title"), fr)
-    for i, e in enumerate(c.get("exams") or []):
-        check_t(r, f"exams[{i}].title", e.get("title"), fr)
-        if not (e.get("paper") or e.get("solution")):
-            r.err(f"exams[{i}]", "needs paper or solution url")
-    tb = c.get("textbooks") or {}
-    for i, o in enumerate(tb.get("online") or []):
-        check_t(r, f"textbooks.online[{i}].title", o.get("title"), fr)
-        check_t(r, f"textbooks.online[{i}].note", o.get("note"), fr, required=False)
-    for k in ("description", "outcomes", "schedule", "assessment", "textbooks"):
-        if not c.get(k):
-            r.warn(k, "not given: a placeholder will be shown")
-    return r
-
-
 def main(argv):
-    unis = {u["id"]: u for u in yaml.safe_load((ROOT / "data" / "universities.yml").read_text(encoding="utf-8"))}
-    open_files = sorted(p for p in COURSES.glob("*.yml") if not p.name.startswith("_"))
-    taught_files = sorted(TAUGHT.glob("*/*.yml"))
-    slugs = {p.stem for p in open_files}
+    files = sorted(p for p in COURSES.glob("*.yml") if not p.name.startswith("_"))
+    slugs = {p.stem for p in files}
     if argv:
-        open_files = [COURSES / f"{a.removesuffix('.yml')}.yml" for a in argv if "/" not in a]
-        taught_files = [TAUGHT / f"{a.removesuffix('.yml')}.yml" for a in argv if "/" in a]
+        files = [COURSES / f"{a.removesuffix('.yml')}.yml" for a in argv]
     bad = 0
-    reports = [validate(f, slugs) for f in open_files] + [validate_taught(f, unis) for f in taught_files]
-    for r in reports:
+    for f in files:
+        r = validate(f, slugs)
         status = "OK " if not r.errors else "ERR"
-        print(f"[{status}] {r.name}  ({len(r.errors)} errors, {len(r.warnings)} warnings)")
+        print(f"[{status}] {f.name}  ({len(r.errors)} errors, {len(r.warnings)} warnings)")
         for e in r.errors:
             print("    ✗", e)
         for w in r.warnings:

@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Build TeachWeb into _site/.
 
-The site has two parts:
-  Part 1 · Courses taught  data/taught/<university>/<course>.yml  (TAUGHT_SCHEMA.md)  → /taught/…
-  Part 2 · Open courses    data/open/<course>.yml                 (COURSE_SCHEMA.md)  → /open/…
-English pages live at the site root, Arabic under /ar/, and French under /fr/
-(French only for the courses taught in Algeria).
+TeachWeb hosts university-independent open courses: one file per course in data/open/
+(see COURSE_SCHEMA.md), published at /courses/<slug>/. Only courses with `published: true`
+are built. English pages live at the site root, Arabic pages under /ar/.
+(The courses as taught at each university live on the personal homepage.)
 
     python build.py              # build
     python build.py --drafts     # also build unpublished Part 2 courses (local preview only)
@@ -23,7 +22,7 @@ from markupsafe import Markup
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "_site"
-PREFIX = {"en": "", "ar": "ar/", "fr": "fr/"}
+PREFIX = {"en": "", "ar": "ar/"}
 
 
 def load(path):
@@ -33,7 +32,6 @@ def load(path):
 SITE = load(ROOT / "data" / "site.yml")
 UI = load(ROOT / "data" / "i18n.yml")
 GUIDE = load(ROOT / "data" / "guide.yml")
-UNIS = load(ROOT / "data" / "universities.yml")
 
 
 # ---------- cleaning course text ----------
@@ -94,7 +92,7 @@ def load_open(drafts):
         common(c)
         c["branch"] = "open"
         c["key"] = c["slug"]
-        c["path"] = f"open/{c['slug']}/"
+        c["path"] = f"courses/{c['slug']}/"
         c["n_questions"] = sum(len(q.get("questions", [])) for q in c.get("quizzes", []))
         c["n_terms"] = len(c.get("glossary", []))
         c["hue"] = SITE["areas"][c["area"]]["hue"]
@@ -106,45 +104,6 @@ def load_open(drafts):
         c["prerequisites"] = [s for s in c["prerequisites"] if s in by_slug]
         c["leads_to"] = [d["slug"] for d in courses if c["slug"] in d["prerequisites"]]
     return courses, by_slug
-
-
-ROMAN = "I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX".split()
-
-
-def load_taught(companions):
-    unis = []
-    for u in UNIS:
-        u = dict(u)
-        u["langs"] = ["en", "ar"] + (["fr"] if u.get("french") else [])
-        courses = []
-        for p in sorted((ROOT / "data" / "taught" / u["id"]).glob("*.yml")):
-            c = load_yaml_course(p)
-            if c is None:
-                continue
-            # the interactive lab and the glossary come from the companion Part 2 course (published or not)
-            comp = companions.get(c.get("companion"))
-            if comp:
-                c.setdefault("sims", list(comp.get("sims") or []))
-                c.setdefault("glossary", comp.get("glossary") or [])
-            common(c)
-            c["branch"] = "taught"
-            c["uni"] = u
-            c["key"] = f"{u['id']}/{c['slug']}"
-            c["path"] = f"taught/{u['id']}/{c['slug']}/"
-            c["hue"] = u["hue"]
-            c["langs"] = u["langs"]
-            c.setdefault("taught", [])
-            for i, w in enumerate(c.get("schedule") or []):
-                if w.get("week") in (None, ""):   # a chapter plan without weeks: number it I, II, III…
-                    w["week"] = ROMAN[i] if i < len(ROMAN) else str(i + 1)
-            c["taught_langs"] = sorted({t["lang"] for t in c["taught"] if t.get("lang")}, key=["en", "ar", "fr"].index)
-            c["prerequisites_text"] = c.pop("prerequisites", None)
-            courses.append(c)
-        courses.sort(key=lambda c: (c.get("order", 999), c["slug"]))
-        u["courses"] = courses
-        u["n_materials"] = sum(c["n_materials"] for c in courses)
-        unis.append(u)
-    return unis
 
 
 # ---------- text helpers ----------
@@ -183,7 +142,7 @@ def strip_tags(s):
 
 class Ctx:
     """Per-page helpers: language picking and relative URLs.
-    `path` is the language-independent page path, e.g. "taught/qu/phys193/" ("" for the hub)."""
+    `path` is the language-independent page path, e.g. "courses/quantum-mechanics-1/" ("" for the home page)."""
 
     def __init__(self, lang, path, langs, pages):
         self.lang, self.path, self.langs, self.pages = lang, path, langs, pages
@@ -215,35 +174,27 @@ class Ctx:
         return [(l, self.root + PREFIX[l] + self.path, l == self.lang) for l in self.langs]
 
 
-def search_index(lang, unis, open_courses):
+def search_index(lang, open_courses):
     def pick(v):
         if isinstance(v, dict):
             return strip_tags(v.get(lang) or v.get("en"))
         return strip_tags(v)
 
     items = []
-    for u in unis:
-        if lang not in u["langs"]:
-            continue
-        for c in u["courses"]:
-            base = c["path"]
-            items.append({"k": "course", "t": pick(c["title"]), "s": f"{pick(u['name'])} · {' / '.join(c.get('codes') or [])}",
-                          "x": " ".join(c.get("codes") or []), "u": base, "h": c["hue"]})
-            for w in c.get("schedule") or []:
-                topics = (w.get("topics") or {}).get(lang) or []
-                items.append({"k": "week", "t": pick(w["title"]), "s": f"{pick(c['title'])} · {pick(u['name'])}",
-                              "x": " ".join(strip_tags(x) for x in topics), "u": base + f"#week-{w['week']}", "h": c["hue"]})
-    if lang != "fr":
-        for c in open_courses:
-            base = c["path"]
-            items.append({"k": "course", "t": pick(c["title"]), "s": pick(c["tagline"]),
-                          "x": " ".join(c.get("codes", [])) + " " + pick(c["short"]), "u": base, "h": c["hue"]})
-            for tp in c.get("topics", []):
-                items.append({"k": "topic", "t": pick(tp), "s": pick(c["title"]), "u": base + "#overview", "h": c["hue"]})
-            for g in c.get("glossary", []):
-                other = g["ar"] if lang == "en" else g["en"]
-                items.append({"k": "term", "t": g[lang], "s": f"{other} · {pick(c['title'])}",
-                              "x": (g.get("fr") or ""), "u": base + "#glossary", "h": c["hue"]})
+    for c in open_courses:
+        base = c["path"]
+        items.append({"k": "course", "t": pick(c["title"]), "s": pick(c["tagline"]),
+                      "x": " ".join(c.get("codes", [])) + " " + pick(c["short"]), "u": base, "h": c["hue"]})
+        for tp in c.get("topics", []):
+            items.append({"k": "topic", "t": pick(tp), "s": pick(c["title"]), "u": base + "#overview", "h": c["hue"]})
+        for w in c.get("schedule", []):
+            items.append({"k": "week", "t": pick(w["title"]), "s": f"{pick(c['title'])} · {UI['week'][lang]} {w['week']}",
+                          "x": " ".join(strip_tags(x) for x in (w.get("topics") or {}).get(lang) or []),
+                          "u": base + f"#week-{w['week']}", "h": c["hue"]})
+        for g in c.get("glossary", []):
+            other = g["ar"] if lang == "en" else g["en"]
+            items.append({"k": "term", "t": g[lang], "s": f"{other} · {pick(c['title'])}",
+                          "x": (g.get("fr") or ""), "u": base + "#glossary", "h": c["hue"]})
     return items
 
 
@@ -261,8 +212,6 @@ def glossary_all(courses):
 
 def build(drafts=False):
     open_courses, by_slug = load_open(drafts)
-    unis = load_taught({c["slug"]: c for c in load_open(True)[0]})
-    taught_courses = [c for u in unis for c in u["courses"]]
     gloss = glossary_all(open_courses)
 
     if OUT.exists():
@@ -278,9 +227,6 @@ def build(drafts=False):
     env.filters["tojson_safe"] = lambda v: Markup(json.dumps(v, ensure_ascii=False).replace("</", "<\\/"))
 
     stats = {
-        "universities": len(unis),
-        "taught": len(taught_courses),
-        "taught_materials": sum(c["n_materials"] for c in taught_courses),
         "open": len(open_courses),
         "weeks": sum(len(c.get("schedule", [])) for c in open_courses),
         "materials": sum(c["n_materials"] for c in open_courses),
@@ -288,45 +234,40 @@ def build(drafts=False):
         "terms": len(gloss),
     }
 
-    # every page: (template, path, languages, extra context)
-    plan = [("hub.html", "", ["en", "ar"], {"page": "hub", "branch": "hub"}),
-            ("taught.html", "taught/", ["en", "ar", "fr"], {"page": "taught", "branch": "taught"}),
-            ("open.html", "open/", ["en", "ar"], {"page": "open", "branch": "open"}),
-            ("guide.html", "guide/", ["en", "ar"], {"page": "guide", "branch": "hub", "guide": GUIDE})]
+    # every page: (template, path, extra context); all pages exist in English and Arabic
+    plan = [("index.html", "", {"page": "home"}),
+            ("guide.html", "guide/", {"page": "guide", "guide": GUIDE})]
     if gloss:
-        plan.append(("glossary.html", "glossary/", ["en", "ar"],
-                     {"page": "glossary", "branch": "open", "terms": gloss, "gloss_courses": open_courses}))
-    for c in taught_courses:
-        plan.append(("course.html", c["path"], c["langs"], {"page": "course", "branch": "taught", "c": c}))
+        plan.append(("glossary.html", "glossary/", {"page": "glossary", "terms": gloss, "gloss_courses": open_courses}))
     for c in open_courses:
-        plan.append(("course.html", c["path"], c["langs"], {"page": "course", "branch": "open", "c": c}))
-    pages = {l: {p for _, p, langs, _ in plan if l in langs} for l in PREFIX}
+        plan.append(("course.html", c["path"], {"page": "course", "c": c}))
+    langs = list(PREFIX)
+    pages = {l: {p for _, p, _ in plan} for l in PREFIX}
 
     for lang in PREFIX:
         (OUT / "static" / "js" / f"search-{lang}.js").write_text(
-            "window.TW_INDEX=" + json.dumps(search_index(lang, unis, open_courses), ensure_ascii=False, separators=(",", ":")) + ";\n",
+            "window.TW_INDEX=" + json.dumps(search_index(lang, open_courses), ensure_ascii=False, separators=(",", ":")) + ";\n",
             encoding="utf-8")
 
+    common_ctx = dict(site=SITE, open_courses=open_courses, by_slug=by_slug, stats=stats, has_glossary=bool(gloss), drafts=drafts)
     written = []
-    for tpl, path, langs, kw in plan:
+    for tpl, path, kw in plan:
         for lang in langs:
             ctx = Ctx(lang, path, langs, pages)
-            shown_unis = [u for u in unis if lang in u["langs"]]
             html = env.get_template(tpl).render(
-                site=SITE, lang=lang, dir="rtl" if lang == "ar" else "ltr", t=ctx.t, ui=ctx.ui, url=ctx.url,
-                asset=ctx.asset, alts=ctx.alts(), page_path=PREFIX[lang] + path, path=path, pages=pages,
-                unis=shown_unis, all_unis=unis, open_courses=open_courses, by_slug=by_slug, stats=stats,
-                has_glossary=bool(gloss), drafts=drafts, **kw)
+                lang=lang, dir="rtl" if lang == "ar" else "ltr", t=ctx.t, ui=ctx.ui, url=ctx.url, asset=ctx.asset,
+                alts=ctx.alts(), page_path=PREFIX[lang] + path, home_teaching=ctx.t(SITE["home_teaching_url"]),
+                **common_ctx, **kw)
             dest = OUT / (PREFIX[lang] + path) / "index.html"
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(html, encoding="utf-8")
             written.append(PREFIX[lang] + path)
+    base_url = SITE["base_url"].rstrip("/") + "/"
     ctx = Ctx("en", "", ["en"], pages)
     (OUT / "404.html").write_text(env.get_template("404.html").render(
-        site=SITE, lang="en", dir="ltr", t=ctx.t, ui=ctx.ui, url=lambda p="": SITE["base_url"].rstrip("/") + "/" + p,
-        asset=lambda p: SITE["base_url"].rstrip("/") + "/" + p, alts=[], page_path="404.html", path="404", pages=pages,
-        unis=unis, all_unis=unis, open_courses=open_courses, by_slug=by_slug, stats=stats, has_glossary=bool(gloss),
-        drafts=drafts, page="404", branch="hub"), encoding="utf-8")
+        lang="en", dir="ltr", t=ctx.t, ui=ctx.ui, url=lambda p="": base_url + p, asset=lambda p: base_url + p,
+        alts=[], page_path="404.html", home_teaching=ctx.t(SITE["home_teaching_url"]), page="404", **common_ctx),
+        encoding="utf-8")
 
     base = SITE["base_url"].rstrip("/")
     urls = "".join(f"  <url><loc>{base}/{p}</loc></url>\n" for p in written)

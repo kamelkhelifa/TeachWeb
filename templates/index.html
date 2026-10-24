@@ -1,20 +1,26 @@
 {% extends "base.html" %}
 {% from "_macros.html" import icon, course_card %}
-{% block title %}{{ ui('nav_open') }} · {{ site.name if lang == 'en' else site.name_ar }}{% endblock %}
-{% block description %}{{ ui('open_lead') | plain }}{% endblock %}
 {% block main %}
-<section class="page-hero open-hero">
-  <div class="wrap">
-    <p class="eyebrow">{{ icon('sparkle', 'ic xs') }} {{ ui('part2') }}</p>
-    <h1>{{ ui('nav_open') }}</h1>
-    <p class="lead">{{ ui('open_lead') }}</p>
+<section class="hero">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <p class="kicker reveal">{{ icon('sparkle', 'ic xs') }} {{ ui('hero_kicker') }}</p>
+    <h1 class="hero-title reveal">{{ ui('hero_title') }}</h1>
+    <p class="hero-lead reveal">{{ t(site.tagline) }}</p>
+    <button class="hero-search reveal" type="button" data-search-open>
+      {{ icon('search') }}<span>{{ ui('search_placeholder') }}</span><kbd>/</kbd>
+    </button>
     {% if open_courses %}
-    <dl class="stats compact">
-      <div><dt>{{ stats.open }}</dt><dd>{{ ui('stat_courses') }}</dd></div>
-      <div><dt>{{ stats.weeks }}</dt><dd>{{ ui('stat_weeks') }}</dd></div>
-      <div><dt>{{ stats.materials }}</dt><dd>{{ ui('stat_materials') }}</dd></div>
-      <div><dt>{{ stats.questions }}</dt><dd>{{ ui('stat_questions') }}</dd></div>
-      <div><dt>{{ stats.terms }}</dt><dd>{{ ui('stat_terms') }}</dd></div>
+    <div class="hero-ctas reveal">
+      <a class="btn btn-primary" href="#courses">{{ ui('hero_cta') }} {{ icon('arrow', 'ic flip') }}</a>
+      <a class="btn btn-ghost" href="#path">{{ icon('path') }} {{ ui('hero_cta2') }}</a>
+    </div>
+    <dl class="stats reveal">
+      <div><dt data-count="{{ stats.open }}">{{ stats.open }}</dt><dd>{{ ui('stat_courses') }}</dd></div>
+      <div><dt data-count="{{ stats.weeks }}">{{ stats.weeks }}</dt><dd>{{ ui('stat_weeks') }}</dd></div>
+      <div><dt data-count="{{ stats.materials }}">{{ stats.materials }}</dt><dd>{{ ui('stat_materials') }}</dd></div>
+      <div><dt data-count="{{ stats.questions }}">{{ stats.questions }}</dt><dd>{{ ui('stat_questions') }}</dd></div>
+      <div><dt data-count="{{ stats.terms }}">{{ stats.terms }}</dt><dd>{{ ui('stat_terms') }}</dd></div>
     </dl>
     {% endif %}
   </div>
@@ -79,16 +85,15 @@
     <p class="empty-note" data-filter-empty hidden>{{ ui('filter_none') }}</p>
   </div>
 </section>
-
 {% else %}
-<section class="section tight">
+<section class="section tight" id="courses">
   <div class="wrap">
     <div class="empty-state reveal">
       <div class="es-orbit" aria-hidden="true"><span></span><span></span><span></span>{{ icon('sparkle') }}</div>
       <p class="bc-soon"><span class="pulse"></span>{{ ui('open_soon') }}</p>
       <h2>{{ ui('open_empty_title') }}</h2>
       <p class="lead">{{ ui('open_empty_text') }}</p>
-      <a class="btn btn-primary" href="{{ url('taught/') }}">{{ ui('browse_taught') }} {{ icon('arrow', 'ic flip') }}</a>
+      <a class="btn btn-primary" href="{{ home_teaching }}">{{ ui('taught_on_home') }} {{ icon('external') }}</a>
     </div>
     <h2 class="guide-h center">{{ ui('open_will_have') }}</h2>
     <ol class="structure-list">
@@ -96,6 +101,19 @@
       <li><span class="sl-icon">{{ icon(ico) }}</span><div><h3>{{ ui('sec_' ~ id) }}</h3><p>{{ ui('sec_' ~ id ~ '_d') }}</p></div></li>
       {% endfor %}
     </ol>
+  </div>
+</section>
+{% endif %}
+
+
+{% if open_courses %}
+<section class="section">
+  <div class="wrap">
+    <a class="home-teaching reveal" href="{{ home_teaching }}">
+      <span class="ht-icon">{{ icon('library') }}</span>
+      <span class="ht-body"><strong>{{ ui('taught_title') }}</strong><span>{{ ui('taught_text') }}</span></span>
+      <span class="ht-go">{{ icon('external') }}</span>
+    </a>
   </div>
 </section>
 {% endif %}

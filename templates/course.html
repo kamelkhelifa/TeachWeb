@@ -1,36 +1,25 @@
 {% extends "base.html" %}
 {% from "_macros.html" import icon, section_head, placeholder %}
-{% set T = c.branch == 'taught' %}
-{% set site_name = {'en': site.name, 'ar': site.name_ar, 'fr': site.name_fr}[lang] %}
-{% block title %}{% if T %}{{ c.codes | join(' / ') }} {% endif %}{{ t(c.title) | plain }} · {{ site_name }}{% endblock %}
-{% block description %}{% if c.tagline %}{{ t(c.tagline) | plain }}{% elif T %}{{ t(c.title) | plain }} · {{ t(c.uni.name) | plain }}{% endif %}{% endblock %}
+{% set site_name = site.name if lang == 'en' else site.name_ar %}
+{% block title %}{{ t(c.title) | plain }} · {{ site_name }}{% endblock %}
+{% block description %}{{ t(c.tagline) | plain }}{% endblock %}
 {% set type_icon = {'notes':'notes','slides':'slides','summary':'summary','problems':'problems','solutions':'solutions','video':'video','sim':'lab','lab':'lab','formula':'formula','code':'code','reading':'library','link':'link'} %}
 {% set a_icon = {'quiz':'quizzes','homework':'problems','midterm':'exams','final':'exams','lab':'lab','project':'layers','presentation':'users','participation':'users','report':'notes','oral':'users','portfolio':'materials'} %}
 {% set sections = [('overview','overview'), ('outcomes','outcomes'), ('schedule','schedule'), ('assessment','assessment'), ('materials','materials'), ('exams','exams'),
    ('problems','problems'), ('quizzes','quizzes'), ('lab','lab'), ('library','library'), ('glossary','glossary')] %}
-{% set dp = 'tsec_' if T else 'sec_' %}
 {% block main %}
-<div class="course {{ 'course-taught' if T else 'course-open' }}" style="--hue: {{ c.hue }}" data-course="{{ c.key }}" data-weeks="{{ (c.schedule or []) | length }}">
+<div class="course" style="--hue: {{ c.hue }}" data-course="{{ c.key }}" data-weeks="{{ (c.schedule or []) | length }}">
 
 <section class="course-hero">
   <div class="course-hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <nav class="crumbs" aria-label="breadcrumb">
       <a href="{{ url() }}">{{ site_name }}</a><span>/</span>
-      {% if T %}
-      <a href="{{ url('taught/') }}">{{ ui('nav_taught') }}</a><span>/</span><a href="{{ url('taught/') }}#{{ c.uni.id }}">{{ t(c.uni.name) }}</a><span>/</span><span aria-current="page">{{ c.codes | join(' / ') or t(c.title) }}</span>
-      {% else %}
-      <a href="{{ url('open/') }}">{{ ui('nav_open') }}</a><span>/</span><span aria-current="page">{{ t(c.short) }}</span>
-      {% endif %}
+      <a href="{{ url() }}#courses">{{ ui('all_courses') }}</a><span>/</span><span aria-current="page">{{ t(c.short) }}</span>
     </nav>
     <div class="course-hero-grid">
       <div>
-        {% if T %}
-        <p class="course-kicker"><span class="uni-chip"><i></i>{{ t(c.uni.name) }}</span>{% if c.uni.current %}<span class="badge-current">{{ ui('current') }}</span>{% endif %}</p>
-        <p class="course-codes">{% for code in c.codes %}<code>{{ code }}</code>{% endfor %}</p>
-        {% else %}
         <p class="course-kicker"><span class="course-badge">{{ t(c.short) }}</span>{{ t(site.areas[c.area]) }}</p>
-        {% endif %}
         <h1 class="course-title">{{ t(c.title) }}</h1>
         {% if c.tagline %}<p class="course-tagline">{{ t(c.tagline) }}</p>{% endif %}
         <div class="course-actions">
@@ -41,24 +30,12 @@
         </div>
       </div>
       <dl class="facts">
-        {% if T %}
-        <div class="wide"><dt>{{ ui('taught_in') }}</dt><dd class="offerings">{% for o in c.taught %}<span class="offering"><span class="lang-tag l-{{ o.lang }}">{{ o.lang | upper }}</span>{{ ui('lang_' ~ o.lang) }}<small>{{ o.years | ltr }}{% if o.code and c.codes | length > 1 %} · {{ o.code }}{% endif %}</small></span>{% else %}<span class="muted">{{ ui('placeholder') }}</span>{% endfor %}</dd></div>
-        {% if c.level %}<div class="wide"><dt>{{ ui('level') }}</dt><dd>{{ t(c.level) }}</dd></div>{% endif %}
-        {% if c.kind %}<div class="wide"><dt>{{ ui('format') }}</dt><dd>{{ t(c.kind) }}</dd></div>{% endif %}
-        {% if c.credits or c.contact_hours or c.weeks %}
-        <div><dt>{{ ui('credits') }}</dt><dd>{{ c.credits or '—' }}</dd></div>
-        <div><dt>{{ ui('weekly_hours') }}</dt><dd>{{ c.contact_hours or '—' }}</dd></div>
-        <div><dt>{{ ui('weeks') }}</dt><dd>{{ c.weeks or '—' }}</dd></div>
-        <div><dt>{{ ui('sec_materials') }}</dt><dd>{{ c.n_materials }}</dd></div>
-        {% endif %}
-        {% else %}
         <div><dt>{{ ui('level') }}</dt><dd>{{ t(site.levels[c.level]) }}</dd></div>
         <div><dt>{{ ui('credits') }}</dt><dd>{{ c.credits }}</dd></div>
         <div><dt>{{ ui('weekly_hours') }}</dt><dd>{{ c.contact_hours }}</dd></div>
         <div><dt>{{ ui('weeks') }}</dt><dd>{{ c.weeks }}</dd></div>
         <div class="wide"><dt>{{ ui('languages') }}</dt><dd>{% for l in c.instruction %}<span class="pill">{{ t(site.languages[l]) }}</span>{% endfor %}</dd></div>
         {% if c.codes %}<div class="wide"><dt>{{ ui('also_coded') }}</dt><dd class="codes">{% for code in c.codes %}<code>{{ code }}</code>{% endfor %}</dd></div>{% endif %}
-        {% endif %}
       </dl>
     </div>
   </div>
@@ -84,7 +61,7 @@
 
   {# ───────── 1. Overview ───────── #}
   <section class="sec" id="overview" aria-labelledby="overview-title">
-    {{ section_head('overview', 'overview', ui, 1, dp) }}
+    {{ section_head('overview', 'overview', ui, 1) }}
     {% if c.description %}<div class="prose">{{ t(c.description) | para }}</div>{% else %}{{ placeholder(ui, icon) }}{% endif %}
     {% if c.topics %}
     <h3 class="sub">{{ ui('topics_glance') }}</h3>
@@ -98,10 +75,6 @@
     <div class="overview-grid">
       <div class="panel">
         <h3 class="panel-title">{{ icon('path', 'ic xs') }} {{ ui('prerequisites') }}</h3>
-        {% if T %}
-          {% if c.prerequisites_text %}<p>{{ t(c.prerequisites_text) }}</p>{% else %}<p class="muted">—</p>{% endif %}
-          {% if c.corequisites %}<h3 class="panel-title mt">{{ icon('layers', 'ic xs') }} {{ ui('corequisites') }}</h3><p>{{ t(c.corequisites) }}</p>{% endif %}
-        {% else %}
           {% if c.prerequisites %}
           <ul class="mini-courses">
             {% for s in c.prerequisites %}{% set p = by_slug[s] %}
@@ -118,7 +91,6 @@
             {% endfor %}
           </ul>
           {% endif %}
-        {% endif %}
       </div>
       {% if c.contact_hours %}
       <div class="panel">
@@ -145,20 +117,8 @@
 
   {# ───────── 2. Outcomes ───────── #}
   <section class="sec" id="outcomes" aria-labelledby="outcomes-title">
-    {{ section_head('outcomes', 'outcomes', ui, 2, dp) }}
+    {{ section_head('outcomes', 'outcomes', ui, 2) }}
     {% if not c.outcomes %}{{ placeholder(ui, icon) }}
-    {% elif T %}
-    <ol class="clo-list">
-      {% for o in c.outcomes %}
-      <li class="clo">
-        <div class="clo-id">{{ o.id or ('CLO' ~ loop.index) }}</div>
-        <div class="clo-body">
-          <p class="clo-text">{{ t(o.text) }}</p>
-          {% if o.assessed_by %}<div class="clo-tags"><span class="assessed">{{ ui('assessed_by') }}: {{ t(o.assessed_by) }}</span></div>{% endif %}
-        </div>
-      </li>
-      {% endfor %}
-    </ol>
     {% else %}
     {% set amap = {} %}{% for a in c.assessment %}{% set _ = amap.update({a.id: a}) %}{% endfor %}
     <ol class="clo-list">
@@ -195,7 +155,7 @@
 
   {# ───────── 3. Weekly plan ───────── #}
   <section class="sec" id="schedule" aria-labelledby="schedule-title">
-    {{ section_head('schedule', 'schedule', ui, 3, dp) }}
+    {{ section_head('schedule', 'schedule', ui, 3) }}
     {% if not c.schedule %}{{ placeholder(ui, icon) }}{% else %}
     <div class="week-tools">
       <div class="week-meter" aria-hidden="true"><i data-week-bar></i></div>
@@ -248,7 +208,7 @@
 
   {# ───────── 4. Assessment ───────── #}
   <section class="sec" id="assessment" aria-labelledby="assessment-title">
-    {{ section_head('assessment', 'assessment', ui, 4, dp) }}
+    {{ section_head('assessment', 'assessment', ui, 4) }}
     {% if not c.assessment %}
       {% if c.assessment_note %}<div class="panel"><div class="prose">{{ t(c.assessment_note) | para }}</div></div>{% else %}{{ placeholder(ui, icon) }}{% endif %}
     {% else %}
@@ -305,7 +265,7 @@
 
   {# ───────── 5. Materials ───────── #}
   <section class="sec" id="materials" aria-labelledby="materials-title">
-    {{ section_head('materials', 'materials', ui, 5, dp) }}
+    {{ section_head('materials', 'materials', ui, 5) }}
     {% if c.materials %}
     {% set types = [] %}{% for m in c.materials %}{% if m.type not in types %}{% set _ = types.append(m.type) %}{% endif %}{% endfor %}
     <div class="mat-tools">
@@ -338,7 +298,7 @@
 
   {# ───────── 6. Exams ───────── #}
   <section class="sec" id="exams" aria-labelledby="exams-title">
-    {{ section_head('exams', 'exams', ui, 6, dp) }}
+    {{ section_head('exams', 'exams', ui, 6) }}
     {% if c.exam_guide %}
     <div class="exam-guide">
       <div class="panel"><h3 class="panel-title">{{ icon('clock', 'ic xs') }} {{ ui('exam_format') }}</h3><div class="prose">{{ t(c.exam_guide.format) | para }}</div></div>
@@ -363,7 +323,7 @@
       </table>
     </div>
     {% else %}
-    {{ placeholder(ui, icon, 'placeholder_exams' if T else 'no_papers') }}
+    {{ placeholder(ui, icon, 'no_papers') }}
     {% endif %}
   </section>
 
@@ -440,7 +400,7 @@
   {# ───────── 10. Library ───────── #}
   {% set tb = c.textbooks or {} %}
   <section class="sec" id="library" aria-labelledby="library-title">
-    {{ section_head('library', 'library', ui, 10, dp) }}
+    {{ section_head('library', 'library', ui, 10) }}
     {% if not (tb.required or tb.recommended or tb.online) %}{{ placeholder(ui, icon) }}{% endif %}
     {% if tb.required %}
     <h3 class="sub">{{ ui('required') }}</h3>

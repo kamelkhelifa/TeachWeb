@@ -5,7 +5,6 @@
 
 name: TeachWeb
 name_ar: الموقع التعليمي
-name_fr: TeachWeb
 tagline:
   en: "Physics courses, complete and open: syllabus, weekly plan, notes, exams, quizzes and interactive labs, in English and Arabic."
   ar: "مقررات الفيزياء كاملةً ومفتوحة: المفردات، والخطة الأسبوعية، والمذكرات، والاختبارات، والتقويم الذاتي، والمختبرات التفاعلية، بالعربية والإنجليزية."
@@ -13,6 +12,8 @@ tagline:
 # Personal homepage (shown in the header and footer)
 home_url: https://kamelkhelifa.github.io/Home/
 home_url_ar: https://kamelkhelifa.github.io/Home/ar/
+# The courses as taught at each university are on the personal homepage
+home_teaching_url: { en: "https://kamelkhelifa.github.io/Home/teaching/", ar: "https://kamelkhelifa.github.io/Home/ar/teaching/" }
 
 # Launch switch: while false, search engines are asked not to index the site
 # (noindex on every page, robots.txt disallows everything). Set to true at launch.

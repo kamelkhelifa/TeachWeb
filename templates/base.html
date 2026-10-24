@@ -1,7 +1,7 @@
 {% from "_macros.html" import icon %}
-{% set site_name = {'en': site.name, 'ar': site.name_ar, 'fr': site.name_fr}[lang] %}
-{% set lang_label = {'en': 'English', 'ar': 'العربية', 'fr': 'Français'} %}
-{% set lang_short = {'en': 'EN', 'ar': 'ع', 'fr': 'FR'} %}
+{% set site_name = site.name if lang == 'en' else site.name_ar %}
+{% set lang_label = {'en': 'English', 'ar': 'العربية'} %}
+{% set lang_short = {'en': 'EN', 'ar': 'ع'} %}
 {% set home_url = site.home_url_ar if lang == 'ar' else site.home_url %}
 <!doctype html>
 <html lang="{{ lang }}" dir="{{ dir }}">
@@ -43,8 +43,8 @@
       {% if lang == 'ar' %}<span class="brand-name brand-ar">الموقع <b>التعليمي</b></span>{% else %}<span class="brand-name">Teach<b>Web</b></span>{% endif %}
     </a>
     <nav class="main-nav" aria-label="{{ ui('menu') }}">
-      <a class="nav-taught" href="{{ url('taught/') }}" {% if branch == 'taught' %}aria-current="true"{% endif %}><i class="nav-dot"></i>{{ ui('nav_taught') }}</a>
-      <a class="nav-open" href="{{ url('open/') }}" {% if branch == 'open' %}aria-current="true"{% endif %}><i class="nav-dot"></i>{{ ui('nav_open') }}</a>
+      <a href="{{ url() }}#courses" {% if page == 'course' %}aria-current="true"{% endif %}>{{ ui('nav_courses') }}</a>
+      {% if open_courses %}<a href="{{ url() }}#path">{{ ui('nav_path') }}</a>{% endif %}
       {% if has_glossary %}<a href="{{ url('glossary/') }}" {% if page == 'glossary' %}aria-current="page"{% endif %}>{{ ui('nav_glossary') }}</a>{% endif %}
       <a href="{{ url('guide/') }}" {% if page == 'guide' %}aria-current="page"{% endif %}>{{ ui('nav_guide') }}</a>
     </nav>
@@ -65,8 +65,8 @@
     </div>
   </div>
   <nav class="mobile-nav" id="mobile-nav" hidden>
-    <a href="{{ url('taught/') }}">{{ ui('nav_taught') }}</a>
-    <a href="{{ url('open/') }}">{{ ui('nav_open') }}</a>
+    <a href="{{ url() }}#courses">{{ ui('nav_courses') }}</a>
+    {% if open_courses %}<a href="{{ url() }}#path">{{ ui('nav_path') }}</a>{% endif %}
     {% if has_glossary %}<a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a>{% endif %}
     <a href="{{ url('guide/') }}">{{ ui('nav_guide') }}</a>
     <a href="{{ home_url }}">{{ ui('home_site') }} {{ icon('external') }}</a>
@@ -88,15 +88,15 @@
     </div>
     <div class="footer-cols">
       <div>
-        <h2>{{ ui('part1') }} · {{ ui('nav_taught') }}</h2>
+        <h2>{{ ui('nav_courses') }}</h2>
         <ul>
-          {% for u in all_unis %}<li><a href="{{ url('taught/') }}#{{ u.id }}">{{ t(u.name) }}</a></li>{% endfor %}
+          {% for c in open_courses %}<li><a href="{{ url(c.path) }}">{{ t(c.title) }}</a></li>{% else %}<li class="muted">{{ ui('open_soon') }}</li>{% endfor %}
         </ul>
       </div>
       <div>
         <h2>{{ site_name }}</h2>
         <ul>
-          <li><a href="{{ url('open/') }}">{{ ui('part2') }} · {{ ui('nav_open') }}</a></li>
+          <li><a href="{{ home_teaching }}">{{ ui('taught_title') }} {{ icon('external', 'ic xs') }}</a></li>
           {% if has_glossary %}<li><a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a></li>{% endif %}
           <li><a href="{{ url('guide/') }}">{{ ui('nav_guide') }}</a></li>
           <li><a href="{{ home_url }}">{{ ui('home_site') }} {{ icon('external', 'ic xs') }}</a></li>
@@ -128,7 +128,7 @@
 <script>
   window.TW = {
     lang: "{{ lang }}",
-    root: "{{ asset('') }}{{ {'en': '', 'ar': 'ar/', 'fr': 'fr/'}[lang] }}",
+    root: "{{ url() }}",
     ui: {{ {
       'search_empty': ui('search_empty'), 'kind_course': ui('kind_course'), 'kind_term': ui('kind_term'),
       'kind_week': ui('kind_week'), 'kind_topic': ui('kind_topic'), 'correct': ui('correct'), 'incorrect': ui('incorrect'),

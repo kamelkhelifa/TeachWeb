@@ -1,8 +1,0 @@
-slug: applied-quantum-mechanics
-order: 60
-codes: []
-title: { en: Applied Quantum Mechanics, ar: ميكانيكا الكم التطبيقية, fr: Mécanique quantique appliquée }
-area: quantum
-companion: quantum-mechanics-2   # Part 2 course whose interactive lab and glossary this page shows
-kind: { en: Lecture, ar: محاضرات, fr: Cours magistral }
-taught: []
