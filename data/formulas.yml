@@ -1,0 +1,157 @@
+# Formula sheet & physical constants (page /formulas/). Labels are bilingual; maths is LaTeX (single quotes!).
+
+title: { en: Formula sheet & physical constants, ar: جدول القوانين والثوابت الفيزيائية }
+lead:
+  en: The mathematics and constants used throughout the courses, on one page. Filter it, or print it as an exam companion (A4, two columns).
+  ar: الرياضيات والثوابت المستعملة في كل المقررات في صفحة واحدة. صفِّها حسب ما تبحث عنه، أو اطبعها رفيقًا للاختبار (A4، عمودان).
+note:
+  en: "Constants: CODATA 2018 recommended values. Values marked “exact” are exact by definition of the SI since 2019."
+  ar: "الثوابت: القيم الموصى بها في CODATA 2018. القيم المشار إليها بـ«دقيقة» دقيقة بتعريف النظام الدولي للوحدات منذ 2019."
+
+constants:
+  - { name: { en: Speed of light in vacuum, ar: سرعة الضوء في الفراغ }, sym: 'c', val: '2.997\,924\,58\times10^{8}', unit: '\mathrm{m\,s^{-1}}', exact: true }
+  - { name: { en: Planck constant, ar: ثابت بلانك }, sym: 'h', val: '6.626\,070\,15\times10^{-34}', unit: '\mathrm{J\,s}', exact: true }
+  - { name: { en: Reduced Planck constant, ar: ثابت بلانك المختزل }, sym: '\hbar = h/2\pi', val: '1.054\,571\,817\times10^{-34}', unit: '\mathrm{J\,s}' }
+  - { name: { en: Elementary charge, ar: الشحنة الأولية }, sym: 'e', val: '1.602\,176\,634\times10^{-19}', unit: '\mathrm{C}', exact: true }
+  - { name: { en: Boltzmann constant, ar: ثابت بولتزمان }, sym: 'k_B', val: '1.380\,649\times10^{-23}', unit: '\mathrm{J\,K^{-1}}', exact: true }
+  - { name: { en: Avogadro constant, ar: عدد أفوغادرو }, sym: 'N_A', val: '6.022\,140\,76\times10^{23}', unit: '\mathrm{mol^{-1}}', exact: true }
+  - { name: { en: Molar gas constant, ar: ثابت الغازات المولي }, sym: 'R = N_A k_B', val: '8.314\,462\,618', unit: '\mathrm{J\,mol^{-1}\,K^{-1}}' }
+  - { name: { en: Vacuum permittivity, ar: سماحية الفراغ }, sym: '\varepsilon_0', val: '8.854\,187\,8128\times10^{-12}', unit: '\mathrm{F\,m^{-1}}' }
+  - { name: { en: Coulomb constant, ar: ثابت كولوم }, sym: 'k = 1/4\pi\varepsilon_0', val: '8.987\,551\,7923\times10^{9}', unit: '\mathrm{N\,m^{2}\,C^{-2}}' }
+  - { name: { en: Vacuum permeability, ar: نفاذية الفراغ }, sym: '\mu_0', val: '1.256\,637\,062\,12\times10^{-6}\approx 4\pi\times10^{-7}', unit: '\mathrm{N\,A^{-2}}' }
+  - { name: { en: Gravitational constant, ar: ثابت الجذب العام }, sym: 'G', val: '6.674\,30\times10^{-11}', unit: '\mathrm{m^{3}\,kg^{-1}\,s^{-2}}' }
+  - { name: { en: Standard acceleration of gravity, ar: تسارع الجاذبية المعياري }, sym: 'g_n', val: '9.806\,65', unit: '\mathrm{m\,s^{-2}}', exact: true }
+  - { name: { en: Electron mass, ar: كتلة الإلكترون }, sym: 'm_e', val: '9.109\,383\,7015\times10^{-31}', unit: '\mathrm{kg}' }
+  - { name: { en: Proton mass, ar: كتلة البروتون }, sym: 'm_p', val: '1.672\,621\,923\,69\times10^{-27}', unit: '\mathrm{kg}' }
+  - { name: { en: Neutron mass, ar: كتلة النيوترون }, sym: 'm_n', val: '1.674\,927\,498\,04\times10^{-27}', unit: '\mathrm{kg}' }
+  - { name: { en: Atomic mass constant, ar: وحدة الكتلة الذرية }, sym: 'u', val: '1.660\,539\,066\,60\times10^{-27}', unit: '\mathrm{kg}' }
+  - { name: { en: Electron rest energy, ar: طاقة السكون للإلكترون }, sym: 'm_e c^2', val: '0.510\,998\,950', unit: '\mathrm{MeV}' }
+  - { name: { en: Proton rest energy, ar: طاقة السكون للبروتون }, sym: 'm_p c^2', val: '938.272\,088', unit: '\mathrm{MeV}' }
+  - { name: { en: Useful product, ar: جداء مفيد }, sym: '\hbar c', val: '197.326\,980', unit: '\mathrm{MeV\,fm}' }
+  - { name: { en: Fine-structure constant, ar: ثابت البنية الدقيقة }, sym: '\alpha = e^2/4\pi\varepsilon_0\hbar c', val: '7.297\,352\,5693\times10^{-3}\approx 1/137.036', unit: '' }
+  - { name: { en: Bohr radius, ar: نصف قطر بور }, sym: 'a_0', val: '5.291\,772\,109\times10^{-11}', unit: '\mathrm{m}' }
+  - { name: { en: Rydberg energy, ar: طاقة ريدبرغ }, sym: 'R_y = m_e e^4/2(4\pi\varepsilon_0\hbar)^2', val: '13.605\,693', unit: '\mathrm{eV}' }
+  - { name: { en: Rydberg constant, ar: ثابت ريدبرغ }, sym: 'R_\infty', val: '1.097\,373\,157\times10^{7}', unit: '\mathrm{m^{-1}}' }
+  - { name: { en: Bohr magneton, ar: مغنطون بور }, sym: '\mu_B = e\hbar/2m_e', val: '9.274\,010\,078\times10^{-24}', unit: '\mathrm{J\,T^{-1}}' }
+  - { name: { en: Stefan–Boltzmann constant, ar: ثابت ستيفان–بولتزمان }, sym: '\sigma', val: '5.670\,374\,419\times10^{-8}', unit: '\mathrm{W\,m^{-2}\,K^{-4}}' }
+  - { name: { en: Wien displacement constant, ar: ثابت إزاحة فين }, sym: 'b', val: '2.897\,771\,955\times10^{-3}', unit: '\mathrm{m\,K}' }
+  - { name: { en: Electronvolt, ar: الإلكترون فولت }, sym: '1\,\mathrm{eV}', val: '1.602\,176\,634\times10^{-19}', unit: '\mathrm{J}', exact: true }
+  - { name: { en: Standard atmosphere, ar: الضغط الجوي المعياري }, sym: '1\,\mathrm{atm}', val: '101\,325', unit: '\mathrm{Pa}', exact: true }
+  - { name: { en: Absolute zero, ar: الصفر المطلق }, sym: '0\,\mathrm{K}', val: '-273.15', unit: '{}^{\circ}\mathrm{C}', exact: true }
+
+prefixes:
+  - ['P', 'peta', '10^{15}']
+  - ['T', 'tera', '10^{12}']
+  - ['G', 'giga', '10^{9}']
+  - ['M', 'mega', '10^{6}']
+  - ['k', 'kilo', '10^{3}']
+  - ['c', 'centi', '10^{-2}']
+  - ['m', 'milli', '10^{-3}']
+  - ['\mu', 'micro', '10^{-6}']
+  - ['n', 'nano', '10^{-9}']
+  - ['p', 'pico', '10^{-12}']
+  - ['f', 'femto', '10^{-15}']
+  - ['a', 'atto', '10^{-18}']
+
+sections:
+  - id: algebra
+    title: { en: Algebra & geometry, ar: الجبر والهندسة }
+    items:
+      - { label: { en: Quadratic equation, ar: المعادلة التربيعية }, tex: 'ax^2+bx+c=0 \;\Rightarrow\; x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}' }
+      - { label: { en: Binomial theorem, ar: مبرهنة ذات الحدين }, tex: '(a+b)^n=\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^{k},\quad \binom{n}{k}=\dfrac{n!}{k!\,(n-k)!}' }
+      - { label: { en: Exponentials & logarithms, ar: الأسس واللوغاريتمات }, tex: 'e^{a}e^{b}=e^{a+b},\quad \ln(ab)=\ln a+\ln b,\quad \ln a^{n}=n\ln a,\quad \log_b x=\dfrac{\ln x}{\ln b}' }
+      - { label: { en: Geometric sum, ar: مجموع متتالية هندسية }, tex: '\sum_{k=0}^{N-1} r^{k}=\dfrac{1-r^{N}}{1-r},\qquad \sum_{k=0}^{\infty} r^{k}=\dfrac{1}{1-r}\;\;(|r|<1)' }
+      - { label: { en: Circle and sphere, ar: الدائرة والكرة }, tex: 'L=2\pi r,\;\; A=\pi r^{2};\qquad S=4\pi r^{2},\;\; V=\tfrac{4}{3}\pi r^{3}' }
+      - { label: { en: Cylinder and cone, ar: الأسطوانة والمخروط }, tex: 'V_{\rm cyl}=\pi r^{2}h,\;\; S_{\rm lat}=2\pi r h;\qquad V_{\rm cone}=\tfrac{1}{3}\pi r^{2}h' }
+      - { label: { en: Solid angle, ar: الزاوية المجسمة }, tex: 'd\Omega=\sin\theta\,d\theta\,d\varphi,\qquad \oint d\Omega=4\pi\ \mathrm{sr}' }
+
+  - id: trig
+    title: { en: Trigonometry & complex numbers, ar: حساب المثلثات والأعداد المركبة }
+    items:
+      - { label: { en: Fundamental identity, ar: المتطابقة الأساسية }, tex: '\sin^{2}x+\cos^{2}x=1,\qquad 1+\tan^{2}x=\dfrac{1}{\cos^{2}x}' }
+      - { label: { en: Addition formulas, ar: صيغ الجمع }, tex: '\sin(a\pm b)=\sin a\cos b\pm\cos a\sin b,\qquad \cos(a\pm b)=\cos a\cos b\mp\sin a\sin b' }
+      - { label: { en: Double angle, ar: ضعف الزاوية }, tex: '\sin 2a=2\sin a\cos a,\qquad \cos 2a=\cos^{2}a-\sin^{2}a=1-2\sin^{2}a=2\cos^{2}a-1' }
+      - { label: { en: Sum to product, ar: تحويل المجموع إلى جداء }, tex: '\sin a+\sin b=2\sin\tfrac{a+b}{2}\cos\tfrac{a-b}{2},\qquad \cos a+\cos b=2\cos\tfrac{a+b}{2}\cos\tfrac{a-b}{2}' }
+      - { label: { en: Product to sum, ar: تحويل الجداء إلى مجموع }, tex: '2\sin a\sin b=\cos(a-b)-\cos(a+b),\qquad 2\cos a\cos b=\cos(a-b)+\cos(a+b)' }
+      - { label: { en: Law of cosines and sines, ar: قانونا جيب التمام والجيب }, tex: 'c^{2}=a^{2}+b^{2}-2ab\cos\gamma,\qquad \dfrac{a}{\sin\alpha}=\dfrac{b}{\sin\beta}=\dfrac{c}{\sin\gamma}' }
+      - { label: { en: Euler formula, ar: صيغة أويلر }, tex: 'e^{i\theta}=\cos\theta+i\sin\theta,\qquad \cos\theta=\dfrac{e^{i\theta}+e^{-i\theta}}{2},\quad \sin\theta=\dfrac{e^{i\theta}-e^{-i\theta}}{2i}' }
+      - { label: { en: Complex numbers, ar: الأعداد المركبة }, tex: 'z=x+iy=re^{i\varphi},\quad |z|^{2}=zz^{*}=x^{2}+y^{2},\quad z^{n}=r^{n}e^{in\varphi}' }
+      - { label: { en: Hyperbolic functions, ar: الدوال الزائدية }, tex: '\cosh x=\dfrac{e^{x}+e^{-x}}{2},\quad \sinh x=\dfrac{e^{x}-e^{-x}}{2},\quad \cosh^{2}x-\sinh^{2}x=1' }
+
+  - id: calculus
+    title: { en: Derivatives & integrals, ar: المشتقات والتكاملات }
+    items:
+      - { label: { en: Rules, ar: قواعد الاشتقاق }, tex: '(fg)''=f''g+fg'',\qquad \Big(\dfrac{f}{g}\Big)''=\dfrac{f''g-fg''}{g^{2}},\qquad \dfrac{d}{dx}f(g(x))=f''(g)\,g''(x)' }
+      - { label: { en: Common derivatives, ar: مشتقات شائعة }, tex: '\dfrac{d}{dx}x^{n}=nx^{n-1},\;\; \dfrac{d}{dx}e^{ax}=ae^{ax},\;\; \dfrac{d}{dx}\ln x=\dfrac1x\qquad \dfrac{d}{dx}\sin x=\cos x,\;\; \dfrac{d}{dx}\tan x=\dfrac{1}{\cos^{2}x},\;\; \dfrac{d}{dx}\arctan x=\dfrac{1}{1+x^{2}}' }
+      - { label: { en: Integration by parts, ar: التكامل بالتجزئة }, tex: '\int u\,dv=uv-\int v\,du' }
+      - { label: { en: Elementary integrals, ar: تكاملات أساسية }, tex: '\int x^{n}dx=\dfrac{x^{n+1}}{n+1}\;(n\neq-1),\quad \int\dfrac{dx}{x}=\ln|x|,\quad \int e^{ax}dx=\dfrac{e^{ax}}{a},\quad \int\ln x\,dx=x\ln x-x' }
+      - { label: { en: Trigonometric integrals, ar: تكاملات مثلثية }, tex: '\int\sin ax\,dx=-\dfrac{\cos ax}{a},\quad \int\sin^{2}ax\,dx=\dfrac{x}{2}-\dfrac{\sin 2ax}{4a},\quad \int_{0}^{L}\sin^{2}\dfrac{n\pi x}{L}dx=\dfrac{L}{2}' }
+      - { label: { en: Rational and root integrals, ar: تكاملات كسرية وجذرية }, tex: '\int\dfrac{dx}{x^{2}+a^{2}}=\dfrac1a\arctan\dfrac xa,\quad \int\dfrac{dx}{\sqrt{a^{2}-x^{2}}}=\arcsin\dfrac xa,\quad \int\dfrac{dx}{\sqrt{x^{2}+a^{2}}}=\ln\!\big(x+\sqrt{x^{2}+a^{2}}\big)' }
+      - { label: { en: Integrals for fields of lines and rings, ar: تكاملات لحقول الخيوط والحلقات }, tex: '\int\dfrac{dx}{(x^{2}+a^{2})^{3/2}}=\dfrac{x}{a^{2}\sqrt{x^{2}+a^{2}}},\qquad \int\dfrac{x\,dx}{(x^{2}+a^{2})^{3/2}}=-\dfrac{1}{\sqrt{x^{2}+a^{2}}}' }
+      - { label: { en: Gaussian integrals, ar: تكاملات غاوس }, tex: '\int_{-\infty}^{\infty}e^{-ax^{2}}dx=\sqrt{\dfrac{\pi}{a}},\qquad \int_{-\infty}^{\infty}x^{2}e^{-ax^{2}}dx=\dfrac{1}{2a}\sqrt{\dfrac{\pi}{a}},\qquad \int_{0}^{\infty}xe^{-ax^{2}}dx=\dfrac{1}{2a}' }
+      - { label: { en: Exponential moments, ar: عزوم أسية }, tex: '\int_{0}^{\infty}x^{n}e^{-ax}dx=\dfrac{n!}{a^{n+1}},\qquad \int_{0}^{\infty}\dfrac{x^{3}}{e^{x}-1}dx=\dfrac{\pi^{4}}{15}' }
+
+  - id: series
+    title: { en: Series & approximations, ar: المتسلسلات والتقريبات }
+    items:
+      - { label: { en: Taylor series, ar: متسلسلة تايلور }, tex: 'f(x_0+h)=\sum_{n=0}^{\infty}\dfrac{f^{(n)}(x_0)}{n!}h^{n}=f(x_0)+f''(x_0)h+\tfrac12 f''''(x_0)h^{2}+\dots' }
+      - { label: { en: Exponential and logarithm, ar: الأسية واللوغاريتم }, tex: 'e^{x}=\sum_{n=0}^{\infty}\dfrac{x^{n}}{n!},\qquad \ln(1+x)=x-\dfrac{x^{2}}{2}+\dfrac{x^{3}}{3}-\dots\;(|x|<1)' }
+      - { label: { en: Sine and cosine, ar: الجيب وجيب التمام }, tex: '\sin x=x-\dfrac{x^{3}}{3!}+\dfrac{x^{5}}{5!}-\dots,\qquad \cos x=1-\dfrac{x^{2}}{2!}+\dfrac{x^{4}}{4!}-\dots' }
+      - { label: { en: Binomial series, ar: متسلسلة ذات الحدين }, tex: '(1+x)^{n}=1+nx+\dfrac{n(n-1)}{2!}x^{2}+\dots\;(|x|<1),\qquad \dfrac{1}{\sqrt{1+x}}\approx1-\dfrac x2' }
+      - { label: { en: Small angles, ar: الزوايا الصغيرة }, tex: '\sin\theta\approx\tan\theta\approx\theta,\qquad \cos\theta\approx1-\dfrac{\theta^{2}}{2}\qquad(\theta\ \text{in rad})' }
+      - { label: { en: Stirling formula, ar: صيغة ستيرلنغ }, tex: '\ln n!\approx n\ln n-n,\qquad n!\approx\sqrt{2\pi n}\,\Big(\dfrac ne\Big)^{n}' }
+
+  - id: vectors
+    title: { en: Vectors & vector identities, ar: المتجهات ومتطابقاتها }
+    items:
+      - { label: { en: Dot and cross products, ar: الجداء السلمي والجداء الاتجاهي }, tex: '\vb A\cdot\vb B=AB\cos\theta=\sum_i A_iB_i,\qquad |\vb A\times\vb B|=AB\sin\theta' }
+      - { label: { en: Cross product components, ar: مركبات الجداء الاتجاهي }, tex: '\vb A\times\vb B=\begin{vmatrix}\hat x&\hat y&\hat z\\ A_x&A_y&A_z\\ B_x&B_y&B_z\end{vmatrix}' }
+      - { label: { en: Triple products, ar: الجداءات الثلاثية }, tex: '\vb A\cdot(\vb B\times\vb C)=\vb B\cdot(\vb C\times\vb A),\qquad \vb A\times(\vb B\times\vb C)=\vb B(\vb A\cdot\vb C)-\vb C(\vb A\cdot\vb B)' }
+      - { label: { en: Second derivatives, ar: المشتقات الثانية }, tex: '\nabla\times(\nabla f)=0,\qquad \nabla\cdot(\nabla\times\vb A)=0,\qquad \nabla\times(\nabla\times\vb A)=\nabla(\nabla\cdot\vb A)-\nabla^{2}\vb A' }
+      - { label: { en: Product rules, ar: قواعد الجداء }, tex: '\nabla\cdot(f\vb A)=f\,\nabla\cdot\vb A+\vb A\cdot\nabla f,\qquad \nabla\times(f\vb A)=f\,\nabla\times\vb A-\vb A\times\nabla f' }
+      - { label: { en: Integral theorems, ar: مبرهنات التكامل }, tex: '\oint_S\vb A\cdot d\vb a=\int_V\nabla\cdot\vb A\,d\tau\;\;(\text{Gauss}),\qquad \oint_C\vb A\cdot d\vb l=\int_S(\nabla\times\vb A)\cdot d\vb a\;\;(\text{Stokes})' }
+
+  - id: coordinates
+    title: { en: Vector calculus in curvilinear coordinates, ar: التحليل الاتجاهي في الإحداثيات المنحنية }
+    items:
+      - { label: { en: "Cylindrical (s, φ, z): elements", ar: "الإحداثيات الأسطوانية (s، φ، z): العناصر" }, tex: 'd\vb l=ds\,\hat s+s\,d\varphi\,\hat\varphi+dz\,\hat z,\qquad d\tau=s\,ds\,d\varphi\,dz' }
+      - { label: { en: "Cylindrical: gradient and divergence", ar: "الأسطوانية: التدرج والتباعد" }, tex: '\nabla f=\pdv{f}{s}\hat s+\dfrac1s\pdv{f}{\varphi}\hat\varphi+\pdv{f}{z}\hat z,\qquad \nabla\cdot\vb A=\dfrac1s\pdv{(sA_s)}{s}+\dfrac1s\pdv{A_\varphi}{\varphi}+\pdv{A_z}{z}' }
+      - { label: { en: "Cylindrical: curl", ar: "الأسطوانية: الدوران" }, tex: '(\nabla\times\vb A)_s=\dfrac1s\pdv{A_z}{\varphi}-\pdv{A_\varphi}{z}\qquad (\nabla\times\vb A)_\varphi=\pdv{A_s}{z}-\pdv{A_z}{s}\qquad (\nabla\times\vb A)_z=\dfrac1s\Big(\pdv{(sA_\varphi)}{s}-\pdv{A_s}{\varphi}\Big)' }
+      - { label: { en: "Cylindrical: Laplacian", ar: "الأسطوانية: اللابلاسي" }, tex: '\nabla^{2}f=\dfrac1s\pdv{}{s}\Big(s\pdv{f}{s}\Big)+\dfrac{1}{s^{2}}\pdv{^{2}f}{\varphi^{2}}+\pdv{^{2}f}{z^{2}}' }
+      - { label: { en: "Spherical (r, θ, φ): elements", ar: "الإحداثيات الكروية (r، θ، φ): العناصر" }, tex: 'd\vb l=dr\,\hat r+r\,d\theta\,\hat\theta+r\sin\theta\,d\varphi\,\hat\varphi,\qquad d\tau=r^{2}\sin\theta\,dr\,d\theta\,d\varphi' }
+      - { label: { en: "Spherical: gradient and divergence", ar: "الكروية: التدرج والتباعد" }, tex: '\nabla f=\pdv{f}{r}\hat r+\dfrac1r\pdv{f}{\theta}\hat\theta+\dfrac{1}{r\sin\theta}\pdv{f}{\varphi}\hat\varphi\qquad \nabla\cdot\vb A=\dfrac{1}{r^{2}}\pdv{(r^{2}A_r)}{r}+\dfrac{1}{r\sin\theta}\pdv{(\sin\theta A_\theta)}{\theta}\qquad \hphantom{\nabla\cdot\vb A=}+\dfrac{1}{r\sin\theta}\pdv{A_\varphi}{\varphi}' }
+      - { label: { en: "Spherical: curl", ar: "الكروية: الدوران" }, tex: '(\nabla\times\vb A)_r=\dfrac{1}{r\sin\theta}\Big(\pdv{(\sin\theta A_\varphi)}{\theta}-\pdv{A_\theta}{\varphi}\Big)\qquad (\nabla\times\vb A)_\theta=\dfrac1r\Big(\dfrac{1}{\sin\theta}\pdv{A_r}{\varphi}-\pdv{(rA_\varphi)}{r}\Big)\qquad (\nabla\times\vb A)_\varphi=\dfrac1r\Big(\pdv{(rA_\theta)}{r}-\pdv{A_r}{\theta}\Big)' }
+      - { label: { en: "Spherical: Laplacian", ar: "الكروية: اللابلاسي" }, tex: '\nabla^{2}f=\dfrac{1}{r^{2}}\pdv{}{r}\Big(r^{2}\pdv{f}{r}\Big)+\dfrac{1}{r^{2}\sin\theta}\pdv{}{\theta}\Big(\sin\theta\pdv{f}{\theta}\Big)\qquad \hphantom{\nabla^{2}f=}+\dfrac{1}{r^{2}\sin^{2}\theta}\pdv{^{2}f}{\varphi^{2}}' }
+
+  - id: fourier
+    title: { en: Fourier analysis & the Dirac delta, ar: تحليل فورييه ودالة ديراك }
+    items:
+      - { label: { en: "Fourier series on [−L, L]", ar: "متسلسلة فورييه على [−L، L]" }, tex: 'f(x)=\dfrac{a_0}{2}+\sum_{n=1}^{\infty}\Big[a_n\cos\dfrac{n\pi x}{L}+b_n\sin\dfrac{n\pi x}{L}\Big],\quad a_n=\dfrac1L\int_{-L}^{L}f(x)\cos\dfrac{n\pi x}{L}dx,\quad b_n=\dfrac1L\int_{-L}^{L}f(x)\sin\dfrac{n\pi x}{L}dx' }
+      - { label: { en: Fourier transform, ar: تحويل فورييه }, tex: 'F(k)=\dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}f(x)e^{-ikx}dx,\qquad f(x)=\dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}F(k)e^{ikx}dk' }
+      - { label: { en: Parseval theorem, ar: مبرهنة بارسيفال }, tex: '\int_{-\infty}^{\infty}|f(x)|^{2}dx=\int_{-\infty}^{\infty}|F(k)|^{2}dk' }
+      - { label: { en: Dirac delta, ar: دالة ديراك }, tex: '\int f(x)\,\delta(x-a)\,dx=f(a),\qquad \delta(ax)=\dfrac{\delta(x)}{|a|},\qquad \int_{-\infty}^{\infty}e^{ikx}dk=2\pi\,\delta(x)' }
+
+  - id: odes
+    title: { en: Differential equations, ar: المعادلات التفاضلية }
+    items:
+      - { label: { en: First-order linear, ar: الخطية من الرتبة الأولى }, tex: 'y''+p(x)\,y=q(x)\;\Rightarrow\; y=e^{-\int p\,dx}\Big(\int q\,e^{\int p\,dx}dx+C\Big)' }
+      - { label: { en: Second order with constant coefficients, ar: الرتبة الثانية بمعاملات ثابتة }, tex: 'ay''''+by''+cy=0:\;\; ar^{2}+br+c=0,\quad y=C_1e^{r_1x}+C_2e^{r_2x}\;\;(r_1\neq r_2),\quad y=(C_1+C_2x)e^{rx}\;\;(r_1=r_2)' }
+      - { label: { en: Harmonic oscillator, ar: المهتز التوافقي }, tex: '\ddot x+\omega_0^{2}x=0\;\Rightarrow\;x=A\cos(\omega_0t+\varphi)' }
+      - { label: { en: Damped oscillator (under-damped), ar: المهتز المخمّد (تخميد ضعيف) }, tex: '\ddot x+2\gamma\dot x+\omega_0^{2}x=0\;\Rightarrow\;x=Ae^{-\gamma t}\cos(\omega_d t+\varphi),\quad \omega_d=\sqrt{\omega_0^{2}-\gamma^{2}}' }
+
+  - id: stats
+    title: { en: Probability, statistics & uncertainties, ar: الاحتمالات والإحصاء والارتيابات }
+    items:
+      - { label: { en: Mean and variance, ar: المتوسط والتباين }, tex: '\langle x\rangle=\int x\,\rho(x)\,dx,\qquad \sigma^{2}=\langle x^{2}\rangle-\langle x\rangle^{2}' }
+      - { label: { en: Gaussian distribution, ar: التوزيع الطبيعي (الغاوسي) }, tex: '\rho(x)=\dfrac{1}{\sigma\sqrt{2\pi}}\exp\!\Big[-\dfrac{(x-\mu)^{2}}{2\sigma^{2}}\Big]' }
+      - { label: { en: Propagation of uncertainties (independent), ar: انتشار الارتيابات (مقادير مستقلة) }, tex: 'q=f(x,y):\qquad \sigma_q^{2}=\Big(\pdv{f}{x}\Big)^{2}\sigma_x^{2}+\Big(\pdv{f}{y}\Big)^{2}\sigma_y^{2}' }
+      - { label: { en: Products and powers, ar: الجداءات والقوى }, tex: 'q=x^{a}y^{b}:\qquad \dfrac{\sigma_q}{|q|}=\sqrt{a^{2}\Big(\dfrac{\sigma_x}{x}\Big)^{2}+b^{2}\Big(\dfrac{\sigma_y}{y}\Big)^{2}}' }
+      - { label: { en: Standard error of the mean, ar: الخطأ المعياري للمتوسط }, tex: '\sigma_{\bar x}=\dfrac{\sigma}{\sqrt N},\qquad \sigma\approx\sqrt{\dfrac{1}{N-1}\sum_{i=1}^{N}(x_i-\bar x)^{2}}' }
+
+  - id: special
+    title: { en: Special functions, ar: الدوال الخاصة }
+    items:
+      - { label: { en: Gamma function, ar: دالة غاما }, tex: '\Gamma(z)=\int_0^{\infty}t^{z-1}e^{-t}dt,\quad \Gamma(z+1)=z\,\Gamma(z),\quad \Gamma(n+1)=n!,\quad \Gamma(\tfrac12)=\sqrt\pi' }
+      - { label: { en: Legendre polynomials, ar: كثيرات حدود لوجندر }, tex: 'P_0=1,\quad P_1=x,\quad P_2=\tfrac12(3x^{2}-1),\qquad \int_{-1}^{1}P_\ell P_{\ell''}\,dx=\dfrac{2\,\delta_{\ell\ell''}}{2\ell+1}' }
+      - { label: { en: Hermite polynomials, ar: كثيرات حدود هيرميت }, tex: 'H_0=1,\quad H_1=2x,\quad H_2=4x^{2}-2,\qquad H_{n+1}=2xH_n-2nH_{n-1}' }
+      - { label: { en: Spherical harmonics, ar: التوافقيات الكروية }, tex: 'Y_0^0=\dfrac{1}{\sqrt{4\pi}},\quad Y_1^0=\sqrt{\dfrac{3}{4\pi}}\cos\theta,\quad Y_1^{\pm1}=\mp\sqrt{\dfrac{3}{8\pi}}\sin\theta\,e^{\pm i\varphi}' }

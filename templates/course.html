@@ -195,7 +195,7 @@
           {% if wm %}
           <div class="week-mats">
             <p class="mini-title">{{ ui('week_materials') }}</p>
-            {% for m in wm %}<a class="mat-chip" href="{{ m.url }}" target="_blank" rel="noopener">{{ icon(type_icon[m.type], 'ic xs') }}{{ t(m.title) }}</a>{% endfor %}
+            {% for m in wm %}<a class="mat-chip" {% if m.url.startswith('@') %}href="{{ url(m.url[1:]) }}"{% else %}href="{{ m.url }}" target="_blank" rel="noopener"{% endif %}>{{ icon(type_icon[m.type], 'ic xs') }}{{ t(m.title) }}</a>{% endfor %}
           </div>
           {% endif %}
         </div>
@@ -280,7 +280,7 @@
     <ul class="mat-grid" data-mat-grid>
       {% for m in c.materials %}
       <li data-type="{{ m.type }}">
-        <a class="mat" href="{{ m.url }}" target="_blank" rel="noopener">
+        <a class="mat" {% if m.url.startswith('@') %}href="{{ url(m.url[1:]) }}"{% else %}href="{{ m.url }}" target="_blank" rel="noopener"{% endif %}>
           <span class="mat-icon t-{{ m.type }}">{{ icon(type_icon[m.type]) }}</span>
           <span class="mat-body">
             <span class="mat-title">{{ t(m.title) }}</span>

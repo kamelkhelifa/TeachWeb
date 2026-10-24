@@ -381,24 +381,9 @@ schedule:
 materials:
   # ---- Lecture notes ----
   - type: notes
-    title: { en: 'Wave mechanics — Schrödinger equation, stationary states and energy eigenstates', ar: 'الميكانيكا الموجية — معادلة شرودنغر والحالات المستقرة والحالات الذاتية للطاقة' }
-    url: https://drive.google.com/open?id=1bPbyQOM51t2_P-IheXpJa-98c-thImAk
-    week: 1
-    lang: en
-  - type: notes
-    title: { en: 'Wave mechanics — position and momentum', ar: 'الميكانيكا الموجية — الموضع والزخم' }
-    url: https://drive.google.com/open?id=18R2dxtBdte4qL1XnEJCs2qC2j7gtAQhP
-    week: 1
-    lang: en
-  - type: notes
     title: { en: 'Free particle in 3D, 3j symbols, Wigner–Eckart theorem and 6j symbols', ar: 'الجسيم الحر في ثلاثة أبعاد، رموز 3j، مبرهنة فيغنر–إيكارت ورموز 6j' }
     url: https://drive.google.com/file/d/11069JuBZzHSKE0TAoITztbzuwaebBvLY/view?usp=sharing
     week: 5
-  - type: notes
-    title: { en: 'Wave mechanics — the variational principle', ar: 'الميكانيكا الموجية — المبدأ التغايري' }
-    url: https://drive.google.com/open?id=1CdWRZQOQHAd5FWNk77vURMEG_jxzy5FS
-    week: 11
-    lang: en
   # ---- Video lectures (Arabic) ----
   - type: video
     title: { en: 'Video lecture 01 — QM in one dimension', ar: 'المحاضرة المصوّرة 01 — ميكانيكا الكم في بعد واحد' }
@@ -441,19 +426,9 @@ materials:
     week: 5
     lang: ar
   # ---- Problem series A (formalism track) ----
-  - type: problems
-    title: { en: 'Problem set A1 — wave mechanics', ar: 'السلسلة A1 — الميكانيكا الموجية' }
-    url: https://drive.google.com/open?id=12xpbnDzcXk8Nvw-aoajfVlOZdp_rANMn
-    week: 1
-    lang: en
   - type: solutions
     title: { en: 'Solutions A1 — wave mechanics', ar: 'حلول السلسلة A1 — الميكانيكا الموجية' }
     url: https://drive.google.com/open?id=12_3jMD3BTvXN75Lv8l3TXLqUqtpuGQS0
-    week: 1
-    lang: en
-  - type: problems
-    title: { en: 'Problem set A2 — linear algebra', ar: 'السلسلة A2 — الجبر الخطي' }
-    url: https://drive.google.com/open?id=1azIHALQIpfgZiBr8i_TZzqTWA_3L4USx
     week: 1
     lang: en
   - type: solutions
@@ -461,19 +436,9 @@ materials:
     url: https://drive.google.com/open?id=1UqLzNKwLdaPAwEsz02bEVJFfzsQRIyRC
     week: 1
     lang: en
-  - type: problems
-    title: { en: 'Problem set A3 — Dirac notation and uncertainty', ar: 'السلسلة A3 — ترميز ديراك ومبدأ الارتياب' }
-    url: https://drive.google.com/open?id=17nUnG-PW3KNeT9T2r1u8icioY1FiuHpW
-    week: 2
-    lang: en
   - type: solutions
     title: { en: 'Solutions A3 — Dirac notation and uncertainty', ar: 'حلول السلسلة A3 — ترميز ديراك ومبدأ الارتياب' }
     url: https://drive.google.com/open?id=1PIKDxOyME-HM5IymeuRe7Fi_-dounfkR
-    week: 2
-    lang: en
-  - type: problems
-    title: { en: 'Problem set A4 — quantum dynamics', ar: 'السلسلة A4 — الديناميكا الكمومية' }
-    url: https://drive.google.com/open?id=1Iu-ev63wfBj2zeAi8XX7HgG8ZE6cg4YH
     week: 2
     lang: en
   - type: solutions
@@ -481,30 +446,15 @@ materials:
     url: https://drive.google.com/open?id=1qe9t5V7MMZpoXGNXmEHILhgP6NXCTUTi
     week: 2
     lang: en
-  - type: problems
-    title: { en: 'Problem set A5 — quantum dynamics (continued)', ar: 'السلسلة A5 — الديناميكا الكمومية (تابع)' }
-    url: https://drive.google.com/open?id=1mx3SyDpe17dvnbVze9_xNttrPzKh7xXx
-    week: 2
-    lang: en
   - type: solutions
     title: { en: 'Solutions A5 — quantum dynamics (continued)', ar: 'حلول السلسلة A5 — الديناميكا الكمومية (تابع)' }
     url: https://drive.google.com/open?id=1jLx8dBbHc5tHHzBLnHotcds3nJPNFtsC
     week: 2
     lang: en
-  - type: problems
-    title: { en: 'Problem set A6 — spin one-half', ar: 'السلسلة A6 — السبين نصف' }
-    url: https://drive.google.com/open?id=1wwYZn-9hsKbTjsw5FKTQL2L6YqWJ5apH
-    week: 4
-    lang: en
   - type: solutions
     title: { en: 'Solutions A6 — spin one-half', ar: 'حلول السلسلة A6 — السبين نصف' }
     url: https://drive.google.com/open?id=1iTI5hMreJU71G0-FoJtDHWbTdiedtAhs
     week: 4
-    lang: en
-  - type: problems
-    title: { en: 'Problem set A7 — addition of angular momenta', ar: 'السلسلة A7 — جمع الزخوم الزاوية' }
-    url: https://drive.google.com/open?id=1VPKomWxiN6a6NII-jCmoAWd4adb3rthr
-    week: 5
     lang: en
   - type: solutions
     title: { en: 'Solutions A7 — addition of angular momenta', ar: 'حلول السلسلة A7 — جمع الزخوم الزاوية' }
@@ -692,30 +642,13 @@ materials:
     lang: ar
   # ---- Formula sheets ----
   - type: formula
-    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية الشائعة }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   - type: formula
     title: { en: Exam formula sheet (periodic and final exams), ar: ورقة الصيغ المرفقة بالاختبارات الدورية والنهائية }
     url: https://drive.google.com/open?id=1wtZyJD3J_8WoYA5dxxaz-x2-nIo3bKXS
     lang: en
   # ---- Readings and supplementary material ----
-  - type: reading
-    title: { en: Arabic translation of the required textbook (Griffiths), ar: الترجمة العربية للكتاب المقرر (غريفيثس) }
-    url: https://drive.google.com/file/d/1PJIUZnoNkGPogNrcQpQAwptzGFkOU3U5/view?usp=sharing
-    lang: ar
-  - type: reading
-    title: { en: Quantum mechanics — lecture notes in Arabic, ar: الميكانيك الكمي — مذكرة دروس بالعربية }
-    url: https://delenda.files.wordpress.com/2015/01/qm1.pdf
-    lang: ar
-  - type: link
-    title: { en: Collection of quantum mechanics books translated into Arabic (1), ar: مجموعة كتب مترجمة في ميكانيكا الكم (1) }
-    url: https://www.alfreed-ph.com/2017/10/Books-in-quantum-mechanics-pdf.html
-    lang: ar
-  - type: link
-    title: { en: Collection of quantum mechanics books translated into Arabic (2), ar: مجموعة كتب مترجمة في ميكانيكا الكم (2) }
-    url: https://zoom-teach.blogspot.com/2018/07/Quantum-mechanics-for-beginners-pdf.html
-    lang: ar
   - type: link
     title: { en: Quantum mechanics — online course notes, ar: ميكانيكا الكم — مذكرات دروس على الإنترنت }
     url: https://physicsnh.com/quantum%201.htm
@@ -738,7 +671,7 @@ exams:
     solution: https://drive.google.com/open?id=12HfHKMOVqi423RuZSb0Y2efrl_Y8e0T-
     lang: en
   - title: { en: Past final exam, ar: اختبار نهائي سابق }
-    session: 2017–2018
+    session: "2017–2018 · 1439 (S2)"
     paper: https://drive.google.com/open?id=1Y6bkBEjJM6534A6XnYTPdkrMbrJDkcI5
     lang: en
   - title: { en: Mid-term exam, ar: اختبار نصف الفصل }
@@ -1240,3 +1173,19 @@ glossary:
   - { en: Rabi oscillations, ar: تذبذبات رابي, fr: Oscillations de Rabi, def: { en: Periodic population exchange between two levels driven by an oscillating field., ar: تبادل دوري للإشغال بين مستويين تحت تأثير مجال متذبذب. } }
   - { en: Fermi's golden rule, ar: قاعدة فيرمي الذهبية, fr: Règle d'or de Fermi, def: { en: 'Transition rate \(\Gamma = \frac{2\pi}{\hbar}|H''_{fi}|^2\rho(E_f)\) into a continuum of states.', ar: 'معدل الانتقال \(\Gamma = \frac{2\pi}{\hbar}|H''_{fi}|^2\rho(E_f)\) نحو متّصلة من الحالات.' } }
   - { en: Born approximation, ar: تقريب بورن, fr: Approximation de Born, def: { en: First-order treatment of scattering in which the amplitude is the Fourier transform of the potential., ar: معالجة الاستطارة في الرتبة الأولى، تكون فيها السعة تحويل فورييه للجهد. } }
+
+pending:   # NOT displayed: items whose authorship must be confirmed before publishing
+  - { what: "Wave mechanics — Schrödinger equation, stationary states and energy eigenstates", url: "https://drive.google.com/open?id=1bPbyQOM51t2_P-IheXpJa-98c-thImAk", why: "Title and order match the 'Wave mechanics' chapter of MIT 8.05 (Fall 2013) lecture notes; probably MIT's notes re-hosted on his Drive. If they are his own, move to materials." }
+  - { what: "Wave mechanics — position and momentum", url: "https://drive.google.com/open?id=18R2dxtBdte4qL1XnEJCs2qC2j7gtAQhP", why: "Same as above (MIT 8.05 'Wave mechanics' notes)." }
+  - { what: "Wave mechanics — the variational principle", url: "https://drive.google.com/open?id=1CdWRZQOQHAd5FWNk77vURMEG_jxzy5FS", why: "Same as above (MIT 8.05 'Wave mechanics' notes, section on the variational principle)." }
+  - { what: "Problem set A1 — wave mechanics", url: "https://drive.google.com/open?id=12xpbnDzcXk8Nvw-aoajfVlOZdp_rANMn", why: "In an MIT 8.05-based course the weekly sets and solutions are probably MIT's own; confirm authorship before publishing." }
+  - { what: "Problem set A2 — linear algebra", url: "https://drive.google.com/open?id=1azIHALQIpfgZiBr8i_TZzqTWA_3L4USx", why: "Possibly MIT 8.05 material; see problem set 1." }
+  - { what: "Problem set A3 — Dirac notation and uncertainty", url: "https://drive.google.com/open?id=17nUnG-PW3KNeT9T2r1u8icioY1FiuHpW", why: "Possibly MIT 8.05 material; see problem set 1." }
+  - { what: "Problem set A4 — quantum dynamics", url: "https://drive.google.com/open?id=1Iu-ev63wfBj2zeAi8XX7HgG8ZE6cg4YH", why: "Possibly MIT 8.05 material; see problem set 1." }
+  - { what: "Problem set A5 — quantum dynamics (continued)", url: "https://drive.google.com/open?id=1mx3SyDpe17dvnbVze9_xNttrPzKh7xXx", why: "Possibly MIT 8.05 material; see problem set 1." }
+  - { what: "Problem set A6 — spin one-half", url: "https://drive.google.com/open?id=1wwYZn-9hsKbTjsw5FKTQL2L6YqWJ5apH", why: "Possibly MIT 8.05 material; see problem set 1." }
+  - { what: "Problem set A7 — addition of angular momenta", url: "https://drive.google.com/open?id=1VPKomWxiN6a6NII-jCmoAWd4adb3rthr", why: "Possibly MIT 8.05 material; see problem set 1." }
+  - { what: "Arabic translation of the required textbook (Griffiths)", url: "https://drive.google.com/file/d/1PJIUZnoNkGPogNrcQpQAwptzGFkOU3U5/view?usp=sharing", why: "Arabic translation by Kamel Khelifa-Kerfa; keep off the site for the moment (his decision)" }
+  - { what: "Quantum mechanics — lecture notes in Arabic", url: "https://delenda.files.wordpress.com/2015/01/qm1.pdf", why: "lecture notes written by another author, hosted on a third-party blog" }
+  - { what: "Collection of quantum mechanics books translated into Arabic (1)", url: "https://www.alfreed-ph.com/2017/10/Books-in-quantum-mechanics-pdf.html", why: "third-party site distributing translated books; copyright status unclear" }
+  - { what: "Collection of quantum mechanics books translated into Arabic (2)", url: "https://zoom-teach.blogspot.com/2018/07/Quantum-mechanics-for-beginners-pdf.html", why: "third-party site distributing translated books; copyright status unclear" }

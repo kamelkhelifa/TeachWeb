@@ -330,9 +330,8 @@ materials:
     week: 4
     lang: en
   - type: formula
-    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   - type: reading
     title: { en: 'Mathematical physics lecture notes (from lecture 22 onward: special functions, Fourier methods)', ar: 'مذكرات في الفيزياء الرياضية (من المحاضرة 22 فما بعد: الدوال الخاصة وطرق فورييه)' }
     url: https://www.dms.uaf.edu/~rybkin/lecture%20notes/MathPhysicsLectureNotes.pdf
@@ -345,19 +344,11 @@ exams:
     solution: https://drive.google.com/open?id=13hnQFiW1sjhSBZFYr_NMVr9B8PAMZDdW
     lang: en
   - title: { en: Past exam (paper I), ar: اختبار سابق (النموذج الأول) }
-    session: 2015–2016
-    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNVWJ6NUNjUGlPQ1E
-    lang: en
-  - title: { en: Past exam (paper II), ar: اختبار سابق (النموذج الثاني) }
-    session: 2015–2016
-    paper: https://drive.google.com/open?id=1NDs8g_qwtgbHQUDIvQxUdMAgjbhJnOT_
-    lang: en
-  - title: { en: Past exam (paper I), ar: اختبار سابق (النموذج الأول) }
-    session: 2016–2017
+    session: "2016–2017 · 1438 (S1)"
     paper: https://drive.google.com/open?id=1IT_k5uV4mL-ARSdpUuBzs_6PlzdiwO7Z
     lang: en
   - title: { en: Past exam (paper II), ar: اختبار سابق (النموذج الثاني) }
-    session: 2016–2017
+    session: "2016–2017 · 1438 (S2)"
     paper: https://drive.google.com/open?id=1g_xjJX6ZrNr_Nod9JTrvIx40N3q7KiQc
     lang: en
 
@@ -841,3 +832,7 @@ glossary:
   - { en: Poisson distribution, ar: توزيع بواسون, fr: Loi de Poisson, def: { en: '\(P(n)=\lambda^ne^{-\lambda}/n!\); it counts rare independent events (e.g. radioactive decays).', ar: '\(P(n)=\lambda^ne^{-\lambda}/n!\)، ويصف عدد الأحداث النادرة المستقلة (مثل الانحلالات الإشعاعية).' } }
   - { en: Gaussian (normal) distribution, ar: التوزيع الغاوسي (الطبيعي), fr: Loi normale (gaussienne), def: { en: 'Probability density \(\propto e^{-(x-\mu)^2/2\sigma^2}\); the limit of sums of many independent variables.', ar: 'كثافة احتمال \(\propto e^{-(x-\mu)^2/2\sigma^2}\)، وهو نهاية مجموع عدد كبير من المتغيرات المستقلة.' } }
   - { en: Group, ar: الزمرة, fr: Groupe, def: { en: 'A set with an associative, closed operation that has an identity and inverses; the language of symmetry.', ar: مجموعة مزوّدة بعملية تجميعية مغلقة لها عنصر محايد ونظائر، وهي لغة التناظر. } }
+
+pending:   # NOT displayed: items whose authorship must be confirmed before publishing
+  - { what: "Past exam (paper I)", url: "https://drive.google.com/open?id=0B-lXQB4vCJCNVWJ6NUNjUGlPQ1E", why: "1437 AH (2015–2016) predates his appointment at Madinah (2016); possibly set by a previous instructor. Publish only if he wrote it." }
+  - { what: "Past exam (paper II)", url: "https://drive.google.com/open?id=1NDs8g_qwtgbHQUDIvQxUdMAgjbhJnOT_", why: "Same as above: 1437 AH predates his appointment; authorship unclear." }

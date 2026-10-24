@@ -367,9 +367,8 @@ materials:
     week: 6
     lang: en
   - type: formula
-    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   - type: sim
     title: { en: myPhysicsLab — interactive mechanics simulations, ar: myPhysicsLab — محاكاة تفاعلية في الميكانيكا }
     url: https://www.myphysicslab.com/

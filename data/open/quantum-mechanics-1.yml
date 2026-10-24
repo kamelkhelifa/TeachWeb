@@ -913,34 +913,9 @@ materials:
     lang: ar
   # ---- Formula sheet and simulations ----
   - type: formula
-    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
-  - type: sim
-    title: { en: 'Animation – ⟨x⟩(t) in the infinite square well, phase 0 (Griffiths Prob. 2.6)', ar: 'تحريك – ⟨x⟩(t) في البئر اللانهائي، الطور 0 (مسألة غريفيثس 2.6)' }
-    url: https://drive.google.com/open?id=1Dzf5MZgoWrpSCuxKZK407wfmmDRxlAsY
-    week: 4
-  - type: sim
-    title: { en: 'Animation – ⟨x⟩(t) in the infinite square well, phases π/2 and π', ar: 'تحريك – ⟨x⟩(t) في البئر اللانهائي، الطوران π/2 وπ' }
-    url: https://drive.google.com/open?id=1XM7pF917mMaFYm5PESBXMp8kIHa-VJHi
-    week: 4
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   # ---- Textbooks and supplementary reading ----
-  - type: reading
-    title: { en: 'Griffiths, Introduction to Quantum Mechanics – Arabic translation (3rd ed.)', ar: غريفيثس، مقدمة في ميكانيكا الكم – الترجمة العربية (ط3) }
-    url: https://drive.google.com/file/d/1PJIUZnoNkGPogNrcQpQAwptzGFkOU3U5/view?usp=sharing
-    lang: ar
-  - type: reading
-    title: { en: Quantum mechanics – lecture notes in Arabic, ar: الميكانيك الكمي – محاضرات بالعربية }
-    url: https://delenda.files.wordpress.com/2015/01/qm1.pdf
-    lang: ar
-  - type: link
-    title: { en: Collection of translated quantum-mechanics books (1), ar: مجموعة كتب مترجمة في ميكانيكا الكم (1) }
-    url: https://www.alfreed-ph.com/2017/10/Books-in-quantum-mechanics-pdf.html
-    lang: ar
-  - type: link
-    title: { en: Collection of translated quantum-mechanics books (2), ar: مجموعة كتب مترجمة في ميكانيكا الكم (2) }
-    url: https://zoom-teach.blogspot.com/2018/07/Quantum-mechanics-for-beginners-pdf.html
-    lang: ar
   - type: video
     title: { en: Quantum mechanics lectures in Arabic (Tikrit University), ar: محاضرات ميكانيك الكم بالعربية (جامعة تكريت) }
     url: https://ceps.tu.edu.iq/pd/electronic-lectures1/316-%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D9%85%D8%A7%D8%AF%D8%A9-%D9%85%D9%8A%D9%83%D8%A7%D9%86%D9%8A%D9%83-%D8%A7%D9%84%D9%83%D9%85-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA-%D8%B9%D9%84%D9%8A%D8%A7-%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A7%D9%87.html
@@ -972,31 +947,23 @@ exams:
     solution: https://drive.google.com/open?id=1YGRKAK6dvlJsRPhDHD_UGU6RMM2ENLEo
     lang: en
   - title: { en: Past exam – first semester, ar: اختبار سابق – الفصل الأول }
-    session: 2015–2016
-    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNWXZTdkVhQ2VfY1E
-    lang: en
-  - title: { en: Past exam – second semester, ar: اختبار سابق – الفصل الثاني }
-    session: 2015–2016
-    paper: https://drive.google.com/open?id=1EF32Fh_hQcspJy0sYVjs46VfO-75MYUW
-    lang: en
-  - title: { en: Past exam – first semester, ar: اختبار سابق – الفصل الأول }
-    session: 2016–2017
+    session: "2016–2017 · 1438 (S1)"
     paper: https://drive.google.com/open?id=1dTd8_bcNbjeXOM4plNA_OUbMrOjoTtNk
     lang: en
   - title: { en: Past exam – second semester, ar: اختبار سابق – الفصل الثاني }
-    session: 2016–2017
+    session: "2016–2017 · 1438 (S2)"
     paper: https://drive.google.com/open?id=168utvBDfqHl-e1k_bipUweRC184c0UzM
     lang: en
   - title: { en: Past exam – first semester, ar: اختبار سابق – الفصل الأول }
-    session: 2017–2018
+    session: "2017–2018 · 1439 (S1)"
     paper: https://drive.google.com/open?id=1Qtw6cWW-HYUZMzmCGw514lYPFUCyzPq9
     lang: en
   - title: { en: Past exam – second semester, ar: اختبار سابق – الفصل الثاني }
-    session: 2017–2018
+    session: "2017–2018 · 1439 (S2)"
     paper: https://drive.google.com/open?id=1R4OeoVtDK2841Sj9V69NdYmtIa7DYvDS
     lang: en
   - title: { en: Past exam – first semester, ar: اختبار سابق – الفصل الأول }
-    session: 2018–2019
+    session: "2018–2019 · 1440 (S1)"
     paper: https://drive.google.com/open?id=1tWSvxlJ6fLpcTvEEFhKX4Lz3oIkkKNb0
     lang: en
   - title: { en: Final exam (Arabic), ar: الاختبار النهائي }
@@ -1520,3 +1487,13 @@ glossary:
   - { en: Orbital angular momentum, ar: الزخم الزاوي المداري, fr: Moment cinétique orbital, def: { en: 'L = r × p; L² has eigenvalues ħ²l(l+1) and L_z has mħ.', ar: 'L = r × p؛ القيم الذاتية لـ L² هي ħ²l(l+1) ولـ L_z هي mħ.' } }
   - { en: Spin, ar: اللف المغزلي, fr: Spin, def: { en: 'Intrinsic angular momentum of a particle, with no classical analogue (s = ½ for the electron).', ar: زخم زاوي ذاتي للجسيم لا مقابل كلاسيكي له (s = ½ للإلكترون). } }
   - { en: Pauli matrices, ar: مصفوفات باولي, fr: Matrices de Pauli, def: { en: 'Three 2×2 matrices σx, σy, σz with S = (ħ/2)σ for spin ½.', ar: 'ثلاث مصفوفات 2×2 هي σx وσy وσz، حيث S = (ħ/2)σ للف المغزلي النصفي.' } }
+
+pending:   # NOT displayed: items whose authorship must be confirmed before publishing
+  - { what: "Animation – ⟨x⟩(t) in the infinite square well, phase 0 (Griffiths Prob. 2.6)", url: "https://drive.google.com/open?id=1Dzf5MZgoWrpSCuxKZK407wfmmDRxlAsY", why: "Animated GIF on his Drive; probably his own (Mathematica), but the page does not say who made it. Confirm before publishing as a sim/video." }
+  - { what: "Animation – ⟨x⟩(t) in the infinite square well, phases π/2 and π", url: "https://drive.google.com/open?id=1XM7pF917mMaFYm5PESBXMp8kIHa-VJHi", why: "Same as above." }
+  - { what: "Griffiths, Introduction to Quantum Mechanics – Arabic translation (3rd ed.)", url: "https://drive.google.com/file/d/1PJIUZnoNkGPogNrcQpQAwptzGFkOU3U5/view?usp=sharing", why: "Arabic translation by Kamel Khelifa-Kerfa; keep off the site for the moment (his decision)" }
+  - { what: "Quantum mechanics – lecture notes in Arabic", url: "https://delenda.files.wordpress.com/2015/01/qm1.pdf", why: "lecture notes written by another author, hosted on a third-party blog" }
+  - { what: "Collection of translated quantum-mechanics books (1)", url: "https://www.alfreed-ph.com/2017/10/Books-in-quantum-mechanics-pdf.html", why: "third-party site distributing translated books; copyright status unclear" }
+  - { what: "Collection of translated quantum-mechanics books (2)", url: "https://zoom-teach.blogspot.com/2018/07/Quantum-mechanics-for-beginners-pdf.html", why: "third-party site distributing translated books; copyright status unclear" }
+  - { what: "Past exam – first semester", url: "https://drive.google.com/open?id=0B-lXQB4vCJCNWXZTdkVhQ2VfY1E", why: "1437 AH (2015–2016) predates his appointment at Madinah (2016); possibly set by a previous instructor." }
+  - { what: "Past exam – second semester", url: "https://drive.google.com/open?id=1EF32Fh_hQcspJy0sYVjs46VfO-75MYUW", why: "Same as above: predates his appointment; authorship unclear." }

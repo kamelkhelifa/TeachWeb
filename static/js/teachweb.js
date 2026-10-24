@@ -194,6 +194,23 @@
     $$('[data-filter-level]').forEach(function (b) { b.addEventListener('click', function () { fLevel = b.dataset.filterLevel; $$('[data-filter-level]').forEach(function (x) { x.classList.toggle('is-on', x === b); }); apply(); }); });
   }
 
+  // ---------- print buttons (any page) and formula sheet filter ----------
+  if (!$('[data-course]')) $$('[data-print]').forEach(function (b) { b.addEventListener('click', function () { print(); }); });
+  var fs = $('[data-fs]');
+  if (fs) {
+    var fsIn = $('[data-fs-search]');
+    var fsNorm = function (x) { return (x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f\u064B-\u0652]/g, ''); };
+    fsIn.addEventListener('input', function () {
+      var q = fsNorm(fsIn.value.trim()), any = false;
+      $$('[data-fs-block]', fs).forEach(function (blk) {
+        var shown = 0;
+        $$('[data-fs-item]', blk).forEach(function (it) { var ok = !q || fsNorm(it.dataset.text + ' ' + it.textContent).indexOf(q) >= 0; it.hidden = !ok; if (ok) shown++; });
+        blk.hidden = !shown; if (shown) any = true;
+      });
+      $('[data-fs-empty]', fs).hidden = any;
+    });
+  }
+
   // ---------- home: learning path ----------
   var map = $('[data-path-map]');
   if (map) {

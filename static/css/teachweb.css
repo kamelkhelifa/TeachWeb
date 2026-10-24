@@ -895,3 +895,58 @@ code { white-space: nowrap; }
 .sim-controls { min-width: 0; }
 .ctl select { width: 100%; min-width: 0; }
 @media (max-width: 860px) { .sim-body { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Formula sheet ---------- */
+.fs-tools { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.fs-tools .mat-search { flex: 1; max-width: 460px; }
+.fs-jump { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+.fs-jump a { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); font-size: 0.85rem; font-weight: 500; text-decoration: none; }
+.fs-jump a:hover { border-color: var(--accent-line); color: var(--accent); }
+.formula-sheet .wrap { display: grid; gap: 22px; }
+.fs-block { padding: 22px 24px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); scroll-margin-top: calc(var(--header-h) + 16px); }
+.fs-h { display: flex; align-items: center; gap: 10px; font-size: 1.45rem; font-weight: 500; margin: 0 0 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+:lang(ar) .fs-h { font-weight: 700; }
+.fs-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 10px 26px; margin: 0; }
+.fs-item { padding: 10px 0; border-bottom: 1px dashed var(--line); min-width: 0; }
+.fs-item dt { font-size: 0.82rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+:lang(ar) .fs-item dt { letter-spacing: 0; font-size: 0.9rem; text-transform: none; }
+.fs-item dd { margin: 2px 0 0; overflow-x: auto; }
+.fs-item .katex-display { margin: 0.4em 0; text-align: start; }
+.fs-item .katex-display > .katex { text-align: left; }
+.fs-constants td { vertical-align: middle; }
+.fs-constants td.m { direction: ltr; white-space: nowrap; }
+.exact { display: inline-block; margin-inline-start: 6px; padding: 1px 7px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; background: var(--ok-soft); color: var(--ok); vertical-align: middle; }
+.fs-prefixes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; direction: ltr; }
+.fs-prefixes li { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 2px 10px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); font-size: 0.85rem; }
+.fs-prefixes b { grid-row: span 2; font-size: 1.3rem; color: var(--accent); font-weight: 500; }
+.fs-prefixes i { font-style: normal; color: var(--muted); }
+@media print {
+  .page-formulas .fs-tools, .page-formulas .fs-jump, .page-formulas .page-hero .lead { display: none !important; }
+  .page-formulas .page-hero { padding: 0 0 6pt; border: 0; background: none; }
+  .page-formulas .page-hero h1 { font-size: 18pt; margin: 0; }
+  .page-formulas .formula-sheet { padding: 0; }
+  .page-formulas .formula-sheet .wrap { display: block; columns: 2; column-gap: 14pt; max-width: none; padding: 0; }
+  .page-formulas .fs-block { break-inside: avoid-column; border: 0; padding: 0 0 8pt; margin: 0 0 6pt; }
+  .page-formulas .fs-h { font-size: 11pt; padding-bottom: 2pt; margin-bottom: 4pt; }
+  .page-formulas .fs-items { display: block; }
+  .page-formulas .fs-item { padding: 2pt 0; break-inside: avoid; }
+  .page-formulas .fs-item dt { font-size: 7pt; }
+  .page-formulas .katex { font-size: 0.82em; }
+  .page-formulas .table-wrap { contain: none; }
+  .page-formulas .fs-constants th, .page-formulas .fs-constants td { padding: 2pt 3pt; font-size: 7.5pt; }
+  .page-formulas .fs-prefixes { grid-template-columns: repeat(4, 1fr); gap: 2pt; }
+  .page-formulas .fs-prefixes li { padding: 2pt 4pt; }
+  @page { size: A4; margin: 12mm; }
+}
+.formula-sheet .wrap > * { min-width: 0; }
+@media (max-width: 440px) {
+  .header-inner { gap: 10px; }
+  .header-tools { gap: 4px; }
+  .tool { height: 36px; min-width: 36px; padding: 0 6px; border-radius: 10px; }
+  .lang-seg { height: 36px; }
+  .brand-mark { width: 32px; height: 32px; }
+}
+/* long maths / code inside problems and quizzes scroll inside their box on small screens */
+.problems, .problem, .reveal-box, .quiz, .q { min-width: 0; max-width: 100%; }
+.problem .prose, .reveal-box .prose, .q-text, .q-explain, .opt-text { min-width: 0; overflow-x: auto; overflow-wrap: anywhere; }
+.problem header h3 { flex: 1 1 180px; min-width: 0; }

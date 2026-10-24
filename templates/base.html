@@ -46,6 +46,7 @@
       <a href="{{ url() }}#courses" {% if page == 'course' %}aria-current="true"{% endif %}>{{ ui('nav_courses') }}</a>
       {% if open_courses %}<a href="{{ url() }}#path">{{ ui('nav_path') }}</a>{% endif %}
       {% if has_glossary %}<a href="{{ url('glossary/') }}" {% if page == 'glossary' %}aria-current="page"{% endif %}>{{ ui('nav_glossary') }}</a>{% endif %}
+      <a href="{{ url('formulas/') }}" {% if page == 'formulas' %}aria-current="page"{% endif %}>{{ ui('nav_formulas') }}</a>
       <a href="{{ url('guide/') }}" {% if page == 'guide' %}aria-current="page"{% endif %}>{{ ui('nav_guide') }}</a>
     </nav>
     <div class="header-tools">
@@ -68,6 +69,7 @@
     <a href="{{ url() }}#courses">{{ ui('nav_courses') }}</a>
     {% if open_courses %}<a href="{{ url() }}#path">{{ ui('nav_path') }}</a>{% endif %}
     {% if has_glossary %}<a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a>{% endif %}
+    <a href="{{ url('formulas/') }}">{{ ui('nav_formulas') }}</a>
     <a href="{{ url('guide/') }}">{{ ui('nav_guide') }}</a>
     <a href="{{ home_url }}">{{ ui('home_site') }} {{ icon('external') }}</a>
   </nav>
@@ -98,6 +100,7 @@
         <ul>
           <li><a href="{{ home_teaching }}">{{ ui('taught_title') }} {{ icon('external', 'ic xs') }}</a></li>
           {% if has_glossary %}<li><a href="{{ url('glossary/') }}">{{ ui('nav_glossary') }}</a></li>{% endif %}
+          <li><a href="{{ url('formulas/') }}">{{ ui('nav_formulas') }}</a></li>
           <li><a href="{{ url('guide/') }}">{{ ui('nav_guide') }}</a></li>
           <li><a href="{{ home_url }}">{{ ui('home_site') }} {{ icon('external', 'ic xs') }}</a></li>
         </ul>

@@ -339,42 +339,11 @@ schedule:
     milestone: final
 
 materials:
-  - type: lab
-    title: { en: 'TP 1 — Introduction: instruments and measurement', ar: 'العمل التطبيقي 1 — مقدمة: الأجهزة والقياس' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2014/03/tp1.pdf
-    week: 1
-    lang: fr
-  - type: lab
-    title: { en: 'TP 2 — Characteristics of two-terminal components', ar: 'العمل التطبيقي 2 — مميزات ثنائيات الأقطاب' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp2.pdf
-    week: 4
-    lang: fr
-  - type: lab
-    title: { en: 'TP 5 — The electrolytic (rheographic) tank', ar: 'العمل التطبيقي 5 — الحوض الإلكتروليتي (الريوغرافي)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp5.pdf
-    week: 7
-    lang: fr
-  - type: lab
-    title: { en: 'TP 3 — The oscilloscope', ar: 'العمل التطبيقي 3 — راسم الاهتزاز المهبطي' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp3.pdf
-    week: 9
-    lang: fr
-  - type: lab
-    title: { en: 'TP 4 — Transient behaviour of RC and RL circuits', ar: 'العمل التطبيقي 4 — النظام الانتقالي في الدارتين RC وRL' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp4.pdf
-    week: 10
-    lang: fr
-  - type: reading
-    title: { en: 'Electricity lecture notes — background reading (French)', ar: 'مطبوعة محاضرات الكهرباء — قراءة داعمة (بالفرنسية)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/electricite_poly.pdf
-    lang: fr
+  - type: formula
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
 
 exams:
-  - title: { en: 'Lab exam (with marking scheme)', ar: 'امتحان الأعمال التطبيقية (مع سلّم التنقيط)' }
-    session: 2013–2014
-    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/05/st_s2_tp_phys2.pdf
-    solution: https://khelifak.wordpress.com/wp-content/uploads/2014/05/st_s2_tp_phys2_barem.pdf
-    lang: fr
 
 exam_guide:
   format:
@@ -799,3 +768,11 @@ glossary:
 pending:   # NOT displayed: items whose authorship must be confirmed before publishing
   - { what: "French formula sheet (math_form_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
   - { what: "French physical constants sheet (constant_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
+  - { what: "TP 1 — Introduction: instruments and measurement", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/03/tp1.pdf", why: "first-year TP handouts are normally the department's lab manual" }
+  - { what: "TP 2 — Characteristics of two-terminal components", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp2.pdf", why: "probably part of the department's lab manual" }
+  - { what: "TP 5 — The electrolytic (rheographic) tank", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp5.pdf", why: "probably part of the department's lab manual" }
+  - { what: "TP 3 — The oscilloscope", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp3.pdf", why: "probably part of the department's lab manual" }
+  - { what: "TP 4 — Transient behaviour of RC and RL circuits", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/02/tp4.pdf", why: "probably part of the department's lab manual" }
+  - { what: "Electricity lecture notes — background reading (French)", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/02/electricite_poly.pdf", why: "written by other authors (department lecture notes)" }
+  - { what: "Lab exam (with marking scheme)", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/05/st_s2_tp_phys2_barem.pdf", why: "goes with the lab exam above" }
+  - { what: "Lab exam (with marking scheme)", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/05/st_s2_tp_phys2.pdf", why: "generic file name and an official marking scheme suggest a common lab exam for all ST groups; confirm he wrote it" }

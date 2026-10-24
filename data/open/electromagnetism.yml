@@ -430,6 +430,9 @@ materials:
     url: https://khelifak.wordpress.com/wp-content/uploads/2016/05/em_serie6_s.pdf
     week: 14
     lang: fr
+  - type: formula
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
 
 exams:
   - title: { en: Final exam, ar: الاختبار النهائي }
@@ -977,9 +980,6 @@ textbooks:
     - title: { en: 'The Feynman Lectures on Physics, Volume II', ar: 'محاضرات فاينمان في الفيزياء، المجلد الثاني' }
       url: https://www.feynmanlectures.caltech.edu/II_toc.html
       note: { en: Free official online edition — physical intuition first., ar: النسخة الرسمية المجانية على الخط — الحدس الفيزيائي أولًا. }
-    - title: { en: Landau & Lifshitz — The Classical Theory of Fields, ar: لانداو وليفشيتس — النظرية الكلاسيكية للحقول }
-      url: https://archive.org/details/TheClassicalTheoryOfFields
-      note: { en: Advanced reference (relativistic formulation)., ar: مرجع متقدم (الصياغة النسبية). }
     - title: { en: A. Macfarlane — Electromagnetism (lecture notes), ar: A. Macfarlane — الكهرومغناطيسية (مذكرات محاضرات) }
       url: https://www.damtp.cam.ac.uk/user/tong/em/macfarlane.pdf
       note: { en: Concise mathematical lecture notes., ar: مذكرات رياضية موجزة. }
@@ -1027,3 +1027,6 @@ glossary:
   - { en: Plane wave, ar: الموجة المستوية, fr: Onde plane, def: { en: Wave whose fields are uniform over planes perpendicular to the propagation direction., ar: موجة حقولها منتظمة على المستويات العمودية على اتجاه الانتشار. } }
   - { en: Refractive index, ar: قرينة الانكسار, fr: Indice de réfraction, def: { en: 'Ratio \(n = c/v\) of the speed of light in vacuum to that in the medium.', ar: 'النسبة \(n = c/v\) بين سرعة الضوء في الفراغ وسرعته في الوسط.' } }
   - { en: Skin depth, ar: عمق القشرة (العمق الجلدي), fr: Épaisseur de peau, def: { en: Distance over which a wave amplitude in a conductor falls by a factor e., ar: المسافة التي تنقص عليها سعة الموجة داخل ناقل بمعامل e. } }
+
+pending:   # NOT displayed: items whose authorship must be confirmed before publishing
+  - { what: "Landau & Lifshitz — The Classical Theory of Fields", url: "https://archive.org/details/TheClassicalTheoryOfFields", why: "copyrighted textbook uploaded by a third party; link only if you are comfortable with it" }

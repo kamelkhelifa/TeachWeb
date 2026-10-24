@@ -533,30 +533,6 @@ materials:
     week: 11
     lang: en
   # French material
-  - type: notes
-    title: { en: 'Mechanics lecture notes (French)', ar: 'مطبوعة محاضرات الميكانيكا (بالفرنسية)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/polycope_mecanique.pdf
-    lang: fr
-  - type: problems
-    title: { en: 'TD 1 — Vector analysis', ar: 'السلسلة الموجهة 1 — التحليل المتجهي' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td1.pdf
-    week: 2
-    lang: fr
-  - type: problems
-    title: { en: 'TD 2 — Kinematics I (rectilinear and curvilinear motion)', ar: 'السلسلة الموجهة 2 — علم الحركة 1 (الحركة المستقيمة والمنحنية)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td2.pdf
-    week: 3
-    lang: fr
-  - type: problems
-    title: { en: 'TD 3 — Kinematics II (coordinate systems, relative motion)', ar: 'السلسلة الموجهة 3 — علم الحركة 2 (جمل الإحداثيات، الحركة النسبية)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td3.pdf
-    week: 5
-    lang: fr
-  - type: problems
-    title: { en: 'TD 4 — Dynamics of a particle', ar: 'السلسلة الموجهة 4 — تحريك النقطة المادية' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td4.pdf
-    week: 6
-    lang: fr
   - type: solutions
     title: { en: 'TD 4 — Solutions', ar: 'السلسلة الموجهة 4 — الحلول' }
     url: https://khelifak.wordpress.com/wp-content/uploads/2014/01/soln4.pdf
@@ -564,38 +540,8 @@ materials:
     lang: fr
   # Formula sheets
   - type: formula
-    title: { en: 'Table of mathematical formulae', ar: 'جدول الصيغ الرياضية' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
-  - type: lab
-    title: { en: 'Mechanics laboratory manual', ar: 'دليل مختبر الميكانيكا' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2017/02/phys101_labmanual.pdf
-    lang: en
-  - type: lab
-    title: { en: 'TP 1 — Kinematics: rectilinear motion', ar: 'العمل التطبيقي 1 — علم الحركة: الحركة المستقيمة' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp_1.pdf
-    week: 3
-    lang: fr
-  - type: lab
-    title: { en: 'TP 3 — Kinematics and dynamics: motion in the gravitational field', ar: 'العمل التطبيقي 3 — علم الحركة والتحريك: الحركة في حقل الثقالة' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp3.pdf
-    week: 4
-    lang: fr
-  - type: lab
-    title: { en: 'TP 2 — Kinematics: circular motion', ar: 'العمل التطبيقي 2 — علم الحركة: الحركة الدائرية' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp2.pdf
-    week: 5
-    lang: fr
-  - type: lab
-    title: { en: 'TP 4 — Dynamics: friction and contact forces', ar: 'العمل التطبيقي 4 — التحريك: الاحتكاك وقوة التلامس' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp4.pdf
-    week: 7
-    lang: fr
-  - type: lab
-    title: { en: 'TP 5 — Study of an energy transfer', ar: 'العمل التطبيقي 5 — دراسة تحويل للطاقة' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp5.pdf
-    week: 9
-    lang: fr
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   # Videos
   - type: video
     title: { en: 'Classical mechanics video lectures (W. Lewin, MIT 8.01)', ar: 'محاضرات مصوّرة في الميكانيكا الكلاسيكية (W. Lewin، مقرر MIT 8.01)' }
@@ -1083,3 +1029,14 @@ glossary:
 pending:   # NOT displayed: items whose authorship must be confirmed before publishing
   - { what: "French formula sheet (math_form_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
   - { what: "French physical constants sheet (constant_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
+  - { what: "Mechanics lecture notes (French)", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/polycope_mecanique.pdf", why: "written by other authors (department lecture notes)" }
+  - { what: "TD 1 — Vector analysis", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/td1.pdf", why: "first-year TD series at USTHB are usually common to all MI sections (prepared by the course team); not clearly his own" }
+  - { what: "TD 2 — Kinematics I (rectilinear and curvilinear motion)", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/td2.pdf", why: "probably a common TD series for all MI sections; not clearly his own" }
+  - { what: "TD 3 — Kinematics II (coordinate systems, relative motion)", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/td3.pdf", why: "probably a common TD series for all MI sections; not clearly his own" }
+  - { what: "TD 4 — Dynamics of a particle", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/td4.pdf", why: "probably a common TD series for all MI sections; not clearly his own (his solution sheet is published)" }
+  - { what: "Mechanics laboratory manual", url: "https://khelifak.wordpress.com/wp-content/uploads/2017/02/phys101_labmanual.pdf", why: "Department lab manual (not the professor's own document); publish only if he wrote it." }
+  - { what: "TP 1 — Kinematics: rectilinear motion", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp_1.pdf", why: "first-year TP handouts are normally the department's lab manual" }
+  - { what: "TP 3 — Kinematics and dynamics: motion in the gravitational field", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp3.pdf", why: "probably part of the department's lab manual" }
+  - { what: "TP 2 — Kinematics: circular motion", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp2.pdf", why: "probably part of the department's lab manual" }
+  - { what: "TP 4 — Dynamics: friction and contact forces", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp4.pdf", why: "probably part of the department's lab manual" }
+  - { what: "TP 5 — Study of an energy transfer", url: "https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp5.pdf", why: "probably part of the department's lab manual" }

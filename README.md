@@ -40,6 +40,8 @@ There are no accounts and no tracking. Progress is stored only in the student's 
 - Maths is LaTeX between `\( … \)` or `\[ … \]`. Put such text in single quotes or a `|` block.
 - **Add a PDF:** upload it to `static/files/<course>/` (or use a Drive link) and add an entry under `materials:`. Use `week:` to show it inside that week of the plan.
 - **Add a course:** copy a course file next to it, change `slug` (= file name), and edit.
+- **Formula sheet & physical constants** (`/formulas/`): edit `data/formulas.yml`. Course materials link to it with `url: "@formulas/"`. Any TeachWeb page can be linked this way, as `@<page>/`.
+- **Held-back items:** list a link under `pending:` in a course file to keep it off the site while its authorship or copyright is checked. A link listed there is withheld from every course.
 - Interface words are in `data/i18n.yml`, site settings in `data/site.yml`, and the guide page in `data/guide.yml`.
 
 Commit on GitHub (✏️ → *Commit changes*). The site validates, rebuilds and redeploys automatically in about a minute.

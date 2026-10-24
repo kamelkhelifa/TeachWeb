@@ -399,33 +399,12 @@ materials:
     lang: en
   # Formula sheet, experiments, simulation
   - type: formula
-    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
-  - type: lab
-    title: { en: 'Rüchardt''s experiment: measuring the adiabatic index \(\gamma = C_p/C_V\)', ar: 'تجربة روشارت: قياس الأس الكظوم \(\gamma = C_p/C_V\)' }
-    url: https://drive.google.com/open?id=129Q5W93xEBYnnghvPHeTwdguKCA7PhVr
-    week: 3
-  - type: lab
-    title: { en: Hero's engine — an early (toy) heat engine, ar: آلة هيرون — آلة حرارية قديمة (لعبة) }
-    url: https://drive.google.com/open?id=1x9G2d0qOzRWNEr59oFIAKm8CjlppNw-u
-    week: 4
-  - type: sim
-    title: { en: Carnot cycle simulation for a gas–piston system, ar: محاكاة دورة كارنو لنظام غاز-مكبس }
-    url: https://drive.google.com/open?id=1buWtNO6LDETJfwdlUvdi6yRDhqRdr7BQ
-    week: 4
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   # Supplementary material in Arabic
   - type: reading
     title: { en: Statistical mechanics — complete lecture notes (Arabic), ar: الميكانيكا الإحصائية — مذكرات كاملة بالعربية }
     url: https://faculty.kfupm.edu.sa/PHYS/imnasser/SM_Chapter_All.pdf
-    lang: ar
-  - type: reading
-    title: { en: Thermodynamics — lecture notes (Arabic), ar: الديناميكا الحرارية — مذكرات بالعربية }
-    url: http://www.uobabylon.edu.iq/eprints/pubdoc_3_14399_1405.doc
-    lang: ar
-  - type: link
-    title: { en: Collection of translated thermodynamics books (Arabic), ar: مجموعة كتب مترجمة في الديناميكا الحرارية }
-    url: https://www.alfreed-ph.com/2017/09/Books-thermodynamics-pdf.html
     lang: ar
 
 exams:
@@ -445,11 +424,11 @@ exams:
     solution: https://drive.google.com/open?id=1rTL9ZHB9i4h7hOPvESysmpNtt49TX9rt
     lang: en
   - title: { en: Past exam (paper I), ar: اختبار سابق (النموذج الأول) }
-    session: 2017–2018
+    session: "2017–2018 · 1439 (S1)"
     paper: https://drive.google.com/open?id=1xiSI1fkwDCua0hrdjYan0PXjAs7nABov
     lang: en
   - title: { en: Past exam (paper II), ar: اختبار سابق (النموذج الثاني) }
-    session: 2017–2018
+    session: "2017–2018 · 1439 (S2)"
     paper: https://drive.google.com/open?id=15tdcWdgSFrWg3tz6VMDv6EM0zGIScmsW
     lang: en
 
@@ -961,3 +940,10 @@ glossary:
   - { en: Bose–Einstein distribution, ar: توزيع بوز-أينشتاين, fr: Distribution de Bose-Einstein, def: { en: '\(\bar n = 1/(e^{\beta(E-\mu)}-1)\): mean occupation of a single-particle state by bosons.', ar: '\(\bar n = 1/(e^{\beta(E-\mu)}-1)\): متوسط إشغال حالة جسيم واحد بالبوزونات.' } }
   - { en: Fermi energy, ar: طاقة فيرمي, fr: Énergie de Fermi, def: { en: Energy of the highest occupied state of an ideal Fermi gas at \(T=0\)., ar: 'طاقة أعلى حالة مشغولة في غاز فيرمي مثالي عند \(T=0\).' } }
   - { en: Bose–Einstein condensation, ar: تكاثف بوز-أينشتاين, fr: Condensation de Bose-Einstein, def: { en: 'Macroscopic occupation of the ground state by bosons below a critical temperature \(T_c\).', ar: 'إشغال عياني للحالة الأساسية بالبوزونات تحت درجة حرارة حرجة \(T_c\).' } }
+
+pending:   # NOT displayed: items whose authorship must be confirmed before publishing
+  - { what: "Rüchardt's experiment: measuring the adiabatic index \\(\\gamma = C_p/C_V\\)", url: "https://drive.google.com/open?id=129Q5W93xEBYnnghvPHeTwdguKCA7PhVr", why: "Listed under 'Experiments/Real applications'; authorship unknown (may be a third-party video or animation)." }
+  - { what: "Hero's engine — an early (toy) heat engine", url: "https://drive.google.com/open?id=1x9G2d0qOzRWNEr59oFIAKm8CjlppNw-u", why: "Listed under 'Experiments/Real applications'; authorship unknown (may be a third-party video or animation)." }
+  - { what: "Carnot cycle simulation for a gas–piston system", url: "https://drive.google.com/open?id=1buWtNO6LDETJfwdlUvdi6yRDhqRdr7BQ", why: "Simulation file of unknown origin; publish only if he made it." }
+  - { what: "Thermodynamics — lecture notes (Arabic)", url: "http://www.uobabylon.edu.iq/eprints/pubdoc_3_14399_1405.doc", why: "File written by someone else, linked on the page through a Google redirect; not a well-known open resource." }
+  - { what: "Collection of translated thermodynamics books (Arabic)", url: "https://www.alfreed-ph.com/2017/09/Books-thermodynamics-pdf.html", why: "Translated textbooks offered for download; copyright status unclear." }

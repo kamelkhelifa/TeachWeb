@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% from "_macros.html" import icon %}
+{% block title %}{{ t(formulas.title) }} · {{ site.name if lang == 'en' else site.name_ar }}{% endblock %}
+{% block description %}{{ t(formulas.lead) | plain }}{% endblock %}
+{% block main %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">{{ icon('formula', 'ic xs') }} {{ ui('nav_formulas') }}</p>
+    <h1>{{ t(formulas.title) }}</h1>
+    <p class="lead">{{ t(formulas.lead) }}</p>
+    <div class="fs-tools">
+      <label class="mat-search">{{ icon('search', 'ic xs') }}<input type="search" placeholder="{{ ui('formulas_filter') }}" data-fs-search></label>
+      <button class="btn btn-ghost" type="button" data-print>{{ icon('print') }} {{ ui('print') }}</button>
+    </div>
+    <nav class="fs-jump" aria-label="{{ ui('on_this_page') }}">
+      <a href="#constants">{{ ui('constants') }}</a>
+      {% for s in formulas.sections %}<a href="#{{ s.id }}">{{ t(s.title) }}</a>{% endfor %}
+    </nav>
+  </div>
+</section>
+
+<section class="section tight formula-sheet" data-fs>
+  <div class="wrap">
+    <div class="fs-block" id="constants" data-fs-block>
+      <h2 class="fs-h">{{ icon('sparkle', 'ic xs') }} {{ ui('constants') }}</h2>
+      <div class="table-wrap">
+        <table class="fs-constants">
+          <thead><tr><th scope="col">{{ ui('quantity') }}</th><th scope="col">{{ ui('symbol') }}</th><th scope="col">{{ ui('value') }}</th><th scope="col">{{ ui('unit') }}</th></tr></thead>
+          <tbody>
+          {% for k in formulas.constants %}
+            <tr data-fs-item data-text="{{ k.name.en }} {{ k.name.ar }}">
+              <td>{{ t(k.name) }}{% if k.exact %} <span class="exact">{{ ui('exact') }}</span>{% endif %}</td>
+              <td class="m">\({{ k.sym }}\)</td>
+              <td class="m">\({{ k.val }}\)</td>
+              <td class="m">{% if k.unit %}\({{ k.unit }}\){% endif %}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="note">{{ t(formulas.note) }}</p>
+      <h3 class="sub">{{ ui('si_prefixes') }}</h3>
+      <ul class="fs-prefixes">
+        {% for sym, name, power in formulas.prefixes %}<li><b>\(\mathrm{ {{- sym -}} }\)</b><span>{{ name }}</span><i>\({{ power }}\)</i></li>{% endfor %}
+      </ul>
+    </div>
+
+    {% for s in formulas.sections %}
+    <div class="fs-block" id="{{ s.id }}" data-fs-block>
+      <h2 class="fs-h">{{ t(s.title) }}</h2>
+      <dl class="fs-items">
+        {% for it in s['items'] %}
+        <div class="fs-item" data-fs-item data-text="{{ it.label.en }} {{ it.label.ar }} {{ s.title.en }} {{ s.title.ar }}">
+          <dt>{{ t(it.label) }}</dt>
+          <dd>\[{{ it.tex }}\]</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </div>
+    {% endfor %}
+    <p class="empty-note" data-fs-empty hidden>{{ ui('search_empty') }}</p>
+  </div>
+</section>
+{% endblock %}

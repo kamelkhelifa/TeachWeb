@@ -172,3 +172,13 @@ placeholder_glossary:  { en: "The glossary for this course has not been publishe
 taught_title:          { en: "Courses taught at each university", ar: "المقررات المدرَّسة في كل جامعة" }
 taught_text:           { en: "The syllabus of every course as taught at each university, with its language of instruction and materials, is on the personal homepage.", ar: "مفردات كل مقرر كما دُرِّس في كل جامعة، مع لغة تدريسه وموادّه، متاحة في الصفحة الشخصية." }
 taught_on_home:        { en: "See the courses taught at each university", ar: "اطّلع على المقررات المدرَّسة في كل جامعة" }
+nav_formulas:          { en: "Formula sheet", ar: "جدول القوانين" }
+formulas_filter:       { en: "Filter formulas and constants…", ar: "صفِّ القوانين والثوابت…" }
+print:                 { en: "Print", ar: "اطبع" }
+constants:             { en: "Physical constants", ar: "الثوابت الفيزيائية" }
+quantity:              { en: "Quantity", ar: "المقدار" }
+symbol:                { en: "Symbol", ar: "الرمز" }
+value:                 { en: "Value", ar: "القيمة" }
+unit:                  { en: "Unit", ar: "الوحدة" }
+exact:                 { en: "exact", ar: "دقيقة" }
+si_prefixes:           { en: "SI prefixes", ar: "بادئات النظام الدولي" }

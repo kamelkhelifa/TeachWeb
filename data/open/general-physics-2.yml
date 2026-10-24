@@ -422,18 +422,9 @@ materials:
     week: 13
     lang: en
   # French lecture/tutorial material (electrostatics)
-  - type: notes
-    title: { en: 'Electricity lecture notes (French)', ar: 'مطبوعة محاضرات الكهرباء (بالفرنسية)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2014/02/electricite_poly.pdf
-    lang: fr
   - type: summary
     title: { en: 'Electrostatics — summary (French)', ar: 'الكهروساكنة — ملخص (بالفرنسية)' }
     url: https://khelifak.wordpress.com/wp-content/uploads/2014/05/phys2_res1.pdf
-    week: 3
-    lang: fr
-  - type: problems
-    title: { en: 'TD 1 — Electrostatics (French)', ar: 'السلسلة الموجهة 1 — الكهروساكنة (بالفرنسية)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2014/04/s2_phys2_td1.pdf
     week: 3
     lang: fr
   - type: solutions
@@ -443,9 +434,8 @@ materials:
     lang: fr
   # Formula sheets
   - type: formula
-    title: { en: 'Table of mathematical formulae', ar: 'جدول الصيغ الرياضية' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   - type: slides
     title: { en: 'Complementary — Waves I and II (ch. 16–17)', ar: 'مادة تكميلية — الأمواج 1 و2 (الفصلان 16–17)' }
     url: https://drive.google.com/open?id=15JQ2TIWm7ErOiR5cvIiIJCHNE6IUaOY3
@@ -536,10 +526,6 @@ exams:
     session: 2013–2014
     paper: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g4.pdf
     solution: https://khelifak.wordpress.com/wp-content/uploads/2014/05/test2_g4_soln.pdf
-    lang: fr
-  - title: { en: 'Final exam (electrostatics)', ar: 'الاختبار النهائي (الكهروساكنة)' }
-    session: 2013–2014
-    paper: https://khelifak.wordpress.com/wp-content/uploads/2014/06/mi_a1314_s2_phys2.pdf
     lang: fr
 
 exam_guide:
@@ -996,3 +982,6 @@ glossary:
 pending:   # NOT displayed: items whose authorship must be confirmed before publishing
   - { what: "French formula sheet (math_form_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
   - { what: "French physical constants sheet (constant_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
+  - { what: "Electricity lecture notes (French)", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/02/electricite_poly.pdf", why: "written by other authors (department lecture notes)" }
+  - { what: "TD 1 — Electrostatics (French)", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/04/s2_phys2_td1.pdf", why: "probably a common TD series for all MI sections; not clearly his own (his summary and solutions are published)" }
+  - { what: "Final exam (electrostatics)", url: "https://khelifak.wordpress.com/wp-content/uploads/2014/06/mi_a1314_s2_phys2.pdf", why: "common exam for the whole MI stream, probably set by the course coordinator, not by him" }

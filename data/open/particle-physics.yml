@@ -337,8 +337,10 @@ schedule:
     reading: Thomson ch. 16, 18
     milestone: review
 
-materials: []
-
+materials:
+  - type: formula
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
 exams:
   - title: { en: Final exam, ar: الاختبار النهائي }
     session: 2013–2014

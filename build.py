@@ -32,6 +32,16 @@ def load(path):
 SITE = load(ROOT / "data" / "site.yml")
 UI = load(ROOT / "data" / "i18n.yml")
 GUIDE = load(ROOT / "data" / "guide.yml")
+FORMULAS = load(ROOT / "data" / "formulas.yml")
+for _sec in FORMULAS["sections"]:
+    for _it in _sec["items"]:
+        # stack the formulas of one item (separated by \qquad) on separate lines, so they fit two columns
+        parts = []
+        for _p in re.split(r"\\qquad", _it["tex"]):
+            # long lines are also split at ",\quad"
+            parts += re.split(r",\s*\\quad\s*", _p) if len(_p) > 90 else [_p]
+        parts = [x.strip().rstrip(",") for x in parts if x.strip()]
+        _it["tex"] = parts[0] if len(parts) == 1 else "\\begin{aligned}&" + " \\\\ &".join(parts) + "\\end{aligned}"
 
 
 # ---------- cleaning course text ----------
@@ -245,7 +255,8 @@ def build(drafts=False):
 
     # every page: (template, path, extra context); all pages exist in English and Arabic
     plan = [("index.html", "", {"page": "home"}),
-            ("guide.html", "guide/", {"page": "guide", "guide": GUIDE})]
+            ("guide.html", "guide/", {"page": "guide", "guide": GUIDE}),
+            ("formulas.html", "formulas/", {"page": "formulas", "formulas": FORMULAS})]
     if gloss:
         plan.append(("glossary.html", "glossary/", {"page": "glossary", "terms": gloss, "gloss_courses": open_courses}))
     for c in open_courses:

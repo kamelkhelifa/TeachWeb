@@ -197,8 +197,8 @@ def validate(path, slugs):
         w = f"materials[{i}]"
         if m.get("type") not in MATERIALS:
             r.err(w, f"type must be one of {sorted(MATERIALS)}")
-        if not str(m.get("url", "")).startswith("http"):
-            r.err(w, "url missing")
+        if not str(m.get("url", "")).startswith(("http", "@")):
+            r.err(w, "url missing (http… or @page/ for a TeachWeb page)")
         check_bi(r, f"{w}.title", m.get("title"))
         if m.get("lang") and m["lang"] not in LANGS:
             r.err(w, "bad lang")

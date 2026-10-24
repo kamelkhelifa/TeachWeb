@@ -324,6 +324,9 @@ materials:
     title: { en: Assignment 5 — solution code, ar: الواجب 5 — برنامج الحل }
     url: https://drive.google.com/file/d/1KeXX_Z5j0rCWK17pxEnJ4tILzjFKWIDF/view?usp=sharing
     week: 13
+  - type: formula
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
 
 exams: []
 

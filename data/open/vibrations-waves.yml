@@ -542,110 +542,13 @@ materials:
     week: 10
   # Formula sheets
   - type: formula
-    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
-  - type: reading
-    title: { en: 'Mechanical vibrations and waves — Vol. 1: Vibrations (lecture notes)', ar: 'الاهتزازات والأمواج الميكانيكية — الجزء 1: الاهتزازات (مطبوعة)' }
-    url: https://www.univ-chlef.dz/fgca/images/tome-1_vibrations.pdf
-    lang: fr
-  - type: reading
-    title: { en: 'Mechanical vibrations and waves — Vol. 2: Mechanical waves (lecture notes)', ar: 'الاهتزازات والأمواج الميكانيكية — الجزء 2: الأمواج الميكانيكية (مطبوعة)' }
-    url: https://www.univ-chlef.dz/fgca/images/tome-2_ondes%20mecaniques.pdf
-    lang: fr
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   - type: reading
     title: { en: Waves and vibrations — introductory course notes (J.-M. Richard), ar: الأمواج والاهتزازات — مطبوعة تمهيدية (J.-M. Richard) }
     url: https://www.ipnl.in2p3.fr/perso/richard/ENSEIGN/VO/CoursIUT.pdf
     lang: fr
   # Animations
-  - type: video
-    title: { en: 'Animation — SHO: mass–spring (longitudinal)', ar: 'رسم متحرك — هزاز توافقي: كتلة–نابض (اهتزاز طولي)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohs7.gif
-    week: 3
-  - type: video
-    title: { en: 'Animation — SHO: simple pendulum', ar: 'رسم متحرك — هزاز توافقي: النواس البسيط' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohs_pend.gif
-    week: 3
-  - type: video
-    title: { en: 'Animation — SHO: mass between two springs (transverse)', ar: 'رسم متحرك — هزاز توافقي: كتلة بين نابضين (اهتزاز عرضي)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/ohs_vert.gif
-    week: 3
-  - type: video
-    title: { en: 'Animation — damped mass–spring oscillator', ar: 'رسم متحرك — هزاز كتلة–نابض متخامد' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oha3.gif
-    week: 4
-  - type: video
-    title: { en: 'Animation — forced mass–spring oscillator', ar: 'رسم متحرك — هزاز كتلة–نابض قسري' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohf.gif
-    week: 5
-  - type: video
-    title: { en: 'Animation — 2 masses + 3 springs (horizontal): normal mode 1', ar: 'رسم متحرك — كتلتان + 3 نوابض (أفقي): النمط الذاتي 1' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_mp1.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — 2 masses + 3 springs (horizontal): normal mode 2', ar: 'رسم متحرك — كتلتان + 3 نوابض (أفقي): النمط الذاتي 2' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_mp2.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — 2 masses + 3 springs (horizontal): mixed motion', ar: 'رسم متحرك — كتلتان + 3 نوابض (أفقي): حركة مختلطة' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_sp.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — 2 masses + 2 springs (vertical): normal mode 1', ar: 'رسم متحرك — كتلتان + نابضان (شاقولي): النمط الذاتي 1' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_mp1.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — 2 masses + 2 springs (vertical): normal mode 2', ar: 'رسم متحرك — كتلتان + نابضان (شاقولي): النمط الذاتي 2' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_mp2.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — 2 masses + 2 springs (vertical): mixed motion', ar: 'رسم متحرك — كتلتان + نابضان (شاقولي): حركة مختلطة' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_sp.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — two coupled pendulums: normal mode 1', ar: 'رسم متحرك — نواسان متقارنان: النمط الذاتي 1' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_mp1.gif
-    week: 9
-  - type: video
-    title: { en: 'Animation — two coupled pendulums: normal mode 2', ar: 'رسم متحرك — نواسان متقارنان: النمط الذاتي 2' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_mp2.gif
-    week: 9
-  - type: video
-    title: { en: 'Animation — two coupled pendulums: mixed motion', ar: 'رسم متحرك — نواسان متقارنان: حركة مختلطة' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_sp.gif
-    week: 9
-  - type: video
-    title: { en: 'Animation — two pendulums + one spring: normal mode 1', ar: 'رسم متحرك — نواسان + نابض: النمط الذاتي 1' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_mp1.gif
-    week: 9
-  - type: video
-    title: { en: 'Animation — two pendulums + one spring: normal mode 2', ar: 'رسم متحرك — نواسان + نابض: النمط الذاتي 2' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_mp2.gif
-    week: 9
-  - type: video
-    title: { en: 'Animation — two pendulums + one spring: mixed motion (beats)', ar: 'رسم متحرك — نواسان + نابض: حركة مختلطة (ضربات)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_sp1.gif
-    week: 9
-  - type: video
-    title: { en: 'Animation — two pendulums + one spring: mixed motion, version 2', ar: 'رسم متحرك — نواسان + نابض: حركة مختلطة، النسخة 2' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_sp2.gif
-    week: 9
-  - type: video
-    title: { en: 'Animation — 2 masses + 3 springs (transverse): normal mode 1', ar: 'رسم متحرك — كتلتان + 3 نوابض (عرضي): النمط الذاتي 1' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_mp1.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — 2 masses + 3 springs (transverse): normal mode 2', ar: 'رسم متحرك — كتلتان + 3 نوابض (عرضي): النمط الذاتي 2' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_mp2.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — 2 masses + 3 springs (transverse): mixed motion', ar: 'رسم متحرك — كتلتان + 3 نوابض (عرضي): حركة مختلطة' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_sp.gif
-    week: 8
-  - type: video
-    title: { en: 'Animation — 2 masses + 3 springs (transverse): mixed motion, version 2', ar: 'رسم متحرك — كتلتان + 3 نوابض (عرضي): حركة مختلطة، النسخة 2' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_sp2.gif
-    week: 8
 
 exams:
   - title: { en: Midterm exam, ar: الاختبار النصفي }
@@ -1241,9 +1144,6 @@ textbooks:
     - title: { en: Mechanical vibrations and waves — slides and solved exercises (H. Djelouah), ar: الاهتزازات والأمواج الميكانيكية — شرائح وتمارين محلولة (H. Djelouah) }
       url: https://www.usthb.dz/fphy/hdjelouah/Diapos.html
       note: { en: Classic French-language course following the same LMD syllabus., ar: مقرر مرجعي بالفرنسية يتبع مفردات نظام LMD نفسها. }
-    - title: { en: G. C. King — Vibrations and Waves (online preview), ar: G. C. King — الاهتزازات والأمواج (معاينة على الخط) }
-      url: https://www.slideshare.net/StefanyCuadros/vibrations-and-waves-28179530
-      note: { en: Preview of the required textbook., ar: معاينة للكتاب المقرر. }
     - title: { en: A. P. French — Vibrations and Waves (Google Books), ar: A. P. French — الاهتزازات والأمواج (كتب Google) }
       url: https://books.google.dz/books?id=RqE26vDmd5wC&redir_esc=y
       note: { en: Searchable preview of the classic MIT text., ar: معاينة قابلة للبحث لهذا المرجع الكلاسيكي من MIT. }
@@ -1289,3 +1189,28 @@ glossary:
 pending:   # NOT displayed: items whose authorship must be confirmed before publishing
   - { what: "French formula sheet (math_form_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
   - { what: "French physical constants sheet (constant_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
+  - { what: "Mechanical vibrations and waves — Vol. 1: Vibrations (lecture notes)", url: "https://www.univ-chlef.dz/fgca/images/tome-1_vibrations.pdf", why: "written by another author and hosted on the university site; could go under textbooks.online if you wish to link it" }
+  - { what: "Mechanical vibrations and waves — Vol. 2: Mechanical waves (lecture notes)", url: "https://www.univ-chlef.dz/fgca/images/tome-2_ondes%20mecaniques.pdf", why: "written by another author and hosted on the university site; could go under textbooks.online if you wish to link it" }
+  - { what: "Animation — SHO: mass–spring (longitudinal)", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohs7.gif", why: "GIF animation: cannot confirm you made it (third-party animations are excluded unless yours)" }
+  - { what: "Animation — SHO: simple pendulum", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohs_pend.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — SHO: mass between two springs (transverse)", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/12/ohs_vert.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — damped mass–spring oscillator", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oha3.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — forced mass–spring oscillator", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohf.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 3 springs (horizontal): normal mode 1", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_mp1.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 3 springs (horizontal): normal mode 2", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_mp2.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 3 springs (horizontal): mixed motion", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_sp.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 2 springs (vertical): normal mode 1", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_mp1.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 2 springs (vertical): normal mode 2", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_mp2.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 2 springs (vertical): mixed motion", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_sp.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — two coupled pendulums: normal mode 1", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_mp1.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — two coupled pendulums: normal mode 2", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_mp2.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — two coupled pendulums: mixed motion", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_sp.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — two pendulums + one spring: normal mode 1", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_mp1.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — two pendulums + one spring: normal mode 2", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_mp2.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — two pendulums + one spring: mixed motion (beats)", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_sp1.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — two pendulums + one spring: mixed motion, version 2", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_sp2.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 3 springs (transverse): normal mode 1", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_mp1.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 3 springs (transverse): normal mode 2", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_mp2.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 3 springs (transverse): mixed motion", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_sp.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "Animation — 2 masses + 3 springs (transverse): mixed motion, version 2", url: "https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_sp2.gif", why: "GIF animation: authorship to confirm" }
+  - { what: "G. C. King — Vibrations and Waves (online preview)", url: "https://www.slideshare.net/StefanyCuadros/vibrations-and-waves-28179530", why: "copyrighted textbook uploaded by someone else (likely unauthorised); the book itself is listed under textbooks" }

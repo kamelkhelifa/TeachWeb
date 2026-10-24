@@ -444,14 +444,6 @@ materials:
     week: 15
     lang: en
   # ---- Animations ----
-  - type: video
-    title: { en: 'Animation — time evolution of a free-electron wave packet in 1D', ar: 'رسم متحرك — التطور الزمني لحزمة موجية لإلكترون حر في بعد واحد' }
-    url: https://drive.google.com/open?id=0B-lXQB4vCJCNRi05Q21aTmVXTk0
-    week: 2
-  - type: video
-    title: { en: 'Animation — time evolution of the probability density of a free electron in 1D', ar: 'رسم متحرك — التطور الزمني لكثافة الاحتمال لإلكترون حر في بعد واحد' }
-    url: https://drive.google.com/open?id=0B-lXQB4vCJCNdUFYcEJ6RTF1Rzg
-    week: 2
   # ---- Homework and solutions ----
   - type: problems
     title: { en: Homework 2, ar: الواجب 2 }
@@ -549,9 +541,8 @@ materials:
     week: 15
     lang: en
   - type: formula
-    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية الشائعة }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
-    lang: en
+    title: { en: "Formula sheet & physical constants", ar: "جدول القوانين والثوابت الفيزيائية" }
+    url: "@formulas/"
   # ---- Supplementary readings ----
   - type: reading
     title: { en: 'Hydrogen atom in quantum mechanics — lecture notes', ar: 'ذرة الهيدروجين في ميكانيكا الكم — مذكرة محاضرة' }
@@ -604,16 +595,8 @@ exams:
     paper: https://drive.google.com/open?id=1KODy8_Du-PqeAgZWLTU4ziUN3FrgdbFV
     solution: https://drive.google.com/open?id=1SH0xqWnVWvo1FyUf3n7eevLVysPwGUgZ
     lang: en
-  - title: { en: Past final exam (A), ar: اختبار نهائي سابق (أ) }
-    session: 2015–2016
-    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNbS1PR1JRMzhnbjQ
-    lang: en
-  - title: { en: Past final exam (B), ar: اختبار نهائي سابق (ب) }
-    session: 2015–2016
-    paper: https://drive.google.com/open?id=0B-lXQB4vCJCNSTY1Rk1YLWUtWGM
-    lang: en
   - title: { en: Past final exam, ar: اختبار نهائي سابق }
-    session: 2016–2017
+    session: "2016–2017 · 1438 (S1)"
     paper: https://drive.google.com/open?id=1SjVvv6DMYXq0_Yl3V4T0eqI7VY3t1dYu
     lang: en
 
@@ -1020,3 +1003,9 @@ glossary:
   - { en: Half-life, ar: عمر النصف, fr: Demi-vie, def: { en: 'Time for half of the nuclei of a sample to decay, \(T_{1/2} = \ln2/\lambda\).', ar: 'الزمن اللازم لاضمحلال نصف أنوية العيّنة: \(T_{1/2} = \ln2/\lambda\).' } }
   - { en: Activity, ar: النشاطية الإشعاعية, fr: Activité, def: { en: 'Number of decays per second, \(A = \lambda N\), measured in becquerel.', ar: 'عدد التفككات في الثانية \(A = \lambda N\)، وتقاس بالبكريل.' } }
   - { en: Alpha / beta / gamma decay, ar: اضمحلال ألفا / بيتا / غاما, fr: Désintégration alpha / bêta / gamma, def: { en: Emission of a helium nucleus / an electron or positron with a (anti)neutrino / a high-energy photon., ar: انبعاث نواة هيليوم / إلكترون أو بوزيترون مع (ضديد) نيوترينو / فوتون عالي الطاقة. } }
+
+pending:   # NOT displayed: items whose authorship must be confirmed before publishing
+  - { what: "Animation — time evolution of a free-electron wave packet in 1D", url: "https://drive.google.com/open?id=0B-lXQB4vCJCNRi05Q21aTmVXTk0", why: "GIF animation of unknown origin (may be third-party); publish only if he made it." }
+  - { what: "Animation — time evolution of the probability density of a free electron in 1D", url: "https://drive.google.com/open?id=0B-lXQB4vCJCNdUFYcEJ6RTF1Rzg", why: "GIF animation of unknown origin (may be third-party); publish only if he made it." }
+  - { what: "Past final exam (A)", url: "https://drive.google.com/open?id=0B-lXQB4vCJCNbS1PR1JRMzhnbjQ", why: "1437 AH (2015–2016) predates his appointment at Madinah (2016); possibly set by a previous instructor. Publish only if he wrote it." }
+  - { what: "Past final exam (B)", url: "https://drive.google.com/open?id=0B-lXQB4vCJCNSTY1Rk1YLWUtWGM", why: "1437 AH (2015–2016) predates or coincides with his arrival at Madinah; author unclear. Publish only if he wrote it." }
