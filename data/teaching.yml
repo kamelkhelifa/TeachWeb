@@ -1,0 +1,138 @@
+# ─────────────────────────────────────────────────────────────
+#  Teaching: current post + archive of previous universities
+#  `course: <university>/<course>` links a course to its full page, built from data/taught/<university>/<course>.yml
+#  `taught_in:` (en | ar | fr) shows the language of instruction
+# ─────────────────────────────────────────────────────────────
+
+hero_title: { en: "Teaching, <em>then and now.</em>", ar: "التدريس، <em>بين الأمس واليوم.</em>" }
+philosophy:
+  en: >
+    Physics is learned by doing. I build my courses around clear structure, worked
+    problems and open materials, so that every student can find the syllabus, the notes
+    and the past exams in one place, in the language they need.
+  ar: >
+    الفيزياء تُتعلَّم بالممارسة. أبني مقرراتي على هيكلة واضحة ومسائل محلولة ومواد مفتوحة، حتى
+    يجد كل طالب المفردات والمذكرات والاختبارات السابقة في مكان واحد، وباللغة التي يحتاجها.
+
+current:
+  institution: { en: Qatar University, ar: جامعة قطر }
+  unit: { en: "Department of Physics and Materials Sciences · College of Arts & Sciences", ar: "قسم الفيزياء وعلوم المواد · كلية الآداب والعلوم" }
+  since: { en: August 2026, ar: أوت 2026 }
+  term: { en: Fall 2026, ar: خريف 2026 }
+  courses:
+    - code: PHYS 193
+      title: { en: General Physics for Engineering II, ar: الفيزياء العامة للهندسة 2 }
+      kind: { en: Lecture, ar: محاضرات }
+      course: qu/phys193
+    - code: PHYS 194
+      title: { en: Experimental General Physics for Engineering II, ar: الفيزياء العامة التجريبية للهندسة 2 }
+      kind: { en: Laboratory, ar: مختبر }
+      course: qu/phys194
+  extras:
+    - { en: "Online exam-review sessions via MS Teams, run through the QU Student Learning Support Center.", ar: "حصص مراجعة للاختبارات عبر MS Teams، بالتعاون مع مركز دعم تعلّم الطلاب بجامعة قطر." }
+
+archive:
+  - id: relizane
+    institution: { en: Relizane University, ar: جامعة غليزان }
+    short: { en: Relizane University, ar: جامعة غليزان }
+    country: { en: Algeria, ar: الجزائر }
+    years: 2021 – 2026
+    role: { en: Associate Professor, ar: أستاذ محاضر }
+    site: { label: { en: Student Portal, ar: بوابة الطلاب }, url: "https://sites.google.com/view/kk-studentportal/" }
+    courses:
+      - { code: UEF223, title: { en: Quantum Mechanics I, ar: ميكانيكا الكم 1 }, kind: { en: Lecture, ar: محاضرات }, course: relizane/uef223, year: 2021 – 2024 }
+      - { code: UEF131, title: { en: Quantum Mechanics II, ar: ميكانيكا الكم 2 }, kind: { en: Lecture, ar: محاضرات }, course: relizane/uef131, year: 2021 – 2024 }
+      - { code: UEM123, title: { en: Numerical Methods & Programming, ar: الطرق العددية والبرمجة }, kind: { en: Computer lab, ar: أعمال تطبيقية على الحاسوب }, course: relizane/uem123, year: 2021 – 2022, taught_in: fr }
+      - { code: UEF123, title: { en: Vibrations & Waves, ar: الاهتزازات والأمواج }, kind: { en: Lecture, tutorials & lab, ar: محاضرات وأعمال موجهة وتطبيقية }, course: relizane/uef123, year: 2023 – 2025, taught_in: en }
+      - { code: UET, title: { en: English for Physicists, ar: الإنجليزية للفيزيائيين }, kind: { en: Lecture, ar: محاضرات }, course: relizane/uet-english, year: 2021 – 2024, taught_in: en }
+      - { title: { en: Applied Quantum Mechanics, ar: ميكانيكا الكم التطبيقية }, kind: { en: Lecture & tutorials (M1), ar: محاضرات وأعمال موجهة (م1) }, course: relizane/applied-quantum-mechanics, taught_in: en }
+
+  - id: madinah
+    institution: { en: Islamic University of Madinah, ar: الجامعة الإسلامية بالمدينة المنورة }
+    short: { en: Islamic University of Madinah, ar: الجامعة الإسلامية }
+    country: { en: Saudi Arabia, ar: المملكة العربية السعودية }
+    years: 2016 – 2020
+    role: { en: Associate Professor, ar: أستاذ مشارك }
+    note: { en: "Teaching Excellence Award (2018), Faculty of Science, for my interactive teaching website khelifak.wordpress.com.", ar: "جائزة التميز في التدريس (2018) من كلية العلوم، عن موقعي التعليمي التفاعلي khelifak.wordpress.com." }
+    courses:
+      - { code: PHYS101, title: { en: General Physics I, ar: الفيزياء العامة 1 }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys101, year: 2016 – 2018 }
+      - { code: PHYS102, title: { en: General Physics II, ar: الفيزياء العامة 2 }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys102, year: 2018 – 2019 }
+      - { code: PHYS352, title: { en: Mathematical Physics II, ar: الفيزياء الرياضية 2 }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys352, year: 2016 – 2020 }
+      - { code: PHYS342, title: { en: Modern Physics II, ar: الفيزياء الحديثة 2 }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys342, year: 2016 – 2018 }
+      - { code: "PHYS354 · PHYS401", title: { en: Quantum Mechanics I, ar: ميكانيكا الكم 1 }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys401, year: 2016 – 2020 }
+      - { code: PHYS353, title: { en: Classical Mechanics II, ar: الميكانيكا الكلاسيكية 2 }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys353, year: 2018 – 2019 }
+      - { code: PHYS321, title: { en: Thermal & Statistical Physics, ar: الفيزياء الحرارية والإحصائية }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys321, year: 2018 – 2020 }
+      - { code: PHYS402, title: { en: "Quantum Mechanics II (MIT-based)", ar: "ميكانيكا الكم 2 (وفق مقرر MIT)" }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys402-mit, year: 2018 – 2019 }
+      - { code: PHYS402, title: { en: Quantum Mechanics II, ar: ميكانيكا الكم 2 }, kind: { en: Lecture, ar: محاضرات }, course: madinah/phys402, year: 2019 – 2020 }
+      - { code: PHYS482, title: { en: Graduation Project, ar: مشروع التخرج }, kind: { en: Supervised project, ar: مشروع تحت الإشراف }, course: madinah/phys482, year: 2017 – 2019 }
+
+  - id: chlef
+    institution: { en: University of Chlef (UHBC), ar: جامعة حسيبة بن بوعلي بالشلف }
+    short: { en: University of Chlef, ar: جامعة الشلف }
+    country: { en: Algeria, ar: الجزائر }
+    years: 2014 – 2016
+    role: { en: Assistant / Associate Professor, ar: أستاذ مساعد / محاضر }
+    site: { label: Chlef PhysicsWeb, url: "https://chlefphys.wordpress.com/" }
+    courses:
+      - { code: UEF123, title: { en: Vibrations & Waves, ar: الاهتزازات والأمواج }, kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة }, course: chlef/vibrations-waves, year: 2014 – 2016, taught_in: fr }
+      - { code: UEF224, title: { en: Electromagnetism, ar: الكهرومغناطيسية }, kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة }, course: chlef/electromagnetism, year: 2014 – 2016, taught_in: fr }
+      - { code: "UET121 · UET511", title: { en: English for Physicists, ar: الإنجليزية للفيزيائيين }, kind: { en: Lecture, ar: محاضرات }, course: chlef/english, year: 2014 – 2016, taught_in: en }
+
+  - id: usthb
+    institution: { en: University of Science & Technology Houari Boumediene (USTHB), ar: جامعة العلوم والتكنولوجيا هواري بومدين }
+    short: { en: "USTHB, Algiers", ar: "جامعة باب الزوار" }
+    country: { en: Algeria, ar: الجزائر }
+    years: 2012 – 2014
+    role: { en: Assistant Professor, ar: أستاذ مساعد }
+    site: { label: USTHB PhysicsWeb, url: "https://usthbphysique.wordpress.com/" }
+    courses:
+      - { code: UEF112, title: { en: Mechanics, ar: الميكانيكا }, kind: { en: Lecture, tutorials & lab, ar: محاضرات وأعمال موجهة وتطبيقية }, course: usthb/mechanics, year: 2013 – 2014, taught_in: fr }
+      - { code: UEF212, title: { en: Electricity, ar: الكهرباء }, kind: { en: Lab, ar: أعمال تطبيقية }, course: usthb/electricity-lab, year: 2013 – 2014, taught_in: fr }
+      - { code: PHYS7001, title: { en: Particle Physics, ar: فيزياء الجسيمات }, kind: { en: Lecture, ar: محاضرات }, course: usthb/phys7001, year: 2013 – 2014 }
+      - { code: PHYS4001, title: { en: English for Physicists, ar: الإنجليزية للفيزيائيين }, kind: { en: Lecture, ar: محاضرات }, course: usthb/english, year: 2012 – 2013, taught_in: en }
+
+beyond:
+  - when: { en: 2025 – present, ar: 2025 – حاليًا }
+    title: { en: "IPhO Trainer, Algerian Olympiad Association", ar: "مدرّب الأولمبياد الدولي للفيزياء، الجمعية الجزائرية للأولمبياد" }
+    text: { en: "Prepares Algeria's national team for the International Physics Olympiad through problem-solving workshops, mock exams and one-to-one coaching.", ar: "إعداد المنتخب الوطني الجزائري للأولمبياد الدولي للفيزياء عبر ورشات حل المسائل والامتحانات التجريبية والمتابعة الفردية." }
+  - when: { en: Jan 2026, ar: جانفي 2026 }
+    title: { en: Scientific Writing with LaTeX, ar: الكتابة العلمية باستخدام LaTeX }
+    text: { en: "Workshop for staff and PhD students across Algerian universities, Medea University.", ar: "ورشة لفائدة الأساتذة وطلبة الدكتوراه من مختلف الجامعات الجزائرية، جامعة المدية." }
+  - when: { en: Apr 2026, ar: أفريل 2026 }
+    title: { en: ICT in the Pedagogical Environment, ar: تكنولوجيا المعلومات في البيئة البيداغوجية }
+    text: { en: "Hybrid training programme for newly recruited faculty on Moodle and hybrid learning design, Relizane University.", ar: "برنامج تكوين هجين للأساتذة حديثي التوظيف حول منصة Moodle وتصميم التعليم الهجين، جامعة غليزان." }
+  - when: { en: Mar 2018, ar: مارس 2018 }
+    title: { en: Introduction to Mathematica, ar: مدخل إلى Mathematica }
+    text: { en: "Technical lecture on research uses of Mathematica for students and faculty, Islamic University of Madinah.", ar: "محاضرة تقنية حول استخدامات Mathematica في البحث للطلبة والأساتذة، الجامعة الإسلامية بالمدينة المنورة." }
+    page: resources/introduction-to-mathematica
+  - when: { en: 2015 – 2016, ar: 2015 – 2016 }
+    title: { en: English Language Trainer, ar: مكوّن في اللغة الإنجليزية }
+    text: { en: "English workshops for colleagues in the Physics and Mathematics departments, University of Chlef.", ar: "ورشات في اللغة الإنجليزية لزملاء قسمي الفيزياء والرياضيات، جامعة الشلف." }
+
+supervision:
+  - level: { en: PhD (co-supervisor), ar: دكتوراه (إشراف مشترك) }
+    who: H. Bouaziz
+    topic: { en: "On the Resummation of NGLs and CLs for QCD Observables Based on Soft Gluons Evolution", ar: "حول إعادة جمع اللوغاريتمات غير الشاملة ولوغاريتمات التجميع لمقادير الكروموديناميكا الكمية بالاعتماد على تطور الغلوونات الليّنة" }
+    where: { en: University of Batna 1, ar: جامعة باتنة 1 }
+    when: 2018 – 2023
+  - level: { en: MSc, ar: ماستر }
+    who: M. Djilali
+    topic: { en: "The Effect of Doping on the Physico-chemical Properties of KCaZ (Z = P, As) Materials", ar: "أثر التطعيم على الخصائص الفيزيوكيميائية للمواد KCaZ (Z = P, As)" }
+    where: { en: Relizane University, ar: جامعة غليزان }
+    when: 2025
+  - level: { en: MSc, ar: ماستر }
+    who: M. Ziane
+    topic: { en: "Numerical Solutions of the Schrödinger Equation in 1D and 2D", ar: "الحلول العددية لمعادلة شرودنغر في بعد واحد وبعدين" }
+    where: { en: Relizane University, ar: جامعة غليزان }
+    when: 2025
+  - level: { en: MSc, ar: ماستر }
+    who: H. Belalia
+    topic: { en: "The Hydrogen Atom: A Pedagogical Study", ar: "ذرة الهيدروجين: دراسة بيداغوجية" }
+    where: { en: Relizane University, ar: جامعة غليزان }
+    when: 2023
+  - level: { en: BSc, ar: ليسانس }
+    who: A. Siddiq
+    topic: { en: Introduction to the Standard Model, ar: مدخل إلى النموذج القياسي }
+    where: { en: Islamic University of Madinah, ar: الجامعة الإسلامية بالمدينة المنورة }
+    when: 2017
+examinations: { en: "Thesis and oral examiner since 2013: 2 PhD · 4 Masters · 4 BSc", ar: "عضو لجان مناقشة منذ 2013: دكتوراه 2 · ماستر 4 · ليسانس 4" }
