@@ -1,0 +1,193 @@
+slug: english
+order: 30
+codes: [UET121, UET511]
+title: { en: English for Physicists, ar: الإنجليزية للفيزيائيين, fr: Anglais pour physiciens }
+level:
+  en: "Licence · 2nd and 3rd year (S3: English 3 · S5: English 5) · Matter Sciences / Physics"
+  ar: "ليسانس · السنتان الثانية والثالثة (S3: الإنجليزية 3 · S5: الإنجليزية 5) · علوم المادة / فيزياء"
+  fr: "Licence · 2e et 3e années (S3 : Anglais 3 · S5 : Anglais 5) · Sciences de la Matière / Physique"
+area: skills
+companion: english-for-physicists   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: "Lectures (1 session/week, no tutorials)", ar: "محاضرات (حصة واحدة في الأسبوع، دون أعمال موجهة)", fr: "Cours (1 séance/semaine, sans TD)" }
+taught:
+  - { years: 2014–2015, code: UET121, lang: en }
+  - { years: 2015–2016, code: UET121, lang: en }
+  - { years: 2015–2016, code: UET511, lang: en }
+hours: { lecture: 1.5, tutorial: 0, lab: 0 }
+weeks: 14
+
+description:
+  en: |
+    This is formally an English language course for physicists, but there is no detailed programme to comply with.
+    The course was therefore designed as a "general physics" course that revises, in English, the physics courses
+    the students took from semester 1 to semester 5. The revision is mostly descriptive, since the students have
+    already seen the quantitative material. The courses covered are: classical mechanics (S1), electricity and
+    magnetism (S2), vibrations and waves (S3), electromagnetism (S4) and quantum mechanics (S4).
+  ar: |
+    هذا المقرر رسميًا مقرر في اللغة الإنجليزية موجّه للفيزيائيين، غير أنه لا يوجد برنامج تفصيلي يتعيّن الالتزام به.
+    لذا صُمّم المقرر ليكون أشبه بمقرر في "الفيزياء العامة" تُراجَع فيه بالإنجليزية مقررات الفيزياء التي درسها الطلبة
+    من الفصل الأول حتى الفصل الخامس. وتغلب على هذه المراجعة الصبغة الوصفية، نظرًا إلى أن الطلبة قد درسوا الجانب الكمي
+    من قبل. والمقررات المشمولة هي: الميكانيكا الكلاسيكية (S1)، والكهرباء والمغناطيسية (S2)، والاهتزازات والأمواج (S3)،
+    والكهرومغناطيسية (S4)، وميكانيكا الكم (S4).
+  fr: |
+    Il s’agit formellement d’un cours d’anglais destiné aux physiciens, mais il n’existe pas de programme détaillé à respecter.
+    Le cours a donc été conçu comme un cours de « physique générale » qui révise, en anglais, les cours de physique suivis
+    par les étudiants du semestre 1 au semestre 5. La révision est surtout descriptive, les étudiants ayant déjà vu l’aspect
+    quantitatif. Les cours couverts sont : mécanique classique (S1), électricité et magnétisme (S2), vibrations et ondes (S3),
+    électromagnétisme (S4) et mécanique quantique (S4).
+
+objectives:
+  - { en: "Improve the students' ability to read, understand, speak and write about physics in English, the working language of science.", ar: "تحسين قدرة الطلبة على قراءة الفيزياء وفهمها والتحدث والكتابة عنها باللغة الإنجليزية، لغة العمل في العلوم.", fr: "Améliorer la capacité des étudiants à lire, comprendre, parler et écrire la physique en anglais, langue de travail des sciences." }
+  - { en: "Revise, in English and mostly descriptively, the physics courses of semesters 1 to 5, so that students meet the vocabulary of each field in a context they already understand.", ar: "مراجعة مقررات الفيزياء من الفصل الأول إلى الفصل الخامس بالإنجليزية وبأسلوب وصفي في الغالب، ليتعرّف الطالب على مصطلحات كل مجال في سياق يفهمه مسبقًا.", fr: "Réviser, en anglais et de façon surtout descriptive, les cours de physique des semestres 1 à 5, afin que l'étudiant rencontre le vocabulaire de chaque domaine dans un contexte qu'il maîtrise déjà." }
+
+outcomes:
+  - id: CLO1
+    text: { en: "Use the basic English vocabulary of mechanics, electricity and magnetism, vibrations and waves, electromagnetism and quantum mechanics correctly.", ar: "يستعمل المصطلحات الإنجليزية الأساسية في الميكانيكا والكهرباء والمغناطيسية والاهتزازات والأمواج والكهرومغناطيسية وميكانيكا الكم استعمالًا صحيحًا.", fr: "Employer correctement le vocabulaire anglais de base de la mécanique, de l'électricité et du magnétisme, des vibrations et ondes, de l'électromagnétisme et de la mécanique quantique." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+  - id: CLO2
+    text: { en: "Read numbers, units, symbols and equations aloud in English, and state physical laws in words.", ar: "يقرأ الأعداد والوحدات والرموز والمعادلات بصوت مسموع بالإنجليزية، ويصوغ القوانين الفيزيائية بالكلمات.", fr: "Lire à voix haute en anglais les nombres, les unités, les symboles et les équations, et énoncer les lois physiques avec des mots." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+  - id: CLO3
+    text: { en: "Read and understand a short physics text in English (a textbook section, an encyclopaedia article or an abstract) and summarise its main ideas.", ar: "يقرأ نصًا فيزيائيًا قصيرًا بالإنجليزية (فقرة من كتاب أو مقالة موسوعية أو ملخص بحث) ويفهمه ويلخّص أفكاره الرئيسية.", fr: "Lire et comprendre un court texte de physique en anglais (section de manuel, article d'encyclopédie, résumé d'article) et en résumer les idées principales." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+  - id: CLO4
+    text: { en: "Describe a physical phenomenon, an experiment, a figure or a graph in clear, correct English.", ar: "يصف ظاهرة فيزيائية أو تجربة أو شكلًا أو منحنى بلغة إنجليزية واضحة وسليمة.", fr: "Décrire un phénomène physique, une expérience, une figure ou un graphique dans un anglais clair et correct." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+  - id: CLO5
+    text: { en: "Translate short scientific passages between English and French or Arabic, and write a short structured text such as a lab report.", ar: "يترجم مقاطع علمية قصيرة بين الإنجليزية والفرنسية أو العربية، ويكتب نصًا قصيرًا منظّمًا مثل تقرير عمل مخبري.", fr: "Traduire de courts passages scientifiques entre l'anglais et le français ou l'arabe, et rédiger un court texte structuré comme un compte rendu de TP." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+
+assessment:
+  - type: final
+    weight: 100
+    title: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+    detail: { en: "Written exam at the end of the semester: reading comprehension, vocabulary, translation and short descriptive answers. A resit exam is held for students who do not pass.", ar: "اختبار كتابي في نهاية الفصل: فهم نص، ومصطلحات، وترجمة، وأجوبة وصفية قصيرة. ويُنظَّم اختبار استدراكي للطلبة غير الناجحين.", fr: "Examen écrit en fin de semestre : compréhension de texte, vocabulaire, traduction et courtes réponses descriptives. Un examen de rattrapage est organisé pour les étudiants non admis." }
+    when: { en: "End of semester", ar: "نهاية الفصل", fr: "Fin de semestre" }
+assessment_note:
+  en: "A written end-of-semester exam (with a resit exam). No lecture notes were handed out and no assignments were given."
+  ar: "اختبار كتابي في نهاية الفصل (مع اختبار استدراكي). لم تُوزَّع مذكرات محاضرات ولم تُقدَّم واجبات."
+  fr: "Un examen écrit de fin de semestre (avec examen de rattrapage). Aucun polycopié n’a été distribué et aucun devoir n’a été donné."
+
+schedule:
+  - week: 1
+    title: { en: "Introduction: the language of physics", ar: "مدخل: لغة الفيزياء", fr: "Introduction : la langue de la physique" }
+    topics:
+      en: ["Physical quantities, SI units and prefixes", "Reading numbers, symbols and equations aloud", "Greek letters and mathematical operations"]
+      ar: ["المقادير الفيزيائية ووحدات SI وبادئاتها", "قراءة الأعداد والرموز والمعادلات بصوت مسموع", "الحروف الإغريقية والعمليات الرياضية"]
+      fr: ["Grandeurs physiques, unités SI et préfixes", "Lire à voix haute nombres, symboles et équations", "Lettres grecques et opérations mathématiques"]
+  - week: 2
+    title: { en: "Mechanics I: motion", ar: "الميكانيكا 1: الحركة", fr: "Mécanique I : le mouvement" }
+    topics:
+      en: ["Position, displacement, velocity and acceleration", "Describing motion graphs", "Projectile and circular motion"]
+      ar: ["الموضع والانتقال والسرعة والتسارع", "وصف منحنيات الحركة", "حركة القذائف والحركة الدائرية"]
+      fr: ["Position, déplacement, vitesse et accélération", "Décrire des graphiques de mouvement", "Mouvement d'un projectile et mouvement circulaire"]
+  - week: 3
+    title: { en: "Mechanics II: forces and Newton's laws", ar: "الميكانيكا 2: القوى وقوانين نيوتن", fr: "Mécanique II : les forces et les lois de Newton" }
+    topics:
+      en: ["Stating Newton's three laws", "Weight, normal force, friction and tension", "Free-body diagrams in words"]
+      ar: ["صياغة قوانين نيوتن الثلاثة", "الثقل وقوة رد الفعل والاحتكاك والتوتر", "وصف مخطط القوى بالكلمات"]
+      fr: ["Énoncer les trois lois de Newton", "Poids, réaction normale, frottement et tension", "Décrire un bilan des forces avec des mots"]
+  - week: 4
+    title: { en: "Mechanics III: energy and momentum", ar: "الميكانيكا 3: الطاقة وكمية الحركة", fr: "Mécanique III : énergie et quantité de mouvement" }
+    topics:
+      en: ["Work, kinetic and potential energy", "Conservation laws", "Collisions"]
+      ar: ["العمل والطاقة الحركية والطاقة الكامنة", "قوانين الانحفاظ", "التصادمات"]
+      fr: ["Travail, énergie cinétique et énergie potentielle", "Lois de conservation", "Collisions"]
+  - week: 5
+    title: { en: "Electricity: charges, fields and potential", ar: "الكهرباء: الشحنات والحقول والكمون", fr: "Électricité : charges, champs et potentiel" }
+    topics:
+      en: ["Electric charge and Coulomb's law", "Electric field and field lines", "Potential, capacitors"]
+      ar: ["الشحنة الكهربائية وقانون كولوم", "الحقل الكهربائي وخطوطه", "الكمون والمكثفات"]
+      fr: ["Charge électrique et loi de Coulomb", "Champ électrique et lignes de champ", "Potentiel, condensateurs"]
+  - week: 6
+    title: { en: "Circuits and magnetism", ar: "الدارات والمغناطيسية", fr: "Circuits et magnétisme" }
+    topics:
+      en: ["Current, resistance and Ohm's law", "Describing a circuit diagram", "Magnetic field, magnetic force and induction"]
+      ar: ["التيار والمقاومة وقانون أوم", "وصف مخطط دارة كهربائية", "الحقل المغناطيسي والقوة المغناطيسية والتحريض"]
+      fr: ["Courant, résistance et loi d'Ohm", "Décrire un schéma électrique", "Champ magnétique, force magnétique et induction"]
+  - week: 7
+    title: { en: "Vibrations", ar: "الاهتزازات", fr: "Vibrations" }
+    topics:
+      en: ["Simple harmonic motion: amplitude, period, frequency, phase", "Damping and resonance", "Mechanical and electrical oscillators"]
+      ar: ["الحركة التوافقية البسيطة: السعة والدور والتواتر والطور", "التخامد والرنين", "الهزازات الميكانيكية والكهربائية"]
+      fr: ["Mouvement harmonique simple : amplitude, période, fréquence, phase", "Amortissement et résonance", "Oscillateurs mécaniques et électriques"]
+  - week: 8
+    title: { en: "Waves", ar: "الأمواج", fr: "Ondes" }
+    topics:
+      en: ["Transverse and longitudinal waves", "Wavelength, speed, reflection and interference", "Standing waves, sound and the Doppler effect"]
+      ar: ["الأمواج العرضية والطولية", "طول الموجة وسرعتها والانعكاس والتداخل", "الأمواج المستقرة والصوت ومفعول دوبلر"]
+      fr: ["Ondes transversales et longitudinales", "Longueur d'onde, célérité, réflexion et interférences", "Ondes stationnaires, son et effet Doppler"]
+  - week: 9
+    title: { en: "Electromagnetism and light", ar: "الكهرومغناطيسية والضوء", fr: "Électromagnétisme et lumière" }
+    topics:
+      en: ["Maxwell's equations in words", "Electromagnetic waves and the electromagnetic spectrum", "Light: reflection, refraction and polarisation"]
+      ar: ["معادلات ماكسويل بالكلمات", "الأمواج الكهرومغناطيسية والطيف الكهرومغناطيسي", "الضوء: الانعكاس والانكسار والاستقطاب"]
+      fr: ["Les équations de Maxwell en mots", "Ondes électromagnétiques et spectre électromagnétique", "La lumière : réflexion, réfraction et polarisation"]
+  - week: 10
+    title: { en: "Quantum physics I: the birth of the quantum", ar: "فيزياء الكم 1: نشأة الكم", fr: "Physique quantique I : la naissance des quanta" }
+    topics:
+      en: ["Black-body radiation and Planck's hypothesis", "The photoelectric effect and photons", "Atomic spectra and the Bohr model"]
+      ar: ["إشعاع الجسم الأسود وفرضية بلانك", "المفعول الكهروضوئي والفوتونات", "الأطياف الذرية ونموذج بور"]
+      fr: ["Rayonnement du corps noir et hypothèse de Planck", "Effet photoélectrique et photons", "Spectres atomiques et modèle de Bohr"]
+  - week: 11
+    title: { en: "Quantum physics II: wave mechanics", ar: "فيزياء الكم 2: الميكانيكا الموجية", fr: "Physique quantique II : la mécanique ondulatoire" }
+    topics:
+      en: ["Wave–particle duality and de Broglie waves", "The wavefunction and the Schrödinger equation", "The uncertainty principle and tunnelling"]
+      ar: ["ازدواجية الموجة والجسيم وأمواج دي بروي", "الدالة الموجية ومعادلة شرودنغر", "مبدأ عدم التحديد والنفق الكمومي"]
+      fr: ["Dualité onde-corpuscule et ondes de de Broglie", "La fonction d'onde et l'équation de Schrödinger", "Le principe d'incertitude et l'effet tunnel"]
+  - week: 12
+    title: { en: "Reading scientific texts", ar: "قراءة النصوص العلمية", fr: "Lire des textes scientifiques" }
+    topics:
+      en: ["Structure of a textbook chapter and of a research article", "Reading an abstract", "Summarising and translating a short passage"]
+      ar: ["بنية فصل من كتاب وبنية مقال بحثي", "قراءة ملخص بحث", "تلخيص مقطع قصير وترجمته"]
+      fr: ["Structure d'un chapitre de manuel et d'un article de recherche", "Lire un résumé (abstract)", "Résumer et traduire un court passage"]
+  - week: 13
+    title: { en: "Writing in physics", ar: "الكتابة في الفيزياء", fr: "Écrire en physique" }
+    topics:
+      en: ["Describing figures, tables and graphs", "Structure of a lab report", "Common grammar points: passive voice, tenses, comparatives"]
+      ar: ["وصف الأشكال والجداول والمنحنيات", "بنية تقرير العمل المخبري", "نقاط نحوية شائعة: المبني للمجهول، الأزمنة، صيغ المقارنة"]
+      fr: ["Décrire des figures, des tableaux et des graphiques", "Structure d'un compte rendu de TP", "Points de grammaire : voix passive, temps, comparatifs"]
+  - week: 14
+    title: { en: "Review", ar: "مراجعة", fr: "Révision" }
+    topics:
+      en: ["General review of the vocabulary", "Practice with past exam questions"]
+      ar: ["مراجعة عامة للمصطلحات", "التدرّب على أسئلة اختبارات سابقة"]
+      fr: ["Révision générale du vocabulaire", "Entraînement sur des sujets d'examens"]
+    milestone: review
+
+textbooks:
+  recommended:
+    - { authors: T. Armer, title: Cambridge English for Scientists, publisher: Cambridge University Press, year: 2011 }
+    - { authors: M. McCarthy and F. O'Dell, title: Academic Vocabulary in Use, edition: 2nd, publisher: Cambridge University Press, year: 2016 }
+    - { authors: R. Murphy, title: English Grammar in Use, edition: 4th, publisher: Cambridge University Press, year: 2012 }
+    - { authors: "D. Halliday, R. Resnick and J. Walker", title: Fundamentals of Physics, edition: 10th, publisher: Wiley, year: 2013 }
+  online:
+    - title: { en: "University Physics (OpenStax, vols. 1–3)", ar: "University Physics (OpenStax، المجلدات 1–3)", fr: "University Physics (OpenStax, vol. 1–3)" }
+      url: https://openstax.org/details/books/university-physics-volume-1
+      note: { en: "Free, complete physics textbook in English: good for reading practice on topics already studied.", ar: "كتاب فيزياء كامل ومجاني بالإنجليزية، مناسب للتدرّب على القراءة في مواضيع سبقت دراستها.", fr: "Manuel de physique complet et gratuit en anglais : idéal pour s'entraîner à lire sur des sujets déjà étudiés." }
+    - title: { en: Academic Phrasebank (University of Manchester), ar: Academic Phrasebank (جامعة مانشستر), fr: Academic Phrasebank (Université de Manchester) }
+      url: https://www.phrasebank.manchester.ac.uk/
+      note: { en: Ready-made phrases for academic and scientific writing., ar: عبارات جاهزة للكتابة الأكاديمية والعلمية., fr: Formules toutes faites pour la rédaction académique et scientifique. }
+    - title: { en: BBC Learning English, ar: BBC Learning English, fr: BBC Learning English }
+      url: https://www.bbc.co.uk/learningenglish/
+      note: { en: "Free grammar, vocabulary and pronunciation lessons.", ar: "دروس مجانية في النحو والمفردات والنطق.", fr: "Leçons gratuites de grammaire, de vocabulaire et de prononciation." }
+
+exams:
+  - { title: { en: Exam, ar: الاختبار, fr: Examen }, session: 2014–2015, paper: https://khelifak.wordpress.com/wp-content/uploads/2015/02/ang_exam.pdf, solution: https://khelifak.wordpress.com/wp-content/uploads/2015/02/ang_exam_s.pdf, lang: en }
+
+sources:
+  - teaching/chlef-english   # WordPress page https://khelifak.wordpress.com/studying/teaching-2/usthb/anglais-2/ ("UET121: Anglais"; filed under USTHB but its content says UHBC 2015/2016)
+
+notes: >
+  Source page is filed under the USTHB branch of the old WordPress site but states "University: UHBC, Academic Year 2015/2016"
+  (the page filed under /uhbc/anglais/ is in fact the 2012–2013 USTHB course): the two were swapped on the old site.
+  The page covers two codes taught together in 2015–2016: UET121 (LANG3, S3, "Anglais 3", 2nd year) and UET511 (LANG5, S5,
+  "Anglais 5", 3rd year); both are listed in codes/taught. No session length is given, so hours are left out.
+  The 2015–2016 exam and resit papers (S3, S5) and solutions were listed but never linked. Exam date/time and the two
+  marks PDFs (ang_s3_marks1, ang_s5_marks1) dropped. The only linked paper is the past exam labelled "2014" with its solution
+  (uploaded Feb 2015, so probably the 2014–2015 exam): to confirm it is yours and whether the course was also taught in 2014–2015.
+  UPDATE 24-10-2026 (Kamel's answers): the "2014" exam is his (2014–2015), so 2014–2015 is added to taught (as UET121, the S3
+  course of the autumn semester; UET511 that year to confirm). UET121 and UET511 were taught together. Hours 1.5 h/week (one
+  lecture session, no tutorials), 14 weeks. DRAFTED for Kamel's later review (no detailed official programme exists for this
+  course): the 2 objectives, 5 outcomes, the 14-week plan (built on the description: S1–S5 physics revised in English, then
+  reading and writing skills), the 100 % final-exam assessment and the textbooks/online resources.

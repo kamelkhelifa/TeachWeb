@@ -1,0 +1,325 @@
+slug: vibrations-waves
+order: 10
+codes: [UEF123]
+title: { en: Vibrations and Waves, ar: الاهتزازات والأمواج, fr: Vibrations et Ondes }
+level:
+  en: "Semester 3 · Matter Sciences (SM)"
+  ar: "الفصل الثالث · علوم المادة (SM)"
+  fr: "Semestre 3 · Sciences de la Matière (SM)"
+area: waves
+companion: vibrations-waves   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: Lectures & tutorials, ar: محاضرات وأعمال موجهة, fr: Cours et travaux dirigés }
+taught:
+  - { years: 2014–2015, code: UEF123, lang: fr }
+  - { years: 2015–2016, code: UEF123, lang: fr }
+hours: { lecture: 1.5, tutorial: 1.5, lab: 0 }
+prerequisites:
+  en: "Math2 (analysis and algebra), Phys1 (mechanics of the point particle), Phys2 (electricity)"
+  ar: "Math2 (التحليل والجبر)، Phys1 (ميكانيكا النقطة المادية)، Phys2 (الكهرباء)"
+  fr: "Math2 (analyse et algèbre), Phys1 (mécanique du point), Phys2 (électricité)"
+
+objectives:
+  - en: The study of vibrational phenomena with one or several degrees of freedom. The concept of impedance; the phenomenon of resonance.
+    ar: دراسة الظواهر الاهتزازية ذات درجة حرية واحدة أو عدة درجات حرية. مفهوم الممانعة، وظاهرة الرنين.
+    fr: Étude des phénomènes vibratoires à un ou plusieurs degrés de liberté. Concept d’impédance, phénomène de résonance.
+  - en: Highlighting the analogy between mechanical, electrical and electromechanical oscillators. Phase velocity, group velocity, dispersion. Characteristic impedance. The Doppler effect, which will be revisited within the framework of the theory of relativity.
+    ar: إبراز التماثل بين الهزازات الميكانيكية والكهربائية والكهروميكانيكية. سرعة الطور، سرعة المجموعة، التبدد. الممانعة المميزة. مفعول دوبلر الذي ستتم العودة إليه في إطار نظرية النسبية.
+    fr: Mise en évidence de l’analogie entre les oscillateurs mécaniques, électriques et électromécaniques. Vitesse de phase, vitesse de groupe, dispersion. Impédance caractéristique. Effet Doppler qui sera revu dans le cadre de la théorie de la relativité.
+
+description:
+  en: |
+    Vibrations and waves are a language shared by almost every branch of physics: mechanics, electricity, acoustics, optics and quantum physics all speak it. This second-year course (semester 3 of the Matter Sciences licence) builds that language step by step.
+
+    The first part studies oscillating systems. Using Lagrange's equations, it treats free, damped and forced oscillations of systems with one degree of freedom, resonance, the quality factor and the bandwidth, and the analogy between mechanical and electrical oscillators. It then moves to coupled systems with two and several degrees of freedom and their normal modes.
+
+    The second part turns to mechanical waves: the wave equation and its general solution, phase and group velocity, transverse waves on a string, longitudinal (acoustic) waves in fluids, characteristic impedance, energy transport, reflection and transmission at a boundary, standing waves, the Doppler effect and, finally, elastic waves in solids.
+  ar: |
+    الاهتزازات والأمواج لغة تشترك فيها كل فروع الفيزياء تقريبًا: الميكانيكا والكهرباء والصوتيات والضوء وفيزياء الكم. ويبني هذا المقرر، المدرَّس في السنة الثانية (الفصل الثالث من ليسانس علوم المادة)، هذه اللغة خطوة بخطوة.
+
+    يدرس الجزء الأول الأنظمة المهتزة. فباستعمال معادلات لاغرانج يعالج الاهتزازات الحرة والمتخامدة والقسرية للأنظمة ذات درجة حرية واحدة، والرنين، ومعامل الجودة، وعرض النطاق، والتماثل بين الهزازات الميكانيكية والكهربائية، ثم ينتقل إلى الأنظمة المقترنة ذات درجتي حرية وعدة درجات حرية وأنماطها الذاتية.
+
+    ويتناول الجزء الثاني الأمواج الميكانيكية: معادلة الانتشار وحلها العام، وسرعة الطور وسرعة المجموعة، والأمواج العرضية على وتر، والأمواج الطولية (الصوتية) في الموائع، والممانعة المميزة، ونقل الطاقة، والانعكاس والنفاذ عند حد فاصل، والأمواج المستقرة، ومفعول دوبلر، وأخيرًا الأمواج المرنة في الأجسام الصلبة.
+  fr: |
+    Les vibrations et les ondes forment un langage commun à presque toute la physique : mécanique, électricité, acoustique, optique et physique quantique le parlent toutes. Ce cours de deuxième année (semestre 3 de la licence Sciences de la Matière) construit ce langage pas à pas.
+
+    La première partie étudie les systèmes oscillants. À l'aide des équations de Lagrange, elle traite les oscillations libres, amorties et forcées des systèmes à un degré de liberté, la résonance, le facteur de qualité et la bande passante, ainsi que l'analogie entre oscillateurs mécaniques et électriques. Elle aborde ensuite les systèmes couplés à deux et à plusieurs degrés de liberté et leurs modes propres.
+
+    La seconde partie est consacrée aux ondes mécaniques : l'équation d'onde et sa solution générale, vitesse de phase et vitesse de groupe, ondes transversales sur une corde, ondes longitudinales (acoustiques) dans les fluides, impédance caractéristique, transport d'énergie, réflexion et transmission à une interface, ondes stationnaires, effet Doppler et, enfin, ondes élastiques dans les solides.
+
+outcomes:
+  - id: CLO1
+    text:
+      en: "Describe vibratory motion and write the equation of motion of a system with one degree of freedom using Lagrange's equations."
+      ar: "يصف الحركة الاهتزازية ويكتب معادلة حركة نظام ذي درجة حرية واحدة باستعمال معادلات لاغرانج."
+      fr: "Décrire un mouvement vibratoire et établir l'équation du mouvement d'un système à un degré de liberté à l'aide des équations de Lagrange."
+    assessed_by: { en: "Tests, homework and final exam", ar: "الاختبارات القصيرة والواجبات والاختبار النهائي", fr: "Interrogations, devoirs et examen final" }
+  - id: CLO2
+    text:
+      en: "Solve free, damped and forced oscillations and determine the natural frequency, the damping regime, the logarithmic decrement, the quality factor, the resonance and the bandwidth."
+      ar: "يحلّ معادلات الاهتزازات الحرة والمتخامدة والقسرية، ويحدّد النبض الذاتي ونظام التخامد والتناقص اللوغاريتمي ومعامل الجودة والرنين وعرض النطاق."
+      fr: "Résoudre les oscillations libres, amorties et forcées, et déterminer la pulsation propre, le régime d'amortissement, le décrément logarithmique, le facteur de qualité, la résonance et la bande passante."
+    assessed_by: { en: "Tests, homework and final exam", ar: "الاختبارات القصيرة والواجبات والاختبار النهائي", fr: "Interrogations, devoirs et examen final" }
+  - id: CLO3
+    text:
+      en: "Use the analogy between mechanical and electrical oscillators, and the notion of impedance, to analyse oscillating systems."
+      ar: "يستعمل التماثل بين الهزازات الميكانيكية والكهربائية، ومفهوم الممانعة، لتحليل الأنظمة المهتزة."
+      fr: "Exploiter l'analogie entre oscillateurs mécaniques et électriques, et la notion d'impédance, pour analyser des systèmes oscillants."
+    assessed_by: { en: "Tests, homework and final exam", ar: "الاختبارات القصيرة والواجبات والاختبار النهائي", fr: "Interrogations, devoirs et examen final" }
+  - id: CLO4
+    text:
+      en: "Find the normal modes and natural frequencies of coupled systems with two degrees of freedom, and describe their motion as a superposition of modes."
+      ar: "يجد الأنماط الذاتية والنبضات الذاتية للأنظمة المقترنة ذات درجتي حرية، ويصف حركتها بوصفها تراكبًا لهذه الأنماط."
+      fr: "Déterminer les modes propres et les pulsations propres de systèmes couplés à deux degrés de liberté, et décrire leur mouvement comme une superposition de modes."
+    assessed_by: { en: "Tests, homework and final exam", ar: "الاختبارات القصيرة والواجبات والاختبار النهائي", fr: "Interrogations, devoirs et examen final" }
+  - id: CLO5
+    text:
+      en: "Derive and solve the one-dimensional wave equation for a string and for a fluid, and compute the characteristic impedance, the energy carried, and the reflection and transmission coefficients."
+      ar: "يستنتج معادلة الانتشار في بعد واحد لوتر ولمائع ويحلّها، ويحسب الممانعة المميزة والطاقة المنقولة ومعاملي الانعكاس والنفاذ."
+      fr: "Établir et résoudre l'équation d'onde à une dimension pour une corde et pour un fluide, et calculer l'impédance caractéristique, l'énergie transportée et les coefficients de réflexion et de transmission."
+    assessed_by: { en: "Tests, homework and final exam", ar: "الاختبارات القصيرة والواجبات والاختبار النهائي", fr: "Interrogations, devoirs et examen final" }
+  - id: CLO6
+    text:
+      en: "Distinguish phase and group velocity, describe standing waves and dispersion, and apply the Doppler effect."
+      ar: "يميّز بين سرعة الطور وسرعة المجموعة، ويصف الأمواج المستقرة والتبدد، ويطبّق مفعول دوبلر."
+      fr: "Distinguer vitesse de phase et vitesse de groupe, décrire les ondes stationnaires et la dispersion, et appliquer l'effet Doppler."
+    assessed_by: { en: "Tests, homework and final exam", ar: "الاختبارات القصيرة والواجبات والاختبار النهائي", fr: "Interrogations, devoirs et examen final" }
+  - id: CLO7
+    text:
+      en: "Recognise vibrations and waves in many areas of physics and use their common mathematical description."
+      ar: "يتعرّف على الاهتزازات والأمواج في مجالات عديدة من الفيزياء ويستعمل وصفها الرياضي المشترك."
+      fr: "Reconnaître les vibrations et les ondes dans de nombreux domaines de la physique et utiliser leur description mathématique commune."
+    assessed_by: { en: "Tests, homework and final exam", ar: "الاختبارات القصيرة والواجبات والاختبار النهائي", fr: "Interrogations, devoirs et examen final" }
+
+assessment:
+  - type: quiz
+    weight: 33
+    title: { en: "Continuous assessment (tutorials)", ar: "التقييم المستمر (الأعمال الموجهة)", fr: "Contrôle continu (TD)" }
+    detail:
+      en: "Tests (quizzes) 1 and 2, participation, homework assignments and attendance in the tutorial sessions."
+      ar: "الاختباران القصيران 1 و2، والمشاركة، والواجبات المنزلية، والمواظبة على حصص الأعمال الموجهة."
+      fr: "Interrogations 1 et 2, participation, devoirs à la maison et assiduité aux séances de TD."
+    when: { en: During the semester, ar: خلال الفصل, fr: Pendant le semestre }
+  - type: final
+    weight: 67
+    title: { en: Final exam, ar: الاختبار النهائي, fr: Examen final }
+    detail:
+      en: "Written exam (1 h 30) at the end of the semester. A resit exam is held for students who do not pass."
+      ar: "اختبار كتابي (1سا 30د) في نهاية الفصل، يليه اختبار استدراكي للطلبة غير الناجحين."
+      fr: "Examen écrit (1 h 30) en fin de semestre. Un examen de rattrapage est organisé pour les étudiants non admis."
+    when: { en: End of semester, ar: نهاية الفصل, fr: Fin de semestre }
+assessment_note:
+  en: "Standard scheme of Algerian universities (LMD): final mark = 0.33 × continuous assessment + 0.67 × exam."
+  ar: "النظام المعتمد في الجامعات الجزائرية (ل م د): العلامة النهائية = 0.33 × التقييم المستمر + 0.67 × الاختبار."
+  fr: "Schéma habituel des universités algériennes (LMD) : note finale = 0,33 × contrôle continu + 0,67 × examen."
+
+# Course plan (official programme): Part I (Vibrations) = chapters 1–3, Part II (Waves) = chapters 4–7.
+# The source gives chapters, not weeks. Materials are attached to chapters with `week:`.
+schedule:
+  - week: Ch. 1
+    title: { en: General properties of vibrations, ar: عموميات حول الاهتزازات, fr: Généralités sur les vibrations }
+    topics:
+      en: ["Definition of vibrational motion", "Examples of vibrating systems", "Periodic motion"]
+      ar: ["تعريف الحركة الاهتزازية", "أمثلة عن الأنظمة الاهتزازية", "الحركات الدورية"]
+      fr: ["Définition d’un mouvement vibratoire", "Exemples de systèmes vibratoires", "Mouvements périodiques"]
+  - week: Ch. 2
+    title: { en: Linear systems with one degree of freedom, ar: الأنظمة الخطية ذات درجة حرية واحدة, fr: Systèmes linéaires à un degré de liberté }
+    topics:
+      en:
+        - "2.1 Free oscillations. The harmonic oscillator. Natural angular frequency of a harmonic oscillator. The energy of a harmonic oscillator"
+        - "2.2 Damped free oscillations. Damping forces. Equation of motion. Pseudo-periodic oscillations (logarithmic decrement, quality factor)"
+        - "2.3 Forced oscillations. Definition. The case of a sinusoidal driving force (resonance, phase shift). The case of an arbitrary periodic driving force"
+        - "2.4 Damped forced oscillations. Equation of motion. Transient regime, steady state. Bandwidth. Quality factor"
+        - "2.5 Analogy between mechanical and electrical oscillating systems"
+      ar:
+        - "2.1 الاهتزازات الحرة. الهزاز التوافقي. النبض الذاتي للهزاز التوافقي. طاقة الهزاز التوافقي"
+        - "2.2 الاهتزازات الحرة المتخامدة. قوى التخامد. معادلة الحركة. الاهتزازات شبه الدورية (التناقص اللوغاريتمي، معامل الجودة)"
+        - "2.3 الاهتزازات القسرية. تعريف. حالة إثارة جيبية (الرنين، فرق الطور). حالة إثارة دورية كيفية"
+        - "2.4 الاهتزازات المتخامدة القسرية. معادلة الحركة. النظام الانتقالي، النظام الدائم. عرض النطاق. معامل الجودة"
+        - "2.5 التماثل بين الأنظمة المهتزة الميكانيكية والكهربائية"
+      fr:
+        - "2.1 Les oscillations libres. L’oscillateur harmonique. Pulsation propre d’un oscillateur harmonique. L’énergie d’un oscillateur harmonique"
+        - "2.2 Les oscillations libres amorties. Forces d’amortissement. Équation du mouvement. Oscillations pseudopériodiques (décrément logarithmique, facteur de qualité)"
+        - "2.3 Les oscillations forcées. Définition. Cas d’une excitation sinusoïdale (résonance, déphasage). Cas d’une excitation périodique quelconque"
+        - "2.4 Les oscillations amorties forcées. Équation du mouvement. Régime transitoire, régime permanent. Bande passante. Facteur de qualité"
+        - "2.5 Analogie entre systèmes oscillants mécaniques et électriques"
+  - week: Ch. 3
+    title: { en: Linear systems with several degrees of freedom, ar: الأنظمة الخطية ذات عدة درجات حرية, fr: Systèmes linéaires à plusieurs degrés de liberté }
+    topics:
+      en:
+        - "3.1 Systems with 2 degrees of freedom: free (natural angular frequencies), damped, and damped and forced"
+        - "3.2 Systems with N degrees of freedom (general behaviour)"
+      ar:
+        - "3.1 الأنظمة ذات درجتي حرية: الحالة الحرة (النبضات الذاتية)، المتخامدة، والمتخامدة القسرية"
+        - "3.2 الأنظمة ذات N درجة حرية (السلوك العام)"
+      fr:
+        - "3.1 Systèmes à 2 degrés de liberté : cas libre (pulsations propres), amorti et amorti forcé"
+        - "3.2 Systèmes à N degrés de liberté (comportement général)"
+  - week: Ch. 4
+    title: { en: General properties of mechanical waves, ar: عموميات حول الأمواج الميكانيكية, fr: Généralités sur les ondes mécaniques }
+    topics:
+      en:
+        - "4.1 Classification of waves"
+        - "4.2 General solution of the general equation for travelling waves"
+        - "4.3 Phase velocity, group velocity"
+        - "4.4 The notion of a wavefront. Examples: plane waves, spherical waves"
+        - "4.5 Reflection and transmission of waves"
+        - "4.6 Relations between the various quantities describing a wave"
+      ar:
+        - "4.1 تصنيف الأمواج"
+        - "4.2 الحل العام للمعادلة العامة للأمواج المتنقلة"
+        - "4.3 سرعة الطور، سرعة المجموعة"
+        - "4.4 مفهوم جبهة الموجة. مثال الأمواج المستوية والأمواج الكروية"
+        - "4.5 انعكاس الأمواج ونفاذها"
+        - "4.6 العلاقة بين مختلف المقادير الممثلة للموجة"
+      fr:
+        - "4.1 Classification des ondes"
+        - "4.2 Intégrale générale de l’équation générale d’ondes progressives"
+        - "4.3 Vitesse de phase, vitesse de groupe"
+        - "4.4 Notion de front d’onde. Exemple des ondes planes, ondes sphériques"
+        - "4.5 Réflexion et transmission des ondes"
+        - "4.6 Relation entre les différentes grandeurs représentant l’onde"
+  - week: Ch. 5
+    title: { en: Transverse waves on a string, ar: الأمواج العرضية على وتر, fr: Ondes transversales sur une corde }
+    topics:
+      en: ["Wave equation", "Characteristic impedance", "Energy of a travelling wave", "Reflection and transmission of waves", "Standing waves"]
+      ar: ["معادلة الانتشار", "الممانعة المميزة", "طاقة الموجة المتنقلة", "انعكاس الأمواج ونفاذها", "الأمواج المستقرة"]
+      fr: ["Équation de propagation", "Impédance caractéristique", "Énergie d’une onde progressive", "Réflexion et transmission des ondes", "Ondes stationnaires"]
+  - week: Ch. 6
+    title: { en: Longitudinal waves in fluids, ar: الأمواج الطولية في الموائع, fr: Ondes longitudinales dans les fluides }
+    topics:
+      en:
+        - "6.1 Plane waves in a cylindrical pipe. Wave equation in a gas. Wave equation in a liquid. Acoustic impedance. Characteristic impedance. Energy carried by a wave. Reflection and transmission coefficients (boundary conditions)"
+        - "6.2 The Doppler effect"
+      ar:
+        - "6.1 الأمواج المستوية في أنبوب أسطواني. معادلة الأمواج في غاز. معادلة الأمواج في سائل. الممانعة الصوتية. الممانعة المميزة. الطاقة التي تنقلها الموجة. معاملا انعكاس الأمواج ونفاذها (الشروط الحدية)"
+        - "6.2 مفعول دوبلر"
+      fr:
+        - "6.1 Ondes planes dans un tuyau cylindrique. Équation d’ondes dans un gaz. Équation d’ondes dans un liquide. Impédance acoustique. Impédance caractéristique. Énergie transportée par une onde. Coefficients de réflexion et de transmission d’ondes (conditions aux limites)"
+        - "6.2 Effet Doppler"
+  - week: Ch. 7
+    title: { en: Elastic waves in solids, ar: الأمواج المرنة في الأجسام الصلبة, fr: Ondes élastiques dans les solides }
+
+textbooks:
+  recommended:
+    - { authors: A. P. French, title: Vibrations and Waves, publisher: "W. W. Norton & Company, New York", year: 1971 }
+    - { authors: G. C. King, title: Vibrations and Waves, publisher: John Wiley & Sons, year: 2009 }
+    - { authors: G. Bekefi and A. H. Barrett, title: "Electromagnetic Vibrations, Waves and Radiation", publisher: "The MIT Press, Cambridge, MA", year: 1977 }
+    - { authors: T. Becherrawy, title: "Vibrations et Ondes (tomes 1–4)", publisher: Hermes-Lavoisier, year: 2010 }
+    - { authors: H. Djelouah, title: Vibrations et Ondes Mécaniques, publisher: Office des Publications Universitaires (OPU), year: 2011 }
+    - { authors: J. Bruneaux, title: Vibrations et Ondes, publisher: Ed. Marketing, year: 2010 }
+    # Arabic texts suggested on the page of the Arabic-taught section (2016–2017)
+    - { authors: خ. الصوصو, title: الاهتزازات والأمواج, publisher: "جامعة دمشق، المدينة", year: 1988 }
+    - { authors: ح. ف. سكيك, title: الاهتزازات والأمواج الميكانيكية, publisher: المركز العلمي للترجمة, year: 2008 }
+    - { authors: ع. ماجود, title: دراسة في النظرية الاهتزازية, publisher: "ديوان المطبوعات الجامعية، جامعة سطيف", year: 1985 }
+  online:
+    - title: { en: "MIT OCW 8.03 — Physics III: Vibrations and Waves", ar: "MIT OCW 8.03 — الفيزياء 3: الاهتزازات والأمواج", fr: "MIT OCW 8.03 — Physique III : Vibrations et ondes" }
+      url: https://ocw.mit.edu/courses/physics/8-03-physics-iii-vibrations-and-waves-fall-2004/syllabus/
+      note: { en: Full MIT course (in English)., ar: مقرر كامل من MIT (بالإنجليزية)., fr: Cours complet du MIT (en anglais). }
+    - title: { en: Vibrations et Ondes mécaniques — H. Djelouah (USTHB), ar: Vibrations et Ondes mécaniques — H. Djelouah (جامعة باب الزوار), fr: Vibrations et Ondes mécaniques — H. Djelouah (USTHB) }
+      url: https://www.usthb.dz/fphy/hdjelouah/Diapos.html
+      note: { en: Lectures and exercises (in French)., ar: دروس وتمارين (بالفرنسية)., fr: Cours et exercices. }
+    - title: { en: Ondes et Vibrations — J.-M. Richard (IUT), ar: Ondes et Vibrations — J.-M. Richard (IUT), fr: Ondes et Vibrations — J.-M. Richard (IUT) }
+      url: https://www.ipnl.in2p3.fr/perso/richard/ENSEIGN/VO/CoursIUT.pdf
+      note: { en: Lecture notes (in French)., ar: مذكرات محاضرات (بالفرنسية)., fr: Notes de cours. }
+    - title: { en: "F. Boukli — Vibrations et ondes mécaniques, vol. 1: Vibrations (lecture notes)", ar: "ف. بوقلي — Vibrations et ondes mécaniques، الجزء 1: الاهتزازات (مذكرة دروس)", fr: "F. Boukli — Vibrations et ondes mécaniques, tome 1 : Vibrations (polycopié)" }
+      url: https://www.univ-chlef.dz/fgca/images/tome-1_vibrations.pdf
+      note: { en: "Lecture notes by F. Boukli (University of Chlef), in French.", ar: "مذكرة دروس من إعداد ف. بوقلي (جامعة الشلف)، بالفرنسية.", fr: "Polycopié de F. Boukli (Université de Chlef)." }
+    - title: { en: "F. Boukli — Vibrations et ondes mécaniques, vol. 2: Mechanical waves (lecture notes)", ar: "ف. بوقلي — Vibrations et ondes mécaniques، الجزء 2: الأمواج الميكانيكية (مذكرة دروس)", fr: "F. Boukli — Vibrations et ondes mécaniques, tome 2 : Ondes mécaniques (polycopié)" }
+      url: "https://www.univ-chlef.dz/fgca/images/tome-2_ondes%20mecaniques.pdf"
+      note: { en: "Lecture notes by F. Boukli (University of Chlef), in French.", ar: "مذكرة دروس من إعداد ف. بوقلي (جامعة الشلف)، بالفرنسية.", fr: "Polycopié de F. Boukli (Université de Chlef)." }
+
+materials:
+  # Lecture notes (scanned handwritten chapters; numbering follows the tutorial chapters 0–8)
+  - { type: notes, title: { en: "Chapter 1 — Introduction to Lagrange's equations (scanned notes)", ar: "الفصل 1 — مدخل إلى معادلات لاغرانج (مذكرة ممسوحة ضوئيًا)", fr: "Chapitre 1 — Introduction aux équations de Lagrange (polycopié scanné)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_chap1_scan.pdf, lang: fr, week: "Ch. 1" }
+  - { type: notes, title: { en: "Chapter 2 — Simple harmonic oscillator (scanned notes)", ar: "الفصل 2 — الهزاز التوافقي البسيط (مذكرة ممسوحة ضوئيًا)", fr: "Chapitre 2 — Oscillateur harmonique simple (polycopié scanné)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_chap2_scan.pdf, lang: fr, week: "Ch. 2" }
+  - { type: notes, title: { en: "Chapter 3 — Damped harmonic oscillator (scanned notes)", ar: "الفصل 3 — الهزاز التوافقي المتخامد (مذكرة ممسوحة ضوئيًا)", fr: "Chapitre 3 — Oscillateur harmonique amorti (polycopié scanné)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_chap3_scan.pdf, lang: fr, week: "Ch. 2" }
+  - { type: notes, title: { en: "Chapter 4 — Forced harmonic oscillator (scanned notes)", ar: "الفصل 4 — الهزاز التوافقي القسري (مذكرة ممسوحة ضوئيًا)", fr: "Chapitre 4 — Oscillateur harmonique forcé (polycopié scanné)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_chap4_scan1.pdf, lang: fr, week: "Ch. 2" }
+  - { type: notes, title: { en: "Chapter 5 — Electrical oscillations (scanned notes)", ar: "الفصل 5 — الاهتزازات الكهربائية (مذكرة ممسوحة ضوئيًا)", fr: "Chapitre 5 — Oscillations électriques (polycopié scanné)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_chap5_scan1.pdf, lang: fr, week: "Ch. 2" }
+  - { type: notes, title: { en: "Chapter 6 — Coupled oscillations (scanned notes)", ar: "الفصل 6 — الاهتزازات المقترنة (مذكرة ممسوحة ضوئيًا)", fr: "Chapitre 6 — Oscillations couplées (polycopié scanné)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_chap6_scan.pdf, lang: fr, week: "Ch. 3" }
+  - { type: notes, title: { en: "Chapter 7 — Travelling waves (scanned notes)", ar: "الفصل 7 — الأمواج المتنقلة (مذكرة ممسوحة ضوئيًا)", fr: "Chapitre 7 — Ondes progressives (polycopié scanné)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/vo_chap7_scan1.pdf, lang: fr, week: "Ch. 4" }
+  - { type: notes, title: { en: "Chapter 8 — Standing waves (scanned notes)", ar: "الفصل 8 — الأمواج المستقرة (مذكرة ممسوحة ضوئيًا)", fr: "Chapitre 8 — Ondes stationnaires (polycopié scanné)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/vo_chap8_scan.pdf, lang: fr, week: "Ch. 5" }
+  # Tutorial summaries
+  - { type: summary, title: { en: "Summary 0 — Review of mathematics and dynamics", ar: "الملخص 0 — تذكير بالرياضيات والديناميكا", fr: "Résumé 0 — Rappels mathématiques et dynamique" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume0.pdf, lang: fr, week: "Ch. 1" }
+  - { type: summary, title: { en: "Summary 1 — Introduction to Lagrange's equations", ar: "الملخص 1 — مدخل إلى معادلات لاغرانج", fr: "Résumé 1 — Introduction aux équations de Lagrange" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume1.pdf, lang: fr, week: "Ch. 1" }
+  - { type: summary, title: { en: "Summary 2 — Simple harmonic oscillator", ar: "الملخص 2 — الهزاز التوافقي البسيط", fr: "Résumé 2 — Oscillateur harmonique simple" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume2.pdf, lang: fr, week: "Ch. 2" }
+  - { type: summary, title: { en: "Summary 3 — Damped harmonic oscillator", ar: "الملخص 3 — الهزاز التوافقي المتخامد", fr: "Résumé 3 — Oscillateur harmonique amorti" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume3.pdf, lang: fr, week: "Ch. 2" }
+  - { type: summary, title: { en: "Summary 4 — Forced harmonic oscillator", ar: "الملخص 4 — الهزاز التوافقي القسري", fr: "Résumé 4 — Oscillateur harmonique forcé" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_resume4.pdf, lang: fr, week: "Ch. 2" }
+  - { type: summary, title: { en: "Summary 5 — Electrical oscillations", ar: "الملخص 5 — الاهتزازات الكهربائية", fr: "Résumé 5 — Oscillations électriques" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_resume5.pdf, lang: fr, week: "Ch. 2" }
+  - { type: summary, title: { en: "Summary 6 — Coupled oscillations", ar: "الملخص 6 — الاهتزازات المقترنة", fr: "Résumé 6 — Oscillations couplées" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_resume6.pdf, lang: fr, week: "Ch. 3" }
+  # Tutorial problem sets
+  - { type: problems, title: { en: "Problem set 0 — Review of mathematics and dynamics", ar: "السلسلة 0 — تذكير بالرياضيات والديناميكا", fr: "Série 0 — Rappels mathématiques et dynamique" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie0.pdf, lang: fr, week: "Ch. 1" }
+  - { type: problems, title: { en: "Problem set 1 — Introduction to Lagrange's equations", ar: "السلسلة 1 — مدخل إلى معادلات لاغرانج", fr: "Série 1 — Introduction aux équations de Lagrange" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie11.pdf, lang: fr, week: "Ch. 1" }
+  - { type: problems, title: { en: "Problem set 2 — Simple harmonic oscillator", ar: "السلسلة 2 — الهزاز التوافقي البسيط", fr: "Série 2 — Oscillateur harmonique simple" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie21.pdf, lang: fr, week: "Ch. 2" }
+  - { type: problems, title: { en: "Problem set 3 — Damped harmonic oscillator", ar: "السلسلة 3 — الهزاز التوافقي المتخامد", fr: "Série 3 — Oscillateur harmonique amorti" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie3.pdf, lang: fr, week: "Ch. 2" }
+  - { type: problems, title: { en: "Problem set 4 — Forced harmonic oscillator", ar: "السلسلة 4 — الهزاز التوافقي القسري", fr: "Série 4 — Oscillateur harmonique forcé" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/10/vo_serie4.pdf, lang: fr, week: "Ch. 2" }
+  - { type: problems, title: { en: "Problem set 5 — Electrical oscillations", ar: "السلسلة 5 — الاهتزازات الكهربائية", fr: "Série 5 — Oscillations électriques" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_serie5.pdf, lang: fr, week: "Ch. 2" }
+  - { type: problems, title: { en: "Problem set 6 — Coupled oscillations", ar: "السلسلة 6 — الاهتزازات المقترنة", fr: "Série 6 — Oscillations couplées" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/vo_serie6.pdf, lang: fr, week: "Ch. 3" }
+  - { type: problems, title: { en: "Problem set 7 — Travelling waves", ar: "السلسلة 7 — الأمواج المتنقلة", fr: "Série 7 — Ondes progressives" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/vo_serie71.pdf, lang: fr, week: "Ch. 4" }
+  - { type: problems, title: { en: "Problem set 8 — Standing waves", ar: "السلسلة 8 — الأمواج المستقرة", fr: "Série 8 — Ondes stationnaires" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/vo_serie8.pdf, lang: fr, week: "Ch. 5" }
+  # Formula sheets
+  - { type: sim, title: { en: "Animation — SHO, mass–spring (longitudinal)", ar: "رسم متحرك — الهزاز التوافقي، كتلة–نابض (طولي)", fr: "Animation — oscillateur harmonique, masse–ressort (longitudinal)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohs7.gif, week: "Ch. 2" }
+  - { type: sim, title: { en: "Animation — SHO, simple pendulum", ar: "رسم متحرك — الهزاز التوافقي، النواس البسيط", fr: "Animation — oscillateur harmonique, pendule simple" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohs_pend.gif, week: "Ch. 2" }
+  - { type: sim, title: { en: "Animation — SHO, mass with 2 springs (transverse)", ar: "رسم متحرك — الهزاز التوافقي، كتلة ونابضان (عرضي)", fr: "Animation — oscillateur harmonique, masse et 2 ressorts (transversal)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/ohs_vert.gif, week: "Ch. 2" }
+  - { type: sim, title: { en: "Animation — damped oscillator, mass–spring", ar: "رسم متحرك — الهزاز المتخامد، كتلة–نابض", fr: "Animation — oscillateur amorti, masse–ressort" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oha3.gif, week: "Ch. 2" }
+  - { type: sim, title: { en: "Animation — forced oscillator, mass–spring", ar: "رسم متحرك — الهزاز القسري، كتلة–نابض", fr: "Animation — oscillateur forcé, masse–ressort" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/ohf.gif, week: "Ch. 2" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 3 springs (horizontal), normal mode 1", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + 3 نوابض (أفقي)، النمط الذاتي 1", fr: "Animation — oscillations couplées, 2 masses + 3 ressorts (horizontal), mode propre 1" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_mp1.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 3 springs (horizontal), normal mode 2", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + 3 نوابض (أفقي)، النمط الذاتي 2", fr: "Animation — oscillations couplées, 2 masses + 3 ressorts (horizontal), mode propre 2" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_mp2.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 3 springs (horizontal), mixed mode", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + 3 نوابض (أفقي)، تراكب الأنماط", fr: "Animation — oscillations couplées, 2 masses + 3 ressorts (horizontal), superposition des modes" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m3k_sp.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 2 springs (vertical), normal mode 1", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + نابضان (شاقولي)، النمط الذاتي 1", fr: "Animation — oscillations couplées, 2 masses + 2 ressorts (vertical), mode propre 1" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_mp1.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 2 springs (vertical), normal mode 2", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + نابضان (شاقولي)، النمط الذاتي 2", fr: "Animation — oscillations couplées, 2 masses + 2 ressorts (vertical), mode propre 2" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_mp2.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 2 springs (vertical), mixed mode", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + نابضان (شاقولي)، تراكب الأنماط", fr: "Animation — oscillations couplées, 2 masses + 2 ressorts (vertical), superposition des modes" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2m2k_sp.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 pendulums, normal mode 1", ar: "رسم متحرك — اهتزازات مقترنة، نواسان، النمط الذاتي 1", fr: "Animation — oscillations couplées, 2 pendules, mode propre 1" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_mp1.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 pendulums, normal mode 2", ar: "رسم متحرك — اهتزازات مقترنة، نواسان، النمط الذاتي 2", fr: "Animation — oscillations couplées, 2 pendules, mode propre 2" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_mp2.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 pendulums, mixed mode", ar: "رسم متحرك — اهتزازات مقترنة، نواسان، تراكب الأنماط", fr: "Animation — oscillations couplées, 2 pendules, superposition des modes" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend_sp.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 pendulums + 1 spring, normal mode 1", ar: "رسم متحرك — اهتزازات مقترنة، نواسان + نابض، النمط الذاتي 1", fr: "Animation — oscillations couplées, 2 pendules + 1 ressort, mode propre 1" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_mp1.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 pendulums + 1 spring, normal mode 2", ar: "رسم متحرك — اهتزازات مقترنة، نواسان + نابض، النمط الذاتي 2", fr: "Animation — oscillations couplées, 2 pendules + 1 ressort, mode propre 2" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_mp2.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 pendulums + 1 spring, mixed mode", ar: "رسم متحرك — اهتزازات مقترنة، نواسان + نابض، تراكب الأنماط", fr: "Animation — oscillations couplées, 2 pendules + 1 ressort, superposition des modes" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_sp1.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 pendulums + 1 spring, mixed mode (v2)", ar: "رسم متحرك — اهتزازات مقترنة، نواسان + نابض، تراكب الأنماط (v2)", fr: "Animation — oscillations couplées, 2 pendules + 1 ressort, superposition des modes (v2)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/11/oc_2pend1k_sp2.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 3 springs (transverse), normal mode 1", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + 3 نوابض (عرضي)، النمط الذاتي 1", fr: "Animation — oscillations couplées, 2 masses + 3 ressorts (transversal), mode propre 1" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_mp1.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 3 springs (transverse), normal mode 2", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + 3 نوابض (عرضي)، النمط الذاتي 2", fr: "Animation — oscillations couplées, 2 masses + 3 ressorts (transversal), mode propre 2" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_mp2.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 3 springs (transverse), mixed mode", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + 3 نوابض (عرضي)، تراكب الأنماط", fr: "Animation — oscillations couplées, 2 masses + 3 ressorts (transversal), superposition des modes" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_sp.gif, week: "Ch. 3" }
+  - { type: sim, title: { en: "Animation — coupled oscillations, 2 masses + 3 springs (transverse), mixed mode (v2)", ar: "رسم متحرك — اهتزازات مقترنة، كتلتان + 3 نوابض (عرضي)، تراكب الأنماط (v2)", fr: "Animation — oscillations couplées, 2 masses + 3 ressorts (transversal), superposition des modes (v2)" }, url: https://khelifak.wordpress.com/wp-content/uploads/2015/12/oc_vibtrans_sp2.gif, week: "Ch. 3" }
+
+exams:
+  - { title: { en: Final exam, ar: الاختبار النهائي, fr: Examen }, session: 2015–2016, paper: https://khelifak.wordpress.com/wp-content/uploads/2016/01/vo_exam1.pdf, solution: https://khelifak.wordpress.com/wp-content/uploads/2016/01/vo_exam_s.pdf, lang: fr }
+  - { title: { en: Final exam, ar: الاختبار النهائي, fr: Examen }, session: 2014–2015, paper: https://khelifak.wordpress.com/wp-content/uploads/2015/02/vo_exam1.pdf, lang: fr }
+  - { title: { en: Resit exam, ar: الاختبار الاستدراكي, fr: Examen de rattrapage }, session: 2014–2015, paper: https://khelifak.wordpress.com/wp-content/uploads/2015/05/vo_exam_ratt.pdf, lang: fr }
+
+pending:
+  - what: "Mathematical formulae (French)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
+    why: "same sheet is withheld in the USTHB courses: typed by Y. Delenda, authorship unclear"
+  - what: "Physical constants and conversion factors (French)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
+    why: "same sheet is withheld in the USTHB courses: typed by Y. Delenda, authorship unclear"
+  - { what: "G. C. King, Vibrations and Waves — full copy uploaded on SlideShare by a third party", url: https://www.slideshare.net/StefanyCuadros/vibrations-and-waves-28179530, why: "Kamel 24-10-2026: do not link; the book is cited under textbooks. Copyrighted textbook uploaded by someone else (likely unauthorised); the book itself is listed under textbooks" }
+
+sources:
+  - teaching/chlef-vibrations-ondes      # https://khelifak.wordpress.com/studying/teaching-2/uhbc/vibrations-et-ondes/ (French, 2015–2016, richest)
+  - teaching/chlef-vibrations-waves      # https://khelifak.wordpress.com/studying/teaching-2/uhbc/vibrations-waves/ (English, 2016–2017)
+  - teaching/chlef-vibrations-ar         # https://khelifak.wordpress.com/studying/teaching-2/uhbc/الاهتزازات-و-الأمواج/ (Arabic, 2016–2017)
+
+notes: >
+  Syllabus (objectives, chapter plan, textbooks, prerequisites) from the French page (2015–2016).
+  The English page (2016–2017) is an unfinished skeleton (objectives "Study", syllabus "Vibrations / Waves / ...",
+  same three English textbooks, no material links except the animations; prerequisites given as Math2, UEF112, UEF122).
+  The Arabic page (و ت أ 321, 2016–2017) has a SUBSTANTIALLY DIFFERENT syllabus, not used above:
+  objective "explore in detail vibrating systems and wave motion across many physical systems";
+  outcomes "(1) demonstrate an understanding of the behaviour of vibrating systems and of wave motion,
+  (2) use the mathematical formalism that describes them, (3) recognise examples in many areas of physics";
+  content in 9 items: SHM and energy; damped SHM, Q-value and power response curves; forced SHM, resonance and transients;
+  coupled SHM and normal modes; waves and the 1D wave equation; waves at interfaces, energy and power, standing waves;
+  2D and 3D wave equation, superposition; phase and group velocity, beats, dispersion; interference and refraction.
+  Its prerequisites are و ت أ 111، و ت أ 211، و ت أ 212 and its evaluation a written exam (1h30) — kept only in assessment_note.
+  Its three Arabic textbooks were added to textbooks.recommended. Neither the English nor the Arabic page links any file of its own,
+  so every material/exam is from the French page (lang fr). Lecture-note and summary titles use the chapter names of the
+  tutorial table (chapters 0–8), which differ from the official 7-chapter plan. Past exams labelled "2014" on the page
+  (uploaded Feb/May 2015) suggest the course was also taught in 2014–2015: to confirm. E-learning (Moodle) link and marks dropped.
+  UPDATE 24-10-2026 (Kamel's answers): taught in French in 2014–2015 and 2015–2016 only (he left for IU in Sept 2016;
+  the English and Arabic 2016–2017 sections were planned but never taught, so they and the code و ت أ 321 were removed).
+  The 22 animations are his own (published, attached to chapters 2–3). The Delenda sheets stay withheld and are replaced by
+  the TeachWeb formula sheet (page-wide card). Boukli's notes are linked under online resources with the author's name. King's
+  SlideShare copy is not linked (the book is cited). Notes/summaries/problem sets attached to the official chapters
+  (0 = revision and 1 = Lagrange → Ch. 1; 2–5 → Ch. 2; 6 → Ch. 3; 7 → Ch. 4; 8 → Ch. 5).
+  DRAFTED for Kamel's later review: description, the 7 outcomes (built on the Arabic-section outcomes and the official programme)
+  and the assessment scheme (standard Algerian LMD 33 % continuous / 67 % exam, as Kamel described).
