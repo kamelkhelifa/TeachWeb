@@ -1,0 +1,11 @@
+slug: applied-quantum-mechanics
+order: 60
+codes: []
+title: { en: Applied Quantum Mechanics, ar: ميكانيكا الكم التطبيقية, fr: Mécanique quantique appliquée }
+level: { en: "Master 1 (M1) · one semester", ar: "ماستر (م1) · فصل واحد", fr: "Master 1 (M1) · un semestre" }
+area: quantum
+companion: quantum-mechanics-2   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: Lecture, ar: محاضرات, fr: Cours magistral }
+taught: []
+notes: >
+  UPDATE 24-10-2026 (Kamel's answers): taught to M1 for one semester, in English. Year, code and master speciality still to be given; no syllabus or materials yet.

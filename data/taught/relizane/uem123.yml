@@ -1,0 +1,191 @@
+slug: uem123
+order: 30
+codes: [UEM123]
+title: { en: Numerical Methods & Programming, ar: الطرق العددية والبرمجة, fr: Méthodes numériques et programmation }
+level:
+  en: "Licence 2 (L2) · Semester 3"
+  ar: "ليسانس (ل2) · الفصل 3"
+  fr: "Licence 2 (L2) · Semestre 3"
+area: computational
+companion: numerical-methods   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: "Lecture & computer lab (taught here: the computer-lab sessions)", ar: "محاضرات وأعمال تطبيقية على الحاسوب (المدرَّس هنا: حصص الأعمال التطبيقية)", fr: "Cours et TP sur ordinateur (assuré ici : les séances de TP)" }
+taught:
+  - { years: 2021–2022, code: UEM123, lang: fr }
+hours: { lecture: 1.5, lab: 1.5 }
+
+description:
+  en: |
+    <p>This course covers the essential numerical methods that are widely used in physics and chemistry, as well as their implementation in efficient codes and programs.</p>
+    <p>The lectures are organised in five parts:</p>
+    <ol>
+      <li><strong>Recap of programming languages</strong>: Matlab and/or Mathematica and/or Fortran and/or C++.</li>
+      <li><strong>Numerical integration</strong>: the trapezoidal method; Simpson's method.</li>
+      <li><strong>Numerical solution of non-linear equations</strong>: the bisection method; Newton's method.</li>
+      <li><strong>Numerical solution of systems of linear equations</strong>: Gauss's method; the Gauss–Seidel method.</li>
+      <li><strong>Numerical solution of ordinary differential equations</strong>: Euler's method; the Runge–Kutta method.</li>
+    </ol>
+    <p>Each method is coded in Fortran during the computer-lab sessions.</p>
+  ar: |
+    <p>يتناول هذا المقرر الطرق العددية الأساسية الواسعة الاستعمال في الفيزياء والكيمياء، وكذلك تنفيذها في شيفرات وبرامج فعّالة.</p>
+    <p>تنتظم المحاضرات في خمسة أجزاء:</p>
+    <ol>
+      <li><strong>تذكير بلغات البرمجة</strong>: Matlab و/أو Mathematica و/أو Fortran و/أو C++.</li>
+      <li><strong>التكامل العددي</strong>: طريقة شبه المنحرف؛ طريقة سمبسون.</li>
+      <li><strong>الحل العددي للمعادلات غير الخطية</strong>: طريقة التنصيف؛ طريقة نيوتن.</li>
+      <li><strong>الحل العددي لجمل المعادلات الخطية</strong>: طريقة غاوس؛ طريقة غاوس-سايدل.</li>
+      <li><strong>الحل العددي للمعادلات التفاضلية العادية</strong>: طريقة أويلر؛ طريقة رونغ-كوتا.</li>
+    </ol>
+    <p>تُبرمَج كل طريقة بلغة فورتران في حصص الأعمال التطبيقية على الحاسوب.</p>
+  fr: |
+    <p>Ce cours couvre les méthodes numériques essentielles largement utilisées en physique et en chimie, ainsi que leur implémentation dans des codes et programmes efficaces.</p>
+    <p>Le cours est organisé en cinq parties :</p>
+    <ol>
+      <li><strong>Rappels sur les langages de programmation</strong> : Matlab et/ou Mathematica et/ou Fortran et/ou C++.</li>
+      <li><strong>Intégration numérique</strong> : méthode des trapèzes ; méthode de Simpson.</li>
+      <li><strong>Résolution numérique des équations non linéaires</strong> : méthode de dichotomie ; méthode de Newton.</li>
+      <li><strong>Résolution numérique des systèmes d'équations linéaires</strong> : méthode de Gauss ; méthode de Gauss–Seidel.</li>
+      <li><strong>Résolution numérique des équations différentielles ordinaires</strong> : méthode d'Euler ; méthode de Runge–Kutta.</li>
+    </ol>
+    <p>Chaque méthode est programmée en Fortran lors des séances de TP sur ordinateur.</p>
+
+# DRAFTED outcomes (Kamel to review): from the course outline, which follows the national L2 SM programme (Méthodes numériques et programmation, S3).
+outcomes:
+  - id: CLO1
+    text: { en: "Write, compile and debug simple Fortran programs that implement numerical algorithms.", ar: "يكتب برامج فورتران بسيطة تنفّذ خوارزميات عددية، ويترجمها ويصحّح أخطاءها.", fr: "Écrire, compiler et déboguer des programmes Fortran simples qui implémentent des algorithmes numériques." }
+    assessed_by: { en: "Problem sets and final exam", ar: "المسائل والاختبار النهائي", fr: "Séries d’exercices et examen final" }
+  - id: CLO2
+    text: { en: "Compute definite integrals numerically with the trapezoidal and Simpson methods, and estimate the error.", ar: "يحسب التكاملات المحدودة عدديًا بطريقتي شبه المنحرف وسمبسون، ويقدّر الخطأ.", fr: "Calculer numériquement des intégrales définies par les méthodes des trapèzes et de Simpson, et estimer l'erreur." }
+    assessed_by: { en: "Problem sets and final exam", ar: "المسائل والاختبار النهائي", fr: "Séries d’exercices et examen final" }
+  - id: CLO3
+    text: { en: "Find the roots of non-linear equations with the bisection and Newton methods, and compare their convergence.", ar: "يجد جذور المعادلات غير الخطية بطريقتي التنصيف ونيوتن، ويقارن تقاربهما.", fr: "Trouver les racines d'équations non linéaires par les méthodes de dichotomie et de Newton, et comparer leur convergence." }
+    assessed_by: { en: "Problem sets and final exam", ar: "المسائل والاختبار النهائي", fr: "Séries d’exercices et examen final" }
+  - id: CLO4
+    text: { en: "Solve systems of linear equations with Gauss elimination and the Gauss–Seidel iteration.", ar: "يحلّ جمل المعادلات الخطية بطريقة الحذف لغاوس وبتكرار غاوس-سايدل.", fr: "Résoudre des systèmes d'équations linéaires par l'élimination de Gauss et l'itération de Gauss–Seidel." }
+    assessed_by: { en: "Problem sets and final exam", ar: "المسائل والاختبار النهائي", fr: "Séries d’exercices et examen final" }
+  - id: CLO5
+    text: { en: "Solve initial-value problems for ordinary differential equations with the Euler and Runge–Kutta methods, and study the effect of the step size.", ar: "يحلّ مسائل القيم الابتدائية للمعادلات التفاضلية العادية بطريقتي أويلر ورونغ-كوتا، ويدرس أثر الخطوة.", fr: "Résoudre des problèmes aux valeurs initiales d'équations différentielles ordinaires par les méthodes d'Euler et de Runge–Kutta, et étudier l'effet du pas." }
+    assessed_by: { en: "Problem sets and final exam", ar: "المسائل والاختبار النهائي", fr: "Séries d’exercices et examen final" }
+  - id: CLO6
+    text: { en: "Choose a suitable method for a physics problem and judge the accuracy of the numerical result.", ar: "يختار طريقة مناسبة لمسألة فيزيائية ويحكم على دقة النتيجة العددية.", fr: "Choisir une méthode adaptée à un problème de physique et juger de la précision du résultat numérique." }
+    assessed_by: { en: "Problem sets and final exam", ar: "المسائل والاختبار النهائي", fr: "Séries d’exercices et examen final" }
+
+assessment:
+  - type: homework
+    weight: 33
+    title: { en: "Problem sets and assignments", ar: "المسائل والواجبات", fr: "Séries d'exercices et devoirs" }
+    detail: { en: "One sheet a week, due one week later in class.", ar: "سلسلة كل أسبوع، تُسلَّم حلولها بعد أسبوع واحد.", fr: "Une série par semaine, à rendre une semaine plus tard, en séance." }
+  - type: final
+    weight: 67
+    title: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+    detail: { en: "2 hours", ar: "ساعتان", fr: "2 heures" }
+    when: { en: "Final exam period", ar: "فترة الاختبارات النهائية", fr: "Période des examens finaux" }
+
+schedule:
+  - week: 1
+    title: { en: Introductory session, ar: حصة تعريفية, fr: Séance d'introduction }
+  - week: 2
+    title: { en: Numerical integration, ar: التكامل العددي, fr: Intégration numérique }
+    topics:
+      en: [Trapezoidal method, Simpson's method]
+      ar: [طريقة شبه المنحرف, طريقة سمبسون]
+      fr: [Méthode des trapèzes, Méthode de Simpson]
+    reading: Lecture 1
+    activity: { en: TP 1, ar: الأعمال التطبيقية 1, fr: TP 1 }
+  - week: 3
+    title: { en: "Fortran code: trapezoidal and Simpson", ar: "شيفرة فورتران: شبه المنحرف وسمبسون", fr: "Code Fortran : trapèzes et Simpson" }
+    milestone: lab
+  - week: 4
+    title: { en: Non-linear equations, ar: المعادلات غير الخطية, fr: Équations non linéaires }
+    topics:
+      en: [Newton's method, Bisection method]
+      ar: [طريقة نيوتن, طريقة التنصيف]
+      fr: [Méthode de Newton, Méthode de dichotomie]
+    reading: Lecture 2
+    activity: { en: TP 2, ar: الأعمال التطبيقية 2, fr: TP 2 }
+  - week: 5
+    title: { en: "Fortran code: Newton and bisection", ar: "شيفرة فورتران: نيوتن والتنصيف", fr: "Code Fortran : Newton et dichotomie" }
+    reading: Lecture 2
+    activity: { en: TP 2, ar: الأعمال التطبيقية 2, fr: TP 2 }
+    milestone: lab
+  - week: 6
+    title: { en: Gauss elimination without pivoting, ar: طريقة غاوس دون محورة, fr: Méthode de Gauss sans pivot }
+    reading: Lecture 3
+    activity: { en: TP 3, ar: الأعمال التطبيقية 3, fr: TP 3 }
+  - week: 7
+    title: { en: Gauss elimination with partial and total pivoting, ar: طريقة غاوس مع المحورة الجزئية والكلية, fr: Méthode de Gauss avec pivot partiel et total }
+    reading: Lecture 3
+    activity: { en: TP 3, ar: الأعمال التطبيقية 3, fr: TP 3 }
+  - week: 8
+    title: { en: Gauss–Seidel method, ar: طريقة غاوس-سايدل, fr: Méthode de Gauss–Seidel }
+    reading: Lecture 4
+    activity: { en: TP 4, ar: الأعمال التطبيقية 4, fr: TP 4 }
+  - week: 9
+    title: { en: Euler's method, ar: طريقة أويلر, fr: Méthode d'Euler }
+    reading: Lecture 5
+  - week: 10
+    title: { en: Runge–Kutta method, ar: طريقة رونغ-كوتا, fr: Méthode de Runge–Kutta }
+    reading: Lecture 5
+
+textbooks:
+  required:
+    - { authors: F. Jedrzejewski, title: Introduction aux méthodes numériques, edition: 2nd, publisher: Springer-Verlag France, year: 2005 }
+    - { authors: E. Hairer, title: Introduction à l'analyse numérique, publisher: Université de Genève, year: 2001 }
+    - { authors: J. D. Hoffman, title: Numerical Methods for Engineers and Scientists, edition: 2nd, publisher: "Marcel Dekker, USA", year: 2001 }
+    - { authors: A. Quarteroni, title: "Méthodes numériques : algorithmes, analyse et applications", publisher: Springer-Verlag Italia, year: 2004 }
+  recommended:
+    - { authors: "C. Woodford, C. Phillips", title: "Numerical Methods with Worked Examples: MATLAB Edition", edition: 2nd, publisher: Springer, year: 2013 }
+    - { authors: "M. Djebli, H. Djelouah", title: Initiation à MATLAB, publisher: Office des Publications Universitaires (OPU), year: 2013 }
+    - { authors: R. Dukkipati, title: "MATLAB: An Introduction with Applications", publisher: "New Age International, India", year: 2010 }
+    - { authors: "B. Hahn, D. Valentine", title: Essential MATLAB for Engineers and Scientists, edition: 3rd, publisher: Elsevier, year: 2007 }
+    - { authors: C. Casteyde, title: Cours de C/C++, year: 2005 }
+    - { authors: C. Delannoy, title: C++ pour les programmeurs C, edition: 6th, publisher: "Eyrolles, Paris", year: 2004 }
+    - { authors: "P. Corde, A. Fouilloux", title: "Langage Fortran, support de cours", publisher: IDRIS, year: 2010 }
+    - { authors: P. D'Anfray, title: Fortran 77, publisher: Université Paris XIII, year: 1998 }
+    - { authors: B. Hahn, title: Introduction to Fortran 90 for Scientists and Engineers, publisher: "University of Cape Town, South Africa", year: 1993 }
+
+materials:
+  - type: summary
+    title: { en: "Summary 2: Numerical integration (trapezoidal and Simpson methods)", ar: "الملخص 2: التكامل العددي (طريقتا شبه المنحرف وسمبسون)", fr: "Résumé 2 : Intégration numérique (méthodes des trapèzes et de Simpson)" }
+    url: https://drive.google.com/file/d/1BDczjaY9agCGrEJNbMw5DdJpVEcMfI6C/view?usp=sharing
+  - { type: problems, title: { en: Assignment 1, ar: الواجب 1, fr: Devoir 1 }, url: "https://drive.google.com/file/d/1j6PQZ2hMdpwqvPTaW2smn5lMzWjE9zjC/view?usp=sharing" }
+  - { type: solutions, title: { en: Solution 1, ar: حل الواجب 1, fr: Corrigé du devoir 1 }, url: "https://drive.google.com/file/d/1QRv7rBoFRm8NgOIaNuUOMfyltzw_co8X/view?usp=sharing" }
+  - { type: code, title: { en: Solution 1 (code), ar: حل الواجب 1 (الشيفرة), fr: Corrigé du devoir 1 (code) }, url: "https://drive.google.com/file/d/1NEoBJiiSFt1ZX4aKG_H9kdsf7iwI-FfC/view?usp=sharing" }
+  - { type: problems, title: { en: Assignment 2, ar: الواجب 2, fr: Devoir 2 }, url: "https://drive.google.com/file/d/11iPvnr5tnr5uQ6bZOjOj1CJvbaZ-zyWk/view?usp=sharing" }
+  - { type: solutions, title: { en: Solution 2, ar: حل الواجب 2, fr: Corrigé du devoir 2 }, url: "https://drive.google.com/file/d/1Qo6TTQH5gFrUeTBckMYcRWsHfLAVr_tF/view?usp=sharing" }
+  - { type: code, title: { en: Solution 2 (code), ar: حل الواجب 2 (الشيفرة), fr: Corrigé du devoir 2 (code) }, url: "https://docs.google.com/document/d/1yg-LYFtf8E0SJ9jYf0jlT-KyF_-7wyL0/edit?usp=sharing" }
+  - { type: problems, title: { en: Assignment 3, ar: الواجب 3, fr: Devoir 3 }, url: "https://drive.google.com/file/d/11jZeMn-6t9lIrQnKrJ1SKSV1FUIohJ_-/view?usp=sharing" }
+  - { type: solutions, title: { en: Solution 3, ar: حل الواجب 3, fr: Corrigé du devoir 3 }, url: "https://drive.google.com/file/d/1uvGcazQIaVDt3G3vRVW8Wji8u8CMcQDx/view?usp=sharing" }
+  - { type: problems, title: { en: Assignment 4, ar: الواجب 4, fr: Devoir 4 }, url: "https://drive.google.com/file/d/19CTGXSBXq48V3Qbiu_7WIib8mGj-fF_b/view?usp=sharing" }
+  - { type: solutions, title: { en: Solution 4, ar: حل الواجب 4, fr: Corrigé du devoir 4 }, url: "https://drive.google.com/file/d/1uZ5PUku8T2bMfbA7Almh66DLz0Hdk5MD/view?usp=sharing" }
+  - { type: problems, title: { en: Assignment 5, ar: الواجب 5, fr: Devoir 5 }, url: "https://drive.google.com/file/d/1RqLywPEfTFqpLJ6GyWYG63IBNCeBV4or/view?usp=sharing" }
+  - { type: solutions, title: { en: Solution 5, ar: حل الواجب 5, fr: Corrigé du devoir 5 }, url: "https://drive.google.com/file/d/1bE_6u_HQUoagHoesxtaE0X4uu3mpWwNk/view?usp=sharing" }
+  - { type: code, title: { en: Solution 5 (code), ar: حل الواجب 5 (الشيفرة), fr: Corrigé du devoir 5 (code) }, url: "https://drive.google.com/file/d/1KeXX_Z5j0rCWK17pxEnJ4tILzjFKWIDF/view?usp=sharing" }
+
+pending:
+  - what: "Collections of translated quantum-mechanics books (link 1), listed under 'Supplementary (Arabic)'"
+    url: https://www.alfreed-ph.com/2017/10/Books-in-quantum-mechanics-pdf.html
+    why: "copy-paste leftover from the QM pages (unrelated to this course); third-party site distributing translated books"
+  - what: "Collections of translated quantum-mechanics books (link 2), listed under 'Supplementary (Arabic)'"
+    url: https://zoom-teach.blogspot.com/2018/07/Quantum-mechanics-for-beginners-pdf.html
+    why: "copy-paste leftover from the QM pages (unrelated to this course); third-party site distributing translated books"
+
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/uem123-numerical-methods-and-programming/
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/%d9%88%d8%aa-%d9%86-123-%d8%a7%d9%84%d8%b7%d8%b1%d9%82-%d8%a7%d9%84%d8%b9%d8%af%d8%af%d9%8a%d8%a9-%d9%88-%d8%a7%d9%84%d8%a8%d8%b1%d9%85%d8%ac%d8%a9/
+notes: >
+  Two original pages: English-taught (UEM123, complete) and Arabic-taught (وت ن 123, mostly an empty template:
+  description unfinished, no outcomes, empty calendar, no links). Syllabus, calendar, textbooks and materials are
+  from the English page. Assessment: the English page gives problem sets 10% + first periodic exam 33% + final 67%,
+  i.e. 110% as published (kept as is, to be corrected by the professor); the Arabic page gives problem sets 33% +
+  final 67%, recorded in assessment_note. Level: English page says L2, Arabic page L3; semester 3 on both, L2 used.
+  Hours: English page 1.5 h lecture + 1.5 h TD/TP; Arabic page 1 h lecture + 1.5 h. Learning outcomes on the page
+  were placeholders ("---") and are left out. Calendar weeks 11-12 were blank and are omitted; the description's
+  five-part outline comes from the lecture-notes table (the page numbers the last two parts 5.x and 4.x).
+  "F. Jedrzeijewski" corrected to Jedrzejewski; "Capetown University" to University of Cape Town.
+  Years are inferred from the past-exam/questionnaire years on each page (Arabic 2020, English 2021-2022); check.
+  The Arabic page's only book (Feynman Vol. 3) is a template leftover and was not kept. Language of the Drive
+  files is unknown (lang left unset). Summaries 1, 3-5, assignments 6-11, exams and past papers were never uploaded.
+  Not kept: room/timetable, office hours, questionnaire.
+  UPDATE 24-10-2026 (Kamel's answers): taught only in 2021–2022, in French, and only the computer-lab (TP) sessions (the lectures were given by a colleague);
+  the Arabic 2020–2021 offering and the English label are removed. Weights: the Arabic page's scheme (problem sets 33 %, final 67 %),
+  as Kamel chose (the national programme gives 50/50 for this unit). DRAFTED: 6 outcomes from the course outline.

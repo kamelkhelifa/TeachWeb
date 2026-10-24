@@ -1,0 +1,307 @@
+slug: uef123
+order: 40
+codes: [UEF123]
+title: { en: Vibrations & Waves, ar: الاهتزازات والأمواج, fr: Vibrations et ondes }
+level:
+  en: "Licence 2 (L2) · Semester 3 · Material sciences / Physics"
+  ar: "ليسانس 2 (ل2) · الفصل 3 · علوم المادة / فيزياء"
+  fr: "Licence 2 (L2) · Semestre 3 · Sciences de la matière / Physique"
+area: waves
+companion: vibrations-waves   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: "Lecture, tutorials & lab", ar: محاضرات وأعمال موجهة وتطبيقية, fr: "Cours, travaux dirigés et travaux pratiques" }
+taught:
+  - { years: 2023–2025, code: UEF123, lang: en }
+hours: { lecture: 1.5, tutorial: 1.5, lab: 1.5 }
+weeks: 14
+prerequisites: { en: Mathematics 1 and 2, ar: الرياضيات 1 و2, fr: Mathématiques 1 et 2 }
+
+description:
+  en: |
+    <p>This course explores the fundamental principles of oscillatory systems and wave phenomena, essential for understanding a wide range of physical systems. Topics include <strong>simple harmonic motion</strong>, <strong>damped and forced oscillations</strong>, and <strong>wave propagation</strong>.</p>
+    <p>The lectures are organised in seven parts: second-order linear ODEs with constant coefficients; free oscillations in one dimension; forced oscillations in one dimension; free oscillations of systems with two degrees of freedom; generalities on wave propagation; vibrating strings; acoustic waves in fluids.</p>
+    <p>Laboratory (TP) experiments:</p>
+    <ul>
+      <li>Transverse oscillations of vibrating strings</li>
+      <li>Electromechanical systems (the electrodynamic loudspeaker)</li>
+      <li>Damped oscillations (RLC circuit in free and forced oscillations)</li>
+      <li>Coupled oscillations: study of beats</li>
+      <li>Coupled oscillations: study of natural frequencies</li>
+      <li>Propagation of longitudinal waves in a fluid</li>
+      <li>Rheographic tank</li>
+      <li>Kundt's tube</li>
+      <li>Induction phenomena</li>
+    </ul>
+  ar: |
+    <p>يتناول هذا المقرر المبادئ الأساسية للجمل المهتزة والظواهر الموجية، وهي مبادئ ضرورية لفهم طيف واسع من الجمل الفيزيائية. وتشمل مواضيعه <strong>الحركة التوافقية البسيطة</strong>، و<strong>الاهتزازات المتخامدة والقسرية</strong>، و<strong>انتشار الأمواج</strong>.</p>
+    <p>تنتظم المحاضرات في سبعة أجزاء: المعادلات التفاضلية العادية الخطية من الرتبة الثانية ذات المعاملات الثابتة؛ الاهتزازات الحرة في بعد واحد؛ الاهتزازات القسرية في بعد واحد؛ الاهتزازات الحرة للجمل ذات درجتي حرية؛ عموميات حول انتشار الأمواج؛ الأوتار المهتزة؛ الأمواج الصوتية في الموائع.</p>
+    <p>تجارب الأعمال التطبيقية:</p>
+    <ul>
+      <li>الاهتزازات العرضية للأوتار المهتزة</li>
+      <li>الجمل الكهروميكانيكية (مكبر الصوت الكهروديناميكي)</li>
+      <li>الاهتزازات المتخامدة (دارة RLC في الاهتزازات الحرة والقسرية)</li>
+      <li>الاهتزازات المتقارنة: دراسة الضربات</li>
+      <li>الاهتزازات المتقارنة: دراسة الترددات الذاتية</li>
+      <li>انتشار الأمواج الطولية في مائع</li>
+      <li>الحوض الريوغرافي (الكهروليتي)</li>
+      <li>أنبوب كونت</li>
+      <li>ظواهر التحريض</li>
+    </ul>
+  fr: |
+    <p>Ce cours étudie les principes fondamentaux des systèmes oscillants et des phénomènes ondulatoires, essentiels pour comprendre un large éventail de systèmes physiques. Les thèmes abordés comprennent le <strong>mouvement harmonique simple</strong>, les <strong>oscillations amorties et forcées</strong> et la <strong>propagation des ondes</strong>.</p>
+    <p>Le cours est organisé en sept parties : équations différentielles linéaires du second ordre à coefficients constants ; oscillations libres à une dimension ; oscillations forcées à une dimension ; oscillations libres des systèmes à deux degrés de liberté ; généralités sur la propagation des ondes ; cordes vibrantes ; ondes acoustiques dans les fluides.</p>
+    <p>Travaux pratiques :</p>
+    <ul>
+      <li>Oscillations transversales des cordes vibrantes</li>
+      <li>Systèmes électromécaniques (le haut-parleur électrodynamique)</li>
+      <li>Oscillations amorties (circuit RLC en régimes libre et forcé)</li>
+      <li>Oscillations couplées : étude des battements</li>
+      <li>Oscillations couplées : étude des fréquences propres</li>
+      <li>Propagation des ondes longitudinales dans un fluide</li>
+      <li>Cuve rhéographique</li>
+      <li>Tube de Kundt</li>
+      <li>Phénomènes d'induction</li>
+    </ul>
+
+outcomes:
+  - id: LO1
+    text:
+      en: "Understand and describe oscillatory motion: explain the properties and mathematical formulation of simple harmonic motion (SHM), damped and forced oscillations."
+      ar: "فهم الحركة الاهتزازية ووصفها: شرح خصائص الحركة التوافقية البسيطة والاهتزازات المتخامدة والقسرية وصياغتها الرياضية."
+      fr: "Comprendre et décrire le mouvement oscillatoire : expliquer les propriétés et la formulation mathématique du mouvement harmonique simple et des oscillations amorties et forcées."
+  - id: LO2
+    text:
+      en: "Analyse wave phenomena: apply the principles of wave propagation, including speed, frequency, wavelength and amplitude, to describe mechanical and electromagnetic waves."
+      ar: "تحليل الظواهر الموجية: تطبيق مبادئ انتشار الأمواج، بما في ذلك السرعة والتردد وطول الموجة والسعة، لوصف الأمواج الميكانيكية والكهرومغناطيسية."
+      fr: "Analyser les phénomènes ondulatoires : appliquer les principes de la propagation des ondes (célérité, fréquence, longueur d'onde, amplitude) pour décrire les ondes mécaniques et électromagnétiques."
+  - id: LO3
+    text:
+      en: "Solve problems involving energy in oscillatory systems: calculate the energy associated with oscillating systems and understand energy conservation in the context of oscillations."
+      ar: "حل مسائل تتعلق بالطاقة في الجمل المهتزة: حساب الطاقة المرتبطة بالجمل المهتزة وفهم انحفاظ الطاقة في سياق الاهتزازات."
+      fr: "Résoudre des problèmes d'énergie dans les systèmes oscillants : calculer l'énergie associée aux systèmes oscillants et comprendre la conservation de l'énergie dans le contexte des oscillations."
+  - id: LO4
+    text:
+      en: "Explore resonance and damping: analyse systems subject to resonance and damping, including predicting resonance conditions and the impact of damping forces."
+      ar: "دراسة التجاوب والتخامد: تحليل الجمل الخاضعة للتجاوب والتخامد، بما في ذلك القدرة على التنبؤ بشروط التجاوب وأثر قوى التخامد."
+      fr: "Étudier la résonance et l'amortissement : analyser les systèmes soumis à la résonance et à l'amortissement, notamment prévoir les conditions de résonance et l'effet des forces d'amortissement."
+  - id: LO5
+    text:
+      en: "Understand and apply wave superposition: explain and predict the outcomes of wave interference, superposition and standing waves, including practical applications such as sound and electromagnetic waves."
+      ar: "فهم تراكب الأمواج وتطبيقه: شرح نتائج تداخل الأمواج وتراكبها والأمواج المتوقفة والتنبؤ بها، بما في ذلك التطبيقات العملية كالأمواج الصوتية والكهرومغناطيسية."
+      fr: "Comprendre et appliquer la superposition des ondes : expliquer et prévoir les résultats des interférences, de la superposition et des ondes stationnaires, y compris dans des applications pratiques comme les ondes sonores et électromagnétiques."
+  - id: LO6
+    text:
+      en: "Use mathematical tools for wave analysis: develop proficiency in using differential equations and trigonometric functions to model oscillatory motion and wave phenomena."
+      ar: "استخدام الأدوات الرياضية في تحليل الأمواج: اكتساب الكفاءة في استخدام المعادلات التفاضلية والدوال المثلثية لنمذجة الحركة الاهتزازية والظواهر الموجية."
+      fr: "Utiliser les outils mathématiques de l'analyse ondulatoire : maîtriser les équations différentielles et les fonctions trigonométriques pour modéliser le mouvement oscillatoire et les phénomènes ondulatoires."
+  - id: LO7
+    text:
+      en: "Apply wave concepts to real-world situations: interpret and model physical systems such as pendulums, springs, sound waves and light waves in terms of vibrations and wave mechanics."
+      ar: "تطبيق المفاهيم الموجية على حالات واقعية: تفسير جمل فيزيائية مثل النواسات والنوابض والأمواج الصوتية والأمواج الضوئية ونمذجتها من منظور الاهتزازات والميكانيكا الموجية."
+      fr: "Appliquer les concepts ondulatoires à des situations réelles : interpréter et modéliser des systèmes physiques tels que pendules, ressorts, ondes sonores et ondes lumineuses en termes de vibrations et d'ondes."
+  - id: LO8
+    text:
+      en: "Explore applications in optics and acoustics: relate wave phenomena to applications in optics (e.g. diffraction, interference) and acoustics (e.g. sound waves, beats)."
+      ar: "استكشاف التطبيقات في البصريات والصوتيات: ربط الظواهر الموجية بتطبيقاتها في البصريات (مثل الانعراج والتداخل) وفي الصوتيات (مثل الأمواج الصوتية والضربات)."
+      fr: "Explorer les applications en optique et en acoustique : relier les phénomènes ondulatoires à leurs applications en optique (diffraction, interférences) et en acoustique (ondes sonores, battements)."
+
+assessment:
+  - type: participation
+    weight: 13.2
+    title: { en: Tutorial attendance, ar: حضور الأعمال الموجهة, fr: Assiduité aux travaux dirigés }
+  - type: midterm
+    weight: 8.25
+    title: { en: Mid-term exam, ar: الاختبار النصفي, fr: Examen de mi-semestre }
+    when: { en: Week 8, ar: الأسبوع 8, fr: Semaine 8 }
+  - type: participation
+    weight: 3.3
+    title: { en: Behaviour and participation in class, ar: السلوك والمشاركة في القاعة, fr: Comportement et participation en classe }
+  - type: homework
+    weight: 8.25
+    title: { en: Problem sets and lecture attendance, ar: أوراق المسائل وحضور المحاضرات, fr: Séries d'exercices et assiduité aux cours }
+    detail:
+      en: |
+        There is one problem sheet each week, due one week later in class. Solving problems is the only way to understand the material presented during lectures.
+        (i) Do them yourself: sit down and reason your way through the questions.
+        (ii) Identify the concepts and/or equations that are not clear and seek the instructor's help.
+        (iii) Try to develop the technical skills needed (mathematics, computing, etc.) while going through the problems.
+        (iv) If you get stuck, seek the instructor's help, consult the textbooks, search the web or discuss with classmates.
+        (v) Write up the solutions yourself, avoid all kinds of cheating (breach of academic integrity) and verify that your final solutions are logical, clear and complete.
+      ar: |
+        هناك ورقة مسائل واحدة كل أسبوع، تُسلَّم بعد أسبوع واحد. حل المسائل هو السبيل الوحيد لفهم المحتوى المقدم أثناء المحاضرات.
+        أ/ حلّها بنفسك: اجلس وتدرّج في الأسئلة بالاستدلال المنطقي.
+        ب/ حدّد المفاهيم و/أو المعادلات غير الواضحة واطلب مساعدة الأستاذ.
+        ج/ حاول تطوير المهارات التقنية اللازمة (الرياضيات، الإعلام الآلي، إلخ) أثناء حل المسائل.
+        د/ إذا واجهتك صعوبة فاطلب مساعدة الأستاذ، أو راجع الكتب المقررة، أو ابحث في الإنترنت، أو ناقش زملاءك في الفصل.
+        هـ/ اكتب الحلول بنفسك، وتجنّب كل أشكال الغش (خرق النزاهة الأكاديمية)، وتحقق من أن حلولك النهائية منطقية وواضحة وكاملة.
+      fr: |
+        Une série d'exercices est donnée chaque semaine, à rendre une semaine plus tard. Résoudre des problèmes est le seul moyen de comprendre la matière présentée en cours.
+        (i) Faites-les vous-même : asseyez-vous et raisonnez question par question.
+        (ii) Repérez les notions et/ou équations qui ne sont pas claires et demandez l'aide de l'enseignant.
+        (iii) Efforcez-vous de développer les compétences techniques nécessaires (mathématiques, informatique, etc.) en traitant les problèmes.
+        (iv) En cas de blocage, demandez l'aide de l'enseignant, consultez les manuels, cherchez sur Internet ou discutez avec vos camarades.
+        (v) Rédigez vous-même vos solutions, évitez toute forme de fraude (atteinte à l'intégrité académique) et vérifiez que vos solutions finales sont logiques, claires et complètes.
+  - type: final
+    weight: 67
+    title: { en: Final exam, ar: الاختبار النهائي, fr: Examen final }
+    detail: { en: 1 h 30 min, ar: ساعة ونصف, fr: 1 h 30 }
+    when: { en: Final exam period, ar: فترة الاختبارات النهائية, fr: Période des examens finaux }
+assessment_note:
+  en: "Continuous assessment counts for 33% (13.2 + 8.25 + 3.3 + 8.25). The laboratory (TP) is a separate one-credit unit in the national L2 programme, graded 50% continuous assessment (lab sessions and reports) and 50% lab exam; it is not part of the 33/67 above."
+  ar: "يُحتسب التقييم المستمر بنسبة 33% (13.2 + 8.25 + 3.3 + 8.25). أما الأعمال التطبيقية فهي في البرنامج الوطني للسنة الثانية وحدة مستقلة بساعة معتمدة واحدة، تُقيَّم بنسبة 50% تقييمًا مستمرًا (الحصص والتقارير) و50% اختبارًا تطبيقيًا، ولا تدخل في نسبة 33/67 أعلاه."
+  fr: "Le contrôle continu compte pour 33 % (13,2 + 8,25 + 3,3 + 8,25). Les travaux pratiques forment une unité distincte d'un crédit dans le programme national de L2, évaluée à 50 % en contrôle continu (séances et comptes rendus) et 50 % à l'examen de TP ; ils n'entrent pas dans le 33/67 ci-dessus."
+
+schedule:
+  - week: 1
+    title: { en: Welcome session, ar: حصة تعريفية, fr: Séance d'accueil }
+  - week: 2
+    title: { en: Second-order ODEs with constant coefficients, ar: المعادلات التفاضلية العادية من الرتبة الثانية ذات المعاملات الثابتة, fr: Équations différentielles du second ordre à coefficients constants }
+    topics:
+      en: [Homogeneous equations, Equations with a right-hand side]
+      ar: [المعادلات المتجانسة, المعادلات ذات الطرف الثاني]
+      fr: [Équations homogènes, Équations avec second membre]
+  - week: 3
+    title: { en: Free oscillations in 1D, ar: الاهتزازات الحرة في بعد واحد, fr: Oscillations libres à 1D }
+    topics:
+      en: [Undamped oscillations (simple harmonic oscillator)]
+      ar: [الاهتزازات غير المتخامدة (الهزاز التوافقي البسيط)]
+      fr: [Oscillations non amorties (oscillateur harmonique simple)]
+    activity: { en: Problem set 1, ar: سلسلة 1, fr: Série 1 }
+  - week: 4
+    title: { en: Free oscillations in 1D, ar: الاهتزازات الحرة في بعد واحد, fr: Oscillations libres à 1D }
+    topics:
+      en: [Damped oscillations]
+      ar: [الاهتزازات المتخامدة]
+      fr: [Oscillations amorties]
+    activity: { en: Problem set 2, ar: سلسلة 2, fr: Série 2 }
+  - week: 5
+    title: { en: Forced oscillations in 1D, ar: الاهتزازات القسرية في بعد واحد, fr: Oscillations forcées à 1D }
+    topics:
+      en: [Mass–spring system]
+      ar: [جملة كتلة-نابض]
+      fr: [Système masse–ressort]
+    activity: { en: Problem set 3, ar: سلسلة 3, fr: Série 3 }
+  - week: 6
+    title: { en: Forced oscillations in 1D, ar: الاهتزازات القسرية في بعد واحد, fr: Oscillations forcées à 1D }
+    topics:
+      en: [Special cases]
+      ar: [حالات خاصة]
+      fr: [Cas particuliers]
+    activity: { en: Problem set 4, ar: سلسلة 4, fr: Série 4 }
+  - week: 7
+    title: { en: Free oscillations in 2D, ar: الاهتزازات الحرة في بعدين, fr: Oscillations libres à 2D }
+    topics:
+      en: [Mass–spring (longitudinal)]
+      ar: [كتلة-نابض (اهتزاز طولي)]
+      fr: [Masse–ressort (longitudinal)]
+    activity: { en: Problem set 5, ar: سلسلة 5, fr: Série 5 }
+  - week: 8
+    title: { en: Free oscillations in 2D, ar: الاهتزازات الحرة في بعدين, fr: Oscillations libres à 2D }
+    topics:
+      en: [Coupled pendulums, Mid-term exam]
+      ar: [النواسات المتقارنة, الاختبار النصفي]
+      fr: [Pendules couplés, Examen de mi-semestre]
+    milestone: midterm
+  - week: 9
+    title: { en: Generalities on wave propagation, ar: عموميات حول انتشار الأمواج, fr: Généralités sur la propagation des ondes }
+    topics:
+      en: [Propagation in 1D]
+      ar: [الانتشار في بعد واحد]
+      fr: [Propagation à 1D]
+    activity: { en: Problem set 6, ar: سلسلة 6, fr: Série 6 }
+  - week: 10
+    title: { en: Generalities on wave propagation, ar: عموميات حول انتشار الأمواج, fr: Généralités sur la propagation des ondes }
+    topics:
+      en: [Linear chain model]
+      ar: [نموذج السلسلة الخطية]
+      fr: [Modèle de la chaîne linéaire]
+    activity: { en: Problem set 7, ar: سلسلة 7, fr: Série 7 }
+  - week: 11
+    title: { en: Vibrating strings, ar: الأوتار المهتزة, fr: Cordes vibrantes }
+    topics:
+      en: ['Equation of motion, reflection and transmission']
+      ar: ['معادلة الحركة، الانعكاس والنفاذ']
+      fr: ['Équation du mouvement, réflexion et transmission']
+    activity: { en: Problem set 8, ar: سلسلة 8, fr: Série 8 }
+  - week: 12
+    title: { en: Vibrating strings, ar: الأوتار المهتزة, fr: Cordes vibrantes }
+    topics:
+      en: [Free and forced oscillations]
+      ar: [الاهتزازات الحرة والقسرية]
+      fr: [Oscillations libres et forcées]
+    activity: { en: Problem set 9, ar: سلسلة 9, fr: Série 9 }
+  - week: 13
+    title: { en: Acoustic waves in fluids, ar: الأمواج الصوتية في الموائع, fr: Ondes acoustiques dans les fluides }
+    topics:
+      en: ['Equation of motion, travelling sinusoidal waves, reflection and transmission']
+      ar: ['معادلة الحركة، الأمواج الجيبية المتنقلة، الانعكاس والنفاذ']
+      fr: ['Équation du mouvement, ondes sinusoïdales progressives, réflexion et transmission']
+    activity: { en: Problem set 10, ar: سلسلة 10, fr: Série 10 }
+  - week: 14
+    title: { en: Exam review, ar: مراجعة للاختبار, fr: Révision pour l'examen }
+    milestone: review
+
+textbooks:
+  required:
+    - { authors: G. C. King, title: Vibrations and Waves, publisher: John Wiley & Sons, year: 2008 }
+  recommended:
+    - { authors: S. Graham Kelly, title: "Theory and Problems of Mechanical Vibrations (Schaum's Outline)", year: 1996 }
+    - { authors: T. Becherrawy, title: "Vibrations and Waves, Vols. 1–4", publisher: Hermes-Lavoisier, year: 2010 }
+    - { authors: S. S. Rao, title: Mechanical Vibrations, publisher: Prentice Hall, year: 2011 }
+    - { authors: J. Bruneaux, title: Vibrations and Waves, publisher: Ellipses (Marketing), year: 2010 }
+    - { authors: H. Djelouah, title: "Vibrations & ondes : cours et exercices corrigés", publisher: Pages Bleues, year: 2017 }
+
+materials:
+  - type: formula
+    title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية, fr: Table des formules mathématiques }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
+  - { type: problems, title: { en: Problem set 1, ar: سلسلة المسائل 1, fr: Série 1 }, url: "https://drive.google.com/file/d/1v9ftIYAJby8lUxSN_Jb7hR_MP_wYmETi/view?usp=sharing", week: 3 }
+  - { type: solutions, title: { en: Solution 1, ar: الحل 1, fr: Corrigé 1 }, url: "https://drive.google.com/file/d/1kgM-3BEvs96Tgm2ywJfyBICpFbtSDVPn/view?usp=sharing", week: 3 }
+  - { type: problems, title: { en: Problem set 2, ar: سلسلة المسائل 2, fr: Série 2 }, url: "https://drive.google.com/file/d/1TyXxiII51qpxRS9gW0-Vb_fSKmv2fY8Y/view?usp=sharing", week: 4 }
+  - { type: solutions, title: { en: Solution 2, ar: الحل 2, fr: Corrigé 2 }, url: "https://drive.google.com/file/d/1L8G1drQfeEhJ1DA3CkT2aPCdjC-4UuQE/view?usp=sharing", week: 4 }
+  - { type: problems, title: { en: Problem set 3, ar: سلسلة المسائل 3, fr: Série 3 }, url: "https://drive.google.com/file/d/1UWW8sGvdY0CUvyY_kkch0khL3vy3bJ7y/view?usp=drive_link", week: 5 }
+  - { type: solutions, title: { en: Solution 3, ar: الحل 3, fr: Corrigé 3 }, url: "https://drive.google.com/file/d/1HXNPJlLBA4hHIXoD-ZrXkPgjBkT6JqpE/view?usp=drive_link", week: 5 }
+  - { type: problems, title: { en: Problem set 4, ar: سلسلة المسائل 4, fr: Série 4 }, url: "https://drive.google.com/file/d/1LZzYC9_QOrAJOL70lLOEFgM19ec1r-ue/view?usp=drive_link", week: 6 }
+  - { type: solutions, title: { en: Solution 4, ar: الحل 4, fr: Corrigé 4 }, url: "https://drive.google.com/file/d/1w0k1nbTDXZjhLKYWpbXxojqJH9pwFa9u/view?usp=sharing", week: 6 }
+  - { type: problems, title: { en: Problem set 5, ar: سلسلة المسائل 5, fr: Série 5 }, url: "https://drive.google.com/file/d/18KVhi8GYxaqvaeSzJOcw_ROHi2Nwq1OV/view?usp=drive_link", week: 7 }
+  - { type: solutions, title: { en: Solution 5, ar: الحل 5, fr: Corrigé 5 }, url: "https://drive.google.com/file/d/1o4lUfy2-Ck683Oda-Cvjvr9gLgO-dvJn/view?usp=drive_link", week: 7 }
+  - { type: problems, title: { en: Problem set 6, ar: سلسلة المسائل 6, fr: Série 6 }, url: "https://drive.google.com/file/d/1sPBDwbWvfMsLn63HmJY3oaQyjzqNbofI/view?usp=drive_link", week: 9 }
+  - { type: solutions, title: { en: Solution 6, ar: الحل 6, fr: Corrigé 6 }, url: "https://drive.google.com/file/d/14evPnmi7QerPwfB5okT2l5n2gllQ1Zuu/view?usp=drive_link", week: 9 }
+  - { type: problems, title: { en: Problem set 7, ar: سلسلة المسائل 7, fr: Série 7 }, url: "https://drive.google.com/file/d/1YwmKZC3yH9RLwwxdKa2djhHG2G8zL5Ux/view?usp=drive_link", week: 10 }
+  - { type: solutions, title: { en: Solution 7, ar: الحل 7, fr: Corrigé 7 }, url: "https://drive.google.com/file/d/1RFUzQCPbyh0eGmI7Gl1lBkIRRA9rtqEF/view?usp=drive_link", week: 10 }
+
+exams:
+  - title: { en: Mid-term exam, ar: الاختبار النصفي, fr: Examen de mi-semestre }
+    session: 2024–2025
+    paper: https://drive.google.com/file/d/1udTS4Tv2QV1aSbX0qGPZsoQwbJyx46-z/view?usp=sharing
+    solution: https://drive.google.com/file/d/17LtoXZcHPDv6QvvEkqOTL86FRq8Mq0ud/view?usp=sharing
+  - title: { en: Final exam, ar: الاختبار النهائي, fr: Examen final }
+    session: 2024–2025
+    paper: https://drive.google.com/file/d/187XfnTXKZaQ7pkVzXhDJ5HOutkAeLsrE/view?usp=drive_link
+    solution: https://drive.google.com/file/d/1mbppjtPV5hMIKWe1N6tqUBoGiUz_7eLM/view?usp=drive_link
+  - title: { en: Past exam, ar: اختبار سابق, fr: Examen antérieur }
+    session: 2023–2024
+    paper: https://drive.google.com/file/d/1_CoFC-feutMlU_C5zoikHblkEJt4pzFw/view?usp=sharing
+  - title: { en: Past laboratory (TP) exam, ar: اختبار سابق في الأعمال التطبيقية, fr: Examen de TP antérieur }
+    session: 2023–2024
+    paper: https://drive.google.com/file/d/1STlvc7KJr7qvA_KBX4CS2oaoNxnEt98B/view?usp=sharing
+
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/ur/uef123-vibrations-waves/
+notes: >
+  Single original page (English, scholar year 1446 - 2024/2025); the cleaned ar file is its Arabic translation.
+  Course information, description, the 8 learning outcomes, the 14-week calendar, the assessment (33% continuous:
+  13.2 tutorial attendance + 8.25 midterm + 3.3 behaviour + 8.25 problem sets; 67% final, 1 h 30) and the textbook
+  list are as on the page. The list of nine laboratory experiments (the page's "Laboratory (TP)" table) and the
+  seven-part outline (lecture-notes table) were placed in the description. Readings in King were left blank on the
+  page ("[King] Sec. ") and are omitted. A TP final exam exists but has no weight on the page. Lab hours (1.5 h/week)
+  are taken from the weekly timetable (one lab session). Language of instruction is not stated: set to en (English
+  page, no taught_in in teaching.yml); to be confirmed (the course may have been taught in Arabic or French).
+  Years: page says 2024/2025 and links a 2024 past paper and TP exam, so 2023-2025; teaching.yml says 2024-2025.
+  Typos fixed: "Shaum's" -> Schaum's, "MechanicalVibrations", "sinosoidal"; Bruneaux's publisher "Ed. Marketing" is
+  Ellipses (Édition Marketing). Problem-set weeks follow the calendar (PS n in the week that lists it). Language of the
+  Drive files is unknown (left unset). The "Vibration and Waves by C.G. King @ UoM" supplementary item had no link and
+  was dropped; the "Supplementary (Arabic)" list was empty placeholders. Summaries, video lectures, PS0 and PS8-11
+  were never uploaded. Not kept: rooms, timetable, office hours, student-portal marks link, questionnaire.
+  UPDATE 24-10-2026: the faculty's distance-teaching attestation confirms L2, S3, lecture + tutorials + lab, taught in English, 2024/2025. Taught set to 2024–2025 (2023–2024 only if Kamel confirms; see the 2024 past papers).
+  UPDATE 24-10-2026 (Kamel's answers): taught in English in 2023–2024 and 2024–2025 (2024–2025 attested); all exams are his, so the "2024" past exam and TP exam
+  are from 2023–2024. Lab exam weight: per the national L2 SM programme the TP is a separate unit, 50 % continuous / 50 % exam.
