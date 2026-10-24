@@ -1,0 +1,235 @@
+slug: mechanics
+order: 10
+codes: [UEF112, Phys1]
+title: { en: Mechanics, ar: الميكانيكا, fr: Mécanique }
+level:
+  en: "Year 1 · Semester S1 · MI stream (UEF 11)"
+  ar: "السنة الأولى · الفصل الدراسي S1 · ميدان MI (UEF 11)"
+  fr: "1re année · Semestre S1 · Domaine MI (UEF 11)"
+area: mechanics
+companion: general-physics-1   # Part 2 course whose interactive lab and glossary this page shows
+kind:
+  en: "Lecture, tutorials & lab"
+  ar: "محاضرات وأعمال موجهة وتطبيقية"
+  fr: "Cours, travaux dirigés et travaux pratiques"
+taught:
+  - { years: 2013–2014, code: UEF112, lang: fr }
+prerequisites:
+  en: "Mathematics and mechanics as taught at secondary school"
+  ar: "الرياضيات والميكانيكا المدرّسة في التعليم الثانوي"
+  fr: "Mathématiques et mécanique enseignées au secondaire"
+
+description:
+  en: |
+    Weekly format: two lecture sessions, one tutorial (TD) session and one lab (TP) session.
+
+    Course outline:
+
+    <ol>
+    <li><strong>Mathematical review</strong>: dimensional equations, error calculation, vectors.</li>
+    <li><strong>Kinematics of a point particle</strong>: rectilinear motion, curvilinear motion, analysis in different coordinate systems, relative motion.</li>
+    <li><strong>Dynamics of a point mass</strong>: the principle of inertia, momentum, Newton's laws, the laws of gravitation, frictional forces, elastic forces, angular momentum.</li>
+    <li><strong>Work and energy</strong>: work done by a force, kinetic energy, potential energy (gravitational and elastic forces), mechanical energy, the law of conservation of energy, field and potential (the cases of weight and gravitation).</li>
+    <li><strong>Collisions between two isolated particles</strong>: elastic collisions, inelastic collisions.</li>
+    </ol>
+
+    Problem sets, lab sheets, lecture notes and common exams marked “department document” were prepared by the course's teaching committee at USTHB, not by a single author; they are the documents used in class.
+  ar: |
+    التنظيم الأسبوعي: حصتا محاضرة، وحصة أعمال موجهة، وحصة أعمال تطبيقية.
+
+    مفردات المقرر:
+
+    <ol>
+    <li><strong>تذكير بالرياضيات</strong>: معادلات الأبعاد، حساب الأخطاء، الأشعة.</li>
+    <li><strong>حركيات النقطة المادية</strong>: الحركة المستقيمة، الحركة المنحنية، الدراسة في مختلف جمل الإحداثيات، الحركات النسبية.</li>
+    <li><strong>تحريك النقطة المادية</strong>: مبدأ العطالة، كمية الحركة، قوانين نيوتن، قوانين الجاذبية، قوى الاحتكاك، القوى المرنة، العزم الحركي.</li>
+    <li><strong>العمل والطاقة</strong>: عمل قوة، الطاقة الحركية، الطاقة الكامنة (قوى الجاذبية والقوى المرنة)، الطاقة الميكانيكية، قانون انحفاظ الطاقة، الحقل والكمون (حالتا الثقالة والجاذبية).</li>
+    <li><strong>تصادم جسيمين معزولين</strong>: التصادم المرن، التصادم غير المرن.</li>
+    </ol>
+
+    سلاسل التمارين وأوراق الأعمال التطبيقية والمطبوعات والاختبارات الموحّدة المعلَّمة بعبارة «وثيقة القسم» من إعداد الفريق البيداغوجي للمقرر في جامعة باب الزوار، لا من إعداد مؤلف واحد؛ وهي الوثائق المستعملة في الدروس.
+  fr: |
+    Organisation hebdomadaire : deux séances de cours, une séance de travaux dirigés (TD) et une séance de travaux pratiques (TP).
+
+    Plan du cours :
+
+    <ol>
+    <li><strong>Rappels de mathématiques</strong> : équations aux dimensions, calculs d'erreurs, vecteurs.</li>
+    <li><strong>Cinématique du point</strong> : mouvement rectiligne, mouvement curviligne, étude dans différents systèmes de coordonnées, mouvements relatifs.</li>
+    <li><strong>Dynamique d'une masse ponctuelle</strong> : principe d'inertie, quantité de mouvement, lois de Newton, lois de la gravitation, forces de frottement, forces élastiques, moment cinétique.</li>
+    <li><strong>Travail et énergie</strong> : travail d'une force, énergie cinétique, énergie potentielle (forces de gravitation et élastique), énergie mécanique, loi de conservation de l'énergie, champ et potentiel (cas de la pesanteur et de la gravitation).</li>
+    <li><strong>Collisions de deux particules isolées</strong> : choc élastique, choc inélastique.</li>
+    </ol>
+
+    Les séries de TD, fiches de TP, polycopiés et examens communs marqués « document du département » ont été préparés par l'équipe pédagogique du module à l'USTHB, et non par un seul auteur ; ce sont les documents utilisés en cours.
+
+objectives:
+  - en: "To introduce the basic concepts of mechanics: mass (inertia and attraction), force, energy, field, potential, momentum and angular momentum."
+    ar: "التعريف بالمفاهيم الأساسية في الميكانيكا: الكتلة (العطالة والجذب)، القوة، الطاقة، الحقل، الكمون، كمية الحركة، العزم الحركي."
+    fr: "Introduire les concepts de base de la mécanique : masse (inertie et attraction), force, énergie, champ, potentiel, quantité de mouvement, moment cinétique."
+  - en: "To introduce the conservation laws and their applications."
+    ar: "التعريف بقوانين الانحفاظ وتطبيقاتها."
+    fr: "Introduire les lois de conservation et leurs applications."
+
+outcomes:
+  - id: CLO1
+    text: { en: "Use dimensional analysis, uncertainty calculation and vector algebra in mechanics problems.", ar: "يستعمل التحليل البعدي وحساب الارتيابات والجبر الشعاعي في مسائل الميكانيكا.", fr: "Utiliser les équations aux dimensions, le calcul d'incertitudes et le calcul vectoriel dans les problèmes de mécanique." }
+    assessed_by: { en: "Tests, final exam and lab work", ar: "الفروض والاختبار النهائي والأعمال التطبيقية", fr: "Interrogations, examen final et TP" }
+  - id: CLO2
+    text: { en: "Describe the motion of a point particle (position, velocity, acceleration) in Cartesian, polar, cylindrical and spherical coordinates, and in relative motion.", ar: "يصف حركة النقطة المادية (الموضع والسرعة والتسارع) في الإحداثيات الديكارتية والقطبية والأسطوانية والكروية، وفي الحركة النسبية.", fr: "Décrire le mouvement d'un point matériel (position, vitesse, accélération) en coordonnées cartésiennes, polaires, cylindriques et sphériques, et en mouvement relatif." }
+    assessed_by: { en: "Tests, final exam and lab work", ar: "الفروض والاختبار النهائي والأعمال التطبيقية", fr: "Interrogations, examen final et TP" }
+  - id: CLO3
+    text: { en: "Apply Newton's laws, with gravitational, friction and elastic forces, to find the motion of a point mass.", ar: "يطبّق قوانين نيوتن، مع قوى الجاذبية والاحتكاك والقوى المرنة، لإيجاد حركة كتلة نقطية.", fr: "Appliquer les lois de Newton, avec les forces de gravitation, de frottement et élastiques, pour trouver le mouvement d'un point matériel." }
+    assessed_by: { en: "Tests, final exam and lab work", ar: "الفروض والاختبار النهائي والأعمال التطبيقية", fr: "Interrogations, examen final et TP" }
+  - id: CLO4
+    text: { en: "Use momentum and angular momentum and their conservation.", ar: "يستعمل كمية الحركة والعزم الحركي وانحفاظهما.", fr: "Utiliser la quantité de mouvement et le moment cinétique et leur conservation." }
+    assessed_by: { en: "Tests, final exam and lab work", ar: "الفروض والاختبار النهائي والأعمال التطبيقية", fr: "Interrogations, examen final et TP" }
+  - id: CLO5
+    text: { en: "Compute the work of a force and use kinetic, potential and mechanical energy and the conservation of energy to solve problems.", ar: "يحسب عمل قوة ويستعمل الطاقة الحركية والكامنة والميكانيكية وانحفاظ الطاقة لحل المسائل.", fr: "Calculer le travail d'une force et utiliser les énergies cinétique, potentielle et mécanique et la conservation de l'énergie pour résoudre des problèmes." }
+    assessed_by: { en: "Tests, final exam and lab work", ar: "الفروض والاختبار النهائي والأعمال التطبيقية", fr: "Interrogations, examen final et TP" }
+  - id: CLO6
+    text: { en: "Analyse elastic and inelastic collisions between two isolated particles.", ar: "يحلّل التصادمات المرنة وغير المرنة بين جسيمين معزولين.", fr: "Analyser les chocs élastiques et inélastiques entre deux particules isolées." }
+    assessed_by: { en: "Tests, final exam and lab work", ar: "الفروض والاختبار النهائي والأعمال التطبيقية", fr: "Interrogations, examen final et TP" }
+  - id: CLO7
+    text: { en: "Carry out simple mechanics experiments, analyse the measurements with their uncertainties and write a lab report.", ar: "يُجري تجارب ميكانيكا بسيطة ويحلّل القياسات مع ارتياباتها ويكتب تقريرًا عنها.", fr: "Réaliser des expériences simples de mécanique, analyser les mesures avec leurs incertitudes et rédiger un compte rendu." }
+    assessed_by: { en: "Tests, final exam and lab work", ar: "الفروض والاختبار النهائي والأعمال التطبيقية", fr: "Interrogations, examen final et TP" }
+
+assessment:
+  - type: final
+    weight: 60
+    title: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+    detail: { en: "Written exam at the end of the semester (with a resit exam).", ar: "اختبار كتابي في نهاية الفصل (مع اختبار استدراكي).", fr: "Examen écrit de fin de semestre (avec examen de rattrapage)." }
+  - type: quiz
+    weight: 20
+    title: { en: "Tutorials (TD): continuous assessment", ar: "الأعمال الموجهة: التقييم المستمر", fr: "Travaux dirigés (TD) : contrôle continu" }
+    detail: { en: "Tests (interrogations) in the tutorial groups, participation and attendance.", ar: "فروض (استجوابات) في أفواج الأعمال الموجهة، والمشاركة والمواظبة.", fr: "Interrogations en TD, participation et assiduité." }
+  - type: lab
+    weight: 20
+    title: { en: "Laboratory (TP)", ar: "الأعمال التطبيقية", fr: "Travaux pratiques (TP)" }
+    detail: { en: "Lab reports and a lab exam.", ar: "تقارير الأعمال التطبيقية واختبار تطبيقي.", fr: "Comptes rendus de TP et examen de TP." }
+assessment_note: { en: "Weights drafted from the national LMD programme for first-year physics (exam 60 %, continuous assessment 40 %: tutorials 20 % + labs 20 %); the course page did not give them.", ar: "الأوزان مقترحة وفق البرنامج الوطني (ل م د) لفيزياء السنة الأولى (الاختبار 60%، التقييم المستمر 40%: الأعمال الموجهة 20% + الأعمال التطبيقية 20%)؛ إذ لم تذكرها صفحة المقرر.", fr: "Pondérations établies d'après le programme national LMD de physique de première année (examen 60 %, contrôle continu 40 % : TD 20 % + TP 20 %) ; la page du cours ne les donnait pas." }
+
+# DRAFTED plan (15 weeks): the course outline spread over the semester as in the national LMD programme.
+schedule:
+  - week: "1–2"
+    title: { en: "Mathematical review", ar: "تذكير بالرياضيات", fr: "Rappels de mathématiques" }
+    topics:
+      en: ["Dimensional equations", "Uncertainty calculation", "Vectors"]
+      ar: ["معادلات الأبعاد", "حساب الأخطاء", "الأشعة"]
+      fr: ["Équations aux dimensions", "Calcul d'erreurs", "Vecteurs"]
+  - week: "3–7"
+    title: { en: "Kinematics of a point particle", ar: "حركيات النقطة المادية", fr: "Cinématique du point" }
+    topics:
+      en: ["Rectilinear motion", "Curvilinear motion", "Cartesian, polar, cylindrical and spherical coordinates", "Relative motion"]
+      ar: ["الحركة المستقيمة", "الحركة المنحنية", "الإحداثيات الديكارتية والقطبية والأسطوانية والكروية", "الحركات النسبية"]
+      fr: ["Mouvement rectiligne", "Mouvement curviligne", "Coordonnées cartésiennes, polaires, cylindriques et sphériques", "Mouvements relatifs"]
+  - week: "8–11"
+    title: { en: "Dynamics of a point mass", ar: "تحريك النقطة المادية", fr: "Dynamique du point" }
+    topics:
+      en: ["Principle of inertia and momentum", "Newton's laws", "Gravitation, friction and elastic forces", "Angular momentum"]
+      ar: ["مبدأ العطالة وكمية الحركة", "قوانين نيوتن", "الجاذبية وقوى الاحتكاك والقوى المرنة", "العزم الحركي"]
+      fr: ["Principe d'inertie et quantité de mouvement", "Lois de Newton", "Gravitation, forces de frottement et forces élastiques", "Moment cinétique"]
+  - week: "12–14"
+    title: { en: "Work and energy", ar: "العمل والطاقة", fr: "Travail et énergie" }
+    topics:
+      en: ["Work of a force", "Kinetic and potential energy", "Mechanical energy and its conservation", "Field and potential (weight, gravitation)"]
+      ar: ["عمل قوة", "الطاقة الحركية والطاقة الكامنة", "الطاقة الميكانيكية وانحفاظها", "الحقل والكمون (الثقل، الجاذبية)"]
+      fr: ["Travail d'une force", "Énergies cinétique et potentielle", "Énergie mécanique et sa conservation", "Champ et potentiel (pesanteur, gravitation)"]
+  - week: "15"
+    title: { en: "Collisions between two isolated particles", ar: "تصادم جسيمين معزولين", fr: "Collisions de deux particules isolées" }
+    topics:
+      en: ["Elastic collisions", "Inelastic collisions"]
+      ar: ["التصادم المرن", "التصادم غير المرن"]
+      fr: ["Choc élastique", "Choc inélastique"]
+
+
+textbooks:
+  recommended:
+    - { authors: "J. Caubarere, M. Djelouah, H. Fourny, F. L. Khelian", title: "Introduction à la mécanique : cours, exercices et travaux pratiques", publisher: "OPU, Alger", year: 1981 }
+    - { authors: "M. Alonso, E. J. Finn, M. Daune, G. Weill", title: "Mécanique et thermodynamique", publisher: InterEditions, year: 1986 }
+
+materials:
+  - type: notes
+    title: { en: "Mechanics lecture notes (L. Benallegue et al., 2011) · department document", ar: "مطبوعة الميكانيكا (ل. بن علّق وآخرون، 2011) · وثيقة القسم", fr: "Polycopié de mécanique (L. Benallegue et al., 2011) · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/polycope_mecanique.pdf
+    lang: fr
+  - type: problems
+    title: { en: "TD 1 — Vector analysis · department document", ar: "السلسلة الموجهة 1 — التحليل الشعاعي · وثيقة القسم", fr: "TD 1 — Analyse vectorielle · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td1.pdf
+    week: "1–2"
+    lang: fr
+  - type: problems
+    title: { en: "TD 2 — Kinematics 1 · department document", ar: "السلسلة الموجهة 2 — الحركيات 1 · وثيقة القسم", fr: "TD 2 — Cinématique 1 · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td2.pdf
+    week: "3–7"
+    lang: fr
+  - type: problems
+    title: { en: "TD 3 — Kinematics 2 · department document", ar: "السلسلة الموجهة 3 — الحركيات 2 · وثيقة القسم", fr: "TD 3 — Cinématique 2 · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td3.pdf
+    week: "3–7"
+    lang: fr
+  - type: problems
+    title: { en: "TD 4 — Dynamics · department document", ar: "السلسلة الموجهة 4 — التحريك · وثيقة القسم", fr: "TD 4 — Dynamique · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/td4.pdf
+    week: "8–11"
+    lang: fr
+  - type: lab
+    title: { en: "TP 1 — Kinematics of a point particle: rectilinear motion · department document", ar: "العمل التطبيقي 1 — حركيات النقطة المادية: الحركة المستقيمة · وثيقة القسم", fr: "TP 1 — Cinématique du point : mouvement rectiligne · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp_1.pdf
+    week: "3–7"
+    lang: fr
+  - type: lab
+    title: { en: "TP 2 — Kinematics of a point particle: circular motion · department document", ar: "العمل التطبيقي 2 — حركيات النقطة المادية: الحركة الدائرية · وثيقة القسم", fr: "TP 2 — Cinématique du point : mouvement circulaire · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp2.pdf
+    week: "3–7"
+    lang: fr
+  - type: lab
+    title: { en: "TP 3 — Motion in the gravitational field · department document", ar: "العمل التطبيقي 3 — الحركة في حقل الجاذبية · وثيقة القسم", fr: "TP 3 — Mouvement dans le champ de pesanteur · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp3.pdf
+    week: "8–11"
+    lang: fr
+  - type: lab
+    title: { en: "TP 4 — Friction and contact forces · department document", ar: "العمل التطبيقي 4 — قوى الاحتكاك والتلامس · وثيقة القسم", fr: "TP 4 — Forces de frottement et de contact · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp4.pdf
+    week: "8–11"
+    lang: fr
+  - type: lab
+    title: { en: "TP 5 — Study of an energy transfer · department document", ar: "العمل التطبيقي 5 — دراسة تحويل الطاقة · وثيقة القسم", fr: "TP 5 — Étude d'un transfert d'énergie · document du département" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/11/tp5.pdf
+    week: "12–14"
+    lang: fr
+  - type: solutions
+    title: { en: "TD 4 — Dynamics: solutions", ar: "السلسلة الموجهة 4 — التحريك: الحلول", fr: "TD 4 — Dynamique : solutions" }
+    url: https://khelifak.wordpress.com/wp-content/uploads/2014/01/soln4.pdf
+    week: "8–11"
+    lang: fr
+
+exams:
+  - title: { en: "Test 1", ar: "الفرض 1", fr: "Interrogation 1" }
+    session: 2013–2014
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2013/11/test1.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2013/11/test1_soln1.pdf
+    lang: fr
+
+pending:
+  - what: "Mathematical formulae you should know (French)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
+    why: "Typeset by Y. Delenda (one author, not the department committee): not published. Home has its own formula sheet."
+  - what: "Essential constants and conversion factors (French)"
+    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
+    why: "Typeset by Y. Delenda (one author, not the department committee): not published. Home has its own formula sheet."
+
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/usthb/phys-1-mecanique/
+  - content/en/teaching/usthb-mecanique.html
+  - content/ar/teaching/usthb-mecanique.html
+  - content/fr/teaching/usthb-mecanique.html
+notes: >
+  The page lists lectures by C. Benchouk and tutorials by K. Khelifa (2013/2014). The "Course description"
+  section of the page is empty, so the chapter outline ("Plan de cours") is given as the description, without
+  weeks. Session counts (2 lecture, 1 TD, 1 TP per week) are sessions, not hours, so `hours` is left out.
+  Summaries 1–4, solutions 1–3, TP solutions and the exam/lab-exam papers had no links on the page.
+  Student marks (xls/pdf) dropped.
+  UPDATE 24-10-2026 (Kamel's answers): the department documents (lecture notes, TD series, TP sheets) are published, marked as department documents prepared
+  by the teaching committee (Kamel used them in class). Delenda's formula/constants sheets stay off (single author). DRAFTED for later review:
+  7 outcomes (from the objectives and outline), a 15-week plan (outline spread as in the national programme) and weights 60/20/20.

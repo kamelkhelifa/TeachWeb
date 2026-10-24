@@ -1,0 +1,106 @@
+slug: english
+order: 40
+codes: [PHYS 4001]
+title: { en: English for Physicists, ar: الإنجليزية للفيزيائيين, fr: Anglais pour physiciens }
+level:
+  en: "Licence (BSc) in Physics (Electricity) · second year · Semester S4"
+  ar: "ليسانس فيزياء (كهرباء) · السنة الثانية · الفصل الدراسي S4"
+  fr: "Licence de physique (électricité) · 2e année · Semestre S4"
+area: skills
+companion: english-for-physicists   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: Lecture, ar: محاضرات, fr: Cours }
+taught:
+  - { years: 2012–2013, code: PHYS 4001, lang: en }
+hours: { lecture: 1.5 }
+
+description:
+  en: |
+    Weekly format: one 1 h 30 lecture session per week.
+
+    Although it is formally an English language course for physicists, it was turned into a plain physics course delivered in English, based on an undergraduate MIT course on classical mechanics (8.01 Physics I) by Prof. Stanley Kowalski.
+
+    In 2012–2013 the course ran for three weeks only because of an administrative scheduling error; no lecture notes were handed out and, for lack of time, no assignments were given.
+  ar: |
+    التنظيم الأسبوعي: حصة محاضرة واحدة في الأسبوع مدتها ساعة ونصف.
+
+    مع أنه رسميًا مقرر في اللغة الإنجليزية موجّه للفيزيائيين، فقد عُدِّل ليصبح ببساطة مقررًا في الفيزياء يُدرَّس باللغة الإنجليزية، وهو مبني على مقرر من MIT لمرحلة الليسانس في الميكانيكا الكلاسيكية (8.01 Physics I) للأستاذ Stanley Kowalski.
+
+    في السنة الجامعية 2012–2013 لم يُقدَّم المقرر إلا لثلاثة أسابيع بسبب خلل في التخطيط الإداري؛ ولم تُوزَّع مذكرات محاضرات، ولم تُعطَ واجبات لضيق الوقت.
+  fr: |
+    Organisation : une séance de cours d'1 h 30 par semaine.
+
+    Bien qu'il s'agisse formellement d'un cours d'anglais destiné aux physiciens, il a été transformé en un simple cours de physique dispensé en anglais, fondé sur un cours de mécanique classique de premier cycle du MIT (8.01 Physics I) du Pr Stanley Kowalski.
+
+    En 2012–2013, le cours n'a duré que trois semaines en raison d'une erreur de planification administrative ; aucun polycopié n'a été distribué et, faute de temps, aucun devoir n'a été donné.
+
+outcomes:
+  - id: CLO1
+    text: { en: "Follow a physics lecture given in English and take notes.", ar: "يتابع محاضرة في الفيزياء تُلقى بالإنجليزية ويدوّن ملاحظاته.", fr: "Suivre un cours de physique donné en anglais et prendre des notes." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+  - id: CLO2
+    text: { en: "Use the English vocabulary of units, vectors and motion (position, displacement, velocity, acceleration) correctly.", ar: "يستعمل المصطلحات الإنجليزية للوحدات والأشعة والحركة (الموضع، الانتقال، السرعة، التسارع) استعمالًا صحيحًا.", fr: "Employer correctement le vocabulaire anglais des unités, des vecteurs et du mouvement (position, déplacement, vitesse, accélération)." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+  - id: CLO3
+    text: { en: "Read a problem written in English, solve it, and write the solution in clear English.", ar: "يقرأ مسألة مكتوبة بالإنجليزية ويحلّها ويكتب حلّها بلغة إنجليزية واضحة.", fr: "Lire un problème rédigé en anglais, le résoudre et rédiger la solution dans un anglais clair." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+  - id: CLO4
+    text: { en: "Use English-language resources such as MIT OpenCourseWare to study physics independently.", ar: "يستعمل موارد باللغة الإنجليزية مثل MIT OpenCourseWare لدراسة الفيزياء ذاتيًا.", fr: "Utiliser des ressources en anglais comme MIT OpenCourseWare pour étudier la physique en autonomie." }
+    assessed_by: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+
+assessment:
+  - type: final
+    weight: 100
+    title: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+    detail: { en: "Written exam in English at the end of the semester (with a resit exam).", ar: "اختبار كتابي بالإنجليزية في نهاية الفصل (مع اختبار استدراكي).", fr: "Examen écrit en anglais en fin de semestre (avec examen de rattrapage)." }
+
+# DRAFTED plan: the three weeks the course actually ran, following the start of MIT 8.01.
+schedule:
+  - week: 1
+    title: { en: "Units, dimensions and vectors", ar: "الوحدات والأبعاد والأشعة", fr: "Unités, dimensions et vecteurs" }
+    topics:
+      en: ["SI units and dimensional analysis", "Vectors and their components", "Reading physics aloud in English"]
+      ar: ["وحدات SI والتحليل البعدي", "الأشعة ومركّباتها", "قراءة الفيزياء بصوت مسموع بالإنجليزية"]
+      fr: ["Unités SI et analyse dimensionnelle", "Vecteurs et composantes", "Lire la physique à voix haute en anglais"]
+  - week: 2
+    title: { en: "Motion in one dimension", ar: "الحركة في بعد واحد", fr: "Mouvement à une dimension" }
+    topics:
+      en: ["Position, displacement, velocity, acceleration", "Motion with constant acceleration", "Describing graphs of motion"]
+      ar: ["الموضع والانتقال والسرعة والتسارع", "الحركة بتسارع ثابت", "وصف منحنيات الحركة"]
+      fr: ["Position, déplacement, vitesse, accélération", "Mouvement uniformément accéléré", "Décrire des graphiques de mouvement"]
+  - week: 3
+    title: { en: "Motion in two dimensions", ar: "الحركة في بعدين", fr: "Mouvement à deux dimensions" }
+    topics:
+      en: ["Projectile motion", "Circular motion", "Review and exam practice"]
+      ar: ["حركة القذائف", "الحركة الدائرية", "مراجعة وتدرّب على الاختبار"]
+      fr: ["Mouvement d'un projectile", "Mouvement circulaire", "Révision et préparation à l'examen"]
+
+textbooks:
+  recommended:
+    - { authors: "D. Halliday, R. Resnick and J. Walker", title: Fundamentals of Physics, edition: 9th, publisher: Wiley, year: 2010 }
+  online:
+    - title: { en: "MIT OpenCourseWare 8.01 — Physics I: Classical Mechanics (Fall 2003)", ar: "مقرر MIT المفتوح 8.01 — الفيزياء 1: الميكانيكا الكلاسيكية (خريف 2003)", fr: "MIT OpenCourseWare 8.01 — Physique I : mécanique classique (automne 2003)" }
+      url: https://ocw.mit.edu/courses/physics/8-01-physics-i-fall-2003/index.htm
+      note: { en: "The course this one was based on", ar: "المقرر الذي بُني عليه هذا المقرر", fr: "Le cours sur lequel celui-ci était fondé" }
+
+exams:
+  - title: { en: Final exam, ar: الاختبار النهائي, fr: Examen final }
+    session: 2012–2013
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2013/05/phys4001_exam1.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2013/05/phys4001_soln.pdf
+    lang: en
+  - title: { en: Resit exam, ar: الاختبار الاستدراكي, fr: Examen de rattrapage }
+    session: 2012–2013
+    paper: https://khelifak.wordpress.com/wp-content/uploads/2013/06/phys4001_rexam.pdf
+    solution: https://khelifak.wordpress.com/wp-content/uploads/2013/06/phys4001_rexam_soln1.pdf
+    lang: en
+
+sources:
+  - https://khelifak.wordpress.com/studying/teaching-2/uhbc/anglais/
+  - content/en/teaching/usthb-english.html
+  - content/ar/teaching/usthb-english.html
+notes: >
+  Source is the page at .../uhbc/anglais/ (it states USTHB, 2012/2013) — not .../usthb/anglais-2/, which is
+  the Chlef (UHBC) course of 2015/2016. No course code is given; the exam files are named "phys4001", which may
+  be an internal label. Meeting days, times, rooms and exam dates/venues removed. No assessment weights given.
+  UPDATE 24-10-2026 (Kamel's answers): DRAFTED for later review: 4 outcomes, the 100 % final-exam assessment (final + resit, as on the page), a 3-week plan
+  (the course ran three weeks; topics assumed from the start of MIT 8.01) and Halliday as a recommended text. No materials: none were handed out.

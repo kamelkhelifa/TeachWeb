@@ -1,0 +1,79 @@
+slug: phys390
+order: 100
+codes: [PHYS 390]
+title: { en: Field Training, ar: التدريب الميداني }
+level: { en: "After Level 6 · summer", ar: "بعد المستوى السادس · فصل صيفي" }
+area: skills
+companion: physics-training   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: "Field training (8 weeks, full time)", ar: "تدريب ميداني (8 أسابيع بدوام كامل)" }
+taught:
+  - { years: 2018–2019, code: PHYS 390, lang: en }
+credits: 2
+weeks: 8
+prerequisites: { en: "Completion of 85 credit hours (department approval)", ar: "إتمام 85 ساعة معتمدة (بموافقة القسم)" }
+
+objectives:
+  - { en: "Train students to carry out practical applications of physics in a real work environment, while acquiring research and professional skills.", ar: "تدريب الطلاب على تنفيذ تطبيقات عملية للفيزياء في بيئة عمل حقيقية، مع اكتساب مهارات البحث والمهارات المهنية." }
+  - { en: "Show the link between the physics programme and its applications in life.", ar: "إبراز الصلة بين برنامج الفيزياء وتطبيقاته في الحياة." }
+
+description:
+  en: |
+    Field Training is a 2-credit summer course taken after level 6 (once 85 credit hours are completed). Students spend eight weeks, five days a week, in an approved institution or company working in a field related to physics, such as a medical centre, a standards and metrology organisation or a research university.
+
+    During the placement they use the instruments and techniques of the host institution, take part in its technical work under a field supervisor, and follow its rules of safety and professional ethics. They send a short report every two weeks, write a final technical report and present their work orally to a department committee.
+  ar: |
+    التدريب الميداني مقرر صيفي بساعتين معتمدتين، يُسجَّل بعد المستوى السادس (بعد إتمام 85 ساعة معتمدة). يقضي الطالب ثمانية أسابيع، خمسة أيام في الأسبوع، لدى مؤسسة أو شركة معتمدة تعمل في مجال له صلة بالفيزياء، مثل مركز طبي أو هيئة للمواصفات والمقاييس أو جامعة بحثية.
+
+    ويستعمل خلال التدريب أجهزة المؤسسة المستضيفة وتقنياتها، ويشارك في أعمالها الفنية تحت إشراف مشرف ميداني، ويلتزم بقواعد السلامة وأخلاقيات المهنة. ويرسل تقريرًا موجزًا كل أسبوعين، ثم يكتب تقريرًا فنيًا نهائيًا ويعرض عمله شفهيًا أمام لجنة من القسم.
+
+# Outcomes, activities and assessment: department field-experience specification of PHYS 390 (NCAAA form, 1439/1440 H).
+methods:
+  - { en: "Use the instruments of the training site and apply analysis, design, implementation and testing in practice.", ar: "استخدام أجهزة موقع التدريب وتطبيق مفاهيم التحليل والتصميم والتنفيذ والاختبار عمليًا." }
+  - { en: "Share ideas and discussions with the technical team, and follow the safety rules and work regulations.", ar: "تبادل الأفكار والنقاش مع الفريق الفني، والالتزام بقواعد السلامة وأنظمة العمل." }
+  - { en: "Send a report every two weeks on the work done, and write the final report and presentation progressively.", ar: "إرسال تقرير كل أسبوعين عن العمل المنجز، وكتابة التقرير النهائي وإعداد العرض تدريجيًا." }
+  - { en: "Present and discuss the final report before a department committee.", ar: "عرض التقرير النهائي ومناقشته أمام لجنة من القسم." }
+
+outcomes:
+  - id: CLO1
+    text: { en: "Employ the theories acquired in lectures and laboratories, and share ideas with a real work team.", ar: "يوظّف النظريات التي اكتسبها في المحاضرات والمختبرات، ويتبادل الأفكار مع فريق عمل حقيقي." }
+  - id: CLO2
+    text: { en: "Use the scientific techniques, skills and modern instruments needed to complete assigned tasks.", ar: "يستخدم التقنيات والمهارات العلمية والأجهزة الحديثة اللازمة لإنجاز المهام الموكلة إليه." }
+  - id: CLO3
+    text: { en: "Communicate with a team and a supervisor, and contribute to the relevant processes.", ar: "يتواصل مع فريق العمل ومع المشرف، ويسهم في العمليات ذات الصلة." }
+  - id: CLO4
+    text: { en: "Adopt professional practice and ethics by following the institution's standards, rules and regulations.", ar: "يلتزم بالممارسة المهنية وأخلاقياتها باتباع معايير المؤسسة وقواعدها وأنظمتها." }
+  - id: CLO5
+    text: { en: "Write a technical report on the training: objectives, the host institution, the training processes, the tasks completed and the professional development gained.", ar: "يكتب تقريرًا فنيًا عن التدريب: أهدافه، والتعريف بالمؤسسة المستضيفة، وعمليات التدريب، والمهام المنجزة، والتطور المهني المكتسب." }
+  - id: CLO6
+    text: { en: "Present the technical report and the work experience effectively in an oral presentation.", ar: "يعرض التقرير الفني وتجربة العمل عرضًا شفهيًا فعّالًا." }
+
+assessment:
+  - type: project
+    weight: 40
+    title: { en: "Evaluation by the host institution", ar: "تقييم المؤسسة المستضيفة" }
+    detail: { en: "Assessment by the field (training-site) supervisor.", ar: "تقييم المشرف الميداني في موقع التدريب." }
+  - type: participation
+    weight: 10
+    title: { en: "Department supervisor's evaluation form", ar: "استمارة تقييم مشرف القسم" }
+  - type: report
+    weight: 20
+    title: { en: "Final technical report", ar: "التقرير الفني النهائي" }
+  - type: presentation
+    weight: 30
+    title: { en: "Committee evaluation of the final presentation", ar: "تقييم اللجنة للعرض النهائي" }
+
+sources:
+  - teaching/phys390 (en, ar)
+  - https://khelifak.wordpress.com/studying/teaching-2/iu/phys390-training/
+notes: >
+  Thin page: level "L7 or L8", semester "7 or 8 - 1439/40 - 2018/19" (→ 2018–2019), lectures, tutorials and time/venue
+  all "--", prerequisite "Department approval". Assessment left out on purpose: the page's evaluation block (problem
+  sets 20%, two periodic exams 20% each, final exam 40%, with the weekly problem-sheet advice) is word for word the
+  lecture template of his 2018–2019 course pages and cannot apply to a training placement (no lectures, problem sheets
+  or exams); the real scheme is presumably report + presentation (see description) but no weights are given. The
+  learning-outcomes list contained a single unfinished item ("compute"), so outcomes are left out. The "Forms" and
+  "Passed experience" sections were empty. Dropped: office-hours link, questionnaire (Quest-1439-S2). The page's
+  Arabic-version link pointed to the PHYS 402 Arabic page (copy artefact). No materials, schedule or textbooks.
+  UPDATE 24-10-2026 (Kamel's answers + the department attestation of courses taught 2016–2020): PHYS 390 is not on the department attestation of courses taught (2016–2020), but Kamel sent its specification;
+  the page (2018–2019) is kept and now follows that specification: description, objectives, 6 outcomes, activities and
+  assessment 40/10/20/30. Host institutions and contacts in the specification are left out (personal data). Level: after level 6 (summer).

@@ -1,0 +1,64 @@
+slug: phys482
+order: 95
+codes: [PHYS 482]
+title: { en: "Graduation Project", ar: "مشروع التخرج" }
+level: { en: "Level 8", ar: "المستوى الثامن" }
+area: skills
+companion: physics-training   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: "Supervised project", ar: "مشروع تحت الإشراف" }
+taught:
+  - { years: 2018–2019, code: PHYS 482, lang: en }
+  - { years: 2017–2018, code: PHYS 482, lang: en }
+credits: 3
+prerequisites: { en: "Department approval; completion of 90 credit hours", ar: "موافقة القسم؛ وإتمام 90 ساعة معتمدة" }
+
+# Description, outcomes, supervision and assessment: department programme specification (NCAAA, 1439/1440 H), section on the project requirement.
+description:
+  en: |
+    The graduation project trains students in the principles of scientific research: reviewing the literature, collecting data, presenting results and writing a scientific report. It is taken in year 4 (semester 7 or 8), after 90 credit hours.
+
+    Each student works directly under the supervision of a faculty member, alone or in a small group, on an experimental or theoretical problem. The supervisor meets the students regularly (about three hours a week) to discuss their progress, and teaches them how to search the literature, operate the instruments, analyse results, use scientific references and write the report.
+  ar: |
+    يدرّب مشروع التخرج الطلاب على مبادئ البحث العلمي: مراجعة الأدبيات، وجمع البيانات، وعرض النتائج، وكتابة تقرير علمي. ويُسجَّل في السنة الرابعة (الفصل السابع أو الثامن) بعد إتمام 90 ساعة معتمدة.
+
+    يعمل كل طالب تحت إشراف مباشر من عضو هيئة تدريس، منفردًا أو ضمن مجموعة صغيرة، على مسألة تجريبية أو نظرية. ويلتقي المشرف الطلاب بانتظام (نحو ثلاث ساعات في الأسبوع) لمناقشة تقدّمهم، ويعلّمهم كيفية البحث في المراجع، وتشغيل الأجهزة، وتحليل النتائج، واستخدام المراجع العلمية، وكتابة التقرير.
+
+methods:
+  - { en: "Regular supervision meetings (about 3 hours a week).", ar: "لقاءات إشراف منتظمة (نحو 3 ساعات في الأسبوع)." }
+  - { en: "Four written copies of the project are submitted to a jury of faculty members appointed by the department.", ar: "تُسلَّم أربع نسخ مكتوبة من المشروع إلى لجنة من أعضاء هيئة التدريس يعيّنها القسم." }
+  - { en: "The student presents and defends the project before the jury.", ar: "يعرض الطالب مشروعه ويناقشه أمام اللجنة." }
+
+outcomes:
+  - id: CLO1
+    text: { en: "Identify the literature relevant to the topic of the project.", ar: "يحدّد المراجع العلمية المتعلقة بموضوع المشروع." }
+  - id: CLO2
+    text: { en: "Define precisely the problem to be investigated.", ar: "يحدّد المشكلة المراد دراستها تحديدًا دقيقًا." }
+  - id: CLO3
+    text: { en: "Perform the experiments and/or theoretical calculations.", ar: "يُجري التجارب و/أو الحسابات النظرية." }
+  - id: CLO4
+    text: { en: "Analyse and discuss the results.", ar: "يحلّل النتائج ويناقشها." }
+  - id: CLO5
+    text: { en: "Develop teamwork skills.", ar: "ينمّي مهارات العمل الجماعي." }
+  - id: CLO6
+    text: { en: "Use appropriate computer software to carry out the necessary numerical work.", ar: "يستخدم البرمجيات الحاسوبية المناسبة لإنجاز العمل العددي اللازم." }
+  - id: CLO7
+    text: { en: "Argue for and present the results.", ar: "يدافع عن نتائجه ويعرضها." }
+  - id: CLO8
+    text: { en: "Write and express ideas and views clearly.", ar: "يكتب أفكاره وآراءه ويعبّر عنها بوضوح." }
+  - id: CLO9
+    text: { en: "Take responsibility, manage time and plan the work.", ar: "يتحمّل المسؤولية ويدير وقته ويخطّط لعمله." }
+
+assessment:
+  - type: project
+    weight: 40
+    title: { en: "Supervisor's evaluation of the semester's work", ar: "تقييم المشرف لعمل الطالب خلال الفصل" }
+  - type: oral
+    weight: 60
+    title: { en: "Jury evaluation of the presentation and discussion", ar: "تقييم اللجنة للعرض والمناقشة" }
+    detail: { en: "20% supervisor, 20% first examiner, 20% second examiner.", ar: "20% للمشرف، و20% للممتحن الأول، و20% للممتحن الثاني." }
+
+sources:
+  - "Department attestation of courses taught 2016–2020 (Kamel, 24-10-2026)"
+  - "Programme Specifications 1439–1440 (A and B), project requirement"
+notes: >
+  UPDATE 24-10-2026 (Kamel's answers + the department attestation of courses taught 2016–2020): supervised in the first semester of 2017–2018 and the second semester of 2018–2019 (level 8). New page: all content from the programme specification; no materials (project supervision).

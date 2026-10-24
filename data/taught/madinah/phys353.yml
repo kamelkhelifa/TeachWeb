@@ -1,0 +1,125 @@
+slug: phys353
+order: 30
+codes: [PHYS 353, PHYS 302]
+title: { en: Classical Mechanics II, ar: الميكانيكا الكلاسيكية 2 }
+level: { en: "Level 6", ar: "المستوى السادس" }
+area: mechanics
+companion: classical-mechanics-2   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: "Lecture", ar: "محاضرات" }
+taught:
+  - { years: 2018–2019, code: PHYS 353, lang: en }
+hours: { lecture: 3, tutorial: 0 }
+prerequisites: { en: Classical Mechanics I (PHYS 301), ar: الميكانيكا الكلاسيكية 1 (PHYS 301) }
+
+description:
+  en: |
+    Topics covered: motion of rigid bodies in three dimensions, Euler's equations, gyroscopic motion, motion of a top,
+    the gyrocompass, the inertia tensor, Lagrangian mechanics, generalised coordinates, Hamilton's variational principle,
+    Hamilton's equations, dynamics of oscillating systems, normal coordinates, coupled harmonic motion, continuous systems
+    and the wave equation.
+  ar: |
+    تشمل المواضيع المدروسة: حركة الأجسام الصلبة في ثلاثة أبعاد، ومعادلات أويلر، والحركة الجيروسكوبية، وحركة الخذروف، والبوصلة الجيروسكوبية،
+    وموتّر العطالة، وميكانيكا لاغرانج، والإحداثيات المعممة، ومبدأ هاملتون التغايري، ومعادلات هاملتون، وديناميكا الجمل المهتزة،
+    والإحداثيات العادية، والحركة التوافقية المتقارنة، والجمل المستمرة ومعادلة الموجة.
+
+objectives:
+  - en: This course is a continuation of PHYS 301 (Classical Mechanics I); more advanced topics in classical mechanics are introduced.
+    ar: هذا المقرر تتمة لمقرر PHYS 301 (الميكانيكا الكلاسيكية 1)، ويتناول مواضيع أكثر تقدمًا في الميكانيكا الكلاسيكية.
+
+outcomes:
+  - id: CLO1
+    text: { en: Understand the dynamics of systems of particles., ar: فهم ديناميكا جمل الجسيمات. }
+  - id: CLO2
+    text: { en: Apply classical laws to the motion of two interacting bodies., ar: تطبيق القوانين الكلاسيكية على حركة جسمين متفاعلين. }
+  - id: CLO3
+    text: { en: Solve problems involving collisions of particles., ar: حل مسائل تتعلق بتصادم الجسيمات. }
+  - id: CLO4
+    text: { en: Compute the centre of mass and moment of inertia of a variety of rigid bodies., ar: حساب مركز الكتلة وعزم العطالة لمجموعة متنوعة من الأجسام الصلبة. }
+  - id: CLO5
+    text: { en: Compute dynamical variables for a rigid body undergoing laminar motion., ar: حساب المتغيرات الديناميكية لجسم صلب في حركة مستوية. }
+
+assessment:
+  - type: quiz
+    weight: 10
+    title: { en: Quizzes (2), ar: اختباران قصيران }
+    when: { en: Weeks 5 and 10, ar: الأسبوعان 5 و10 }
+  - type: midterm
+    weight: 50
+    title: { en: Midterm exams (2), ar: اختباران نصفيان }
+    when: { en: Weeks 7 and 12, ar: الأسبوعان 7 و12 }
+  - type: final
+    weight: 40
+    title: { en: Final exam, ar: الاختبار النهائي }
+
+# The source lists four chapters (Fowles & Cassiday) with their sub-topics, without week numbers.
+schedule:
+  - title: { en: Dynamics of systems of particles, ar: ديناميكا جمل الجسيمات }
+    topics:
+      en: [Centre of mass and linear momentum of a system, Angular momentum and kinetic energy of a system, Motion of two interacting bodies, Collisions, Rocket motion]
+      ar: [مركز الكتلة وكمية الحركة الخطية لجملة, العزم الحركي والطاقة الحركية لجملة, حركة جسمين متفاعلين, التصادمات, حركة الصاروخ]
+    reading: Fowles & Cassiday Ch. 7
+  - title: { en: Mechanics of rigid bodies, ar: ميكانيكا الأجسام الصلبة }
+    topics:
+      en: [Centre of mass of a rigid body, Rotation of a rigid body about a fixed axis, Moment of inertia, Physical pendulum, Angular momentum of a rigid body in laminar motion, Impulse and collisions of rigid bodies]
+      ar: [مركز كتلة الجسم الصلب, دوران الجسم الصلب حول محور ثابت, عزم العطالة, النواس الفيزيائي, العزم الحركي لجسم صلب في حركة مستوية, الدفع وتصادم الأجسام الصلبة]
+    reading: Fowles & Cassiday Ch. 8
+  - title: { en: Motion of rigid bodies in three dimensions, ar: حركة الأجسام الصلبة في ثلاثة أبعاد }
+    topics:
+      en: [Rotation about an arbitrary axis, Principal axes of a rigid body, "Euler's equations"]
+      ar: [الدوران حول محور كيفي, المحاور الرئيسية للجسم الصلب, معادلات أويلر]
+    reading: Fowles & Cassiday Ch. 9
+  - title: { en: Lagrangian mechanics, ar: ميكانيكا لاغرانج }
+    topics:
+      en: ["Hamilton's variational principle"]
+      ar: [مبدأ هاملتون التغايري]
+    reading: Fowles & Cassiday Ch. 10
+
+textbooks:
+  required:
+    - { authors: G. R. Fowles and G. L. Cassiday, title: Analytical Mechanics, edition: 7th, publisher: Brooks/Cole, year: 2004 }
+  recommended:
+    - { authors: A. P. Arya, title: Introduction to Classical Mechanics, publisher: Prentice-Hall, year: 1997 }
+    - { authors: D. Morin, title: "Introduction to Classical Mechanics: With Problems and Solutions", edition: 1st, publisher: Cambridge University Press, year: 2008 }
+    - { authors: S. T. Thornton and J. B. Marion, title: Classical Dynamics of Particles and Systems, edition: 5th, publisher: Brooks/Cole, year: 2003 }
+    - { authors: D. Kleppner and R. Kolenkow, title: An Introduction to Mechanics, edition: 2nd, publisher: Cambridge University Press, year: 2013 }
+  online:
+    - title: { en: myPhysicsLab, ar: myPhysicsLab }
+      url: https://www.myphysicslab.com/
+      note: { en: Online physics simulations., ar: محاكاة فيزيائية عبر الإنترنت. }
+    - title: { en: PhET Interactive Simulations, ar: محاكاة PhET التفاعلية }
+      url: https://phet.colorado.edu/en/simulations/category/new
+      note: { en: Online simulations (University of Colorado)., ar: محاكاة عبر الإنترنت (جامعة كولورادو). }
+
+materials:
+  - { type: notes, title: { en: "Lecture notes — Dynamics of systems of particles (FC Ch. 7)", ar: "مذكرة المحاضرات — ديناميكا جمل الجسيمات (الفصل 7)" }, url: "https://drive.google.com/open?id=1b4IQx7wlo-PI-PaSPXXz1HYV65eUIvhZ", lang: en }
+  - { type: notes, title: { en: "Lecture notes — Mechanics of rigid bodies (FC Ch. 8)", ar: "مذكرة المحاضرات — ميكانيكا الأجسام الصلبة (الفصل 8)" }, url: "https://drive.google.com/open?id=1CwCZ5mlJ6RXXqX00OjlSAK9BOO_VI4dk", lang: en }
+  - { type: problems, title: { en: "Problem set 1 — Dynamics of systems of particles", ar: "سلسلة المسائل 1 — ديناميكا جمل الجسيمات" }, url: "https://drive.google.com/open?id=1EXqtOt64TEE2um9hp_oz2EOmyn21VFLG", lang: en }
+  - { type: problems, title: { en: "Problem set 2 — Mechanics of rigid bodies", ar: "سلسلة المسائل 2 — ميكانيكا الأجسام الصلبة" }, url: "https://drive.google.com/open?id=1svleg_gvjKCpBqGdP2GCLF0aLG1NxK_3", lang: en }
+  - { type: problems, title: { en: "Problem set 3 — Motion of rigid bodies in 3D", ar: "سلسلة المسائل 3 — حركة الأجسام الصلبة في ثلاثة أبعاد" }, url: "https://drive.google.com/open?id=1TrElHsdeM6D7gN2Y763Vc1TM4I0O72u3", lang: en }
+  - { type: formula, title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }, url: "https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf", lang: en }
+
+exams:
+  - { title: { en: Quiz 1, ar: الاختبار القصير 1 }, session: 2018–2019, paper: "https://drive.google.com/open?id=1SRzrrnut3TmQPE-aVWBWeMGyUz2W46Bb", solution: "https://drive.google.com/open?id=1K_smOlnrUNy1SCG0IIHCE8lcIBAprvtE", lang: en }
+  - { title: { en: Midterm test 1, ar: الاختبار النصفي 1 }, session: 2018–2019, paper: "https://drive.google.com/open?id=1rteHCUSNT2OMtKoiBTFfBRD4mP5CX7y6", solution: "https://drive.google.com/open?id=1b9Gd53UUcFWSpLlnO_fUhKYQbRl-l3CY", lang: en }
+  - { title: { en: Quiz 2, ar: الاختبار القصير 2 }, session: 2018–2019, paper: "https://drive.google.com/open?id=1jV8IiUa2VRR4Fr7QUlCXN2JDkIwX7WwR", solution: "https://drive.google.com/open?id=1pfwj_gLMFN65kNY3yrh1BfPucTjEv498", lang: en }
+  - { title: { en: Midterm test 2, ar: الاختبار النصفي 2 }, session: 2018–2019, paper: "https://drive.google.com/open?id=1iMT6YHNkpaYgSw2j0-9uUTPzd26dCZmz", solution: "https://drive.google.com/open?id=1ZLtfr8_Y69oEB_Z5TySEAm-q3OpHLx2C", lang: en }
+
+sources:
+  - teaching/phys302 (https://khelifak.wordpress.com/studying/teaching-2/iu/phys302-classical-mechanics-ii/)
+  - pages.json "PHYS302: Classical Mechanics II"
+
+notes: >
+  The page gives no academic year. The only date on it is the course questionnaire "1439-S1" (first semester of
+  1438/39), so the offering is recorded as 2017–2018 and the tests on the page are given that session — please confirm.
+  Kind "Lecture & lab" comes from teaching.yml; the page itself says "Tutorials: none" and its "Lab experiments" section
+  is empty. General information kept: semester 4, 3 lecture sessions/week (50 min), prerequisite PHYS 301. Evaluation
+  exactly as on the page: 2 quizzes [W5 & W10] 10%, 2 midterms [W7 & W12] 50%, final 40%. Objective, description and the
+  five learning outcomes are from the page (light editing). The syllabus has four chapters with sub-topics (Fowles &
+  Cassiday Ch. 7–10) and no week numbers, so schedule entries have no `week`; the description also names topics (small
+  oscillations, continuous systems) that the chapter list does not reach. Not linked in the source (left out): summaries,
+  PS4, all problem-set solutions, final exam, the empty animations table, "tbd" supplementary items and the "Passed exams
+  1437(S1), 1437(S2), 1438(S1)" labels. Dropped silently: the marks links and the course questionnaire (Google Form).
+  The formula table is assumed to be the professor's own.
+  UPDATE 24-10-2026 (Kamel's answers + the department attestation of courses taught 2016–2020): the department lists this course as PHYS 353 Classical Mechanics (2), taught in the first semester of 2018–2019
+  (level 6), which matches the "1439-S1" questionnaire (Hijri labels on his pages name the year by its first Hijri year:
+  1439 = 2018–2019). File renamed phys302 → phys353; PHYS 302 (the code written on the page) kept in codes for search. Kind set to Lecture.
