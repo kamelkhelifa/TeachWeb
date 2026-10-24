@@ -2,7 +2,7 @@ slug: applied-quantum-mechanics
 order: 60
 codes: []
 title: { en: Applied Quantum Mechanics, ar: ميكانيكا الكم التطبيقية, fr: Mécanique quantique appliquée }
-level: { en: "Master 1 (M1) · Materials Science · second semester (S7)", ar: "ماستر 1 (م1) · علوم المواد · الفصل الثاني (S7)", fr: "Master 1 (M1) · Science des matériaux · second semestre (S7)" }
+level: { en: "Master 1 (M1) · Materials Science · second semester (S8)", ar: "ماستر 1 (م1) · علوم المواد · الفصل الثاني (S8)", fr: "Master 1 (M1) · Science des matériaux · second semestre (S8)" }
 area: quantum
 companion: quantum-mechanics-2   # Part 2 course whose interactive lab and glossary this page shows
 kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة, fr: Cours et travaux dirigés }
@@ -110,4 +110,4 @@ notes: >
   The Relizane master's programme could not be reached online (fst.univ-relizane.dz blocked from the build environment, not indexed), so DRAFTED for his review:
   description, objectives, 6 outcomes, a 14-week plan (approximation methods and applications, continuing UEF131), assessment 40/60
   (usual Algerian master split) and textbooks. Year, code and master speciality still unknown (taught: left empty).
-  UPDATE 24-10-2026: taught once, 2024–2025, second semester of M1 (S7 as Kamel calls it), Master in Materials Science, in English. Code unknown (omitted).
+  UPDATE 24-10-2026: taught once, 2024–2025, second semester of M1 (S8), Master in Materials Science, in English. Code unknown (omitted).
