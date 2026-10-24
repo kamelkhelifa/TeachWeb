@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "_macros.html" import icon %}
-{% block title %}{{ t(formulas.title) }} · {{ site.name if lang == 'en' else site.name_ar }}{% endblock %}
+{% block title %}{{ t(formulas.title) }} · {{ site.name_ar if lang == 'ar' else site.name }}{% endblock %}
 {% block description %}{{ t(formulas.lead) | plain }}{% endblock %}
 {% block main %}
 <section class="page-hero">

@@ -1,184 +1,184 @@
-# Interface words. Every key: { en: …, ar: … }
-nav_courses:           { en: "Courses", ar: "المقررات" }
-nav_path:              { en: "Learning path", ar: "المسار التعليمي" }
-nav_glossary:          { en: "Glossary", ar: "المعجم" }
-nav_guide:             { en: "How it works", ar: "دليل الاستخدام" }
-home_site:             { en: "Personal homepage", ar: "الصفحة الشخصية" }
-theme_toggle:          { en: "Toggle light / dark theme", ar: "تبديل الوضع الفاتح / الداكن" }
-search:                { en: "Search", ar: "بحث" }
-search_placeholder:    { en: "Search courses, topics, terms…", ar: "ابحث عن مقرر أو موضوع أو مصطلح…" }
-search_empty:          { en: "No match. Try another word.", ar: "لا نتائج. جرّب كلمة أخرى." }
-search_hint:           { en: "Type to search · ↑ ↓ to move · Enter to open · Esc to close", ar: "اكتب للبحث · ↑ ↓ للتنقل · Enter للفتح · Esc للإغلاق" }
-skip:                  { en: "Skip to content", ar: "انتقل إلى المحتوى" }
-menu:                  { en: "Menu", ar: "القائمة" }
-back_top:              { en: "Back to top", ar: "إلى الأعلى" }
-kind_course:           { en: "Course", ar: "مقرر" }
-kind_term:             { en: "Term", ar: "مصطلح" }
-kind_week:             { en: "Week", ar: "أسبوع" }
-kind_topic:            { en: "Topic", ar: "موضوع" }
-hero_kicker:           { en: "Open physics courseware", ar: "مقررات فيزياء مفتوحة" }
-hero_title:            { en: "Physics, taught <em>in full</em>.", ar: "الفيزياء، تُدرَّس <em>كاملة</em>." }
-hero_cta:              { en: "Browse the courses", ar: "تصفّح المقررات" }
-hero_cta2:             { en: "See the learning path", ar: "اعرض المسار التعليمي" }
-stat_courses:          { en: "courses", ar: "مقررًا" }
-stat_weeks:            { en: "weeks of lessons", ar: "أسبوعًا من الدروس" }
-stat_materials:        { en: "notes, sheets & videos", ar: "مذكرة وسلسلة ومقطع" }
-stat_questions:        { en: "self-check questions", ar: "سؤال تقويم ذاتي" }
-stat_terms:            { en: "bilingual terms", ar: "مصطلحًا ثنائي اللغة" }
-path_title:            { en: "The learning path", ar: "المسار التعليمي" }
-path_lead:             { en: "From first-year mechanics to Master's particle physics. Hover over a course to light up what it builds on and what it leads to.", ar: "من ميكانيكا السنة الأولى إلى فيزياء الجسيمات في الماستر. مرّر المؤشر على مقرر لتظهر المقررات التي يبني عليها والتي يمهّد لها." }
-catalogue_title:       { en: "All courses", ar: "جميع المقررات" }
-catalogue_lead:        { en: "Every course follows the same structure, so you always know where to find things.", ar: "تتبع جميع المقررات البنية نفسها، فتعرف دائمًا أين تجد ما تبحث عنه." }
-filter_all:            { en: "All", ar: "الكل" }
-filter_area:           { en: "Area", ar: "المجال" }
-filter_level:          { en: "Level", ar: "المستوى" }
-filter_none:           { en: "No course matches these filters.", ar: "لا يوجد مقرر يطابق هذه المعايير." }
-structure_title:       { en: "One structure, every course", ar: "بنية واحدة لكل المقررات" }
-privacy_note:          { en: "No accounts, no tracking. Your progress is saved only in your own browser.", ar: "لا حسابات ولا تتبّع. يُحفظ تقدّمك في متصفحك أنت فقط." }
-course:                { en: "Course", ar: "المقرر" }
-all_courses:           { en: "All courses", ar: "كل المقررات" }
-level:                 { en: "Level", ar: "المستوى" }
-credits:               { en: "Credits", ar: "الساعات المعتمدة" }
-weekly_hours:          { en: "Hours / week", ar: "ساعة / أسبوع" }
-weeks:                 { en: "Weeks", ar: "الأسابيع" }
-week:                  { en: "Week", ar: "الأسبوع" }
-languages:             { en: "Materials in", ar: "لغة المواد" }
-also_coded:            { en: "Also offered as", ar: "يُدرَّس أيضًا بالرمز" }
-start_learning:        { en: "Start the weekly plan", ar: "ابدأ الخطة الأسبوعية" }
-take_quiz:             { en: "Test yourself", ar: "اختبر نفسك" }
-print_syllabus:        { en: "Print syllabus", ar: "اطبع المفردات" }
-lecture:               { en: "Lectures", ar: "محاضرات" }
-tutorial:              { en: "Tutorials", ar: "أعمال موجّهة" }
-lab:                   { en: "Lab", ar: "أعمال تطبيقية" }
-on_this_page:          { en: "On this page", ar: "في هذه الصفحة" }
-completed_weeks:       { en: "weeks completed", ar: "أسابيع منجزة" }
-sec_overview:          { en: "Overview", ar: "نظرة عامة" }
-sec_outcomes:          { en: "Learning outcomes", ar: "مخرجات التعلّم" }
-sec_schedule:          { en: "Weekly plan", ar: "الخطة الأسبوعية" }
-sec_assessment:        { en: "Assessment", ar: "التقويم" }
-sec_materials:         { en: "Materials", ar: "المواد التعليمية" }
-sec_exams:             { en: "Exams", ar: "الاختبارات" }
-sec_problems:          { en: "Worked problems", ar: "مسائل محلولة" }
-sec_quizzes:           { en: "Self-check quizzes", ar: "التقويم الذاتي" }
-sec_lab:               { en: "Interactive lab", ar: "المختبر التفاعلي" }
-sec_library:           { en: "Textbooks & resources", ar: "المراجع والموارد" }
-sec_glossary:          { en: "Glossary", ar: "المعجم" }
-sec_overview_d:        { en: "What the course is about and what you need before starting.", ar: "موضوع المقرر وما تحتاجه قبل البدء." }
-sec_outcomes_d:        { en: "What you will be able to do, and how each outcome is assessed.", ar: "ما ستكون قادرًا على فعله، وكيف يُقيَّم كل مخرج." }
-sec_schedule_d:        { en: "Fourteen weeks, step by step. Tick a week when you have studied it.", ar: "الأسابيع خطوةً بخطوة. أشِّر على الأسبوع بعد دراسته." }
-sec_assessment_d:      { en: "A varied scheme so that every outcome is measured more than once.", ar: "أساليب متنوعة حتى يُقاس كل مخرج أكثر من مرة." }
-sec_materials_d:       { en: "Notes, problem sets, solutions, videos and more.", ar: "المذكرات وسلاسل التمارين والحلول والمقاطع المرئية وغيرها." }
-sec_exams_d:           { en: "What to expect on exam day, and past papers to practise with.", ar: "ما تتوقعه يوم الاختبار، واختبارات سابقة للتدرّب." }
-sec_problems_d:        { en: "Exam-style problems. Try first, then reveal the hint and the full solution.", ar: "مسائل على نمط الاختبارات. حاول أولًا، ثم اكشف التلميح والحل الكامل." }
-sec_quizzes_d:         { en: "Instant feedback with an explanation for every answer. Your best score is saved.", ar: "تصحيح فوري مع شرح لكل إجابة. تُحفظ أفضل نتيجة لك." }
-sec_lab_d:             { en: "Change the parameters and watch the physics respond.", ar: "غيّر المعاملات وشاهد استجابة الظاهرة الفيزيائية." }
-sec_library_d:         { en: "Required and recommended books, and the best free resources online.", ar: "الكتب المقررة والمقترحة، وأفضل الموارد المجانية على الإنترنت." }
-sec_glossary_d:        { en: "Key terms in English and Arabic (and French), with flashcards.", ar: "المصطلحات الأساسية بالإنجليزية والعربية (والفرنسية)، مع بطاقات للمراجعة." }
-topics_glance:         { en: "Topics at a glance", ar: "المحاور الرئيسية" }
-prerequisites:         { en: "Prerequisites", ar: "المتطلبات السابقة" }
-no_prereq:             { en: "No prerequisite course.", ar: "لا يوجد مقرر متطلَّب." }
-leads_to:              { en: "Leads to", ar: "يمهّد لـ" }
-workload:              { en: "Weekly workload", ar: "العبء الأسبوعي" }
-self_study:            { en: "Self-study (recommended)", ar: "دراسة ذاتية (مقترحة)" }
-hours_short:           { en: "h", ar: "سا" }
-bloom_level:           { en: "Bloom level", ar: "مستوى بلوم" }
-assessed_by:           { en: "Assessed by", ar: "يُقيَّم عبر" }
-alignment_lead:        { en: "Which assessment measures which outcome.", ar: "أيّ أسلوب تقويم يقيس أيّ مخرج." }
-show_matrix:           { en: "Show the alignment matrix", ar: "اعرض مصفوفة الاتساق" }
-expand_all:            { en: "Expand all", ar: "توسيع الكل" }
-collapse_all:          { en: "Collapse all", ar: "طيّ الكل" }
-mark_done:             { en: "Mark as studied", ar: "تمّت دراسته" }
-reading:               { en: "Reading", ar: "القراءة" }
-activity:              { en: "Activity", ar: "النشاط" }
-week_materials:        { en: "This week's materials", ar: "مواد هذا الأسبوع" }
-reset_progress:        { en: "Reset progress", ar: "إعادة ضبط التقدّم" }
-components:            { en: "components", ar: "مكوّنات" }
-calculator:            { en: "Grade calculator", ar: "حاسبة المعدل" }
-calculator_lead:       { en: "Enter your marks (out of 100) to see your weighted total.", ar: "أدخل علاماتك (من 100) لترى مجموعك الموزون." }
-total:                 { en: "Weighted total", ar: "المجموع الموزون" }
-out_of_20:             { en: "on a 20-point scale", ar: "على سلّم من 20" }
-all_types:             { en: "All", ar: "الكل" }
-filter_materials:      { en: "Filter materials…", ar: "صفِّ المواد…" }
-open:                  { en: "Open", ar: "فتح" }
-exam_format:           { en: "Format", ar: "الشكل" }
-exam_allowed:          { en: "Allowed", ar: "المسموح به" }
-exam_tips:             { en: "Tips", ar: "نصائح" }
-past_papers:           { en: "Past papers", ar: "اختبارات سابقة" }
-paper:                 { en: "Paper", ar: "الأسئلة" }
-solution:              { en: "Solution", ar: "الحل" }
-no_papers:             { en: "No past papers are online yet. Practise with the worked problems and quizzes.", ar: "لا توجد اختبارات سابقة منشورة بعد. تدرّب بالمسائل المحلولة والتقويم الذاتي." }
-difficulty:            { en: "Difficulty", ar: "الصعوبة" }
-diff_1:                { en: "Warm-up", ar: "تمهيدية" }
-diff_2:                { en: "Standard", ar: "متوسطة" }
-diff_3:                { en: "Challenge", ar: "متقدمة" }
-show_hint:             { en: "Hint", ar: "تلميح" }
-show_solution:         { en: "Solution", ar: "الحل" }
-hide:                  { en: "Hide", ar: "إخفاء" }
-question:              { en: "Question", ar: "السؤال" }
-of:                    { en: "of", ar: "من" }
-check:                 { en: "Check", ar: "تحقّق" }
-next:                  { en: "Next", ar: "التالي" }
-finish:                { en: "See my score", ar: "اعرض نتيجتي" }
-retry:                 { en: "Try again", ar: "أعد المحاولة" }
-correct:               { en: "Correct!", ar: "إجابة صحيحة!" }
-incorrect:             { en: "Not quite.", ar: "ليست الإجابة الصحيحة." }
-your_score:            { en: "Your score", ar: "نتيجتك" }
-best_score:            { en: "Best", ar: "الأفضل" }
-questions:             { en: "questions", ar: "أسئلة" }
-quiz_great:            { en: "Excellent, you have mastered this chapter.", ar: "ممتاز، لقد أتقنت هذا الفصل." }
-quiz_good:             { en: "Good work. Review the explanations of the questions you missed.", ar: "عمل جيد. راجع شرح الأسئلة التي أخطأت فيها." }
-quiz_low:              { en: "Go back to the notes for this chapter, then try again.", ar: "عد إلى مذكرات هذا الفصل ثم أعد المحاولة." }
-required:              { en: "Required textbook", ar: "المرجع المقرر" }
-recommended:           { en: "Further reading", ar: "قراءات إضافية" }
-online:                { en: "Free online resources", ar: "موارد مجانية على الإنترنت" }
-edition:               { en: "ed.", ar: "ط." }
-glossary_search:       { en: "Search the glossary…", ar: "ابحث في المعجم…" }
-flashcards:            { en: "Flashcards", ar: "بطاقات المراجعة" }
-table_view:            { en: "Table", ar: "جدول" }
-flip:                  { en: "Tap the card to flip it", ar: "انقر البطاقة لقلبها" }
-shuffle:               { en: "Shuffle", ar: "خلط" }
-listen:                { en: "Listen", ar: "استمع" }
-prev:                  { en: "Previous", ar: "السابق" }
-english:               { en: "English", ar: "الإنجليزية" }
-arabic:                { en: "Arabic", ar: "العربية" }
-french:                { en: "French", ar: "الفرنسية" }
-definition:            { en: "Definition", ar: "التعريف" }
-term_count:            { en: "terms", ar: "مصطلح" }
-in_course:             { en: "Course", ar: "المقرر" }
-glossary_title:        { en: "Physics glossary", ar: "معجم الفيزياء" }
-glossary_lead:         { en: "Every key term from every course, in English, Arabic and French. Search it, filter it by course, or revise it as flashcards.", ar: "كل المصطلحات الأساسية في جميع المقررات بالإنجليزية والعربية والفرنسية. ابحث فيها أو صفِّها حسب المقرر أو راجعها على شكل بطاقات." }
-guide_title:           { en: "How TeachWeb works", ar: "كيف يعمل الموقع التعليمي" }
-guide_lead:            { en: "A short guide for students and teachers: how each course page is organised, the quality framework behind it, and how to study with it.", ar: "دليل موجز للطلبة والأساتذة: كيف تُنظَّم صفحة المقرر، وإطار الجودة الذي تقوم عليه، وكيف تدرس بها." }
-footer_text:           { en: "Open teaching materials in physics, in English and Arabic.", ar: "مواد تعليمية مفتوحة في الفيزياء، بالعربية والإنجليزية." }
-footer_updated:        { en: "Last updated", ar: "آخر تحديث" }
-footer_license:        { en: "Teaching materials may be reused for non-commercial education with attribution.", ar: "يمكن إعادة استخدام المواد التعليمية لأغراض تعليمية غير تجارية مع ذكر المصدر." }
-not_found:             { en: "This page does not exist.", ar: "هذه الصفحة غير موجودة." }
-open_empty_title:      { en: "The open courses are being prepared.", ar: "المقررات المفتوحة قيد الإعداد." }
-open_empty_text:       { en: "They will appear here one by one as their materials are polished. Meanwhile, the courses as taught at each university are on the personal homepage.", ar: "ستظهر هنا تباعًا كلما اكتمل تنقيح موادّها. وفي الأثناء، تجد المقررات كما دُرِّست في كل جامعة على الصفحة الشخصية." }
-open_soon:             { en: "Coming soon", ar: "قريبًا" }
-open_will_have:        { en: "Each open course will include", ar: "سيتضمّن كل مقرر مفتوح" }
-objectives:            { en: "Course objectives", ar: "أهداف المقرر" }
-methods:               { en: "Teaching methods", ar: "طرق التدريس" }
-safety:                { en: "Laboratory safety", ar: "السلامة في المختبر" }
-placeholder:           { en: "To be added", ar: "سيُضاف لاحقًا" }
-placeholder_text:      { en: "This part of the syllabus has not been published yet.", ar: "لم يُنشر هذا الجزء من المفردات بعد." }
-placeholder_materials: { en: "No materials have been published for this course yet.", ar: "لم تُنشر مواد لهذا المقرر بعد." }
-break:                 { en: "Break", ar: "عطلة" }
-drafts_banner:         { en: "Draft preview: this course is not published.", ar: "معاينة مسودة: هذا المقرر غير منشور." }
-placeholder_problems:  { en: "Worked problems for this course have not been published yet.", ar: "لم تُنشر بعد مسائل محلولة لهذا المقرر." }
-placeholder_quizzes:   { en: "Self-check quizzes for this course have not been published yet.", ar: "لم تُنشر بعد أسئلة تقويم ذاتي لهذا المقرر." }
-placeholder_lab:       { en: "No interactive lab has been published for this course yet.", ar: "لم يُنشر بعد مختبر تفاعلي لهذا المقرر." }
-placeholder_glossary:  { en: "The glossary for this course has not been published yet.", ar: "لم يُنشر بعد معجم هذا المقرر." }
-taught_title:          { en: "Courses taught at each university", ar: "المقررات المدرَّسة في كل جامعة" }
-taught_text:           { en: "The syllabus of every course as taught at each university, with its language of instruction and materials, is on the personal homepage.", ar: "مفردات كل مقرر كما دُرِّس في كل جامعة، مع لغة تدريسه وموادّه، متاحة في الصفحة الشخصية." }
-taught_on_home:        { en: "See the courses taught at each university", ar: "اطّلع على المقررات المدرَّسة في كل جامعة" }
-nav_formulas:          { en: "Formula sheet", ar: "جدول القوانين" }
-formulas_filter:       { en: "Filter formulas and constants…", ar: "صفِّ القوانين والثوابت…" }
-print:                 { en: "Print", ar: "اطبع" }
-constants:             { en: "Physical constants", ar: "الثوابت الفيزيائية" }
-quantity:              { en: "Quantity", ar: "المقدار" }
-symbol:                { en: "Symbol", ar: "الرمز" }
-value:                 { en: "Value", ar: "القيمة" }
-unit:                  { en: "Unit", ar: "الوحدة" }
-exact:                 { en: "exact", ar: "دقيقة" }
-si_prefixes:           { en: "SI prefixes", ar: "بادئات النظام الدولي" }
+# Interface words. Every key: { en: …, ar: …, fr: … } (French is used only on the French formula sheet)
+nav_courses:           { en: "Courses", ar: "المقررات", fr: "Cours" }
+nav_path:              { en: "Learning path", ar: "المسار التعليمي", fr: "Parcours" }
+nav_glossary:          { en: "Glossary", ar: "المعجم", fr: "Glossaire" }
+nav_guide:             { en: "How it works", ar: "دليل الاستخدام", fr: "Mode d'emploi" }
+home_site:             { en: "Personal homepage", ar: "الصفحة الشخصية", fr: "Page personnelle" }
+theme_toggle:          { en: "Toggle light / dark theme", ar: "تبديل الوضع الفاتح / الداكن", fr: "Basculer le thème clair / sombre" }
+search:                { en: "Search", ar: "بحث", fr: "Rechercher" }
+search_placeholder:    { en: "Search courses, topics, terms…", ar: "ابحث عن مقرر أو موضوع أو مصطلح…", fr: "Rechercher un cours, un thème, un terme…" }
+search_empty:          { en: "No match. Try another word.", ar: "لا نتائج. جرّب كلمة أخرى.", fr: "Aucun résultat. Essayez un autre mot." }
+search_hint:           { en: "Type to search · ↑ ↓ to move · Enter to open · Esc to close", ar: "اكتب للبحث · ↑ ↓ للتنقل · Enter للفتح · Esc للإغلاق", fr: "Tapez pour chercher · ↑ ↓ pour naviguer · Entrée pour ouvrir · Échap pour fermer" }
+skip:                  { en: "Skip to content", ar: "انتقل إلى المحتوى", fr: "Aller au contenu" }
+menu:                  { en: "Menu", ar: "القائمة", fr: "Menu" }
+back_top:              { en: "Back to top", ar: "إلى الأعلى", fr: "Haut de page" }
+kind_course:           { en: "Course", ar: "مقرر", fr: "Cours" }
+kind_term:             { en: "Term", ar: "مصطلح", fr: "Terme" }
+kind_week:             { en: "Week", ar: "أسبوع", fr: "Semaine" }
+kind_topic:            { en: "Topic", ar: "موضوع", fr: "Thème" }
+hero_kicker:           { en: "Open physics courseware", ar: "مقررات فيزياء مفتوحة", fr: "Cours de physique ouverts" }
+hero_title:            { en: "Physics, taught <em>in full</em>.", ar: "الفيزياء، تُدرَّس <em>كاملة</em>.", fr: "La physique, enseignée <em>en entier</em>." }
+hero_cta:              { en: "Browse the courses", ar: "تصفّح المقررات", fr: "Parcourir les cours" }
+hero_cta2:             { en: "See the learning path", ar: "اعرض المسار التعليمي", fr: "Voir le parcours" }
+stat_courses:          { en: "courses", ar: "مقررًا", fr: "cours" }
+stat_weeks:            { en: "weeks of lessons", ar: "أسبوعًا من الدروس", fr: "semaines de cours" }
+stat_materials:        { en: "notes, sheets & videos", ar: "مذكرة وسلسلة ومقطع", fr: "documents et vidéos" }
+stat_questions:        { en: "self-check questions", ar: "سؤال تقويم ذاتي", fr: "questions d'auto-évaluation" }
+stat_terms:            { en: "bilingual terms", ar: "مصطلحًا ثنائي اللغة", fr: "termes bilingues" }
+path_title:            { en: "The learning path", ar: "المسار التعليمي", fr: "Le parcours" }
+path_lead:             { en: "From first-year mechanics to Master's particle physics. Hover over a course to light up what it builds on and what it leads to.", ar: "من ميكانيكا السنة الأولى إلى فيزياء الجسيمات في الماستر. مرّر المؤشر على مقرر لتظهر المقررات التي يبني عليها والتي يمهّد لها.", fr: "De la mécanique de première année à la physique des particules en master." }
+catalogue_title:       { en: "All courses", ar: "جميع المقررات", fr: "Tous les cours" }
+catalogue_lead:        { en: "Every course follows the same structure, so you always know where to find things.", ar: "تتبع جميع المقررات البنية نفسها، فتعرف دائمًا أين تجد ما تبحث عنه.", fr: "Tous les cours suivent la même structure." }
+filter_all:            { en: "All", ar: "الكل", fr: "Tous" }
+filter_area:           { en: "Area", ar: "المجال", fr: "Domaine" }
+filter_level:          { en: "Level", ar: "المستوى", fr: "Niveau" }
+filter_none:           { en: "No course matches these filters.", ar: "لا يوجد مقرر يطابق هذه المعايير.", fr: "Aucun cours ne correspond à ces filtres." }
+structure_title:       { en: "One structure, every course", ar: "بنية واحدة لكل المقررات", fr: "Une même structure pour chaque cours" }
+privacy_note:          { en: "No accounts, no tracking. Your progress is saved only in your own browser.", ar: "لا حسابات ولا تتبّع. يُحفظ تقدّمك في متصفحك أنت فقط.", fr: "Pas de compte, pas de traçage. Votre progression reste dans votre navigateur." }
+course:                { en: "Course", ar: "المقرر", fr: "Cours" }
+all_courses:           { en: "All courses", ar: "كل المقررات", fr: "Tous les cours" }
+level:                 { en: "Level", ar: "المستوى", fr: "Niveau" }
+credits:               { en: "Credits", ar: "الساعات المعتمدة", fr: "Crédits" }
+weekly_hours:          { en: "Hours / week", ar: "ساعة / أسبوع", fr: "Heures / semaine" }
+weeks:                 { en: "Weeks", ar: "الأسابيع", fr: "Semaines" }
+week:                  { en: "Week", ar: "الأسبوع", fr: "Semaine" }
+languages:             { en: "Materials in", ar: "لغة المواد", fr: "Documents en" }
+also_coded:            { en: "Also offered as", ar: "يُدرَّس أيضًا بالرمز", fr: "Codes" }
+start_learning:        { en: "Start the weekly plan", ar: "ابدأ الخطة الأسبوعية", fr: "Voir le plan hebdomadaire" }
+take_quiz:             { en: "Test yourself", ar: "اختبر نفسك", fr: "Testez-vous" }
+print_syllabus:        { en: "Print syllabus", ar: "اطبع المفردات", fr: "Imprimer le programme" }
+lecture:               { en: "Lectures", ar: "محاضرات", fr: "Cours magistral" }
+tutorial:              { en: "Tutorials", ar: "أعمال موجّهة", fr: "Travaux dirigés" }
+lab:                   { en: "Lab", ar: "أعمال تطبيقية", fr: "Travaux pratiques" }
+on_this_page:          { en: "On this page", ar: "في هذه الصفحة", fr: "Sur cette page" }
+completed_weeks:       { en: "weeks completed", ar: "أسابيع منجزة", fr: "semaines terminées" }
+sec_overview:          { en: "Overview", ar: "نظرة عامة", fr: "Présentation" }
+sec_outcomes:          { en: "Learning outcomes", ar: "مخرجات التعلّم", fr: "Acquis d'apprentissage" }
+sec_schedule:          { en: "Weekly plan", ar: "الخطة الأسبوعية", fr: "Plan hebdomadaire" }
+sec_assessment:        { en: "Assessment", ar: "التقويم", fr: "Évaluation" }
+sec_materials:         { en: "Materials", ar: "المواد التعليمية", fr: "Documents" }
+sec_exams:             { en: "Exams", ar: "الاختبارات", fr: "Examens" }
+sec_problems:          { en: "Worked problems", ar: "مسائل محلولة", fr: "Problèmes corrigés" }
+sec_quizzes:           { en: "Self-check quizzes", ar: "التقويم الذاتي", fr: "Auto-évaluation" }
+sec_lab:               { en: "Interactive lab", ar: "المختبر التفاعلي", fr: "Laboratoire interactif" }
+sec_library:           { en: "Textbooks & resources", ar: "المراجع والموارد", fr: "Ouvrages et ressources" }
+sec_glossary:          { en: "Glossary", ar: "المعجم", fr: "Glossaire" }
+sec_overview_d:        { en: "What the course is about and what you need before starting.", ar: "موضوع المقرر وما تحتاجه قبل البدء.", fr: "Le contenu du cours et les prérequis." }
+sec_outcomes_d:        { en: "What you will be able to do, and how each outcome is assessed.", ar: "ما ستكون قادرًا على فعله، وكيف يُقيَّم كل مخرج.", fr: "Ce que vous saurez faire, et comment chaque acquis est évalué." }
+sec_schedule_d:        { en: "Fourteen weeks, step by step. Tick a week when you have studied it.", ar: "الأسابيع خطوةً بخطوة. أشِّر على الأسبوع بعد دراسته.", fr: "Semaine après semaine. Cochez une semaine une fois étudiée." }
+sec_assessment_d:      { en: "A varied scheme so that every outcome is measured more than once.", ar: "أساليب متنوعة حتى يُقاس كل مخرج أكثر من مرة.", fr: "Un dispositif d'évaluation varié." }
+sec_materials_d:       { en: "Notes, problem sets, solutions, videos and more.", ar: "المذكرات وسلاسل التمارين والحلول والمقاطع المرئية وغيرها.", fr: "Polycopiés, séries d'exercices, corrigés, vidéos…" }
+sec_exams_d:           { en: "What to expect on exam day, and past papers to practise with.", ar: "ما تتوقعه يوم الاختبار، واختبارات سابقة للتدرّب.", fr: "Le déroulement des examens et les sujets des années passées." }
+sec_problems_d:        { en: "Exam-style problems. Try first, then reveal the hint and the full solution.", ar: "مسائل على نمط الاختبارات. حاول أولًا، ثم اكشف التلميح والحل الكامل.", fr: "Problèmes de type examen. Cherchez d'abord, puis affichez l'indice et la solution." }
+sec_quizzes_d:         { en: "Instant feedback with an explanation for every answer. Your best score is saved.", ar: "تصحيح فوري مع شرح لكل إجابة. تُحفظ أفضل نتيجة لك.", fr: "Correction immédiate avec une explication pour chaque réponse." }
+sec_lab_d:             { en: "Change the parameters and watch the physics respond.", ar: "غيّر المعاملات وشاهد استجابة الظاهرة الفيزيائية.", fr: "Modifiez les paramètres et observez la physique." }
+sec_library_d:         { en: "Required and recommended books, and the best free resources online.", ar: "الكتب المقررة والمقترحة، وأفضل الموارد المجانية على الإنترنت.", fr: "Ouvrages de référence et ressources libres en ligne." }
+sec_glossary_d:        { en: "Key terms in English and Arabic (and French), with flashcards.", ar: "المصطلحات الأساسية بالإنجليزية والعربية (والفرنسية)، مع بطاقات للمراجعة.", fr: "Les termes clés en anglais, arabe et français." }
+topics_glance:         { en: "Topics at a glance", ar: "المحاور الرئيسية", fr: "Thèmes principaux" }
+prerequisites:         { en: "Prerequisites", ar: "المتطلبات السابقة", fr: "Prérequis" }
+no_prereq:             { en: "No prerequisite course.", ar: "لا يوجد مقرر متطلَّب.", fr: "Aucun prérequis." }
+leads_to:              { en: "Leads to", ar: "يمهّد لـ", fr: "Mène à" }
+workload:              { en: "Weekly workload", ar: "العبء الأسبوعي", fr: "Charge hebdomadaire" }
+self_study:            { en: "Self-study (recommended)", ar: "دراسة ذاتية (مقترحة)", fr: "Travail personnel (conseillé)" }
+hours_short:           { en: "h", ar: "سا", fr: "h" }
+bloom_level:           { en: "Bloom level", ar: "مستوى بلوم", fr: "Niveau de Bloom" }
+assessed_by:           { en: "Assessed by", ar: "يُقيَّم عبر", fr: "Évalué par" }
+alignment_lead:        { en: "Which assessment measures which outcome.", ar: "أيّ أسلوب تقويم يقيس أيّ مخرج.", fr: "Quelle évaluation mesure quel acquis." }
+show_matrix:           { en: "Show the alignment matrix", ar: "اعرض مصفوفة الاتساق", fr: "Afficher la matrice d'alignement" }
+expand_all:            { en: "Expand all", ar: "توسيع الكل", fr: "Tout déplier" }
+collapse_all:          { en: "Collapse all", ar: "طيّ الكل", fr: "Tout replier" }
+mark_done:             { en: "Mark as studied", ar: "تمّت دراسته", fr: "Marquer comme étudiée" }
+reading:               { en: "Reading", ar: "القراءة", fr: "Lecture" }
+activity:              { en: "Activity", ar: "النشاط", fr: "Activité" }
+week_materials:        { en: "This week's materials", ar: "مواد هذا الأسبوع", fr: "Documents de la semaine" }
+reset_progress:        { en: "Reset progress", ar: "إعادة ضبط التقدّم", fr: "Réinitialiser" }
+components:            { en: "components", ar: "مكوّنات", fr: "composantes" }
+calculator:            { en: "Grade calculator", ar: "حاسبة المعدل", fr: "Calculateur de note" }
+calculator_lead:       { en: "Enter your marks (out of 100) to see your weighted total.", ar: "أدخل علاماتك (من 100) لترى مجموعك الموزون.", fr: "Saisissez vos notes (sur 100) pour obtenir la moyenne pondérée." }
+total:                 { en: "Weighted total", ar: "المجموع الموزون", fr: "Moyenne pondérée" }
+out_of_20:             { en: "on a 20-point scale", ar: "على سلّم من 20", fr: "sur 20" }
+all_types:             { en: "All", ar: "الكل", fr: "Tous" }
+filter_materials:      { en: "Filter materials…", ar: "صفِّ المواد…", fr: "Filtrer les documents…" }
+open:                  { en: "Open", ar: "فتح", fr: "Ouvrir" }
+exam_format:           { en: "Format", ar: "الشكل", fr: "Format" }
+exam_allowed:          { en: "Allowed", ar: "المسموح به", fr: "Autorisé" }
+exam_tips:             { en: "Tips", ar: "نصائح", fr: "Conseils" }
+past_papers:           { en: "Past papers", ar: "اختبارات سابقة", fr: "Sujets des années passées" }
+paper:                 { en: "Paper", ar: "الأسئلة", fr: "Sujet" }
+solution:              { en: "Solution", ar: "الحل", fr: "Corrigé" }
+no_papers:             { en: "No past papers are online yet. Practise with the worked problems and quizzes.", ar: "لا توجد اختبارات سابقة منشورة بعد. تدرّب بالمسائل المحلولة والتقويم الذاتي.", fr: "Aucun sujet n'est encore en ligne." }
+difficulty:            { en: "Difficulty", ar: "الصعوبة", fr: "Difficulté" }
+diff_1:                { en: "Warm-up", ar: "تمهيدية", fr: "Échauffement" }
+diff_2:                { en: "Standard", ar: "متوسطة", fr: "Standard" }
+diff_3:                { en: "Challenge", ar: "متقدمة", fr: "Défi" }
+show_hint:             { en: "Hint", ar: "تلميح", fr: "Indice" }
+show_solution:         { en: "Solution", ar: "الحل", fr: "Solution" }
+hide:                  { en: "Hide", ar: "إخفاء", fr: "Masquer" }
+question:              { en: "Question", ar: "السؤال", fr: "Question" }
+of:                    { en: "of", ar: "من", fr: "sur" }
+check:                 { en: "Check", ar: "تحقّق", fr: "Vérifier" }
+next:                  { en: "Next", ar: "التالي", fr: "Suivant" }
+finish:                { en: "See my score", ar: "اعرض نتيجتي", fr: "Voir mon score" }
+retry:                 { en: "Try again", ar: "أعد المحاولة", fr: "Recommencer" }
+correct:               { en: "Correct!", ar: "إجابة صحيحة!", fr: "Exact !" }
+incorrect:             { en: "Not quite.", ar: "ليست الإجابة الصحيحة.", fr: "Pas tout à fait." }
+your_score:            { en: "Your score", ar: "نتيجتك", fr: "Votre score" }
+best_score:            { en: "Best", ar: "الأفضل", fr: "Meilleur" }
+questions:             { en: "questions", ar: "أسئلة", fr: "questions" }
+quiz_great:            { en: "Excellent, you have mastered this chapter.", ar: "ممتاز، لقد أتقنت هذا الفصل.", fr: "Excellent, ce chapitre est maîtrisé." }
+quiz_good:             { en: "Good work. Review the explanations of the questions you missed.", ar: "عمل جيد. راجع شرح الأسئلة التي أخطأت فيها.", fr: "Bon travail. Relisez les explications des erreurs." }
+quiz_low:              { en: "Go back to the notes for this chapter, then try again.", ar: "عد إلى مذكرات هذا الفصل ثم أعد المحاولة.", fr: "Reprenez le cours de ce chapitre, puis réessayez." }
+required:              { en: "Required textbook", ar: "المرجع المقرر", fr: "Ouvrage de référence" }
+recommended:           { en: "Further reading", ar: "قراءات إضافية", fr: "Lectures complémentaires" }
+online:                { en: "Free online resources", ar: "موارد مجانية على الإنترنت", fr: "Ressources libres en ligne" }
+edition:               { en: "ed.", ar: "ط.", fr: "éd." }
+glossary_search:       { en: "Search the glossary…", ar: "ابحث في المعجم…", fr: "Rechercher dans le glossaire…" }
+flashcards:            { en: "Flashcards", ar: "بطاقات المراجعة", fr: "Cartes mémoire" }
+table_view:            { en: "Table", ar: "جدول", fr: "Tableau" }
+flip:                  { en: "Tap the card to flip it", ar: "انقر البطاقة لقلبها", fr: "Touchez la carte pour la retourner" }
+shuffle:               { en: "Shuffle", ar: "خلط", fr: "Mélanger" }
+listen:                { en: "Listen", ar: "استمع", fr: "Écouter" }
+prev:                  { en: "Previous", ar: "السابق", fr: "Précédent" }
+english:               { en: "English", ar: "الإنجليزية", fr: "Anglais" }
+arabic:                { en: "Arabic", ar: "العربية", fr: "Arabe" }
+french:                { en: "French", ar: "الفرنسية", fr: "Français" }
+definition:            { en: "Definition", ar: "التعريف", fr: "Définition" }
+term_count:            { en: "terms", ar: "مصطلح", fr: "termes" }
+in_course:             { en: "Course", ar: "المقرر", fr: "Cours" }
+glossary_title:        { en: "Physics glossary", ar: "معجم الفيزياء", fr: "Glossaire de physique" }
+glossary_lead:         { en: "Every key term from every course, in English, Arabic and French. Search it, filter it by course, or revise it as flashcards.", ar: "كل المصطلحات الأساسية في جميع المقررات بالإنجليزية والعربية والفرنسية. ابحث فيها أو صفِّها حسب المقرر أو راجعها على شكل بطاقات.", fr: "Les termes clés en anglais, arabe et français." }
+guide_title:           { en: "How TeachWeb works", ar: "كيف يعمل الموقع التعليمي", fr: "Comment fonctionne TeachWeb" }
+guide_lead:            { en: "A short guide for students and teachers: how each course page is organised, the quality framework behind it, and how to study with it.", ar: "دليل موجز للطلبة والأساتذة: كيف تُنظَّم صفحة المقرر، وإطار الجودة الذي تقوم عليه، وكيف تدرس بها.", fr: "Un guide pour les étudiants et les enseignants." }
+footer_text:           { en: "Open teaching materials in physics, in English and Arabic.", ar: "مواد تعليمية مفتوحة في الفيزياء، بالعربية والإنجليزية.", fr: "Des supports d'enseignement de physique, en anglais, en arabe et en français." }
+footer_updated:        { en: "Last updated", ar: "آخر تحديث", fr: "Dernière mise à jour" }
+footer_license:        { en: "Teaching materials may be reused for non-commercial education with attribution.", ar: "يمكن إعادة استخدام المواد التعليمية لأغراض تعليمية غير تجارية مع ذكر المصدر.", fr: "Les supports peuvent être réutilisés à des fins éducatives non commerciales, avec mention de la source." }
+not_found:             { en: "This page does not exist.", ar: "هذه الصفحة غير موجودة.", fr: "Cette page n'existe pas." }
+open_empty_title:      { en: "The open courses are being prepared.", ar: "المقررات المفتوحة قيد الإعداد.", fr: "Les cours ouverts sont en préparation." }
+open_empty_text:       { en: "They will appear here one by one as their materials are polished. Meanwhile, the courses as taught at each university are on the personal homepage.", ar: "ستظهر هنا تباعًا كلما اكتمل تنقيح موادّها. وفي الأثناء، تجد المقررات كما دُرِّست في كل جامعة على الصفحة الشخصية.", fr: "Ils apparaîtront ici un par un, au fur et à mesure. En attendant, les cours tels qu'enseignés dans chaque université sont sur la page personnelle." }
+open_soon:             { en: "Coming soon", ar: "قريبًا", fr: "Bientôt" }
+open_will_have:        { en: "Each open course will include", ar: "سيتضمّن كل مقرر مفتوح", fr: "Chaque cours ouvert comprendra" }
+objectives:            { en: "Course objectives", ar: "أهداف المقرر", fr: "Objectifs du cours" }
+methods:               { en: "Teaching methods", ar: "طرق التدريس", fr: "Méthodes d'enseignement" }
+safety:                { en: "Laboratory safety", ar: "السلامة في المختبر", fr: "Sécurité au laboratoire" }
+placeholder:           { en: "To be added", ar: "سيُضاف لاحقًا", fr: "À compléter" }
+placeholder_text:      { en: "This part of the syllabus has not been published yet.", ar: "لم يُنشر هذا الجزء من المفردات بعد.", fr: "Cette partie du programme n'est pas encore publiée." }
+placeholder_materials: { en: "No materials have been published for this course yet.", ar: "لم تُنشر مواد لهذا المقرر بعد.", fr: "Aucun document n'est encore publié pour ce cours." }
+break:                 { en: "Break", ar: "عطلة", fr: "Vacances" }
+drafts_banner:         { en: "Draft preview: this course is not published.", ar: "معاينة مسودة: هذا المقرر غير منشور.", fr: "Aperçu de brouillon : ce cours n'est pas publié." }
+placeholder_problems:  { en: "Worked problems for this course have not been published yet.", ar: "لم تُنشر بعد مسائل محلولة لهذا المقرر.", fr: "Les problèmes corrigés de ce cours ne sont pas encore publiés." }
+placeholder_quizzes:   { en: "Self-check quizzes for this course have not been published yet.", ar: "لم تُنشر بعد أسئلة تقويم ذاتي لهذا المقرر.", fr: "Les quiz d'auto-évaluation de ce cours ne sont pas encore publiés." }
+placeholder_lab:       { en: "No interactive lab has been published for this course yet.", ar: "لم يُنشر بعد مختبر تفاعلي لهذا المقرر.", fr: "Aucun laboratoire interactif n'est encore publié pour ce cours." }
+placeholder_glossary:  { en: "The glossary for this course has not been published yet.", ar: "لم يُنشر بعد معجم هذا المقرر.", fr: "Le glossaire de ce cours n'est pas encore publié." }
+taught_title:          { en: "Courses taught at each university", ar: "المقررات المدرَّسة في كل جامعة", fr: "Cours enseignés dans chaque université" }
+taught_text:           { en: "The syllabus of every course as taught at each university, with its language of instruction and materials, is on the personal homepage.", ar: "مفردات كل مقرر كما دُرِّس في كل جامعة، مع لغة تدريسه وموادّه، متاحة في الصفحة الشخصية.", fr: "Le programme de chaque cours tel qu'enseigné dans chaque université, avec sa langue d'enseignement et ses documents, se trouve sur la page personnelle." }
+taught_on_home:        { en: "See the courses taught at each university", ar: "اطّلع على المقررات المدرَّسة في كل جامعة", fr: "Voir les cours enseignés dans chaque université" }
+nav_formulas:          { en: "Formula sheet", ar: "جدول القوانين", fr: "Formulaire" }
+formulas_filter:       { en: "Filter formulas and constants…", ar: "صفِّ القوانين والثوابت…", fr: "Filtrer les formules et les constantes…" }
+print:                 { en: "Print", ar: "اطبع", fr: "Imprimer" }
+constants:             { en: "Physical constants", ar: "الثوابت الفيزيائية", fr: "Constantes physiques" }
+quantity:              { en: "Quantity", ar: "المقدار", fr: "Grandeur" }
+symbol:                { en: "Symbol", ar: "الرمز", fr: "Symbole" }
+value:                 { en: "Value", ar: "القيمة", fr: "Valeur" }
+unit:                  { en: "Unit", ar: "الوحدة", fr: "Unité" }
+exact:                 { en: "exact", ar: "دقيقة", fr: "exacte" }
+si_prefixes:           { en: "SI prefixes", ar: "بادئات النظام الدولي", fr: "Préfixes SI" }

@@ -945,7 +945,12 @@ code { white-space: nowrap; }
   .tool { height: 36px; min-width: 36px; padding: 0 6px; border-radius: 10px; }
   .lang-seg { height: 36px; }
   .brand-mark { width: 32px; height: 32px; }
+  /* three-language switch (formula sheet): tighter segments */
+  .lang-seg:has(> :nth-child(3)) { padding: 2px; gap: 1px; }
+  .lang-seg:has(> :nth-child(3)) > * { min-width: 24px; padding: 0 3px; }
 }
+/* very narrow phones: the name alone carries the brand */
+@media (max-width: 380px) { .brand-mark { display: none; } }
 /* long maths / code inside problems and quizzes scroll inside their box on small screens */
 .problems, .problem, .reveal-box, .quiz, .q { min-width: 0; max-width: 100%; }
 .problem .prose, .reveal-box .prose, .q-text, .q-explain, .opt-text { min-width: 0; overflow-x: auto; overflow-wrap: anywhere; }

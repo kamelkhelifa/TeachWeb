@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "_macros.html" import icon, section_head, placeholder %}
-{% set site_name = site.name if lang == 'en' else site.name_ar %}
+{% set site_name = site.name_ar if lang == 'ar' else site.name %}
 {% block title %}{{ t(c.title) | plain }} · {{ site_name }}{% endblock %}
 {% block description %}{{ t(c.tagline) | plain }}{% endblock %}
 {% set type_icon = {'notes':'notes','slides':'slides','summary':'summary','problems':'problems','solutions':'solutions','video':'video','sim':'lab','lab':'lab','formula':'formula','code':'code','reading':'library','link':'link'} %}

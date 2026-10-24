@@ -1,7 +1,7 @@
 {% from "_macros.html" import icon %}
-{% set site_name = site.name if lang == 'en' else site.name_ar %}
-{% set lang_label = {'en': 'English', 'ar': 'العربية'} %}
-{% set lang_short = {'en': 'EN', 'ar': 'ع'} %}
+{% set site_name = site.name_ar if lang == 'ar' else site.name %}
+{% set lang_label = {'en': 'English', 'ar': 'العربية', 'fr': 'Français'} %}
+{% set lang_short = {'en': 'EN', 'ar': 'ع', 'fr': 'FR'} %}
 {% set home_url = site.home_url_ar if lang == 'ar' else site.home_url %}
 <!doctype html>
 <html lang="{{ lang }}" dir="{{ dir }}">

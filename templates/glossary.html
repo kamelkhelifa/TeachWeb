@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "_macros.html" import icon %}
-{% block title %}{{ ui('glossary_title') }} · {{ site.name if lang == 'en' else site.name_ar }}{% endblock %}
+{% block title %}{{ ui('glossary_title') }} · {{ site.name_ar if lang == 'ar' else site.name }}{% endblock %}
 {% block description %}{{ ui('glossary_lead') | plain }}{% endblock %}
 {% block main %}
 <section class="page-hero">

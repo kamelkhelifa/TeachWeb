@@ -22,7 +22,7 @@ from markupsafe import Markup
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "_site"
-PREFIX = {"en": "", "ar": "ar/"}
+PREFIX = {"en": "", "ar": "ar/", "fr": "fr/"}   # French only for the formula sheet
 
 
 def load(path):
@@ -253,25 +253,26 @@ def build(drafts=False):
         "terms": len(gloss),
     }
 
-    # every page: (template, path, extra context); all pages exist in English and Arabic
-    plan = [("index.html", "", {"page": "home"}),
-            ("guide.html", "guide/", {"page": "guide", "guide": GUIDE}),
-            ("formulas.html", "formulas/", {"page": "formulas", "formulas": FORMULAS})]
+    # every page: (template, path, languages, extra context)
+    EN_AR = ["en", "ar"]
+    plan = [("index.html", "", EN_AR, {"page": "home"}),
+            ("guide.html", "guide/", EN_AR, {"page": "guide", "guide": GUIDE}),
+            ("formulas.html", "formulas/", ["en", "ar", "fr"], {"page": "formulas", "formulas": FORMULAS})]
     if gloss:
-        plan.append(("glossary.html", "glossary/", {"page": "glossary", "terms": gloss, "gloss_courses": open_courses}))
+        plan.append(("glossary.html", "glossary/", EN_AR, {"page": "glossary", "terms": gloss, "gloss_courses": open_courses}))
     for c in open_courses:
-        plan.append(("course.html", c["path"], {"page": "course", "c": c}))
-    langs = list(PREFIX)
-    pages = {l: {p for _, p, _ in plan} for l in PREFIX}
+        plan.append(("course.html", c["path"], EN_AR, {"page": "course", "c": c}))
+    pages = {l: {p for _, p, langs, _ in plan if l in langs} for l in PREFIX}
 
     for lang in PREFIX:
+        # French pages link back to the English site, so they search the English index
+        idx = search_index("en" if lang == "fr" else lang, open_courses)
         (OUT / "static" / "js" / f"search-{lang}.js").write_text(
-            "window.TW_INDEX=" + json.dumps(search_index(lang, open_courses), ensure_ascii=False, separators=(",", ":")) + ";\n",
-            encoding="utf-8")
+            "window.TW_INDEX=" + json.dumps(idx, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
 
     common_ctx = dict(site=SITE, open_courses=open_courses, by_slug=by_slug, stats=stats, has_glossary=bool(gloss), drafts=drafts)
     written = []
-    for tpl, path, kw in plan:
+    for tpl, path, langs, kw in plan:
         for lang in langs:
             ctx = Ctx(lang, path, langs, pages)
             html = env.get_template(tpl).render(
