@@ -1,0 +1,153 @@
+slug: phys194
+order: 20
+codes: [PHYS 194]
+title: { en: "Experimental General Physics for Engineering II", ar: "الفيزياء العامة التجريبية لطلبة الهندسة 2" }
+tagline:
+  en: "The laboratory companion of PHYS 193: measuring fields, circuits and induction, and reporting results with their uncertainties."
+  ar: المختبر المرافق للمقرر PHYS 193، لقياس المجالات والدارات والحث، وعرض النتائج مع ارتياباتها.
+area: laboratory
+companion: electricity-lab   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: "Laboratory", ar: "مختبر" }
+taught:
+  - { years: Fall 2026, code: PHYS 194, lang: en }
+credits: 1
+hours: { lecture: 0, tutorial: 0, lab: 3 }
+weeks: 15
+prerequisites: { en: "PHYS 191, PHYS 192 and PHYS 193", ar: "PHYS 191 و PHYS 192 و PHYS 193" }
+corequisites: { en: "PHYS 193", ar: "PHYS 193" }
+
+description:
+  en: |
+    This is the laboratory course covering the subject matter of PHYS 193. It presents an introduction to the methods of experimental physics, with emphasis on experimental, data-analysis and written-presentation skills.
+
+    During the course students carry out a series of experiments on electrostatic fields, magnetic fields, induction, DC circuits and AC circuits. The inquiry-based and integrative learning used in the course allows students to solve real-world problems, which enhances their critical thinking and technical skills in a digitally enriched, learner-centred environment.
+  ar: |
+    هذا هو المقرر المخبري الذي يغطي محتوى المقرر PHYS 193، ويقدّم مدخلًا إلى مناهج الفيزياء التجريبية مع التركيز على مهارات التجريب وتحليل البيانات والعرض الكتابي للعمل المخبري.
+
+    يُجري الطلبة خلال المقرر سلسلة من التجارب حول المجالات الكهروستاتيكية، والمجالات المغناطيسية، والحث، ودارات التيار المستمر والمتناوب. ويتيح التعلّم القائم على الاستقصاء والتعلّم التكاملي للطلبة حلّ مسائل من الواقع، مما يعزّز تفكيرهم الناقد ومهاراتهم التقنية في بيئة غنية بالرقمنة ومتمحورة حول المتعلّم.
+
+objectives:
+  - { en: "Develop a basic knowledge of the fundamental learning components of a general physics laboratory.", ar: "اكتساب معرفة أساسية بالمكوّنات التعليمية الأساسية لمختبر الفيزياء العامة." }
+  - { en: "Build up through laboratory experiments an understanding of the basic principles and laws of electrostatics and steady electrodynamics.", ar: "بناء فهم للمبادئ والقوانين الأساسية للكهرباء الساكنة والديناميكا الكهربائية المستقرة من خلال التجارب المخبرية." }
+  - { en: "Investigate experimentally some basic characteristics of AC circuits.", ar: "دراسة بعض الخصائص الأساسية لدارات التيار المتناوب تجريبيًا." }
+
+outcomes:
+  - id: CLO1
+    text: { en: "Test experimentally some of the physical laws and theories taught in the lecture room and use a variety of physical measuring devices.", ar: "يختبر تجريبيًا بعض القوانين والنظريات الفيزيائية المدروسة في المحاضرات، ويستخدم أجهزة قياس فيزيائية متنوعة." }
+  - id: CLO2
+    text: { en: "Fit observed data to a mathematically modelled physical phenomenon, estimate the uncertainty in measured and calculated quantities, and communicate scientific results in a word-processed written report.", ar: "يوفّق البيانات المرصودة مع نموذج رياضي للظاهرة الفيزيائية، ويقدّر الارتياب في المقادير المقيسة والمحسوبة، ويعرض النتائج العلمية في تقرير مكتوب ومنسَّق حاسوبيًا." }
+  - id: CLO3
+    text: { en: "Verify Ohm's law experimentally for different resistor settings.", ar: "يتحقق تجريبيًا من قانون أوم لتوصيلات مختلفة من المقاومات." }
+  - id: CLO4
+    text: { en: "Check experimentally the dependence of the capacitance of a capacitor on the dielectric material and investigate the charging and discharging of a capacitor.", ar: "يتحقق تجريبيًا من تأثير المادة العازلة في سعة المكثف، ويدرس شحن المكثف وتفريغه." }
+  - id: CLO5
+    text: { en: "Test experimentally the relation between the fusing current of a wire and its diameter.", ar: "يختبر تجريبيًا العلاقة بين تيار انصهار سلك وقطره." }
+  - id: CLO6
+    text: { en: "Measure the strength of the local magnetic field of the Earth using the Biot–Savart law.", ar: "يقيس شدة المجال المغناطيسي الأرضي المحلي باستخدام قانون بيو–سافار." }
+  - id: CLO7
+    text: { en: "Inspect the electrical properties of an AC transformer.", ar: "يفحص الخصائص الكهربائية لمحوّل التيار المتناوب." }
+  - id: CLO8
+    text: { en: "Analyse filter circuits and the resonance phenomenon in AC series circuits.", ar: "يحلّل دارات المرشّحات وظاهرة الرنين في دارات التيار المتناوب على التوالي." }
+
+assessment:
+  - type: final
+    weight: 30
+    title: { en: "Final exam (practical)", ar: "الاختبار النهائي (عملي)" }
+    detail: { en: "Practical exam in the laboratory covering the remaining experiments.", ar: "اختبار عملي في المختبر يغطي بقية التجارب." }
+    when: { en: "Week 15", ar: "الأسبوع 15" }
+  - type: midterm
+    weight: 30
+    title: { en: "First exam (practical)", ar: "الاختبار الأول (عملي)" }
+    detail: { en: "Practical exam in the laboratory covering the first four experiments.", ar: "اختبار عملي في المختبر يغطي التجارب الأربع الأولى." }
+    when: { en: "Week 7", ar: "الأسبوع 7" }
+  - type: report
+    weight: 25
+    title: { en: "Lab reports (online)", ar: "التقارير المخبرية (إلكترونيًا)" }
+    detail:
+      en: "Individual reports submitted online within seven days of the experiment, graded on understanding, presentation, analysis and discussion of the results. Five reports are counted."
+      ar: "تقارير فردية تُسلَّم إلكترونيًا خلال سبعة أيام من إجراء التجربة، وتُقيَّم وفق الفهم والعرض وتحليل النتائج ومناقشتها. تُحتسب خمسة تقارير."
+    when: { en: "Dielectric constant, Ohm's law, fuse, RC circuit, transformer, high-pass filter", ar: "ثابت العزل، قانون أوم، المصهر، دارة RC، المحوّل، المرشّح العالي التمرير" }
+  - type: quiz
+    weight: 10
+    title: { en: "Quizzes", ar: "الاختبارات القصيرة" }
+    detail: { en: "Questions on the understanding of the experiments, usually at the end of the session. Two quizzes are counted.", ar: "أسئلة حول فهم التجارب، تكون عادةً في نهاية الحصة. يُحتسب اختباران." }
+    when: { en: "Weeks 4, 6, 11 and 14", ar: "الأسابيع 4 و6 و11 و14" }
+  - type: participation
+    weight: 5
+    title: { en: "Class participation", ar: "المشاركة الصفية" }
+    detail:
+      en: "Participation in the experiment (2 points), completion of the analysis individually (2 points) and upholding integrity (1 point)."
+      ar: "المشاركة في إجراء التجربة (نقطتان)، وإنجاز التحليل فرديًا (نقطتان)، والالتزام بالنزاهة (نقطة واحدة)."
+    when: { en: "During lab hours", ar: "خلال حصص المختبر" }
+
+schedule:
+  - week: 1
+    title: { en: "Introduction", ar: "مقدمة" }
+  - week: 2
+    title: { en: "Experiment 1: Determination of the dielectric constant", ar: "التجربة 1: تعيين ثابت العزل" }
+    milestone: lab
+  - week: 3
+    title: { en: "Experiment 2: Ohm's law (graph on paper)", ar: "التجربة 2: قانون أوم (رسم بياني على الورق)" }
+    milestone: lab
+  - week: 4
+    title: { en: "Experiment 3: Fusing current of a wire", ar: "التجربة 3: تيار انصهار سلك" }
+    activity: { en: "Quiz 1 on experiments 1 and 2", ar: "الاختبار القصير 1 حول التجربتين 1 و2" }
+    milestone: quiz
+  - week: 5
+    title: { en: "Experiment 4: Time constant of an RC circuit", ar: "التجربة 4: الثابت الزمني لدارة RC" }
+    milestone: lab
+  - week: 6
+    title: { en: "Revision", ar: "مراجعة" }
+    activity: { en: "Quiz 2 on experiments 3 and 4", ar: "الاختبار القصير 2 حول التجربتين 3 و4" }
+    milestone: quiz
+  - week: 7
+    title: { en: "First exam", ar: "الاختبار الأول" }
+    milestone: midterm
+  - week: 8
+    title: { en: "Experiment 5: Earth's magnetic field (graph on paper)", ar: "التجربة 5: المجال المغناطيسي الأرضي (رسم بياني على الورق)" }
+    milestone: lab
+  - week: 9
+    title: { en: "Experiment 6: Electric transformers", ar: "التجربة 6: المحوّلات الكهربائية" }
+    milestone: lab
+  - week: 10
+    title: { en: "Mid-semester break", ar: "عطلة منتصف الفصل" }
+    milestone: break
+  - week: 11
+    title: { en: "Experiment 7: The oscilloscope", ar: "التجربة 7: راسم الذبذبات" }
+    activity: { en: "Quiz 3 on experiments 5 and 6", ar: "الاختبار القصير 3 حول التجربتين 5 و6" }
+    milestone: quiz
+  - week: 12
+    title: { en: "Experiment 8: High-pass and low-pass filters", ar: "التجربة 8: المرشّحات العالية والمنخفضة التمرير" }
+    milestone: lab
+  - week: 13
+    title: { en: "Experiment 9: Series resonant circuit (RLC)", ar: "التجربة 9: دارة الرنين على التوالي (RLC)" }
+    milestone: lab
+  - week: 14
+    title: { en: "Revision", ar: "مراجعة" }
+    activity: { en: "Quiz 4 on experiments 8 and 9", ar: "الاختبار القصير 4 حول التجربتين 8 و9" }
+    milestone: quiz
+  - week: 15
+    title: { en: "Final exam", ar: "الاختبار النهائي" }
+    milestone: final
+
+textbooks:
+  required:
+    - { authors: Physics programme staff, title: Physics II Lab Manual }
+  recommended: []
+  online: []
+
+safety:
+  - { en: "Comply with the safety instructions of the apparatus you use and with the indications of the instructor.", ar: "التزم بتعليمات السلامة الخاصة بالأجهزة المستعملة وبتوجيهات الأستاذ." }
+  - { en: "Have your electrical circuits checked by the instructor before switching on. If you are not sure, ask!", ar: "اعرض دارتك الكهربائية على الأستاذ قبل تشغيلها. وإن لم تكن متأكدًا فاسأل!" }
+  - { en: "Do not use laboratory instruments in a manner for which they were not intended; pay special attention to hot devices.", ar: "لا تستعمل أجهزة المختبر في غير ما صُمّمت له، وانتبه خاصةً للأجهزة الساخنة." }
+  - { en: "Do not eat or drink in the laboratory. Leave it tidy and put instruments and cables back in place.", ar: "لا تأكل ولا تشرب في المختبر، واتركه مرتبًا وأعد الأجهزة والأسلاك إلى أماكنها." }
+
+materials: []
+exams: []
+
+sources: [Course Syllabus PHYS 194 (Fall 2026, docx)]
+notes: >
+  Transcribed from the Fall 2026 syllabus. Left out on purpose: section/CRN, room and time, instructor contact,
+  university policies, support-centre contacts, education-excellence themes, graduate-attribute table, letter grades.
+  The lab manual is a department document: only its title is cited, it is not published.
+  Materials: none yet — add your own report templates, worked analyses, etc.
