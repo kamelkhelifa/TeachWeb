@@ -1,0 +1,113 @@
+slug: applied-quantum-mechanics
+order: 60
+codes: []
+title: { en: Applied Quantum Mechanics, ar: ميكانيكا الكم التطبيقية, fr: Mécanique quantique appliquée }
+level: { en: "Master 1 (M1) · Materials Science · second semester (S7)", ar: "ماستر 1 (م1) · علوم المواد · الفصل الثاني (S7)", fr: "Master 1 (M1) · Science des matériaux · second semestre (S7)" }
+area: quantum
+companion: quantum-mechanics-2   # Part 2 course whose interactive lab and glossary this page shows
+kind: { en: Lecture & tutorials, ar: محاضرات وأعمال موجهة, fr: Cours et travaux dirigés }
+taught:
+  - { years: 2024–2025, lang: en }
+weeks: 14
+prerequisites: { en: "Quantum Mechanics I and II (L2–L3): Dirac notation, the hydrogen atom, angular momentum and spin", ar: "ميكانيكا الكم 1 و2 (ل2–ل3): ترميز ديراك، ذرة الهيدروجين، الزخم الزاوي واللف المغزلي", fr: "Mécanique quantique I et II (L2–L3) : notation de Dirac, atome d'hydrogène, moment cinétique et spin" }
+
+# DRAFTED syllabus (Kamel to review): the usual M1 course on approximation methods and their applications, continuing UEF131 (which ends with "generalities on approximation methods").
+description:
+  en: |
+    Exact solutions of the Schrödinger equation exist for only a handful of systems. This Master 1 course gives the methods used for everything else, and applies them to atoms, molecules, solids and the interaction of matter with light.
+
+    It treats time-independent perturbation theory (non-degenerate and degenerate) with the Stark and Zeeman effects and the fine structure of hydrogen; the variational method and the WKB approximation; time-dependent perturbation theory, two-level systems, Fermi's golden rule and the emission and absorption of radiation; systems of identical particles; and an introduction to scattering theory.
+  ar: |
+    لا توجد حلول مضبوطة لمعادلة شرودنغر إلا لعدد قليل من الأنظمة. يقدّم مقرر الماستر 1 هذا الطرق المستعملة في سائر الحالات، ويطبّقها على الذرات والجزيئات والأجسام الصلبة وعلى تفاعل المادة مع الضوء.
+
+    ويتناول نظرية الاضطراب المستقلة عن الزمن (غير المنحلّة والمنحلّة) مع ظاهرتي شتارك وزيمان والبنية الدقيقة لذرة الهيدروجين؛ والطريقة التغيّرية وتقريب WKB؛ ونظرية الاضطراب المتعلقة بالزمن والأنظمة ذات المستويين وقاعدة فيرمي الذهبية وإصدار الإشعاع وامتصاصه؛ وأنظمة الجسيمات المتطابقة؛ ومدخلًا إلى نظرية التصادم.
+  fr: |
+    L'équation de Schrödinger n'a de solution exacte que pour une poignée de systèmes. Ce cours de Master 1 présente les méthodes utilisées pour tous les autres, et les applique aux atomes, aux molécules, aux solides et à l'interaction de la matière avec la lumière.
+
+    Il traite la théorie des perturbations stationnaires (non dégénérée et dégénérée) avec les effets Stark et Zeeman et la structure fine de l'hydrogène ; la méthode variationnelle et l'approximation WKB ; la théorie des perturbations dépendant du temps, les systèmes à deux niveaux, la règle d'or de Fermi et l'émission et l'absorption de rayonnement ; les systèmes de particules identiques ; et une introduction à la théorie de la diffusion.
+
+objectives:
+  - { en: "Give students the standard approximation methods of quantum mechanics.", ar: "تزويد الطلاب بالطرق التقريبية المعتمدة في ميكانيكا الكم.", fr: "Donner aux étudiants les méthodes d'approximation classiques de la mécanique quantique." }
+  - { en: "Apply them to real systems: atoms, molecules, solids and light–matter interaction.", ar: "تطبيقها على أنظمة حقيقية: الذرات والجزيئات والأجسام الصلبة وتفاعل الضوء مع المادة.", fr: "Les appliquer à des systèmes réels : atomes, molécules, solides et interaction lumière-matière." }
+
+outcomes:
+  - id: CLO1
+    text: { en: "Apply non-degenerate and degenerate time-independent perturbation theory, including the Stark effect, the Zeeman effect and the fine structure of hydrogen.", ar: "يطبّق نظرية الاضطراب المستقلة عن الزمن غير المنحلّة والمنحلّة، بما في ذلك ظاهرتا شتارك وزيمان والبنية الدقيقة للهيدروجين.", fr: "Appliquer la théorie des perturbations stationnaires non dégénérée et dégénérée, y compris les effets Stark et Zeeman et la structure fine de l'hydrogène." }
+  - id: CLO2
+    text: { en: "Estimate ground-state energies with the variational method (e.g. the helium atom).", ar: "يقدّر طاقات الحالة الأساسية بالطريقة التغيّرية (مثل ذرة الهيليوم).", fr: "Estimer des énergies de l'état fondamental par la méthode variationnelle (par ex. l'atome d'hélium)." }
+  - id: CLO3
+    text: { en: "Use the WKB approximation for bound states and tunnelling.", ar: "يستعمل تقريب WKB للحالات المقيّدة وللنفق الكمومي.", fr: "Utiliser l'approximation WKB pour les états liés et l'effet tunnel." }
+  - id: CLO4
+    text: { en: "Compute transition probabilities with time-dependent perturbation theory and Fermi's golden rule, and derive selection rules for electric-dipole transitions.", ar: "يحسب احتمالات الانتقال بنظرية الاضطراب المتعلقة بالزمن وقاعدة فيرمي الذهبية، ويستنتج قواعد الانتقاء للانتقالات ثنائية القطب الكهربائي.", fr: "Calculer des probabilités de transition par la théorie des perturbations dépendant du temps et la règle d'or de Fermi, et établir les règles de sélection des transitions dipolaires électriques." }
+  - id: CLO5
+    text: { en: "Build symmetric and antisymmetric states of identical particles and use them for atoms and the free-electron gas.", ar: "يبني الحالات المتناظرة وضد المتناظرة للجسيمات المتطابقة ويستعملها للذرات ولغاز الإلكترونات الحرة.", fr: "Construire les états symétriques et antisymétriques de particules identiques et les utiliser pour les atomes et le gaz d'électrons libres." }
+  - id: CLO6
+    text: { en: "Describe scattering by partial waves and in the Born approximation, and compute simple cross sections.", ar: "يصف التصادم بطريقة الأمواج الجزئية وبتقريب بورن، ويحسب مقاطع عرضية بسيطة.", fr: "Décrire la diffusion par la méthode des ondes partielles et dans l'approximation de Born, et calculer des sections efficaces simples." }
+
+assessment:
+  - type: quiz
+    weight: 40
+    title: { en: "Continuous assessment", ar: "التقييم المستمر", fr: "Contrôle continu" }
+    detail: { en: "Tutorial tests, problem sets and participation.", ar: "فروض الأعمال الموجهة، والمسائل، والمشاركة.", fr: "Interrogations de TD, séries d'exercices et participation." }
+  - type: final
+    weight: 60
+    title: { en: "Final exam", ar: "الاختبار النهائي", fr: "Examen final" }
+    detail: { en: "Written exam at the end of the semester (with a resit exam).", ar: "اختبار كتابي في نهاية الفصل (مع اختبار استدراكي).", fr: "Examen écrit en fin de semestre (avec examen de rattrapage)." }
+assessment_note: { en: "Usual split of Algerian master's fundamental units (40 % continuous, 60 % exam); drafted, to be confirmed.", ar: "التوزيع المعتاد للوحدات الأساسية في الماستر بالجامعات الجزائرية (40% تقييم مستمر، 60% اختبار)؛ مقترح بانتظار التأكيد.", fr: "Répartition habituelle des unités fondamentales de master en Algérie (40 % contrôle continu, 60 % examen) ; proposée, à confirmer." }
+
+schedule:
+  - week: "1–2"
+    title: { en: "Review and tools", ar: "مراجعة وأدوات", fr: "Rappels et outils" }
+    topics:
+      en: ["Postulates and Dirac notation", "Angular momentum and spin", "Exactly solvable systems"]
+      ar: ["المسلّمات وترميز ديراك", "الزخم الزاوي واللف المغزلي", "الأنظمة القابلة للحل المضبوط"]
+      fr: ["Postulats et notation de Dirac", "Moment cinétique et spin", "Systèmes exactement solubles"]
+  - week: "3–5"
+    title: { en: "Time-independent perturbation theory", ar: "نظرية الاضطراب المستقلة عن الزمن", fr: "Perturbations stationnaires" }
+    topics:
+      en: ["Non-degenerate and degenerate cases", "Stark effect", "Fine structure and Zeeman effect"]
+      ar: ["الحالتان غير المنحلّة والمنحلّة", "ظاهرة شتارك", "البنية الدقيقة وظاهرة زيمان"]
+      fr: ["Cas non dégénéré et dégénéré", "Effet Stark", "Structure fine et effet Zeeman"]
+  - week: "6–7"
+    title: { en: "Variational method and WKB", ar: "الطريقة التغيّرية وتقريب WKB", fr: "Méthode variationnelle et WKB" }
+    topics:
+      en: ["Variational principle; the helium atom", "WKB approximation; tunnelling and alpha decay"]
+      ar: ["المبدأ التغيّري؛ ذرة الهيليوم", "تقريب WKB؛ النفق الكمومي وتفكك ألفا"]
+      fr: ["Principe variationnel ; l'atome d'hélium", "Approximation WKB ; effet tunnel et désintégration alpha"]
+  - week: "8–10"
+    title: { en: "Time-dependent perturbation theory", ar: "نظرية الاضطراب المتعلقة بالزمن", fr: "Perturbations dépendant du temps" }
+    topics:
+      en: ["Two-level systems and Rabi oscillations", "Fermi's golden rule", "Emission and absorption of radiation; selection rules"]
+      ar: ["الأنظمة ذات المستويين وتذبذبات رابي", "قاعدة فيرمي الذهبية", "إصدار الإشعاع وامتصاصه؛ قواعد الانتقاء"]
+      fr: ["Systèmes à deux niveaux et oscillations de Rabi", "Règle d'or de Fermi", "Émission et absorption de rayonnement ; règles de sélection"]
+  - week: "11–12"
+    title: { en: "Identical particles", ar: "الجسيمات المتطابقة", fr: "Particules identiques" }
+    topics:
+      en: ["Bosons and fermions; exchange", "Atoms and the periodic table", "Free-electron gas in solids"]
+      ar: ["البوزونات والفرميونات؛ التبادل", "الذرات والجدول الدوري", "غاز الإلكترونات الحرة في الأجسام الصلبة"]
+      fr: ["Bosons et fermions ; échange", "Atomes et tableau périodique", "Gaz d'électrons libres dans les solides"]
+  - week: "13–14"
+    title: { en: "Scattering theory", ar: "نظرية التصادم", fr: "Théorie de la diffusion" }
+    topics:
+      en: ["Cross sections", "Partial-wave analysis", "Born approximation"]
+      ar: ["المقاطع العرضية", "تحليل الأمواج الجزئية", "تقريب بورن"]
+      fr: ["Sections efficaces", "Analyse en ondes partielles", "Approximation de Born"]
+
+textbooks:
+  required:
+    - { authors: D. J. Griffiths and D. F. Schroeter, title: Introduction to Quantum Mechanics, edition: 3rd, publisher: Cambridge University Press, year: 2018 }
+  recommended:
+    - { authors: J. J. Sakurai and J. Napolitano, title: Modern Quantum Mechanics, edition: 3rd, publisher: Cambridge University Press, year: 2020 }
+    - { authors: "C. Cohen-Tannoudji, B. Diu and F. Laloë", title: "Quantum Mechanics, Vol. II", edition: 2nd, publisher: Wiley-VCH, year: 2019 }
+    - { authors: N. Zettili, title: "Quantum Mechanics: Concepts and Applications", edition: 2nd, publisher: Wiley, year: 2009 }
+  online:
+    - title: { en: "MIT OCW 8.06: Quantum Physics III", ar: "MIT OCW 8.06: فيزياء الكم 3", fr: "MIT OCW 8.06 : Physique quantique III" }
+      url: https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2018/
+      note: { en: "Lecture notes and problem sets on approximation methods (in English).", ar: "مذكرات محاضرات ومسائل في الطرق التقريبية (بالإنجليزية).", fr: "Notes de cours et problèmes sur les méthodes d'approximation (en anglais)." }
+
+notes: >
+  UPDATE 24-10-2026 (Kamel's answers): taught to M1 for one semester, in English; Kamel asked for the syllabus to be drafted from the official M1 programme.
+  The Relizane master's programme could not be reached online (fst.univ-relizane.dz blocked from the build environment, not indexed), so DRAFTED for his review:
+  description, objectives, 6 outcomes, a 14-week plan (approximation methods and applications, continuing UEF131), assessment 40/60
+  (usual Algerian master split) and textbooks. Year, code and master speciality still unknown (taught: left empty).
+  UPDATE 24-10-2026: taught once, 2024–2025, second semester of M1 (S7 as Kamel calls it), Master in Materials Science, in English. Code unknown (omitted).
