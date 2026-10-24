@@ -446,15 +446,6 @@ materials:
     title: { en: 'Table of mathematical formulae', ar: 'جدول الصيغ الرياضية' }
     url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
     lang: en
-  - type: formula
-    title: { en: 'Mathematical formulae you should know (French)', ar: 'صيغ رياضية ينبغي معرفتها (بالفرنسية)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
-    lang: fr
-  - type: formula
-    title: { en: 'Essential constants and conversion factors (French)', ar: 'ثوابت ومعاملات تحويل أساسية (بالفرنسية)' }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
-    lang: fr
-  # Complementary unit: waves and thermodynamics (earlier version of the course)
   - type: slides
     title: { en: 'Complementary — Waves I and II (ch. 16–17)', ar: 'مادة تكميلية — الأمواج 1 و2 (الفصلان 16–17)' }
     url: https://drive.google.com/open?id=15JQ2TIWm7ErOiR5cvIiIJCHNE6IUaOY3
@@ -1001,3 +992,7 @@ glossary:
   - { en: 'Lenz''s law', ar: 'قانون لنز', fr: 'Loi de Lenz', def: { en: 'The induced current flows so as to oppose the change of flux that produces it.', ar: 'يسري التيار المتحرَّض في اتجاه يعاكس تغيّر التدفق الذي أحدثه.' } }
   - { en: 'Self-inductance', ar: 'الذاتية (معامل التحريض الذاتي)', fr: 'Inductance propre', def: { en: '\(L = N\Phi_B/I\); a coil opposes changes of current with \(\mathcal E_L = -L\,\dd I/\dd t\); unit henry.', ar: '\(L = N\Phi_B/I\)؛ تعاكس الوشيعة تغيرات التيار بقوة \(\mathcal E_L = -L\,\dd I/\dd t\)؛ ووحدتها الهنري.' } }
   - { en: 'Hall effect', ar: 'ظاهرة هول', fr: 'Effet Hall', def: { en: 'Transverse voltage across a current-carrying conductor in a magnetic field; used to measure \(B\).', ar: 'فرق كمون عرضي يظهر في ناقل يحمل تيارًا داخل حقل مغناطيسي، ويُستعمل لقياس \(B\).' } }
+
+pending:   # NOT displayed: items whose authorship must be confirmed before publishing
+  - { what: "French formula sheet (math_form_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
+  - { what: "French physical constants sheet (constant_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }

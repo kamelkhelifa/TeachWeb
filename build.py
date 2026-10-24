@@ -81,10 +81,19 @@ def common(c):
 
 def load_open(drafts):
     courses = []
-    for p in sorted((ROOT / "data" / "open").glob("*.yml")):
-        c = load_yaml_course(p)
-        if c is None or p.name.startswith("_"):
+    files = [p for p in sorted((ROOT / "data" / "open").glob("*.yml")) if not p.name.startswith("_")]
+    loaded = [(p, load_yaml_course(p)) for p in files]
+    # an item held back for review in ANY course (`pending:`) is withheld from every course
+    withheld = {i.get("url") for _, c in loaded if c for i in c.get("pending") or []}
+    for p, c in loaded:
+        if c is None:
             continue
+        c["materials"] = [m for m in c.get("materials") or [] if m.get("url") not in withheld]
+        for e in c.get("exams") or []:
+            for k in ("paper", "solution"):
+                if e.get(k) in withheld:
+                    e.pop(k)
+        c["exams"] = [e for e in c.get("exams") or [] if e.get("paper") or e.get("solution")]
         c["draft"] = not c.get("published", False)
         if c["draft"] and not drafts:
             continue

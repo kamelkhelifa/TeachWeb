@@ -545,15 +545,6 @@ materials:
     title: { en: Table of mathematical formulae, ar: جدول الصيغ الرياضية }
     url: https://khelifak.wordpress.com/wp-content/uploads/2016/11/formulas_table.pdf
     lang: en
-  - type: formula
-    title: { en: Mathematical formulae (French), ar: صيغ رياضية (بالفرنسية) }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf
-    lang: fr
-  - type: formula
-    title: { en: Physical constants and conversion factors, ar: الثوابت الفيزيائية ومعاملات التحويل }
-    url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf
-    lang: fr
-  # Supplementary reading (French)
   - type: reading
     title: { en: 'Mechanical vibrations and waves — Vol. 1: Vibrations (lecture notes)', ar: 'الاهتزازات والأمواج الميكانيكية — الجزء 1: الاهتزازات (مطبوعة)' }
     url: https://www.univ-chlef.dz/fgca/images/tome-1_vibrations.pdf
@@ -1294,3 +1285,7 @@ glossary:
   - { en: Dispersion, ar: التبدد, fr: Dispersion, def: { en: Dependence of phase velocity on frequency; wave packets then change shape as they travel., ar: تعلّق سرعة الطور بالتواتر؛ فتتغير أشكال الحزم الموجية أثناء انتشارها. } }
   - { en: Group velocity, ar: سرعة المجموعة, fr: Vitesse de groupe, def: { en: '\(v_g = \dv{\omega}{k}\): the speed of a wave packet and of the energy it carries.', ar: '\(v_g = \dv{\omega}{k}\): سرعة الحزمة الموجية والطاقة التي تحملها.' } }
   - { en: Doppler effect, ar: ظاهرة دوبلر, fr: Effet Doppler, def: { en: Change of the observed frequency due to motion of the source or the observer., ar: تغيّر التواتر المرصود بسبب حركة المنبع أو الراصد. } }
+
+pending:   # NOT displayed: items whose authorship must be confirmed before publishing
+  - { what: "French formula sheet (math_form_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/math_form_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }
+  - { what: "French physical constants sheet (constant_fr.pdf)", url: https://khelifak.wordpress.com/wp-content/uploads/2013/09/constant_fr.pdf, why: "typed by Y. Delenda: authorship unclear (same decision as on the homepage)" }

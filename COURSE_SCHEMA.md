@@ -28,6 +28,7 @@ Run `python tools/validate.py` after editing. It checks every course file and te
 
 ```yaml
 slug: quantum-mechanics-1          # = file name, lowercase-with-dashes
+published: false                    # true = shown on the site (drafts are only built with --drafts)
 order: 120                          # sort order in the catalogue (smaller = earlier)
 codes: [PHYS 354, PHYS 401, UEF 223]   # equivalent course codes (search only)
 short: { en: QM I, ar: ك.ك 1 }      # 2–6 char badge shown on cards
@@ -130,6 +131,9 @@ textbooks:
     - { authors: …, title: …, publisher: …, year: … }
   online:                       # free, high-quality resources
     - { title: { en: MIT OCW 8.04, ar: مقرر MIT OCW 8.04 }, url: https://ocw.mit.edu/…, note: { en: …, ar: … } }
+
+pending:                        # NOT displayed: links to confirm before publishing (authorship, copyright…).
+  - { what: "…", url: https://…, why: "…" }   # a link listed here is withheld from EVERY course
 
 glossary:                       # 20–30 key terms. en + ar required, fr optional
   - { en: Wavefunction, ar: الدالة الموجية, fr: Fonction d'onde, def: { en: …, ar: … } }
